@@ -1,0 +1,7 @@
+public class CopyPropertiesFunction<FromType, ToType> implements F2<FromType, ToType, Void> {
+private PropertyAccessor<FromType>[] readers;
+readers[i] = new PropertyAccessor<FromType>(properties[i], fromClass, MapUtils.EMPTY_MAP);
+}
+if (fromClass.equals(toClass)) {
+writers = (PropertyAccessor<ToType>[]) readers;
+

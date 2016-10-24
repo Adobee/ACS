@@ -1,0 +1,11 @@
+package background.mblz.yandex.com.yandexlesson.loader;
+
+public class CollageLoaderManager {
+public static CollageLoader getLoader() {
+if (sCollageLoader == null) {
+sCollageLoader = new StubCollageLoader();
+}
+return sCollageLoader;
+}
+}
+

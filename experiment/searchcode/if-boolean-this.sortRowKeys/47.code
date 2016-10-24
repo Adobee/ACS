@@ -1,0 +1,8 @@
+* Creates a new instance (initially empty).
+* @param sortRowKeys if the row keys should be sorted.
+*/
+public DefaultKeyedValues2D(boolean sortRowKeys) {
+public int getRowIndex(Comparable key) {
+if (this.sortRowKeys) {
+return Collections.binarySearch(this.rowKeys, key);
+

@@ -1,0 +1,12 @@
+if (obj instanceof AxisSort) {
+AxisSort as = (AxisSort)obj;
+if (as.axis == axis &amp;&amp; as.desc == desc)
+return true;
+return as!= null &amp;&amp; as.desc == desc &amp;&amp; (attr ? as.axis.getAttribute() == axis.getAttribute() : as.axis == axis);
+}
+
+@Override
+public int hashCode() {
+int result = axis != null ? axis.hashCode() : 0;
+if (desc) result += 1;
+

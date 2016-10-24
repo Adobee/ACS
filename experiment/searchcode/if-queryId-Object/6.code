@@ -1,0 +1,10 @@
+protected void printQueryId(String queryId) {
+if (log.isDebug()) {
+log.d(&quot;\t QueryId  \t:  &quot; + queryId);
+}
+}
+
+protected Object insert(String queryId, Object params) {
+printQueryId(queryId);
+return sqlSession.insert(queryId, params);
+

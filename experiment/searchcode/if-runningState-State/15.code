@@ -1,0 +1,10 @@
+public long getNanoTime()
+{
+if ((this.runningState == 2) || (this.runningState == 3)) {
+return this.stopTime - this.startTime;
+}
+if (this.runningState == 0) {
+return 0L;
+}
+if (this.runningState == 1) {
+

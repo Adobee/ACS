@@ -1,0 +1,7 @@
+public Population (int populationSize, boolean initialize) {
+routes = new Route [populationSize];
+
+if (initialize) {
+for (int i = 0; i < populationSize(); i++) {
+Route newRoute = new Route();
+

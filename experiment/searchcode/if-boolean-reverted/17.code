@@ -1,0 +1,9 @@
+public MethodsChain(final List<PsiMethod[]> revertedPath, final int weight, final boolean marker) {
+this.revertedPath = revertedPath;
+this.weight = weight;
+this.marker = marker;
+* checking only method names
+*/
+public boolean weakContains(final MethodsChain otherChain) {
+if (otherChain.revertedPath.isEmpty()) {
+

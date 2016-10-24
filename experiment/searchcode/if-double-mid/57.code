@@ -1,0 +1,17 @@
+return mid;
+} else if(mid*mid*mid > x)
+high = mid;
+else
+low = mid;
+}
+}
+
+public double cubroot(double x) {
+low = x;
+high = 1;
+}
+double esp = 0.00000000001;
+while(true) {
+double mid = (low+high)/2;
+if(x == mid*mid*mid || high-low <= esp) {
+

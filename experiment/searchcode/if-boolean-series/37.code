@@ -1,0 +1,14 @@
+public void setEnabled(boolean enabled)
+{
+this.enabled = enabled;
+filteredSeries.clear();
+if (enabled)
+filteredSeriesRange.setCount(filteredSeries.size());
+notifyContentChanged();
+}
+}
+
+public boolean isSeriesEnabled(int series)
+{
+if ((series < 0) || (series >= sourceSeriesEnabled.length))
+

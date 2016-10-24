@@ -1,0 +1,8 @@
+* @param remotePath The remote directory path to delete
+* @return boolean If true the deleting operation has been successful
+private boolean deleteDirectory(final String dirName, final String remotePath){
+
+boolean sent = false;
+
+final FTPConnectMode connectMode = configuration.getConnectMode().toString().equalsIgnoreCase(FTPConnectMode.ACTIVE.toString()) ?
+

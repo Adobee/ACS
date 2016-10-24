@@ -1,0 +1,10 @@
+public synchronized boolean add(RemoteFileDesc rfd, HostData data, Set<Endpoint> loc) {
+if (rfd.getFileName() != null &amp;&amp;
+lastBuffer = mResultBuffers.get(mResultBuffers.size() - 1);
+
+boolean shouldRefresh = false;
+
+if (rs == null) {
+// A new search result.
+rs = new P2pSearchResult(mGuid, rfd, data, loc);
+

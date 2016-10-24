@@ -1,0 +1,8 @@
+public void send(Node src, Node dest, Object msg, int pid) {
+EDSimulator.add(CONSTANT_LATENCY, msg, dest, pid);
+long msgSize = ObjectSizeFetcher.getObjectSize(msg);
+
+assert (msgSize <= Configuration.getLong(&quot;MSG_SIZE_LIMIT&quot;));
+
+if (msgSize > Configuration.getLong(&quot;MSG_SIZE_LIMIT&quot;))
+

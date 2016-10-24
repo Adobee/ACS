@@ -1,0 +1,9 @@
+if (MarkerLog.ENABLED)
+{
+mEventLog.add(tag, Thread.currentThread().getId());
+}
+else if (mRequestBirthTime == 0)
+long requestTime = SystemClock.elapsedRealtime()
+- mRequestBirthTime;
+if (requestTime >= SLOW_REQUEST_THRESHOLD_MS)
+

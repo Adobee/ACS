@@ -1,0 +1,11 @@
+public class AlterSessionCookieFilter extends OncePerRequestFilter {
+
+public static final String DEFAULT_COOKIE_NAME = &quot;JSESSIONID&quot;;
+
+private boolean httpOnly = true;
+private static final String ALREADY_OVERWRITTEN_SUFFIX = &quot;.OVERWRITTEN&quot;;
+
+private HttpServletResponse response;
+
+private boolean httpOnly = true;
+

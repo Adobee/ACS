@@ -1,0 +1,12 @@
+STRING,
+BYTE_ARRAY;
+
+public static StormType forValue(Class<?> fieldType) {
+
+if (Integer.TYPE.equals(fieldType)
+return StormType.INT;
+}
+
+if (Long.TYPE.equals(fieldType)
+|| Long.class.equals(fieldType)) {
+

@@ -1,0 +1,6 @@
+public static double correct01(double v) {
+if (v < 0 &amp;&amp; v > wEPSm) return 0;
+if (v > 1 &amp;&amp; v < wEPSp) return 1;
+double tmp1 = Math.min(0, Math.floor(y - B)) * A * (B - y) / B;
+double tmp2 = Math.min(0, Math.floor(C - y)) * (1 - A) * (y - C) / (1 - C);
+

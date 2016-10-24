@@ -1,0 +1,6 @@
+super(myOps, theirOps, conflict.getDecisionManager(), conflict.isLeftMy(), false);
+if (!(conflict instanceof SingleReferenceConflict || conflict instanceof MultiReferenceConflict)) {
+protected void initConflictOptions(List<ConflictOption> options) {
+for (ConflictOption option : conflict.getOptions()) {
+if (option.getType() == OptionType.MyOperation) {
+

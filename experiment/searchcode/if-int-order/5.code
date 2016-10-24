@@ -1,0 +1,18 @@
+this.order.add(order);
+}
+
+public List<Order> getOrder()
+{
+return order;
+}
+
+public void add(int number, int customer, String date, int summ, int id)
+this.order.add(order);
+}
+
+public boolean delete(int id)
+{
+for(int i=0;i<this.order.size();i++)
+{
+if(this.order.get(i).getId()==id)
+

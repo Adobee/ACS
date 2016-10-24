@@ -1,0 +1,14 @@
+return termFrequency;
+}
+public boolean equals(Object obj){
+Posting other = (Posting) obj;
+if(docID == other.getDocID()){
+for(int i = 0;i<termFrequency;i++)
+{
+s+=positionList.get(i);
+if(i != termFrequency -1)
+s+=&quot;,&quot;;
+}
+s+= &quot;>&quot;;
+return s;
+

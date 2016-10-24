@@ -1,0 +1,13 @@
+public class Potentiometer extends Thread implements PIDSource
+{
+private AnalogChannel pot;
+private double shift, ratio;
+/*
+private Timer timer;
+private static final double timePerCheck;
+*/
+
+public Potentiometer(int analogport, double ratio, double shift)
+{
+pot = new AnalogChannel(analogport);
+

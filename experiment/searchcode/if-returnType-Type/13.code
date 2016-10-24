@@ -1,0 +1,11 @@
+private String[] reliesOn;
+
+@Override
+public ReturnType process()
+{
+ReturnType returnType = dialogue.advance();
+
+if ( returnType != ReturnType.RUNNING &amp;&amp; dialogue.index == dialogue.actions.size )
+{
+if ( processCondition( condition, reliesOn ) ) { return ReturnType.COMPLETED; }
+

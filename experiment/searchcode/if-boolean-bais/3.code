@@ -1,0 +1,12 @@
+this.protocolID = bais.read();
+bais.mark(available());
+if (this.protocolID > 226) {
+this.protocolID = this.protocolID - 256;
+* @return
+*/
+public final int readInt() {
+// #if DEBUG
+int i = bais.readInt();
+
+print(&quot;Int&quot;, String.valueOf(i));
+

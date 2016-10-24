@@ -1,0 +1,13 @@
+private double smallestVariance = Double.MAX_VALUE;
+
+@Override
+public void addChunk(Chunk chunk) {
+if(chunk.getVariance() <= smallestVariance) {
+super.addChunk(chunk);
+}
+}
+
+@Override
+public void reset() {
+smallestVariance = Double.MAX_VALUE;
+

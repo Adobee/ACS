@@ -1,0 +1,8 @@
+String cacheControl = request.cacheControl().toString();
+if (TextUtils.isEmpty(cacheControl)) {
+return chain.proceed(request);
+//            cacheControl.maxAge(maxAge, TimeUnit.SECONDS);
+//        }
+//        if (maxStale != 0) {
+//            cacheControl.maxStale(maxStale, TimeUnit.SECONDS);
+

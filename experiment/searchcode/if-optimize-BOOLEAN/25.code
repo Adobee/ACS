@@ -1,0 +1,7 @@
+void optimize(Sentence s) {
+if(s instanceof ApplySentence) {
+for(Value v : ((ApplySentence)s).value)
+optimize(v);
+} else if(s instanceof AssignSentence) {
+optimize(((AssignSentence)s).rvalue);
+

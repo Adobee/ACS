@@ -1,0 +1,16 @@
+sb.append(matrix[i][endcolumn - 1]);
+sb.append(&quot;, &quot;);
+}
+endcolumn--;
+
+if (startRow < endRow) {
+for (int i = endcolumn - 1; i >= 0; --i) {
+sb.append(&quot;, &quot;);
+}
+endRow--;
+}
+
+if (startColumn < endcolumn) {
+for (int i = endRow-1; i >=startRow;--i) {
+sb.append(matrix[i][startColumn]);
+

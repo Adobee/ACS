@@ -1,0 +1,12 @@
+//create doesn&#39;t exist in the spec but is supported in the clients (index with op_type=create)
+boolean indexCreateApi = &quot;create&quot;.equals(apiName);
+String api = indexCreateApi ? &quot;index&quot; : apiName;
+throw new IllegalArgumentException(&quot;param [&quot; + entry.getKey() + &quot;] not supported in [&quot; + restApi.getName() + &quot;] api&quot;);
+}
+}
+}
+}
+
+if (indexCreateApi) {
+httpRequestBuilder.addParam(&quot;op_type&quot;, &quot;create&quot;);
+

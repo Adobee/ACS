@@ -1,0 +1,12 @@
+public static final Logger logger = LoggerFactory.getLogger(TextPanel.class);
+
+private int xOffset = 0;
+private int yOffset = 0;
+private int width = 0;
+public void printString(int xOffset, int yOffset, ColouredString string) {
+String content = string.toString();
+
+int left = width - xOffset;
+
+if (left > 0) {
+

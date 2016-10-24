@@ -1,0 +1,8 @@
+right = r;
+opType = t;
+if (opType == OpType.PARAAND || opType == OpType.PARAOR)
+has_para_cond = true;
+buf.append(left.toString() + &quot; &quot;);
+if (opType == OpType.ASSIGN) buf.append(&quot;=&quot;);
+else if (opType == OpType.MUL_ASSIGN) buf.append(&quot;*=&quot;);
+

@@ -1,0 +1,13 @@
+protected class ArrayMatrixFirstSpaceHandle<S1, S2> implements MatrixHandle<S1, S2> {
+protected int index = 0;
+protected Space<S1> firstSpace;
+protected Space<S2> secondSpace;
+this.secondSpace = secondSpace;
+}
+
+public S1 dimension() {
+return firstSpace.objectForIndex(index);
+}
+
+public int index() {
+

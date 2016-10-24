@@ -1,0 +1,7 @@
+private final WeakReference<ImageView> imageViewReference;
+private final WeakReference<ProgressBar> progressBarReference;
+private int reqSize = 0;
+
+public BitmapWorkerTask(ImageView imageView, int reqSize, ProgressBar progressBar) {
+// Use a WeakReference to ensure the ImageView can be garbage collected
+

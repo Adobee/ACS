@@ -1,0 +1,16 @@
+blockId = block.getAfterBlockID();
+if (Block.NULL.equals(blockId))
+{
+return null;
+}
+else
+{
+block = translator.getBlock(blockId);
+Block block = translator.getBlock(blockId);
+if (block == null)
+{
+return null;
+}
+
+BlockConnector blockConnector = block.getSocketAt(i);
+

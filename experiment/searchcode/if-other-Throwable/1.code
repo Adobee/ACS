@@ -1,0 +1,9 @@
+public ThrowableAssertion(String message, Class<? extends Throwable> throwableType)
+{
+try
+{ code(); }
+catch(Throwable e)
+{
+if(!throwableType.isInstance(e))
+//                fail(message + &quot;: Throwable other than specified throwable (&quot; + throwableType.getSimpleName() + &quot;) &quot;
+

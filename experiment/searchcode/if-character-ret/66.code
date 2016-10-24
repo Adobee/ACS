@@ -1,0 +1,10 @@
+boolean ret = valid(input);
+return ret;
+}
+
+private boolean valid(String input) {
+if (&quot;&quot;.equals(input)) return true;
+
+boolean ret = true;
+it = new StringCharacterIterator(input);
+

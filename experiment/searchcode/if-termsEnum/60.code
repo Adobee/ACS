@@ -1,0 +1,11 @@
+public long weight() {
+return freq;
+}
+
+@Override
+public BytesRef next() throws IOException {
+if (termsEnum != null) {
+BytesRef next;
+while((next = termsEnum.next()) != null) {
+if (isFrequent(termsEnum.docFreq())) {
+

@@ -1,0 +1,9 @@
+protected HttpUriRequest constructHttpMethod(String methodName, String url, String payload) {
+
+HttpUriRequest httpUriRequest = null;
+
+if (methodName.equalsIgnoreCase(&quot;POST&quot;)) {
+log.debug(&quot;PUT method created based on client request&quot;);
+} else if (methodName.equalsIgnoreCase(&quot;DELETE&quot;)) {
+httpUriRequest = new HttpDelete(url);
+

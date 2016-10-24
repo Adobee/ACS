@@ -1,0 +1,11 @@
+byte[] byteArray = new byte[100];
+int msgSize;
+
+loadNativeLibrary();
+
+// eZioLib.openport(&quot;6&quot;);
+eZioLib.sendcommand(&quot;~S,CHECK&quot;);
+
+for (int i = 0; i < 5; i++) {
+msgSize = eZioLib.RcvBuf(byteArray, byteArray.length);
+

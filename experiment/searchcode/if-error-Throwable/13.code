@@ -1,0 +1,12 @@
+package org.faudroids.mrhyde.utils;
+
+import rx.exceptions.OnErrorThrowable;
+import rx.functions.Action1;
+if (throwable instanceof OnErrorThrowable) {
+call(throwable.getCause());
+return;
+}
+
+doCall(throwable);
+if (nextAction != null) nextAction.call(throwable);
+

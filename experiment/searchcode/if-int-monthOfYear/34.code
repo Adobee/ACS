@@ -1,0 +1,14 @@
+public static String getQOTD(int i){
+if (i == 1)
+return QOTD;
+else if (i > 1)
+updateQOTD();
+return QOTD;
+}
+
+public static int getDayOfWeek(){
+Calendar cal = Calendar.getInstance();
+int monthofyear = cal.get(Calendar.MONTH);
+monthofyear ++;
+return monthofyear;
+

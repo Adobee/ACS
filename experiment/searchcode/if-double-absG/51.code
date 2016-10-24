@@ -1,0 +1,8 @@
+public class DistantLight extends org.apache.batik.ext.awt.image.AbstractLight {
+private double azimuth;
+private double elevation;
+private double Lx;
+private double Ly;
+private double Lz;
+public double getAzimuth() { return azimuth; }
+

@@ -1,0 +1,9 @@
+public void moveMonths(int months){
+
+int newMonth =  gc.get(gc.MONTH)+months;
+gc.set(gc.YEAR, gc.get(gc.YEAR)+((newMonth)/12));
+gc.set(gc.MONTH, ((newMonth)%12)+1);
+/*
+if(newMonth>48){
+newMonth = newMonth - 48;
+

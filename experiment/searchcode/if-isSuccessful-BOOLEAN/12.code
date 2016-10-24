@@ -1,0 +1,11 @@
+public abstract class AAction implements Runnable {
+
+
+private boolean IsSuccessful = false;
+private Exception RunException = null;
+
+protected abstract boolean execute() throws Exception;
+
+public boolean hadException(){
+if(RunException==null)
+

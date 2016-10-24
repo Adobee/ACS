@@ -1,0 +1,15 @@
+import jc.se.tail.service.IFileService;
+
+/**
+*
+* @author ruffy
+*/
+public class IndexedDocument extends DocumentViewBase {
+
+private String _filePath;
+private int _endPosition;
+private List<RowInfo> _documentIndexPositions;
+private boolean _documentIsIndexed;
+
+public IndexedDocument(String filePath, IFileService fileService) {
+

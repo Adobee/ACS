@@ -1,0 +1,10 @@
+/** represents the production rule &quot;lhs -> rhs&quot; */
+public class Production {
+private final Symbol lhs;
+private final List<Symbol> rhs;
+@Override public String toString() { return lhs + &quot; -> &quot; + rhs; }
+
+@Override
+public boolean equals(final Object obj) {
+if (obj instanceof Production) {
+

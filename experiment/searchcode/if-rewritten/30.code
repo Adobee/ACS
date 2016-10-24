@@ -1,0 +1,10 @@
+protected URI rewriteURI(HttpServletRequest request)
+{
+URI rewrittenURI = super.rewriteURI(request);
+
+if (proxyTo != null)
+String rewrittenPath = rewrittenURI.getPath();
+int len;
+
+if (rewrittenPath != null
+

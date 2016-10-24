@@ -1,0 +1,9 @@
+private static Map<Integer, Integer> storage = new HashMap<Integer, Integer>();
+private static int climb(int nSteps) {
+if (nSteps <= 2) {
+return nSteps;
+}
+
+if (!storage.containsKey(nSteps)) {
+storage.put(nSteps, climb(nSteps-1) + climb(nSteps-2));
+

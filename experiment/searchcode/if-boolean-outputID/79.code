@@ -1,0 +1,8 @@
+private static final Pattern PATTERN_REL =
+Pattern.compile(&quot;(?<outputId>[1234])\\.(?<value>-?\\d+(,\\d+)?)%&quot;,
+Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE);
+private final int outputId;
+
+/** The target value (-100..100). */
+private final double percent;
+

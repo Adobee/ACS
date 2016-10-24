@@ -1,0 +1,6 @@
+public Quad(int segments, float ... points) {
+if (points.length != 12) {
+throw new IllegalArgumentException(&quot;points count must be equal 12, not &quot; + points.length);
+}
+if (!equalPoints(points, 0, 1) &amp;&amp; !equalPoints(points, 1, 3) &amp;&amp; !equalPoints(points, 0, 3)) {
+

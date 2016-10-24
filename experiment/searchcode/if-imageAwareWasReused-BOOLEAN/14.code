@@ -1,0 +1,8 @@
+/** @return <b>true</b> - 任务该被中断; <b>false</b> - 否则 */
+private boolean waitIfPaused() {
+AtomicBoolean pause = engine.getPause();
+if (pause.get()) {
+String currentCacheKey = engine.getLoadingUriForView(wrapper);
+boolean imageAwareWasReused = !memoryCacheKey.equals(currentCacheKey);
+if (imageAwareWasReused) {
+

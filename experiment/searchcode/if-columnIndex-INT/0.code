@@ -1,0 +1,9 @@
+
+public class MaximalRectangle {
+public int maximalRectangle(char[][] matrix) {
+if (matrix == null || matrix.length == 0)
+int rightMarker = columns;
+
+for (int columnIndex = 0; columnIndex < columns; columnIndex++){
+if (matrix[rowIndex][columnIndex] == &#39;1&#39;){
+

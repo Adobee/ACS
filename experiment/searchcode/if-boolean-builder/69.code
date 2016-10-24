@@ -1,0 +1,8 @@
+protected void assertAdjustLineIndent(final CharSequence model, final String expectedAdjustedModel, final boolean wrap) {
+if (wrap) {
+_builder.append(model, &quot;\t\t&quot;);
+_builder.newLineIfNotEmpty();
+_builder.append(&quot;\t&quot;);
+_builder.append(&quot;}&quot;);
+_builder.newLine();
+

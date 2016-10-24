@@ -1,0 +1,15 @@
+this.category = category;
+}
+
+public QueryBuilder setScript(String script) {
+if (functionBuilder == null)
+functionBuilder = ScoreFunctionBuilders.scriptFunction(StringUtils.isEmpty(script) ? defaultScript : script);
+this.gomeSortAsc = (Boolean)value;
+}
+}
+functionBuilder.param(key, value);
+return this;
+}
+
+public QueryBuilder setFacetSize(Integer size) {
+

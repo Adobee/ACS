@@ -1,0 +1,15 @@
+smooth = b;
+}
+
+@Override
+public double get(double x, double y) {
+int numsteps = numTiers;
+if (smooth) --numsteps;
+Tt /= (double) (numsteps);
+double u;
+if (smooth)
+u = Util.quinticBlend(t);
+else
+u = 0.0;
+return Tb + u * (Tt - Tb);
+

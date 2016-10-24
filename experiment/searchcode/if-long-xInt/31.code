@@ -1,0 +1,9 @@
+final long yInt = Double.doubleToRawLongBits(y);
+
+final boolean isEqual;
+if (((xInt ^ yInt) &amp; SGN_MASK) == 0L) {
+// number have opposite signs, take care of overflow
+final long deltaPlus;
+final long deltaMinus;
+if (xInt < yInt) {
+

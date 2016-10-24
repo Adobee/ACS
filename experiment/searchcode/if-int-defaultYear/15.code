@@ -1,0 +1,9 @@
+private int requestCode;
+
+private int defaultYear;
+private int defaultMonth;
+private int defaultDay;
+public static DatePickerDialogFragment createPicker(int requestCode, int defaultYear, int defaultMonth, int defaultDay){
+Bundle bundle = new Bundle();
+bundle.putInt(ARG_REQUEST_CODE, requestCode);
+

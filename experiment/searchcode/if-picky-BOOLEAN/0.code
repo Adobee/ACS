@@ -1,0 +1,8 @@
+Picky picky = gson.fromJson(request.getParameter(&quot;picky&quot;), Picky.class);
+
+picky.setUser(user);
+boolean result = pickyService.save(picky);
+
+ServletUtils.addJSONSettings(response);
+if (result) {
+

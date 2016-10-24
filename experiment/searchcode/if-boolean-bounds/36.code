@@ -1,0 +1,12 @@
+points = new Point[]{p1,p2,p3};
+this.bounds = bounds;
+}
+public Triangle(Rect bounds, int dir){
+this.bounds = bounds;
+if (dir == 8){
+p2 = new Point(bounds.left,bounds.bottom);
+p3 = new Point(bounds.right,bounds.bottom);
+}
+if (dir == 4){
+p1 = new Point(bounds.left,bounds.top+bounds.height()/2);
+

@@ -1,0 +1,9 @@
+double centerX = circle.getLayoutX();
+double centerY = circle.getLayoutY();
+
+double nextX = centerX - 2 * mouseX;
+double nextY = centerY + 2 * mouseY;
+
+if (nextX <= Main.SCENE_X &amp;&amp; nextX >= 0) {
+circle.setLayoutX(centerX - 0.5*mouseX);
+

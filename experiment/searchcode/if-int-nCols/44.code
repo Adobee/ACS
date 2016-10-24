@@ -1,0 +1,7 @@
+public Matrix (String name, int nRows, int nCols) throws java.lang.InstantiationException {
+this (nRows, nCols);
+protected void allocValues (int nRows, int nCols) throws java.lang.InstantiationException {
+int size = nRows * nCols;
+if (size < 1) {
+throw new java.lang.InstantiationException (&quot;Both matrix dimensions must be strictly positive&quot;);
+

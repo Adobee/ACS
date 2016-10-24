@@ -1,0 +1,6 @@
+private void _render(double[] s, Material mat, int[][][] pix, double[][] zbuf){
+int thresh = 30, skip = 6;
+for (int i = 0 ; i < W; i+=skip)
+doRaytrace(s, mat, pix, zbuf, i, j);
+if(i >= skip &amp;&amp; colorDiff(pix[j][i], pix[j][i-skip]) > thresh){
+

@@ -1,0 +1,8 @@
+import checker.framework.change.propagator.ComparableMarker;
+import checker.framework.change.propagator.MarkerLocation;
+
+import com.google.common.base.Optional;
+Optional<MarkerLocation> optionalMarkerLocation = marker
+.createMarkerLocation();
+if (optionalMarkerLocation.isPresent()) {
+

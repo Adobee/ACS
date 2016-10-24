@@ -1,0 +1,8 @@
+private static final Logger LOG = LoggerFactory.getLogger(DangerMetric.class);
+
+public static double getBestCombatValue(GameState state){
+for (Fleet fleet : HubrisUtil.getEnemyFleets(state, state.getPlayerId())) {
+Integer ships = fleet.getShips();
+if(ships != null){
+double value = getValue(location, fleet.getCoords(), ships);
+

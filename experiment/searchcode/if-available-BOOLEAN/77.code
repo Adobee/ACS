@@ -1,0 +1,12 @@
+public static boolean isAvailable(Object object) {
+if (object instanceof Available) {
+return ((Available) object).isAvailable();
+return object != null;
+}
+
+/**
+* 如果不可用，则抛出异常
+*/
+public static void mustAvailable(Object object) {
+if (!isAvailable(object)) {
+

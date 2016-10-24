@@ -1,0 +1,13 @@
+private static volatile boolean writeDebugLogs = false;
+private static volatile boolean writeLogs = true;
+
+private L() {
+}
+
+/**
+* Enables logger (if {@link #disableLogging()} was called before)
+* ImageLoader logging completely (even error logs)<br />
+* Debug logs are disabled by default.
+*/
+public static void writeDebugLogs(boolean writeDebugLogs) {
+

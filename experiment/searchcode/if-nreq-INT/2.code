@@ -1,0 +1,15 @@
+private ExponentialPrng treqPrng;
+private int nreq;
+private Server server;
+
+private ListSeries respTimeSeries;
+private int n;
+(Simulation sim,
+double treq,
+int nreq,
+Random prng,
+Server server)
+{
+this.sim = sim;
+this.treqPrng = new ExponentialPrng (prng, 1.0/treq);
+

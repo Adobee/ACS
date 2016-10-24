@@ -1,0 +1,12 @@
+package org.peg4d;
+
+public class CharacterReader {
+String text;
+int pos;
+public CharacterReader(String text) {
+return (pos < this.text.length());
+}
+
+public final char readChar() {
+if(this.pos < this.text.length()) {
+

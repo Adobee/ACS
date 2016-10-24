@@ -1,0 +1,14 @@
+this.scardAreaInfos = new ArrayList<SCardAreaInfo>();
+
+}
+
+@Override
+public boolean doHandler()
+{
+if (senderOperation instanceof SoSetConnectionToReceicerCard)
+this.portIndex = (byte) ((connectionParam.getSender() << 4) + connectionParam
+.getPort());
+return saveToReceiverCard();
+}
+else if (senderOperation instanceof SoSetConnectionToSenderCard)
+

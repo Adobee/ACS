@@ -1,0 +1,9 @@
+for (int i = 0; i < p1.length; i++)
+{
+double diff = (p1[i] - p2[i]);
+if (!Double.isNaN(diff))
+for (int i = 0; i < point.length; i++)
+{
+double diff = 0;
+if (point[i] > max[i])
+

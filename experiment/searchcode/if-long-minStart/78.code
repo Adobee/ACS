@@ -1,0 +1,11 @@
+private Configuration conf;
+private FileSystem fs;
+private long minStart=0;
+private long maxEnd=0;
+public boolean read(final IMessage msg)
+{
+while (true) {
+try {
+if (minStart >= maxEnd) {
+return false;
+

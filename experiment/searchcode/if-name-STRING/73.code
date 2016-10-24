@@ -1,0 +1,11 @@
+public static String getFirstUpperName(String name) {
+if (StringUtils.isBlank(name)) {
+return null;
+}
+String firstChar = StringUtils.substring(name, 0, 1).toUpperCase();
+public static String getFirstLowerName(String name) {
+if (StringUtils.isBlank(name)) {
+return null;
+}
+String firstChar = StringUtils.substring(name, 0, 1).toLowerCase();
+

@@ -1,0 +1,8 @@
+public class KeyFactory {
+
+public static SnsKey getSnsKey(String keyType){
+if (keyType.equals(ContactKey.TYPE)) {
+return new ContactKey();
+} else if (keyType.equals(DeviceKey.TYPE)) {
+return new DeviceKey();
+

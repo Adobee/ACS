@@ -1,0 +1,9 @@
+private Stack<Activity> activityStack;
+private static ScreenManager instance;
+
+private ScreenManager() {
+if (activityStack == null) {
+Activity activity = activityStack.lastElement();
+if (activity != null) {
+activity.finish();
+

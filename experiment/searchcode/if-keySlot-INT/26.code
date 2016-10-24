@@ -1,0 +1,9 @@
+break;
+}
+int pkPosition = keySlot.getPKPosition();
+if (pkPosition < 0) { // break for non PK columns
+boolean filled = false;
+for (KeySlot slot : slotArray) {
+if (slot != null) {
+int position = slot.getPKPosition();
+

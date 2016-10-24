@@ -1,0 +1,8 @@
+int alp = 0;
+int ohr = 0;
+for (char c : str.toCharArray()) {
+if (Character.isAlphabetic(c))
+alp++;
+else if (Character.isDigit(c))
+num++;
+

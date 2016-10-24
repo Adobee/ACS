@@ -1,0 +1,9 @@
+@GET(&quot;/{posts_url}&quot;)
+TestpressApiResponse<Post> getPosts(
+@EncodedPath(&quot;posts_url&quot;) String postUrl,
+@Header(&quot;Authorization&quot;) String authorization,
+@Header(&quot;If-Modified-Since&quot;) String latestModifiedDate
+);
+
+@GET(&quot;/&quot; + Constants.Http.URL_POSTS_FRAG + &quot;{post_url}&quot;)
+

@@ -1,0 +1,12 @@
+public void setAmount(int amount) {
+this.amount = amount;
+}
+
+public int add(int amount) {
+if (!getItem().isStackable())
+public int remove(int amount) {
+if (this.amount > amount) {
+this.amount -= amount;
+return 0;
+} else {
+

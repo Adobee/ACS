@@ -1,0 +1,9 @@
+doc.add(new Field(&quot;id&quot;, idBase + i, StringField.TYPE_STORED));
+w.addDocument(doc);
+
+if (i % 7 == 0) {
+if (withDeletions &amp;&amp; random.nextBoolean()) {
+// TODO test multi seg with deletions
+if (withDeletions || random.nextBoolean()) {
+w.forceMerge(1, true);
+

@@ -1,0 +1,7 @@
+boolean[] found = new boolean[1001];
+
+for (int i = 4; i <= n; i++) {
+for (int d = 2; d < i; d++) {
+if (i % d == 0 &amp;&amp; !found[i - d]) {
+found[i] = true;
+

@@ -1,0 +1,6 @@
+for(Map.Entry<Double,Double> entry : a.distribution.entrySet()){
+bValue = b.distribution.get(entry.getKey());
+if(bValue == null){
+//check it, theoretically
+ret += entry.getValue() * Math.log(entry.getValue());
+

@@ -1,0 +1,13 @@
+setCommandName(CommandName.UNDO);
+}
+
+@Override
+public boolean execute() {
+if (!super.execute()) {
+return false;
+}
+
+boolean isSuccessful = storage.undo();
+
+if (!isSuccessful) {
+

@@ -1,0 +1,10 @@
+removeRelevantChunksFromUnloadQueue(sc, w);
+}
+}
+}
+
+// See if any z-index location intersects with any GameObject&#39;s current field of view, if so remove from unload queue
+void removeRelevantChunksFromUnloadQueue(ScopeConfiguration sc, World world) {
+Vector2d v2d;
+Collection<GameObject> activeGameObjects = world.activeObjects.values();
+

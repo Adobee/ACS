@@ -1,0 +1,12 @@
+_bounds = bounds;
+updateBounds();
+}
+
+@Override public void add () {
+if (!view.IsDescendantOfView(root())) {
+* Updates the bounds to match the currently requested bounds, giving subclasses an
+* opportunity to adjust.
+*/
+protected void updateBounds () {
+if (_bounds == null) return;
+

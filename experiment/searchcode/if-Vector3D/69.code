@@ -1,0 +1,13 @@
+package uk.ac.derby.GameEngine2D;
+
+public class Vector3D {
+private float x;
+private float y;
+private float z;
+
+public Vector3D() {
+reset();
+}
+
+public Vector3D(float xi, float yi, float zi) {
+

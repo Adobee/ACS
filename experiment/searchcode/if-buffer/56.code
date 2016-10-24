@@ -1,0 +1,14 @@
+public class VBOUtils {
+
+public static int createBuffer() {
+if (supportsBuffers())
+{
+IntBuffer buffer = BufferUtils.createIntBuffer(1);
+return buffer.get(0);
+}
+return 0;
+}
+
+public static void storeVertexData(int bufferIndex, DoubleBuffer geometryData) {
+if (supportsBuffers())
+

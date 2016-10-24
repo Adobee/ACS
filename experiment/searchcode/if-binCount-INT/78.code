@@ -1,0 +1,8 @@
+public class EqualDataFractionGrouping extends AbstractValueGrouping {
+
+private int binCount;
+private final GroupingType type = GroupingType.EQUAL_DATA_FRACTION;
+public void setBinCount(int binCount) {
+if (binCount != this.binCount) {
+if (binCount < distinctValueCount) {
+

@@ -1,0 +1,6 @@
+try {
+stmt = con.prepareStatement(&quot;INSERT INTO rh VALUES(?,?);&quot;);
+stmt.setInt(1, inRh.getIdRh());
+stmt.setString(2, inRh.getDescripcionRh());
+int resultado = stmt.executeUpdate();
+

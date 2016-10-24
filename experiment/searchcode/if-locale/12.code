@@ -1,0 +1,9 @@
+public static void setLocale(Locale newLocale)
+{
+if (locale == null) locale = new ThreadLocal();
+locale.set(newLocale);
+}
+
+public static void setCustomLocale(Locale newLocale) {
+if (customLocale == null) customLocale = new ThreadLocal();
+

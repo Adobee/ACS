@@ -1,0 +1,16 @@
+package com.io;
+
+import java.io.IOException;
+import java.io.PipedReader;
+
+public class pReader extends Thread {
+this.reader = reader;
+}
+
+public void run() {
+try {
+while (true) {
+sleep(1000);
+if (reader.ready())
+System.out.print((char) reader.read());
+

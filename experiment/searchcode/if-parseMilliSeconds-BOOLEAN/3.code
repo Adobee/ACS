@@ -1,0 +1,11 @@
+public TimeInterval(String input) {
+this(parseMilliseconds(input));
+}
+
+public TimeInterval(long milliseconds) {
+long remainder = milliseconds;
+
+for (String key : UNIT_KEYS) {
+if (remainder == 0)
+break;
+

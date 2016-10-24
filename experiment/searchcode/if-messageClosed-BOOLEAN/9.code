@@ -1,0 +1,10 @@
+private final byte[] maskBuffer = new byte[2048];
+private final byte[] maskKey = new byte[4];
+private boolean messageClosed;
+private int opcode;
+this.opcode = (k &amp; 0xF);
+boolean bool;
+if ((k &amp; 0x80) != 0) {
+bool = true;
+} else {
+

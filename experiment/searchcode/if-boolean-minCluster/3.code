@@ -1,0 +1,7 @@
+public Collection<Cluster<X>> clusterElements(Collection<X> e, double convergenceDifference) {
+init(e);
+boolean converged=false;
+for(int i = 0; i < iterations &amp;&amp; !converged; i++) {
+double clustDist = metric.evaluate(e, clusterMeans.get(i));
+if(minCluster == -1 || clustDist < minDist) {
+

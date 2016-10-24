@@ -1,0 +1,11 @@
+package com.alg.top20.dp;
+
+public class Fibonacci {
+
+public static long getFib1(int n) {
+if(n <= 2) return 1L;
+private static long auxFib2(int n, long[] mem) {
+if(n <= 2) return 1L;
+if(mem[n] != 0) return mem[n];
+mem[n] = auxFib2(n - 1, mem) + auxFib2(n - 2, mem);
+

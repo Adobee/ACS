@@ -1,0 +1,11 @@
+l.add(new BoolCompare(true));
+
+Collections.sort(l, new Comparator<BoolCompare>() {
+
+@Override
+public int compare(BoolCompare arg0, BoolCompare arg1) {
+if (arg0.isV() &amp;&amp; arg1.isV() == false) {
+return -1;
+}
+return 0;
+

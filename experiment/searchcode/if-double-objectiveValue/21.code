@@ -1,0 +1,6 @@
+double objectiveFunctionValue = localStateManager.objectiveValue();	//Get the heuristic for this state
+if (objectiveFunctionValue >= targetOFuncValue
+new saLocalStateComparator());	//Selects the neighbor with the largest optimal function value as the best neighbor
+double q = (bestNeighbor.objectiveValue() - objectiveFunctionValue)
+/ objectiveFunctionValue;	//Simulated annealing specific variable (see project handout for details)
+

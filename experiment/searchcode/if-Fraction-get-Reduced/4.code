@@ -1,0 +1,8 @@
+return numberTarget.mixedFraction.getFractionPart();
+}
+};
+public static final F<MixedFraction, Fraction> _toFraction = new F<MixedFraction, Fraction>() {
+public MixedFraction withReducedFractionPart() {
+Fraction reduced = getFractionPart().reduce();
+return new MixedFraction( whole, reduced.numerator, reduced.denominator );
+

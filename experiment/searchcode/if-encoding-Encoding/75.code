@@ -1,0 +1,9 @@
+public static int numChannels(final String enc ) throws Exception {
+
+String encoding = enc.toLowerCase();
+// First do the common-case encodings
+if (encoding.equals(MONO8) ||
+encoding.equals(MONO16))
+return 1;
+if (encoding.equals(BGR8) ||
+

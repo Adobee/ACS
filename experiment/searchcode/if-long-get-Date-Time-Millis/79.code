@@ -1,0 +1,11 @@
+long millis = convertToMillis(duration);
+end = dayPart.add(date, millis, duration.isBusinessTime());
+} else {
+long millis = convertToMillis(duration);
+end = new Date(date.getTime()+millis);
+}
+return end;
+}
+
+public long convertToMillis(Duration duration){
+

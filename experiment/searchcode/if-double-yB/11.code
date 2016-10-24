@@ -1,0 +1,8 @@
+package applicable.omnisim;
+
+public class Trig{
+public double XA,YA,XB,YB,XL,YL;
+public double X,Y,R,C,S;
+public void SetA(final double x,final double y){  XA=x;  YA=y;}
+public void SetB(final double x,final double y){  XB=x;  YB=y;}
+

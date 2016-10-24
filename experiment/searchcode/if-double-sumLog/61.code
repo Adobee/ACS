@@ -1,0 +1,7 @@
+//devuelve la suma de dos logaritmos ec 9.54 log(A+B) , pero cuando se ingresa log(A) y log(B)
+public static double sumLog(double logA, double logB)
+//puede haber una situacion como sumLog(0,0)=log(exp(0)+exp(0))
+if(logA==0&amp;&amp;logB==0)
+{
+return log(2);
+

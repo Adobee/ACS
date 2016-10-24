@@ -1,0 +1,9 @@
+public class Comparator {
+private double m, n;
+
+public int getMax(int m, int n) {
+double d1 = (double) m;
+double d2 = (double) n;
+double dr = getMax(d1, d2);
+int result = (int) dr;
+

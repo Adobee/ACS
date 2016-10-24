@@ -1,0 +1,13 @@
+public class PositionMapper {
+CompilationUnit taggedCu;
+CompilationUnit rewrittenCu;
+
+List<Integer> originalPosition  = new ArrayList<Integer>();
+final List<ASTNode> foundNode = new ArrayList<ASTNode>(); // here we store found node
+
+rewrittenCu.accept(new ASTVisitor() {
+int steps = 0;
+boolean found = false;
+
+public void preVisit(ASTNode n) {
+

@@ -1,0 +1,11 @@
+int[] v = new int[10];
+int[] v3 = new int[10];
+int[] vxx = new int[10];
+int[] check = new int[10];
+
+fe_frombytes.fe_frombytes(h.Y,s);
+fe_sub.fe_sub(check,vxx,u);    /* vx^2-u */
+if (fe_isnonzero.fe_isnonzero(check) != 0) {
+fe_add.fe_add(check,vxx,u);  /* vx^2+u */
+if (fe_isnonzero.fe_isnonzero(check) != 0) return -1;
+

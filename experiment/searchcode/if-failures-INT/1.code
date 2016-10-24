@@ -1,0 +1,12 @@
+public class Failing {
+
+private int failures;
+
+public Failing(int failures) {
+this.failures = failures;
+}
+
+@Retry(maxRetries = 3)
+public void mayFail() throws Exception {
+if(failures > 0) {
+

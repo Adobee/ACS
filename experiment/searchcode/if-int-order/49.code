@@ -1,0 +1,12 @@
+private static void combine(int[] a,int n, int m, int[] b, int M) {
+for (int i = n; i >= m; i--) {
+b[m - 1] = i -1;
+if (m > 1) {
+combine(a, i - 1, m - 1, b, M);
+int count = 0;
+int k = m;
+boolean flg = true;
+while (order[0] == -1) {
+if (flg) {
+for (int i = 1; i <=m ; i++) {
+

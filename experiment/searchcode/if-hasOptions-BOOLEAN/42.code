@@ -1,0 +1,12 @@
+return HasOptions.Trait.options(this.options);
+}
+
+@Override
+public <O extends Option> Boolean contains(Class<O> option) {
+return HasOptions.Trait.contains(this, option);
+}
+
+@Override
+public Boolean contains(String optionRepresentation) {
+return HasOptions.Trait.contains(this, optionRepresentation);
+

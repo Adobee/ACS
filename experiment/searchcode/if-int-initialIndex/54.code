@@ -1,0 +1,9 @@
+int hash = Math.abs(key.hashCode());
+int initialIndex = hash % bucketSize;
+int place = initialIndex;
+V result = null;
+int place = find(key);
+
+if (-1 != place) {
+result = table[place].entry.value;
+

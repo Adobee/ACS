@@ -1,0 +1,7 @@
+for (LongWritable docID : values) {
+count = docCount.get(docID.get());
+if (count == null) {
+StringBuilder output = new StringBuilder();
+for (Map.Entry<Long, Integer> entry : docCount.entrySet()) {
+if (output.length() > 0) output.append(&quot;/&quot;);
+

@@ -1,0 +1,9 @@
+BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
+
+String jsonContent = null;
+HashMap<String, Integer> categoryCount = new HashMap<String, Integer>();
+String category = (String) categories.get(i);
+if(categoryCount.containsKey(category))
+{
+categoryCount.put(category, categoryCount.get(category)+1);
+

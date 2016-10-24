@@ -1,0 +1,6 @@
+public List<AbstractBlock> getBlocks(AbstractBlock parent) {
+
+List<AbstractBlock> rubyBlocks = parent.delegate().getBlocks();
+Object abstractBlock = rubyBlocks.get(i);
+if (!(abstractBlock instanceof RubyArray) &amp;&amp; !(abstractBlock instanceof AbstractNode)) {
+

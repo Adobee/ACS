@@ -1,0 +1,10 @@
+private ControlConnection conn;
+private ZigGenerator generator;
+private boolean done = false;
+
+public GeneratorThread(ControlConnection conn, ZigGenerator generator) {
+while (!done &amp;&amp; !generator.timeUp()) {
+if (!generator.advanceOneTick())
+break;
+conn.send(&quot;{\&quot;tick\&quot;:\&quot;&quot; + generator.currentTick() + &quot;\&quot;}&quot;);
+

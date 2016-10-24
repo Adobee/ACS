@@ -1,0 +1,22 @@
+public class BaseLineWriter implements LineWriter {
+
+protected LineReader reader;
+
+public BaseLineWriter() { }
+
+public BaseLineWriter(LineReader reader) {
+reader.receive(line);
+}
+
+public void setReader(LineReader reader) {
+this.reader = reader;
+}
+
+@Override
+public void done() {
+if (reader != null) {
+reader.done();
+}
+}
+}
+

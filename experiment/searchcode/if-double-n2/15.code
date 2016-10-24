@@ -1,0 +1,7 @@
+public static Number add(Number n1, Number n2) {
+if (n1 instanceof Double) {
+if (n2 instanceof Double)
+return new Double(n1.doubleValue() + n2.doubleValue());
+if (n2 instanceof Float)
+return new Double(n1.doubleValue() + n2.floatValue());
+

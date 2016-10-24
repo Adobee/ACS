@@ -1,0 +1,6 @@
+import org.elasticsearch.index.fielddata.IndexFieldData;
+import org.elasticsearch.index.fielddata.IndexGeoPointFieldData;
+public Bits docsWithValue(LeafReaderContext context) throws IOException {
+final SortedBinaryDocValues bytes = bytesValues(context);
+if (org.elasticsearch.index.fielddata.FieldData.unwrapSingleton(bytes) != null) {
+

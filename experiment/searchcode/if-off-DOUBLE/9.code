@@ -1,0 +1,13 @@
+public void fromBytes(byte[] bytes, int off)
+{
+time = getLong(bytes, off);
+open = getDouble(bytes, off + 1 * 8);
+close = getDouble(bytes, off + 2 * 8);
+high = getDouble(bytes, off + 4 * 8);
+vol = getDouble(bytes, off + 5 * 8);
+}
+
+public void toBytes(byte[] buff, int off)
+{
+if (buff.length < off + BYTES_COUNT)
+

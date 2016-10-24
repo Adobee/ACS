@@ -1,0 +1,11 @@
+import org.springframework.util.StringUtils;
+
+public enum SupportedProtocol {
+HTTP(&quot;http&quot;),
+HTTPS(&quot;https&quot;);
+
+private String protocol;
+boolean supported = false;
+for (SupportedProtocol validProtocol : SupportedProtocol.values()) {
+if (StringUtils.startsWithIgnoreCase(prtcl, validProtocol.getProtocol())) {
+

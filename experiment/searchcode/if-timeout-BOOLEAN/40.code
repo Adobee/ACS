@@ -1,0 +1,8 @@
+import com.android.systemui.qs.QSTile;
+
+public class TimeoutTile extends QSTile<QSTile.BooleanState> {
+public static final int MINIMUM_TIMEOUT = 15000;
+protected void handleUpdateState(BooleanState state, Object arg) {
+updateTimeoutState();
+state.label = mContext.getString(R.string.timeout);
+

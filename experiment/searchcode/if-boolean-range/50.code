@@ -1,0 +1,8 @@
+* Mapper implementation for border modes.
+* @author Dmitriy Tseyler
+*/
+public class BorderModesMapper extends RangeMapper<Boolean> {
+@Override
+Boolean concatenate(SplittedRange splittedRange, CellRange range) {
+Boolean need = get(splittedRange.getSplitter());
+

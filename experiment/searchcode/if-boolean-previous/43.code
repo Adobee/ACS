@@ -1,0 +1,12 @@
+private Linkable previous, next;
+boolean deleted;
+
+protected AbstractLinkable(Linkable previous) {
+this.previous = previous;
+this.next.setPrevious(this);
+}
+
+abstract public boolean isSignificant();
+
+public void setNext(Linkable node) {
+

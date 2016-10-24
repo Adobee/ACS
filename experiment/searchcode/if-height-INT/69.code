@@ -1,0 +1,10 @@
+public int trap(int[] height) {
+if(height==null||height.length==0) return 0;
+int sum=0;
+maxIndex=i;
+}
+}
+int prev=0;
+for(int i=0;i<maxIndex;i++){
+if(height[i]>prev){
+

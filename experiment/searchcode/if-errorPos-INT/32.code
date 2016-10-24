@@ -1,0 +1,11 @@
+System.out.print(syndrome[i] + &quot; &quot;);
+}
+System.out.println();
+
+//Find position of the error
+int errorPos = findError(parChkMatrix, syndrome);
+//Flip the bit at the errorposition
+int [] decoded = correctError(rcvVector, errorPos);
+
+System.out.println(&quot;Flipped bit from &quot; + ((decoded[errorPos]+1) % 2) + &quot; to &quot; + decoded[errorPos]);
+

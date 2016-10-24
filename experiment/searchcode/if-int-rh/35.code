@@ -1,0 +1,9 @@
+return getHeight(root)>=0;
+}
+public int getHeight(Node root){
+if(root==null)
+return 0;
+int lh = getHeight(root.left), rh = getHeight(root.right);
+if(lh>=0 &amp;&amp; rh>=0 &amp;&amp; Math.abs(lh-rh)<=1)
+return Math.max(lh,rh)+1;
+

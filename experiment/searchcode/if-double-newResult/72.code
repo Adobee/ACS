@@ -1,0 +1,12 @@
+for( int res: newResult) {
+if( res == prev) {
+bIsUnique = false;
+//System.out.println(&quot;redundant number=&quot;+res);
+newResult.addAll(result);
+resultsS.add(newResult);
+}
+}
+}
+
+//double character case
+

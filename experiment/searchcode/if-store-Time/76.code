@@ -1,0 +1,5 @@
+Store storeInDB = genericDao.findById(Store.class, storeId);
+if (!storeInDB.getStorekeeper().getId().equals(storekeeper.getId())) {
+StorePartition storePartitionInDB = genericDao.findById(StorePartition.class, storePartition.getId());
+if (!storePartitionInDB.getStore().getStorekeeper().getId().equals(storekeeper.getId())) {
+

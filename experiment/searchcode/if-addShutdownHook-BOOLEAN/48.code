@@ -1,0 +1,11 @@
+private static final Logger log = Logger.getLogger(Util.class.getName());
+
+static boolean registered = false;
+
+static void registerDerbyShutdownHook() {
+if (registered) {
+return;
+}
+
+Runtime.getRuntime().addShutdownHook(new Thread() {
+

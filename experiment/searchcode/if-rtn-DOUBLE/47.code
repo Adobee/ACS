@@ -1,0 +1,8 @@
+if(a.sequence[i].charAt(column) != &#39;-&#39; &amp;&amp; a.sequence[j].charAt(column) != &#39;-&#39; &amp;&amp; a.sequence[k].charAt(column) != &#39;-&#39;) {
+if(i!=k &amp;&amp; j!=k){
+rtn += scoreTripleNeighborhood(a,i,j,k,column);
+if(a.sequence[i].charAt(column) == &#39;-&#39; || a.sequence[j].charAt(column) == &#39;-&#39; || a.sequence[k].charAt(column) == &#39;-&#39;) return 0;
+if(i==k || j==k) return 0;
+float rtn[] = new float[2];
+double weight[] = {0.07,0.24,0.38,0.24,0.07};
+

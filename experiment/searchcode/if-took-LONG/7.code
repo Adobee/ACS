@@ -1,0 +1,13 @@
+import net.jcip.annotations.ThreadSafe;
+
+@ThreadSafe
+@Immutable
+public class Food {
+private final long timeItTookToFindFood;
+
+public Food(long time) {
+this.timeItTookToFindFood = time;
+}
+
+public long getTimeItTookToFindFood() {
+

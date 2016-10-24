@@ -1,0 +1,6 @@
+if ( rhs instanceof Long ) {
+return lhs - (Long) rhs;
+} else if ( rhs instanceof Double ) {
+return lhs - ((Double) rhs).longValue();
+} else if ( rhs instanceof String ) {
+

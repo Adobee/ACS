@@ -1,0 +1,11 @@
+private static final long serialVersionUID = 1639125724581013760L;
+
+public Rabbit(Color c) {
+super(c);
+}
+
+@Override
+public Set<Position> getValidMoves(Board board) {
+Set<Position> result = new HashSet<Position>();
+if (isDead()) {
+

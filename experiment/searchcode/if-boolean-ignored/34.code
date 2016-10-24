@@ -1,0 +1,14 @@
+if (match(h, caseIgnoredKey))
+r.add(h.value);
+return r;
+}
+
+public static boolean has(List<Header> headers, String caseIgnoredKey) {
+for (Header h : headers)
+if (match(h, caseIgnoredKey))
+return h.value;
+return def;
+}
+
+private static boolean match(Header h, String caseIgnoredKey) {
+

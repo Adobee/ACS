@@ -1,0 +1,14 @@
+drawList.add(command);
+}
+
+public void undo() {
+if (drawList.size() > 0) {
+DrawPath undo = drawList.get(drawList.size() - 1);
+drawList.add(redoCommand);
+}
+}
+
+public void execute(Canvas canvas) {
+if (drawList != null) {
+for (DrawPath tmp : drawList) {
+

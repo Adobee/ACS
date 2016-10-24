@@ -1,0 +1,9 @@
+public void solveNQueens(int total, int row, int[] cols){
+if (total == row){
+count++;
+return;
+}
+for (int col = 0 ; col < total; col ++){
+if (isValid(cols, row, col)){
+cols[row] = col;
+

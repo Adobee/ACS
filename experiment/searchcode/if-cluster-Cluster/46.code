@@ -1,0 +1,7 @@
+double minDistance = Double.MAX_VALUE;
+for(Cluster cluster : clusters) {
+if(cluster.equals(targetCluster)) { continue; }
+double distance = distanceFunction.distance(cluster.getItem(), targetCluster.getItem());
+if(distance < minDistance) {
+minDistance = distance;
+

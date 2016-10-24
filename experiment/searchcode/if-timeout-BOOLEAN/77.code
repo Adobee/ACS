@@ -1,0 +1,12 @@
+public TimeoutTrigger(@Attribute(name=&quot;Seconds&quot;) float timeoutSeconds) {
+super();
+mTimeoutSeconds = timeoutSeconds;
+}
+
+@Override
+public boolean verifyCondition(float dt, boolean firstVerification) {
+mTime += dt;
+
+if (firstVerification)
+return true;
+

@@ -1,0 +1,6 @@
+StringDomainSetting domainSetting = DomainSettingCache.getInstance().getStringDomainSetting(settingName, domainName);
+if (domainSetting != null) log.info(&quot;getDomainSettingFromCache: domainSetting=&quot;+domainSetting);
+public StringDomainSetting getDomainSettingFromDAO(String settingName, String domainName) {
+StringDomainSetting domainSetting = domainSettingDAO.findStringDomainSetting(settingName, domainName);
+if (domainSetting != null)  log.info(&quot;getDomainSettingFromDAO: domainSetting=&quot;+domainSetting);
+

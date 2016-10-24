@@ -1,0 +1,11 @@
+public final String folder;
+public final String name;
+public final long sizeInBytes;
+
+public ScannedFile(final File file) {
+this.sizeInBytes = file.length();
+}
+
+public long getSizeInMegaBytes() {
+return (long) ((double) sizeInBytes / 1024d / 1024d);
+

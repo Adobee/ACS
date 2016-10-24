@@ -1,0 +1,7 @@
+private final boolean useHTTPS;
+private final String bootDelay;
+
+@DataBoundConstructor
+public WindowsData(String password, boolean useHTTPS, String bootDelay) {
+this.password = Secret.fromString(password);
+

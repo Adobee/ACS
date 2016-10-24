@@ -1,0 +1,11 @@
+sundayCalendar = Calendar.getInstance();
+
+int dayOfWeek = sundayCalendar.get(Calendar.DAY_OF_WEEK);
+
+if (dayOfWeek != Calendar.SUNDAY) {
+int daysToAdd = 8 - dayOfWeek;
+rollDays(daysToAdd);
+}
+
+private void rollDays(int daysToRoll) {
+

@@ -1,0 +1,12 @@
+char compareChar = &#39; &#39;;
+for (int i = 1; i < string.length(); i++) {
+compareChar = string.charAt(i);
+
+if (lastChar == compareChar) {
+sum++;
+}
+
+else {
+//lastChar != compareChar
+if (frequency[1] == 0) {
+

@@ -1,0 +1,8 @@
+pickerId = args.getInt(ARG_PICKER_ID);
+setSelectedInstant((DateInstantT) args.getParcelable(ARG_SELECTED_INSTANT));
+
+if (selectedInstant == null) {
+@SuppressWarnings(&quot;unchecked&quot;)
+protected void notifyInstantSelected() {
+if (getActivity() instanceof InstantPickerListener) {
+

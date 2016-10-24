@@ -1,0 +1,12 @@
+public class TypeValidator implements Validator {
+
+private Class<?> clazz;
+private boolean strict;
+
+public TypeValidator(Class<?> clazz) {
+this(clazz, true);
+}
+
+public TypeValidator(Class<?> clazz, boolean strict) {
+this.clazz = Objects.requireNonNull(clazz);
+

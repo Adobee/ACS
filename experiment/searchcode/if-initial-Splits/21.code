@@ -1,0 +1,10 @@
+String from = args[0];
+String to = args[1];
+if (args[2].equals(&quot;struct&quot;))
+convertGraphStructFile(from, to);
+while ((line = reader.readLine()) != null) {
+if (line.length() < 2 || line.startsWith(&quot;#&quot;))
+continue;
+
+String[] splits = line.split(&quot;\\s&quot;);
+

@@ -1,0 +1,10 @@
+package com.nio.filecopy.filter;
+
+import com.nio.filecopy.bean.filter.Filter;
+import com.nio.filecopy.database.mysql.FilterDatabase;
+private static FilterManager manager;
+
+public static FilterManager getInstance() {
+if (manager == null) {
+manager = new FilterManager();
+

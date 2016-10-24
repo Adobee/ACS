@@ -1,0 +1,7 @@
+public class Solution {
+public int removeDuplicates(int[] A) {
+if ((A == null) || (A.length == 0)) {
+return 0;
+} else if (A.length == 1) {
+return 1;
+

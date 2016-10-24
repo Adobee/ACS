@@ -1,0 +1,7 @@
+String packageName = &quot;&quot;;
+if (intent.getData() != null) {
+packageName = intent.getData().getSchemeSpecificPart();
+Boolean dataRemoved = intent.getExtras().getBoolean(Intent.EXTRA_DATA_REMOVED);
+String strEnableSetting = &quot;&quot;;
+if (action.equals(Intent.ACTION_PACKAGE_CHANGED)) {
+

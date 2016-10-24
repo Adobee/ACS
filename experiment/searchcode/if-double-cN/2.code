@@ -1,0 +1,9 @@
+package cn.asmm.imagezoom.easing;
+
+public class Back implements Easing {
+
+@Override
+public double easeOut( double time, double start, double end, double duration ) {
+public double easeOut( double t, double b, double c, double d, double s ) {
+if ( s == 0 ) s = 1.70158;
+

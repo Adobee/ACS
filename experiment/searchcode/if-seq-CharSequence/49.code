@@ -1,0 +1,6 @@
+public static Formatter append(CharSequence seq, Formatter formatter, int flags, int width, int precision) {
+return append(seq, formatter, flags, width, precision, &#39; &#39;, null);
+StringBuilder buf = new StringBuilder(seq);
+if (precision >= 0 &amp;&amp; precision < seq.length()) {
+CharSequence _ellipsis = (CharSequence) ObjectUtils.defaultIfNull(ellipsis, StringUtils.EMPTY);
+

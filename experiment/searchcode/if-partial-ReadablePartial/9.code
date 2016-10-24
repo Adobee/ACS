@@ -1,0 +1,8 @@
+import org.joda.time.DateTimeUtils;
+import org.joda.time.DateTimeZone;
+import org.joda.time.ReadablePartial;
+
+class ReadablePartialConverter extends AbstractConverter implements PartialConverter {
+if (chronology == null) {
+return DateTimeUtils.getChronology(((ReadablePartial) obj).getChronology());
+

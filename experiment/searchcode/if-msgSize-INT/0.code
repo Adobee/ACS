@@ -1,0 +1,12 @@
+protected int groupId;
+protected int msgSize;
+
+public MulticastEvent(NodeId sender, int groupId, int msgSize)
+this.msgSize = msgSize;
+}
+
+@Override
+public void deliver(Node node)
+{
+if (node instanceof RouterNode) {
+

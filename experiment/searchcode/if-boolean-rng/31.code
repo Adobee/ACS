@@ -1,0 +1,7 @@
+public ValidationResult canAddRngDevice(Cluster cluster, VmRngDevice rngDevice) {
+VmRngDevice.Source source = rngDevice.getSource();
+boolean supported = cluster != null &amp;&amp;
+cluster.getRequiredRngSources().contains(source);
+
+if (!supported) {
+

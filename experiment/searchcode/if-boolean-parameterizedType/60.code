@@ -1,0 +1,7 @@
+private static ParameterizedType getType(Field field) {
+Type type = field.getGenericType();
+if (type instanceof ParameterizedType) {
+public static Class getParameterDependent(Method method, int index) {
+ParameterizedType type = Reflector.getParameterType(method, index);
+if (type != null) {
+

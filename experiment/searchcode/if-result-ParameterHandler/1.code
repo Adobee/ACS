@@ -1,0 +1,9 @@
+Object value = m.invoke(object, new Object[0]);
+if (value instanceof Date) {
+result.put(pds[i].getName(), DateUtil.getDate((Date) value));
+} else {
+result.put(pds[i].getName(), value);
+}
+
+if (!ObjectUtil.IsStringNullOrEmpty(value)) {//只有值不为空时才反填参数名称,加快系统响应时间
+

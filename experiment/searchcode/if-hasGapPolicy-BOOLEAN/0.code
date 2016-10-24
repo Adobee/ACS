@@ -1,0 +1,7 @@
+protected void doWriteTo(StreamOutput out) throws IOException {
+out.writeOptionalString(format);
+boolean hasGapPolicy = gapPolicy != null;
+out.writeBoolean(hasGapPolicy);
+if (hasGapPolicy) {
+gapPolicy.writeTo(out);
+

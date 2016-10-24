@@ -1,0 +1,11 @@
+private Map<Integer, Long> termFrequency;
+private Map<Integer, Long> numberOfTokens;
+
+public InvertedIndex() {
+String line = null;
+int docId = 0;
+long counter = 0;
+
+while ((line = br.readLine()) != null) {
+if (line.matches(hashPattern)) {
+

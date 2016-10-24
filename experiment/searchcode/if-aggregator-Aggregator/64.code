@@ -1,0 +1,9 @@
+super(olap4jSchema, measure);
+}
+
+public Aggregator getAggregator() {
+if (!(member instanceof RolapStoredMeasure)) {
+final RolapAggregator aggregator =
+((RolapStoredMeasure) member).getAggregator();
+if (aggregator == RolapAggregator.Avg) {
+

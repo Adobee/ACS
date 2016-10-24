@@ -1,0 +1,15 @@
+public char getNext() throws EndOfInputException {
+if(canMove()) throw new EndOfInputException();
+return input.charAt(i + 1);
+return canMove();
+}
+
+public boolean canMove() {
+return !isLast();
+}
+
+private boolean isLast() {
+return i == input.length();
+}
+}
+

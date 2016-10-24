@@ -1,0 +1,9 @@
+private double[] x;
+private double[] fx;
+
+public FunctionFinder(double[] x, double[] fx, int n, double maximumChange, double maxw, double maxp) {
+this.maximumChange = maximumChange;
+}
+
+public FunctionFinder(double[] x, double[] fx, int n, double maxw, double maxp) {
+

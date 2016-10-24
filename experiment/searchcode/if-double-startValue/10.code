@@ -1,0 +1,5 @@
+public TriangleLFO(double startValue, double endValue, double periodMs) {
+this(new FixedParameter(startValue), new FixedParameter(endValue),
+public TriangleLFO(LXParameter startValue, double endValue, double periodMs) {
+this(startValue, new FixedParameter(endValue), new FixedParameter(periodMs));
+

@@ -1,0 +1,8 @@
+calculateRedrawCells(firstRow, firstColumn);
+}
+
+public objPaintInstruction(int startRow, int startColumn, int numCells) {
+
+this.startRow = startRow;
+this.startColumn = startColumn;
+

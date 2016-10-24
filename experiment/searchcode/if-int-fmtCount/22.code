@@ -1,0 +1,8 @@
+char[] c = pattern.toCharArray();
+int fmtCount = 0;
+while (pos.getIndex() < pattern.length()) {
+case START_FE:
+fmtCount++;
+seekNonWs(pattern, pos);
+int start = pos.getIndex();
+

@@ -1,0 +1,9 @@
+private static final HashMap<Class<?>, Class<?>> UNBOX_TYPES = new HashMap<>(9);
+
+static {
+loadType(boolean.class, Boolean.class);
+* @return the wrapper type
+*/
+public static Class<?> autoboxType(Class<?> primitiveType) {
+if (!primitiveType.isPrimitive()) {
+

@@ -1,0 +1,13 @@
+this.x = x;
+this.y = y;
+}
+public int hashCode() {
+int hashcode = 0;
+hashcode += 31 *(x + y);
+return hashcode;
+}
+
+public boolean equals(Object obj) {
+if (obj instanceof Point) {
+Point p = (Point) obj;
+

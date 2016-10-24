@@ -1,0 +1,12 @@
+package util;
+
+public class Sanitizer {
+
+public static boolean isCleanInput(String input){
+if(input.contains(&quot;;&quot;) || input.contains(&quot;null&quot;) || input.equals(&quot;&quot;) || input.contains(&quot;&#39;&quot;))
+return false;
+else
+return true;
+}
+}
+

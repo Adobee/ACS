@@ -1,0 +1,7 @@
+public static ReasonTypeController getInstance(){
+if (instance == null){
+instance = new ReasonTypeController();
+public boolean createReasonType(String name, String note){
+reasonType = ReasonType.findByName(name);
+if (reasonType == null){
+

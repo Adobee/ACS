@@ -1,0 +1,12 @@
+for (int k=0; k<dim; k++)
+{
+diag[k] = km.getEntry(k, k);
+}
+RealMatrix d = MatrixUtils.createColumnRealMatrix (diag);
+return (km1.transpose().multiply(km2)).getTrace();
+}
+
+public static boolean checkIsPSD (RealMatrix km)
+{
+EigenDecomposition ed = new EigenDecomposition (km);
+

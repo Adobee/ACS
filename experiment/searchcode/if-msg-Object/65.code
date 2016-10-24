@@ -1,0 +1,19 @@
+import c2d.lang.obj.C2D_Object;
+/**
+* 消息队列
+* @author AndrewFan
+*
+*/
+public class C2D_MsgQueue extends C2D_Object
+{
+private C2D_SortableArray m_msgQ = new C2D_SortableArray();
+*            消息
+*/
+public void receiveMsg(C2D_Msg msg)
+{
+if (msg == null)
+{
+return;
+}
+m_msgQ.addElement(msg);
+

@@ -1,0 +1,15 @@
+public abstract class Query {
+
+private String query = &quot;&quot;;
+
+public final void createQuery() {
+
+//
+if (queryNeedsSelect()) {
+query += addSelect();
+}
+if (queryNeedsInsert()) {
+query += addInsert();
+}
+if (queryNeedsUpdate()) {
+

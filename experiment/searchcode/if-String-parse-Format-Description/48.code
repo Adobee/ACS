@@ -1,0 +1,7 @@
+public Command(CommandFormat commandFormat) {
+this.commandFormat = commandFormat;
+}
+
+public boolean tryExecute(Printer printer, String unparsed) {
+Collection<Object> arguments = commandFormat.tryParseArguments(unparsed);
+

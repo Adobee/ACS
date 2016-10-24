@@ -1,0 +1,10 @@
+public class FadingWigglingMessage implements Anim {
+
+final private int stopAt;
+private int numtimes;
+final private String message;
+public FadingWigglingMessage(int showPauseTime, String message, int msecs, double wiggle) {
+this.stopAt = msecs / showPauseTime;
+this.numtimes = 0;
+this.message = message;
+

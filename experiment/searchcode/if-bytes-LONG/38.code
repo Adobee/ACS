@@ -1,0 +1,10 @@
+private static void checkLength(byte[] bytes, int length, int offset) {
+
+if (bytes == null) {
+throw new IllegalArgumentException(&quot;null&quot;);
+throw new IllegalArgumentException(&quot;invalidate offset &quot; + offset);
+}
+
+if (bytes.length - offset < length) {
+throw new IllegalArgumentException(&quot;invalidate length &quot; + bytes.length);
+

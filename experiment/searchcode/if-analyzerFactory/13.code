@@ -1,0 +1,12 @@
+AnalyzerFactory f = Utils.newInstance(AnalyzerFactory.class, CONF_PREFIX + name);
+if (f == null) {
+// try to load by name without prefix directly
+String clsName = conf.get(key);
+AnalyzerFactory f = createFactoryByName(clsName);
+if (f != null) {
+return f;
+}
+return new DefaultAnalyzerFactory();
+}
+}
+

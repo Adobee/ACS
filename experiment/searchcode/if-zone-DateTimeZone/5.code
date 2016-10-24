@@ -1,0 +1,14 @@
+import org.joda.time.DateTimeZone;
+
+/**
+* Created by mavarazy on 5/12/15.
+*/
+public class DateTimeZoneBSONTransformer implements Transformer{
+if (o instanceof DateTimeZone)
+return ((DateTimeZone) o).getID();
+else
+return DateTimeZone.forID(o.toString());
+}
+
+}
+

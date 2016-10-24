@@ -1,0 +1,11 @@
+
+package com.esotericsoftware.controller.util;
+
+public class Loader {
+public volatile boolean cancelled;
+public void throwCancelled () {
+if (cancelled) throw new CancelledException();
+}
+
+public void setPercentageComplete (float percent) {
+

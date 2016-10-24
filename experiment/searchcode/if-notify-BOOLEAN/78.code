@@ -1,0 +1,9 @@
+import android.os.Handler;
+
+public class TimeoutHandlerNotifyThread extends Thread
+{
+private final AtomicBoolean activeLoopFlag;
+public TimeoutHandlerNotifyThread(AtomicBoolean activeLoopFlag, Handler timeoutNotify) {
+this.activeLoopFlag = activeLoopFlag;
+this.timeoutNotify = timeoutNotify;
+

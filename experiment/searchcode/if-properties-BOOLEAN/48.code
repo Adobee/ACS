@@ -1,0 +1,12 @@
+public static String LANGUAGE;
+
+static
+{
+try
+{
+if (!propertiesFile.exists())
+generateDefaults();
+properties.load(propertiesFile.reader());
+
+DEBUG_MODE = Boolean.parseBoolean(properties.getProperty(&quot;DebugMode&quot;));
+

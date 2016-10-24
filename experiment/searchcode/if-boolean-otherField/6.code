@@ -1,0 +1,8 @@
+public int getInteger(String field, String otherField, String value, int def) throws SQLException {
+Object v = get(field, otherField, value);
+if (v instanceof Number) {
+return ((Number) v).intValue();
+public boolean getBoolean(String field, String otherField, String value, boolean def) throws SQLException {
+Object v = get(field, otherField, value);
+if (v instanceof Boolean) {
+

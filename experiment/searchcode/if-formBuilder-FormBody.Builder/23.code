@@ -1,0 +1,6 @@
+FormBody formBody = (FormBody) requestBody;
+FormBody.Builder formBuilder = new FormBody.Builder();
+for (int idx = 0; idx < formBody.size(); idx++) {
+formBuilder.addEncoded(formBody.encodedName(idx),
+formBody.encodedValue(idx));
+

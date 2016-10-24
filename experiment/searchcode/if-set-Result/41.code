@@ -1,0 +1,11 @@
+public String extractData( ResultSet resultSet ) throws SQLException, DataAccessException
+{
+String result = null;
+
+if ( resultSet.next() )
+{
+result = resultSet.getString( 1 );
+/*            if ( resultSet.next() )
+{
+throw new RuntimeException( &quot;StringExtractor used on multiple rows&quot; );
+

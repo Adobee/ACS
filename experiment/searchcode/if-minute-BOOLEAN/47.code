@@ -1,0 +1,10 @@
+this.endMinute = endMinute;
+}
+
+public boolean isActive(Calendar cal)
+{
+int hour = cal.get(Calendar.HOUR_OF_DAY);
+int minute = cal.get(Calendar.MINUTE);
+
+if((this.startHour <= hour &amp;&amp; this.startMinute <= minute) &amp;&amp; (hour <= this.endHour &amp;&amp; minute < this.endMinute))
+

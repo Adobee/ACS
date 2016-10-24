@@ -1,0 +1,9 @@
+* @param timeout The connection timeout.
+* @return If true the upload has been successful.
+*/
+public static boolean putBinaryFileTo(String ftpserverHost, String binaryFile, String path,
+boolean res = putFile(ftpserverHost, binaryFile, path, ftpserverUser,
+ftpserverPassword, ftpserverPort,FTPTransferType.BINARY,writeMode,connectMode,timeout);
+
+if(LOGGER.isLoggable(Level.INFO))
+

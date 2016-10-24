@@ -1,0 +1,12 @@
+TermEnum termEnum = r.terms(new Term(&quot;body&quot;));
+do {
+Term term = termEnum.term();
+if (term == null || !&quot;body&quot;.equals(term.field())) {
+} while (termEnum.next());
+
+if (VERBOSE) {
+System.out.println(&quot;TEST: &quot; + terms.size() + &quot; terms&quot;);
+}
+
+int upto = -1;
+

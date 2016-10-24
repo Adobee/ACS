@@ -1,0 +1,11 @@
+public static final String EXTENSION_SEPARATOR = &quot;.&quot;;
+
+/**
+* Get name of file (with extension, if any)
+*
+* @param path
+* @return
+String name = name(path);
+int extIndex = name.lastIndexOf(EXTENSION_SEPARATOR.charAt(0));
+if (extIndex < 0) return &quot;&quot;;
+

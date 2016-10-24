@@ -1,0 +1,10 @@
+package umich.pitchcoach;
+
+public class HammingWindow {
+float[] window;
+
+public HammingWindow(int size) {
+window = new float[size];
+for (int i = 0; i < size; i++)
+window[i] = computeWindowFunc(i, size);
+

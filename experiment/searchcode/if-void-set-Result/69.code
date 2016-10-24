@@ -1,0 +1,13 @@
+public synchronized Object getResult() throws Exception {
+while (!resultIsSet) {
+wait();
+}
+if (problem != null) {
+throw problem;
+}
+return result;
+}
+
+public synchronized void setResult(Object result) {
+if (resultIsSet) {
+

@@ -1,0 +1,9 @@
+prelimChance = ((2. * dml) + _cancelRate + (buffTime / 120)) * cancel_res_multiplier;
+
+if (Rnd.chance(calcSkillChanceLimits(prelimChance, _effector.isPlayable())))
+private double calcSkillChanceLimits(double prelimChance, boolean isPlayable)
+{
+if (_dispelType.equals(&quot;bane&quot;))
+{
+if (prelimChance < 40)
+

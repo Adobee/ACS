@@ -1,0 +1,7 @@
+public class Statistics extends Controller {
+
+public static void index() {
+boolean hasStats = PersonAndTimeSlot.count() > 0 ? true : false;
+for (PersonAndTimeSlot pats : patsList) {
+if(pats.status == PersonAndTimeSlot.TimeSlotStatus.ON_CALL){
+

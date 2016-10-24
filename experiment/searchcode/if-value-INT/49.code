@@ -1,0 +1,10 @@
+static ResultCode mapIntToValue(final int stateInt) {
+for (ResultCode value : ResultCode.values()) {
+if (stateInt == value.getIntValue()) {
+return value;
+}
+}
+
+// If not, return default
+return RESULT_FAILED;
+

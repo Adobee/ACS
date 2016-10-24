@@ -1,0 +1,10 @@
+Object visit(Program ir) {
+for (int i=0, n=ir._functions.size(); i<n; i++) {
+FunDef fun = ir._functions.get(i);
+p(ir._name);
+return null;
+}
+
+Object visit(ConstantAddr ir) {
+if (ir._literal instanceof StringLit) {
+

@@ -1,0 +1,11 @@
+v.z *= mag;
+}
+public static void divBy(Point4D v, double mag)
+{
+if (mag != 0)
+multBy(v, 1/mag);
+double attitude;
+double bank;
+double d = q.x*q.y + q.z*q.w;
+if (Point3DLogic.equals(d, 0.5))
+

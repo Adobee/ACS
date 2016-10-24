@@ -1,0 +1,14 @@
+for (int k = j + 1; k <= arr.length - 1; k++) {
+if (arr[latestPos].compareTo(arr[k]) == 1) {
+latestPos = k;
+}
+}
+if (j != latestPos) {
+Comparable temp = arr[j];
+arr[j] = arr[latestPos];
+arr[latestPos] = temp;
+}
+}
+}
+}
+

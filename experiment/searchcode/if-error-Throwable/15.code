@@ -1,0 +1,4 @@
+public static RuntimeException propagate(Throwable throwable) throws RuntimeException, Error {
+propagateIfInstanceOf(throwable, RuntimeException.class);
+propagateIfInstanceOf(throwable, Error.class);
+

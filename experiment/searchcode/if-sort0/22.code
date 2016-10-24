@@ -1,0 +1,9 @@
+protected void sort(int[] a) {
+temp = new int[a.length];
+mergeSort0(a, 0, a.length);
+Run ra = runs.removeFirst(), rb = runs.removeFirst();
+
+if (ra.high != rb.low) {
+runs.addFirst(rb); //overshot it!
+} else {
+

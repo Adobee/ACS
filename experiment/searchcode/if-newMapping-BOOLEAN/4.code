@@ -1,0 +1,7 @@
+HttpSession session = request.getSession();
+Locale locale = (Locale) session.getAttribute(Globals.LOCALE_KEY);
+if (locale == null) {
+ActionForm newForm = RequestUtils.createActionForm(request, newMapping, config, this.servlet);
+if (&quot;session&quot;.equals(newMapping.getScope())) {
+request.getSession(true).setAttribute(newMapping.getAttribute(), newForm);
+

@@ -1,0 +1,11 @@
+public class CancellationToken implements ICancellationToken {
+private volatile boolean cancelled = false;
+
+
+@Override public boolean cancelled() {
+return cancelled;
+}
+
+
+@Override public void throwIfCancelled() throws InterruptedException {
+

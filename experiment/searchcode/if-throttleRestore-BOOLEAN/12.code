@@ -1,0 +1,6 @@
+ListenableActionFuture<FlushResponse> flushResponseFuture = null;
+if (randomBoolean()) {
+ArrayList<String> indicesToFlush = new ArrayList<>();
+boolean throttleRestore = randomBoolean();
+assertAcked(client.admin().cluster().preparePutRepository(&quot;test-repo&quot;)
+

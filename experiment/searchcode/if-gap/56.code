@@ -1,0 +1,7 @@
+public class ShellSort<E extends Comparable<E>> {
+public void shellSort(E[] a){
+for (int gap = a.length/2 + 1;gap > 0;gap /= 2){
+for (int i = 0;i < (a.length - gap);i++) {
+temp = a[i];
+if (a[i].compareTo(a[i+gap]) > 0) {
+

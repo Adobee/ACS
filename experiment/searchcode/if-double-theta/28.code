@@ -1,0 +1,10 @@
+private double calcMinAngle(double dX, double dY) {
+
+double tempTheta = 0.0;
+
+//general case for dX and dY
+if (dX > 0) {
+tempTheta = (Math.atan(dY / dX)) - theta / 180 * Math.PI;
+} else if (dX < 0 &amp;&amp; dY > 0) {
+tempTheta = (Math.atan(dY / dX) + Math.PI) - theta / 180 * Math.PI;
+

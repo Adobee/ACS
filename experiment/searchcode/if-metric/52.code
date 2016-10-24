@@ -1,0 +1,6 @@
+public final class MetricOrderingLocationComparator extends LocationComparator {
+private final MetricsCollator collator;
+protected int compareParticular(MetricLocation l1, MetricLocation l2) {
+if (collator.hasMetric(l1, metricId)) {
+if (collator.hasMetric(l2, metricId)) {
+

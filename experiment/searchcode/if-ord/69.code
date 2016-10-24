@@ -1,0 +1,8 @@
+List<TlogisticsOrd> logis = this.findListByObj(tlo);
+if (CollectionUtils.isEmpty(logis)) return;
+for (TlogisticsOrd logi: logis){
+List<TlogisticsOrdAddr> addrs = this.logisticsOrdAddrService.findListSelect(addr);
+boolean arrival = false;
+if (CollectionUtils.isEmpty(addrs) == false){
+for (TlogisticsOrdAddr address:addrs){
+

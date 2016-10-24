@@ -1,0 +1,10 @@
+public static Fuzziness build(Object fuzziness) {
+if (fuzziness instanceof Fuzziness) {
+return (Fuzziness) fuzziness;
+return (long) Double.parseDouble(fuzziness.toString());
+}
+}
+
+public int asInt() {
+if (this == AUTO) {
+

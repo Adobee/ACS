@@ -1,0 +1,10 @@
+out.writeBoolean(isAggregatable);
+boolean hasMinMax = minValue != null;
+out.writeBoolean(hasMinMax);
+if (hasMinMax) {
+writeMinMax(out);
+}
+}
+
+protected abstract void writeMinMax(StreamOutput out) throws IOException;
+

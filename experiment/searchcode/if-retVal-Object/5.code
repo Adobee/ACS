@@ -1,0 +1,18 @@
+public String toString() {
+
+String retval = &quot;&quot;;
+
+for( Object x: al )
+{
+retval += x + &quot;,&quot;;
+}
+
+if( retval.equals(&quot;&quot;) )
+retval = &quot;[]&quot;;
+else
+retval = &quot;[&quot; + retval.substring(0, retval.length()-1) + &quot;]&quot;;
+
+return retval;
+}
+}
+

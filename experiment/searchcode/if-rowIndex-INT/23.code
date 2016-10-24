@@ -1,0 +1,12 @@
+int k = (rowIndex + 1) % 2 == 0 ? (rowIndex + 1) / 2
+: (rowIndex + 1) / 2 + 1;
+for (int i = 0; i < k; i++) {
+if (i == 0)
+r.add(1);
+if (i == 1)
+r.add(rowIndex);
+if (i > 1) {
+double cn = 1;
+for (int m = 1; m <= i; m++) {
+cn *= (rowIndex - i + m) / (double) m;
+

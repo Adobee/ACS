@@ -1,0 +1,12 @@
+private int[] ports = new int[maxSize];
+private int listsize=0;
+int search(int idfind){
+for(int i=0;i<listsize;i++)
+if(id[i]==idfind)
+return i;
+return -1;
+
+}
+int insert(int id,String name,int portNo){
+if ((search(id)==-1) &amp;&amp; (listsize<maxSize)){
+

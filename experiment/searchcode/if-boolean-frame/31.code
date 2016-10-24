@@ -1,0 +1,9 @@
+frameArray[frameIndex][rollIndex] = scorePerRoll;
+rollIndex++;
+if (scorePerRoll == 10) {
+rollIndex = 0;
+frameIndex++;
+private int frameScore(int frameNumber) {
+if (isStrike(frameNumber)) {
+return baseFrameScore(frameNumber) + strikeBonus(frameNumber);
+

@@ -1,0 +1,7 @@
+* @throws WikiException Thrown if any error occurs during processing.
+*/
+protected static boolean isEditable(String virtualWiki, String topicName, WikiUserDetailsImpl user) throws WikiException {
+String abstractParserClass = JAMWikiParser.class.getName();
+boolean validParser = (parserClass != null &amp;&amp; !parserClass.equals(abstractParserClass));
+if (validParser) {
+

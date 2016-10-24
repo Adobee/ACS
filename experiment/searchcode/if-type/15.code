@@ -1,0 +1,13 @@
+package retree.type;
+
+public class PointerType extends Type{
+private Type refType;
+
+public PointerType(Type refType) {
+return refType;
+}
+
+public boolean equals(Type t) {
+if (t instanceof PointerType) {
+if (this.getType().equals( ((PointerType)t).getType())) {
+

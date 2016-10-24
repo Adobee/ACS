@@ -1,0 +1,10 @@
+public static double findPointA (double r) {
+return r/Math.sqrt(2);
+}
+
+public static boolean isPartOf
+(double r, double pointX, double pointY) {
+double xy = findPointA(r);
+
+if ((Math.pow(pointX, 2)+Math.pow(pointY, 2) <= Math.pow(r, 2)) // rewrite
+

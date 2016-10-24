@@ -1,0 +1,9 @@
+String input, int maxErrors, float minSimilarPerc) {
+if (minSimilarPerc <= percentageLevenshteinDistance(expected, input))
+input = input.toLowerCase().replaceAll(&quot; &quot;, &quot;&quot;);
+if (maxErrors >= computeLevenshteinDistance(expected, input))
+return true;
+return false;
+}
+}
+

@@ -1,0 +1,7 @@
+protected int insertNewStatement(XapiStatement theStatement, boolean newActivityAllowed, boolean generateRandomID) throws
+SQLException, XapiDataIntegrityException{
+int theId = super.fetchId();
+// Check if a statement with that UUID already exists in the database
+if(!generateRandomID){
+if (myStatementReader.doesStatementExists(theStatement.getId())) {
+

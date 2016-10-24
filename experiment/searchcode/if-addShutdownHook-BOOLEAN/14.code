@@ -1,0 +1,12 @@
+public StorageThread() {
+super();
+if (isExitAction()) {
+Runtime.getRuntime().addShutdownHook(
+new Thread() { public void run() { onExitAction(); } }
+try { sleep(200); } catch (Exception e) { }
+}
+}
+
+public void initialize() { }
+public boolean isExitAction() { return false; }
+

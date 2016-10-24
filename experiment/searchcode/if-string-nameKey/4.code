@@ -1,0 +1,6 @@
+public I18nAction() {
+final Class<? extends I18nAction> clazz = getClass();
+final String nameKey = clazz.getName();
+public I18nAction(final Class<?> clazz, final String nameKey) {
+init(clazz, nameKey, nameKey, nameKey, null);
+

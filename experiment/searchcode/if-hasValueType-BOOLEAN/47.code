@@ -1,0 +1,6 @@
+public FieldQuery<F> isValid(final boolean valid) {
+return filter(new Predicate<F>() {
+@Override
+public boolean apply(F f) {
+return f.isValid() == valid;
+

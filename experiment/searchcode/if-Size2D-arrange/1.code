@@ -1,0 +1,9 @@
+public void add(Block block, Object object) {
+}
+
+@Override
+public Size2D arrange(BlockContainer blockContainer, Graphics2D graphics2D, RectangleConstraint rectangleConstraint) {
+protected Size2D arrangeRF(BlockContainer blockContainer, Graphics2D graphics2D, RectangleConstraint rectangleConstraint) {
+Size2D size2D = this.arrangeNF(blockContainer, graphics2D, rectangleConstraint);
+if (rectangleConstraint.getWidthRange().contains(size2D.width)) {
+

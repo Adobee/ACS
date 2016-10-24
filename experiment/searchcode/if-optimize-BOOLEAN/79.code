@@ -1,0 +1,9 @@
+public PerformanceListenerStore synchronizedView() {
+return this;
+}
+
+@Override
+public boolean isAutoOptimize() {
+public boolean isOptimized() {
+return read(this.wrapped::isAutoOptimize);
+

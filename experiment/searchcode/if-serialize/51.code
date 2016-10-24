@@ -1,0 +1,15 @@
+public abstract class AbstractJsonSerializer<T> implements IJsonSerializer {
+
+@SuppressWarnings(&quot;unchecked&quot;)
+@Override
+public String serialize(Object target) {
+if (!this.support(target)) {
+return &quot;&quot;;
+}
+return this.doSerialize((T) target);
+}
+
+protected abstract String doSerialize(T target);
+
+}
+

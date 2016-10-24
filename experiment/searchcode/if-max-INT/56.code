@@ -1,0 +1,9 @@
+public class Solution {
+public int trap(int[] A) {
+if(A.length<3) return 0;
+int[] hiL=new int[A.length];
+int total=0;
+int maxH=0;
+hiL[0]=0;
+for(int i=1;i<A.length;++i){
+

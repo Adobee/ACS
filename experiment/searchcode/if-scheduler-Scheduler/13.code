@@ -1,0 +1,14 @@
+public static void setScheduler(Scheduler s) {
+myScheduler = s;
+}
+
+public static Scheduler getScheduler() {
+if ( myScheduler != null ) {
+myScheduler = new SimpleScheduler(false);
+}
+return myScheduler;
+}
+
+public static Scheduler getLowPrioScheduler() {
+if ( lowPrioScheduler != null ) {
+

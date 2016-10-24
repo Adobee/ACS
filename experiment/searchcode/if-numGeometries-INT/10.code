@@ -1,0 +1,15 @@
+return new OGCPolygon(polygon, esriSR);
+}
+
+@Override
+public int numGeometries() {
+assert(false);
+return geometries.size();
+if (isMeasured()) {
+sb.append(&#39;M&#39;);
+}
+if (is3D() || isMeasured())
+sb.append(&#39; &#39;);
+
+int n = numGeometries();
+

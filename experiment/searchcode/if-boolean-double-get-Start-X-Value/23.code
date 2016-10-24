@@ -1,0 +1,10 @@
+/** Implements type conversion and setting sub properties */
+abstract public class AbstractProperty implements IProperty {
+public String getValue() {
+if (isSet())
+return getOwnValue();
+return this.getDefaultProperty().getOwnValue();
+}
+
+public double getDoubleValue() {
+

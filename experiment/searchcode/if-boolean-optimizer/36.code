@@ -1,0 +1,9 @@
+defaultOptimizer = SAFE_REFLECTIVE;
+}
+
+if (Boolean.getBoolean(&quot;mvel2.disable.jit&quot;)) {
+setDefaultOptimizer(SAFE_REFLECTIVE);
+public static AccessorOptimizer getThreadAccessorOptimizer() {
+if (threadOptimizer.get() == null) {
+threadOptimizer.set(getDefaultAccessorCompiler().getClass());
+

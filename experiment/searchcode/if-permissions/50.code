@@ -1,0 +1,7 @@
+public class SandboxSecurityPolicy extends Policy {
+@Override
+public PermissionCollection getPermissions(ProtectionDomain domain) {
+if (isGFGame(domain)) {
+return gamePermissions();
+} else {
+

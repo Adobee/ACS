@@ -1,0 +1,6 @@
+/** Percentile statistic implementation - can be reset by setter. */
+private UnivariateStatistic percentileImpl = new Percentile();
+public double getPercentile(double p) {
+if (percentileImpl instanceof Percentile) {
+((Percentile) percentileImpl).setQuantile(p);
+

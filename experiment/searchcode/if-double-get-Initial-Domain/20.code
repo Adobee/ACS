@@ -1,0 +1,10 @@
+double[] initialState = initalStateCalculator.getInitialState();
+
+//calculate intial state
+double[] initialStateRightwise = new double[initialState.length];
+iirFilter = new IIRFilterEngine(bCoefficients, aCoefficients, initialStateRightwise);
+}
+
+@Override
+public void getSamples(double[] target, int signalOffset, int count, int arrayOffset) {
+

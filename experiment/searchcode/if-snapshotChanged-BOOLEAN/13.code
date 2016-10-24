@@ -1,0 +1,6 @@
+if (removedNodesCleanupNeeded(event)) {
+// Check if we just became the master
+final boolean newMaster = !event.previousState().nodes().localNodeMaster();
+boolean snapshotChanged = false;
+if (snapshot.state() == State.STARTED || snapshot.state() == State.ABORTED) {
+

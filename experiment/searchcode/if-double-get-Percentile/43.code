@@ -1,0 +1,14 @@
+aggregator.aggregate(null);
+}
+
+private double getActualPercentile(double percentile, double[] values)
+{
+Arrays.sort(values);
+final double pos = percentile * (values.length + 1);
+
+if (pos < 1) {
+return values[0];
+}
+
+if (pos >= values.length) {
+

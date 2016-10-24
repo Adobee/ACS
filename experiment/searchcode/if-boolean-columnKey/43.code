@@ -1,0 +1,8 @@
+public boolean addField(String columnKey, Field field) {
+return fieldMultimap.put( columnKey, field );
+}
+
+public boolean addFields( String columnKey, Collection<Field> fields ) {
+for (Field field : getFields(columnKey)) {
+if (fieldKey.equals(field.get(CalimochoKeys.KEY))) {
+

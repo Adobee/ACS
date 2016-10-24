@@ -1,0 +1,16 @@
+return;
+
+switchHorizontalMotionState();
+
+
+}
+
+private boolean switchHorizontalMotionState() {
+
+if(actor.location.onPlatform || actor.location.onSlope)
+if(++combatIndex == superUppercut.length){
+combatIndex = 0;
+actor.onDeactivateCombat();
+}
+if(combatIndex == 5){
+

@@ -1,0 +1,11 @@
+if (h.iter == 0) {
+tolH *= 0.1;
+}
+if (i % 100 == 0) {
+double absError = calculateAbsoluteError(V, W, H);
+grad = WtW.mult(H).subst(WtV);
+double projgrad = grad.booleanConcat(H).norm();
+
+if (projgrad < tol)
+break;
+

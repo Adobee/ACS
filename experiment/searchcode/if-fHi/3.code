@@ -1,0 +1,8 @@
+fhiUserser.setPermissionMap(permissionImple.findPermission(fhiUserser,&quot;webService&quot;));
+if(&quot;&quot;.equals(fhiUserser.getPermissionMap().get(&quot;WMS_SITE&quot;))||fhiUserser.getPermissionMap().get(&quot;WMS_SITE&quot;) == null){
+logger.info(&quot;ID: &quot;+userName+&quot;\n为无员工用户.&quot;);
+}
+//将用户放入FhiUser类中,如无用户则放入空用户.
+if(fhiUserser.getEmployeeClass()==null){
+fhiUserser.setEmployeeClass(new FhiOaEmployeeBasic());
+

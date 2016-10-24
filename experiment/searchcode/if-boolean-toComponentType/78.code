@@ -1,0 +1,9 @@
+Field field = refType.fieldByName(name);
+if (field != null) {
+boolean isStatic = field.isStatic();
+return true;
+}
+
+// If one is boolean, so must be the other.
+if (fromType instanceof BooleanType) {
+

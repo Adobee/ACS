@@ -1,0 +1,10 @@
+exclusionMatcher = constructMatcher(excludedClasses);
+}
+
+public boolean matches(Class<?> subclass) {
+return !isExcluded(subclass) &amp;&amp; isIncluded(subclass);
+}
+
+private boolean isIncluded(Class<?> subclass) {
+return inclusionMatcher == null || inclusionMatcher.matches(subclass);
+

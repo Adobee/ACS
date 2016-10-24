@@ -1,0 +1,7 @@
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleObjectProperty;
+import javafx.stage.Stage;
+stage.focusedProperty().addListener((obs, wasFocused, isNowFocused) -> {
+if (isNowFocused) {
+currentStage.set(stage);
+

@@ -1,0 +1,19 @@
+public void setExcludeUrl(String[] excludeUrl) {
+this.excludeUrl = excludeUrl;
+}
+
+@Override
+public boolean isMultipart(HttpServletRequest request) {
+if(excludeUrl!=null &amp;&amp; excludeUrl.length!=0){
+for(String one:excludeUrl){
+if(uri.startsWith(one)){
+return false;
+}
+}
+}
+
+return super.isMultipart(request);
+}
+
+}
+

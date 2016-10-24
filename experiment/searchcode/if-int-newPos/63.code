@@ -1,0 +1,10 @@
+if (orientation == Direction.UP) {
+if (dir == Direction.DOWN) {
+if (!collisionMap[(int) newPos.getX()][(int) newPos.getY() + 1]
+&amp;&amp; !collisionMap[(int) newPos.getX() + 2][(int) newPos.getY() + 1]) {
+pos = newPos;
+}
+}
+
+} else if (orientation == Direction.RIGHT) {
+

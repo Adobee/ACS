@@ -1,0 +1,10 @@
+private MArea getAreaFor(MPartStack stack) {
+MUIElement parent = stack.getParent();
+while (parent != null) {
+if (parent instanceof MArea)
+return (MArea) parent;
+parent = parent.getParent();
+}
+return null;
+}
+

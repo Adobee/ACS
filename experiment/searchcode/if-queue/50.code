@@ -1,0 +1,17 @@
+package com.soledede.connector.queue;
+
+/**
+* 生产队列的工厂
+* @author soledede
+*
+*/
+public class QueueFactory {
+public  MessageQueue getQueue(int queueType){
+if (queueType == TCP_QUEUE)
+return tcp_queue;
+else
+return udp_queue;
+}
+
+}
+

@@ -1,0 +1,9 @@
+Trigger<RavenBot>       m_pGiverTrigger;
+
+//true if a path to the item has been formulated
+boolean                 m_bFollowingPath;
+//first, pass the message down the goal hierarchy
+boolean bHandled = ForwardMessageToFrontMostSubgoal(msg);
+
+//if the msg was not handled, test to see if this goal can handle it
+

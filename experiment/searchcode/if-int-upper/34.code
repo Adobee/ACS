@@ -1,0 +1,14 @@
+public int lower;
+public int upper;
+
+public Interval (int lower, int upper)
+{
+this.lower = lower;
+this.upper = upper;
+}
+
+public Interval getLowerHalf()
+{
+if(upper==lower){
+return new Interval(lower,upper);
+

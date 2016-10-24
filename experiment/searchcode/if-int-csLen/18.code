@@ -1,0 +1,7 @@
+public void putFrameInternal(final float[] positions_, final int[] lengths_, final byte[] callsigns_) {
+if ( (last + 1) % Constants.BUFFER_FRAMES == first) {
+for (int i=0;i<lengths_.length;i++) {
+
+int cslen = lengths_[i];
+System.out.println(prefix+new String( callsigns_, offset, cslen )+&quot; &quot;+
+

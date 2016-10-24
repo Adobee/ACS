@@ -1,0 +1,13 @@
+private static final long serialVersionUID = 8471931791732460074L;
+
+private final int dataLen;
+
+public InvalidCommandException(String string) {
+public InvalidCommandException(String error, int length) {
+super(error);
+dataLen = length;
+}
+
+@Override
+public String getMessage() {
+

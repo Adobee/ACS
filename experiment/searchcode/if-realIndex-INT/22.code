@@ -1,0 +1,5 @@
+int selectedRow = table.getSelectedRow();
+int realIndex = table.convertRowIndexToModel(selectedRow);
+if (selectedRow >= 0) {
+Object obj = ((TableMO)table.getModel()).getRowObjectAt(realIndex);
+

@@ -1,0 +1,10 @@
+public static Object[] copy(Object[] params) {
+Object[] copyParams = new Object[params.length];
+for (int i = 0; i < params.length; i ++) {
+copyParams[i] = deepCopy (params[i]); // need to clone
+//copyParams[i] = params[i];
+}
+return copyParams;
+}
+public static Object deepCopy (Object original) {
+

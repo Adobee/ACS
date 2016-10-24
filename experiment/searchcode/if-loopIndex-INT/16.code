@@ -1,0 +1,13 @@
+public class DoubleBuffer extends Frame implements Runnable
+{
+Image image;
+Thread thread;
+Graphics graphics = null;
+int loopIndex = 0;
+if(graphics != null){
+loopIndex += 4;
+if(loopIndex >= 100){
+loopIndex = 4;
+}
+graphics.setColor(new Color(255, 255, 255));
+

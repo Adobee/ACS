@@ -1,0 +1,7 @@
+@Override
+public boolean equals(Object o) {
+if (o instanceof StreamId) {
+StreamId other = (StreamId)o;
+if (other.correlator == correlator) {
+if ((source == null) &amp;&amp; (other.source == null)) return true;
+

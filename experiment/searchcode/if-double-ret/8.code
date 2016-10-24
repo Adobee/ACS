@@ -1,0 +1,8 @@
+* rotateX
+*/
+static public double[] rotateX( double x, double y, double z, double rad ) {
+double[] ret = new double[ 3 ];
+ret[0] = x;
+ret[1] = calcRotateX( y, z, rad );
+ret[2] = calcRotateY( y, z, rad );
+

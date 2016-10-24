@@ -1,0 +1,11 @@
+naturalRanking.importMissingValueDefinition(missingValues) ;
+}
+
+public void clearData(){
+if (referenceData!=null){
+referenceData = new double[0] ;
+* @throws MaxCountExceededException if the maximum number of iterations
+* is exceeded
+*/
+public double mannWhitneyUTest(final double[] x, final double[] y)
+

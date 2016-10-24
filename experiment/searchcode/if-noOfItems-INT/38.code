@@ -1,0 +1,6 @@
+hash = 83 * hash + (int) (Double.doubleToLongBits(this.noOfItems) ^ (Double.doubleToLongBits(this.noOfItems) >>> 32));
+if (!Objects.equals(this.symbol, other.symbol)) {
+return false;
+}
+if (Double.doubleToLongBits(this.noOfItems) != Double.doubleToLongBits(other.noOfItems)) {
+

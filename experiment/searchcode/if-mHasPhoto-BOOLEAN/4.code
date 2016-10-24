@@ -1,0 +1,9 @@
+private View mListBackgroundView;
+private int mParallaxImageHeight;
+private TextView mToolbarTitle;
+
+private boolean mHasPhoto;
+public void onScrollChanged(int scrollY, boolean firstScroll, boolean dragging) {
+if (mHasPhoto) {
+float alpha = Math.min(1, (float) scrollY / (mParallaxImageHeight - mToolbar.getHeight()));
+

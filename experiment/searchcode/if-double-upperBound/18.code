@@ -1,0 +1,6 @@
+* Returns the next pseudorandom, uniformly distributed double value between 0.0(inclusive) and upperBound(exclusive) from this random number
+* @return
+*/
+public double nextDouble(double lowerBound, double upperBound) {
+if (upperBound <= lowerBound) {
+

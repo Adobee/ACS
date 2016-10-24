@@ -1,0 +1,14 @@
+private static class DefaultStateVerifier extends StateVerifier {
+private volatile boolean isReleased;
+
+@Override
+public void throwIfRecycled() {
+if (isReleased) {
+throw new IllegalStateException(&quot;Already released&quot;, recycledAtStackTraceException);
+}
+}
+
+@Override
+void setRecycled(boolean isRecycled) {
+if (isRecycled) {
+

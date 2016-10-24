@@ -1,0 +1,7 @@
+public static void Quicksort(int[]collection, int lowerIndex, int rangeIndex){
+if (lowerIndex >= rangeIndex) return;
+int pivotIndex = partition(collection, lowerIndex,rangeIndex);
+Quicksort(collection,pivotIndex+1,rangeIndex);
+}
+public static int partition(int[]collection, int lowerIndex, int rangeIndex){
+

@@ -1,0 +1,15 @@
+public class ExtendsNTimes implements ConditionToExtend {
+
+private int maxVal;
+private int n;
+
+public ExtendsNTimes(int maxIterationNumber) {
+this.n = maxIterationNumber;
+}
+
+@Override
+public boolean toContinue(Coverage cov) {
+if (this.n == 0)
+return false;
+else
+

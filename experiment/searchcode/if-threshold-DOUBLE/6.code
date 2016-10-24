@@ -1,0 +1,15 @@
+public class L2Threshold implements ScoreThreshold {
+double threshold;
+
+public L2Threshold(double threshold) {
+if (threshold < 0)
+return MathFns.l2Dist(x, y);
+}
+
+@Override
+public boolean threshold(double score) {
+return score <= threshold;
+}
+
+}
+

@@ -1,0 +1,11 @@
+* @param b
+* @return
+*/
+private static String byteToHexString(byte b) {
+int n = b;
+if (n < 0)
+char[] re = new char[22];
+long blk = (long) 63;
+long tail = (long) 3;
+re[0] = hexDigits[(int) (l &amp; blk)];
+

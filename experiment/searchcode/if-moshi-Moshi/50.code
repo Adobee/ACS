@@ -1,0 +1,5 @@
+if (rawType.equals(Resource.class)) return new Adapter<>(Resource.class, moshi);
+if (rawType.equals(Resource[].class)) return new ArrayAdapter<>(Resource.class, moshi);
+return new Adapter<>(info.type, moshi);
+} else if (rawType.equals(info.arrayType)) {
+

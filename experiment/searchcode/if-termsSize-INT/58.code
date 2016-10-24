@@ -1,0 +1,8 @@
+id = in.readLong();
+//        shardTarget = readSearchShardTarget(in);
+int termsSize = in.readVInt();
+if (termsSize == 0) {
+terms = EMPTY_TERMS;
+} else {
+terms = new Term[termsSize];
+

@@ -1,0 +1,9 @@
+time = minutes + &quot; minutes &quot; + seconds + &quot; seconds&quot;;
+if (minutes == 1) {
+time = minutes + &quot; minute &quot; + seconds + &quot; seconds&quot;;
+}
+if (minutes > 60) {
+int hours = (int) (minutes / 60);
+minutes %= 60;
+time = hours + &quot; hours &quot; + minutes + &quot; minutes &quot; + seconds + &quot; seconds&quot;;
+

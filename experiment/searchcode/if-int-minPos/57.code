@@ -1,0 +1,12 @@
+public String sort(String s) {
+
+int minpos = 0;
+for (int i = 1; i < s.length(); i++) {
+if (s.charAt(i) < s.charAt(minpos)) {
+minpos = i;
+}
+}
+
+//System.out.println(s.charAt(minpos));
+//System.out.println(s.charAt(0));
+

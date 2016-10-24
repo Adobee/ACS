@@ -1,0 +1,11 @@
+event = MotionEvent.obtain(latestMotionEvent);
+}
+
+int skipIndex = -1;
+int action = event.getActionMasked();
+int originalPointerCount = event.getPointerCount();
+for (int i = 0; i < event.getPointerCount(); ++i) {
+if (i != skipIndex) {
+try {
+int idx = event.getPointerId(i);
+

@@ -1,0 +1,9 @@
+int end = start + diff;
+
+if (getConstraints() != null) {
+boolean skip = false;
+for (ParserConstraint c : getConstraints()) {
+float cur = iScore[start][end][parentState];
+boolean foundBetter;  // always set below
+if (op.testOptions.lengthNormalization) {
+

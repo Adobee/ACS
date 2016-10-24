@@ -1,0 +1,10 @@
+this.maxAgeOffset = maxAgeOffset;
+this.replaceAged = replaceAged;
+this.replaceFlushed = replaceFlushed;
+if (sweepInterval == 0) sweepInterval = 5 * 60 * 1000; // five minutes
+final boolean flushed = entry.version != this.poolVersion.get();
+
+if (aged || flushed) {
+if (aged) event = Event.AGED;
+if (flushed) event = Event.FLUSHED;
+

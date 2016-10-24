@@ -1,0 +1,7 @@
+if (string == null)
+throw new TooShortStringException();
+int firstSpace = string.indexOf(&quot;\t&quot;);
+if (firstSpace == -1) throw new TooShortStringException();
+
+int lastSpace = string.indexOf(&quot;\t&quot;, firstSpace + 1);
+

@@ -1,0 +1,10 @@
+import com.google.inject.spi.InstanceBinding;
+
+/**
+* @author crazybob@google.com (Bob Lee)
+*/
+public abstract class BindingImpl<T> implements Binding<T> {
+private final InternalFactory<? extends T> internalFactory;
+
+public BindingImpl(InjectorImpl injector, Key<T> key, Object source,
+

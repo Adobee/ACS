@@ -1,0 +1,10 @@
+Result result) {
+
+String className = typeDesc.getClassDesc().getName();
+if (!isValidClassName(className, classDescSet)) {
+public static boolean isValidClassName(String className,
+ClassDescSet classDescSet) {
+
+if (TypeDesc.TYPE_VOID.equals(className)) {
+return true;
+

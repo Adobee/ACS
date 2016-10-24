@@ -1,0 +1,13 @@
+package lx.ghm.xelerator.util;
+
+public class TimeoutThread extends Thread {
+private long timeout;
+isCanceled = true;
+}
+
+public void run() {
+try {
+Thread.sleep(timeout);
+if (!isCanceled)
+throw timeoutException;
+

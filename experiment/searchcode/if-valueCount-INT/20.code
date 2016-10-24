@@ -1,0 +1,12 @@
+Map<Object, ValueCount> map = new HashMap<Object, ValueCount>();
+
+public void touch(Object o) {
+ValueCount v = map.get(o);
+if (v == null) {
+v.setCount(v.getCount() + 1);
+}
+
+public int getCount(Object o) {
+ValueCount v = map.get(o);
+if (v == null) {
+

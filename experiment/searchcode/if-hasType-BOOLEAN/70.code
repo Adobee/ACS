@@ -1,0 +1,11 @@
+return hasType(AlgorithmType.Classification.toString()) || hasType(AlgorithmType.Regression.toString());
+}
+
+public boolean isRequiresDataset() {
+return hasType(AlgorithmType.Clustering.toString()) || hasType(AlgorithmType.Classification.toString())
+return false;
+}
+public boolean hasType(String type) {
+for (String t: this.type)
+if (t.equals(type)) return true;
+

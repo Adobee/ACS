@@ -1,0 +1,9 @@
+public AbstractLamp(LocalTime localTime, int position) {
+validate(localTime, position);
+this.position = position;
+assignColor();
+* @param position  the index of the lamp in its container, greater then 0.
+*/
+private void validate(LocalTime localTime, int position) {
+if (position <= 0)
+

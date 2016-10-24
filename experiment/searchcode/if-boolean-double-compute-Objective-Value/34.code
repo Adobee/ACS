@@ -1,0 +1,10 @@
+icall += 1;
+
+// calculate the value of the objective 0.5*wnorm + C\sum_i\xi
+double objective = 0.5*normSquare(wt);
+private double normSquare(double[] vec) {
+double v = norm(vec);
+return v*v;
+}
+protected boolean computeLogMiTrainMode(FeatureGenerator featureGen, double lambda[],
+

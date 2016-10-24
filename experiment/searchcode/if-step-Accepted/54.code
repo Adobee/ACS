@@ -1,0 +1,6 @@
+public void afterStep(Collection<CachedPerson> population, Collection<? extends Attributable> mutations, boolean accepted) {
+if(accepted) acceptedIterations++;
+else rejectedIterations++;
+
+if((acceptedIterations + rejectedIterations) % interval == 0) {
+

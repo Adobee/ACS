@@ -1,0 +1,9 @@
+System.out.println(winnersBracketMatches.size());
+System.out.println(losersBracketMatches.size());
+
+if (losersBracketPlayers.size() == 1 &amp;&amp; losersBracketMatches.size() == 0 &amp;&amp; winnersBracketPlayers.size() == 1 &amp;&amp; winnersBracketMatches.size() == 0) {
+currentMatchBracket = null;
+return new Match(winnersBracketPlayers.Remove(), losersBracketPlayers.Remove());
+}
+else if (winnersBracketMatches.size() > losersBracketMatches.size()) {
+

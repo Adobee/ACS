@@ -1,0 +1,8 @@
+for (String player : matches.getPlayers()) {
+PlayerRanking ranking = playerRankingMap.get(player);
+long totalMatchTime = 0;
+long numberOfMatches = 0;
+Date day = LocalDate.fromDateFields(startDate).toDate();
+Long matchesPlayed = matchesPlayedPerDay.get(day);
+if (matchesPlayed == null) {
+

@@ -1,0 +1,7 @@
+public class MinDepthBT {
+public int minDepth(TreeNode root) {
+if (root == null)
+return 0;
+int leftMin = minDepth(root.left);
+int rightMin = minDepth(root.right);
+

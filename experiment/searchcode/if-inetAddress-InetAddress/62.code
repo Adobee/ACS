@@ -1,0 +1,7 @@
+//NetworkInterface ni = NetworkInterface.getByName(&quot;en0&quot;);
+Enumeration inetAddress = ni.getInetAddresses();
+
+if (!inetAddress.hasMoreElements()) {
+addr = (InetAddress) inetAddress.nextElement();
+if (addr instanceof Inet4Address &amp;&amp; !addr.isLoopbackAddress()) {
+

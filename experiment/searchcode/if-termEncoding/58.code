@@ -1,0 +1,5 @@
+private static FieldType getFieldType(TermEncoding termEncoding, Store stored) {
+if (stored == Store.YES) {
+} else if (stored == Store.NO) {
+return termEncoding == TermEncoding.PREFIX ? PREFIX_TYPE_NOT_STORED : NUMERIC_TYPE_NOT_STORED;
+

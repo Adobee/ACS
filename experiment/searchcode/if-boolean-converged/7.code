@@ -1,0 +1,6 @@
+throw new IterativeSolverFloatNotConvergedException(FloatNotConvergedException.Reason.Divergence, this);
+if (iter >= maxIter)
+throw new IterativeSolverFloatNotConvergedException(FloatNotConvergedException.Reason.Iterations, this);
+if (Float.isNaN(r))
+throw new IterativeSolverFloatNotConvergedException(FloatNotConvergedException.Reason.Divergence, this);
+

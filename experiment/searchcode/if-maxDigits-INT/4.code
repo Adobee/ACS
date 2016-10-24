@@ -1,0 +1,12 @@
+import java.math.MathContext;
+
+public class NumericGenerator implements Generator<BigDecimal> {
+private final int maxDigits;
+public NumericGenerator(int maxDigits, int scale) {
+this.maxDigits = maxDigits;
+this.scale = scale;
+}
+
+
+public BigDecimal generateValue() {
+

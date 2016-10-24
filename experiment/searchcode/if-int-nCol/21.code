@@ -1,0 +1,8 @@
+public int maximalRectangle(char[][] matrix) {
+int nrow = matrix.length;
+if (nrow == 0) return 0;
+int ncol = matrix[0].length;
+for (int i = nrow - 1; i >= 0; --i)
+for (int j = 0; j < ncol; ++j) {
+if (matrix[i][j] == &#39;0&#39;) {
+

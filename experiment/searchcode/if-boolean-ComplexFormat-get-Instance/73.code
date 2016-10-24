@@ -1,0 +1,9 @@
+@Override
+ComplexFormat getEntityFormat() {
+if (isInitialized()) {
+/* The transient entityFormat field is set by initialize(). */
+void initialize(Catalog catalog, EntityModel model, int initVersion) {
+Class type = getType();
+boolean useEnhanced = false;
+if (type != null) {
+

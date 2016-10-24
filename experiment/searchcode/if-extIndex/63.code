@@ -1,0 +1,12 @@
+controlPointOffset[k][index] = controlPointVariance==0 ? 0 : random.nextInt(controlPointVariance*2 - 1) - controlPointVariance + 1;
+}
+
+if(extIndex.x==-1 || extIndex.x==descriptor.tilesAcross-1)
+{
+//Tile&#39;s &#39;owned&#39; edge touches the left or right edge of the board
+bubbleSize[1][index]=0;
+controlPointOffset[1][index]=0;
+}
+
+if(extIndex.y==0 || extIndex.y==descriptor.tilesDown)
+

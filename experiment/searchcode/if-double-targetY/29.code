@@ -1,0 +1,7 @@
+public static I_DirectedLine createSolidDirectedLine(final int sourceX, final int sourceY, final int targetX,
+final int targetY) {
+return createSolidDirectedLine((double) sourceX, (double) sourceY, (double) targetX, (double) targetY);
+static void validateArguments(final double sourceX, final double sourceY, final double targetX,
+final double targetY) {
+if (sourceX == targetX &amp;&amp; sourceY == targetY) {
+

@@ -1,0 +1,14 @@
+result = prime * result + ((vertexB == null) ? 0 : vertexB.hashCode());
+return result;
+}
+
+@Override
+public boolean equals(Object obj) {
+if (this == obj)
+return true;
+Edge other = (Edge) obj;
+if (vertexA == null) {
+if (other.vertexA != null)
+return false;
+} else if (!vertexA.equals(other.vertexA))
+

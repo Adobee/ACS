@@ -1,0 +1,8 @@
+public Function<JsonNode, Object> mapper() {
+if (rawType.equals(JsonNode.class)) {
+return n -> n;
+}
+
+if (rawType.isArray()) {
+return toMappedNodes(rawType.getComponentType()).andThen(s -> s.toArray(Object[]::new));
+

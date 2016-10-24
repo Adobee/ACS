@@ -1,0 +1,14 @@
+public RetryCallable(Callable<T> callable, int retryCount) {
+this.callable = callable;
+this.maxRetries = retryCount;
+}
+
+public T call() throws Exception {
+throw e;
+} catch (final Exception e) {
+
+++retry;
+if (retry == maxRetries)
+throw e;
+log.warn(callable.toString()+&quot; threw exception &quot;+e.getMessage()+&quot; on try &quot;+retry+&quot;/&quot;+maxRetries);
+

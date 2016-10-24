@@ -1,0 +1,15 @@
+//System.out.println(Arrays.toString(row));
+}
+}
+
+
+public static void fillPaint(int[][] matrix, int row, int col) {
+matrix[row][col] = 1;
+
+//left
+if (col-1 >= 0 &amp;&amp; matrix[row][col-1] != 1) {
+fillPaint(matrix, row, col-1);
+}
+//right
+if (col+1 < matrix[0].length &amp;&amp; matrix[row][col+1] != 1) {
+

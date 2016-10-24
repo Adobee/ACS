@@ -1,0 +1,10 @@
+private float forward;
+private float backward;
+private boolean flipped;
+
+public void setForward(float forward) { this.forward = forward; }
+public float calculateCameraTranslate(float currentValue) {
+float diff = 0;
+if (flipped == false) {
+if (currentValue > this.forward) {
+

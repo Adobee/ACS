@@ -1,0 +1,16 @@
+statement.setString(i + 1, pairs.get(i).getValue());
+}
+
+int affectedRows = statement.executeUpdate();
+
+
+if (affectedRows == 0) {
+statement.setString(i + 1, pairs.get(i).getValue());
+}
+
+int affectedRows = statement.executeUpdate();
+
+return affectedRows;
+
+} catch (Exception e) {
+

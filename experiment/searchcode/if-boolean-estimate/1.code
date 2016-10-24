@@ -1,0 +1,12 @@
+return sqrt_finder(1.0, n);
+}
+
+private static double sqrt_finder(double estimate, double n) {
+if (accurate(estimate, n))
+estimate = (estimate + (n / estimate)) / 2;
+return estimate;
+}
+
+private static boolean accurate(double estimate, double n) {
+if (abs(estimate * estimate - n) / n <= 0.0001)
+

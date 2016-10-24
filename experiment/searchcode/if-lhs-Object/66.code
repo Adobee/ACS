@@ -1,0 +1,14 @@
+public EqualsBuilder append(Object lhs, Object rhs)
+{
+if (!this.isEquals) {
+return this;
+}
+if (lhs == rhs) {
+this.isEquals = (lhs == rhs);
+return this;
+}
+
+public EqualsBuilder append(Object[] lhs, Object[] rhs)
+{
+if (!this.isEquals) {
+

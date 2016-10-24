@@ -1,0 +1,12 @@
+private TextView filterTitle = null;
+private TextView countBubble = null;
+private boolean cleanupRunning = false;
+private class cleanDatabase extends Thread {
+
+@Override
+public void run() {
+if (app == null) {
+return;
+}
+if (cleanupRunning == true) {
+

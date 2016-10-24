@@ -1,0 +1,13 @@
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+/**
+* Wrapper over {@link ObjectMapper} that won&#39;t try to parse
+public String writeValueAsString(Object payload) throws JsonProcessingException {
+if (payload instanceof String) {
+return payload.toString();
+}
+return objectMapper.writeValueAsString(payload);
+}
+}
+

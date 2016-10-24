@@ -1,0 +1,8 @@
+long rangeInMillis = millisDifference / slices;
+
+for(int i = 0; i < slices; i++) {
+long startMillis = from.getMillis();
+
+if (ranges.size() > 0) {
+// add 1 ms to end time of previous range
+

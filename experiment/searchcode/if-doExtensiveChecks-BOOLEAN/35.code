@@ -1,0 +1,9 @@
+public boolean isHealthy(boolean doExtensiveChecks) {
+if (socket.isClosed() || socket.isInputShutdown() || socket.isOutputShutdown()) {
+if (framedConnection != null) {
+return true; // TODO: check framedConnection.shutdown.
+}
+
+if (doExtensiveChecks) {
+try {
+

@@ -1,0 +1,11 @@
+//The real and imaginary parts of the complex number
+double realPart, imaginaryPart;
+
+/**
+* The deafault constructor for a complex number
+* @param imaginary The imaginary part
+*/
+public Complex(double real, double imaginary){
+this.realPart = real;
+this.imaginaryPart = imaginary;
+

@@ -1,0 +1,6 @@
+public IKASLGeneralizer getAggregator(AggregatorType type){
+if(type == AggregatorType.FUZZY){
+return new FuzzyAggregator();
+}else if(type == AggregatorType.AVERAGE){
+return new AverageAggregator();
+

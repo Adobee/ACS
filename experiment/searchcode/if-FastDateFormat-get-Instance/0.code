@@ -1,0 +1,9 @@
+private final FastDatePrinter printer;
+private final FastDateParser parser;
+
+public static FastDateFormat getInstance() {
+return (FastDateFormat) FastDateFormat.cache.getInstance();
+}
+
+public static FastDateFormat getInstance(String s) {
+

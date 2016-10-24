@@ -1,0 +1,11 @@
+private ImageIcon image;
+private Timer timer;
+
+private double currX, currY;
+private double newX, newY;
+public void actionPerformed(ActionEvent ae) {
+if(currX == newX &amp;&amp; currY == newY)
+timer.stop();
+
+//	Check for infinite slope
+

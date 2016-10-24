@@ -1,0 +1,7 @@
+ArrayList<AccauthVTO> searchklist = new ArrayList<AccauthVTO>();
+try {
+queryString = &quot;SELECT `action_id`, `action_name`, `status`, `description` FROM `servicebay`.`ac_action` where status=&#39;&quot; + accAuthAction.getStatus() + &quot;&#39; LIMIT 0,150  &quot;;
+resultSet = statement.executeQuery(queryString);
+while (resultSet.next()) {
+AccauthVTO accauthVTO = new AccauthVTO();
+

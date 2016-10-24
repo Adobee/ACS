@@ -1,0 +1,13 @@
+public abstract class ModelAbstract implements Model {
+
+protected int id;
+protected int updated;
+protected int registered;
+
+public int getId() {
+return id;
+}
+
+public int getUpdated() {
+return updated > 0 ? updated : getRegistered();
+

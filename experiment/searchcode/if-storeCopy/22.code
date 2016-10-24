@@ -1,0 +1,15 @@
+curr = headNode;
+
+while(curr != null)
+{
+if(curr.random != null)
+{
+curr.next.random = curr.random.next;
+LinkNode storeCopy;
+
+while(curr != null)
+{
+nextNode = curr.next.next;
+
+// extract the copy
+

@@ -1,0 +1,7 @@
+models.Timeline timeline = models.Timeline.readByPerson(id);
+if (timeline != null) {
+TimelineBean timelineBean = PlayDozerMapper.getInstance().map(timeline, TimelineBean.class);
+models.Timeline timeline = models.Timeline.readByPersonWithLimits(id, from, to);
+if (timeline != null) {
+TimelineBean timelineBean = PlayDozerMapper.getInstance().map(timeline, TimelineBean.class);
+

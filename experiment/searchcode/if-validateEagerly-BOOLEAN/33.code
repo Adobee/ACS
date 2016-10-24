@@ -1,0 +1,14 @@
+TravelAssistanceApp.getComponent(this).inject(this);
+
+setupViews();
+
+_eventBus.register(this);
+}
+
+@Override
+public boolean onCreateOptionsMenu(Menu menu) {
+long routeId = _routeEncoder.extractNavigationRouteId(intent);
+boolean routeExists = routeExists(routeId);
+if (!routeExists) {
+Timber.w(&quot;Route form NFC tag with id %d does not exist in database.&quot;, routeId);
+

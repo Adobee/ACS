@@ -1,0 +1,13 @@
+import java.util.concurrent.atomic.AtomicBoolean;
+
+/**
+*/
+public abstract class SearchContext implements Releasable {
+
+private static ThreadLocal<SearchContext> current = new ThreadLocal<>();
+public abstract void addRescore(RescoreSearchContext rescore);
+
+public abstract boolean hasFieldDataFields();
+
+public abstract FieldDataFieldsContext fieldDataFields();
+

@@ -1,0 +1,10 @@
+// Referenced classes of package com.intra_mart.product.workflow:
+//            AbstractBlock, AbstractBlockModel
+
+public abstract class WorkflowPanel extends Panel
+ResourceBundle resourcebundle = ResourceBundle.getBundle(&quot;com.intra_mart.product.workflow.util.WorkflowResource&quot;);
+if(resourcebundle == null)
+return color;
+Color color1;
+try
+

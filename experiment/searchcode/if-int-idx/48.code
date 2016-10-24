@@ -1,0 +1,9 @@
+public class MergeSortedArrays {
+public void merge(int[] nums1, int m, int[] nums2, int n) {
+int mIdx = m - 1;
+int nIdx = n - 1;
+
+int tIdx = m + n - 1;
+
+while (mIdx >= 0 &amp;&amp; nIdx >= 0) {
+

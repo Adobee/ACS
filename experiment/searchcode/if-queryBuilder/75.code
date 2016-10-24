@@ -1,0 +1,10 @@
+boolean entityBuildingsInstallations) {
+int limit = block * 3000;
+if (entityBuildingsInstallations) {
+queryBuilder.append(&quot; b.uuid IN (&quot;);
+queryBuilder.deleteCharAt(queryBuilder.length() - 1);
+queryBuilder.append(&quot;) &quot;);
+
+if (listaUuid.size() > limit) {
+queryBuilder.append(&quot;OR&quot;);
+

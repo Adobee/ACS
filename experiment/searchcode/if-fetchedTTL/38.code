@@ -1,0 +1,8 @@
+protected Result prepare(ShardId shardId, UpdateRequest request, final GetResult getResult) {
+long getDateNS = System.nanoTime();
+if (!getResult.isExists()) {
+Object fetchedTTL = ctx.get(&quot;_ttl&quot;);
+if (fetchedTTL != null) {
+if (fetchedTTL instanceof Number) {
+return new TimeValue(((Number) fetchedTTL).longValue());
+

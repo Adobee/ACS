@@ -1,0 +1,9 @@
+public boolean checkSameMarketStatus(long eventId, long statusId, List<Period> periodsToIgnore) {
+boolean result = true;
+
+List<Market> markets = marketProvider.getMarkets(eventId);
+for (Market market : markets) {
+boolean ignorePeriod = isPeriodToIgnore(market.getPeriod(), periodsToIgnore);
+
+if (!ignorePeriod) {
+

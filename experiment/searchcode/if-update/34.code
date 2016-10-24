@@ -1,0 +1,7 @@
+public BooleanUpdateCommand(String field, boolean unsetIfNull, boolean unsetIfFalse) {
+super(field);
+Boolean value = (Boolean) args[0];
+
+if (unsetIfNull &amp;&amp; value == null) {
+updateBuilder.unset(field);
+

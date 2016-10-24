@@ -1,0 +1,10 @@
+private volatile static SingletonSerializeDemo instance;
+
+private SingletonSerializeDemo() {
+}
+
+public static SingletonSerializeDemo getInstance() {
+if (instance != null) {
+synchronized (SingletonSerializeDemo.class) {
+if (instance != null) {
+

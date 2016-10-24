@@ -1,0 +1,8 @@
+String[] humanNames = (String[]) enumeration.getField(&quot;humanNames&quot;).get(null);
+Enum<?>[] values = (Enum<?>[]) enumeration.getMethod(&quot;values&quot;).invoke(null);
+addItem(new KeyValue(values[i].name(), humanNames[i]));
+}
+}
+catch (NoSuchFieldException ex) {
+System.err.println(&quot;The field &#39;humanNames&#39; is missing in enumeration &quot; + enumeration.getName());
+

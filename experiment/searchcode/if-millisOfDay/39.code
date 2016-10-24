@@ -1,0 +1,10 @@
+private DataInitializerRepository dataInitializerRepository;
+
+public void init() throws Exception {
+if (dataInitializerRepository.hasTradeOrders()) {
+logger.info(&quot;Data is already loaded, skipping&quot;);
+return;
+}
+
+if (tradeOrderData != null) {
+

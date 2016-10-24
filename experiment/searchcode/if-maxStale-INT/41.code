@@ -1,0 +1,8 @@
+public class CacheInterceptor implements Interceptor {
+
+private int maxStale = 60 * 60 * 24 * 28;
+
+public CacheInterceptor() {
+return response.newBuilder()
+.header(&quot;Cache-Control&quot;, &quot;public, only-if-cached, max-stale=&quot; + maxStale)
+

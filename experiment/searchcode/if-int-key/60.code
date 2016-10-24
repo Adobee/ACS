@@ -1,0 +1,10 @@
+int binary_search(int A[], int key, int imin, int imax)
+{
+if (imax < imin)
+return KEY_NOT_FOUND;
+else
+{
+int imid = midpoint(imin, imax);
+
+if (A[imid] > key)  // key is in lower subset
+

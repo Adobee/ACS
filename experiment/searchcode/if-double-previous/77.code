@@ -1,0 +1,15 @@
+public class DoubleSubject extends Subject {
+
+double currentValue;
+double newValue;
+double previousValue;
+final static double precision = 0.001;
+return currentValue;
+}
+
+public double getPreviousValue() {
+return previousValue;
+}
+
+public void updateValue() {
+

@@ -1,0 +1,6 @@
+edate.add(ct.getDate(j));
+if (ct.get(j, posmax)>0 &amp;&amp; ct.get(j, posmin)<0) {//long position
+logger.info(ct.getDate(j)+&quot; BUY &quot;);
+if (cum.isEmpty()) cum.add(ct.get(j, 0));
+else cum.add(ct.get(j, 0)+cum.get(cum.size()-1));
+

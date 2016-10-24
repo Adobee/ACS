@@ -1,0 +1,11 @@
+import java.util.Date;
+
+public class DateRange extends BaseDataType {
+public DateRange() {
+super();
+boolean _inRange = this.inRange(range.startDate);
+if (_inRange) {
+_or = true;
+} else {
+boolean _inRange_1 = this.inRange(range.finishDate);
+

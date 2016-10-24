@@ -1,0 +1,9 @@
+List<Cell> neighbours = new ArrayList<Cell>();
+List<Integer> tmp_coords = c.getCoords();
+int x = tmp_coords.get(0);
+int y = tmp_coords.get(1);
+
+int tmp_x = x - 1;
+int tmp_y = y - 1;
+if (checkNeighbours2D(Game.size, tmp_x, tmp_y))
+

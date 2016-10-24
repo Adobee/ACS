@@ -1,0 +1,12 @@
+public class Tabuleiro
+{
+private int[][] tabuleiro;
+private int nLin;
+private int nCol;
+nLin =linhas;
+nCol =colunas;
+tabuleiro = novo;
+}
+
+public void fazJog(int cI, int lI, int cF, int lF, int nj)
+

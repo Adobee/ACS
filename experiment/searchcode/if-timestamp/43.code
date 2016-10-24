@@ -1,0 +1,8 @@
+package pledge.core.server.nonce;
+
+import pledge.core.commons.exceptions.StaleTimestampException;
+
+public interface TimestampOracle {
+void rejectIfStale(long timestamp) throws StaleTimestampException;
+}
+

@@ -1,0 +1,14 @@
+public class SensorCalibration implements SensorEventListener  {
+MainActivity parent = null;
+
+final int sampleSize = 10;
+int counter = 0;
+public void onSensorChanged(SensorEvent event) {
+
+
+if (counter>=sampleSize) return;
+
+for (int i = 0; i<3; ++i)
+{
+means[i] += event.values[i];
+

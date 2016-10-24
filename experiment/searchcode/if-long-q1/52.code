@@ -1,0 +1,10 @@
+Queue_by_list<Packet> ref;
+long lambda;
+timeStamp time = new timeStamp();
+
+/**constructor method of add class
+* @param passed Q1 list is passed
+* @param limit  is Q1 holding capacity
+*/
+public add(Queue_by_list<Packet> passed,long rate_of_packets)
+

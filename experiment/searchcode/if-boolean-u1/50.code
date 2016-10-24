@@ -1,0 +1,9 @@
+* @param v1
+* @param v2
+* @return 若相交，则返回true；否则返回false
+*/
+public static boolean cross(PointF u1,PointF u2,PointF v1,PointF v2)
+{
+if (!dots_inline(u1,u2,v1)||!dots_inline(u1,u2,v2))
+return !same_side(u1,u2,v1,v2)&amp;&amp;!same_side(v1,v2,u1,u2);
+

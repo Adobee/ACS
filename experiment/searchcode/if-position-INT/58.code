@@ -1,0 +1,12 @@
+for (int i = 0; i < A.length; i++) {
+if (A[i] == elem) {
+count++;
+}
+}
+
+int end = A.length;
+int j = getLastAvailablePosition(A, elem);
+if (j >= 0 &amp;&amp; j > i &amp;&amp; j < end) {
+end = j;
+int k = A[j];
+

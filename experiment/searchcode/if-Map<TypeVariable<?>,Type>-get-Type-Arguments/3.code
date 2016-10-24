@@ -1,0 +1,6 @@
+private Type resolveTypeVariable(TypeVariable typeVariable) {
+if (resolvedVariables == null) {
+resolvedVariables = new HashMap<TypeVariable, Type>();
+Type[] actualTypeArguments = parameterizedSuperClassType.getActualTypeArguments();
+TypeVariable[] typeParameters = beanClass.getSuperclass().getTypeParameters();
+

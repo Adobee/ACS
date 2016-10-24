@@ -1,0 +1,7 @@
+protected void fireConnectionListener(ActionEvent ev) {
+if(connectionListeners != null) {
+connectionListeners.fireActionEvent(ev);
+public void addConnectionListener(ActionListener a) {
+if(connectionListeners == null) {
+connectionListeners = new EventDispatcher();
+

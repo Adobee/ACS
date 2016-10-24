@@ -1,0 +1,11 @@
+public boolean matches(CharSequence rawPassword, String encodedPassword) {
+if (encodedPassword == null || encodedPassword.length() == 0) {
+Logger.warn(&quot;Empty encoded password&quot;);
+Logger.warn(&quot;Encoded password does not look like BCrypt&quot;);
+return false;
+}
+
+return BCrypt.checkpw(rawPassword.toString(), encodedPassword);
+}
+}
+

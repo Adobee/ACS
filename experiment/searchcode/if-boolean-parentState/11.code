@@ -1,0 +1,6 @@
+public boolean isApplicable(Player player, CombatState parentState) {
+if (! parentState.getHands().get(player).isEmpty()) {
+// Only use metalworking, if the unit can be played against an enemy unit
+for (Front f : parentState.getFronts()) {
+if (f.defender.equals(parentState.getNextPlayer().other())) {
+

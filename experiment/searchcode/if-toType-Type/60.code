@@ -1,0 +1,8 @@
+public static Object toArray(Object value, Class<?> toType, boolean preventNulls) {
+if (value == null)
+return null;
+
+Object result = null;
+
+if (value.getClass().isArray() &amp;&amp; toType.isAssignableFrom(value.getClass().getComponentType()))
+

@@ -1,0 +1,11 @@
+final GitCommiterIdentity commiter = new GitCommiterIdentity(commit
+.getValue().getAuthorIdent());
+numCommits.add(commiter);
+final int currentCommitTime = commit.getValue().getCommitTime();
+lastTimestamp.put(commiter, currentCommitTime);
+}
+
+for (final Multiset.Entry<GitCommiterIdentity> commiter : numCommits
+.entrySet()) {
+if (commiter.getCount() >= INTERNAL_COMMITER_LIMIT) {
+

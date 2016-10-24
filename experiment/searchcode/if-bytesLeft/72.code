@@ -1,0 +1,15 @@
+public String readCString() throws IOException {
+if (bytesLeft == 0) {
+return null;
+}
+
+char[] temp = stringBuffer;
+int i2 = in.read();
+
+if ((i1 | i2) < 0) {
+throw new EOFException();
+}
+
+bytesLeft -= 2;
+return i1 << 8 | i2;
+

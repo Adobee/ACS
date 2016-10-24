@@ -1,0 +1,10 @@
+public static int binaSearch(int a[],int i){
+if(a.length == 0) return -1;
+
+int startPos = 0;
+int endPos = a.length - 1;
+int m = (startPos + endPos) / 2;
+
+while(startPos <= endPos){
+if(a[m] == i) return m;
+

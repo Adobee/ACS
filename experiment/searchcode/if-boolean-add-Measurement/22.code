@@ -1,0 +1,14 @@
+this.unitMeasurement = unitMeasurement;
+}
+
+@Override
+public void add(Addable addable) {
+if(addable != null &amp;&amp; addable instanceof Measurement) {
+this.value -= UnitConverter.convert(m, unitMeasurement).value;
+}
+}
+
+@Override
+public boolean equals(Object object) {
+if(object != null &amp;&amp; object instanceof Measurement) {
+

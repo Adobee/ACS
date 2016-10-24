@@ -1,0 +1,13 @@
+if (i < j - 1)
+B[i][j] = B[i][j - 1] + d[j - 1][j];
+else {
+double min = 0;
+for (int k = 0; k < j; k++) {
+double r = B[k][i] + d[k][j];
+if (min > r || k == 0)
+min = r;
+}
+B[i][j] = min;
+}}}
+return B[N-1][N-1];}
+

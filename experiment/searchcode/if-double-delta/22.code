@@ -1,0 +1,13 @@
+public class ParticleSpiral extends Particle{
+
+
+double deltaX = 0.1;
+double deltaY = 0.1;
+ParticleSpiral(double x, double y, double speedX, double speedY, Color c) {
+this.speedY = 0;
+}
+public void update(){
+//TODO DOESN&#39;T WORK AT ALL
+if(speedX > 1 || speedX < -1){
+deltaX = -deltaX;
+

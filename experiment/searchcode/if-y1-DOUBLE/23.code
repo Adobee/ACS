@@ -1,0 +1,21 @@
+x2=p2.getX();
+y1=p1.getY();
+y2=p2.getY();
+if(x2 < x1)
+{
+double t=x1;
+x1=x2;
+x2=t;
+}
+if(y2 <y1)
+{
+double t =y1;
+y1 = y2;
+y2 = t;
+}
+}
+
+public double getX1()
+{
+return x1;
+

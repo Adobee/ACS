@@ -1,0 +1,10 @@
+final double diff_y = ( data_y.get( i ) - mu_y );
+if ( weighted ) {
+sum += ( diff_x * diff_x + diff_y * diff_y ) * data_w.get( i );
+double mu_x = 0;
+double mu_y = 0;
+
+for ( int i = 0; i < data_x.size(); i++ ) {
+if ( weighted ) {
+mu_x += data_x.get( i ).doubleValue() * data_w.get( i );
+

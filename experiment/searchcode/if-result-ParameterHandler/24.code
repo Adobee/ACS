@@ -1,0 +1,7 @@
+public Object plugin(Object target) {
+if (target instanceof DefaultResultSetHandler) {
+ResultSetHandler rsh = (DefaultResultSetHandler) target;
+Field parameterHandlerField = ReflectionUtils.findField(drsh.getClass(), &quot;parameterHandler&quot;);
+parameterHandlerField.setAccessible(true);
+Field resultHandlerField = ReflectionUtils.findField(drsh.getClass(), &quot;resultHandler&quot;);
+

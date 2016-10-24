@@ -1,0 +1,10 @@
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.ext.Provider;
+
+import org.codehaus.jackson.jaxrs.JacksonJsonProvider;
+public class JsonPlainTextEnablingProvider extends JacksonJsonProvider {
+
+@Override
+protected boolean isJsonType(MediaType mediaType) {
+if (mediaType.isCompatible(MediaType.TEXT_HTML_TYPE) || mediaType.isCompatible(MediaType.TEXT_PLAIN_TYPE))
+

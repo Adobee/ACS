@@ -1,0 +1,8 @@
+//this is a singleton class -- make it singleton, ignore all the generic stuff
+@SuppressWarnings(&quot;rawtypes&quot;)
+static ShapePropagator instance = null;
+static boolean Debug = false;
+static public <V extends Value<V>> ShapePropagator<V> getInstance(){
+if (instance == null) instance = new ShapePropagator();
+return instance;
+

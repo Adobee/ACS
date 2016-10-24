@@ -1,0 +1,7 @@
+SearchQuery q = clause;
+//        if (queryRewrite != null &amp;&amp; (clause.getTerm() instanceof String))
+//            q = onTerm(clause.field, clause.stringTerm());
+ModifiedQueryParser parser = new ExpansionQueryParser(clause.field, analyzer, queryRewrite);
+parser.setDefaultOperator(defaultOperator);
+if (clause.getTerm() instanceof TermValue)
+

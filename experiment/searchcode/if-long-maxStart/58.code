@@ -1,0 +1,7 @@
+private Map<Integer, Pair> end = new HashMap<>();
+
+Pair getLongContiguousInterval(int next) {
+if (start.isEmpty() || (!start.containsKey(next + 1) &amp;&amp; !end.containsKey(next -1))) {
+if (start.isEmpty()) maxStart = next;
+Pair p = new Pair(next, next);
+

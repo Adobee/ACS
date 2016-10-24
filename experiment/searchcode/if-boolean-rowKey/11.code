@@ -1,0 +1,13 @@
+return size;
+}
+
+public boolean containsRow(RK rowKey){
+return rowMap.containsKey(rowKey);
+}
+public boolean containsColumn(CK columnKey){
+public V get(RK rowKey, CK columKey, V defaultValue){
+Map<CK, V> row = getRow(rowKey);
+if(row==null)
+return defaultValue;
+return row.containsKey(columKey)?row.get(columKey):defaultValue;
+

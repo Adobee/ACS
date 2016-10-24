@@ -1,0 +1,9 @@
+private boolean escapingNeeded = false;
+
+public static final int INITIAL_STATE = 0;
+public static final int NON_ESCAPED_CONTENT_STATE = 1;
+switch(state) {
+case INITIAL_STATE:
+if (character == this.escapingCharacter) {
+this.state = ESCAPED_CONTENT_STATE;
+

@@ -1,0 +1,6 @@
+protected String parseDescription(Element event) {
+return parseInformation(event, myDescription);
+private String parseInformation(Element event, String keyword) {
+String information = event.getChildText(keyword);
+if (information != null)
+

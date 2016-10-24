@@ -1,0 +1,9 @@
+// flaga mowiaca ze dane sie zminily
+private volatile boolean dataChanged = false;
+// timer
+private final Timer timer = new Timer(&quot;OrderInfoDispatcherTimer&quot;);
+public void run() {
+if (dataChanged) {
+dataChanged = false;
+Set<OrderInfo> orderInfos = OrderDispatcher.getInstance().getOrderInfos();
+

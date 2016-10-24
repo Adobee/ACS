@@ -1,0 +1,14 @@
+public void setDivisor(int divisor) {
+if (divisor != 0){
+this.divisor = divisor;
+}
+}
+
+@Override
+public int getDivisor() {
+return divisor;
+}
+
+@Override
+public double doubleValue() {
+

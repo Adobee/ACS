@@ -1,0 +1,5 @@
+private void assertSuggestions(SuggestResponse suggestResponse, boolean suggestionOrderStrict, String name, String... suggestions) {
+assertThat(assertMsg, options.size(), is(suggestions.length));
+if (suggestionOrderStrict) {
+for (int i = 0; i < suggestions.length; i++) {
+

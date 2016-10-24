@@ -1,0 +1,12 @@
+* probabilities of each possible combination of genotypes for a parental pair.
+*/
+
+/*
+* 0 - AA x AA
+* 1 - AA x Aa
+* 2 - AA x aa
+public boolean gpEquals(double d) {
+for (double i : p) {
+if (i != d) {
+return false;
+

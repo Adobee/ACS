@@ -1,0 +1,7 @@
+public Object fromMessage(Message message) throws JMSException,
+MessageConversionException {
+if (message instanceof MapMessage) {
+ObjectMessage objectMessage = (ObjectMessage) message;
+if (objectMessage.getObject() instanceof RedisCacheMsg) {
+RedisCacheMsg redisCacheMsg = (RedisCacheMsg) objectMessage
+

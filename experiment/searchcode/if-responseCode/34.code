@@ -1,0 +1,11 @@
+private ResponseCodeEnums responseCode;
+
+/** 消息. */
+private String message;
+
+public ApplicationException( ResponseCodeEnums responseCode ) {
+this.responseCode = responseCode;
+
+if ( null != responseCode ) {
+message = responseCode.getDisplayName();
+

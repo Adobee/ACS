@@ -1,0 +1,7 @@
+ListenerList<ISelectionListener> listeners = targetedListeners.get(partId);
+if (listeners == null) {
+listeners = new ListenerList();
+targetedListeners.put(partId, listeners);
+}
+listeners.add(listener);
+

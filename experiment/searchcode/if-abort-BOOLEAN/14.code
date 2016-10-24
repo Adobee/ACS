@@ -1,0 +1,15 @@
+private static CmdListQueue instance;
+private boolean abort;
+
+// singleton-constructor
+public synchronized static CmdListQueue getInstance() {
+public void abort() {
+this.abort = true;
+}
+
+public boolean isAbort() {
+return this.abort;
+}
+
+}
+

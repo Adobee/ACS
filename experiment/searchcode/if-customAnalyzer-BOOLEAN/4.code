@@ -1,0 +1,9 @@
+ImagePlus imp = WindowManager.getCurrentImage();
+if (imp==null || imp.getType()!=ImagePlus.GRAY8)
+{IJ.error(&quot;8-bit grayscale image required&quot;); return;}
+CustomAnalyzer.setResultsTable(newTable);
+
+CustomAnalyzer pa = new CustomAnalyzer();
+int code = pa.setup(&quot;&quot;, imp);
+if (code==PlugInFilter.DONE)
+

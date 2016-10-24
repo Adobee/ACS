@@ -1,0 +1,18 @@
+return domain;
+
+}
+
+protected List<BooleanSource> getSources() {
+return sources;
+}
+
+protected boolean contains(BooleanValue value) {
+for (BooleanSource source : sources) {
+if (source.getValue() == value) {
+return true;
+}
+}
+return false;
+}
+}
+

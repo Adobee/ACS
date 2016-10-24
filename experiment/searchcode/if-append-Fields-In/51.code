@@ -1,0 +1,9 @@
+f.append(&quot;UNIQUE &quot;);
+}
+f.append(index.name.value).append(&#39;(&#39;);
+if (index.fields != null &amp;&amp; index.fields.length > 0) {
+NTableIndexField fd = index.fields[0];
+f.append(fd.name.value);
+if (fd.desc) {
+f.append(&quot; DESC&quot;);
+

@@ -1,0 +1,13 @@
+return type;
+}
+
+public TypeInfo getRawType() {
+if (rawType == null) {
+T rawType = domain.typeMetadata.getRawType(type);
+return rawType;
+}
+
+public List<TypeInfo> getTypeArguments() {
+if (typeArguments == null) {
+ArrayList<TypeInfo> typeArguments = new ArrayList<TypeInfo>();
+

@@ -1,0 +1,10 @@
+q2 = q2 < 0 ? 0 : (float)Math.sqrt( q2 );
+q3 = q3 < 0 ? 0 : (float)Math.sqrt( q3 );
+
+if( q0 >= q1 &amp;&amp; q0 >= q2 &amp;&amp; q0 >= q3 ) {
+if( mat[2] + mat[8] < 0 ) q1 = -q1;
+if( mat[6] + mat[9] < 0 ) q2 = -q2;
+}
+
+double r = 1.0 / Math.sqrt( q0 * q0 + q1 * q1 + q2 * q2 + q3 * q3 );
+

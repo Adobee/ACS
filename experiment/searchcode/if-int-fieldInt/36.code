@@ -1,0 +1,7 @@
+*            required node id, node will be referred with this id.
+* @param fieldInt
+*            required Integer array representing node content.
+public static NodeImpl<Integer, Integer> makeNodeFromIntegers(final int l,
+final Integer idNode, final Integer fieldInt[]) {
+FieldImpl<Integer, Integer> f = makeFromIntegerField(fieldInt);
+

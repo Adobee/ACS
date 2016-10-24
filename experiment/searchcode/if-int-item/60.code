@@ -1,0 +1,9 @@
+super(&quot;Move to corner&quot;, &quot;corner&quot;);
+}
+
+@Override
+protected void modifyPosition(Item item) {
+if (item.getPosX() % 4 - 2 > 0) {
+if (item.getPosY() % 4 - 2 > 0) {
+item.setPosXY(((int) item.getPosX() >> 2) * 4 + 3.99f, ((int) item.getPosY() >> 2) * 4 + 3.99f);
+

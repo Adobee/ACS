@@ -1,0 +1,6 @@
+public ListPopulation(final int populationLimit) throws NotPositiveException {
+this(Collections.<Chromosome> emptyList(), populationLimit);
+* @throws NumberIsTooLargeException if the list of chromosomes exceeds the population limit
+*/
+public ListPopulation(final List<Chromosome> chromosomes, final int populationLimit)
+

@@ -1,0 +1,6 @@
+if (timestamp < Math.max(lastAvailableTime, lastUnavailableTime)) {
+return;
+}
+if (lastUnavailableTime >= lastAvailableTime) {
+availabilityStore.addUnavailableTime(lastUnavailableTime, timestamp);
+

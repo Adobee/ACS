@@ -1,0 +1,10 @@
+private static boolean isAssignable(Type type, GenericArrayType toGenericArrayType, Map<TypeVariable<?>, Type> typeVarAssigns)
+{
+if (type == null) {
+return true;
+}
+if (toGenericArrayType == null) {
+return false;
+}
+if (toGenericArrayType.equals(type)) {
+

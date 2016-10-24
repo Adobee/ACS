@@ -1,0 +1,9 @@
+private void validateMaxHoursPerDay(int dayIndex) {
+if (currentWorkWeek.getTotalMinutesWorkedOnDay(dayIndex) > maxHoursThisDay(dayIndex)) {
++ &quot; a déclaré plus de 24 heures pour la journée.&quot;);
+}
+}
+
+private int maxHoursThisDay(int dayIndex){
+if(currentWorkWeek.isVacation(dayIndex) || currentWorkWeek.isHoliday(dayIndex)){
+

@@ -1,0 +1,9 @@
+
+
+public class iMath {
+public double dot(double[] a1, double[] a2) {
+if (a1.length != a2.length)
+throw new IllegalArgumentException(a1.length + &quot; &quot; + a2.length);
+double result = 0.0;
+for (int i = 0; i < a1.length; i++)
+

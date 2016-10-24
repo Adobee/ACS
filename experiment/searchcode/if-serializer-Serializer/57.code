@@ -1,0 +1,13 @@
+package my.commons.lang.serializer;
+
+/**
+* 序列化工具工厂
+*
+* @author xiegang
+* @since 2012-12-20
+public static Serializer createSerializer() {
+if (serializer == null) {
+return createSerializer(DEFAULT);
+}
+return serializer;
+

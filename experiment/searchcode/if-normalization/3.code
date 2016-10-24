@@ -1,0 +1,8 @@
+import de.lmu.ifi.dbs.elki.data.DatabaseObject;
+import de.lmu.ifi.dbs.elki.normalization.NonNumericFeaturesException;
+public O normalizationRestore(O v) throws NonNumericFeaturesException {
+if(getNormalization() == null) {
+return v;
+}
+return getNormalization().restore(v);
+

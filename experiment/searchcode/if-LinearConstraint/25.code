@@ -1,0 +1,7 @@
+* moving to right on one point, and calc function for this points.
+* If result is less that current, saves this result,
+* else returns old positions, and increments <code>i</code>.
+for (int i = 1; i < pointsCount - 1; i++) {
+
+if (x[pointsCount - 2] + 1 == x[pointsCount - 1]) break;
+

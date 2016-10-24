@@ -1,0 +1,8 @@
+for (int k = 0; k < cols; ++k) {
+double dk = jacNorm[k];
+if (dk == 0) {
+dk = 1.0;
+// check orthogonality between function vector and jacobian columns
+double maxCosine = 0;
+if (cost != 0) {
+

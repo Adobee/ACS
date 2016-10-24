@@ -1,0 +1,8 @@
+public class Member_ {
+
+public static boolean isSynthetic(Member m) {
+if (m instanceof Method) {
+return Method_.isSynthetic((Method) m);
+} else if (m instanceof Field) {
+return Field_.isSynthetic((Field) m);
+

@@ -1,0 +1,9 @@
+import com.androidplot.xy.LineAndPointFormatter;
+import com.androidplot.xy.SimpleXYSeries;
+import com.androidplot.xy.XYPlot;
+import com.androidplot.xy.XYStepMode;
+//private GraphicalView mChart;
+private XYPlot xyPlot;
+Button thirtyday,sevenday,today;
+final String[] mMonths = new String[] {
+

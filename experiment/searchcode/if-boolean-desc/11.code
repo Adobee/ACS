@@ -1,0 +1,7 @@
+@SuppressWarnings(&quot;unchecked&quot;)
+public static <T> ObjectDesc<T> getObjectDesc(T o, boolean isIgnoreCase) {
+if (o instanceof Map) {
+public static <T> ObjectDesc<T> getObjectDesc(Class<T> clazz, boolean isIgnoreCase) {
+@SuppressWarnings(&quot;unchecked&quot;)
+ObjectDesc<T> objectDesc = (ObjectDesc<T>) OBJECT_DESC_CACHE.get(clazz);
+

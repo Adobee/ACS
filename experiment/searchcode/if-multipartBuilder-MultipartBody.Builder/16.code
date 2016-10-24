@@ -1,0 +1,6 @@
+public void postFileAsyn(String url, HashMap<String, String> paramsMap, File file, Callback responseCallback) {
+
+//        RequestBody requestBody = new MultipartBody.Builder().setType(MultipartBody.FORM).addFormDataPart(&quot;icon&quot;, file.getName(), RequestBody.create(MediaType.parse(&quot;media/type&quot;), file)).build();
+MultipartBody.Builder builder = new MultipartBody.Builder();
+builder.setType(MultipartBody.FORM);
+

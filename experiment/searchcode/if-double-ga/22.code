@@ -1,0 +1,9 @@
+private Double gauss(Double a, Double b, Double eps, Double gc)
+{
+Double t = (a + b) / 2;
+Double ga = gaussCalc(a, t);
+Double gb = gaussCalc(t, b);
+if (Math.abs(ga + gb - gc) > eps)
+{
+ga = gauss(a, t, eps / 2, ga);
+

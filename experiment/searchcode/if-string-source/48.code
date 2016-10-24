@@ -1,0 +1,10 @@
+public static IrcIdentifier newFromString( String source ) {
+String user, host;
+String nick = user = host = null;
+
+if( ( source.contains( &quot;@&quot; ) ) &amp;&amp; ( source.contains( &quot;!&quot; ) ) ) {
+user = sourceSegment[ 1 ];
+host = sourceSegment[ 2 ];
+} else if( source.contains( &quot;@&quot; ) ) {
+String splitSeparators = &quot;[@]&quot;;
+

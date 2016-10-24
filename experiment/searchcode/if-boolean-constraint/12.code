@@ -1,0 +1,9 @@
+public class RejectedValueConstraintPredicate<T> implements
+AttributeConstraintPredicate<T> {
+
+public boolean acceptValue(AttributeConstraint constraint, T value) {
+if (constraint instanceof RejectedValueConstraint) {
+Object acceptedValue = constraint.getValue();
+boolean isEqual = false;
+if (acceptedValue.equals(value)) {
+

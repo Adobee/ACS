@@ -1,0 +1,12 @@
+int var5 = mcIn.gameSettings.guiScale;
+
+if (var5 == 0) {
+var5 = 1000;
+}
+
+while (this.scaleFactor < var5 &amp;&amp; this.scaledWidth / (this.scaleFactor + 1) >= 320 &amp;&amp; this.scaledHeight / (this.scaleFactor + 1) >= 240) {
+++this.scaleFactor;
+}
+
+if (var4 &amp;&amp; this.scaleFactor % 2 != 0 &amp;&amp; this.scaleFactor != 1) {
+

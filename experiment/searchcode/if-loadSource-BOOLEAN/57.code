@@ -1,0 +1,9 @@
+public CustomFieldsVisitor(Set<String> fields, List<String> patterns, boolean loadSource) {
+super(loadSource);
+this.fields = fields;
+public CustomFieldsVisitor(Set<String> fields, boolean loadSource) {
+this(fields, Collections.emptyList(), loadSource);
+}
+
+@Override
+

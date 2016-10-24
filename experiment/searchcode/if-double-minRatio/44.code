@@ -1,0 +1,8 @@
+private final double minRatio;
+private final double averageRatio;
+private final double ratioStandardDeviation;
+double fitness,
+double maxRatio,
+double minRatio,
+double averageRatio,
+

@@ -1,0 +1,11 @@
+public String getName() {
+
+String retVal = name;
+if (this.quasiPointDataset != null) {
+retVal = this.quasiPointDataset.getName();
+this.quasiPointDataset = quasiPointDataset;
+}
+
+public boolean equals(Object other) {
+if (other == null || !(other instanceof FastNonPointDataset))
+

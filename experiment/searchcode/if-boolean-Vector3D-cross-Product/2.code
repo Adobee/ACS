@@ -1,0 +1,16 @@
+this.x = x; this.y = y; this.z = z;
+}
+
+Vector3D(double x, double y, double z, boolean unit) {
+this.x = x; this.y = y; this.z = z;
+return dotProduct(b) / (magnitude() * b.magnitude());
+}
+
+Vector3D crossProduct(Vector3D b) {
+return new Vector3D(y * b.z - z * b.y,
+z * b.x - x * b.z,
+x * b.y - y * b.x, false);
+}
+
+}
+

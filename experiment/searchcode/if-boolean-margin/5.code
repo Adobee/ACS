@@ -1,0 +1,12 @@
+private GridLayoutBuilder() {
+
+}
+
+public static GridLayoutBuilder getInstance(){
+if (instance == null){
+instance = new GridLayoutBuilder();
+return new GridLayout();
+}
+
+public GridLayout build(int marginTop,int marginBotton,int marginLeft,int marginRight,int columns,boolean makeEqualsCoulumns){
+

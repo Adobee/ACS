@@ -1,0 +1,7 @@
+import com.amazonaws.AmazonClientException;
+import com.amazonaws.AmazonServiceException;
+import com.amazonaws.auth.AWSCredentials;
+protected void startMetric(String methodName) {
+if (metric == null) {
+metric = new Metric(getClass().getName(), methodName);
+

@@ -1,0 +1,8 @@
+public boolean equals(Object o) {
+if (this == o) return true;
+if (!(o instanceof Criterion)) return false;
+
+Criterion criterion = (Criterion) o;
+
+if (name != null ? !name.equals(criterion.name) : criterion.name != null) return false;
+

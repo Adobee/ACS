@@ -1,0 +1,10 @@
+//calculate the angle the bomb needs to face to get from current location to target location
+public double calcBaring(double targetX, double targetY)
+{
+double baring;
+//arctan only returns angles between -180 and 180, used absolute value to narrow that to between -90 and 90
+if (centerX() == targetX)
+baring = 90;
+else if (centerY() == targetY)
+baring = 0;
+

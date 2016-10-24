@@ -1,0 +1,13 @@
+//////////////////////////////////////////// First Move
+if(board.isBoardEmpty()){
+player.playerSetValueAt(6);
+beginnHuman=false;
+return;
+//////////////////////////////////////////// Possible Win check
+int i=0;
+if((i=possibleWin(6,7,8))!=-1){
+player.playerSetValueAt(i);
+return;
+}
+if((i=possibleWin(3,4,5))!=-1){
+

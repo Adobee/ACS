@@ -1,0 +1,14 @@
+public class LayoutPart implements Comparable<LayoutPart> {
+public int readNum;
+public int shift;
+
+public LayoutPart(int readNum, int shift) {
+public int compareTo(LayoutPart o) {
+if (shift != o.shift) {
+return shift - o.shift;
+}
+return readNum - o.readNum;
+}
+
+}
+

@@ -1,0 +1,9 @@
+for(int i=0;i<experimentCount;i++){
+double randomValue=generator.nextRandomValue();
+randomValues[i]=randomValue;
+if(randomValue>max){
+max=randomValue;
+}
+}
+for(int i=0;i<experimentCount;i++){
+

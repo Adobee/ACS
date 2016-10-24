@@ -1,0 +1,10 @@
+class QwopCost2 implements IObjectiveFunction { // meaning implements methods valueOf and isFeasible
+public static boolean visOn = false;
+public static int millisdelay = 50;
+public double valueOf (double[] x) {
+m_world.step(timestep, positerations,veliterations);
+if(visOn)
+try {
+Thread.sleep(millisdelay);
+} catch (InterruptedException e) {
+

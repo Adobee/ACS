@@ -1,0 +1,8 @@
+public synchronized boolean isReset() {
+return (state == State.RESET);
+}
+
+public synchronized void reset() {
+public synchronized boolean gate() throws ResetException {
+if (state == State.PAUSED || state == State.RESET) {
+

@@ -1,0 +1,9 @@
+public int frogJmp(int X, int Y, int D) {
+if (X<1 || Y<1 || D<1 || X>Y) return -1;
+double gap = (double) Y-X;
+int jumps =(int) (Math.ceil(gap/D));
+diff = Math.abs(left - right);
+if (diff < minDiff) minDiff = diff;
+if (minDiff == 0) return minDiff;
+left += A[i];
+

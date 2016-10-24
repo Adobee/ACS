@@ -1,0 +1,10 @@
+if (nanStrategy == NaNStrategy.FIXED) {
+restoreNaNs(out, nanPositions);
+}
+return out;
+private static IntDoublePair[] removeNaNs(IntDoublePair[] ranks) {
+if (!containsNaNs(ranks)) {
+return ranks;
+}
+IntDoublePair[] outRanks = new IntDoublePair[ranks.length];
+

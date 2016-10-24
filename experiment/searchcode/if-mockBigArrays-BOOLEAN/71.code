@@ -1,0 +1,11 @@
+import org.elasticsearch.common.util.MockBigArrays;
+import org.elasticsearch.indices.breaker.NoneCircuitBreakerService;
+import org.elasticsearch.test.ESTestCase;
+public class NettyTransportMultiPortTests extends ESTestCase {
+
+private String host;
+
+@Before
+public void setup() {
+if (NetworkUtils.SUPPORTS_V6 &amp;&amp; randomBoolean()) {
+

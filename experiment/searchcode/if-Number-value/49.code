@@ -1,0 +1,15 @@
+public static Number getNumber(Integer number) {
+if (numberTable.containsKey(number)) {
+return numberTable.get(number);
+return getNumber(new Integer(number));
+}
+
+public Integer getValue() {
+return number;
+}
+
+public String toString() {
+return number.toString();
+}
+}
+

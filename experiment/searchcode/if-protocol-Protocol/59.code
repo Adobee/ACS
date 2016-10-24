@@ -1,0 +1,10 @@
+package de.fu.mi.scuttle.lib.util;
+
+/**
+* A mail protocol supported by {@link Mail}.
+public static MailProtocol forName(final String protocol) {
+if (protocol == null) {
+return null;
+}
+return MailProtocol.valueOf(protocol.toLowerCase());
+

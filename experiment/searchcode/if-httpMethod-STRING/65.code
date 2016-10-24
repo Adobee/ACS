@@ -1,0 +1,6 @@
+private final TriConsumer<Request, Response, List<String>> handler;
+private final HttpMethod httpMethod;
+
+public Route(String targetRegex, HttpMethod httpMethod, TriConsumer<Request, Response, List<String>> handler) {
+this.targetRegex = Pattern.compile(targetRegex);
+

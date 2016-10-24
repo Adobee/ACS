@@ -1,0 +1,10 @@
+private Preconditions() {}
+
+public static <T> T checkNotNull(T o) {
+return checkNotNull(o, &quot;null obj&quot;);
+}
+
+public static <T> T checkNotNull(T o, String msg) {
+if (o == null) {
+throw new NullPointerException(msg);
+

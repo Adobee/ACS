@@ -1,0 +1,8 @@
+String fileName, long bytesTransferred, long totalBytes) {
+super(source);
+
+if (programId == null) throw new NullPointerException(&quot;null programId&quot;);
+if (fileName  == null) throw new NullPointerException(&quot;null fileName&quot;);
+if (totalBytes < 0) {
+throw new IllegalArgumentException(&quot;negative totalBytes: &quot; + totalBytes);
+

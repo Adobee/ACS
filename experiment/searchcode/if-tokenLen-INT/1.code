@@ -1,0 +1,13 @@
+String token = parseToken(pattern, indexRef);
+i = indexRef[0];
+
+int tokenLen = token.length();
+
+if (tokenLen == 0)
+private static boolean isNumericToken(String token) {
+int tokenLen = token.length();
+
+if (tokenLen > 0)
+{
+char c = token.charAt(0);
+

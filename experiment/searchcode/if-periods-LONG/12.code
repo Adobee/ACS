@@ -1,0 +1,8 @@
+package com.npc.lottery.periods.dao.hibernate;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+List<HKPeriods> periodsList = jdbcTemplate.query(sql, parameters,new HKPeriodsItemMapper());
+if(periodsList!=null&amp;&amp;periodsList.size()>0)
+return periodsList.get(0);
+

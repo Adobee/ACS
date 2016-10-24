@@ -1,0 +1,12 @@
+* @version $Id$
+* @since 3.0
+*/
+public interface ConvergenceChecker<PAIR> {
+/**
+* Check if the optimization algorithm has converged.
+* @param current Best point in the current iteration.
+* @return {@code true} if the algorithm is considered to have converged.
+*/
+boolean converged(int iteration, PAIR previous, PAIR current);
+}
+

@@ -1,0 +1,8 @@
+public class TemperatureCalculatorTest implements TemperatureCalculator {
+
+Double beta = null;
+
+@Override
+public double updateTemperature(double initialTemperature, int iterations, int maxIterations) {
+if(beta == null) calculateBeta(initialTemperature, maxIterations);
+

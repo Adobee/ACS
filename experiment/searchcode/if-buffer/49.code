@@ -1,0 +1,11 @@
+public static Buffer<String> getStringLogBuffer() {
+if (stringLogBuffer == null) {
+stringLogBuffer = new SynchronizedBuffer<>();
+public static Buffer<Reaction> getReactionBuffer() {
+if (reactionBuffer == null) {
+reactionBuffer = new SynchronizedBuffer<>();
+}
+return reactionBuffer;
+}
+}
+

@@ -1,0 +1,10 @@
+public class PermutationIterator<E extends List<? extends Comparable>> implements Iterator<E> {
+
+private E values;
+boolean firstIteration;
+
+public PermutationIterator(E values, boolean firstIteration) {
+public boolean hasNext() {
+if (firstIteration) return true;
+int smallestIndex = values.size() - 2;
+

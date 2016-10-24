@@ -1,0 +1,9 @@
+else return offset1 - offset2;
+}
+
+private static boolean nextPerm(char[] cs) {
+int size = cs.length;
+int k = size - 1;
+for (; k >= 1; k--) {
+if (cmp(cs[k-1], cs[k]) < 0) break;
+

@@ -1,0 +1,13 @@
+return upperBound.get();
+}
+
+public int offset(int contentSize) {
+if (hasLowerBound()) {
+return contentSize - upperBound();
+}
+}
+
+public int length(int contentSize) {
+if (hasLowerBound()) {
+return calculateLengthWithLowerBound(contentSize);
+

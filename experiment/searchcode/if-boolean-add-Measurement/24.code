@@ -1,0 +1,6 @@
+double newValue = roundUpToTwoDecimalPlaces(convertToStandard().value / unit.getConversionFactorForInch());
+return  new Measurement(unit,newValue);
+}
+public  Measurement add (Measurement measurement) throws InvalidUnitException {
+if(!isPerformable(measurement))
+

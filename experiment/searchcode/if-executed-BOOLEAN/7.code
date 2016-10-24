@@ -1,0 +1,12 @@
+protected boolean constant, executed;
+
+public Event(boolean constant) {
+this.constant = constant;
+executed = false;
+if (constant) {
+effect(c);
+}
+if (!constant &amp;&amp; !executed) {
+effect(c);
+executed = true;
+

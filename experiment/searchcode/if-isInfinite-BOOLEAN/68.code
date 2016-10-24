@@ -1,0 +1,10 @@
+@Deprecated
+public static <T> boolean isInfinite(Stream<T> stream) {
+return stream.count() == Long.MAX_VALUE;
+Stream<Integer> infiniteStream = Stream.iterate(0, i -> i + 1);
+
+// fall into infinite loop
+boolean isInfinite = StreamInfiniteChecker.isInfinite(infiniteStream);
+}
+}
+

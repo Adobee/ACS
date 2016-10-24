@@ -1,0 +1,10 @@
+private UnboundedFifoByteBuffer buf;
+private int initialCapacity = -1;
+
+public ByteQueue() {
+buf = new UnboundedFifoByteBuffer();
+}
+
+public ByteQueue(int initialCapacity) {
+buf = new UnboundedFifoByteBuffer(initialCapacity);
+

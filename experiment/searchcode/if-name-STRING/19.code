@@ -1,0 +1,13 @@
+package stabilizer;
+
+public class Action {
+public String name;
+public boolean complement;
+public String toString() {
+String s = name;
+if (complement)
+s = s + &quot;&#39;&quot;;
+return s;
+}
+}
+

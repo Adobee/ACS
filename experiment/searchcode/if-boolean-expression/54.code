@@ -1,0 +1,10 @@
+@Override
+public boolean isEquivalent(Expression other) {
+return false; //TODO
+}
+
+@Override
+public Expression simplify() {
+Expression inner = expression.simplify();
+if (inner instanceof NegationExpression) {
+

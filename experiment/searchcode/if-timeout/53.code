@@ -1,0 +1,6 @@
+currentTimeMillis = System.currentTimeMillis();
+if(currentTimeMillis - beginTimeMillis >= timeout){
+isTimeout = true;
+if(raiseException){
+throw new TimeoutException(String.format(&quot;Operation time out! timeout setting is %s millisecond.&quot;, timeout));
+

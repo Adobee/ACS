@@ -1,0 +1,13 @@
+lowerLeft = new Point2D(x1, y2);
+upperRight = new Point2D(x2, y1);
+}
+} else {
+if(y1 < y2) {
+lowerLeft = new Point2D(x2, y1);
+double y = Util.generateRandomDoubleBetween(lowerLeft.getY(),upperRight.getY());
+return new Point2D(x,y);
+}
+
+@Override
+public boolean isInside(Point2D point) {
+

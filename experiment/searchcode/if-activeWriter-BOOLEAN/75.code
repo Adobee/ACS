@@ -1,0 +1,10 @@
+private final FrameSink frameSink = new FrameSink();
+
+private boolean closed;
+private boolean activeWriter;
+
+private final byte[] maskKey;
+if (payload == null) throw new NullPointerException(&quot;payload == null&quot;);
+if (activeWriter) {
+throw new IllegalStateException(&quot;A message writer is active. Did you call close()?&quot;);
+

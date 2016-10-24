@@ -1,0 +1,13 @@
+this.x = x; this.y = y; this.width = width; this.length = length;
+}
+
+public boolean intersects(Rect other)
+{
+if ((other.x + other.width >= x) &amp;&amp; (other.x < x + width) &amp;&amp; (other.y + other.length >= y) &amp;&amp; (other.y <= y + length))
+return false;
+}
+
+public boolean intersects(Vector2 other)
+{
+if ((other.x > x) &amp;&amp; (other.x < x+width) &amp;&amp; (other.y > y) &amp;&amp; (other.y < y+length)) {
+

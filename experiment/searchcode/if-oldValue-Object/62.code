@@ -1,0 +1,6 @@
+public class WarnDoubleProperties extends Properties {
+public Object put(Object key, Object value) {
+Object oldValue = super.put(key, value);
+if (oldValue != null &amp;&amp;
+key instanceof String &amp;&amp; value instanceof String &amp;&amp; oldValue instanceof String) {
+

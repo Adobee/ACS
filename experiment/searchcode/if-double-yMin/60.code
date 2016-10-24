@@ -1,0 +1,9 @@
+
+public class Rectangle {
+
+private double xmin, ymin, xmax, ymax;
+
+public Rectangle(double xmin, double ymin, double xmax, double ymax) {
+if(xmax <= xmin || ymax <= ymin)
+throw new IllegalArgumentException();
+

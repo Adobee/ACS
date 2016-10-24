@@ -1,0 +1,9 @@
+ta.setClickPrice(new BigDecimal((double)ta.getIncome()/100.0/(double)ta.getClickTimes()).setScale(2,BigDecimal.ROUND_HALF_UP).doubleValue());
+}
+if(ta.getShowTimes()==0){
+ta.setClickRate(0);
+ta.setShowPrice(0);
+ta.setClickPrice(new BigDecimal(ta.getIncome()/(double)ta.getClickTimes()).setScale(2,BigDecimal.ROUND_HALF_UP).doubleValue());
+}
+if(ta.getShowTimes()==0){
+

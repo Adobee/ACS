@@ -1,0 +1,7 @@
+import org.elasticsearch.index.query.QueryBuilder;
+import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.index.query.QueryFilterBuilder;
+public ElasticSearchPlaceQuery fuzzyLikeThisSearch(String query, String... fields) {
+queryBuilder = QueryBuilders.fuzzyLikeThisQuery(fields).likeText(query);
+return this;
+

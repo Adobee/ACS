@@ -1,0 +1,12 @@
+private long total;
+private int limit;
+
+private long totalPage;
+
+public void calculateTotalPage() {
+if (limit == 0) {
+totalPage = 0;
+} else {
+long left = total % limit;
+long page = total / limit;
+

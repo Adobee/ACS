@@ -1,0 +1,16 @@
+return this;
+}
+
+@Override
+public void setState(boolean state) {
+iterate(f -> f.setState(state));
+}
+
+@Override
+public void set(boolean state) {
+iterate(f -> f.set(state));
+}
+
+@Override
+public void pulse(long duration, boolean blocking) {
+

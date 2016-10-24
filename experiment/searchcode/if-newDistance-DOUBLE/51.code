@@ -1,0 +1,6 @@
+for (LineSegment ls : lstLS) {
+Point to = ls.getTo();
+double newDistance = d + ls.getLength();
+if (to.getDistanceFromPrevious() > newDistance) {
+to.setDistanceFromPrevious(newDistance);
+

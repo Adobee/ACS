@@ -1,0 +1,11 @@
+@Override
+protected boolean equalityCheck(Float v)
+{
+if (super.equalityCheck(v))
+return true;
+
+if (Float.isNaN(value) &amp;&amp; Float.isNaN(v))
+return true;
+
+if (Float.isInfinite(value) &amp;&amp; Float.isInfinite(v))
+

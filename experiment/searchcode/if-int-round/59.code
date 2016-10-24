@@ -1,0 +1,12 @@
+public final int round;
+
+public AmountObject(long amount, int round) {
+this.round = round;
+this.amount = amount;
+}
+
+@Override
+public String toString() {
+if (round < 10) {
+return &quot;Runde:000&quot; + round + &quot; - Guthaben:&quot; + amount;
+

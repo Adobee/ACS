@@ -1,0 +1,15 @@
+return true;
+}
+
+public char pop(){
+if(top == null)
+return &#39;\0&#39;;
+Node temp = this.getTop();
+this.setTop(this.getTop().getNext());
+return temp.getData();
+}
+
+public char peek(){
+if(top == null)
+return &#39;\0&#39;;
+

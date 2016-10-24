@@ -1,0 +1,10 @@
+splits = getNonNumericalSplits(numberOfRegions, 0);
+
+//System.out.println(&quot;Id2String splits: &quot;);
+//printSplits(splits);
+
+if (numberOfRegions > 0){
+createSimpleTable(admin, TABLE_NAMES[OSPC]+schemaSuffix, objectSplits, NO_COMPRESSION, SEQUENTIAL_ACCESS_PATTERN, ON_DISK);
+
+if (onlyTriples == false){
+

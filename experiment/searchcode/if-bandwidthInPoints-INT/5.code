@@ -1,0 +1,9 @@
+if (n == 2) {
+return new double[]{yval[0], yval[1]};
+}
+
+int bandwidthInPoints = (int)Math.round(getBandwidth() * n);
+// is closer to xval[i] than the leftmost point of the current interval
+int nextRight = nextNonzero(weights, right);
+if (nextRight < xval.length &amp;&amp; xval[nextRight] - xval[i] < xval[i] - xval[left]) {
+

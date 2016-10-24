@@ -1,0 +1,13 @@
+public static Context getAttachedContext() {
+Context retVal = null;
+if (isInitialized) {
+retVal = theContext;
+}
+return retVal;
+synchronized (syncObject) {
+if (!isInitialized) {
+theContext = context;
+isInitialized = true;
+}
+retVal = isInitialized;
+

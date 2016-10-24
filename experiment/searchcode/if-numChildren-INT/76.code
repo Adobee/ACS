@@ -1,0 +1,9 @@
+this.util = new TreeWalkerUtil(new SymbolTable());
+}
+
+public int handleArrayStat(int numChildren, ParseTree ctx, Statement stat_type, FunctionGenerator main, CodeGenerator code, PreCodeGenWalker walker, PairUtil pairUtil) {
+case ARRAY_INIT_PAIR:
+HandleArrayPAIR_Lit(numChildren, ctx, main, walker, pairUtil);
+break;
+case ARRAY_INIT_INT:
+

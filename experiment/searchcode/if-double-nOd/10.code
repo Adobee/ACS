@@ -1,0 +1,11 @@
+import java.util.List;
+import java.lang.String;
+public class NOD implements Result{
+int a, b;
+a = Integer.parseInt(s[0], 10);
+b = Integer.parseInt(s[1], 10);
+}
+
+NOD(Double ... c) {
+double buf;
+

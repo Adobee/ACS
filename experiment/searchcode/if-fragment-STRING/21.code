@@ -1,0 +1,8 @@
+chatFragment = new ChatFragment();
+mainMenuFragment = new MainMenuFragment();
+
+Log.v(&quot;Fragment thread Id&quot;, String.valueOf(Thread.activeCount()));
+private void commit(int fragmentId, Fragment fragment ){
+if (fragment != null){
+FragmentTransaction transaction = fragmentManager.beginTransaction();
+

@@ -1,0 +1,8 @@
+private BandwidthCost bandwidthCost;
+private CPUCost cpuCost;
+private Double previousCost;
+private Double costOfExistence = 0.001;
+public double computeCostInThisPeriod(int megaBytesDownloadedSoFar) {
+if (previousCost == null) {
+previousCost = computeCostSoFar(megaBytesDownloadedSoFar);
+

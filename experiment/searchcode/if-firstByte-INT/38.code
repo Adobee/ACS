@@ -1,0 +1,5 @@
+protected void readAndCheckFirstByte(InputStream inputStream) throws IOException, InvalidFormatException {
+int firstByte = inputStream.read();
+if(firstByte < 0 || firstByte != getPrefix()) {
+throw new InvalidFormatException();
+

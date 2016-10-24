@@ -1,0 +1,10 @@
+public void addOperator(Operator oper) {
+if (this.oper == null)
+this.oper = oper;
+else if (this.oper.hasRoom())
+this.oper.addOperator(oper);
+}
+
+@Override
+public boolean hasRoom() {
+

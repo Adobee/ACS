@@ -1,0 +1,8 @@
+public class SecurityService {
+
+private Properties properties;
+
+public boolean authenticate(User user) {
+if (properties.containsKey(user.getUsername())) {
+return properties.getProperty(user.getUsername()).equals(user.getPassword());
+

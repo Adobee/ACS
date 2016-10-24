@@ -1,0 +1,10 @@
+* and open the template in the editor.
+*/
+package org.spat.scf.serializer.serializer;
+
+import org.spat.scf.serializer.exception.DisallowedSerializeException;
+public static SerializerBase GetSerializer(Class<?> type) throws ClassNotFoundException, DisallowedSerializeException {
+if (type == null) {
+return nullSerializer;
+} else if (type.isEnum()) {
+

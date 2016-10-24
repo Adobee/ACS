@@ -1,0 +1,11 @@
+public class ValueChangeEventMatcher<T> implements IArgumentMatcher {
+
+private T expectedValue;
+
+private ValueChangeEventMatcher(T expectedValue) {
+public void appendTo(StringBuffer buffer) {
+buffer.append(expectedValue.toString());
+}
+
+public boolean matches(Object argument) {
+

@@ -1,0 +1,11 @@
+result = prime * result + ((upperRight == null) ? 0 : upperRight.hashCode());
+return result;
+}
+
+@Override
+public boolean equals(Object obj) {
+if (upperRight == null) {
+if (other.upperRight != null)
+return false;
+} else if (!upperRight.equals(other.upperRight))
+

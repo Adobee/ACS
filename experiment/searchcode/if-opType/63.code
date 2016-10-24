@@ -1,0 +1,8 @@
+public static FuncBase createFunc(String funcName, List<String> args, OperandType opType) throws ConfigurationException
+{
+String n = funcName.toLowerCase();
+if (n.equals(&quot;between&quot;)) {
+return new Between(args, opType);
+} else if (n.equals(&quot;contains&quot;)) {
+return new Contains(args, opType);
+

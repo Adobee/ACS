@@ -1,0 +1,9 @@
+hashcode = ((hashcode << 5) + hashcode) + s.charAt(i);
+}
+hashcode = Math.abs(hashcode);
+hashcode = (int)hashcode%capacity;
+if (hashtable[hashcode] == null) { //until no collision
+hashcode = Math.abs(hashcode);
+hashcode = (int)hashcode%capacity;
+if (hashtable[hashcode] == null) { //until no collision
+

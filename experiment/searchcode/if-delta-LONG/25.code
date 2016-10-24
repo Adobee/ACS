@@ -1,0 +1,9 @@
+public class TimestampStream {
+private long startTime;
+private long previousTimestamp;
+private long lastDelta = 0;
+public void addTimestamp(long timestamp) throws IOException {
+//store the first timestamp as is
+if (startTime == 0) {
+bitPacker.writeLong(timestamp);
+

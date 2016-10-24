@@ -1,0 +1,11 @@
+public int boyerMooreMatch(String text, String pattern) {
+
+int leftmostMatchIndex = -1;
+
+if (pattern.length() <= text.length() ) {
+int textIndex = pattern.length() - 1;
+int patternIndex = pattern.length() - 1;
+
+while ( textIndex < text.length() ) {
+if (pattern.charAt(patternIndex) == text.charAt(textIndex) ) {
+

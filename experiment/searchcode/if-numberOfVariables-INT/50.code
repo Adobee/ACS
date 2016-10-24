@@ -1,0 +1,7 @@
+* otherwise it does nothing
+*/
+public static void create(int numberOfVariables, int cacheSize) {
+if (factory == null) {
+factory = BDDFactory.init(IMPLEMENTATION, numberOfVariables, cacheSize);
+//factory.setMaxNodeNum((int)(numberOfVariables * 1.5));
+

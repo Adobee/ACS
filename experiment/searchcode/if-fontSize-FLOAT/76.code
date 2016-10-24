@@ -1,0 +1,11 @@
+Float[] fontSize;
+Map<Float, TextRenderer> fontSizeMap = new HashMap<Float, TextRenderer>();
+List<TextRenderer> textRenderers = new ArrayList<TextRenderer>();
+public boolean checkSize(float size) {
+for (float fs : fontSize) {
+if (fs == size) {
+return true;
+}
+}
+return false;
+

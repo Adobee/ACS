@@ -1,0 +1,7 @@
+private Map<Long, List<Match>> gameMap = new HashMap<>();
+
+public void setMatches(List<Match> unfilteredMatches) {
+this.matches = new ArrayList<>();
+for (Match match : unfilteredMatches) {
+if (match.getEndDate() != null &amp;&amp; MatchUtil.isMatchComplete(match)) {
+

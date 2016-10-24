@@ -1,0 +1,13 @@
+if( progress >= parameter.getFailDelay() + parameter.getFailDuration() + parameter.getFailSuspend())
+{
+progress = 0L;
+}
+
+++progress;
+
+boolean isFail = fail.isInFailState();
+
+System.out.print( &quot;\n\tprogress: &quot; + progress);
+
+if( isFail)
+

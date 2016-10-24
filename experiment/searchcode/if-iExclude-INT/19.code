@@ -1,0 +1,10 @@
+(String)o[2]);
+a.setCount(((Number)o[3]).intValue());
+areas.add(a);
+}
+response.add(&quot;area&quot;, areas);
+
+if (iRequest.hasOption(&quot;area&quot;)) {
+int defaultStatus = ((Number)query.select(&quot;count(distinct s)&quot;).where(&quot;s.sectioningStatus is null&quot;).exclude(&quot;status&quot;).query(helper.getHibSession()).uniqueResult()).intValue();
+if (defaultStatus > 0) {
+

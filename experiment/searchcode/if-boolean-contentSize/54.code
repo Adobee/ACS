@@ -1,0 +1,8 @@
+int contentSize = ListSequence.fromList(contents).count();
+if (contentSize == 0) {
+return true;
+}
+if (contentSize == 1) {
+SNode first = ListSequence.fromList(contents).first();
+if (!(SConceptPropertyOperations.getBoolean(first, &quot;isComplex&quot;)) &amp;&amp; (ListSequence.fromList(SLinkOperations.getConceptLinkTargets(first, &quot;correspondingElement&quot;)).first() == null)) {
+

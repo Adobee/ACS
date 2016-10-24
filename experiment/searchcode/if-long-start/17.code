@@ -1,0 +1,10 @@
+package org.apache.catalina.servlets;
+
+public class DefaultServletRange {
+
+private long start;
+public boolean validate() {
+if (end >= length)
+end = length - 1;
+return (start >= 0) &amp;&amp; (end >= 0) &amp;&amp; (start <= end) &amp;&amp; (length > 0);
+

@@ -1,0 +1,6 @@
+cmptst(field.newDfp(&quot;0&quot;), field.newDfp(&quot;1e-131072&quot;), &quot;equal&quot;, false, 9); // 0 == 1e-131072
+// check flags
+if (field.getIEEEFlags() != 0)
+cmptst(field.newDfp(&quot;1e20&quot;), field.newDfp(&quot;1.0000000000000001&quot;), &quot;unequal&quot;, true, 24);
+if (field.getIEEEFlags() != 0)
+

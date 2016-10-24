@@ -1,0 +1,7 @@
+* @return the row that the variable is basic in.  null if the column is not basic
+*/
+protected Integer getBasicRow(final int col) {
+int col = 0;
+for (int j = 0; j < getWidth(); j++) {
+if (!columnsToDrop.contains(j)) {
+

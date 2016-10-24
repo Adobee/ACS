@@ -1,0 +1,10 @@
+double lo = 0;
+double hi = num;
+double diff = 0.0001;
+double mid = num/2;
+
+while( Math.abs(num - (mid * mid)) > diff )
+{
+mid = lo + (hi - lo) / 2;
+if(mid*mid > num)
+

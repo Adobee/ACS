@@ -1,0 +1,12 @@
+public class DimTableMapIterable implements Iterable<DimensionMap>
+{
+private DimTable dimTable;
+private DimensionMap filter;
+private int skipN;
+this(dimTable, filter, 0);
+}
+
+public DimTableMapIterable(DimTable dimTable, DimensionMap filter, int skipN)
+{
+this.dimTable = dimTable;
+

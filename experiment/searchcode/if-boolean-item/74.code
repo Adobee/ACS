@@ -1,0 +1,7 @@
+public class SieveUtils {
+
+private static HashMap<ItemInfo, Boolean> registryCache = new HashMap<ItemInfo, Boolean>();
+
+public static boolean registered(ItemStack item) {
+Boolean allowed = registryCache.get(new ItemInfo(item));
+

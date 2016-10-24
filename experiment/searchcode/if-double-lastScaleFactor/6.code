@@ -1,0 +1,6 @@
+/*  47:139 */       if ((Double.isInfinite(p2)) || (Double.isInfinite(q2)))
+/*  48:    */       {
+/*  49:145 */         double scaleFactor = 1.0D;
+/*  50:146 */         double lastScaleFactor = 1.0D;
+/*  51:147 */         int maxPower = 5;
+

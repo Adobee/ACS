@@ -1,0 +1,5 @@
+public static double upper(int df, double chi2) { // 上側累積確率
+if ((df &amp; 1) != 0) { // 自由度が奇数
+double chi = Math.sqrt(chi2);
+if (df == 1) return 2 * NormalDistribution.upper(chi);
+

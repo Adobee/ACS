@@ -1,0 +1,15 @@
+public class GETLISTTest {
+
+int opCode;
+int pads = 0;
+byte[] bytes;
+GETLIST getlist;
+
+@Before
+public void beforeTest() {
+
+getlist = new GETLIST();
+bytes = getlist.toByteArray();
+
+opCode = (int)PDU.byteArrayToLong(bytes, 0, 1);
+

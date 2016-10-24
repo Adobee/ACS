@@ -1,0 +1,15 @@
+public class Watcher {
+
+private long startTime;
+private long stopTime;
+private long interval;
+
+public Watcher() {
+startTime = System.currentTimeMillis();
+}
+
+public void stop() {
+stopTime = System.currentTimeMillis();
+
+if (startTime < stopTime)
+

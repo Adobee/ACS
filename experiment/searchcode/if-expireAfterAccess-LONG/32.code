@@ -1,0 +1,8 @@
+removalListener(new RemovalHandler()).
+maximumSize(maxSize);
+if (expireAfterAccess !=0) {
+cacheBuilder = cacheBuilder.expireAfterAccess(expireAfterAccess, TimeUnit.MINUTES);
+
+} else if (expireAfterWrite != 0) {
+cacheBuilder = cacheBuilder.expireAfterWrite(expireAfterWrite, TimeUnit.MINUTES);
+

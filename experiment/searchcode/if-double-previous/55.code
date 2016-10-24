@@ -1,0 +1,15 @@
+static double current_iteration[][] = {
+{0,0,0,0},
+{0,0,0,0},
+{0,0,0,0},
+{0,0,0,100}
+} ;
+
+
+static double previous_iteration[][] = {
+0.1*previous_iteration[i][j+1] +
+previous_iteration[i][j-1]) ;
+}
+double intention_move_left = 0 ;
+if( j > 0 ){
+

@@ -1,0 +1,12 @@
+public class SelfLocalOperation {
+
+@ExpectWarning(&quot;SA_LOCAL_SELF_COMPARISON&quot;)
+int f(int x, int y) {
+if (x < x)
+return x;
+}
+
+@ExpectWarning(&quot;SA_LOCAL_SELF_COMPARISON&quot;)
+long f(long x, long y) {
+if (x < x)
+

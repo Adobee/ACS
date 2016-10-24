@@ -1,0 +1,7 @@
+int q = partition(p, low, high);
+if (q == k) {
+return Arrays.copyOfRange(p, 0, k + 1);
+int pivotIndex = low + (int) Math.random() * (high + 1); // Random Pick pivot point
+swap(p, pivotIndex, high);
+double pivotVal = Math.sqrt(p[high].x * p[high].x + p[high].y * p[high].y);
+

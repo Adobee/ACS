@@ -1,0 +1,8 @@
+protected Object executeIteration(int iteration, Object input)
+throws TestCaseException {
+if (TestCase.isBeginOrEndMarker(iteration))
+Object expectedInput = getRandomInput(iteration);
+debugDataObject(&quot;expectedInput&quot;, iteration, expectedInput);
+
+if (!input.equals(expectedInput)) {
+

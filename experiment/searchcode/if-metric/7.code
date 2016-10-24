@@ -1,0 +1,8 @@
+public Metric transform(@Nullable MetricEntity metricEntity) {
+Metric metric = null;
+if (metricEntity != null) {
+metric = Metric.builder()
+for (MetricEntity metricEntity : metricEntityCollection) {
+metric = transform(metricEntity);
+if (metric != null) {
+

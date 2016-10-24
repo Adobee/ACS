@@ -1,0 +1,9 @@
+rs = pstmt.executeQuery();
+if (rs != null){
+while (rs.next()){
+rh.add(new RhDTO(rs.getInt(&quot;idRh&quot;), rs.getString(&quot;Descripcion&quot;)));
+pstmt = cnn.prepareStatement(sqlDelete);
+pstmt.setInt(1, odto.getIdRh());
+rtdo = pstmt.executeUpdate();
+if (rtdo != 0) {
+

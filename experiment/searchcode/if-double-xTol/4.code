@@ -1,0 +1,11 @@
+private final double xtol = 1e-16;
+
+private double[] diag = null;
+private boolean diagco = false;
+
+private int[] iflag = null;
+public int optimize(double[] x, double f, double[] g) throws ExceptionWithIflag{
+LBFGS.lbfgs(n, m, x, f, g, diagco, diag, iprint, eps, xtol, iflag);
+
+if(iflag[0] < 0){
+

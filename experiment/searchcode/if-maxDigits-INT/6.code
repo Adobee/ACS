@@ -1,0 +1,10 @@
+public class AscendingArrayRadixSort implements ArraySort {
+
+@Override
+public int[] sort(int[] numbers) {
+return radixSort(numbers, maxDigits(numbers));
+for (int n : numbers) {
+int digits = (int) Math.log10(n) + 1;
+if (digits > maxDigits) {
+maxDigits = digits;
+

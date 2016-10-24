@@ -1,0 +1,8 @@
+while (b_continue) {
+nb_char = nb_char + utils.stack.pop();
+if(!rules.stackEmpty()) b_continue = (rules.textViewEndsWithDigit()|| rules.textViewEndsWithDot());
+else break;
+}
+if(!rules.stackEmpty()) {
+String text = utils.tv.getText().toString();
+

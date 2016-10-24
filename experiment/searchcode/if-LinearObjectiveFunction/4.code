@@ -1,0 +1,9 @@
+import org.apache.commons.math.optimization.linear.LinearObjectiveFunction;
+
+/**
+*
+* @author Denis Borisenko
+extends Solver implements LinearOptimizer {
+
+protected transient LinearObjectiveFunction function;
+

@@ -1,0 +1,8 @@
+public MethodDesc(@NotNull String returnType, @NotNull List<String> arguments) {
+this.returnType = returnType;
+this.arguments = arguments;
+MethodDesc that = (MethodDesc) o;
+
+if (!arguments.equals(that.arguments)) return false;
+if (!returnType.equals(that.returnType)) return false;
+

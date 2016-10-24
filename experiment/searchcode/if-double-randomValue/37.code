@@ -1,0 +1,14 @@
+double randomValue = rangeMin + (rangeMax - rangeMin) * r.nextDouble();
+randomValue = fixDoubleError(randomValue);
+return new Card(accountNo, randomValue);
+}
+
+public double fixDoubleError(double value){
+value *= 100;
+value = Math.round(value);
+value /= 100;
+return value;
+}
+
+}
+

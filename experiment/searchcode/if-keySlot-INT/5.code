@@ -1,0 +1,6 @@
+// We&#39;re fully qualified if all columns except the salt column are specified
+int fullyQualifiedColumnCount = table.getPKColumns().size() - (nBuckets == null ? 0 : 1);
+while (iterator.hasNext()) {
+KeyExpressionVisitor.KeySlot slot = iterator.next();
+// If the position of the pk columns in the query skips any part of the row k
+

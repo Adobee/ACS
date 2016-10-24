@@ -1,0 +1,9 @@
+package org.nectarframework.base.service.xml;
+
+public class BlockingResponseHandler implements XmlResponseHandler {
+public synchronized XmlResponse waitForResponse() {
+if (response == null) {
+try {
+wait(timeout);
+} catch (InterruptedException e) {
+

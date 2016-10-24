@@ -1,0 +1,15 @@
+public class Survey extends BaseEntity {
+
+/**
+*
+*/
+private static final long serialVersionUID = 1L;
+
+public enum ScaleType {
+CONTINOUS_SCALE, FIVE_POINT_QUALITY_SCALE,FIVE_POINT_IMPAIRMENT_SCALE, BINARY_SCALE, CUSTOM_SCALE;
+}
+
+private String surveyName;
+private ScaleType scaleType = ScaleType.CONTINOUS_SCALE;
+private String videoLocation;
+

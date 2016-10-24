@@ -1,0 +1,15 @@
+this.mActivity = paramShanbayActivity;
+}
+
+public void init()
+{
+if (Misc.isInternetAvailable(this.mActivity))
+{
+this.mActivity.getClient().init(this.mActivity, this);
+this.mActivity.getClient().init(this.mActivity, this);
+}
+
+protected void onAuthenticationFailure()
+{
+if (this.mActivity.isFinishing())
+

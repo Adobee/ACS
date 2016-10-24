@@ -1,0 +1,12 @@
+private int numAttempts = 0;
+private long cleanupPeriod;
+
+private AtomicBoolean cleanupRunning = new AtomicBoolean(false);
+@Override
+public void run()
+{
+if (!cleanupRunning.compareAndSet(false, true))
+return;
+
+for (UUID uuid : protectedAnimals.keySet().toArray(new UUID[0]))
+

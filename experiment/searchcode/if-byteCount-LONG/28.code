@@ -1,0 +1,11 @@
+* @return Copied bytes count or -1 if no bytes were read *and* EOF was reached
+*/
+public long copy(InputStream in, OutputStream out, long byteCount)
+public long copy(Reader in, Writer out, long byteCount) throws IOException {
+char buffer[] = new char[BUFFER_SIZE];
+int len;
+
+long returnVal = 0;
+
+if (byteCount >= 0) {
+

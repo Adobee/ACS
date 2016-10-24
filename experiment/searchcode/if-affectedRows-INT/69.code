@@ -1,0 +1,10 @@
+public class SessionBizImpl implements ISessionBiz {
+
+private SessionDaoImpl sessionDao;
+private int affectedRows = 0;
+this.affectedRows = this.sessionDao.insert(session);
+if(this.affectedRows > 0){
+return true;
+}
+return false;
+

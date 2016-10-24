@@ -1,0 +1,16 @@
+* @param objValue
+*            对应值
+*/
+public V put(K objKey, V objValue) {
+if (readonly) {
+throw new RuntimeException(&quot;属性只读&quot;);
+* 只读开关
+*/
+private boolean readonly = false;
+
+public void setReadonly(boolean readonly) {
+this.readonly = readonly;
+}
+
+}
+

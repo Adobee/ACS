@@ -1,0 +1,9 @@
+package siteseeker;
+
+public class RequestBuilder {
+public SimpleRequestParameters requestParameters;
+
+private RequestBuilder() {
+if(requestParameters!=null) {
+throw new IllegalStateException(&quot;Each RequestBuilder instance may be used only to create one request&quot;);
+

@@ -1,0 +1,9 @@
+mPeriodCheckers.add(notRunPeriod.getPeriodChecker());
+}
+}
+
+@Override
+public boolean runsOnDate(LocalDate dateToCheck) {
+for(PeriodChecker periodChecker : mPeriodCheckers) {
+if(!periodChecker.runsOnDate(dateToCheck)) {
+

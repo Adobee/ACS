@@ -1,0 +1,12 @@
+return deflated[y];
+}
+
+@Override
+public int set(int x, int y, int z, int value) {
+if (inflated == null) {
+return old;
+}
+int old = deflated[y];
+if (old == value) {
+return old;
+

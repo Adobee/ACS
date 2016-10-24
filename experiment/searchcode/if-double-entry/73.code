@@ -1,0 +1,7 @@
+public static double product(Map<String, Double> v1, Map<String, Double> v2) {
+Iterator<Entry<String, Double>> itr = v1.entrySet().iterator();
+Double d1 = entry.getValue();
+Double d2 = v2.get(entry.getKey());
+if (d2 != null)
+result += d1 * d2;
+

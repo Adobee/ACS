@@ -1,0 +1,12 @@
+public class PointInterval extends AbstractInterval {
+
+final int leftright;
+
+private final static int MAX_FLYWEIGHT = 10;
+private static PointInterval flyweight[];
+private PointInterval(int leftright) {
+this.leftright = leftright;
+}
+
+protected static PointInterval getPointInterval(int leftright) {
+

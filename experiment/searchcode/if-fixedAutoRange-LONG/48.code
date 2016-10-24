@@ -1,0 +1,7 @@
+public void setBase(double base) {
+if (base <= 1.0) {
+throw new IllegalArgumentException(&quot;Requires &#39;base&#39; > 1.0.&quot;);
+double fixedAutoRange = getFixedAutoRange();
+if (fixedAutoRange > 0.0) {
+lower = Math.max(upper - fixedAutoRange, this.smallestValue);
+

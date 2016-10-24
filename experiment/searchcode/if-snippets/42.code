@@ -1,0 +1,10 @@
+public int getStepSize() {
+if (this.snippets.isEmpty())
+return 0;
+return this.snippets.lastKey().intValue();
+}
+
+public void merge(final Snippets other) {
+for (final SnippetStep s : other) {
+if (!this.snippets.containsKey(s.step))
+

@@ -1,0 +1,8 @@
+@Override
+public Object convertValue(Map context, Object value, Class toType) {
+if (toType == Date.class) {
+return CalendarUtil.parseDate((String) value);
+}
+if (toType == Boolean.class) {
+if (null != value) {
+

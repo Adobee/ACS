@@ -1,0 +1,15 @@
+import sqlartan.core.ast.parser.ParserContext;
+import static sqlartan.core.ast.Keyword.*;
+
+/**
+* https://www.sqlite.org/lang_explain.html
+* {@inheritDoc}
+*/
+@Override
+public void toSQL(Builder sql) {
+sql.append(EXPLAIN);
+if (queryPlan) sql.append(QUERY, PLAN);
+sql.append(statement);
+}
+}
+

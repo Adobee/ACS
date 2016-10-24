@@ -1,0 +1,11 @@
+Paint itemPaint = renderer.getItemPaint(row, column);
+GradientPaintTransformer t = renderer.getGradientPaintTransformer();
+if (t != null &amp;&amp; itemPaint instanceof GradientPaint) {
+itemPaint = t.transform((GradientPaint) itemPaint, bar);
+}
+g2.setPaint(itemPaint);
+g2.fill(bar);
+
+
+if (renderer.isDrawBarOutline()) {
+

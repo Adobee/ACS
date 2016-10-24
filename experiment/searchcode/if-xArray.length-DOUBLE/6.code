@@ -1,0 +1,9 @@
+System.out.print(&quot;Enter your x values: &quot;);
+double[] xArray = parseInput();
+if(xArray == null){
+System.out.println(&quot;Must enter x values&quot;);
+//But we are reusing parseInput which returns a double...
+double[] fArray = parseInput();
+if(fArray == null){
+fArray = new double[xArray.length];
+

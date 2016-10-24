@@ -1,0 +1,8 @@
+public class ParticleApproachPoint extends ParticleController{
+
+private final double targetX, targetY, targetZ;
+private final double approachSpeed;
+private boolean ignoreYCoord;
+
+public ParticleApproachPoint(AMParticle particleEffect, double targetX, double targetY, double targetZ, double approachSpeed, double targetDistance, int priority, boolean exclusive){
+

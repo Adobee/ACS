@@ -1,0 +1,9 @@
+throws IllegalArgumentException, InvalidMatrixException {
+
+final int m = lTData.length;
+if (b.getRowDimension() != m) {
+b.getRowDimension(), b.getColumnDimension(), m, &quot;n&quot;);
+}
+
+final int nColB = b.getColumnDimension();
+

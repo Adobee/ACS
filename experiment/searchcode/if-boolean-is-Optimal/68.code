@@ -1,0 +1,15 @@
+final int diff = Math.abs(TARGET_LENGTH - min);
+
+boolean isBetter = false;
+
+if (optimalSize == null || diff < minDiff) {
+final int optimalMax = Math.max(optimalSize.width, optimalSize.height);
+
+if (max < optimalMax) {
+isBetter = true;
+}
+}
+
+if (isBetter) {
+minDiff = diff;
+

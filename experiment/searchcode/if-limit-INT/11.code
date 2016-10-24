@@ -1,0 +1,13 @@
+package com.questy.helpers;
+
+public class LimitCounter {
+
+private int limit = 0;
+private int count = 0;
+
+public LimitCounter(int limit) {
+this.limit = limit;
+}
+
+public Integer getLimit() {
+

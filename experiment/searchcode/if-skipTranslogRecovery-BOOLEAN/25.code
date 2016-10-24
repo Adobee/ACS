@@ -1,0 +1,9 @@
+return idxSettings;
+}
+
+/** returns true if this shard supports indexing (i.e., write) operations. */
+public boolean canIndex() {
+final boolean throttled;
+final long throttleTimeInMillis;
+if (engine == null) {
+

@@ -1,0 +1,10 @@
+requestHeaders.add(&quot;User-Agent&quot;, defaultUserAgent());
+}
+
+OutputStreamRequestBody requestBody = null;
+if (HttpMethod.permitsRequestBody(method)) {
+networkInterceptor.proceed();
+
+OutputStreamRequestBody requestBody = (OutputStreamRequestBody) call.request().body();
+if (requestBody != null) requestBody.outputStream().close();
+

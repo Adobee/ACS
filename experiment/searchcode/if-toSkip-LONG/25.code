@@ -1,0 +1,10 @@
+public int read() throws NullPointerException, IndexOutOfBoundsException {
+if (pos == count) {
+return -1;
+} else {
+int rv = (buff[pos] &amp; 0xff);
+public long skip(long n) {
+int toSkip = (int) Math.min(available(), n);
+pos += toSkip;
+return toSkip;
+

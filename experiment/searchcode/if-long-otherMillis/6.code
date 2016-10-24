@@ -1,0 +1,8 @@
+else
+{
+long otherMillis = other.getMillis();
+long thisMillis = getMillis();
+
+// cannot do (thisMillis - otherMillis) as can overflow
+if (thisMillis == otherMillis)
+

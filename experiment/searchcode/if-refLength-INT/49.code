@@ -1,0 +1,8 @@
+protected int encodeAndWriteStream(final OutputStream out,
+final PDFNumber refLength) throws IOException {
+int bytesWritten = 0;
+PDFNumber refLength = null;
+final Object lengthEntry;
+if (this.encodeOnTheFly) {
+refLength = new PDFNumber();
+

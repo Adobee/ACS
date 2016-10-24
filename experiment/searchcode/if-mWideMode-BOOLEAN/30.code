@@ -1,0 +1,9 @@
+// if false, we are in narrow (handset) mode where we use a ViewPager and show only
+// one conference day at a time.
+private boolean mWideMode = false;
+mViewPagerAdapter = new OurViewPagerAdapter(getFragmentManager());
+mViewPager.setAdapter(mViewPagerAdapter);
+
+if (mWideMode) {
+mMyScheduleViewWide[0] = (MyScheduleView) findViewById(com.saarang.samples.apps.iosched.R.id.my_schedule_first_day);
+

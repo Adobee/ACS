@@ -1,0 +1,11 @@
+import okio.ForwardingSink;
+import okio.Sink;
+
+class FaultHidingSink extends ForwardingSink {
+private boolean hasErrors;
+public void close() {
+if (!this.hasErrors) {
+try {
+super.close();
+} catch (IOException e) {
+

@@ -1,0 +1,11 @@
+private boolean isString;
+
+public ColumnValue(String value, boolean isString) {
+this.value = value;
+this.isString = isString;
+}
+
+public String render() {
+if (isString) {
+return &#39;&quot;&#39; + value.toString() + &#39;&quot;&#39;;
+

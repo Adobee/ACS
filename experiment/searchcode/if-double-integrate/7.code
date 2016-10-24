@@ -1,0 +1,11 @@
+this.integrate = integrate;
+if(this.integrate.integrand instanceof Func) {
+Func f = (Func) this.integrate.integrand;
+this.integrate.integrand);
+byteFunc = f.toBytecodeFunc();
+}
+}
+
+public double eval() {
+double[][] pnts = integrate.domain.getIntWeightAndPoints(3);
+

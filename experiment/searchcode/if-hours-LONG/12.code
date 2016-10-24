@@ -1,0 +1,13 @@
+public class Helper {
+
+public static String formatInterval(float hours){
+long hr;
+if (hours >= 0) {
+hr = Math.round(android.util.FloatMath.floor(hours));
+return String.format(&quot;%02dh %02dm&quot;, hr, min);
+}
+
+public static long getCompleteHours(float hours){
+if (hours >= 0) {
+return Math.round(android.util.FloatMath.floor(hours));
+

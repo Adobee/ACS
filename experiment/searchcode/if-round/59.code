@@ -1,0 +1,7 @@
+package com.cubeia.poker.rounds.betting;
+
+public enum BettingRoundName {
+NOTHING(false), PRE_FLOP(false), FLOP(false), TURN(true), RIVER(true);
+public BettingRoundName next() {
+if (ordinal() + 1 == BettingRoundName.values().length) {
+

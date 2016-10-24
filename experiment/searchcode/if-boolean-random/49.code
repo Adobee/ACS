@@ -1,0 +1,13 @@
+private static long randomSeed;
+private static boolean seeded = false;
+
+public static long getRandomSeed() {
+return randomSeed;
+public static void seed() {
+seed(null);
+}
+
+public static void seed(Long seed) {
+if (seed != null) {
+randomSeed = seed;
+

@@ -1,0 +1,19 @@
+return previous;
+}
+
+public boolean hasNext(){
+return t!=null;
+}
+
+public E next(){
+E retval = t.getData();
+return retval;
+}
+
+public void remove(){
+if (previous != null) {
+previous.setNext(t.getData());
+}
+}
+}
+

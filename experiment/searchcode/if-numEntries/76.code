@@ -1,0 +1,14 @@
+private int numEntries = 0;
+
+public LongArrayView() {
+}
+
+public long get(int index) {
+if (index >= numEntries) {
+this.numEntries = numEntries;
+ensureCapacity();
+}
+
+public void set(int index, long value) {
+if (index >= numEntries) {
+

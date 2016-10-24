@@ -1,0 +1,7 @@
+public static ShapeView<? extends Shape> createShapeView(final Shape shape) {
+final Class<? extends Shape> type = shape.getClass();
+if (type == CircleShape.class) {
+return new CircleShapeView((CircleShape) shape);
+} else if (type == PolygonShape.class) {
+return new PolygonShapeView((PolygonShape) shape);
+

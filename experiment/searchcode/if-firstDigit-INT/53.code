@@ -1,0 +1,10 @@
+private void nextDigits() { /* Implemented */
+firstDigit = generator.nextInt(9) + 1;
+secondDigit = generator.nextInt(9) + 1;
+}
+
+private void fireGameStateEvent(int firstDigit, int secondDigit)
+{
+if(listener != null)
+listener.onDigitsChanged(firstDigit, secondDigit);
+

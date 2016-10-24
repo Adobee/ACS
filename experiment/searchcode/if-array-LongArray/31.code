@@ -1,0 +1,8 @@
+int[] shortArray, int shortStart, int k) {
+int longLen = longArray.length - longStart, shortLen = shortArray.length - shortStart;
+if (longLen < shortLen) {
+return findKth(shortArray, shortStart, longArray, longStart, k);
+}
+if (shortLen == 0) {
+return longArray[k - 1 - shortStart];
+

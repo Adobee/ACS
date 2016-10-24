@@ -1,0 +1,8 @@
+List<Certificate> certificates = this.query(&quot;from Certificate where id=&quot; + &quot;&#39;&quot; + id + &quot;&#39;&quot;);
+Certificate certificate=null;
+if(certificates.size()>0){
+certificate=certificates.get(0);
+public Collection<Certificate> getCertificatesByUser(String id) {
+List<Certificate> certificates=new ArrayList<Certificate>();
+if (null!=id) {
+

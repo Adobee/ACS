@@ -1,0 +1,6 @@
+public static double priceFromYield(final YieldConvention convention, final double yield, final double accrualFactor) {
+if (convention == SimpleYieldConvention.DISCOUNT) {
+return 1.0 - accrualFactor * yield;
+}
+if (convention == SimpleYieldConvention.INTERESTATMTY) {
+

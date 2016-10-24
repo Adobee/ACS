@@ -1,0 +1,5 @@
+private ExpressionNode getDefaultCase(PatternDefinitionNode patternDefinitionNode, List<PatternCase> patternCases) {
+if (patternCases.get(patternCases.size() - 1).hasCondition()) {
+return getDefaultCase_(patternDefinitionNode)
+.orElseGet(() -> apply(reference(&quot;beloid.Prelude&quot;, &quot;raise&quot;), constant(&quot;Incomplete match in &quot; + patternDefinitionNode.getSymbol())));
+

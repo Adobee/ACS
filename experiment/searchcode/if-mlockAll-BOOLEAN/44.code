@@ -1,0 +1,10 @@
+static void tryMlockall() {
+if (!JNA_AVAILABLE) {
+logger.warn(&quot;cannot mlockall because JNA is not available&quot;);
+return;
+}
+JNANatives.tryMlockall();
+}
+
+static boolean definitelyRunningAsRoot() {
+

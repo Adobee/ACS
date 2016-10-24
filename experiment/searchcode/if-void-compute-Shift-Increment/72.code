@@ -1,0 +1,11 @@
+int sumOfDigits = charToInt(first.charAt(first.length() - 1))
++ charToInt(second.charAt(second.length() - 1));
+if (sumOfDigits > 9) {
+increment = sumOfDigits / 10;
++ charToInt(second.charAt(i)) + increment;
+// check increment
+if (i == 0) {
+
+} else if (sumOfDigits > 9) {
+increment = sumOfDigits / 10;
+

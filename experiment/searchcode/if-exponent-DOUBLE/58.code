@@ -1,0 +1,11 @@
+* @return base raised in the exponent (base**exponent)
+*/
+static public double pow(double base, int exponent) {
+double product = 1;
+
+int positiveExponent = Math.abs(exponent);
+for (int i = 0; i < positiveExponent; i++)
+product *= base;
+
+if (exponent < 0)
+

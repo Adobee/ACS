@@ -1,0 +1,9 @@
+package sqlitewrapper;
+
+public class CodeHandler {
+
+public static int checkForError(int code) throws DatabaseException {
+
+if (code != Code.SQLITE_OK.code &amp;&amp;
+code != Code.SQLITE_ROW.code &amp;&amp;
+

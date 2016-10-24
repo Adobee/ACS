@@ -1,0 +1,9 @@
+super(color);
+setAbbr(&quot;P&quot;);
+}
+
+public boolean validate(Move move) {
+return validate(move, false);
+boolean direction = (getColor() == Color.WHITE) ? move.isForward() : !move.isForward();
+if (!direction) return false;
+

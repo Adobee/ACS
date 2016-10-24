@@ -1,0 +1,9 @@
+int[] twobit = new int[4 * bytes.length + pad];
+int wr = 0, rd = 0;
+for(char b : bytes) {
+for(int shift = 6; shift >= 0; shift -= 2) twobit[wr++] = b >> shift &amp; 3;
+public static char[] base64Decode(char[] ca) {
+int[] twobit = new int[3 * ca.length];
+int wr = 0, rd = 0, pad = 0;
+for(char c : ca) {
+

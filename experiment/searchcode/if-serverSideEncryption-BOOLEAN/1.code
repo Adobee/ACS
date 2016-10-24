@@ -1,0 +1,10 @@
+private Map<String, S3Resource> resourceCache = new HashMap<String, S3Resource>();
+
+private Region region;
+
+private boolean overwrite;
+
+private boolean serverSideEncryption;
+public S3Repository(String accessKey, String secretKey, boolean overwrite, Region region, CannedAccessControlList acl, boolean serverSideEncryption) {
+AWSCredentialsProvider provider = new InstanceProfileCredentialsProvider();
+

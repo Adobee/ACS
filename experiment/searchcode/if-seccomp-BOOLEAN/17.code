@@ -1,0 +1,7 @@
+// check with offsetof() when adding a new arch, move to Arch if different.
+static final int SECCOMP_DATA_NR_OFFSET   = 0x00;
+static final int SECCOMP_DATA_ARCH_OFFSET = 0x04;
+// we couldn&#39;t link methods, could be some really ancient kernel (e.g. < 2.1.57) or some bug
+if (linux_libc == null) {
+throw new UnsupportedOperationException(&quot;seccomp unavailable: could not link methods. requires kernel 3.5+ with CONFIG_SECCOMP and CONFIG_SECCOMP_FILTER compiled in&quot;);
+

@@ -1,0 +1,11 @@
+return sumScore;
+}
+
+private int getBonusForStrikeStreak(Round round) {
+if (round.isStrikeStreak(nextRoundOf(round)))
+return roundRecord.size();
+}
+
+public int additionalHitAfterRound(int finalRoundNumber) {
+if (getFinalRound(finalRoundNumber).isSpare())
+

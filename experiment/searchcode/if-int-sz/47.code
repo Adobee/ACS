@@ -1,0 +1,10 @@
+public class WeightedQuickUnion {
+private int[] id;
+private int count;
+private int[] sz;
+
+public WeightedQuickUnion(int N){
+id = new int[N];
+sz = new int[N];
+for (int i = 0; i < N; i++) {
+

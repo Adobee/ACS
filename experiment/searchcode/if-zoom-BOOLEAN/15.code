@@ -1,0 +1,10 @@
+private float initialZoom = MIN_ZOOM;
+private float currentZoom = MIN_ZOOM;
+
+private boolean isCommited;
+
+public ZoomModel() {
+final float newZoom = adjust(zoom);
+final float oldZoom = this.currentZoom;
+if (newZoom != oldZoom) {
+

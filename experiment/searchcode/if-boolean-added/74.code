@@ -1,0 +1,10 @@
+public class ConvertStringToBollean implements AttributeConverter<Boolean, String> {
+
+@Override
+public String convertToDatabaseColumn(Boolean value) {
+if (value == null) {
+return null;
+}
+if (value.booleanValue()) {
+return &quot;Y&quot;;
+

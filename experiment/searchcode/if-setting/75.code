@@ -1,0 +1,6 @@
+List<Setting> globalSettings = settingRepo.findBySettingType(Setting.TYPE.GLOBAL);
+if (Lib.isListNotNullAndEmpty(globalSettings)) {
+int settingGroupId = setting.getSettingGroup().getSettingGroupId();
+SettingGroupBean settingGroupBean = settingGroupBeans.get(settingGroupId);
+if (settingGroupBean == null) {
+

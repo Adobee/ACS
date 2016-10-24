@@ -1,0 +1,11 @@
+return RandomRuleGenerator.generateRule(category, fuzziness);
+}
+
+public static Rule generateRule(String category, Rule parent1, Rule parent2, int fuzziness) {
+
+if (parent1 == null) {
+return RandomRuleGenerator.generateRule(category, fuzziness);
+}
+
+double ruleChoice = random.nextDouble();
+

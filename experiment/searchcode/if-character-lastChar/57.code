@@ -1,0 +1,8 @@
+StringBuffer newWord = new StringBuffer();
+Character lastChar = null;
+
+for (Character c : word.toCharArray()){
+map.put(c, map.get(c) + 1);
+}
+else if (!map.containsKey(c) &amp;&amp; (lastChar != null) &amp;&amp; (lastChar != c))
+

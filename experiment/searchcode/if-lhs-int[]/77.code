@@ -1,0 +1,15 @@
+BSHPrimaryExpression lhsNode =
+(BSHPrimaryExpression)jjtGetChild(0);
+
+if ( lhsNode == null )
+throw new InterpreterError( &quot;Error, null LHSnode&quot; );
+throw e.toEvalError( this, callstack );
+}
+}
+
+private Object operation( Object lhs, Object rhs, int kind )
+throws UtilEvalError
+{
+
+if ( lhs instanceof String &amp;&amp; rhs != Primitive.VOID ) {
+

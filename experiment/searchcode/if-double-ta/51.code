@@ -1,0 +1,15 @@
+return String.valueOf(index);
+}
+
+private String concreteEvap(){
+double tA = Double.valueOf(dp.getByKey(&quot;temperature&quot;));
+double tC;
+
+if (tA < 18){
+tC = 20;
+}else{
+tC = tA;
+}
+
+double r = Double.valueOf(dp.getByKey(&quot;humidity&quot;));
+

@@ -1,0 +1,12 @@
+private boolean isOdd(long x) {
+return ((x &amp; 1) == 1);
+}
+
+private long countEvenIndex(int x1, int x2) {
+long x = x2 - x1 + 1;
+long count = (x / 2);
+if (isOdd(x) &amp;&amp; !isOdd(x1)) {
+count++;
+}
+return count;
+

@@ -1,0 +1,13 @@
+for(Separador separador : separadores){
+int coincidence = tokenized.indexOf(separador.token());
+if(coincidence >= 0 &amp;&amp; index > coincidence){
+index += separador.length();
+}
+}
+}
+
+return index;
+}
+
+private boolean isTokenized(String ecuacion){
+

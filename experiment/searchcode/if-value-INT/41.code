@@ -1,0 +1,12 @@
+protected boolean next(int[] value, int sum) {
+int n = value.length;
+if (n < 2) {
+return false;
+}
+int right = value[--n];
+int left = sum - right;
+while (0 < n) {
+int x = value[--n];
+left -= x;
+if (even(left)) {
+

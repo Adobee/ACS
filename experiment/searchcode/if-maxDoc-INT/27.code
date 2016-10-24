@@ -1,0 +1,9 @@
+public abstract class MatchDocIdSet extends DocIdSet implements Bits {
+
+private final int maxDoc;
+private final Bits acceptDocs;
+
+private DocIdSetIterator iterator;
+
+protected MatchDocIdSet(int maxDoc, @Nullable Bits acceptDocs) {
+

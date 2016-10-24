@@ -1,0 +1,12 @@
+* @author mats.olsson@callistaenterprise.se
+*/
+public class ByteSizeView {
+
+long sizeInBytes;
+
+public ByteSizeView(long sizeInBytes) {
+public String toString() {
+double gb = sizeInBytes / (1024*1024*1024.0);
+if (gb >= 1) {
+return String.format(&quot;%1$.1fgb&quot;, gb);
+

@@ -1,0 +1,10 @@
+public void register(String eventName, Listener listener) {
+Set<Listener> listeners = null;
+if(listenersMap.get(eventName) == null){
+listeners.add(listener);
+listenersMap.put(eventName, listeners);
+}
+
+public void unregister(String eventName, Listener listener) {
+if(listenersMap.get(eventName) != null){
+

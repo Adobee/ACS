@@ -1,0 +1,10 @@
+import org.jfree.chart.axis.CategoryAxis;
+import org.jfree.chart.axis.ValueAxis;
+import org.jfree.chart.plot.CategoryPlot;
+super.setGap(10.0);
+super.setRangeAxis(rangeAxis);
+}
+
+
+public void add(CategoryPlot subplot) {
+

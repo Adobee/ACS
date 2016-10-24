@@ -1,0 +1,7 @@
+Collection<IndexMetaData> resolvedIndices = aliasOrIndex.getIndices();
+if (resolvedIndices.size() > 1 &amp;&amp; !options.allowAliasesToMultipleIndices()) {
+// Check that this is an alias for the current index
+// Otherwise - skip it
+if (aliasMetaData != null) {
+boolean filteringRequired = aliasMetaData.filteringRequired();
+

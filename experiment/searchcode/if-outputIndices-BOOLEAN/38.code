@@ -1,0 +1,6 @@
+String level = params.param(&quot;level&quot;, &quot;indices&quot;);
+boolean outputShards = &quot;shards&quot;.equals(level);
+boolean outputIndices = &quot;indices&quot;.equals(level) || outputShards;
+if (outputIndices) {
+builder.startObject(Fields.INDICES);
+

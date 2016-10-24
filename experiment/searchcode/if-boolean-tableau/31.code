@@ -1,0 +1,9 @@
+int toTableau = new AskNumberView().askNumberView(numberOfTableaus, &quot;¿Mover a qué escalera?&quot;);
+
+if (fromTableau == toTableau) {
+new ErrorView().render();
+TableauDeck tableauDeckFrom = (TableauDeck) board.getTableauDeckByNumber(fromTableau);
+TableauDeck tableauDeckTo = (TableauDeck) board.getTableauDeckByNumber(toTableau);
+
+if (tableauDeckFrom.uncoveredCards() <= 0) {
+

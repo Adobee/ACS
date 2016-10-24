@@ -1,0 +1,7 @@
+public Object convertToUseForm(Object key, LOR bytesReference) {
+if (bytesReference == null){
+throw new NullPointerException(&quot;cannot convert null bytes to image&quot;);
+byte[] bytes = bytesReference.getBytes();
+bytesReference.clear();
+Bitmap b = Bitmap.createBitmapFromBytes(bytes, 0, bytes.length, 1);
+

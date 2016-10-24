@@ -1,0 +1,7 @@
+polygon.setTranslateY(polygon.getTranslateY()-incrementY);
+}else if(polygon.getCursor().equals(Cursor.NE_RESIZE)){
+double incrementX = -event.getX();
+polygon.getPoints().setAll(newSize);
+}else if(polygon.getCursor().equals(Cursor.SW_RESIZE)){
+double incrementX = event.getX()-sizeX;
+

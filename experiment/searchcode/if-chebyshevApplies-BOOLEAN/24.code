@@ -1,0 +1,7 @@
+double variance = mean;
+final double sigma = Math.sqrt(variance);
+final boolean chebyshevApplies = !(Double.isInfinite(mu) || Double.isNaN(mu) ||
+Double.isInfinite(sigma) || Double.isNaN(sigma) || sigma == 0.0);
+if (chebyshevApplies) {
+double k = Math.sqrt((1.0 - p) / p);
+

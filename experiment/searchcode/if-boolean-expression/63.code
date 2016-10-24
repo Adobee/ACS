@@ -1,0 +1,16 @@
+import asteroids.program.expressions.Expression;
+import asteroids.program.types.BooleanType;
+
+public abstract class UnaryComposedBooleanExpression extends ComposedBooleanExpression {
+this.expression = e;
+}
+
+@Override
+public boolean isTypeCorrect() {
+if (expression.getType() instanceof BooleanType)
+return true;
+return false;
+}
+
+}
+

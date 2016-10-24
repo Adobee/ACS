@@ -1,0 +1,7 @@
+public static String getContentLengthValue(long contentLength) {
+// M K B
+DecimalFormat formate = new DecimalFormat(&quot;###.00&quot;);
+String sizeValue = &quot;&quot;;
+if (contentLength > 1024 * 1024) {
+double size = contentLength / (1024 * 1024.00);
+

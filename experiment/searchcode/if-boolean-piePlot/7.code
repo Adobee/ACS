@@ -1,0 +1,5 @@
+Plot plot = chart.getPlot();
+if(plot instanceof PiePlot)
+{
+PiePlot p = (PiePlot)chart.getPlot();
+

@@ -1,0 +1,11 @@
+public void nextPermutation(int[] num) {
+if (num == null || num.length == 0)
+return;
+
+int i = num.length - 1;
+int j = num.length - 1;
+
+for (; i > 0; i--) {
+if (num[i - 1] < num[i])
+break;
+

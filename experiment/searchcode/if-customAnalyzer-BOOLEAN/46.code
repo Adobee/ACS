@@ -1,0 +1,7 @@
+this.stopWords = (stopWords!=null &amp;&amp; !stopWords.isEmpty()) ? stopWords : CustomAnalyzer.STOP_WORDS_SET;
+}
+
+public List<Product> search(String text, DataNavigator nav, HibernateDAO dao, Long userLevel, int maxResults) {
+if (StoreProperty.PROP_PRODUCT_HAS_STOCK.equalsIgnoreCase(showUnavailable)) bq.add(new TermQuery(new Term(&quot;stock&quot;, &quot;true&quot;)), BooleanClause.Occur.MUST);
+else if (StoreProperty.PROP_PRODUCT_HAS_STOCK_OR_ETA.equalsIgnoreCase(showUnavailable)) {
+

@@ -1,0 +1,8 @@
+String word = strs[0];
+int prefixLength = word.length();
+
+for (int i = 1; i < strs.length; ++i) {
+prefixLength = Math.min(prefixLength, nextWord.length());
+for (int j = 0; j < prefixLength; ++j)
+if (word.charAt(j) != nextWord.charAt(j)) {
+

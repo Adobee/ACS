@@ -1,0 +1,15 @@
+package lightning.auth;
+
+public final class AuthCountAndTimestamp {
+private final long rowCount;
+public int hashCode() {
+int h = 1;
+h *= 1000003;
+h ^= (rowCount >>> 32) ^ rowCount;
+h *= 1000003;
+h ^= (maxTimestamp >>> 32) ^ maxTimestamp;
+return h;
+}
+
+}
+

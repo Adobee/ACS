@@ -1,0 +1,10 @@
+public boolean handleMessage(Telegram telegram) {
+if (currentState.onMessage(telegram))
+return true;
+
+if (globalState.onMessage(telegram))
+public void changeState(BaseState<OwnerType> state) {
+previousState = currentState;
+
+if (currentState != null)
+

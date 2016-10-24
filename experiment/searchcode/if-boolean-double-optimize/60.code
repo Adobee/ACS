@@ -1,0 +1,12 @@
+package edu.jhu.hlt.optimize;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import edu.jhu.hlt.optimize.LBFGS_port.LBFGSCallback;
+public LBFGS(LBFGSPrm param) { this.param = param; }
+
+@Override
+public boolean maximize(DifferentiableFunction fn, IntDoubleVector x) {
+return minimize(DifferentiableFunctionOpts.negate(fn), x);
+

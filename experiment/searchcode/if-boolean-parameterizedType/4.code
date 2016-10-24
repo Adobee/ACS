@@ -1,0 +1,8 @@
+import graphql.schema.GraphQLOutputType;
+
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+public boolean handlesType(IGraphQLObjectMapper graphQLObjectMapper, Type type) {
+if (type instanceof  ParameterizedType) {
+ParameterizedType parameterizedType = (ParameterizedType) type;
+

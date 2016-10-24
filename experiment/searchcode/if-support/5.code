@@ -1,0 +1,10 @@
+public class DbSupportFactory {
+private static DbSupportFactory factory = new DbSupportFactory();
+
+// private DbSupport[] dbSupports = new DbSupport[5];
+public static synchronized DbSupportFactory getInstance() {
+if (factory == null) {
+factory = new DbSupportFactory();
+}
+return factory;
+

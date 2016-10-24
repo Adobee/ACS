@@ -1,0 +1,10 @@
+public class IntRange {
+
+private int lowerBound;
+private int upperBound;
+
+public IntRange(int lowerBound, int upperBound) {
+while(lowerBound < upperBound) {
+int pivot = (lowerBound + upperBound) / 2;
+if(selectLower.test(pivot)) {
+

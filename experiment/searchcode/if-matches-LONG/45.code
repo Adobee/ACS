@@ -1,0 +1,9 @@
+public long extractIdFromFilename(String filename) throws UnrecognisedFilenameException {
+Matcher matches = pattern.matcher(filename);
+if (!matches.matches() || matches.groupCount() != 1)
+throw new UnrecognisedFilenameException(&quot;Could not extract a change script number from filename: &quot; + filename);
+
+return Long.parseLong(matches.group(1));
+}
+}
+

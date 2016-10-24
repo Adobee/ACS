@@ -1,0 +1,10 @@
+return heightmap;
+}
+
+private double[][] create(int x, int type) {
+if(x < 2 || (x &amp; (x - 1)) != 0)
+throw new Error(&quot;Size is not a power of two&quot;);
+//Define square center
+for(int iterX = scope; iterX < size; iterX += (scope * 2)) {
+for(int iterY = scope; iterY < size; iterY += (scope * 2)) {
+

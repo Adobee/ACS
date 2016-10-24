@@ -1,0 +1,8 @@
+public static OpSample newSampleFromBins(int binCount, int[] bins){
+
+double binSize = 1.0 / binCount;
+List<Double> cuts = new ArrayList<Double>();
+public static int[] getPercentTopBins(int[] bins, double frac){
+int binCount = (int)(bins.length * frac);
+return getTopBins(bins, binCount, 1);
+

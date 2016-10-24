@@ -1,0 +1,10 @@
+import com.redomar.game.level.LevelHandler;
+
+public class Scene {
+
+private int xOffset, yOffset;
+private Screen screen;
+private LevelHandler level;
+
+public Scene(int xOffset, int yOffset, Screen screen, LevelHandler level){
+

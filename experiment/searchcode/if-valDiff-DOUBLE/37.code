@@ -1,0 +1,7 @@
+@Override
+public void filter(double[][][] src, double[][][] dst) {
+if(!startProvided) {
+if(gradients[xmod][ymod][0]/maxSobelVal < edgeThreshold) continue;
+// is edge
+double valDiff = Math.abs(grad[0] - gradients[xmod][ymod][0]); // similar value
+

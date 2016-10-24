@@ -1,0 +1,16 @@
+name|boolean
+name|docFromTranslog
+init|=
+name|get
+operator|.
+name|source
+argument_list|()
+operator|!=
+comment|/* fetched from translog is treated as an artificial document */
+if|if
+condition|(
+name|docFromTranslog
+condition|)
+block|{
+name|request
+

@@ -1,0 +1,7 @@
+private EntityQueryModel parentModel;
+
+public EntityQueryDescriptor(EntityQueryModel parentModel, String name, boolean advanced) {
+uiHints.put(QueryDescriptor.UIHINT_IMMUTABLE, Boolean.FALSE);
+if (advanced) {
+uiHints.put(QueryDescriptor.UIHINT_MODE, QueryMode.ADVANCED);
+

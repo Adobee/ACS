@@ -1,0 +1,9 @@
+* @param y
+*            the second sample
+* @param exactPValue
+*            if the exact p-value is wanted (only for x.length <= 30)
+final double Wmax = wilcoxonSignedRank(x, y);
+
+if (exactPValue &amp;&amp; N > 30) {
+throw new IllegalArgumentException(&quot;Exact test can only be made for N <= 30.&quot;);
+

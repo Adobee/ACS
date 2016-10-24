@@ -1,0 +1,11 @@
+this.chromosomes.addAll(chromosomes);
+}
+
+public boolean isFull() {
+return chromosomes.size() >= this.size;
+}
+
+public Chromosome getFittestChromosome() {
+for (int i = 1; i < this.chromosomes.size(); i++) {
+if (this.chromosomes.get(i).getFitness() > theFittest.getFitness()) {
+

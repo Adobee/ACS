@@ -1,0 +1,6 @@
+private static final int DEFAULT_GENERATION_TRIALS_LIMIT = 20;
+private int generationTrialsLimit = DEFAULT_GENERATION_TRIALS_LIMIT;
+Element limitElm = rootElm.getChild(XmlTags.GENERATION_TRIALS_LIMIT);
+if (limitElm != null) {
+int limit = XmlUtils.getIntegerFromText(limitElm, DEFAULT_GENERATION_TRIALS_LIMIT);
+

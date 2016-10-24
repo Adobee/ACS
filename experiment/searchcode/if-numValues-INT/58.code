@@ -1,0 +1,9 @@
+int numStrAttrs = events.getNumAttrs() - numNumericAttrs;
+if (numNumericAttrs > 0) {
+this.numValues = new double[numNumericAttrs];
+int index = events.getNumericAttrIndex(attrName);
+return numValues[index];
+}
+
+public double getDouble(int index) {
+

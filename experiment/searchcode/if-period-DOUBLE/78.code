@@ -1,0 +1,12 @@
+this.periodLength = periodLength;
+}
+
+@Override
+public double calculate() {
+
+int periodStart = qh.size() - periodLength;
+int periodEnd = qh.size() - 1;
+for (int bar = periodStart + 1; bar <= periodEnd; bar++) {
+double barLow = qh.getPriceBar(bar).getLow();
+if (barLow < low) {
+

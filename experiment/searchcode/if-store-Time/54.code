@@ -1,0 +1,6 @@
+public StoreViewModel(StoreVO storeVO) {
+if(storeVO != null) {
+this.store = storeVO;
+this.addedDateString = TimeUtil.getDateStringFromMilliTime(this.store.getRowCreateTime());
+this.modifiedDateString = TimeUtil.getDateStringFromMilliTime(this.store.getRowModifyTime());
+

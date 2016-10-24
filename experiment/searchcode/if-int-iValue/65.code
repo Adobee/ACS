@@ -1,0 +1,10 @@
+public static ImmutableValueCollection getImmutableValueCollection(
+IValueCollection collection, Map<Object, Object> visited) {
+if (collection == null)
+return null;
+visited.put(collection, readOnlyCol);
+
+boolean reference = false;
+IValue value = null;
+if (collection instanceof IValueProvider) {
+

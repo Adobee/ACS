@@ -1,0 +1,12 @@
+public class MsgHandler implements MsgInterface {
+
+private static Object object = new Object();
+private static MsgHandler msgHandler = null;
+private int SEAT = 0;
+synchronized (object) {
+if (msgHandler == null)
+msgHandler = new MsgHandler();
+}
+}
+return msgHandler;
+

@@ -1,0 +1,16 @@
+private double uMin=-10.0;
+private double uMax=10.0;
+// Constructor
+public BallAndBeamRegul(ReferenceGenerator refgen, BallAndBeam bb, int priority){
+private double saturation(double u){
+if(u<uMin){
+u=uMin;
+}else if(u>uMax){
+u=uMax;
+}
+return u;
+}
+
+public void run(){
+long t=System.currentTimeMillis();
+

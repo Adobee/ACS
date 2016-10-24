@@ -1,0 +1,11 @@
+import org.joda.time.DateTime;
+import org.joda.time.DateTimeZone;
+
+public class SimpleTimeCorrelator extends TimeCorrelator {
+public SimpleTimeCorrelator() {
+}
+
+public SimpleTimeCorrelator(TimeZone timeZone) {
+if (timeZone != null) {
+this.dateTimeZone = DateTimeZone.forTimeZone(timeZone);
+

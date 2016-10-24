@@ -1,0 +1,13 @@
+checkCorrectClassification(new SimpleNaiveBayesClassifier(leafReader, analyzer, null, categoryFieldName, textFieldName), POLITICS_INPUT, POLITICS_RESULT);
+} finally {
+if (leafReader != null) {
+leafReader.close();
+}
+}
+}
+
+@Test
+checkCorrectClassification(new SimpleNaiveBayesClassifier(leafReader, analyzer, query, categoryFieldName, textFieldName), TECHNOLOGY_INPUT, TECHNOLOGY_RESULT);
+} finally {
+if (leafReader != null) {
+

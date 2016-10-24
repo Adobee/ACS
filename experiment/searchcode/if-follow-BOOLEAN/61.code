@@ -1,0 +1,14 @@
+this.setLoadingMessage(R.string.following);
+}
+
+@Override
+public Boolean onBackground(Void params) throws Exception {
+if (isFollow)
+return true;
+}
+
+@Override
+public void onSuccess(Boolean result) {
+if (isFollow)
+ToastUtils.show(context, R.string.unfollowing_succeed);
+

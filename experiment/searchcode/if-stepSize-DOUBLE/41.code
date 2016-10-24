@@ -1,0 +1,9 @@
+public double getDouble(long row, long column) {
+if (entryCount == 0) {
+return 0.0;
+}
+int stepSize = entryCount / 4 + 1;
+if (data[pos * 3 + 1] == column) {
+return Double.longBitsToDouble(data[pos + 2]);
+} else if (data[pos * 3 + 1] < column) {
+

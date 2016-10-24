@@ -1,0 +1,19 @@
+private int[] t;
+private int step;
+
+public DancingBug(int[] a) {
+t = a;
+step = 0;
+turn();
+}
+}
+
+public void act() {
+if(step == t.length)
+step = 0;
+turn(t[step]);
+step++;
+super.act();
+}
+}
+

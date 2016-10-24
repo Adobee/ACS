@@ -1,0 +1,9 @@
+return url != null &amp;&amp; url.startsWith(&quot;data:&quot;);
+}
+
+public static String resolve(URI baseURI, String relativeURL) {
+if (relativeURL == null || relativeURL.isEmpty())
+return relativeURL;
+if (isDataURI(relativeURL))
+return relativeURL;
+

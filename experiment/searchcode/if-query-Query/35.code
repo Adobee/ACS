@@ -1,0 +1,12 @@
+public static String getLikeQuery(String query)
+{
+if(query!=null &amp;&amp; !query.isEmpty())
+return query.replaceAll(&quot;\\*&quot;, &quot;%&quot;).replaceAll(&quot;\\?&quot;, &quot;_&quot;);
+public static String getLikeFitQuery(String query)
+{
+if(query!=null &amp;&amp; !query.isEmpty())
+return &quot;%&quot;+getLikeQuery(query)+&quot;%&quot;;
+return query;
+}
+}
+

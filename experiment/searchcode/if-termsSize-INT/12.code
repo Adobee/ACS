@@ -1,0 +1,7 @@
+public static void main(String[] args) throws Exception {
+
+Conf conf = new Conf(args, &quot;source query output vocabulary -k [termssize] -t [t1] -s [t2] --noninteractive&quot;);
+setT2(conf, conf.getDouble(&quot;t2&quot;, 0));
+}
+setTermsSize(conf, conf.getInt(&quot;termssize&quot;, getTermsSize(conf)));
+

@@ -1,0 +1,7 @@
+public static int select(int[] array, int fromIndex, int toIndex, int index) {
+if (index + fromIndex >= toIndex) throw new IllegalArgumentException(&quot;index out of bound&quot;);
+private static int select0(int[] array, int fromIndex, int toIndex, int index) {
+if (fromIndex + 1 == toIndex) return array[fromIndex]; // 只有一个元素
+
+int lastIndex = toIndex - 1;
+

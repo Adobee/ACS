@@ -1,0 +1,6 @@
+public static String replaceChars(String str, String searchChars,
+String replaceChars) {
+if ((str == null) || (str.length() == 0) || (searchChars == null)
+char searchChar = searchChars.charAt(i);
+if ((replaceChars == null) || (i >= replaceChars.length())) {// 删除
+

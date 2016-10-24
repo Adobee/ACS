@@ -1,0 +1,8 @@
+this.countPerHostMinute = CacheBuilder.newBuilder().expireAfterWrite(1, MINUTES).build(CacheLoader.from(() -> new AtomicLong()));
+this.countPerHostDay = CacheBuilder.newBuilder().expireAfterWrite(1, DAYS).build(CacheLoader.from(() -> new AtomicLong()));
+return true;
+}
+
+long countLastDay = countPerHostDay.getUnchecked(host).incrementAndGet();
+if (countLastDay > 1000) {
+

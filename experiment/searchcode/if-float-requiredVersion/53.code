@@ -1,0 +1,16 @@
+JAVA_1_7(1.7f, &quot;1.7&quot;),
+
+/**
+* Java 1.8.
+*/
+JAVA_1_8(1.8f, &quot;1.8&quot;);
+
+/**
+* The float value.
+*/
+private float value;
+/**
+* The standard name.
+*/
+private String name;
+

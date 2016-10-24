@@ -1,0 +1,10 @@
+int[] arr = Sort.concat(new int[]{0}, a);
+int i, j;
+int increment = a.length;
+
+do {
+increment = increment/3 + 1;
+for(i=increment+1; i<arr.length; i++) {
+if(arr[i]<arr[i-increment]) {
+arr[0] = arr[i]; //arr[0] as sentinel
+

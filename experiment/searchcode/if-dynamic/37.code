@@ -1,0 +1,12 @@
+private String getDynamicValue() throws JspException {
+String dynamicPart = null;
+Object bean = pageContext.findAttribute(dynamicName);
+if (bean == null) {
+throw new JspException(&quot;Could not find bean with name &quot; + dynamicName + &quot; in any scope.&quot;);
+}
+if (dynamicProperty == null) {
+dynamicPart = bean.toString();
+} else {
+try {
+dynamicPart = PropertyUtils.getProperty(bean, dynamicProperty).toString();
+

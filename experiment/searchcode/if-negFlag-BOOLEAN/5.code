@@ -1,0 +1,20 @@
+public int reverse(int x)
+{
+boolean negFlag = false;
+if(x<0)
+{
+negFlag = true;
+x *= -1;
+}
+
+int res = 0;
+while(x>0)
+{
+int yu = x % 10;
+x /= 10;
+res = res * 10 + yu;
+}
+if(negFlag) res *= -1;
+
+return res;
+

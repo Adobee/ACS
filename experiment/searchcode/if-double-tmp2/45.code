@@ -1,0 +1,13 @@
+private static void cRad() {
+double a = 1.0d;
+double tmp1, tmp2;
+do {
+a += a;
+tmp1 = a + 1.0d;
+tmp2 = tmp1 - a;
+} while (tmp2 - 1.0d != 0.0d);
+double b = 1.0d;
+while (radix == 0) {
+b += b;
+tmp1 = a + b;
+

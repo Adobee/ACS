@@ -1,0 +1,8 @@
+// bidi_hcg: As a result of a new style added (&quot;direction&quot;), align the
+// constants with org.eclipse.birt.report.engine.css.engine.PerfectHash
+
+final int STYLE_COLOR = 0;
+final int STYLE_BORDER_TOP_WIDTH = 41;
+final int STYLE_BORDER_LEFT_WIDTH = 42;
+final int STYLE_SHOW_IF_BLANK = 43;
+

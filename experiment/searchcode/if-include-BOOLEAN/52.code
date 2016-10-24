@@ -1,0 +1,12 @@
+private Map<String, Boolean> m_map = new HashMap<String, Boolean>();
+
+private boolean m_withInclude = false;
+
+public GroupFilter(List<String> groups) {
+for (String group : groups) {
+Boolean value = m_map.get(group);
+
+if (value != null) {
+if (value.booleanValue()) {
+include = true;
+

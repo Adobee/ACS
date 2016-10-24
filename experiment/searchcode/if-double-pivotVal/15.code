@@ -1,0 +1,14 @@
+* @param mat
+* @return
+*/
+public static double[][] ref(double[][] mat)
+{
+//Guarantees square matrix
+if (mat.length != mat[0].length)
+{
+return null;
+}
+
+//If the matrix is the 0 matrix
+double abstotal = 0;
+

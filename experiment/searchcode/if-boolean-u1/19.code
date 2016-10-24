@@ -1,0 +1,11 @@
+static boolean findPath(int u1, boolean[][] d, int[] matching, boolean[] vis) {
+vis[u1] = true;
+int matches = 0;
+for (int u = 0; u < n1; u++)
+if (findPath(u, d, matching, new boolean[n1]))
+++matches;
+return matches;
+}
+
+}
+

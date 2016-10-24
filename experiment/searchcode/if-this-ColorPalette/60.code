@@ -1,0 +1,6 @@
+public MColorMenu(final Consumer<Color> onSelect, final Option... options) {
+this(ColorPalette.getApplicationPalette(), onSelect, options);
+public MColorMenu(final ColorPalette colorPalette, final Consumer<Color> onSelect, final Option... options) {
+this.colorPalette = Objects.requireNonNull(colorPalette);
+this.onSelect = Objects.requireNonNull(onSelect);
+

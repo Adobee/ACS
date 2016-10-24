@@ -1,0 +1,14 @@
+ResultSet rs1=st.executeQuery();
+int reg = 0;
+if(rs1.next())
+{
+reg=rs1.getInt(1);
+}
+if(reg == 1)
+ResultSet rst=pst.executeQuery();
+String currentpass=null;
+if(rst.next())
+{
+currentpass=rst.getString(1);
+System.out.println(&quot;currentpass=&quot;+currentpass);
+

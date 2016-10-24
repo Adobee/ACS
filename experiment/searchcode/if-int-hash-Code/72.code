@@ -1,0 +1,18 @@
+return list.get(0);
+}
+
+
+public String put(String key, String value) {
+
+int hash= hashFunction(key);
+
+if (this.hashTable[hash]==null)
+this.hashTable[hash].add(value);
+
+return key;
+}
+
+public int hashFunction(String key)
+{
+int hashCode=hashCode(key);
+

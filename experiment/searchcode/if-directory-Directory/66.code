@@ -1,0 +1,9 @@
+long directoryId = remoteDirectory.getDirectoryId();
+final Directory directory = findDirectoryById(directoryId);
+if (!directory.isActive())
+final Lock lock = directoryLockManager.getLock(directoryId);
+
+if (lock.tryLock())
+{
+try
+

@@ -1,0 +1,18 @@
+package program2;
+
+public abstract class Sum {
+
+public static final long getSum(int range, long sum) {
+
+if (range > 0) {
+
+sum += range;
+range--;
+
+return getSum(range, sum);
+}
+
+return sum;
+}
+}
+

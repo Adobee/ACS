@@ -1,0 +1,7 @@
+* @return difference in minutes
+*/
+public static int minutesAgo(Date date, long endTime, boolean roundup) {
+long diff = endTime - date.getTime();
+int mins = (int) (diff / MIN);
+if (roundup &amp;&amp; (diff % MIN) >= 30) {
+

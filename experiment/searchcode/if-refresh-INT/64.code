@@ -1,0 +1,8 @@
+public void addRefreshInfo(String propertyFile, String cacheRefreshDuration) {
+
+if (NullChecker.isNotNullish(cacheRefreshDuration)) {
+int refreshDurationMillisec = parseCacheRefreshDuration(cacheRefreshDuration);
+RefreshInfo refreshInfo = refreshInfoHashtable.get(propertyFile);
+if (refreshInfo != null) {
+if (refreshInfo.m_oRefreshMode == RefreshInfo.Mode.PERIODIC) {
+

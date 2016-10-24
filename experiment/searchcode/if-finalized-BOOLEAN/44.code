@@ -1,0 +1,13 @@
+* Returns whether or not the buffer is empty.
+*
+* @return true if buffer is empty, false otherwise
+*/
+public boolean isEmpty() {
+return finalized.isEmpty();
+* @return true if instruction on top was removed, false otherwise
+*/
+public boolean removeTop() {
+if (!isEmpty()) {
+finalized.removeFirst();
+return true;
+

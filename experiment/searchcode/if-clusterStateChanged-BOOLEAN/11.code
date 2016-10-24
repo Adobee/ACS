@@ -1,0 +1,7 @@
+private ClusterState applyUpdate(ClusterState currentState, ClusterChangedEvent task) {
+boolean clusterStateChanged = false;
+ClusterState tribeState = task.state();
+IndexMetaData tribeIndex = tribeState.metaData().index(index.getIndex());
+clusterStateChanged = true;
+if (tribeIndex == null || tribeIndex.getState() == IndexMetaData.State.CLOSE) {
+

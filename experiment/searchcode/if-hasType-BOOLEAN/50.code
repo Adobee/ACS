@@ -1,0 +1,15 @@
+if(this.is(&#39;\\&#39;)){
+detectedTypes.add(CharacterType.BACKSLASH);
+}
+
+boolean isAlphaNumeric = false;
+if(Character.isAlphabetic(this.character)){
+for(CharacterType characterType : characterTypes){
+if(this.hasType(characterType)) return true;
+}
+
+return false;
+}
+
+public void addType(CharacterType characterType){
+

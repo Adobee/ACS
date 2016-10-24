@@ -1,0 +1,10 @@
+@Override
+public void run() {
+while (true) {
+if (!predictQueue.isEmpty()) {
+byte[] features = null;
+
+synchronized (predictQueue) {
+int dropped = -1;
+while (!predictQueue.isEmpty()) {
+

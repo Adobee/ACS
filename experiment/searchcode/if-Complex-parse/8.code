@@ -1,0 +1,9 @@
+public class CalculatorComplexParser implements CalculatorParser<Complex> {
+
+public CalculatorAction<Complex> parseSingle(String str, boolean allowParam) {
+for(BinaryOperator<Complex> op : ComplexBinaryOperators.values())
+if (str.equals(op.toString()))
+return op;
+
+for(UnaryOperator<Complex> op : ComplexUnaryOperators.values())
+

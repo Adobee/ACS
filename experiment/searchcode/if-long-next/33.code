@@ -1,0 +1,12 @@
+private static long gcd(long a, long b){
+if(b == 0) return a;
+else return gcd(b, a%b);
+}
+private static void extendgcd(long a, long b){
+if(b == 0) {
+t = 1;
+k = 0;
+return;
+}
+extendgcd(b, a % b);
+

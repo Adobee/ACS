@@ -1,0 +1,7 @@
+if (h.abs().subtract(minStep).getReal() < 0) {
+if (acceptSmall) {
+filteredH = forward ? minStep : minStep.negate();
+if (filteredH.subtract(maxStep).getReal() > 0) {
+filteredH = maxStep;
+} else if (filteredH.sum(maxStep).getReal() < 0) {
+

@@ -1,0 +1,12 @@
+StringBuilder sb = new StringBuilder();
+boolean first = true;
+boolean allZeros = true;
+for (byte bt : bytes) {
+if (allZeros &amp;&amp; bt != 0) {
+allZeros = false;
+}
+if (!first) {
+sb.append(&quot;|&quot;);
+}
+sb.append(String.valueOf(bt));
+

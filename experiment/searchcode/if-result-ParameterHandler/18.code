@@ -1,0 +1,6 @@
+import org.apache.ibatis.executor.parameter.ParameterHandler;
+import org.apache.ibatis.executor.statement.StatementHandler;
+ParameterHandler parameterHandler = (ParameterHandler)metaObject.getValue(&quot;delegate.parameterHandler&quot;);
+parameterHandler.setParameters(countStatement);
+ResultSet rs = countStatement.executeQuery();
+

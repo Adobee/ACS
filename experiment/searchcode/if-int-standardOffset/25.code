@@ -1,0 +1,7 @@
+private static DateTimeZone buildFixedZone(String id, String nameKey,
+int wallOffset, int standardOffset) {
+if (&quot;UTC&quot;.equals(id) &amp;&amp; id.equals(nameKey) &amp;&amp;
+public long setInstant(int year, int standardOffset, int saveMillis) {
+int offset;
+if (iMode == &#39;w&#39;) {
+

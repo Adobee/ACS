@@ -1,0 +1,12 @@
+public Truck() {
+super();
+this.loadCapacity = 1000;
+}
+
+public int getLoadCapacity() {
+return loadCapacity;
+}
+
+public void setLoadCapacity(int loadCapacity) {
+int oldLoadCapacity = this.loadCapacity;
+

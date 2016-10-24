@@ -1,0 +1,6 @@
+if ((queryPointIndex >= windowSize) &amp;&amp; (queryPointIndex < fullLength - windowSize)){//middle region data
+for (int i = 0; i < windowSize; i++){
+if ( (xArray[queryPointIndex] - (xArray[queryPointIndex - windowSize + 1 + i])) <= (xArray[queryPointIndex + 1 + i] - xArray[queryPointIndex]) ){
+for (int i = 0; i < windowSize; i++){
+if ( (xArray[queryPointIndex] - xArray[i]) <= (xArray[windowSize + i] - xArray[queryPointIndex]) ){
+

@@ -1,0 +1,11 @@
+public final int totalMillis;
+public int millisPlayed;
+
+public Timer(int totalMillis) {
+this.totalMillis = totalMillis;
+timers.add(this);
+}
+
+private void update(int millisPassed) {
+millisPlayed += millisPassed;
+

@@ -1,0 +1,8 @@
+Article article = new Article();
+byte[] id = SerializeUtils.serialize(&quot;id&quot;);
+if(map.containsKey(id)){
+article.setId((Long) SerializeUtils.deserialize(map.get(id)));
+byte[] title = SerializeUtils.serialize(&quot;title&quot;);
+if(map.containsKey(title)){
+article.setTitle((String)SerializeUtils.deserialize(map.get(title)));
+

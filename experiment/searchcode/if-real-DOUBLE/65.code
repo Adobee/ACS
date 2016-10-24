@@ -1,0 +1,16 @@
+* a complex Number Z consists of Re(Z) and Imag(Z): Z = Re(Z)+Imag(Z)*i
+*/
+public class ComplexNumber {
+
+private double real, imag;
+
+/**
+* Returns Re(Z)of complex number Z Returns: double
+*/
+public double getReal() {
+return real;
+}
+
+/**
+* setter for Re(Z)
+

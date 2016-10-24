@@ -1,0 +1,11 @@
+factory = Persistence.createEntityManagerFactory(Globals.PERSISTENCE_UNIT_NAME);
+}
+
+public static EntityManagerFactory getEMF() {
+if (factory != null &amp;&amp; factory.isOpen()) {
+public static void closeEMF() {
+if (factory != null &amp;&amp; factory.isOpen()) {
+factory.close();
+} else {
+throw new IllegalStateException(&quot;Фабрика не была инициализирована или закрыта&quot;);
+

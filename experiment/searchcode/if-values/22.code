@@ -1,0 +1,14 @@
+public Heap(int n) {
+this.pos = 0;
+this.values = new int[n];
+}
+
+public void push(int v) {
+if (values.length <= pos)
+values[p] = v;
+
+while (p > 0) {
+if (values[(p - 1) / 2] <= values[p])
+break;
+int t = values[(p - 1) / 2];
+

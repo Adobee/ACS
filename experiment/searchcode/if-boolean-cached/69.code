@@ -1,0 +1,14 @@
+if (code < 0 &amp;&amp; !containCode(code)) {
+clearCache();
+return null;
+}
+if (cachedCode != code) {
+clearCache();
+split();
+}
+return cachedCode;
+}
+
+public boolean containCode(int code) throws MaltChainedException {
+if (cachedCode != code) {
+

@@ -1,0 +1,7 @@
+public static int indexOfAny(final CharSequence cs, final char... searchChars) {
+if (isEmpty(cs) || ArrayUtils.isEmpty(searchChars)) return INDEX_NOT_FOUND;
+if (i < csLast &amp;&amp; j < searchLast &amp;&amp; Character.isHighSurrogate(ch)) {
+if (searchChars[j + 1] == cs.charAt(i + 1)) return i;
+}
+else return i;
+

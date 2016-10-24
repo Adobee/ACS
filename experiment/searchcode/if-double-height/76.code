@@ -1,0 +1,11 @@
+public class JFrame {
+private double x;
+private double y;
+private double width;
+private double height;
+
+public JFrame(double x, double y, double width, double height) {
+setX(x);
+setY(y);
+setWidth(width);
+

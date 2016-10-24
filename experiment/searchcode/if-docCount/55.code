@@ -1,0 +1,7 @@
+public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+if(req.getParameter(&quot;action&quot;).trim().equalsIgnoreCase(&quot;loadVocabInMemory&quot;)){
+QueryResultIterator<Vocabulary> vocabIterator = OfyService.ofy().load().type(Vocabulary.class).filter(&quot;category&quot;,i).iterator();
+if( vocabIterator != null){
+while(vocabIterator.hasNext()){
+Vocabulary vocab = vocabIterator.next();
+

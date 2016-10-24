@@ -1,0 +1,10 @@
+public static final EntityManager entityManager() {
+EntityManager em = new MissingValue().entityManager;
+if (em == null)
+throw new IllegalStateException(
+return entityManager().createQuery(&quot;SELECT o FROM MissingValue o&quot;, MissingValue.class).getResultList();
+}
+
+public static MissingValue findMissingValue(MissingValuePK id) {
+if (id == null)
+

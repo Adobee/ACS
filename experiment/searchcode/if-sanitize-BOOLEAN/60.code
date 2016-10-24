@@ -1,0 +1,13 @@
+public void warn(Throwable t) {
+super.warn(sanitize(t));
+}
+
+protected String sanitize(Object obj) {
+if (obj == null) {
+return sanitize(message, message);
+}
+
+protected String sanitize(String message, String defaultResult) {
+if (message == null) {
+return null;
+

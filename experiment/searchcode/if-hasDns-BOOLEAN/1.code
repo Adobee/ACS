@@ -1,0 +1,9 @@
+private boolean verifyHostName(String hostName, X509Certificate certificate) {
+hostName = hostName.toLowerCase(Locale.US);
+boolean hasDns = false;
+List<String> altNames = getSubjectAltNames(certificate, ALT_DNS_NAME);
+int size = altNames.size();
+for (int i = 0; i < size; i++) {
+hasDns = true;
+if (verifyHostName(hostName, (String) altNames.get(i))) {
+

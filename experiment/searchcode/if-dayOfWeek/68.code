@@ -1,0 +1,7 @@
+DayOfWeek dayOfWeek = DayOfWeek.of(temporal.get(ChronoField.DAY_OF_WEEK));
+
+if(dayOfWeek == DayOfWeek.FRIDAY)
+return temporal.plus(3, ChronoUnit.DAYS);
+else if(dayOfWeek == DayOfWeek.SATURDAY)
+return temporal.plus(2, ChronoUnit.DAYS);
+

@@ -1,0 +1,10 @@
+public static final int getFontSize(int boundaryWidth, int boundaryHeight, float fontMultiplier) {
+int fontSize = 0;
+if(boundaryWidth < boundaryHeight) {
+fontSize = (int) (boundaryWidth * fontMultiplier/ boundaryHeight);
+fontSize = (int) (boundaryHeight * fontMultiplier / boundaryWidth);
+}
+if(fontSize == 0) fontSize = 16;
+
+return fontSize;
+

@@ -1,0 +1,9 @@
+TableViewerColumn column = new TableViewerColumn(tableViewer, SWT.NULL);
+column.getColumn().setText(colNames[0]);
+if (widths != null) {
+column.getColumn().setWidth(widths[0]);
+column.setLabelProvider(new ColumnLabelProvider() {
+public String getText(Object element) {
+if (element instanceof KeyValue) {
+return ((KeyValue) element).getKey();
+

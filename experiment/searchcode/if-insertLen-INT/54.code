@@ -1,0 +1,8 @@
+public Response<Long> create(TitleKeyword titleKeyword) {
+
+Response<Long> insertLen = new Response<Long>();
+try {
+Long id = titleKeywordDao.create(titleKeyword);
+insertLen.setResult(id);
+return insertLen;
+

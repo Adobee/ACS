@@ -1,0 +1,14 @@
+public SetBlackAction(World world,boolean black,Action nextAction) {
+super(world, nextAction);
+this.black = black;
+}
+
+@Override
+public void run() {
+world.blackedOut = black;
+if(nextAction!= null)
+nextAction.run();
+}
+
+}
+

@@ -1,0 +1,10 @@
+public class Binary_Exponentiation
+{
+public long  exponentiation(long x, long n)
+{
+long result=1;
+
+while(n!=0)
+{
+if(n%2==0)
+

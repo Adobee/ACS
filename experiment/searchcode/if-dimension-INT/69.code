@@ -1,0 +1,10 @@
+private final int bands;
+private final Dimension dimension;
+
+public InMemoryPixels(int[] pixels, int bands, Dimension dimension) {
+this.dimension = dimension;
+}
+
+public int[] get(int x, int y) throws IOException {
+if (x < 0 || y < 0)
+

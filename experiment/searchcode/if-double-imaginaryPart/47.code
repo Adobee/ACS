@@ -1,0 +1,9 @@
+// along with JML; see the file COPYING.  If not, write to
+// the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
+return new Rectangular(this.realPart() + b.realPart(),
+this.imaginaryPart() + b.imaginaryPart());
+}
+
+// specification inherited
+public Complex sub(Complex b) {
+

@@ -1,0 +1,9 @@
+* @return: a integer
+*/
+public int trapRainWater(int[] heights) {
+// write your code here
+if (heights == null || heights.length <= 2) {
+while (startIndex < endIndex) {
+if (heights[startIndex]< heights[endIndex]) {
+int smaller = heights[startIndex];
+

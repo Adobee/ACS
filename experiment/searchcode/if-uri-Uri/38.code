@@ -1,0 +1,12 @@
+return new AppealUri(receiptUri.getBaseUri() + &quot;/appeal/&quot; + receiptUri.getId().toString());
+}
+
+private static void checkForValidAppealUri(AppealUri appealUri) {
+if(!appealUri.toString().contains(&quot;/appeal/&quot;)) {
+throw new RuntimeException(&quot;Invalid Appeal URI&quot;);
+}
+}
+
+private static void checkForValidEmailUri(AppealUri email) {
+if(!email.toString().contains(&quot;/email/&quot;)) {
+

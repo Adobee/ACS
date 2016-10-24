@@ -1,0 +1,15 @@
+public class MarbleDecoration {
+
+public static int maxLength(int R, int G, int B) {
+
+int maxx = 0;
+int tmp = 0;
+int max = 0;
+int limit = 0;
+
+// R &amp; G
+max = (R > G) ? R : G;
+limit = (R > G) ? G : R;
+
+if (max == limit)
+

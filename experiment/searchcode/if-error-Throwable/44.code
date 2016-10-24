@@ -1,0 +1,9 @@
+public final class Throwables
+{
+public static RuntimeException propagate(Throwable paramThrowable)
+{
+propagateIfPossible((Throwable)Preconditions.checkNotNull(paramThrowable));
+public static void propagateIfPossible(Throwable paramThrowable)
+{
+propagateIfInstanceOf(paramThrowable, Error.class);
+

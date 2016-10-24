@@ -1,0 +1,8 @@
+public StoreParams(double left, double right, double start, double stop, double height) {
+if ((left > 0) &amp;&amp; (right > 0) &amp;&amp; (start > 0) &amp;&amp; (stop > 0) &amp;&amp; (start > stop) &amp;&amp; (height > 0)) {
+throw new IllegalArgumentException();
+}
+}
+/*public StoreParams(double length, double width, double height){
+if( (length>0) &amp;&amp; (width>0) &amp;&amp; (height>0) ){
+

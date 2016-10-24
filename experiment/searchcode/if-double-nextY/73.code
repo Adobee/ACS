@@ -1,0 +1,20 @@
+results.clear();
+if (nextY == null || nextY.length != y0.length)
+nextY = new double[y0.length];
+if (si < s)
+s = si;
+}
+}
+if (s != MesquiteDouble.infinite)
+h.setValue(hval*s);
+return nextY;
+}
+
+
+
+
+
+
+
+}
+

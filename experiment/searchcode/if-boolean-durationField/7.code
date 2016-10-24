@@ -1,0 +1,8 @@
+import org.joda.time.DateTimeFieldType;
+import org.joda.time.DurationField;
+
+public abstract class PreciseDurationDateTimeField extends BaseDateTimeField {
+super(dateTimeFieldType);
+if (durationField.isPrecise()) {
+this.iUnitMillis = durationField.getUnitMillis();
+

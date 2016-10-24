@@ -1,0 +1,8 @@
+public void solve(int n, int row, int[] colForRow, int[] ret) {
+if (row == n) {
+ret[0]++;
+} else {
+for (int i = 0; i < n; i++) {
+colForRow[row] = i;
+if (isValid(row, colForRow)) {
+

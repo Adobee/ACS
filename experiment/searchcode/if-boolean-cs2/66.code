@@ -1,0 +1,11 @@
+* @see java.lang.Object#equals(java.lang.Object)
+*/
+public boolean equals(Object obj) {
+if (obj == this)
+return true;
+if (obj instanceof CharSequence) {
+throw new StringIndexOutOfBoundsException(end - start);
+}
+if (start > cs1.length()) {
+return cs2.subSequence(start - cs1.length(), end - cs1.length());
+

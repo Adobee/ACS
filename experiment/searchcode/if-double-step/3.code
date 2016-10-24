@@ -1,0 +1,12 @@
+public class StepLimiterGenerator implements Generator {
+private Generator generator;
+private double maxStep;
+private double lastValue;
+
+public StepLimiterGenerator(Generator generator, double maxStep) {
+double result = generator.generate(timeStep);
+double diff = result - lastValue;
+if (diff > maxStep) {
+result = lastValue + maxStep;
+} else if (diff < -maxStep) {
+

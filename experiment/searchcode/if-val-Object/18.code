@@ -1,0 +1,17 @@
+// get constant value
+public String getVarName() {
+return valKey;
+}
+
+public SyObject eval(SyContext context) {
+if(val != null) {
+return val;
+}
+else if (valKey != null) {
+return context.getVar(valKey);
+}
+return SyObject.FSNULL; // shouldn&#39;t get here
+}
+
+}
+

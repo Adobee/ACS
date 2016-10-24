@@ -1,0 +1,14 @@
+public boolean isWarnEnabled()
+{
+return log.isWarnEnabled();
+}
+public void trace(Object object, Object... params)
+{
+if ( isTraceEnabled() )
+log.trace(  interpolate(object, params) );
+}
+}
+public void trace(Object object, Throwable t, Object... params)
+{
+if ( isTraceEnabled() )
+

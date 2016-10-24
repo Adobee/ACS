@@ -1,0 +1,18 @@
+public int peek()
+{
+if(!s2.empty())
+return s2.peek();
+
+while(!s1.empty())
+{
+s2.push(s1.pop());
+return s2.peek();
+}
+}
+
+public int remove()
+{
+if(!s2.empty())
+return s2.pop();
+while(!s2.empty())
+

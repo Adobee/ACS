@@ -1,0 +1,8 @@
+public static double LogDiff(double lna, double lnc){
+if (lna > lnc)
+return lna + Math.exp(1.0 - Math.exp(lnc - lna));
+public static double LogSum(double lna, double lnc){
+if (lna == Double.NEGATIVE_INFINITY)
+return lnc;
+if (lnc == Double.NEGATIVE_INFINITY)
+

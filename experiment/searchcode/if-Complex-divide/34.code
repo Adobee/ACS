@@ -1,0 +1,10 @@
+private Complex[] internfft1(Complex[] data) {
+
+if (data.length < 2) {
+return data;
+}
+Complex[] out = new Complex[data.length];
+Complex[] g = divideEven(data);
+Complex[] u = divideOdd(data);
+for (int i = 0; i < u.length; i++) {
+

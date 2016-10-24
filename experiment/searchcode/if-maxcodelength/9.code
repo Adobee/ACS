@@ -1,0 +1,8 @@
+*     &amp;lt;filter class=&quot;solr.DoubleMetaphoneFilterFactory&quot; inject=&quot;true&quot; maxCodeLength=&quot;4&quot;/&amp;gt;
+*   &amp;lt;/analyzer&amp;gt;
+* &amp;lt;/fieldType&amp;gt;</pre>
+inject = getBoolean(INJECT, true);
+
+if (args.get(MAX_CODE_LENGTH) != null) {
+maxCodeLength = Integer.parseInt(args.get(MAX_CODE_LENGTH));
+

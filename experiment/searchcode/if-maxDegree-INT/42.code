@@ -1,0 +1,14 @@
+while (getMaxDegree(degree) > 1) {
+int[] degree2 = degree.clone();
+for (int i = 0; i < n; i++) {
+if (degree[i] == 1) {
+adList[to].remove(new Integer(i));
+}
+}
+degree = degree2;
+}
+for (int i = 0; i < n; i++)
+if (!visited[i])
+result.add(i);
+return result;
+

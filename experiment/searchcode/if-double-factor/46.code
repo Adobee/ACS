@@ -1,0 +1,9 @@
+double lastFactor, factor, maxFactor;
+
+if (theNum % 2 == 0) {
+lastFactor = 2;
+while (theNum > 1 &amp;&amp; factor <= maxFactor) {
+if (theNum % factor == 0) {
+theNum = theNum / factor;
+lastFactor = factor;
+

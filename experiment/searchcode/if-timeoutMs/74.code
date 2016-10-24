@@ -1,0 +1,13 @@
+public PollingCheck() {
+}
+
+public PollingCheck(long timeoutMs) {
+mTimeoutMs = timeoutMs;
+}
+
+protected abstract boolean check();
+public static void check(CharSequence message, long timeoutMs, Callable<Boolean> condition)
+throws Exception {
+while (timeoutMs > 0) {
+if (condition.call()) {
+

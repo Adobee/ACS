@@ -1,0 +1,9 @@
+public static double logAdd(double a, double b)
+{
+if(a > b) {
+if(Double.isInfinite(b) || a-b > logMaxValue) return a;
+return b+Math.log(1+Math.exp(a-b));
+}
+else {
+if(Double.isInfinite(a) || b-a > logMaxValue) return b;
+

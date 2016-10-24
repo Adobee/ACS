@@ -1,0 +1,8 @@
+clauses.add(new BooleanClause(q, BooleanClause.Occur.SHOULD));
+}
+}
+if (clauses.size() == 0)  // happens for stopwords
+return super.getWildcardQuery(field, termStr);
+}
+boolean isWithinToken = (!termStr.startsWith(&quot;?&quot;) &amp;&amp; !termStr.startsWith(&quot;*&quot;));
+

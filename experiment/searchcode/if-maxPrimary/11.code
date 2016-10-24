@@ -1,0 +1,9 @@
+// If no dominant value at all, just return the actual.
+if ((maxPrimary == 0) &amp;&amp; (maxSecondary == 0)) {
+return actualPrimary;
+if (scaleType == ImageView.ScaleType.FIT_XY) {
+if (maxPrimary == 0) {
+return actualPrimary;
+}
+return maxPrimary;
+

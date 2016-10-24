@@ -1,0 +1,15 @@
+System.out.print(&quot;#&quot;);
+acc -= numFiles / 40.0;
+}
+
+if (docID > maxDocID) {
+maxDocID = docID;
+}
+}
+System.out.println(&quot;|&quot;);
+double[] docLengths = new double[maxDocID + 1];
+
+for (PostingsList list : index) {
+if (list != null)
+list.accumulateDocumentLengths(docLengths);
+

@@ -1,0 +1,9 @@
+public class BitmapDownscale implements Transformation {
+String name;
+int maxWidth;
+
+BitmapDownscale(String name, int maxWidth) {
+@Override public Bitmap transform(Bitmap source) {
+if(source.getWidth() > maxWidth) {
+double aspectRatio = (double) source.getHeight() / (double) source.getWidth();
+

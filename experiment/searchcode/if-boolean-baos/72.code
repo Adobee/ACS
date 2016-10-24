@@ -1,0 +1,9 @@
+public class LnxDefaultHttpResponseStreamProcessor implements LnxHttpResponseStreamProcessor {
+@Override
+public boolean consumeInputStream(LnxHttpResponse response, InputStream is) {
+} catch (IOException e) {
+e.printStackTrace();
+response.setResponseBytes(null);
+} finally {
+if (baos != null) {
+

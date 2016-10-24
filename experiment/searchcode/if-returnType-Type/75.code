@@ -1,0 +1,11 @@
+values = new Expression[0];
+}
+
+@Override
+public Type returnType(Scope scope) {
+if (returnType != null) return returnType;
+returnType = TypeList.get(Type.VOID);
+return returnType;
+}
+}
+

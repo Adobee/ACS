@@ -1,0 +1,18 @@
+grid.add( new Quadrant(this, quadCounter++, dx*col, dy*row, dx, dy) );
+}
+}
+}
+
+public int size()
+{
+return size;
+}
+
+public Quadrant get( int i )
+{
+if( size > 0 &amp;&amp; i >= 0 &amp;&amp; i < size )
+// Return -1 if outside of bounds of grid
+public int getQuadrantIDPerPoint( double x, double y )
+{
+if( x < 0 || x > screenWidth ||
+

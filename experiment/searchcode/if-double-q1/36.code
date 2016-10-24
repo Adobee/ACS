@@ -1,0 +1,7 @@
+public static Vector3 quatToEuler(Quaternion q1) {
+Vector3 ret = new Vector3();
+
+double test = q1.x*q1.y + q1.z*q1.w;
+if (test > 0.499) { // singularity at north pole
+ret.x = (float)(2 * Math.atan2(q1.x,q1.w));
+

@@ -1,0 +1,12 @@
+System.out.println(isContinuous(numbers));
+}
+
+public static boolean isContinuous(int[] numbers) {
+if (numbers.length < 5 || numbers == null)
+for (int i = 0; i + 1 < numbers.length; i++) {
+if (numbers[i] == 0) {
+size0++;
+continue;
+}
+if (numbers[i + 1] - numbers[i] == 0)
+

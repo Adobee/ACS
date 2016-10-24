@@ -1,0 +1,12 @@
+for(String token:tokens){
+
+if(token.length()!=7){
+System.out.println(ERROR);
+return;
+}
+
+int[] parity=new int[3];
+int errorPosInt=Integer.parseInt(errorPos.toString(), 2) -1;
+if(binNumber[errorPosInt] == &#39;1&#39;){
+binNumber[errorPosInt] = &#39;0&#39; ;
+

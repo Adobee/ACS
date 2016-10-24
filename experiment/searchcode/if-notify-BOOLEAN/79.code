@@ -1,0 +1,10 @@
+public static GroupMessageNotifyManager getInstance(){
+if(sInstance == null){
+sInstance = new GroupMessageNotifyManager();
+NotNotify nn = XDB.getInstance().readById(groupId, NotNotify.class, true);
+return nn == null;
+}
+
+public void 	setGroupNotify(String groupId,boolean bNotify){
+if(bNotify){
+

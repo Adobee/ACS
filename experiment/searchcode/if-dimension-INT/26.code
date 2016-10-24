@@ -1,0 +1,10 @@
+parseDimensions(dimensionString);
+}
+
+@Override
+public int[] getDimensions() {
+if (this.dimensionList == null || this.dimensionList.isEmpty()) {
+int min = Integer.parseInt(rangeDimension[0].trim());
+int max = Integer.parseInt(rangeDimension[1].trim());
+if (min <= max) {
+

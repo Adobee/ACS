@@ -1,0 +1,15 @@
+public class AbbAgility {
+
+static public boolean test(int agility,int modifiers)
+{
+boolean res = true;
+int diceRes = AbbDiceEngine.launchD6();
+static private boolean checkTable(int agility, int diceResModified)
+{
+boolean res = false;
+
+switch(agility)
+{
+case 1:
+if (diceResModified>=6) res = true;
+

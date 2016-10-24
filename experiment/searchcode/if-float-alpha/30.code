@@ -1,0 +1,8 @@
+public float getCurrentAlpha(long currentTime ){
+if( currentTime > getEndTime()){
+return mEndAlpha;
+}else if(currentTime < startTime){
+return 0;
+}
+float ret = (mEndAlpha - mStartAlpha) * getRatio(currentTime) + mStartAlpha;
+

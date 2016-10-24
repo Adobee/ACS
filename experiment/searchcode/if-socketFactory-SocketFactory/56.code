@@ -1,0 +1,9 @@
+List<MakesGameVisibleFactory> broadcasterFactories, List<SocketFactory> socketFactories, GameMain gameMain) {
+if (parameter.getConfiguration().isHost()) {
+for (SocketFactory socketFactory : socketfactories) {
+if (type.equals(socketFactory.forNetworkType())) {
+return socketFactory;
+}
+}
+throw new IllegalStateException(&quot;Cannot find a socketfactory. Expected type is : &quot; + type
+

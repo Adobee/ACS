@@ -1,0 +1,11 @@
+public GuavaCache() {
+
+cache = CacheBuilder.newBuilder().maximumSize(100).expireAfterAccess(1000, TimeUnit.SECONDS).build();
+@Override
+public V get(K key) {
+return cache.getIfPresent(key);
+}
+
+@Override
+public void putAll(Map<? extends K, ? extends V> m) {
+

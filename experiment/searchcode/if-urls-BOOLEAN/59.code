@@ -1,0 +1,12 @@
+urls.put(&quot;indexFuncionario&quot;,&quot;/funcionarioController/index&quot;);
+urls.put(&quot;sair&quot;,&quot;/logout&quot;);
+}
+if(session.getAttribute(&quot;sessaoUsuario&quot;) instanceof Cliente){
+urls.put(&quot;deliveryFiltro&quot;,&quot;/deliveryController/[0-9]+/filtrar&quot;);
+
+}
+return urls;
+}
+public boolean urlIsValid(String uri, String url){
+boolean isUrl =urlRegex(uri,url); // RETORNA TRUE SE REGEX == URL
+

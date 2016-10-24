@@ -1,0 +1,10 @@
+public class BooleanAdapter implements ValueAdapter<Boolean> {
+
+public final Boolean adapt(Object input) {
+if (input == null)
+return null;
+else if (input instanceof Boolean)
+return (Boolean) input;
+else if (input instanceof Number)
+return ((Number) input).intValue() != 0;
+

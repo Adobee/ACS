@@ -1,0 +1,10 @@
+* The year.
+*/
+private final transient int yearOfEra;
+/**
+* The month-of-year.
+*/
+private final transient int monthOfYear;
+private static HijrahDate of(HijrahChronology chrono, HijrahEra era, int yearOfEra, int monthOfYear, int dayOfMonth) {
+Objects.requireNonNull(era, &quot;era&quot;);
+

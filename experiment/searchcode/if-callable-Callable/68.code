@@ -1,0 +1,10 @@
+import hudson.plugins.selenium.RemoteRunningStatus;
+import hudson.remoting.Callable;
+
+public class DeepLevelCallable<V> implements Callable<V, Exception> {
+private Callable<V, ? extends Exception> call;
+private V defaultValue = null;
+private String config;
+
+public DeepLevelCallable(String conf, Callable<V, ? extends Exception> callable) {
+

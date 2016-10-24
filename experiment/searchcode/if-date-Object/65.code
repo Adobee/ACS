@@ -1,0 +1,11 @@
+public Object convert(Class inClazz, Object inObject) {
+
+if (Date.class.equals(inClazz)) {
+return object2Date(inObject);
+if (inObject == null) {
+return null;
+}
+
+if (inObject instanceof Date) {
+return (Date) inObject;
+

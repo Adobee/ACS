@@ -1,0 +1,9 @@
+public boolean equals(Object o) {
+if (this == o)
+return true;
+if (o instanceof AdaptedShape)
+return _shape.equals(((AdaptedShape)o).shape());
+if (o instanceof Shape)
+return _shape.equals(o);
+return false;
+

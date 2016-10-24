@@ -1,0 +1,10 @@
+if( limits.size() > 0 ) {
+if( limits.peek().bytesLeft < 1 ) {
+throw new Exception(&quot;Limit reached while read BER stream&quot;);
+return b;
+}
+
+public void pushLimit(int bytesLeft) throws Exception {
+if( isLimitSet() ) {
+if( getCurrentLimit() < bytesLeft ) {
+

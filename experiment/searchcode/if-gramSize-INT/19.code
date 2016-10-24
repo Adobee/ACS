@@ -1,0 +1,9 @@
+HashSet<String> nGramList = new HashSet<String>();
+int gramSize = 2;
+nGramList = getNGrams(key, gramSize);
+for (int i = 0; i < words.size() - gramSize + 1; i++) {
+String key = &quot;&quot;;
+for (int j = i; j < i + gramSize; j++) {
+key += words.get(j);
+if(j != ( i + gramSize - 1)){
+

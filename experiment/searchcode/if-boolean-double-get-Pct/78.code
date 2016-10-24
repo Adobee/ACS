@@ -1,0 +1,5 @@
+if (caster.isDead() || target.isDead()) return false;
+double casterPct = caster.getHealth() / caster.getMaxHealth();
+double targetPct = target.getHealth() / target.getMaxHealth();
+if (requireGreaterHealthPercent &amp;&amp; casterPct < targetPct) return false;
+

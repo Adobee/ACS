@@ -1,0 +1,5 @@
+assertThat(isAccessor(&quot;class T { private Boolean a; public foo.Boolean isA() { return a; } }&quot;)).isFalse();
+assertThat(isAccessor(&quot;class T { private Boolean a; public org.foo.Boolean isA() { return a; } }&quot;)).isFalse();
+assertThat(isAccessor(&quot;class T { private Integer a; public java.lang.Integer isA() { return a; } }&quot;)).isFalse();
+assertThat(isAccessor(&quot;class T { private Boolean a; public org.lang.Boolean isA() { return a; } }&quot;)).isFalse();
+

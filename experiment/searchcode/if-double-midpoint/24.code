@@ -1,0 +1,10 @@
+double lo = data[bottom];
+double hi = data[top];
+if(lo = hi){
+return target == lo;
+}
+if((target < lo) || (target > hi)){
+int midpoint = bottom + (int) ((top - bottom) * fraction);
+if(target < data[midpoint]){
+top = midpoint - 1;
+

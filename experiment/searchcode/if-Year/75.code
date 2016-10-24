@@ -1,0 +1,11 @@
+/**
+* This class determines if a year is a leap year.
+*/
+public class Year {
+private static final int GREGORIAN_START = 1582;
+* Determines if a year is a leap year.
+*
+* @return boolean true year is a leap year
+*/
+public boolean isLeapYear() {
+

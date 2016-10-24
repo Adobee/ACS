@@ -1,0 +1,6 @@
+Vector2 tangent = relPos.minus(normal.times(relPos.dot(normal)));
+if (tangent.magSq() > len*len/scaling) return;
+
+double dist = relPos.dot(normal);
+double dist2 = a.pos.plus(a.vel.times(dt*100)).minus(pos).dot(normal);
+

@@ -1,0 +1,9 @@
+* Defaults to <tt>false</tt>.
+*/
+public Boolean getActive() {
+if (null != this.active) {
+return this.active;
+ValueExpression _ve = getValueExpression(&quot;autoStart&quot;);
+if (_ve != null) {
+return (Boolean) _ve.getValue(getFacesContext().getELContext());
+

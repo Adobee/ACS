@@ -1,0 +1,13 @@
+package accepted.Q041_Q050;
+
+public class Q050 {
+
+public double pow(double x, int n) {
+
+int m = (n < 0) ? -n : n;
+double result;
+
+if (m == 0) {
+result = 1;
+} else if (m == 1) {
+

@@ -1,0 +1,8 @@
+public final static long NANOS_IN_MILLIS = 1000;
+public final static long MILLIS_IN_SECOND = 1000;
+public final static long MILLIS_IN_MINUTE = 60*MILLIS_IN_SECOND;
+private final static long MILLIS_IN_YEAR = 365*MILLIS_IN_DAY;
+
+public static long parseTimeToMillis(long time) {
+if(time<MILLIS_IN_YEAR)
+

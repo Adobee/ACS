@@ -1,0 +1,10 @@
+return FieldUtils.safeToInt(getDifferenceAsLong(minuendInstant, subtrahendInstant));
+}
+public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) {
+if (minuendInstant < subtrahendInstant)
+long difference = (minuendInstant - subtrahendInstant) / iUnitMillis;
+
+if (add(subtrahendInstant, difference) < minuendInstant)
+{
+do
+

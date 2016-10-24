@@ -1,0 +1,25 @@
+public boolean isPalindrome(int x) {
+if (x < 0) {
+return false;
+}
+
+int len = numDigits(x);
+
+while (len > 1) {
+len -= 2;
+}
+
+return true;
+}
+
+private int numDigits(int x) {
+int len = 0;
+while (x > 0) {
+x /= 10;
+len++;
+}
+return len;
+}
+
+}
+

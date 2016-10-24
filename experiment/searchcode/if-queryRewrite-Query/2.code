@@ -1,0 +1,6 @@
+result = QueryRewrite.MTScan(select, metadata.getDataSet()); //MTScan
+if (select.getSelectList().toString().equals(&quot;*&quot;))
+result = QueryRewrite.MTProject(select); //MTProject
+if (select.hasWhere()) {
+result = QueryRewrite.MTComparisions(select); //MTComparisions
+

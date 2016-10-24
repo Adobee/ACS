@@ -1,0 +1,9 @@
+public String Encode(String phrase, int rot){
+String lowercase = phrase.toLowerCase();
+String encoded = &quot;&quot;;
+for (int i=0; i< phrase.length(); i++){
+if ((int)(lowercase.charAt(i)) <= 122 - (rot % 26) &amp;&amp; (int)(lowercase.charAt(i)) >= 97){
+encoded = encoded + (char)(lowercase.charAt(i) + rot);
+}
+else if ((int)(lowercase.charAt(i)) > 122 - (rot % 26)){
+

@@ -1,0 +1,9 @@
+String userTableSql = &quot;INSERT INTO USER (name, user_name, address, phone_number, is_registered, password) VALUES (?, ?, ?, ?, true, MD5(?))&quot;;
+int affectedRows = 0;
+try {
+if (!userAlreadyExists(user.getUserName())) {
+String sql = &quot;DELETE FROM user WHERE id = ? LIMIT 1&quot;;
+int affectedRows = 0;
+try {
+if (deleteRoles(id))  {
+

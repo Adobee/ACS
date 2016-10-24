@@ -1,0 +1,5 @@
+offsetReceiver = ehClient.createReceiverSync(cgName, partitionId, PartitionReceiver.START_OF_STREAM, false);
+Iterable<EventData> startingEventsUsingOffsetReceiver = offsetReceiver.receiveSync(100);
+datetimeReceiver = ehClient.createReceiverSync(cgName, partitionId, Instant.EPOCH);
+Iterable<EventData> startingEventsUsingDateTimeReceiver = datetimeReceiver.receiveSync(100);
+

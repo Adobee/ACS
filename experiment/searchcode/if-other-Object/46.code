@@ -1,0 +1,6 @@
+public <T> boolean equals(Object other, CustomEq<T> e)
+{
+if (_object == other) return true;
+if (other == null || _object == null) return false;
+if (other.getClass().isAssignableFrom(_object.getClass()) || _object.getClass().isAssignableFrom(other.getClass()))
+

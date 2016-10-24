@@ -1,0 +1,10 @@
+** which also adds additional {@code setSeed()} methods.
+**
+** @author infinity0
+*/
+public class MersenneTwister extends org.spaceroots.mantissa.random.MersenneTwister {
+@Override public synchronized void setSeed(int seed) { super.setSeed(seed); }
+
+/** {@inheritDoc} */
+@Override public synchronized void setSeed(int[] seed) { super.setSeed(seed); }
+

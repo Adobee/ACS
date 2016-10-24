@@ -1,0 +1,11 @@
+add(new Write(&quot;author&quot;) {
+public void evaluate() {
+Vocab.cur = Vocab.con;
+}
+});
+add(new Literal(&quot;if&quot;) {
+public void evaluate() {
+super.evaluate();
+Blank x = get();
+if(get().is()) rstack = new Func(x, rstack);
+

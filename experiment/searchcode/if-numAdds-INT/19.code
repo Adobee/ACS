@@ -1,0 +1,6 @@
+final Counter counter = new Counter();
+int numThreads = 20;
+final int numAdds = 10;
+for (int i = 0; i < numThreads; i++) {
+new Thread(new Incrementer(counter, numAdds, i + 1)).start();
+

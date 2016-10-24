@@ -1,0 +1,8 @@
+// See if there is a server certificate chain attached to the SSLHandshakeException
+if (throwable instanceof SSLHandshakeException) {
+throwable = throwable.getCause();
+}
+}
+
+if (throwable != null &amp;&amp; throwable instanceof CertificateChainException) {
+

@@ -1,0 +1,9 @@
+private void ensureDataConformance(final double[] x, final double[] y)
+throws NullArgumentException, NoDataException {
+
+if (x == null ||
+final double[] z = concatenateSamples(x, y);
+final double[] ranks = naturalRanking.rank(z);
+
+double sumRankX = 0;
+

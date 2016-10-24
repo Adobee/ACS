@@ -1,0 +1,12 @@
+int startindex[]=new int[256];
+for(int i=0;i<256;i++){
+startindex[i]=-1;
+}
+int maxlength=-1;
+int curlength=0;
+int index = (int) c;
+if(startindex[index]==-1){
+startindex[index]=i;
+curlength++;
+}else{
+

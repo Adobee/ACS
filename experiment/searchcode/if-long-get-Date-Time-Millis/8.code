@@ -1,0 +1,9 @@
+public final class Timestamp implements Comparable<Timestamp> {
+
+public static Timestamp of(DateTime dateTime) {
+return of(dateTime.getMillis());
+}
+
+public static Timestamp of(Date dateTime) {
+return of(dateTime.getTime());
+

@@ -1,0 +1,10 @@
+import java.util.Set;
+
+/**
+* Created by jgroeneveld on 16.12.14.
+*/
+public class Dependencies {
+private Set<Entry> entries = new LinkedHashSet<Entry>();
+private void checkForCircularDependency(Entry entry, Set<Entry> allDependencies) {
+if (allDependencies.contains(entry)) {
+

@@ -1,0 +1,9 @@
+public final class InputArrayIterator implements InputIterator {
+private final Iterator<Input> i;
+private final boolean hasPayloads;
+this.i = i;
+if (i.hasNext()) {
+current = i.next();
+first = true;
+this.hasPayloads = current.hasPayloads;
+

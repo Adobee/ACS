@@ -1,0 +1,14 @@
+public void destruir() {
+if (mep != null)
+mep.release();
+}
+
+public void iniciar(View v) {
+destruir();
+iniciarH();
+}
+
+public void pausar(View v) {
+if (mep != null &amp;&amp; mep.isPlaying()) {
+pos = mep.getCurrentPosition();
+

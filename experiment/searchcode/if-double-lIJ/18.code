@@ -1,0 +1,8 @@
+/*  19:    */   public CholeskyDecomposition(RealMatrix matrix, double relativeSymmetryThreshold, double absolutePositivityThreshold)
+/*  20:    */   {
+/*  21:107 */     if (!matrix.isSquare()) {
+/*  33:123 */         double[] lJ = this.lTData[j];
+/*  34:124 */         double lIJ = lI[j];
+/*  35:125 */         double lJI = lJ[i];
+/*  36:126 */         double maxDelta = relativeSymmetryThreshold * FastMath.max(FastMath.abs(lIJ), FastMath.abs(lJI));
+

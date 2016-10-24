@@ -1,0 +1,12 @@
+ALG_SUM, MAX_DIS, BOUND_SUM, DRAG_SUM, LAMBDA_SUM;
+
+public Double getValue(Double a, Double b) {
+switch (this) {
+case MAX_DIS: {
+private double boundSum(double a, double b) {
+return Math.min(a + b, 1);
+}
+
+private double dragSum(double a, double b) {
+if (a == 0 &amp;&amp; b != 0) {
+

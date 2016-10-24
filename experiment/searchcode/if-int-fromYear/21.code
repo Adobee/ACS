@@ -1,0 +1,12 @@
+package com.fixent.sm.server.model.info;
+
+public class ChangeYearInfo {
+
+private int fromYear;
+public int getFromYear() {
+return fromYear;
+}
+
+public void setFromYear(int fromYear) {
+this.fromYear = fromYear;
+

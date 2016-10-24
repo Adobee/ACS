@@ -1,0 +1,9 @@
+private BindingImpl<T> binding;
+
+public AbstractBindingBuilder(Binder binder, List<Element> elements, Object source, Key<T> key) {
+this.binding = new UntargettedBindingImpl<>(source, key, Scoping.UNSCOPED);
+elements.add(position, this.binding);
+}
+
+protected BindingImpl<T> getBinding() {
+

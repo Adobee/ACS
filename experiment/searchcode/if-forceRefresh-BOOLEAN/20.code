@@ -1,0 +1,10 @@
+* AsyncTask that gets all valid hosts and triggers a {@code RefreshHostEvent} event.
+*/
+public class ListHostsAsync extends AsyncTask<Boolean, Void, List<Host>> {
+
+@Inject Bus mBus;
+protected List<Host> doInBackground(Boolean... params) {
+Boolean forceRefresh = params[0];
+if (forceRefresh == null) {
+forceRefresh = false;
+

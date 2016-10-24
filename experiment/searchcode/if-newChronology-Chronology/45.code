@@ -1,0 +1,6 @@
+* @param chronology  the chronology, null means ISO
+* @throws IllegalArgumentException if the type or value is invalid
+newChronology = DateTimeUtils.getChronology(newChronology);
+newChronology = newChronology.withUTC();
+if (newChronology == getChronology()) {
+

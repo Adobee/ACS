@@ -1,0 +1,13 @@
+public class StringConverter implements ITypeConverter{
+
+@Override
+public Object attributeValueToObject(AttributeValue value) {
+if(value == null)
+public AttributeValue objectToAttributeValue(Object value) {
+String sValue = String.valueOf(value);
+return (new AttributeValue().withS(sValue));
+}
+
+
+}
+

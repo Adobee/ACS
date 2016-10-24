@@ -1,0 +1,7 @@
+public static SnippetsTree createSnippetsTree(Element snippets) {
+SnippetsTree snippetsTree = null;
+if (snippets != null &amp;&amp; snippets.getLocalName().equals(SnippetsTree.SNIPPETS_TREE)) {
+XMLSnippets xmlSnippets = XMLSnippets.createXMLSnippets(childElement);
+if (xmlSnippets == null) {
+LOG.debug(&quot;non-snippet child: &quot;+childElement.getLocalName());
+

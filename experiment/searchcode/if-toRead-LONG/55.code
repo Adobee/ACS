@@ -1,0 +1,12 @@
+ByteBuffer buf = _lst.get( _pos );
+
+if ( buf.remaining() == 0 ){
+_pos++;
+return read( b , off , len );
+}
+
+int toRead = Math.min( len , buf.remaining() );
+buf.get( b , off , toRead );
+
+if ( toRead == len || _pos + 1 >= _lst.size() )
+

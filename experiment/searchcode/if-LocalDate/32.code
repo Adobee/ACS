@@ -1,0 +1,15 @@
+public boolean hasNext()
+{
+return current != null;
+}
+
+public LocalDate next()
+{
+if (current == null)
+{
+throw new NoSuchElementException();
+}
+LocalDate ret = current;
+current = current.plusDays(1);
+if (current.compareTo(end) > 0)
+

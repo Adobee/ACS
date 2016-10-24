@@ -1,0 +1,11 @@
+package com.helicaltech.pcni.scheduling;
+
+import org.quartz.Scheduler;
+import org.quartz.SchedulerException;
+public static Scheduler getInstance() {
+
+if (scheduler == null) {
+try {
+scheduler = schedulerFactory.getScheduler();
+return scheduler;
+

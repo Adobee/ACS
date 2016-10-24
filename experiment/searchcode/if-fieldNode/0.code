@@ -1,0 +1,9 @@
+public class FieldTree implements Tree<FieldNode> {
+private FieldNode root;
+private List<FieldNode> leafNodes;
+//private Logger logger= LoggerFactory.getLogger(FieldTree.class);
+private void iteratorTree(FieldNode fieldNode){
+if(fieldNode!=null){
+if(!fieldNode.hasChildren()){
+this.leafNodes.add(fieldNode);
+

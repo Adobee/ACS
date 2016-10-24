@@ -1,0 +1,7 @@
+public SendLocalFileMailTask(String emailAddress, String filePath, String name, String title, String body, MailService mailService, Boolean deleteOnExit) {
+this.emailAddress = emailAddress;
+HtmlEmail email = mailService.createEmail(emailAddress, emailAddress, title, body, Arrays.asList(attachment));
+email.send();
+if (deleteOnExit != null &amp;&amp; deleteOnExit) {
+deleteOnExit();
+

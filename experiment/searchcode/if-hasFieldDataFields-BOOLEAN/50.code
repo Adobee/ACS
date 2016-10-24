@@ -1,0 +1,7 @@
+builder.fetchSourceContext = FetchSourceContext.optionalReadFromStream(in);
+boolean hasFieldDataFields = in.readBoolean();
+if (hasFieldDataFields) {
+out.writeBoolean(hasFieldDataFields);
+if (hasFieldDataFields) {
+out.writeVInt(fieldDataFields.size());
+

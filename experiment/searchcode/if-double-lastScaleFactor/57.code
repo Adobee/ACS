@@ -1,0 +1,9 @@
+this.writer.write(&quot;<networkChangeEvents xmlns=\&quot;http://www.matsim.org/files/dtd\&quot; xmlns:xsi=\&quot;http://www.w3.org/2001/XMLSchema-instance\&quot; xsi:schemaLocation=\&quot;http://www.matsim.org/files/dtd http://www.matsim.org/files/dtd/networkChangeEvents.xsd\&quot;>&quot;); this.writer.newLine();
+this.writer.newLine();
+
+double lastScaleFactor = 1.0;
+
+for (Entry<String, Double> entry : this.timeScaleFactorMap.entrySet()) {
+this.writer.write(&quot;<freespeed type=\&quot;scaleFactor\&quot; value=\&quot;&quot; + (entry.getValue().doubleValue() / lastScaleFactor) + &quot;\&quot;/>&quot;); this.writer.newLine();
+this.writer.write(&quot;</networkChangeEvent>&quot;); this.writer.newLine();
+

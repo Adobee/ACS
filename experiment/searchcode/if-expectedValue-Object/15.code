@@ -1,0 +1,10 @@
+protected final Object expectedValue;
+
+public FieldEqualPredicate(String field, Object expectedValue) {
+super(field, expectedValue);
+}
+
+@Override
+public boolean apply(T input) {
+if (input == null) {
+

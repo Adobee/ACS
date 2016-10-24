@@ -1,0 +1,16 @@
+private T cached = null;
+
+protected abstract T makeNext();
+
+public boolean hasNext() {
+validate();
+if (!done &amp;&amp; !valid) {
+cached = makeNext();
+valid = true;
+if (cached == null) {
+done = true;
+}
+}
+}
+}
+

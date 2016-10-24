@@ -1,0 +1,9 @@
+static PrintWriter out=new PrintWriter(System.out);
+static LinkedList<Long> hn=new LinkedList<Long>();
+static Queue<Long> q2=new LinkedList<Long>();
+static Queue<Long> q5=new LinkedList<Long>();
+static Queue<Long> q7=new LinkedList<Long>();
+
+static void getMin(){
+if(!q2.isEmpty()&amp;&amp;q2.peek()<q3.peek()&amp;&amp;q2.peek()<q5.peek()&amp;&amp;q2.peek()<q7.peek()){
+

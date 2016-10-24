@@ -1,0 +1,9 @@
+double moveX = unigenX.nextValue(1);
+double moveY = unigenY.nextValue(2);
+if( moveX < 1/3){
+directionX = 1;
+public void changeDirectionX(){
+int directionX;
+double moveX = unigen.nextValue(1);
+if( moveX < 1.0/3){
+

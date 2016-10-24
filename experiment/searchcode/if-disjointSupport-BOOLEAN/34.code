@@ -1,0 +1,11 @@
+private static boolean disjointSupport;
+private static boolean withinSupport;
+
+@BeforeClass
+public static void createNodes() throws Exception {
+assertFirstHit(result, hasId(&quot;1&quot;));
+
+if (disjointSupport) {
+// Point not in polygon
+result = client().prepareSearch()
+

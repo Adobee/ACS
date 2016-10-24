@@ -1,0 +1,7 @@
+private final MediaType contentType;
+private final byte[] bytes;
+
+public JSONBody(String content){
+this(content, null);
+this.contentType = TextUtils.isEmpty(charset) ? CONTENT_TYPE : MediaType.parse(&quot;application/json; charset=&quot; + charset);
+

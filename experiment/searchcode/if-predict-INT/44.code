@@ -1,0 +1,11 @@
+public Report(String l, List <String> p){
+this.label = l;
+this.predict = p;
+}
+public boolean check(int k){
+if(k > this.predict.size()){
+return false;
+}
+for (int i = 0; i<k; i++) {
+if(this.predict.get(i).equals(this.label)){
+

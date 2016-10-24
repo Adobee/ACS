@@ -1,0 +1,11 @@
+public <V> boolean put(String key, WriteInDisk<V> writeIn, V value)
+throws IOException {
+boolean savedSuccessfully = false;
+File keyFile = getFile(key);
+value);
+}
+if (savedSuccessfully &amp;&amp; !tmpFile.renameTo(keyFile)) {
+savedSuccessfully = false;
+}
+if (!savedSuccessfully) {
+

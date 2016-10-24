@@ -1,0 +1,16 @@
+public boolean isOver()
+{
+if (!started)
+return false;
+
+return Time.getTime() >= endTime;
+}
+public boolean isActive()
+{
+return started;
+}
+public void restart()
+{
+started = true;
+endTime = length*1000000 + Time.getTime();
+

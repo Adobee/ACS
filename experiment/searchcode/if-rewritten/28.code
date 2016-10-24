@@ -1,0 +1,12 @@
+* target
+*/
+private RewrittenUrl rewrittenUrl;
+
+/**
+* rule chain construct
+*
+* @param rules rules
+for (Rule rule : rules) {
+RewrittenUrl rewrittenUrl = rule.matches(wxMsg, request, response);
+if (rewrittenUrl != null) {
+

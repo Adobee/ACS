@@ -1,0 +1,11 @@
+final ByteArrayOutputStream baos = new ByteArrayOutputStream();
+if (realtime) {
+baos.write(UNIVERSAL_REALTIME_SYSEX_HEADER);
+channelmask += 1 << i;
+}
+}
+baos.write((byte) channelmask);
+channelmask = 0;
+for (int i = 0; i < 7; i++) {
+if (channels[i + 7]) {
+

@@ -1,0 +1,6 @@
+@Override
+public MarketInfo getMarketInfo(ItemType itemType, boolean forceRefresh) {
+MarketInfo info = forceRefresh ? null : cache.getMarketInfo(itemType, forceRefresh);
+if (info == null) {
+info = evecentral.getMarketInfo(itemType, forceRefresh);
+

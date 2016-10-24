@@ -1,0 +1,14 @@
+private int yearlySalary;
+private int weeksPerYear;
+
+
+
+/**
+* @param name
+*/
+public SalariedEmployee(String name, int yearlySalary,int weeksPerYear) {
+* @param expectedNumberOfWeeksPerYear the expectedNumberOfWeeksPerYear to set
+*/
+public void setWeeksPerYear(int weeksPerYear) {
+if(weeksPerYear>ZERO &amp;&amp; weeksPerYear<FIFTY_THREE)
+

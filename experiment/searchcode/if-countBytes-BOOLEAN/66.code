@@ -1,0 +1,9 @@
++ (1000.0f * bin.length() / (endtime - starttime)) + &quot; B/s)&quot;;
+}
+
+public synchronized boolean isReady() {
+if (!sentstarts.isEmpty()) {
+return false;
+} else if (this.countbytes < bin.length()) {
+log.debug(&quot;isready length fail &quot; + countbytes + &quot; binary.length &quot; + bin.length());
+

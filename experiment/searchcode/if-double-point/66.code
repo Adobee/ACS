@@ -1,0 +1,7 @@
+args = new String[]{&quot;0&quot;,&quot;0&quot;,&quot;1&quot;,&quot;1&quot;,&quot;2&quot;,&quot;2&quot;};
+}
+
+// A(x,y) B(x,y) C(x,y)
+Point a = new Point(Double.parseDouble(args[0]),Double.parseDouble(args[1]));
+Point b = new Point(Double.parseDouble(args[2]),Double.parseDouble(args[3]));
+

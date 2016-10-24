@@ -1,0 +1,16 @@
+void setPos(double inX, double inY) {
+}
+
+@Override
+void setSpeed(double inVX, double inVY) {
+}
+
+@Override
+void setRad(double inR) {
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+@Override
+void draw(Graphics2D g, int xOffset, int yOffset, double step) {
+if(now){
+g.setColor(new Color(0,0,0,100));
+

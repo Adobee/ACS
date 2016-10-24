@@ -1,0 +1,9 @@
+TreeSet<ParCELExtraNode> reducedPartialDefinition = new TreeSet<ParCELExtraNode>(
+new ParCELCompletenessComparator());
+
+if (counterPartialDefinitions.size() == 0)
+return reducedPartialDefinition;
+
+synchronized (counterPartialDefinitions) {
+Object[] partialDefs = counterPartialDefinitions.toArray();
+

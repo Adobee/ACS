@@ -1,0 +1,7 @@
+append((double[]) lhs, (double[]) rhs);
+} else if (lhs instanceof float[]) {
+append((float[]) lhs, (float[]) rhs);
+public CompareToBuilder append(float lhs, float rhs) {
+if (this.comparison == 0) {
+this.comparison = Float.compare(lhs, rhs);
+

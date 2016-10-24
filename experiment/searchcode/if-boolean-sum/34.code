@@ -1,0 +1,10 @@
+for (int i = 1; i <= sum; i++) {
+for (int j = 1; j <= array.length; j++) {
+canSum[i][j] = canSum[i][j - 1];
+if (i >= array[j - 1]) {
+return canSum[sum][array.length];
+}
+
+public static void construct(int[] array, int sum, int len, boolean[][] canSum) {
+if (sum == 0) {
+

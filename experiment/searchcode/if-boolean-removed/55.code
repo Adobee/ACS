@@ -1,0 +1,16 @@
+sem.acquire();
+boolean added = false;
+try{
+added = set.add(t);
+return added;
+}finally{
+if(!added){
+sem.release();
+}
+}
+
+}
+
+public boolean removeResource(T t){
+boolean removed = set.remove(t);
+

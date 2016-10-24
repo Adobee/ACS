@@ -1,0 +1,17 @@
+function plot_bigauss1(N)
+
+A = randn([2 2]);
+S = A*A&#39;
+cS = chol(S);
+
+X = randn([2 N]);
+Y = cS&#39;*X;
+
+plot(X(1,:), X(2,:), &#39;o&#39;);
+xlim([-6 6]);
+ylim([-6 6]);
+
+pause;
+
+hold on;
+

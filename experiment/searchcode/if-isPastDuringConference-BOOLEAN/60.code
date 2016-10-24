@@ -1,0 +1,7 @@
+long now = UIUtils.getCurrentTime(mContext);
+boolean showEndTime;
+if (item.startTime <= now) {
+// show or hide the &quot;conflict&quot; warning
+if (!isPastDuringConference) {
+final boolean showConflict = 0 != (item.flags &amp; ScheduleItem.FLAG_CONFLICTS_WITH_PREVIOUS);
+

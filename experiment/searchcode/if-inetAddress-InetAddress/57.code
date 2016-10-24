@@ -1,0 +1,13 @@
+/**
+*
+*/
+package shtaag;
+
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+Map<String, InetAddress> dnsCache = new HashMap<String, InetAddress>();
+
+public InetAddress resolve(String domain) throws UnknownHostException {
+
+if (dnsCache.containsKey(domain)) {
+

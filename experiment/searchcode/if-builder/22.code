@@ -1,0 +1,12 @@
+builder.append(translateWord(words[i]));
+if (i + 1 != words.length) builder.append(&quot; &quot;);
+}
+return builder.toString();
+}
+
+private static String translateWord(String input) {
+StringBuilder builder = new StringBuilder(input);
+String firstLetter = builder.substring(0, 1);
+if (firstLetter.matches(CONSONANT)) {
+if (builder.substring(1, 3).equals(&quot;qu&quot;)) {
+

@@ -1,0 +1,11 @@
+//month = 3, week = 4, day = 11
+int month = 12;
+int week = 4;
+int days = 7;
+
+printCalendar(month, week, days);
+}
+
+private static void printCalendar(int month, int week, int days) {
+for(int day=1; day <= month * days; day++){
+

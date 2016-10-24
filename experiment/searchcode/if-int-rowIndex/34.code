@@ -1,0 +1,7 @@
+public ArrayList<Integer> getRow(int rowIndex) {
+ArrayList<Integer> results = new ArrayList<Integer>();
+if( rowIndex == 0 ) {
+for( int i = 2; i <= rowIndex; i++ ) {
+for( int j = i; j >= 0; j-- ) {
+if( j == 0 || j == i )
+

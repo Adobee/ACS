@@ -1,0 +1,7 @@
+private final int pendingViewResId;
+private AtomicBoolean keepOnAppending;
+private AtomicBoolean dataPending;
+public EndlessRecyclerViewAdapter(Context context, Adapter wrapped, RequestToLoadMoreListener requestToLoadMoreListener, @LayoutRes int pendingViewResId, boolean keepOnAppending) {
+super(wrapped);
+this.context = context;
+

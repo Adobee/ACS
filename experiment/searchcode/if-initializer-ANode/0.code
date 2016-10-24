@@ -1,0 +1,7 @@
+return getMappingForInitializerDeclaration((InitializerDeclaration) aNode, values);
+} else if ( aNode instanceof FieldDeclaration ){
+return getMappingForFieldDeclaration((FieldDeclaration) aNode, values);
+return getMappingForArrayCreationExpr((ArrayCreationExpr) aNode, values);
+} else if ( aNode instanceof ArrayInitializerExpr ){
+return getMappingForArrayInitializerExpr((ArrayInitializerExpr) aNode, values);
+

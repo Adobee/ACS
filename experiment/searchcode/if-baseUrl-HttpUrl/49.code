@@ -1,0 +1,9 @@
+import java.io.IOException;
+
+import okhttp3.HttpUrl;
+import okhttp3.Interceptor;
+import okhttp3.OkHttpClient;
+Request request = chain.request();
+HttpUrl url = request.url().newBuilder()
+.addQueryParameter(&quot;api_key&quot;, BuildConfig.TMDB_API_KEY)
+

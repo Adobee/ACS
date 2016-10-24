@@ -1,0 +1,9 @@
+protected double calculatingLowerLimit(double alphaLevel) {
+
+double a = getParameters().get(0);
+double c = getParameters().get(2);
+
+if (alphaLevel == 0)
+return a;
+else if (alphaLevel > 0 &amp;&amp; alphaLevel < 1)
+

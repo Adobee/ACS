@@ -1,0 +1,7 @@
+// request 및 response 모두 압축/해제 필요
+if (acceptEncoding(httpRequest) &amp;&amp; contentEncoding(httpRequest)) {
+gzipRequestWrapper = new GZipRequestWrapper(httpRequest);
+chain.doFilter(gzipRequestWrapper, gzipResponseWrapper);
+// response 압축 필요
+} else if (acceptEncoding(httpRequest)) {
+

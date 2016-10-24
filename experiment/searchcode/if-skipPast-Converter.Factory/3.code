@@ -1,0 +1,7 @@
+public <T> Converter<T, RequestBody> nextRequestBodyConverter(Converter.Factory skipPast, Type type) {
+checkNotNull(type, &quot;type == null&quot;);
+StringBuilder builder = new StringBuilder(&quot;Could not locate RequestBody converter for &quot;)
+.append(type)
+.append(&quot;.\n&quot;);
+if (skipPast != null) {
+

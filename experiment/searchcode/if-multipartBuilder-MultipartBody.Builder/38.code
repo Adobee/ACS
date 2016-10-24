@@ -1,0 +1,6 @@
+public Call start(UploadListener uploadListener) {
+
+MultipartBody.Builder multipartBuilder = new MultipartBody.Builder().setType(MultipartBody.FORM);
+addParams(multipartBuilder, params);
+addFiles(multipartBuilder, file);
+

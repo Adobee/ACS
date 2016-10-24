@@ -1,0 +1,14 @@
+public void addFlag (final int flag) {
+flags |= flag;
+}
+
+@Override
+public boolean onlyMarkersToChange() {
+return flags == MARKER_CHANGE;
+return markersToRecalc;
+}
+
+@Override
+public void addMarkersToChange (final Set<SNPMarker> markersToAdd) {
+if (markersToAdd != null &amp;&amp; !markersToAdd.isEmpty()) {
+

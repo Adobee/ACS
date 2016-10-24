@@ -1,0 +1,6 @@
+return (int)((((float)(pos - start))/((float)(end - start))) * (rightx - leftx) + leftx);
+}
+public int getXPos(double val, double minval, double maxval, int minx, int maxx) {
+public int getYPosLog(double val, double minval, double maxval, int miny, int maxy) {
+if (minval <= .001) {minval = .001;}
+

@@ -1,0 +1,11 @@
+public static  int rbsearch (int n, int[] L, int low, int high){
+if (high-low <= 0){
+if (L[high] == n){
+return high;
+}else{
+return -1;
+}
+}
+if (L[(high-low+1)/2] == n){
+return (int)Math.round((high-low+1)/2);
+

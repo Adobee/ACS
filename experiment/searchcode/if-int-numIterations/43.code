@@ -1,0 +1,9 @@
+public class Mandelbrot implements IterativeFunction {
+public static final double DEFAULT_BOUND = 2.0;
+public static final int MAX_ITERATIONS = 50;
+public int getNumIterations(Complex z0, int maxIterations, double bound) {
+int numIterations = 0;
+
+Complex znext = new Complex(z0);
+do {
+

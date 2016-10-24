@@ -1,0 +1,10 @@
+import java.io.OutputStream;
+import java.net.CacheRequest;
+import java.net.CacheResponse;
+import java.net.ResponseCache;
+import java.net.URI;
+String cacheDir = FileUtils.cacheDir.getAbsolutePath();
+
+@Override
+public CacheResponse get(URI uri, String s, Map<String, List<String>> headers) throws IOException {
+

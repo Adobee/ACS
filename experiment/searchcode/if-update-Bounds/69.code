@@ -1,0 +1,10 @@
+batch.draw(world.getPlayer().getTexture(), bounds.x, bounds.y, bounds.width, bounds.height);
+
+/** Draw second player **/
+if(world.getAI()){
+bounds = world.getPaddleAI().getBounds();
+batch.draw(world.getBall().getTexture(), bounds.x, bounds.y);
+
+if(debug)
+font.draw(batch, &quot;FPS: &quot; + Gdx.graphics.getFramesPerSecond(), 10, 20);
+

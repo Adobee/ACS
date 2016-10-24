@@ -1,0 +1,11 @@
+public class BooleanProtocol extends Protocol<Boolean>
+{
+public BooleanProtocol(int requiredVersion)
+{
+super(0);
+checkVersionAvailability(BooleanProtocol.class, requiredVersion);
+}
+
+@Override
+public void send(DataOutput out, Boolean b) throws IOException
+

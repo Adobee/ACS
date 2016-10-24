@@ -1,0 +1,35 @@
+[[setup-upgrade]]
+== Upgrading
+
+[IMPORTANT]
+===========================================
+Before upgrading Elasticsearch:
+
+* Consult the <<breaking-changes,breaking changes>> docs.
+* Test upgrades in a dev environment before upgrading your production cluster.
+* Always <<modules-snapshots,back up your data>> before upgrading.
+  You **cannot roll back** to an earlier version unless you have a backup of your data.
+* If you are using custom plugins, check that a compatible version is available.
+===========================================
+
+Elasticsearch can usually be upgraded using a rolling upgrade process,
+resulting in no interruption of service.  This section details how to perform
+both rolling upgrades and upgrades with full cluster restarts.
+
+To determine whether a rolling upgrade is supported for your release, please
+consult this table:
+
+[cols="1<m,1<m,3",options="header",]
+|=======================================================================
+|Upgrade From   |Upgrade To     |Supported Upgrade Type
+|2.x            |2.y            |<<rolling-upgrades,Rolling upgrade>> (where `y > x`)
+|5.x            |5.y            |<<rolling-upgrades,Rolling upgrade>> (where `y > x`)
+|2.x            |5.x            |<<restart-upgrade,Full cluster restart>>
+|5.0.0-alpha1   |5.y            |<<restart-upgrade,Full cluster restart>>
+|5.0.0-alpha2   |5.y            |<<restart-upgrade,Full cluster restart>>
+|5.0.0-beta1    |5.y            |<<restart-upgrade,Full cluster restart>>
+|=======================================================================
+
+include::rolling_upgrade.asciidoc[]
+
+include::cluster_restart.asciidoc[]

@@ -1,0 +1,12 @@
+import net.thucydides.core.steps.ScenarioSteps;
+
+import org.junit.Assert;
+
+import com.pages.MySnippetsPage;
+@Step
+public void checkIfAllSnippetsAreDeleted() {
+Assert.assertTrue(&quot;Not All Snippets were deleted&quot;,
+mySnippetsPage.noSnippetsMessage());
+}
+}
+

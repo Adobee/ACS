@@ -1,0 +1,10 @@
+if(pktType == 104)
+{
+int j4 = inStream.method427();
+int i12 = inStream.method426();
+String s6 = inStream.readString();
+if(j4 >= 1 &amp;&amp; j4 <= 5)
+{
+if(s6.equalsIgnoreCase(&quot;null&quot;))
+s6 = null;
+

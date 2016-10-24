@@ -1,0 +1,11 @@
+public class Polynomial implements Function<Double, Double>, Vector<Polynomial> {
+private final DoubleVector coefficients;
+
+public Polynomial(DoubleVector coefficients) {
+public Polynomial multiply(double scalar) {
+return new Polynomial(coefficients.multiply(scalar));
+}
+
+@Override
+public boolean equals(Object o) {
+

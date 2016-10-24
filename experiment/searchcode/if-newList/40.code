@@ -1,0 +1,13 @@
+head = null;
+current = null;
+}
+
+public void insertBefore(LineList newList) {
+if(head == null) {
+head = newList;
+current = newList;
+}
+else if(current.getPrev() == null) {
+head = newList;
+current.setPrev(newList);
+

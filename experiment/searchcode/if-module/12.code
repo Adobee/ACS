@@ -1,0 +1,11 @@
+boolean debug = log.isDebugEnabled();
+
+String moduleName = moduleConfig.getName();
+
+if (debug) log.debug(&quot;Adding module \&quot;&quot;+moduleName+&quot;\&quot;.&quot;);
+public void validate(ModuleConfig moduleConfig) throws Exception {
+
+String moduleName = moduleConfig.getName();
+
+if (moduleName == null || &quot;&quot;.equals(moduleName)) {
+

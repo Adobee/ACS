@@ -1,0 +1,11 @@
+&amp;&amp; Imgproc.isContourConvex(new MatOfPoint(approxedCurveInt))) {
+double maxCosine = 0;
+
+for (int j = 2; j < 5; j++) {
+Point[] approxPoints = approxedCurve.toArray();
+double cosine = Math.abs(angle(approxPoints[j % 4], approxPoints[j - 2], approxPoints[j - 1]));
+maxCosine = Math.max(maxCosine, cosine);
+}
+
+if (maxCosine < 0.3) {
+

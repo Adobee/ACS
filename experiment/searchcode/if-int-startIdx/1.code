@@ -1,0 +1,12 @@
+public int canCompleteCircuit(int[] gas, int[] cost) {
+int res = -1;
+int tank = 0;
+int startIdx = gas.length - 1;
+int breakIdx = -1;
+// fill oil at start index
+if(gas[startIdx] < cost[startIdx]) {
+startIdx --;
+}
+else {
+tank += gas[startIdx];
+

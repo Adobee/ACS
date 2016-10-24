@@ -1,0 +1,9 @@
+Assert.isTrue(Protocol.isDispatchThread(), &quot;Illegal Thread Access&quot;); //$NON-NLS-1$
+
+if (event instanceof ChannelEvent) {
+IChannel channel = ((ChannelEvent)event).getChannel();
+if (logname != null) logname = LogManager.getInstance().makeValid(logname);
+
+if (ChannelEvent.TYPE_OPENING.equals(type)) {
+ChannelTraceListenerManager.getInstance().onChannelOpening(logname, channel, message);
+

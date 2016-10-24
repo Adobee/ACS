@@ -1,0 +1,9 @@
+ValueAxis rangeAxis;
+
+if (model.getDataset() instanceof XYDataset) {
+dataset = (XYDataset) model.getDataset();
+throw new PlotGeneratorException(&quot;Incompatible dataset for xy plot.&quot;);
+}
+
+if (model.getAxis(0) instanceof ValueAxis) {
+

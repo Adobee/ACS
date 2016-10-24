@@ -1,0 +1,9 @@
+public EigenDecompositionImpl(final RealMatrix matrix,
+final double splitTolerance)
+throws InvalidMatrixException {
+if (isSymmetric(matrix)) {
+final double p     = q0 * q1 - e12;
+final double delta = s * s - 4 * p;
+if (delta < 0) {
+throw new InvalidMatrixException(&quot;cannot solve degree {0} equation&quot;, 2);
+

@@ -1,0 +1,8 @@
+public MatrixType kronecker(MatrixType other) throws PacioliException {
+if (rowDimension instanceof IndexType
+&amp;&amp; columnDimension instanceof IndexType
+IndexType rowType = (IndexType) rowDimension;
+int offset = rowType.width();
+
+return new MatrixType(
+

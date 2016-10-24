@@ -1,0 +1,9 @@
+public void derivedArea(double a, double b, double c, double x1, double x2) {
+if (x1 > x2) {
+rightSide = (((1.0/3.0)*a*x1*x1*x1) + ((1.0/2.0)*b*x1*x1) + (c*x1));
+public DerivedArea(double a, double b, double c, double x1, double x2) {
+derivedArea(a,b,c,x1,x2);
+}
+
+}
+

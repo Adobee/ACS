@@ -1,0 +1,12 @@
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URI;
+
+public class RequestBuilder extends MessageBuilder<Request> {
+return (RequestBuilder) super.withBody(is);
+}
+
+public RequestBuilder withRedirection(URI u) {
+if (u != null) {
+that.getHeaders().update(Headers.REQUEST.ORIGIN, that.getURI().toString());
+

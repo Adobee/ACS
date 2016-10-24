@@ -1,0 +1,10 @@
+@Override
+public void removePropertyChangeListener(IPropertyChangeListener listener) {
+if (listenerList != null) {
+listenerList.remove(listener);
+if (listenerList.isEmpty()) {
+listenerList = null;
+}
+}
+}
+

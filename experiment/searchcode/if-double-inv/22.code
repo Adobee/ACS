@@ -1,0 +1,12 @@
+package numbers;
+
+public class Pow {
+public double pow(double x, int n) {
+boolean inv = false;
+public double powHelper(double x, int n) {
+if (n == 0) return 1;
+double m = powHelper(x, n >> 1);
+return (n &amp; 1) == 1? m * m * x : m * m;
+}
+}
+

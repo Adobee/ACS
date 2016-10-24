@@ -1,0 +1,10 @@
+queue.next = head;
+head = queue;
+if (queue.next == null) {
+tail = queue;
+return predecessor(item, head);
+}
+
+private Queue predecessor(int item, Queue queue) {
+if (queue == null || queue.next == null) return null;
+

@@ -1,0 +1,9 @@
+public boolean isDown;
+public boolean isPressed;
+public boolean isUp;
+
+protected abstract boolean isPressed();
+isDown = isPressed &amp;&amp; !wasPressed;
+isUp = !isPressed &amp;&amp; wasPressed;
+// if(isDown)Gdx.app.log(&quot;&quot;, &quot;Trap down&quot;);
+

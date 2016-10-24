@@ -1,0 +1,7 @@
+for (int i = 0, max = binMembersToMove.size(); i < max; i++) {
+ConflictData data = resolver.getConflictData(binMembersToMove.get(i));
+if (data.unresolvedConflictsExist()) {
+if (data.resolvedConflictsExist()) {
+RefactoringStatus status = conflictModel.getResolvedConflictsStatus(data);
+if (status != null) {
+

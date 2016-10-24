@@ -1,0 +1,10 @@
+if (getClass() != obj.getClass())
+return false;
+LiedDauer other = (LiedDauer) obj;
+if (milliSekunden != other.milliSekunden)
+public void setMilliSekunden(long milliSekunden)
+{
+if (milliSekunden < 0L)
+{
+throw new LiedDauerException(LiedDauerException.MSG_ZEIT_NEGATIV);
+

@@ -1,0 +1,12 @@
+this.beforeQueryList.add(beforeQuery);
+}
+
+/** {@inheritDoc} */
+public QueryResult query() {
+QueryResult result;
+try {
+boolean hasOrder = false;
+sql = beforeQuery.process(sql);
+if (beforeQuery instanceof BeforeQueryOrder) {
+hasOrder = true;
+

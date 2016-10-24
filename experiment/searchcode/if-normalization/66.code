@@ -1,0 +1,8 @@
+float normalization = fraction / 1.4f;
+if (normalization < life || normalization > 1f - overflow) {
+alpha = 0f;
+normalization = (normalization - life) / (1f - life - overflow);
+float f2 = normalization * 1.4f;
+if (normalization >= 0.7f) {
+f = (normalization - 0.7f) / 0.3f;
+

@@ -1,0 +1,12 @@
+public int getUByte() {
+return buffer[offset++] &amp; 0xff;
+}
+
+public int getShort() {
+int val = (getByte() << 8) + getByte();
+public int getUSmart() {
+int i = buffer[offset] &amp; 0xff;
+if (i < 128) {
+return getUByte();
+} else {
+

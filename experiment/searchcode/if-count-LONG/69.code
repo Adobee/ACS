@@ -1,0 +1,11 @@
+private char getState(long slotCount, long bulletCount, long position) {
+if (bulletCount == 0)
+return &#39;.&#39;;
+long freeCount = slotCount - bulletCount;
+if (slotCount % 2 == 1) {
+if (position == slotCount - 1)
+return &#39;X&#39;;
+bulletCount--;
+}
+long pairs = Math.min(freeCount, bulletCount);
+

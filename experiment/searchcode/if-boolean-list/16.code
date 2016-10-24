@@ -1,0 +1,12 @@
+public class BooleanOperatorAND extends BooleanOperator {
+
+BooleanOperatorAND(List<BooleanSource> list) {
+super(list);
+}
+
+@Override
+public BooleanValue getValue() {
+boolean isDontCare = false;
+for (BooleanVariable var : this.getDomain()) {
+if (var.getValue().equals(BooleanValue.FALSE)) {
+

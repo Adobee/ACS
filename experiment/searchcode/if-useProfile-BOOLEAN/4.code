@@ -1,0 +1,8 @@
+List<UseProfile> res = sDbAdapter.getUseProfiles(
+ProfilesDbAdapter.USEPROFILE_NAME+&quot;=&#39;&quot;+name+&quot;&#39;&quot;);
+if(res.size()==1)
+// If name is not changed, act normally
+boolean different_name = !previous_name.equals(up.getName());
+
+if(different_name)
+

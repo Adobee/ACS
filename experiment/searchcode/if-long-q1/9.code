@@ -1,0 +1,8 @@
+public static Rational reduce(final long numerator, final long denominator)
+{
+if (denominator == 0L)
+throw new IllegalArgumentException();
+public static int compare(final Rational q0, final Rational q1)
+{
+return ((Long)(q0.numerator() * q1.denominator())).compareTo(q0.denominator() * q1.numerator())
+

@@ -1,0 +1,12 @@
+public class LazyInstanceWithLocalVariable extends LazyInstance
+{
+@Override
+protected Object getInitializedObject(){
+Object result = field;
+if (result == null)
+{
+synchronized (this)
+{
+result = field;
+if (result == null)
+

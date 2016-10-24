@@ -1,0 +1,9 @@
+final static int SOUTHEAST = 8;
+
+public int returnDirection (Node source , Node destination){
+
+int diffX = destination.getX() - source.getX();
+int diffY = destination.getY()- source.getY();
+
+if (diffX >0  &amp;&amp; diffY>0 )	return Direction.NORTHEAST;
+

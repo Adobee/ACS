@@ -1,0 +1,12 @@
+* @deprecated As of 3.1 (to be removed in 4.0).
+* @since 2.0
+*/
+@Deprecated
+public class LinearObjectiveFunction implements Serializable {
+public boolean equals(Object other) {
+
+if(this == other) {
+return true;
+}
+if(other instanceof LinearObjectiveFunction) {
+

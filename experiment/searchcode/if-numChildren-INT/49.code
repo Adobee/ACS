@@ -1,0 +1,5 @@
+AssertBuilder assertBuilder = newAssertBuilder(&quot;class Foo { new(int foo) {} }&quot;);
+assertBuilder.numChildren(1).child(0, &quot;Foo&quot;).numChildren(1).child(0, &quot;new(int)&quot;).numChildren(0);
+AssertBuilder assertBuilder = newAssertBuilder(&quot;class Foo { def foo(int bar) {null} }&quot;);
+assertBuilder.numChildren(1).child(0, &quot;Foo&quot;).numChildren(1).child(0, &quot;foo(int) : Object&quot;).numChildren(0);
+

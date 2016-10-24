@@ -1,0 +1,9 @@
+double b = (double) prob.getEvalCount() / maxEval;
+double c = (double) alg.getTime() / maxTime;
+
+if (a > b) {
+if (a > c) return a;
+if (maxIter > 0 &amp;&amp; alg.getIterCount() >= maxIter) return true;
+if (maxEval > 0 &amp;&amp; prob.getEvalCount() >= maxEval) return true;
+if (maxTime > 0 &amp;&amp; alg.getTime() >= maxTime) return true;
+

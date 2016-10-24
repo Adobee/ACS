@@ -1,0 +1,12 @@
+public final class SqlDateConversionUtil {
+
+private SqlDateConversionUtil() {
+}
+
+public static Date toDate(Object o) {
+return toDate(o, null);
+}
+
+public static Date toDate(Object o, String pattern) {
+if (o instanceof Date) {
+

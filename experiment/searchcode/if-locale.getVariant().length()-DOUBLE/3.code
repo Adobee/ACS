@@ -1,0 +1,7 @@
+stringbuilder.append(locale.getLanguage());
+String s = locale.getCountry();
+if(!TextUtils.isEmpty(s))
+stringbuilder.append(&#39;-&#39;).append(s);
+locale = locale.getVariant();
+if(!TextUtils.isEmpty(locale))
+

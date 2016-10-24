@@ -1,0 +1,7 @@
+for (String piece : pieces) {
+result.append(piece);
+}
+int intVersion = Integer.valueOf(result.toString());
+intVersion++;
+char[] chars = String.valueOf(intVersion).toCharArray();
+

@@ -1,0 +1,18 @@
+public ConstantInitializer(T obj)
+{
+this.object = obj;
+}
+
+public final T getObject()
+{
+return (T)this.object;
+return getObject() != null ? getObject().hashCode() : 0;
+}
+
+public boolean equals(Object obj)
+{
+if (this == obj) {
+return true;
+}
+if (!(obj instanceof ConstantInitializer)) {
+

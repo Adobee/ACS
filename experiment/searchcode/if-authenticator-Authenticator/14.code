@@ -1,0 +1,6 @@
+public IBinder onBind(final Intent intent) {
+if (intent != null &amp;&amp; ACTION_AUTHENTICATOR_INTENT.equals(intent.getAction())) {
+private AccountAuthenticator getAuthenticator() {
+if (authenticator == null) {
+authenticator = new AccountAuthenticator(this);
+

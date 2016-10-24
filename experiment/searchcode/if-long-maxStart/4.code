@@ -1,0 +1,6 @@
+public static void main(String[] args)
+{
+long len, maxLen, maxStart;
+len = maxLen = maxStart = -1L;
+for(long i = 2L; i < 1000000; i++)
+

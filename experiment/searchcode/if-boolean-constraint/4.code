@@ -1,0 +1,9 @@
+public boolean acceptValue(AttributeConstraint constraint, Object value) {
+if (constraint instanceof ValueExistsConstraint) {
+return acceptValue((ValueExistsConstraint) constraint, value);
+}
+return false;
+}
+
+public boolean acceptValue(ValueExistsConstraint constraint, Object value) {
+

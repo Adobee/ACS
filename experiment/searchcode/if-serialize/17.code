@@ -1,0 +1,8 @@
+private static int index;
+
+@Override
+public final byte[] serialize(final State state) {
+index = 0;
+final Board board = state.getBoard();
+serializeMatrix(board.getMatrix());
+

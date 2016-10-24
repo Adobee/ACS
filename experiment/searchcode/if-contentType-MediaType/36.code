@@ -1,0 +1,10 @@
+Accepts supports = new Accepts(map.keySet());
+
+MediaType contentType = null;
+
+for (MediaType mediaType : accepts) {
+if ((produces.isEmpty() || produces.contains(mediaType)) &amp;&amp; (supports.contains(mediaType))) {
+for (MediaType support : supports) {
+if (mediaType.matches(support)) {
+contentType = support;
+

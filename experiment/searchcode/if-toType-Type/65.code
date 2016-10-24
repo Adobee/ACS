@@ -1,0 +1,7 @@
+public JsonModel coerce(Object object, Class<? extends JsonModel> toType) {
+if(object instanceof String) {
+return createModel((String) object, toType);
+}
+if(object instanceof Map<?,?>) {
+return coerce((Map<?,?>) object, toType);
+

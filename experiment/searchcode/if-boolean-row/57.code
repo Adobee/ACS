@@ -1,0 +1,10 @@
+private int DFS(int n, boolean[] cols, boolean[] main_diag, boolean[] anti_diag, int row) {
+if (row == n) {
+return 1;
+}
+
+int count = 0;
+
+for (int i = 0; i < n; i++) {
+if (!cols[i] &amp;&amp; !main_diag[i - row + n - 1] &amp;&amp; !anti_diag[i + row]) {
+

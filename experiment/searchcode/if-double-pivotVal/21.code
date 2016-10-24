@@ -1,0 +1,16 @@
+swap(keys, vals, m1, m2);
+}
+}
+}
+}
+
+// Move pivot to the front.
+double pivotkey = keys[m3];
+int pivotval = vals[m3];
+vals[start] = vals[right];
+keys[right] = pivotkey;
+vals[right] = pivotval;
+
+// Recursion:
+if (start + 1 < right) {
+

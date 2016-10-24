@@ -1,0 +1,13 @@
+public class ConstituencyWords extends Constituency{
+int initialIndex, finalIndex;
+
+public ConstituencyWords(TSNodeLabel node, int initialIndex, int finalIndex, boolean countLabel) {
+&amp;&amp; c.finalIndex==this.finalIndex) return true;
+}
+return false;
+}
+
+public int hashCode() {
+if (countLabel) {
+return 31 * ( this.initialIndex + 31 * (this.finalIndex + 31 * this.label().hashCode())) ;
+

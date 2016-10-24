@@ -1,0 +1,11 @@
+double lowerBound = dateAxis.getLowerBound();
+double upperBound = dateAxis.getUpperBound();
+
+if (lowerBound >= upperBound) { return; }
+double start = end - dateAxis.getRange().getLength();
+if (start < end) {
+dateAxis.setRange(start, end);
+}
+}
+}
+

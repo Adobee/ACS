@@ -1,0 +1,10 @@
+feElementRepository.save(feElement);
+}
+
+@Override
+public void deleteById(int id) {
+feElementRepository.delete(id);
+FeElement tmp = feElementRepository.findOne(feElement.getId());
+if (null != tmp) {
+tmp.setType(feElement.getType());
+

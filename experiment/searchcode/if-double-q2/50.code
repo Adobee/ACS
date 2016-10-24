@@ -1,0 +1,10 @@
+public static Quaterniond slerp(Quaternion q1, Quaternion q2, double t) {
+Quaterniond result;
+double dot = dotproduct(q1, q2);
+if (dot < 0) {
+dot = -dot;
+double dot = dotproduct(q1, q2);
+
+if (dot > -thresholdValue &amp;&amp; dot < thresholdValue) {
+double angle = Math.acos(dot);
+

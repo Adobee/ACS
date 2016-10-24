@@ -1,0 +1,9 @@
+public List<MapleForeignBuffStat> getStats() {
+return stats;
+}
+
+public boolean hasStats() {
+synchronized (this) {
+for (MapleForeignBuffStat foreignBuffStat : stats) {
+if (!(foreignBuffStat instanceof MapleForeignBuffNoSkill)) {
+

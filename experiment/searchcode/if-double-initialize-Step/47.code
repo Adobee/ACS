@@ -1,0 +1,6 @@
+* A side effect of this method is to also reset the initial step so it will be automatically computed by the integrator if {@link #setInitialStepSize(double) setInitialStepSize} is not called by the user.
+* @exception DimensionMismatchException
+*                if arrays dimensions do not match equations settings
+*/
+public double initializeStep(final boolean forward, final int order, final double[] scale, final double t0, final double[] y0, final double[] yDot0, final double[] y1, final double[] yDot1) throws MaxCountExceededException, DimensionMismatchException {
+

@@ -1,0 +1,9 @@
+//        SecurityManager sm = System.getSecurityManager();
+//        if (sm != null) {
+//            sm.checkPermission(new JodaTimePermission(&quot;DateTimeZone.setDefault&quot;));
+public long getMillisKeepLocal(DateTimeZone newZone, long oldInstant) {
+if (newZone == null) {
+newZone = DateTimeZone.getDefault();
+}
+if (newZone == this) {
+

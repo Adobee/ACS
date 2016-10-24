@@ -1,0 +1,10 @@
+return true;
+}
+public boolean isActivityFollowedByUser(int userID, int activityID){
+List<FollowEntity> list = select().add(
+Restrictions.eq(&quot;activityID&quot;, activityID), Restrictions.eq(&quot;followType&quot;, FollowEntity.FOLLOW_TYPE_ACTIVITY))
+).list();
+if(list.size() == 0)
+return false;
+else
+

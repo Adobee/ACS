@@ -1,0 +1,12 @@
+package ast;
+
+import pretty.PrettyPrinter;
+
+public class BooleanOp extends BValue {
+private BooleanOpType type;
+public void prettyPrint(PrettyPrinter pp) {
+if(type == BooleanOpType.NOT) {
+pp.sb.append(&quot;!( &quot;);
+lValue.prettyPrint(pp);
+pp.sb.append(&quot;) &quot;);
+

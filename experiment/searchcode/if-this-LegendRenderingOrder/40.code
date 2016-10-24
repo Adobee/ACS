@@ -1,0 +1,6 @@
+LegendRenderingOrder order = (LegendRenderingOrder) obj;
+if (!this.name.equals(order.toString())) {
+private Object readResolve() throws ObjectStreamException {
+if (this.equals(LegendRenderingOrder.STANDARD)) {
+return LegendRenderingOrder.STANDARD;
+

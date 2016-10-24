@@ -1,0 +1,8 @@
+protected DecayFunctionBuilder(String fieldName, Object origin, Object scale, Object offset, double decay) {
+if (fieldName == null) {
+throw new IllegalArgumentException(&quot;decay function: field name must not be null&quot;);
+super(CombineFunction.MULTIPLY);
+this.mode = mode;
+if (userSuppiedScale <= 0.0) {
+throw new IllegalArgumentException(FunctionScoreQueryBuilder.NAME + &quot; : scale must be > 0.0.&quot;);
+

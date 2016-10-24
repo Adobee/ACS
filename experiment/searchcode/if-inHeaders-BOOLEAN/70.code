@@ -1,0 +1,9 @@
+private String exchangeId;
+private Object inBody;
+private Object outBody;
+private Boolean outFaultFlag = Boolean.FALSE;
+if (payload.inHeaders != null) {
+exchange.getIn().setHeaders(payload.inHeaders);
+}
+if (payload.outBody != null) {
+

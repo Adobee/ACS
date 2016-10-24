@@ -1,0 +1,8 @@
+private final long pid;
+private final Path path;
+private final boolean deleteOnExit;
+
+private PidFile(Path path, boolean deleteOnExit, long pid) throws IOException {
+this.path = path;
+this.deleteOnExit = deleteOnExit;
+

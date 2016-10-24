@@ -1,0 +1,8 @@
+final TypeReference unboxedTargetType = MetadataHelper.getUnderlyingPrimitiveTypeOrSelf(targetResult.getType());
+
+if (right instanceof PrimitiveExpression &amp;&amp;
+TypeUtilities.isValidPrimitiveLiteralAssignment(unboxedTargetType, ((PrimitiveExpression) right).getValue())) {
+replacement = convertBooleanToNumeric(right);
+
+if (targetResult.getType().getSimpleType().bitWidth() < 32) {
+

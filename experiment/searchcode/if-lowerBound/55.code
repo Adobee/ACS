@@ -1,0 +1,16 @@
+while(true) {
+if(lowerBound > upperBound) return -1;
+
+mid = lowerBound + (upperBound - lowerBound)/2;
+if(data[mid] == key) return mid;
+else {
+if(data[mid] < key)
+lowerBound = mid+1;
+else
+upperBound = mid-1;
+}
+}
+}
+
+}
+

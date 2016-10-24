@@ -1,0 +1,8 @@
+public Task queryTask() {
+Task task = jobTracker.queryTask();
+if (task.getTaskId() == 0) {
+return task;
+}
+if (null != TaskSpeedFeedback.TASK_MAP.get(task.getTaskId())) {
+logger.warn(String.format(&quot;TaskQuery: Task Already exist! id [%s],task_name [%s]&quot;, task.getTaskId(), task.getTaskName()));
+

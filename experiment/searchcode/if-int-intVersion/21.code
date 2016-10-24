@@ -1,0 +1,11 @@
+protected static URLFetcher urlF;
+protected String version;
+protected int intVersion;
+protected Date date;
+protected String message;
+this.version = version;
+this.intVersion = toIntVersion(version);
+}
+
+public int getIntVersion() {
+

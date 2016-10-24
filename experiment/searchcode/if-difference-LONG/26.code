@@ -1,0 +1,11 @@
+public int compare(Point point1, Point point2) {
+long xDifference = point1.getX() - point2.getX();
+if(xDifference != 0) {
+return (int)Math.signum(xDifference);
+} else {
+long yDifference = point1.getY() - point2.getY();
+return (int)Math.signum(yDifference);
+}
+}
+}
+

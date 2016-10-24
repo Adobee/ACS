@@ -1,0 +1,10 @@
+package database.querybuilder;
+
+import java.util.List;
+
+public abstract class ConditionalQueryBuilder {
+protected void appendConditions(StringBuilder queryBuilder) {
+if (this.where.size() > 0) {
+
+queryBuilder.append(&quot; WHERE &quot;);
+

@@ -1,0 +1,8 @@
+private final Deque<AsyncWrapper> runningCalls = new ArrayDeque<>();
+private final Deque<Task> executingSyncCalls = new ArrayDeque<>();
+private int maxRequests = 64;
+* will remain in flight.
+*/
+public synchronized void setMaxRequests(int maxRequests) {
+if (maxRequests < 1) {
+

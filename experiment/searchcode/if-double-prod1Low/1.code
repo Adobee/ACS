@@ -1,0 +1,6 @@
+// accurate multiplication a1 * b1
+final double prod1High  = a1 * b1;
+final double prod1Low   = a1Low * b1Low - (((prod1High - a1High * b1High) - a1Low * b1High) - a1High * b1Low);
+// to recover some bits from the extra words we have saved up to now
+double result = s12High + (prod1Low + prod2Low + s12Low);
+

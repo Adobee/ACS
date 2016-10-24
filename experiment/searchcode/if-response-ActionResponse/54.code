@@ -1,0 +1,10 @@
+Customer customer = (Customer) session.getAttribute(&quot;customer&quot;);
+
+if (customer == null) {
+ActionResponse actionResponse = new ActionResponse(ActionResponseType.REDIRECT, &quot;loginCustomer&quot;);
+actionResponse.addParameter(&quot;from&quot;, &quot;customerSupport&quot;);
+return actionResponse;
+}
+
+if (request.getMethod().equals(&quot;POST&quot;)) {
+

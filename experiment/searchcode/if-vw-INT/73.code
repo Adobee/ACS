@@ -1,0 +1,7 @@
+Method m = cls.getMethod(&quot;getFieldValue&quot;, new Class[] { String.class });
+for (int i = 0; i < fieldNames.length; ++i)
+if (fieldNames[i] != null) {
+workObj.setWorkObjectNumber(vwRosterElement.getWorkObjectNumber());
+if (vwRosterElement.hasFieldName(&quot;F_EnqueueTime&quot;)) {
+workObj.setEnqueueTime((Date) vwRosterElement.getFieldValue(&quot;F_EnqueueTime&quot;));
+

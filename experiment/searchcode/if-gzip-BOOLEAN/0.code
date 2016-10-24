@@ -1,0 +1,11 @@
+args.add(&quot;-c&quot;);
+
+gzip.start(&quot;gzip&quot;, args);
+if (!gzip.waitForStarted())
+return false;
+
+gzip.write(new QByteArray(&quot;Qt rocks!&quot;));
+gzip.closeWriteChannel();
+
+if (!gzip.waitForFinished())
+

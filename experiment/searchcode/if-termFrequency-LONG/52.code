@@ -1,0 +1,7 @@
+@NamedQuery(name = &quot;CommentTerm.findByTermFrequency&quot;, query = &quot;SELECT c FROM CommentTerm c WHERE c.termFrequency = :termFrequency&quot;),
+@NamedQuery(name = &quot;CommentTerm.findByActive&quot;, query = &quot;SELECT c FROM CommentTerm c WHERE c.active = :active&quot;),
+query = &quot;SELECT c FROM CommentTerm c WHERE c.termString = :termString AND c.commentId= :commentId&quot;)
+})
+public class CommentTerm implements Serializable {
+private static final long serialVersionUID = 1L;
+

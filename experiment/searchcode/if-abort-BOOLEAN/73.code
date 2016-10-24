@@ -1,0 +1,14 @@
+long abortLsn = DbLsn.NULL_LSN;
+
+/*
+* The original setting of the knownDeleted flag.  It parallels abortLsn.
+*/
+boolean abortKnownDeleted;
+* True if the node has never been locked before. Used so we can determine
+* when to set abortLsn.
+*/
+boolean neverLocked;
+
+/*
+* True if the node was created this transaction.
+

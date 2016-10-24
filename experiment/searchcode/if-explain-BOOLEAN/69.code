@@ -1,0 +1,13 @@
+* Maximum number of explanations requested (0 if all)
+*/
+private int	max;
+
+public ExplainQuery(String id, OWLAxiom t) {
+super( id, t );
+max = 0;
+}
+
+public ExplainQuery(String id, OWLAxiom t, int max) {
+super( id, t );
+if( max < 1 )
+

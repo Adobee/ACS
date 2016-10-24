@@ -1,0 +1,11 @@
+currentStage.updateObjects();
+
+if (currentStage.isFinished(catStage.getCatZ())) {
+EventManager.getInstance().registerEvent(EventConst.NEXT_STAGE);
+catStage.reset();
+}
+
+private void eventNextStage() {
+catStage.hideObjects(true);
+if (currentStage != null) currentStage.destroyStage();
+

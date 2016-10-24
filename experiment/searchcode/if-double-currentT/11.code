@@ -1,0 +1,12 @@
+double t1 = timeMillis / 1000.0;
+double t2 = t1*t1;
+
+if (heater.isHeaterOn()) {
+val += a1 * t2 + b1 * t1;
+return (heater.isHeaterOn() ? &quot;ON  &quot; : &quot;off &quot;) + status + &quot;    T=&quot; + MathUtil.d2(currentT) + &quot;    dT=&quot; + MathUtil.d2(dT);
+}
+
+public void updateStatistics(double timeMillis) {
+if (currentT < minT) {
+timeBelow += timeMillis;
+

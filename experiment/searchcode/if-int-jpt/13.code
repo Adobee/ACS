@@ -1,0 +1,16 @@
+private String _evaluation_exp;
+
+JptOutputExpressionNode(String jpt_exp, boolean isInSlot)
+{
+_isInSlot = isInSlot;
+
+if (StringUtils.isBlank(jpt_exp))
+throw new IllegalArgumentException(&quot;tal expression can not be blank&quot;);
+}
+
+_evaluation_exp = jpt_exp;
+
+if (jpt_exp.startsWith(TEXT))
+{
+escape = true;
+

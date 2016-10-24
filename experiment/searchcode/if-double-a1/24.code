@@ -1,0 +1,9 @@
+System.out.println(getGeometrSum(1, 3, 100));//2.5768876036600566E47
+}
+
+public static double getGeometryN(double a1, double d, int n) {
+if (n <= 1) {
+return a1;
+} else {
+return getGeometryN(a1 * d, d, n - 1);
+

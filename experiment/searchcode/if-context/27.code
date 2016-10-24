@@ -1,0 +1,8 @@
+@Execute
+void process(MApplication application, IEclipseContext context) {
+gatherContexts(application.getRootContext());
+ContextManager contextManager = context.get(ContextManager.class);
+if (contextManager == null) {
+contextManager = new ContextManager();
+context.set(ContextManager.class, contextManager);
+

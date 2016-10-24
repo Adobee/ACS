@@ -1,0 +1,6 @@
+public Class<E> getClassInstance(){
+Type genericSuperclass = getClass().getGenericSuperclass();
+if(genericSuperclass instanceof ParameterizedType){
+Type type = ((ParameterizedType) genericSuperclass).getActualTypeArguments()[0];
+if(type instanceof Class<?>)
+

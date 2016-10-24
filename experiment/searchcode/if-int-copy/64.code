@@ -1,0 +1,8 @@
+public int[] twoSum(int[] numbers, int target) {
+int[] numsCopy = Arrays.copyOf(numbers, numbers.length);
+Arrays.sort(numsCopy);
+
+int i = 0, j = numsCopy.length - 1;
+while (i < j) {
+if (numsCopy[i] + numsCopy[j] == target) {
+

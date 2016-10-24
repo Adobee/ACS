@@ -1,0 +1,9 @@
+import com.looseboxes.idisc.common.util.PreferenceFeedsManager;
+import com.looseboxes.idisc.common.util.PreferenceFeedsManager.PreferenceType;
+import java.util.Collection;
+return App.getPreferenceFeedsManager(getActivity(), getPreferenceType());
+}
+
+private PreferenceType getPreferenceType() {
+if (getActivity().getClass() == BookmarksActivity.class) {
+

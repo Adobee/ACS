@@ -1,0 +1,9 @@
+package cloudos.dns.mock;
+
+import cloudos.dns.DnsClient;
+import lombok.Getter;
+import org.cobbzilla.util.dns.DnsRecord;
+final List<DnsRecord> found = new ArrayList<>();
+for (DnsRecord r : records) {
+if (r.match(match)) found.add(r);
+

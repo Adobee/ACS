@@ -1,0 +1,9 @@
+if (Character.isLetter(CurrentChar)) {
+//It&#39;s an identifier
+return ParseIDToken();
+} else if (Character.isDigit(CurrentChar)) {
+return ParseNumToken();
+} else if (CurrentChar == &#39;<&#39;) {
+//It&#39;s <, <=, <=>
+return ParseLowerToken();
+

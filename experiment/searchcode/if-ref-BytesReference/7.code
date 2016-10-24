@@ -1,0 +1,11 @@
+package com.github.melin.common.text;
+
+import java.util.Comparator;
+
+import com.github.melin.common.bytes.BytesReference;
+
+//LUCENE 4 UPGRADE: Is this the right way of comparing bytesreferences inside Text instances?
+public int compare(BytesReference a, BytesReference b) {
+if (a.hasArray() &amp;&amp; b.hasArray()) {
+final byte[] aBytes = a.array();
+

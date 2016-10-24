@@ -1,0 +1,14 @@
+int nEnd = msg.indexOf( &quot;</&quot; + tag + &quot;>&quot;, nStartEnd );
+if( nEnd < 0 ) return null;
+
+if( nStart + tag.length() + 2 == nEnd - 1 ) {
+return &quot;&quot;;
+nEnd = msg.indexOf( endTags[i], nStart + attr.length() + 2 );
+if( nEnd != -1 &amp;&amp; nStartEnd >= nEnd ) {
+nAddLen = 2;
+break;
+}
+}
+
+if( nEnd < 0 ) return null;
+

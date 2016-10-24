@@ -1,0 +1,8 @@
+rectangleList) {
+double currX = Constants.W;
+double currY = 0;
+double currH = 0;
+for (int i = 0; i < rectangleList.size(); i++) {
+Rectangle rect = rectangleList.get(i);
+if (rect.width <= Constants.W - currX) {
+

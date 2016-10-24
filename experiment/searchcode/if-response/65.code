@@ -1,0 +1,10 @@
+package io.netty.handler.codec.socks;
+
+public abstract class SocksResponse
+extends SocksMessage
+protected SocksResponse(SocksResponseType responseType)
+{
+super(SocksMessageType.RESPONSE);
+if (responseType == null) {
+throw new NullPointerException(&quot;responseType&quot;);
+

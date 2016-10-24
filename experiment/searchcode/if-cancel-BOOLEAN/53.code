@@ -1,0 +1,11 @@
+public abstract class AbstractEvent {
+
+private boolean isCancelled;
+private final boolean canCancel;
+
+@SuppressWarnings(&quot;ReflectionForUnavailableAnnotation&quot;)
+* Set this event to be cancelled
+*/
+public void setCancelled(boolean cancel) {
+if (!canCancel())
+

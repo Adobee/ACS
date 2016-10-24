@@ -1,0 +1,8 @@
+Message msg = exampleMessageProducer.receive();
+if (msg instanceof TextMessage) {
+assertEquals(aTextMessage, ((TextMessage) msg).getText());
+inHeaders.put(&quot;long&quot;, testLong);
+inHeaders.put(&quot;bool&quot;, testBoolean);
+inHeaders.put(&quot;short&quot;, testShort);
+inHeaders.put(&quot;float&quot;, testFloat);
+

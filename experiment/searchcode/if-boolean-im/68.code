@@ -1,0 +1,10 @@
+public EliminateClasses(ImTranslator tr, ImProg prog, boolean checkedDispatch) {
+translator = tr;
+this.prog = prog;
+prog.getFunctions().add(df);
+dispatchFuncs.put(m, df);
+
+
+if (ranges.isEmpty()) {
+if (df.getReturnType() instanceof ImSimpleType) {
+

@@ -1,0 +1,11 @@
+private final List<CallAdapter.Factory> adapterFactories;
+
+Retrofit(okhttp3.Call.Factory callFactory,
+HttpUrl baseUrl,
+List<CallAdapter.Factory> adapterFactories) {
+throw new IllegalArgumentException(&quot;Base URL required.&quot;);
+}
+
+okhttp3.Call.Factory callFactory = this.callFactory;
+if (callFactory == null) {
+

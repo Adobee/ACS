@@ -1,0 +1,13 @@
+m_limit = 1e10;
+
+}
+
+public Limiter (double limitIn){
+m_limit = limitIn;
+
+}
+public double getLimitedValue (double value){
+if(value > m_limit){
+value = m_limit;
+}else if (value < -m_limit){
+

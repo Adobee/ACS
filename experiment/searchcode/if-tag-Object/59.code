@@ -1,0 +1,7 @@
+ParseObject parseObject = query.get(tag.getObjectId());
+if (parseObject != null) {
+parseObject.put(COUNT, count);
+public static ParseObject toParseObject(Tag tag) {
+ParseObject tagObject = new ParseObject(OBJECT_NAME);
+if (tag.getId() != null) {
+

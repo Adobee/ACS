@@ -1,0 +1,8 @@
+double[] p = new double[101];
+double R       = 0.0 ;
+double tmp1,tmp2;
+Random r = new Random();
+for (int i = 0; i < 101; i ++) {
+tmp1 = Pc(p[i]);
+if ((tmp1 < -1) || (tmp1 > 1))
+

@@ -1,0 +1,12 @@
+public void denied(SystemPermission systemPermission) {
+if (systemPermission.getState().equals(CLAIMED)) {
+systemPermission.setState(DENIED);
+public void granted(SystemPermission systemPermission) {
+if(!systemPermission.getState().equals(CLAIMED)){
+return;
+}
+systemPermission.setState(GRANTED);
+systemPermission.setGranted(true);
+}
+}
+

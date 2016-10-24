@@ -1,0 +1,13 @@
+private double real;
+
+public Number(double real) {
+this.real = real;
+}
+
+public void setReal(double real) {		// Setter method.
+return this.real;
+}
+
+public boolean regionMatch(double number) {
+if(((number - this.real) >= 0) &amp;&amp; ((number - this.real) <= this.region))
+

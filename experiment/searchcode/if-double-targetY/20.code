@@ -1,0 +1,5 @@
+protected MazeDirection getNextDirection(MazeDirection currentDirection, double targetXD, double targetYD, double targetYaw, Maze2D maze) {
+if (System.currentTimeMillis() % (SCATTER_TIME + CHASE_TIME) < SCATTER_TIME) {
+targetY = Math.min(Math.max(targetY, 0), maze.getHeight() - 1);
+double dX = targetX + 0.5 - TEAM.getX() * 2;
+

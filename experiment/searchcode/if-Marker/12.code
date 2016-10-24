@@ -1,0 +1,7 @@
+import me.reckter.CodeCreator.Code.BaseCodeSnipplet;
+import me.reckter.CodeCreator.Code.Marker.Marker;
+import me.reckter.CodeCreator.Code.Marker.MarkerHandler;
+public String toString() {
+String ret = &quot;          &quot;;
+if(marker.toString() != &quot;&quot;){
+

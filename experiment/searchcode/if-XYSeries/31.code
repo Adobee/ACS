@@ -1,0 +1,15 @@
+package autonomousagents.util;
+
+import java.util.List;
+
+import org.jfree.data.xy.XYSeries;
+
+public class JFreeChartHelper
+* Summing up all data values and plots them with their given position
+*
+* @param data
+* @param name
+* @return
+*/
+public static XYSeries createDataseries(final List<Integer> data, final String name)
+

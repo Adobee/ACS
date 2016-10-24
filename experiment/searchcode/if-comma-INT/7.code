@@ -1,0 +1,9 @@
+public static Coord parseCommaCoord(String coord) {
+int comma = coord.indexOf(&#39;,&#39;);
+if (comma == -1) {
+return null;
+}
+try {
+return new Coord(
+Integer.parseInt(coord.substring(0, comma).trim()),
+

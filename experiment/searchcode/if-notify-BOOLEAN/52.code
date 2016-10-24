@@ -1,0 +1,13 @@
+private NotifyHandler<Widget> hideNotify;
+private NotifyHandler<Widget> startNotify;
+private boolean hideOn;
+
+public BlinkAnimation(Widget w, int startHeight) {
+protected void onStart() {
+super.onStart();
+hideOn = true;
+if(startNotify!=null) startNotify.onNotify(widget);
+}
+
+@Override
+

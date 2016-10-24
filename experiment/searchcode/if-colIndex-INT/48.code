@@ -1,0 +1,10 @@
+sor = sor == null ? &quot;0,ASC&quot; : sor;
+String[] sorStr = left.getSortStr().split(&quot;,&quot;);
+
+int colIndex = Integer.parseInt(sorStr[0].toString());
+double right_1 = Double.parseDouble((String)right.getMonth().get(colIndex));
+int res1 = 0;
+
+if (sortType == 1) {
+res1 = left_1 < right_1 ? 1 : 0;
+

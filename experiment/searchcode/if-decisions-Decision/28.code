@@ -1,0 +1,9 @@
+String reason = null;
+
+if(isMute(decisions)){
+decision = Decision.MUTE;
+reason = createAggregatedMuteReasonMessage(decisions);
+}else if(isAllowed(decisions)){
+decision = Decision.ALLOWED;
+}else{
+

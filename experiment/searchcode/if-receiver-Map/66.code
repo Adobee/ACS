@@ -1,0 +1,11 @@
+package io.mycat.ep.v1.receiver.impl;
+
+import java.util.List;
+import java.util.Map;
+
+import Ice.Current;
+ReceiverResult result=new ReceiverResult();
+result.status=CommonAccessStatus.SUCCESS;
+if(Help.isEmpty(json)){
+List<PurchaseReceiverMo> list=purchaseReceiverDAO.findPurchaseReceiverListByUserId(query.userId);
+

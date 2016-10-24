@@ -1,0 +1,9 @@
+Inventory() { }
+public boolean use(Item item) {
+for(Slot slot : slots) {
+if((slot.item.equals(item)) &amp;&amp; (slot.quantity > 0)) {
+return false;
+}
+public void add_item(Item item) {
+for(Slot slot : slots) { if(slot.item.equals(item)) { slot.quantity++; break; } }
+

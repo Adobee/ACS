@@ -1,0 +1,11 @@
+return res;
+}
+
+public Result<T> apply(IUnaryFunc<T> func) {
+return new Single<T>(func.apply(pattern));
+Result<LabelledPattern> left = pop();
+if (left.isError())
+push(new Error<LabelledPattern>());
+else {
+push(left.apply(new IUnaryFunc<LabelledPattern>() {
+

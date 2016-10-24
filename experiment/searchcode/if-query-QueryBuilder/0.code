@@ -1,0 +1,13 @@
+public interface QueryBuilder {
+
+public String getAlias();
+
+public <T> T as(Class<T> queryBuilderClass);
+public QueryBuilder ignoreIfNull();
+
+public QueryBuilder throwIfNull();
+
+public QueryBuilder calmIfNull();
+
+public DefaultQueryBuilderField field(String... fields);
+

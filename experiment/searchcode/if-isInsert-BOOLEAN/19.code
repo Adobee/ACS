@@ -1,0 +1,9 @@
+public class StudentProjectHelper {
+private static SessionFactory factory;
+boolean isInsert=true;
+public boolean insertProject(StudentProjectDTO dto)
+tx.commit();
+}catch (HibernateException e) {
+isInsert=false;
+if (tx!=null) tx.rollback();
+

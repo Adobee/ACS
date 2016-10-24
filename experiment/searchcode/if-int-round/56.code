@@ -1,0 +1,13 @@
+static Map<Integer,CountryInfo> map;
+
+public static int getCardValue(int round){
+switch(cardProgression){
+case &quot;5, 5, 5...&quot; :{
+int value = 2;
+for(int i = 2 ; round >=0 ; i++){
+value += 2;
+round -= i;
+
+}
+return value;
+

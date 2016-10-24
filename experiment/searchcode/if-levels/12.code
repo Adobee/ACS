@@ -1,0 +1,7 @@
+public ProgressManager() {
+mUnlockedLevels = Gdx.app.getPreferences(&quot;progress&quot;);
+if (!mUnlockedLevels.contains(&quot;unlocked_levels&quot;)) {
+public void finishedLevel(int lvlNumber) {
+if (lvlNumber >= mUnlockedLevels.getInteger(&quot;unlocked_levels&quot;)) {
+mUnlockedLevels.putInteger(&quot;unlocked_levels&quot;, lvlNumber + 1);
+

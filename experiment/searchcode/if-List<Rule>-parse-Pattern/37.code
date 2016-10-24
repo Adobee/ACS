@@ -1,0 +1,7 @@
+public HashMap<String, ArrayList<String>> ruleMap = new HashMap<String, ArrayList<String>>();
+private Pattern grammarRulePattern = Pattern.compile(&quot;(\\S+)\\s*->\\s*(.+)&quot;);
+public ParseResult parseGrammarLine(String rule, Pattern pattern) {
+boolean isMatch = false;
+String lhs = &quot;&quot;;
+ArrayList<String> rhs = new ArrayList<String>();
+

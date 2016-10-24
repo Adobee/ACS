@@ -1,0 +1,17 @@
+int numberOfElements;
+
+public CircularQueue(int size)
+{
+object=new Object[size];
+head=0;
+tail=0;
+this.size=size;
+tail+=1;
+tail%=size;
+if(!this.IsFull())
+numberOfElements+=1;
+}
+public Object DeQueue()
+{
+Object o=object[head];
+

@@ -1,0 +1,10 @@
+public CollRect(Rectangle r) {
+super(r);
+}
+
+// Check if a touchEvent occurs inside our
+// collRect
+public boolean inBounds(TouchEvent event, CollRect collRect){
+if(this.contains(event.x, event.y))
+return true;
+

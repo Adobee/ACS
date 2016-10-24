@@ -1,0 +1,10 @@
+double maxWidth = space * getMaximumBarWidth();
+double categoryMargin = 0.0;
+if (columns > 1) {
+categoryMargin = domainAxis.getCategoryMargin();
+double lclip = rangeAxis.getLowerBound();
+double uclip = rangeAxis.getUpperBound();
+
+if (uclip <= 0.0) {
+if (value >= uclip) {
+

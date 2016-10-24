@@ -1,0 +1,11 @@
+private List<Cell> currentCells;
+private boolean inHeaders = false;
+
+public Table startHeaders() {
+inHeaders = true;
+return this;
+}
+
+public Table endRow(boolean check) {
+if (currentCells == null) {
+

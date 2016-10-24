@@ -1,0 +1,13 @@
+public int totalNQueens(int n) {
+return dfs(new int[n],0);
+}
+private int dfs(int[] q,int step){
+int n=q.length;
+if(step==n){
+return 1;
+}
+int sum=0;
+for(int i=0;i<n;i++){
+q[step]=i;
+if(valid(q,step)){
+

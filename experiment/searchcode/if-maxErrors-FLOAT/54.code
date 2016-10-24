@@ -1,0 +1,7 @@
+protected static final ParseField COLLATE_QUERY_PRUNE = new ParseField(&quot;prune&quot;);
+
+private float maxErrors = PhraseSuggestionContext.DEFAULT_MAX_ERRORS;
+public PhraseSuggestionBuilder maxErrors(float maxErrors) {
+if (maxErrors <= 0.0) {
+throw new IllegalArgumentException(&quot;max_error must be > 0.0&quot;);
+

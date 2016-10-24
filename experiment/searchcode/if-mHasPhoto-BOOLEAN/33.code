@@ -1,0 +1,8 @@
+private int mAddScheduleButtonHeightPixels;
+
+private boolean mHasPhoto;
+private View mPhotoViewContainer;
+private ImageView mPhotoView;
+int gapFillDistance = (int) (mHeaderTopClearance * GAP_FILL_DISTANCE_MULTIPLIER);
+boolean showGapFill = !mHasPhoto || (scrollY > (mPhotoHeightPixels - gapFillDistance));
+

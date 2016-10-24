@@ -1,0 +1,16 @@
+public ArrayListWithMaxSize() {
+super();
+this.maxSize = 0;
+}
+
+public boolean add(T e) {
+if (maxSize != 0){
+if (this.size() < maxSize){
+return super.add(e);
+}
+}
+return false;
+}
+
+public void add(int index, T element) {
+

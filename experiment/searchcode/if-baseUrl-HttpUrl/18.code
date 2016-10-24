@@ -1,0 +1,10 @@
+package com.popularmovies.service;
+
+import java.io.IOException;
+
+import okhttp3.HttpUrl;
+import okhttp3.Interceptor;
+public static TheMovieDbService getInstance() {
+if (theMovieDbService == null) {
+throw new RuntimeException(&quot;TheMovieDbService not initialized. You should call init() first.&quot;);
+

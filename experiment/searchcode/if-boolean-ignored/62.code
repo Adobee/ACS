@@ -1,0 +1,13 @@
+ignoredList = fileIgnore.readFromFile();
+}
+
+public void addToList(String line) {
+line = line.toLowerCase();
+if (!ignoredList.contains(line))
+line = line.toLowerCase();
+if (ignoredList.contains(line))
+ignoredList.remove(line);
+}
+
+public void saveToFile() {
+

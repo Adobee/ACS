@@ -1,0 +1,6 @@
+public void update(HistoryMetric newValues) {
+String metricName = newValues.getName();
+Iterator<Long> iter = newValues.getValues().keySet().iterator();
+public void addOrUpdateData(String metric, long date, double value) {
+if(metric.equalsIgnoreCase(MetricNames.BYTES_IN)) seriesIn.addOrUpdate(new Millisecond(new Date(date)), value);
+

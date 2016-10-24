@@ -1,0 +1,9 @@
+private final Map<Integer, TableHeader> headers = new TreeMap<Integer, TableHeader>();
+
+private volatile List<TableRow> rows = new ArrayList<TableRow>(0);
+
+public List<TableRow> getRows() {
+final Integer headerEntryKey = headerEntry.getKey();
+for (TableRow tableRow : rows) {
+headerEntry.getValue().updateWidth(
+

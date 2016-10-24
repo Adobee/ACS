@@ -1,0 +1,15 @@
+System.out.println(&quot;dotPos=&quot; + dotPos);
+
+if (dotPos <= 0) {
+return;
+}
+
+int expPos;
+for (expPos = dotPos; expPos >= 0; expPos--) {
+if (sep.indexOf(text.charAt(expPos)) >= 0) {
+break;
+}
+}
+expPos++;
+System.out.println(&quot;expPos=&quot; + expPos);
+

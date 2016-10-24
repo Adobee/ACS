@@ -1,0 +1,9 @@
+class NegationCriterion extends Criterion {
+
+private final Criterion toNegate;
+
+NegationCriterion(Criterion toNegate) {
+super(Operator.not);
+if (toNegate == null) {
+throw new IllegalArgumentException(&quot;Can&#39;t negate a null criterion&quot;);
+

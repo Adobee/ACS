@@ -1,0 +1,8 @@
+System.out.println(comparator.compare(a, c));
+}
+
+public static Comparator<String> genComparator(boolean ascendingOrder, boolean ignorecase, boolean ignoreSpace){
+return (t,u)->{
+if (ignorecase){
+t = t.toLowerCase();
+

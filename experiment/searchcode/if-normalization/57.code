@@ -1,0 +1,9 @@
+String normalization = numericalProperties.getzScoreNormalization();
+if (normalization == null || normalization.isEmpty()) {
+return;
+}
+
+useNormalizationButton.setSelection(true);
+normalizationTargetCombo.setEnabled(true);
+if (normalization.equals(NumericalProperties.ZSCORE_ROWS)) {
+

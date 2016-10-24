@@ -1,0 +1,10 @@
+super.gwtSetUp();
+mixedArray = makeArray();
+}
+
+public void testGetBoolean() {
+assertTrue(mixedArray.getBoolean(0));
+// Test automatic type casting
+mixedArray.set(0, 0);
+assertFalse(mixedArray.getBoolean(0));
+

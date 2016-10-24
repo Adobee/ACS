@@ -1,0 +1,11 @@
+import java.util.concurrent.TimeUnit;
+
+public class CacheMap<K,V> {
+
+private int expireSecond;
+private TimeUnit timeUnit;
+private boolean clear3 = true;
+
+public CacheMap(int expireSecond,TimeUnit timeUnit){
+if(timeUnit==TimeUnit.MICROSECONDS || timeUnit==TimeUnit.NANOSECONDS || timeUnit==TimeUnit.MILLISECONDS){
+

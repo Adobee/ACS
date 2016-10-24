@@ -1,0 +1,16 @@
+this.weeks = weeks;
+}
+
+public boolean equals(Object other) {
+if ((this == other))
+return true;
+if ((other == null))
+.getWeeks().equals(castOther.getWeeks())));
+}
+
+public int hashCode() {
+int result = 17;
+
+result = 37
+* result
+

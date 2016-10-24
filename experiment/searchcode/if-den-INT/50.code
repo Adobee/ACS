@@ -1,0 +1,19 @@
+public Rational(int num, int den)
+{
+if (den == 0)
+{
+throw new RuntimeException(&quot;Denominator is zero&quot;);
+}
+
+int g = gcd(num, den);
+public int numerator()
+{
+return num;
+}
+//accessor
+public int denominator()
+{
+return den;
+}
+//equals function to see if two rational numbers are equal
+

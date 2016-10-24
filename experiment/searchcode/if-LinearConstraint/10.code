@@ -1,0 +1,6 @@
+import org.apache.commons.math4.optim.linear.LinearConstraint;
+import org.apache.commons.math4.optim.linear.LinearConstraintSet;
+LinearObjectiveFunction f = new LinearObjectiveFunction(new double[] { 10, -57, -9, -24}, 0);
+
+ArrayList<LinearConstraint> constraints = new ArrayList<LinearConstraint>();
+

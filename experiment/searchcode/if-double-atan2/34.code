@@ -1,0 +1,10 @@
+assertEquals(&quot;atan() of -30.5 is -PI/4&quot;, -1.53802118, answer, TOLERANCE);
+
+
+// atan2()
+answer = MathFunc.atan2( Double.NaN, Double.NaN );
+assertTrue(&quot;atan2() special case 1&quot;, Double.isNaN(answer));
+
+answer = MathFunc.atan2( 1.0, Double.NaN );
+assertTrue(&quot;atan2() special case 2&quot;, Double.isNaN(answer));
+

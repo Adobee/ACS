@@ -1,0 +1,7 @@
+public JSONCompareMode withStrictOrdering(boolean strictOrdering) {
+if (strictOrdering) {
+return isExtensible() ? STRICT_ORDER : STRICT;
+public JSONCompareMode withExtensible(boolean extensible) {
+if (extensible) {
+return hasStrictOrder() ? STRICT_ORDER : LENIENT;
+

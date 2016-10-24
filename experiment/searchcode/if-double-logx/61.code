@@ -1,0 +1,12 @@
+* @return log(X+Y) - natural log of (X+Y)
+*/
+public static double logAdd(double logX, double logY) {
+// make logX the max
+if (logY > logX) {
+double temp = logX;
+logX = logY;
+logY = temp;
+}
+// now logX is bigger
+if (logX == Double.NEGATIVE_INFINITY) {
+

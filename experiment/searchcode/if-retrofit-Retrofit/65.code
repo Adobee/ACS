@@ -1,0 +1,6 @@
+public static RetrofitAPI getInstance() {
+if (sRetrofitAPI == null) {
+synchronized (RetrofitClient.class) {
+if (sRetrofitAPI == null) {
+Retrofit retrofit = new Retrofit.Builder().baseUrl(HOST_WEATHER)
+

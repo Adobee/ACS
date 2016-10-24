@@ -1,0 +1,11 @@
+this.buffer = buffer;
+}
+
+@Override
+public synchronized int read() throws IOException {
+return buffer.get();
+}
+
+@Override
+public int read(byte[] bytes, int byteOffset, int byteCount) throws IOException {
+

@@ -1,0 +1,11 @@
+public RealMatrix returnU(int f)
+{
+RealMatrix Umat = svd.getU();
+if(f > Umat.getColumnDimension())
+return Umat;
+RealMatrix newU = Umat.getSubMatrix(0, Umat.getRowDimension()-1, 0, f-1);
+public RealMatrix returnV(int f)
+{
+RealMatrix Vmat = svd.getV();
+if(f > Vmat.getColumnDimension())
+

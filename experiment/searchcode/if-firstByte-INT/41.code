@@ -1,0 +1,10 @@
+rtppacket.offset,
+rtppacket.length));
+try
+{
+int firstByte = datainputstream.readUnsignedByte();
+rtppacket.extensionPresent = true;
+int paddingLength = 0;
+if ((firstByte &amp; 0x20) != 0)
+paddingLength = rtppacket.data[rtppacket.offset + rtppacket.length - 1] &amp; 0xff;
+

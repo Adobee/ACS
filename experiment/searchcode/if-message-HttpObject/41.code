@@ -1,0 +1,8 @@
+private PrintWriter out;
+private HTTPObject httpObject; //HTTP Object (For HTTP Packet Parsing)
+private boolean start = true; //Start running the thread (Needed for clean shutdown)
+System.out.println(message + &quot;\n--Length: &quot; + amountReadIn + &quot;--\n&quot;);
+
+httpObject = new HTTPObject(message); //Create new http Object (for parsing)
+System.out.println(&quot;Host: &quot; + httpObject.getHost());
+

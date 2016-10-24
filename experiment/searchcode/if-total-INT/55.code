@@ -1,0 +1,19 @@
+int b_total = 0;
+for(int i=1; i<S.length(); i++){
+if( S.charAt(i) == &#39;b&#39;){
+b_total++;
+}
+}
+
+int res = a[0] * b_total;
+for(int i=1; i<a.length; i++){
+if(S.charAt(i) == &#39;b&#39;){
+b_total--;
+}
+res += a[i] * b_total;
+}
+
+return res;
+}
+}
+

@@ -1,0 +1,6 @@
+private long localToUTC(long localInstant) {
+DateTimeZone zone = getZone();
+int offset = zone.getOffsetFromLocal(localInstant);
+localInstant -= offset;
+if (offset != zone.getOffset(localInstant)) {
+

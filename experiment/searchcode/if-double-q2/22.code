@@ -1,0 +1,9 @@
+double disc = b * b - 4 * a * c;
+if (disc < 0)
+return null;
+disc = Math.sqrt(disc);
+double q = ((b < 0) ? -0.5 * (b - disc) : -0.5 * (b + disc));
+double z = solveCubicForQuartic(-0.5 * p, -r, 0.5 * r * p - 0.125 * q * q);
+double d1 = 2.0 * z - p;
+if (d1 < 0) {
+

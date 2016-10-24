@@ -1,0 +1,11 @@
+Title temp = titleDAO.getTitleByName(title.getName());
+if(temp!=null){
+return &quot;职称已存在！&quot;;
+}
+boolean result = this.titleDAO.saveTitle(title);
+if(result){
+return &quot;success&quot;;
+}
+return &quot;添加职称失败！&quot;;
+}catch(Exception e){
+

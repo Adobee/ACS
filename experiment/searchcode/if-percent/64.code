@@ -1,0 +1,8 @@
+package solvedTopcoder;
+public class Percents {
+public int minSamples(String percent) {
+int percentMultiply10000 = Integer.parseInt(percent.replaceAll(&quot;\\D&quot;,
+for (int i = 1;; i++) {
+int floorYes = i * percentMultiply10000 / 10000;
+if (isSamePercentage(floorYes, i, percentMultiply10000)
+

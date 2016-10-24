@@ -1,0 +1,10 @@
+double pct = valueToPct (assn.getDouble (var));
+if ((0 < pct) &amp;&amp; (pct < 1)) {
+return beta12 * Math.pow (pct, (alpha - 1.0)) * Math.pow ((1-pct), (beta -1.0));
+double pct = r.nextBeta (alpha, beta);
+double val = pctToValue (pct);
+return new Assignment (var, val);
+}
+
+public boolean almostEquals (Factor p, double epsilon)
+

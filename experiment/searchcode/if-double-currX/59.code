@@ -1,0 +1,12 @@
+public void onDragEnd(DragEvent e) {
+
+double currX = getScrollPositionX();
+if (currX == 0) {
+return;
+// Utils.Console(&quot;speed &quot; + speed + &quot; time &quot; + time + &quot; distance &quot; +
+// distance + &quot; currX &quot; + currX);
+currX += distance;
+if (currX > 0) {
+// exceed left boundary
+double timeAdj = 1 - (double) currX / distance;
+

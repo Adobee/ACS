@@ -1,0 +1,12 @@
+public class FindBadReads
+{
+private BadReadCount bCounter  = null;  // Object to remember bad reads
+private double badReadThreshold = 0.15; // 15% threshold for Ns in a read to
+public FindBadReads(int readLen)
+{
+bCounter   = new BadReadCount(readLen);
+}
+
+/**
+* Check if the specified read is a bad read
+

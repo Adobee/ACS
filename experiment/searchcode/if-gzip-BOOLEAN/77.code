@@ -1,0 +1,10 @@
+HttpServletResponse httpResponse = (HttpServletResponse) response;
+
+if (acceptsGZipEncoding(httpRequest) &amp;&amp; isContentTypeText(httpRequest)) {
+} else {
+chain.doFilter(request, response);
+}
+}
+
+private boolean acceptsGZipEncoding(HttpServletRequest request) {
+

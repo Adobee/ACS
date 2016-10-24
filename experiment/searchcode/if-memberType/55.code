@@ -1,0 +1,11 @@
+@RunWith(Parameterized.class)
+public class MemberTypeUnitTest extends EnumUnitTestSupport<MemberType> {
+
+@RequiredArgsConstructor
+for(final ExpectedResults exp : values()) {
+if(exp.memberType.equals(type)) {
+return exp;
+}
+}
+throw new TestSetupException(String.format(&quot;Test has no expected results for %s&quot;, type));
+

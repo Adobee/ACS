@@ -1,0 +1,11 @@
+for(int i = 0; i < nums.size(); i++)
+{
+int count_check = 0;
+
+for(Numero n: nums.get(i))
+if(n.isChecked())
+count_check++;
+return &quot;win QUINE !! Carton &quot; + carton.getName() + &quot; ligne &quot; + (i+1);
+if(count_check == 4)
+return &quot;Il manque le numero &quot; + this.searchLast(nums.get(i)).getNum() + &quot; sur le carton &quot; + carton.getName() + &quot; ligne &quot; + (i+1);
+

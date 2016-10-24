@@ -1,0 +1,8 @@
+double[][] retval = new double[N][]; // default to null
+for(LogicRule lr : rules)
+{
+if(lr instanceof IndependentRule)
+double stepa = Math.sqrt(numinner);
+double stepb = (double) numinner;
+relax = rs.doSGD(c, p, relax, numouter, numinner, stepa, stepb);
+

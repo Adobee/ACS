@@ -1,0 +1,12 @@
+Canvas canvas;
+double convMetToPix;
+
+float lastX;
+float lastY;
+float nextX;
+float nextY;
+double length = furniture.getLength()*convMetToPix;
+double width = furniture.getWidth()*convMetToPix;
+
+if ((length + nextX) > (room.get(roomDraw).getLength()*convMetToPix)) {
+

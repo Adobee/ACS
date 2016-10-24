@@ -1,0 +1,14 @@
+EVEN_WE(10),
+EVEN_TH(11),
+EVEN_FR(12),
+EVEN_ST(13);
+
+private int dayIndex;
+
+// TODO: remove dayIndex with ordinal()?
+public static Day valueOf(int dayIndex) {
+dayIndex %= 14;
+
+for (Day day : Day.values()) {
+if (day.dayIndex == dayIndex) return day;
+

@@ -1,0 +1,11 @@
+package Functii;
+import Arbori.Nod;
+
+
+public abstract class Functie extends Nod {
+
+public double calcul(){
+if(getFStang()==null)
+System.exit(1);
+return this.calcul(getFStang().calcul());
+

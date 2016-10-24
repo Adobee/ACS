@@ -1,0 +1,13 @@
+this.modTime = modTime;
+}
+
+public boolean inset() {
+
+id = generateRandomId();
+modTime = System.currentTimeMillis();
+long rowId = DbAdapter.getSingleInstance().insertAlert(id, symbol, lastTradePrice, upperPrice, lowerPrice, isNotifyOn, isUpperTargetOn,
+isLowerTargetOn, modTime);
+
+if (rowId == -1) {
+return false;
+

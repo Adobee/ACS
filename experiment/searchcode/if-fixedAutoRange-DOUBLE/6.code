@@ -1,0 +1,7 @@
+private String axisXName = &quot;Time&quot;;
+private String axisYName = &quot;Bytes/sec&quot;;
+double fixedAutoRange;
+private String name = null;;
+public void addOrUpdateData(String metric, long date, double value) {
+if(metric.equalsIgnoreCase(MetricNames.BYTES_IN)) seriesIn.addOrUpdate(new Millisecond(new Date(date)), value);
+

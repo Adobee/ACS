@@ -1,0 +1,7 @@
+for (int i = 1; i < s.length(); i++) {
+if (i > right) {
+left = i; right = i;
+while (right < n &amp;&amp; s.charAt(right - left) == s.charAt(right)) right++;
+z[i] = right - left;
+} else if (z[i - left] < right - i) {
+

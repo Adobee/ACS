@@ -1,0 +1,10 @@
+private ExecutorService executorService;
+private int maxRequests;
+private int maxRequestsPerHost;
+private final Deque<AsyncCall> readyCalls;
+return this.executorService;
+}
+
+public synchronized void setMaxRequests(int maxRequests) {
+if (maxRequests < 1) {
+

@@ -1,0 +1,11 @@
+this.jre = jre;
+}
+
+@Override
+public String toString() {
+StringBuilder builder = new StringBuilder(200);
+
+if (state &amp;&amp; (jdk != null &amp;&amp; jdk || jre != null &amp;&amp; jre)) {
+builder.append(&quot;class java($version=&#39;6&#39;) {													 \n&quot;);
+builder.append(&quot;  if($::operatingsystem =~ /Ubuntu|Debian/){                                 \n&quot;);
+

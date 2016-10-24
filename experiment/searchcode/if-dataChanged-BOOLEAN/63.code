@@ -1,0 +1,12 @@
+if (gsf == null) return false;
+
+boolean dataChanged = false;
+//tests if the users changed the user name and changes it accordingly
+BusinessInfoFragment bif = (BusinessInfoFragment) getSupportFragmentManager().findFragmentByTag(getResources().getString(R.string.business_settings));
+
+if (bif == null) return false;
+
+boolean dataChanged = false;
+
+String newBusinessName = bif.getBusinessName();
+

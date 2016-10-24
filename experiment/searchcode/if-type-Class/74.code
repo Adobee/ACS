@@ -1,0 +1,12 @@
+public static TargetType getTargetType(Class< ? extends Target> c) {
+if (c.equals(Monster.class)) {
+return TargetType.Monster;
+} else if (c.equals(Animal.class)) {
+return TargetType.Animal;
+} else if (c.equals(PlayerTarget.class)) {
+return TargetType.Player;
+}
+return null;
+}
+}
+

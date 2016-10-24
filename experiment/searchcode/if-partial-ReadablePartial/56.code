@@ -1,0 +1,10 @@
+import org.joda.time.ReadablePartial;
+
+import cc.xuloo.rcputils.properties.IValueFormatter;
+
+public class DateTimeFormatter implements IValueFormatter<Object, String> {
+if (obj instanceof ReadableInstant)
+return format.print((ReadableInstant) obj);
+
+if (obj instanceof ReadablePartial)
+

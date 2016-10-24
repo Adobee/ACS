@@ -1,0 +1,12 @@
+import java.util.Collection;
+
+/**
+* Created by kentsay on 8/27/15.
+*/
+public class QueryRewrite {
+
+/**
+* Overwrite SQL query when match with Multi-tenancy Scan
+* Example:
+* select * from Employees --> select * from Employees where ttid in (0,1)
+

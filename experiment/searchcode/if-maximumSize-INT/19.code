@@ -1,0 +1,12 @@
+public FileOnDisk(File file, String access, long maximumSize) throws IOException {
+if(maximumSize == 0L) {
+maximumSize = Long.MAX_VALUE;
+}
+
+if(maximumSize < file.length()) {
+this.maximumSize = maximumSize;
+randomAccessFile = new RandomAccessFile(file, access);
+position = 0L;
+
+int read = randomAccessFile.read();
+

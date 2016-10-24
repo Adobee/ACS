@@ -1,0 +1,9 @@
+*            maximal order.
+* @exception NumberIsTooSmallException
+*                if maximal order is lower than 2
+*/
+public BracketingNthOrderBrentSolverDFP(final Dfp relativeAccuracy, final Dfp absoluteAccuracy, final Dfp functionValueAccuracy, final int maximalOrder) throws NumberIsTooSmallException {
+Dfp maxY = absYA.lessThan(absYB) ? absYB : absYA;
+final Dfp xTol = absoluteAccuracy.add(relativeAccuracy.multiply(maxX));
+if(xB.subtract(xA).subtract(xTol).negativeOrNull() || maxY.lessThan(functionValueAccuracy)) {
+

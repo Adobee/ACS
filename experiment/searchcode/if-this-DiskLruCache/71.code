@@ -1,0 +1,8 @@
+File cacheDir = CacheHelper.getDiskCacheDir(this, Config.CACHE_DIR);
+if (!cacheDir.exists()) {
+cacheDir.mkdirs();
+}
+
+mDiskLruCache = DiskLruCache.open(cacheDir,
+CacheHelper.getAppVersion(this), 1, Config.CACHE_SIZE);
+

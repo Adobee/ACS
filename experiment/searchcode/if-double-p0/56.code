@@ -1,0 +1,9 @@
+private double C0;//начальное содержание кислорода
+private double p0;//начальное содержание кокса
+private double epsilon;//пористость
+h=(b-a)/10000.0;
+int i=1;
+for(double x=a+h;x<b;x+=h)
+{
+if(i%2!=0) integral=integral+4*p(x,tau,p0,k,N1,N2,k1,C0);
+

@@ -1,0 +1,9 @@
+import org.mahu.proto.lifecycle.ILifeCycleManager.LifeCycleState;
+
+class FatalTask extends LifeCycleTask implements Runnable {
+
+private final boolean isEntryStateFinal;
+
+FatalTask(final LifeCycleTaskContext context) {
+super(context);
+

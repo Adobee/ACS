@@ -1,0 +1,8 @@
+return clazz.cast(throwable);
+Throwable cause = throwable.getCause();
+if (cause != null &amp;&amp; clazz.isAssignableFrom(cause.getClass()))
+Optional<Throwable> result = checkAndCast(clazz, throwable);
+if(result.isPresent())
+return result.get();
+Throwable cause = throwable.getCause();
+

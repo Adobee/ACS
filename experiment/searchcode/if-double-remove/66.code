@@ -1,0 +1,11 @@
+Double doubleOne = Double.parseDouble(expArray.get(j+1));
+
+if(degrees == true) doubleOne = Math.toRadians(doubleOne);
+
+switch(expArray.get(j).replace(&quot;-&quot;, &quot;&quot;)){
+case &quot;mtCOSh&quot;: resultDouble = Math.cosh(doubleOne);
+break;
+}
+
+if(expArray.get(j).startsWith(&quot;-&quot;)) expArray.set(j, &quot;-&quot;+resultDouble);
+

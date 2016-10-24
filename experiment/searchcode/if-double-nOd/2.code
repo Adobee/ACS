@@ -1,0 +1,7 @@
+NodObiect nodBegin=null;
+NodObiect nodEnd=null;
+for(NodObiect n:noade)
+{
+if(n.getId().equals(&quot;64&quot;)) nodBegin=n;
+if(n.getId().equals(&quot;20&quot;)) nodEnd=n;
+

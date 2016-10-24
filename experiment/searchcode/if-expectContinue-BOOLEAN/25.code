@@ -1,0 +1,9 @@
+* @see org.apache.http.HttpEntityEnclosingRequest#expectContinue()
+*/
+@Override
+public boolean expectContinue() {
+final Header expect = getFirstHeader(HTTP.EXPECT_DIRECTIVE);
+ContentType contentType = ContentType.parse(request.getContentType());
+
+if (&quot;application/x-www-form-urlencoded&quot;.equals(contentType
+

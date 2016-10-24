@@ -1,0 +1,10 @@
+import domain.models.entity.state.LocalState;
+import domain.models.repository.LocalStateRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+this.localStateRepository = localStateRepository;
+}
+
+@Override
+public LocalState save(LocalState entity) {
+return localStateRepository.save(entity);
+

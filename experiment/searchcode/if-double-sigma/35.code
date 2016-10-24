@@ -1,0 +1,10 @@
+public class GaussDistribution implements FunctionInterface{
+
+private double mean;
+private double sigma;
+
+private static final double square2pi=Math.sqrt(2*Math.PI);
+
+public GaussDistribution(double mean, double sigma) {
+this.mean = mean;
+

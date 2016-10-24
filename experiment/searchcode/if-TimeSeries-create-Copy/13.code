@@ -1,0 +1,8 @@
+return UIRrmImages.id( UIRrmImages.DESCRIPTORS.TIMESERIES );
+}
+
+@Override
+protected Control createPropertiesControl( final Composite parent, final IDataBinding binding, final ToolBarManager sectionToolbar )
+ActionHyperlink.createHyperlink( toolkit, actionPanel, SWT.PUSH, new EditTimeseriesAction( timeseriesBean, m_binding ) );
+ActionHyperlink.createHyperlink( toolkit, actionPanel, SWT.PUSH, new ExtendTimeseriesAction( m_model, m_timeseries ) );
+

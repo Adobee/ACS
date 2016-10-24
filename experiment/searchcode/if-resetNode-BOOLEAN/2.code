@@ -1,0 +1,10 @@
+BehavourNode current = getChild(i);
+Boolean result = current.evalBasic(entity);
+
+// if result is null, it&#39;s still executing
+if (result == null) {
+return null;
+} else 	if (result == false) {
+resetNode();
+return false;
+

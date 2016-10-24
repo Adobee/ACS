@@ -1,0 +1,8 @@
+clusterState = builder.incrementVersion().build();
+
+if (randomIntBetween(0, 10) < 1) {
+// Update cluster state via full serialization from time to time
+int numberOfIndices = clusterState.routingTable().indicesRouting().size();
+if (numberOfIndices > 0) {
+List<String> randomIndices = randomSubsetOf(randomInt(numberOfIndices - 1), clusterState.routingTable().indicesRouting().keys().toArray(String.class));
+

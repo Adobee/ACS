@@ -1,0 +1,13 @@
+private double startY;
+private double targetY;
+
+public EntityDroid(World world){
+super(world);
+}
+
+public EntityDroid(World world, double x, double y, double z)
+targetY = startY + worldObj.rand.nextDouble() * 5;
+}
+
+if (posY < targetY) {
+

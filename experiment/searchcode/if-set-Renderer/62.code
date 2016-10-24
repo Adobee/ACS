@@ -1,0 +1,13 @@
+public static VisualizationManager getInstance() {
+return inst;
+}
+
+BaseRenderer renderer;
+
+public void setActiveRenderer(BaseRenderer r) {
+if (renderer != null) renderer.release();
+renderer = r;
+}
+
+public void saveSettings() {
+

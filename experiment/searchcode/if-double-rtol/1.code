@@ -1,0 +1,4 @@
+public Initsss(ODE function, Span tspan, double[] x0, double[] atol, double[] rtol) throws DifferentialAnalysisException
+this.x0 = new double[x0.length];   // initialize x0, atol, and rtol
+this.atol = new double[atol.length];
+

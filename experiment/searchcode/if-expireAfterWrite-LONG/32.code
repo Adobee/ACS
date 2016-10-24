@@ -1,0 +1,6 @@
+private static Cache<String, Cache<String, Object>> cache = CacheBuilder.newBuilder().expireAfterWrite(Long.MAX_VALUE, TimeUnit.DAYS).build();
+* @param timeUnit 时间单位
+* @param value 要写入的值
+*/
+public final static void put(String key, long duration, TimeUnit timeUnit, Object value) {
+

@@ -1,0 +1,7 @@
+this.shuffleType = proto.getShuffleType();
+if (proto.hasSchema()) {
+this.setSchema(SchemaFactory.newV1(proto.getSchema()));
+}
+if (proto.getShuffleKeysCount() > 0) {
+shuffleKeys = new Column[proto.getShuffleKeysCount()];
+

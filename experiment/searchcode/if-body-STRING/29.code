@@ -1,0 +1,10 @@
+public class StringBody implements ResponseBody {
+public String body;
+
+public StringBody(String body) {
+public void writeBody(OutputStream outputStream) throws IOException {
+if (body != null)
+outputStream.write(body.getBytes());
+}
+}
+

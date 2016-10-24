@@ -1,0 +1,8 @@
+public void remove(String id) { super.remove(Visitor.class, id);}
+
+public Boolean registerToSpeech(String visitorId, Integer speechId) {
+Speech speech = findOne(Speech.class, speechId);
+
+List<Visitor> visitors = speech.getVisitors();
+if (visitors.contains(visitor))
+

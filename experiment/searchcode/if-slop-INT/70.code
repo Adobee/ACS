@@ -1,0 +1,8 @@
+* 3. Slops destined for a given store.
+*
+* Note that the slop will be dropped if ANY of three filters match. Also, since
+* the job just makes a single pass over the slop store, and new slops could
+ClosableIterator<Pair<ByteArray, Versioned<Slop>>> slopIterator = slopStore.entries();
+Set<Integer> nodesInPurgeZone = null;
+if(zoneToPurge != Zone.UNSET_ZONE_ID) {
+

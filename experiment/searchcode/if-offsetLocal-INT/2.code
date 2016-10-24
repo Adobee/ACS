@@ -1,0 +1,9 @@
+Fetch fetch=fetchlLocal.get();
+Offset offset=offsetLocal.get();
+if (fetch != null&amp;&amp;offset!=null) {
+Integer limitTemp = entry.getPositionMap().get(&quot;fetch&quot;);
+int limitIndex=-1;
+Long limitValue;
+if (limitTemp == null) {
+limitValue = fetch.getRowCount();
+

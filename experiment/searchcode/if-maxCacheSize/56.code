@@ -1,0 +1,9 @@
+/*     */ public class SimpleLRUCache extends HashMap
+/*     */ {
+/*     */   private final int maxCacheSize;
+/*     */   private final LinkedList list;
+/*     */   public synchronized Object put(Object key, Object value)
+/*     */   {
+/*  69 */     if (this.maxCacheSize == 0) {
+/*  70 */       return null;
+

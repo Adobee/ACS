@@ -1,0 +1,12 @@
+* Basic box for holding a dimensions of a 3D block.
+* @author Honza
+*/
+public class Box {
+public double minX;
+public double minY;
+* @return minimal dimension of box
+*/
+public double getMinDelta() {
+double min = Double.MAX_VALUE;
+if (min > getDeltaX())
+

@@ -1,0 +1,11 @@
+public ValueObject getMdlAmtList(ValueObject pVO) throws LiveException {
+
+//기관코드 조회
+if (StringHelper.strEquals(pVO.getString(&quot;sessinstcd&quot;), &quot;&quot;)) {
+throw new LiveException(&quot;외래선수금 취소 오류.[15008]&quot;);
+}
+
+//card
+/*
+if (bogjVO.getDouble(&quot;cardamt&quot;) != 0  &amp;&amp;  StringHelper.strEquals(pVOs.get(&quot;option&quot;).getString(&quot;cardck&quot;), &quot;N&quot;)) {
+

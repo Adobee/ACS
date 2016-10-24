@@ -1,0 +1,11 @@
+<TeX>$Ax = B (mod\ M)$</TeX>
+long[] congruence(long[] A, long[] B, long[] M) {
+long x = 0, m = 1;
+long a = A[i] * m, b = B[i] - A[i] * x, d = gcd(a, M[i]);
+if (b % d != 0) return null;
+x += m * (b / d * inv(a / d, M[i] / d) % (M[i] / d));
+m *= M[i] / d;
+}
+return new long[] { (x % m + m) % m, m };
+}
+

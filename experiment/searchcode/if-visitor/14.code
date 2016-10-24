@@ -1,0 +1,10 @@
+public Visitor saveVisitor( Record rec ) {
+Visitor visitor = visitorRepo.findByVisitorLike( rec.getVisitor() );
+
+if( visitor == null ) {
+visitor.getData().add( new VisitorData( visitor, rec.getIp() ) );
+visitorRepo.save( visitor );
+}
+else {
+if( !visitorDataRepo.existsByVisitorAndIpLike( visitor, rec.getIp() ) ) {
+

@@ -1,0 +1,8 @@
+public void afterPropertiesSet() throws Exception {
+if (!this.hasSecret() &amp;&amp; this.getGenerateSecret()) {
+protected abstract U generateSecret();
+
+@Override
+public boolean getGenerateSecret() {
+return this.genSecret;
+

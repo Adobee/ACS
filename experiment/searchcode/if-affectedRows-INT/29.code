@@ -1,0 +1,12 @@
+return connection;
+}
+
+protected void checkUpdated(Object updateObj, int affectedRows) throws SQLException
+{
+if (affectedRows == 0)
+{
+throw new SQLException(&quot;Update of &quot; + updateObj + &quot; failed, no rows affected.&quot;);
+}
+}
+}
+

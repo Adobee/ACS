@@ -1,0 +1,10 @@
+return summ/(values.length-1);
+}
+
+public static double StandDev(double[] values){
+return Math.sqrt(Dispersion(values));
+}
+
+public static double StandDev(double[] values, double exp){
+return Math.sqrt(Dispersion(values,exp));
+

@@ -1,0 +1,7 @@
+private final char[] data = new char[65536];
+
+public IBlockState getBlockState(int x, int y, int z)
+public void setBlockState(int x, int y, int z, IBlockState state)
+{
+this.data[getBlockIndex(x, y, z)] = (char)Block.BLOCK_STATE_IDS.get(state);
+

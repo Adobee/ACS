@@ -1,0 +1,6 @@
+if (requestBody != null) {
+if (requestBody.getClass() == Part[].class) {
+MultipartBody.Builder multipartBuilder = new MultipartBody.Builder();
+for (Part part : ((Part[]) requestBody)) {
+if (part.getContentType() != null) {
+

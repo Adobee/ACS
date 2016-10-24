@@ -1,0 +1,12 @@
+out.println(&quot;Case #&quot; + caseNum + &quot;: &quot; + ans);
+}
+
+int rec(int[] M, int len) {
+boolean allZeros = true;
+for (int m: M) if (m > 0) {
+allZeros = false;
+break;
+}
+if (allZeros) return 0;
+int[] M1 = new int[len/2];
+

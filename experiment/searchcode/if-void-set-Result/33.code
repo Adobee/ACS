@@ -1,0 +1,8 @@
+public RespostaCallback() {
+this.setResult(new Resposta<T>());
+}
+
+public void setRespostaObject(T object){
+if(this.getResult() == null) this.setResult(new Resposta<T>());
+this.getResult().setObject(object);
+

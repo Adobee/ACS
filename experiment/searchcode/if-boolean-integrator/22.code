@@ -1,0 +1,11 @@
+return e;
+}
+
+public static double getPID(double desired) {
+if(!init)	{
+integrator = new NerdyIntegrator(0.0000444444);
+integrator.perform();
+double i = integrator.getI();
+
+if(Math.abs(error) < tolerance)   {
+

@@ -1,0 +1,10 @@
+model = getFMutSel0Model();
+} else {
+model = getKFMutSel0Model();
+}
+
+if (this.args.fix.contains(&quot;all&quot;)) {
+Map<Integer, Double> siteLogLikelihood = runner.getLogLikelihood(model);
+
+double sum = CoreUtils.sum(siteLogLikelihood.values());
+

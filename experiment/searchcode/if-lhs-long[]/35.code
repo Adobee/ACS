@@ -1,0 +1,9 @@
+public CompareToBuilder append(Object lhs, Object rhs, Comparator comparator) {
+if (comparison != Order.EQ) {
+return this;
+}
+if (lhs == rhs) {
+if (lhs instanceof long[]) {
+append((long[]) lhs, (long[]) rhs);
+} else if (lhs instanceof int[]) {
+

@@ -1,0 +1,9 @@
+public static <T extends Comparable<T>> boolean isBetween(T value, T lower, T upper)
+{
+return (lower.compareTo(value) <= 0) &amp;&amp; (upper.compareTo(value) >= 0);
+public static <T extends Comparable<T>> boolean isBetweenUnordered(T value, T a, T b)
+{
+if (a.compareTo(b) <= 0)
+{
+return isBetween(value, a, b);
+

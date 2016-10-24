@@ -1,0 +1,7 @@
+long a = val1, b = 0;
+long right_most_bit_set = val2 &amp; ~(val2 - 1);
+for (long i = 1; i < val1; i++) {
+if (((i &amp; right_most_bit_set) != 0) || val2 == 0) {
+long t = i ^ val2;
+if (t + i == val1) {
+

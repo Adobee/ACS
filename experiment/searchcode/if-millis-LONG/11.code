@@ -1,0 +1,17 @@
+import java.util.concurrent.TimeUnit;
+
+public class Time {
+
+private long millis;
+
+public Time() {
+millis = 0;
+}
+
+public Time(long l) {//Millis
+this.millis = l;
+}
+
+public void setTime(long millis) {
+this.millis = millis;
+

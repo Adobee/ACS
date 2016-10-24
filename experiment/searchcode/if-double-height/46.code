@@ -1,0 +1,15 @@
+double A1 = ((b * (b + 1)) / 2) + Y;
+double A2 = ((b * (b - 1)) / 2) + Y;
+
+if (N > A1)
+return 1;
+return 1;
+
+else if (N < A2)
+return 0;
+
+return calc3(N, 0, 0, 0);
+}
+
+public double calc3(int n, int centerHeight, int leftHeight, int rightHeight) {
+

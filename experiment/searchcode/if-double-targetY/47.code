@@ -1,0 +1,11 @@
+public class Particle {
+
+private double posY;
+private double posX;
+private double targetX;
+private double targetY;
+private double  size;
+public Particle(double posx, double posy, double targetx, double targety, double spawnFieldWidth, double spawnFieldHeight) {
+this.posY = posy;
+this.posX = posx;
+

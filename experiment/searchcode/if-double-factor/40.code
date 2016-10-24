@@ -1,0 +1,10 @@
+int largestFactor = 1;
+
+double maxFactor = Math.sqrt(n);
+while (n > 1) {
+if (factor > maxFactor) {
+System.out.println(&quot;========\n The largest prime factor is &quot; + n);
+return;
+}
+if (n % factor == 0) {
+

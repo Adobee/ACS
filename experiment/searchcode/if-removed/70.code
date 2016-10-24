@@ -1,0 +1,11 @@
+int iSize = nums.length;
+
+for(int i=0;i<iSize;i++){
+if(i==iSize-iRemovedCount)
+break;
+if(nums[i]==val){
+nums[iSize-iRemovedCount-1] = iTmp;
+iRemovedCount++;
+if(nums[i]==val)
+--i;
+

@@ -1,0 +1,8 @@
+return Double.longBitsToDouble(sign | (((long) scaledExponent) << 52) | mantissa);
+} else if (scaledExponent > -53) {
+// the input is a normal number and the result is a subnormal number
+mantissa = mantissa &amp; 0x000fffffffffffffL;
+
+if (scaledExponent < 2047) {
+return Double.longBitsToDouble(sign | (((long) scaledExponent) << 52) | mantissa);
+

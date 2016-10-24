@@ -1,0 +1,7 @@
+FieldRotation<Dfp> quat = new FieldRotation<Dfp>(u1, u2, v1, v2);
+double q2 = quat.getQ0().getReal() * quat.getQ0().getReal() +
+Assert.assertEquals(a1.getReal(), MathUtils.normalizeAngle(a2, a1.getReal()), 1.0e-10);
+}
+
+private void checkRotationDS(FieldRotation<Dfp> r, double q0, double q1, double q2, double q3) {
+

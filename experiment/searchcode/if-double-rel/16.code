@@ -1,0 +1,18 @@
+this.posY = posY;
+}
+
+@Override
+public int compare(Sprite s1, Sprite s2) {
+// get relative positions
+double relX1 = s1.x - posX;
+double relDepth2 = spriteDir.dotProduct(viewDir);
+
+double comp = relDepth2 - relDepth1;
+if (comp < 0)
+return -1;
+else
+return 1;
+}
+
+}
+

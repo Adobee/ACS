@@ -1,0 +1,6 @@
+public boolean lock(Data key, String caller, long threadId, long referenceId, long leaseTime) {
+LockStore lockStore = getLockStoreOrNull();
+public long getRemainingLeaseTime(Data key) {
+LockStore lockStore = getLockStoreOrNull();
+if (lockStore == null) {
+

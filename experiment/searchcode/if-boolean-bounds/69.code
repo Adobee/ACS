@@ -1,0 +1,7 @@
+public SimpleFixedLayout(Viewport<C> innerViewport, Rectangle bounds, boolean attachedToRightSide, boolean attachedToTop) {
+super(innerViewport.getDrawableID());
+double y = this.bounds.getY();
+
+if (attachedToRightSide)
+x = bounds.getX() + bounds.getWidth() - this.bounds.getWidth() + this.bounds.getX();
+

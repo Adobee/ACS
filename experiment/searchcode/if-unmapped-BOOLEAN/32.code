@@ -1,0 +1,11 @@
+int expectedNumMapped, int expectedNumUnmapped) {
+int numMapped = 0, numUnmapped = 0;
+while (true) {
+boolean hasRecord = samRecordIterator.hasNext();
+Assert.assertFalse(hasRecord);
+break;
+}
+
+if (record.getReadUnmappedFlag()) {
+numUnmapped++;
+

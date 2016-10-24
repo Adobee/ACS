@@ -1,0 +1,8 @@
+import com.alibaba.gongxiang.lbs.geom.BoundingBox;
+import com.alibaba.gongxiang.lbs.geom.GeoDistance;
+import com.alibaba.gongxiang.lbs.geom.Geohash;
+for(String gh:ghes){
+BoundingBox bb = Geohash.fromGeohashString(gh).getBoundingBox();
+if(min_x>bb.getMinLon()){
+min_x = bb.getMinLon();
+

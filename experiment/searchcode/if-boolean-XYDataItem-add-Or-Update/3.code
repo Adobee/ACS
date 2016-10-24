@@ -1,0 +1,17 @@
+XYDataItem item = new XYDataItem(x, y);
+add(item, notify);
+}
+
+
+public void add(XYDataItem item, boolean notify) {
+
+if (item == null) {
+item.setY(y);
+fireSeriesChanged();
+}
+}
+
+
+public XYDataItem addOrUpdate(double x, double y) {
+return addOrUpdate(new Double(x), new Double(y));
+

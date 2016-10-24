@@ -1,0 +1,15 @@
+private final int nvars;
+
+/**
+*
+*/
+protected final int npowers;
+
+//private final BigInteger NVARS;
+* @param nvars
+*/
+public Eval(String name,int nvars){
+this.name=name;
+this.nvars=nvars;
+this.npowers=1<<nvars;
+

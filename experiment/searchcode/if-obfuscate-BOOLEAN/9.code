@@ -1,0 +1,7 @@
+assertThat(underTest.obfuscate(getMyShort())).isEqualTo((short) 0);
+
+assertThat((Boolean) underTest.obfuscate(isMyboolean())).isFalse();
+assertThat(underTest.obfuscate(getMyBoolean())).isEqualTo(new Boolean(false));
+
+assertThat(underTest.obfuscate(getMybyte())).isEqualTo((byte) 0);
+

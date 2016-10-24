@@ -1,0 +1,11 @@
+private float fadeTime;
+private float initialAlpha;
+private float finalAlpha;
+private Timer timer;
+
+private boolean fadeAnimationActive = false;
+public void update(float delta) {
+if (transparency < finalAlpha &amp;&amp; fadeAnimationActive)
+{
+float transparencyIncrement = delta*(finalAlpha - initialAlpha)/fadeTime;
+

@@ -1,0 +1,12 @@
+boolean isLeap = Utils.isLeapYear(instance.get(Calendar.YEAR));
+
+int dayIndex;
+int monthIndex;
+int yearIndex;
+
+monthIndex = dayInYear / 28;
+dayIndex = dayInYear % 28 + 1;
+yearIndex = base.get(Calendar.YEAR) - 1872;
+
+if (isLeap &amp;&amp; monthIndex > 5) {
+

@@ -1,0 +1,10 @@
+public class DataGridRow {
+
+private Map<String, Object> values = new HashMap<String, Object>();
+
+public void addValue(String key, Object value) {
+if (values.containsKey(key)) {
+values.remove(key);
+}
+values.put(key, value);
+

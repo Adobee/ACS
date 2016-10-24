@@ -1,0 +1,9 @@
+super(CropDiseases.class);
+}
+
+public boolean save(CropDiseases cropDiseases) throws SQLException {
+if (cropDiseases.getCrop().getId() == null) {
+CropDao cropDao = new CropDao();
+Crop crop = cropDao.findByName(cropDiseases.getCrop().getName());
+if (crop == null) {
+

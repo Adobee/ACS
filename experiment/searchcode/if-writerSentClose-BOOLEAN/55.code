@@ -1,0 +1,7 @@
+private volatile boolean readerSentClose;
+private final WebSocketWriter writer;
+private volatile boolean writerSentClose;
+public BufferedSink newMessageSink(PayloadType type) {
+if (!this.writerSentClose) {
+return this.writer.newMessageSink(type);
+

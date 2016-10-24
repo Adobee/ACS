@@ -1,0 +1,14 @@
+basicdialog.setVisible(true);
+}
+
+private void populateMain(CategoryAxis categoryaxis)
+{
+if(categoryaxis.isCustomMainUnit() &amp;&amp; categoryaxis.getMainUnit() != null)
+mainType.setSelectedItem(INTS.get(Integer.valueOf(categoryaxis.getMainType())));
+}
+}
+
+private void updateMain(CategoryAxis categoryaxis)
+{
+if(mainTickBox.isSelected() &amp;&amp; StringUtils.isNotEmpty(mainUnitField.getText()))
+

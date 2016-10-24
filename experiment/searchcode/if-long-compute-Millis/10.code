@@ -1,0 +1,12 @@
+public long latencyMillis = 0L;
+
+public ServerMetadata()
+{
+this.cachedSize = -1;
+}
+
+protected final int computeSerializedSize()
+{
+int i = super.computeSerializedSize();
+if ((this.hasLatencyMillis) || (this.latencyMillis != 0L)) {
+

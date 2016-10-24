@@ -1,0 +1,11 @@
+private double change = Double.POSITIVE_INFINITY;
+
+private int iterations = 0;
+private final int maxIterations;
+
+private final double epsilon;
+
+public NewtonRaphsonMethod(int maxIterations, double epsilon)
+{
+this(maxIterations, epsilon, 0.0, Double.NaN);
+

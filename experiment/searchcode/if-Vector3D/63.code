@@ -1,0 +1,7 @@
+if (obj == null) return false;
+if (obj == this) return true;
+if (!(obj instanceof Vector3d)) return false;
+public Vector3d normalize() {
+double length = length();
+if (length == 0d) return new Vector3d();
+

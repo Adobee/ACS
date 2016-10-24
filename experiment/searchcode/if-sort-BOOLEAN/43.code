@@ -1,0 +1,13 @@
+* <p>Description:保存用户自定义的分类,将用户自定义的分类保存到一个redis的list之中 </p>
+* @param sort
+* @return 返回id
+* @author guangshuai.wang
+*/
+public int saveSort(Sort sort){
+if(sort.getName().length() > StringLengthConstans.SORT_LENGTH)
+sort.setName(&quot;默认分类&quot;);
+//找到默认分类，如果没有则创建，把被删除的分类中的文章数加入到默认分类中
+Sort mysort = this.getSortByName(sort);
+boolean flag = false;
+if(mysort == null){
+

@@ -1,0 +1,12 @@
+public Grid(int xLength, int yLength) {
+upperRight = new Coordinate(xLength, yLength);
+}
+
+public boolean hasBeaconAt(NewPosition position) {
+beacons.add(position);
+}
+
+
+public boolean isValidPosition(Coordinate coordinate) {
+if(coordinate.x < lowerLeft.x || coordinate.x > upperRight.x) return false;
+

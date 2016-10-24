@@ -1,0 +1,13 @@
+protected ExponentialLoss() {
+super();
+}
+
+@Override
+public double initEstimate(List<Instance> samples) {
+return 0.5 * Math.log(posNum * 1.0 / negNum);
+}
+
+@Override
+public double instanceLoss(double estimate, int label) {
+return Math.exp(estimate * (1 - 2 * label));
+

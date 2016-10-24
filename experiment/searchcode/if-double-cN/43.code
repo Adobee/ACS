@@ -1,0 +1,9 @@
+package cn.xuebing.pattern.singleton;
+
+/**
+*
+* Double-check Mode of Singleton Pattern.
+public static DoubleCheckSingleton getInstance() {
+if (instance == null) {
+synchronized (DoubleCheckSingleton.class) {
+

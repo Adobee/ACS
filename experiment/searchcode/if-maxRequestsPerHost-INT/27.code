@@ -1,0 +1,9 @@
+private int maxRequests = 64;
+private int maxRequestsPerHost = 5;
+
+/** Executes calls. Created lazily. */
+* is invoked, those requests will remain in flight.
+*/
+public synchronized void setMaxRequestsPerHost(int maxRequestsPerHost) {
+if (maxRequestsPerHost < 1) {
+

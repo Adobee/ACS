@@ -1,0 +1,10 @@
+return seedMapper;
+}
+
+public void setServerMseeder(SeedMapper seedMseeder) {
+this.seedMapper = seedMseeder;
+Integer max_value = seedMapper.getMaxSeedValue();
+if (max_value != null) {
+seedData.setValue(max_value + 1);
+seedMapper.addSeed(seedData);
+

@@ -1,0 +1,7 @@
+((DayTextView) daysAr[arPos]).setEnabled(true);
+// Check if highlighted Day
+Date curDate=currDay.getTime();
+curDate.setHours(0);
+if (highlightedColorDate.containsKey(curDate)) {
+((DayTextView) daysAr[arPos]).setTextColor(highlightedColorDate.get(curDate));
+

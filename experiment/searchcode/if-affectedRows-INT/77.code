@@ -1,0 +1,8 @@
+preparedStmt.setInt(1, catalogForm.getIdProduct());
+preparedStmt.setInt(2, catalogForm.getIdCustomer());
+
+int affectedRows = preparedStmt.executeUpdate();
+
+if (affectedRows != 1) {
+return false;
+

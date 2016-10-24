@@ -1,0 +1,10 @@
+im.setDisplayName(cString(con.getString(cP + &quot;name&quot;)));
+List<String> lores = con.getStringList(cP + &quot;lore&quot;);
+String perm = &quot;FALSE&quot;;
+if(p.hasPermission(&quot;warp.&quot; + con.getString(&quot;name&quot;)))
+lores.set(i, cString(lore).replace(&quot;%perm%&quot;, perm));
+}
+im.setLore(lores);
+item.setItemMeta(im);
+if(con.getBoolean(cP + &quot;glowOnReg&quot;))
+

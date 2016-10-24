@@ -1,0 +1,15 @@
+lastStop = i;
+}
+
+}
+return lastStop;
+}
+
+private int floorsWalked(int prev, int curr) {
+int nsteps = 0;
+int i;
+
+for (i = 1; i <= nriders; ++i)
+if ((stops[i] > prev) &amp;&amp; (stops[i] <= curr)) {
+nsteps += Math.min(stops[i] - prev, curr - stops[i]);
+

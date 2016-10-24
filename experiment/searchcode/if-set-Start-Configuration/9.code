@@ -1,0 +1,6 @@
+c.setEnabled(enabled);
+if (enabled) {
+c.setHost(configurationService.get(ConfigurationKey.LDAP_HOST, true, null));
+c.setAuthentication(configurationService.getBoolean(ConfigurationKey.MAIL_AUTHENTICATION, false, false));
+c.setStartTls(configurationService.getBoolean(ConfigurationKey.MAIL_START_TLS, false, false));
+

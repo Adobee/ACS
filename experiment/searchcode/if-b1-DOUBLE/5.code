@@ -1,0 +1,9 @@
+public static void lnGamma_GA1(double X, double G) {
+double Y,  z,  a;
+double b,  b1;
+int n;
+int I;
+if ( X < 8 ) {
+double b,  b1;
+int n;
+

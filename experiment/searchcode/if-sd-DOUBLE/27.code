@@ -1,0 +1,11 @@
+public class StudentsT
+{
+public static double getPValOfMeanDifference(double[] x0, double[] x1)
+{
+if (x0.length == 0 || x1.length == 0) return 1;
+double sd = calcSDForEqualVar(x0.length, x1.length, var0, var1);
+
+if (sd == 0) return 1;
+
+double v = Math.abs(mean0 - mean1) / (sd * SQRT2);
+

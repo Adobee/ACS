@@ -1,0 +1,7 @@
+CacheBuilder<Object, Object> cacheBuider = CacheBuilder.newBuilder();
+cacheBuider.concurrencyLevel(concurrencyLevel);
+long expireAfterAccess = 3600;
+cacheBuider.maximumSize(cacheCapacity);
+if (expireAfterAccess > 0) {
+cacheBuider.expireAfterAccess(expireAfterAccess, TimeUnit.SECONDS);
+

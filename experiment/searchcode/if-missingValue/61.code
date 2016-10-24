@@ -1,0 +1,9 @@
+private final IndexNumericFieldData<?> indexFieldData;
+private final Object missingValue;
+private final SortMode sortMode;
+
+public FloatValuesComparatorSource(IndexNumericFieldData<?> indexFieldData, @Nullable Object missingValue, SortMode sortMode) {
+float dMissingValue;
+if (missingValue == null || &quot;_last&quot;.equals(missingValue)) {
+dMissingValue = reversed ? Float.NEGATIVE_INFINITY : Float.POSITIVE_INFINITY;
+

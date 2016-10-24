@@ -1,0 +1,6 @@
+WarlockClientAdaptable adaptable = (WarlockClientAdaptable) receiver;
+IWarlockClient client = (IWarlockClient) adaptable.getAdapter(IWarlockClient.class);
+boolean connected = client.getConnection() == null ? false : client.getConnection().isConnected();
+
+if (&quot;clientConnected&quot;.equals(property))
+

@@ -1,0 +1,9 @@
+* lambda = 1.
+*/
+public Exponential(double mean) {
+if (mean <= 0)
+throw new IllegalArgumentException(&quot;Mean must be greater than 0.&quot;);
+public static double nextDouble(double random, double mean) {
+if (mean <= 0)
+throw new IllegalArgumentException(&quot;Mean must be greater than 0.&quot;);
+

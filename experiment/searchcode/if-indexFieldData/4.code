@@ -1,0 +1,9 @@
+public class GeoMidpointFacetExecutor extends FacetExecutor{
+final IndexGeoPointFieldData indexFieldData;
+public GeoMidpointFacetExecutor(IndexGeoPointFieldData indexFieldData){
+this.indexFieldData = indexFieldData;
+}
+
+@Override
+public InternalFacet buildFacet(String facetName) {
+

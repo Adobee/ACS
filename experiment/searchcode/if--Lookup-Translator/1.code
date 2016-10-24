@@ -1,0 +1,5 @@
+Map<Class<?>, Translator<Object, Object>> toFilter = typeTranslators.get(Interfaces.box(toClass));
+if(toFilter != null) {
+Translator<Object, Object> translator = lookupTranslator(Interfaces.box(from.getClass()), toFilter);
+return translator != null ? Interfaces.cast(toClass, translator.translate(from)) : null;
+

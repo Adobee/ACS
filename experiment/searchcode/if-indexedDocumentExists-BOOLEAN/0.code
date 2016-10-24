@@ -1,0 +1,10 @@
+private Long indexedDocumentVersion;
+private BytesReference documentSource;
+
+boolean indexedDocumentExists = true;
+
+@Override
+private PercolateQueryBuilder doCreateTestQueryBuilder(boolean indexedDocument) {
+documentSource = randomSource();
+if (indexedDocument) {
+

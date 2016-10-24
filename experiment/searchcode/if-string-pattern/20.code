@@ -1,0 +1,8 @@
+package com.pubmatic.test;
+
+public class PatternMatching {
+
+public static int getMatchedPatternCount(String inputPattern, String pattern) {
+int count = 0;
+if (inputPattern != null &amp;&amp; pattern != null &amp;&amp; pattern.length() > 1) {
+

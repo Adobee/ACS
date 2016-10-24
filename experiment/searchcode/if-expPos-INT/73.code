@@ -1,0 +1,7 @@
+if(i >= args.length) break;
+v = Integer.parseInt(args[i]);
+if(v >= LIMITS_LAT.x &amp;&amp; v <= LIMITS_LAT.y) {
+if(i >= args.length) break;
+v = Integer.parseInt(args[i]);
+if(v >= LIMITS_LONG.x &amp;&amp; v <= LIMITS_LONG.y) {
+

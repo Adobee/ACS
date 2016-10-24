@@ -1,0 +1,12 @@
+
+public class QuickUnionWeighting implements QuickFinder {
+
+static int[] i;
+static int[] sz;
+
+QuickUnionWeighting(int n) {
+i = new int[n];
+sz = new int[n];
+
+for (int j = 0; j < n; j++) {
+

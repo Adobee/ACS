@@ -1,0 +1,16 @@
+public class Complex {
+
+public Double real;
+public Double imag;
+
+// Constructors
+/**
+* @return 0 + 0j
+*/
+public Complex(){
+* @return real + imag * j
+*/
+public Complex(Double real, Double imag){
+this.real = real;
+this.imag = imag;
+

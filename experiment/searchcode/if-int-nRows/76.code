@@ -1,0 +1,9 @@
+public class Solution {
+public String convert(String s, int nRows) {
+if(nRows <= 1) return s;
+StringBuilder sb = new StringBuilder();
+
+for(int i = 0; i < nRows; i++) {
+if(i == 0) {
+int start = 0;
+

@@ -1,0 +1,10 @@
+this.f2 = f2;
+}
+public double apply(double x) {
+return f1.apply(x) + f2.apply(x);
+}
+
+public Function integrand() {
+if (f1 instanceof Integrandable &amp;&amp; f2 instanceof Integrandable)	{
+return new Sum(((Integrandable) f1).integrand(), ((Integrandable) f2).integrand());
+

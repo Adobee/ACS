@@ -1,0 +1,10 @@
+public static void sortColors(int[] A) {
+int zindex = 0;
+int tindex = A.length - 1;
+int i = 0;
+tindex = tindex - 1;
+i = i - 1;
+}
+if (tindex <= zindex) return;
+for (i = zindex; i <= tindex;) {
+

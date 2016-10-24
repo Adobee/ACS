@@ -1,0 +1,13 @@
+throw new ParamValueException(this, &quot;Double must be greater than &quot; + minVal);
+
+if (maxVal != null &amp;&amp; intVal > maxVal)
+throw new ParamValueException(this, &quot;Double must be less than &quot; + maxVal);
+if (data == null)
+return null;
+
+try {
+
+
+double ret = Double.valueOf(data);
+if (minVal != null &amp;&amp; ret < minVal)
+

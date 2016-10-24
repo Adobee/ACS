@@ -1,0 +1,6 @@
+public ArrayList<Double> getIntensities(int nMod, Integer peptideFragmentIonType, int aa) {
+if (map.containsKey(nMod)
+ArrayList<Double> intensities = getIntensities(nMod, peptideFragmentIonType, aa);
+if (intensities.size() > 0) {
+int index = (int) (quantile * intensities.size());
+

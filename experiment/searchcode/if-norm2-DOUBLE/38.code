@@ -1,0 +1,10 @@
+Double value = (double) 0;
+if (vector1.containsKey(key)) {
+value += vector1.get(key);
+}
+if (vector2.containsKey(key)) {
+for (Key key : keySet) {
+Double value = (double) 1;
+if (vector1.containsKey(key)) {
+value *= vector1.get(key);
+

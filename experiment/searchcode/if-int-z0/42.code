@@ -1,0 +1,7 @@
+public static String TextViewCheck(CheckItem items){
+int size = items.size();
+for (int i = 0; i < size; i++) {
+if (TextUtils.isEmpty(items.getValue(i).getText().toString().trim())) {
+public static boolean checkEmail(String email) {
+//String check = &quot;^([a-z0-9A-Z]+[-|\\.]?)+[a-z0-9A-Z]@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\\.)+[a-zA-Z]{2,}$&quot;;
+

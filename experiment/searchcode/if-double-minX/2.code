@@ -1,0 +1,11 @@
+public abstract class DoubleFunction {
+DoubleFunction(double minX, double maxX, double minDefaultY, double maxDefaultY)
+{
+this.minX = minX;
+public double get(double x) {
+if(x < minX) {
+return minDefaultY;
+}else if(x > maxX)
+{
+return maxDefaultY;
+

@@ -1,0 +1,9 @@
+package br.unipe.cc.modelo;
+
+public class Item implements Comparable<Item> {
+private int codigoItem;
+private String descricaoItem;
+
+public Item(int codigoItem, String descricaoItem) {
+this.codigoItem = codigoItem;
+

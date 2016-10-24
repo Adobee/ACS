@@ -1,0 +1,10 @@
+package net.turkus;
+
+import java.nio.DoubleBuffer;
+
+public class Quat {
+public double x,y,z,w;
+z =  q2.x * y - q2.y * x + q2.z * w + q2.w * z;
+w = -q2.x * x - q2.y * y - q2.z * z + q2.w * w;
+if(this.getSquaredMagn()<0.999||this.getSquaredMagn()>1.001){this.normalize();}
+

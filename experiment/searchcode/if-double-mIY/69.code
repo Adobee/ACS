@@ -1,0 +1,7 @@
+* objective value (i.e in ascending order if minimizing and in
+* descending order if maximizing), followed by Double.NaN elements
+* @see #getOptimaValues()
+*/
+public double[] getOptima() throws IllegalStateException {
+if (optima == null) {
+

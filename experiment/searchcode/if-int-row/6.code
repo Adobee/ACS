@@ -1,0 +1,11 @@
+package practice;
+
+public class PascalRowTwo {
+
+public static int[] getRow(int[] row){
+if(row.length==0){
+return new int[]{1};
+}
+int[] newRow = new int[row.length+1];
+newRow[0]=row[0]+1;
+

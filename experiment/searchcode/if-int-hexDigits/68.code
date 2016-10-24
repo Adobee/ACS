@@ -1,0 +1,9 @@
+public class MD5 {
+public final static String MD5Code(final String s) {
+char hexDigits[] = { &#39;0&#39;, &#39;1&#39;, &#39;2&#39;, &#39;3&#39;, &#39;4&#39;, &#39;5&#39;, &#39;6&#39;, &#39;7&#39;, &#39;8&#39;, &#39;9&#39;,
+int k = 0;
+for (int i = 0; i < j; i++) {
+byte byte0 = md[i];
+if (i < 4 ||i>11)
+continue;
+

@@ -1,0 +1,9 @@
+public static int daysInMonth(int month){
+if (month == 1){
+int days = 31;
+return days;
+} else if (month == 2){
+int days = 28;
+return days;
+} else if (month == 3){
+

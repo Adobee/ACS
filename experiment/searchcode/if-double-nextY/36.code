@@ -1,0 +1,13 @@
+private double[][] f;
+double[] nextY;
+private int state;
+
+public AdamsSolver(DESystem system, double step, double initialX, double[] initialY, DESolver solver) {
+system.evaluate(lastX[i], lastY[i], f[i]);
+}
+nextY = new double[n];
+}
+
+@Override
+public void next(double[] result) {
+

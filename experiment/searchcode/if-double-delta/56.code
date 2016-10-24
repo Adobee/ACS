@@ -1,0 +1,14 @@
+writingAngle = Math.PI;
+else
+writingAngle = -Math.PI;
+
+}
+
+double deltaWritingAngle;
+
+if (i == 0) {
+for (int i = 0; i < n; i++) {
+FeatureVector v = vectors[i];
+if (Double.isNaN(v.writingAngle)
+|| Double.isNaN(v.deltaWritingAngle)
+

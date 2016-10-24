@@ -1,0 +1,13 @@
+public Str(String str) {
+this.str = str;
+
+}
+
+@Override
+public int compareTo(Str o) {
+int strLen = str.length();
+int oLen = o.str.length();
+
+if (strLen > oLen) {
+return strLen - oLen;
+

@@ -1,0 +1,12 @@
+for (int j = 0; j < 3; j++) {
+array[i][j] = new Cell(0);
+}
+}
+}
+
+int checkWin() {
+
+if (array[0][0].getSign() == array[0][1].getSign()
+&amp;&amp; array[0][1].getSign() == array[0][2].getSign()) {
+if (array[0][0].getSign() == 1) {
+

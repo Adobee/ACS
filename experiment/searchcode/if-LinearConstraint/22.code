@@ -1,0 +1,5 @@
+LinearObjectiveFunction f = new LinearObjectiveFunction(new double[] { 2, 6, 7 }, 0);
+
+ArrayList<LinearConstraint> constraints = new ArrayList<LinearConstraint>();
+constraints.add(new LinearConstraint(new double[] { 1, 2, 1 }, Relationship.LEQ, 2));
+

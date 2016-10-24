@@ -1,0 +1,10 @@
+lindep[col] = true;
+if (col < nvars - 1) {
+Arrays.fill(x_sing, 0.0);
+int _pi = col * (nvars + nvars - col - 1) / 2;
+final int offXX = (nvars - in) * (nvars - in - 1) / 2;
+if (in < -1 || in >= nvars) {
+return null;
+}
+final int nvm = nvars - 1;
+

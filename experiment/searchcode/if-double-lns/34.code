@@ -1,0 +1,6 @@
+public hgb(SFPlayerAccessLevelType paramSFPlayerAccessLevelType, int paramInt, String paramString, boolean paramBoolean, hkv paramhkv, double paramDouble1, double paramDouble2, hbe paramhbe)
+if ((!s) &amp;&amp; (!(paramObject instanceof hkv))) {
+throw new AssertionError();
+}
+return new lns(Double.toString(((hkv)paramObject).doubleValue()));
+

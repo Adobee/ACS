@@ -1,0 +1,11 @@
+varV *= varV;
+double top = varU - varV;
+double bot = varU + varV;
+if (bot == 0) {
+return 1;
+double varU = robVar(u);
+double top = varU - varV;
+double bot = varU + varV;
+if (bot == 0) {
+return 1;
+

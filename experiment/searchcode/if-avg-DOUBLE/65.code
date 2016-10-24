@@ -1,0 +1,11 @@
+public class DurchschnittReducer extends Reducer<Text, Text, Text, DoubleWritable> {
+
+DoubleWritable avg = new DoubleWritable();
+
+@Override
+public void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
+String[] avg_count = currentvalue.toString().split(&quot;\\|&quot;);
+Double avg = Double.parseDouble(avg_count[0]);
+
+if(avg_count.length == 2){
+

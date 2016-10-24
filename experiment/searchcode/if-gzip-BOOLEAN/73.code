@@ -1,0 +1,8 @@
+* @return information whether browser supports compression
+*/
+public static boolean checkIfAcceptGzipEncoding(HttpServletRequest request)
+{
+boolean acceptGzipEncoding = false;
+
+String acceptEncodingHeader = request.getHeader(&quot;Accept-Encoding&quot;);
+

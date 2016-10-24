@@ -1,0 +1,18 @@
+public class RandomizedQueue<Item> implements Iterable<Item> {
+
+private Item[] queue;
+
+private int queueCapacity;
+
+private int currentQueueSize;
+
+private Random randomGenerator;
+&quot;You are not allowed to enqueue null items&quot;);
+}
+
+if (currentQueueSize + 1 > queueCapacity) {
+increaseQueueCapacity();
+}
+
+queue[currentQueueSize++] = item;
+

@@ -1,0 +1,7 @@
+LoggerUtils.info(logger, &quot;Current Query Fields : &quot; + queryFields.toString());
+StringBuffer multipleQueryBuilder = new StringBuffer();
+for (int i = 0; i < queryFields.size() -1; i++) {
+private static void buildCommonQuery(SolrQueryField<?> queryField, StringBuffer queryBuilder) {
+List<?> fieldValues = queryField.getFieldValues();
+if (fieldValues.size() >= 2) {
+

@@ -1,0 +1,12 @@
+return DateTime.parse(dateString, DateTimeFormat.forPattern(DATE_FORMAT));
+}
+
+public static long startOfWeekInMillis(DateTime dateTime) {
+if (dateTime.getDayOfWeek() == 7) {
+return dateTime.getMillis();
+}
+}
+
+public static long endOfWeekInMillis(DateTime dateTime) {
+int dayOfWeek = dateTime.getDayOfWeek();
+

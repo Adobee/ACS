@@ -1,0 +1,7 @@
+public int minimumBags(int strength, String[] itemType) {
+int numBags=0;
+Map<String,Integer> itemCount = new HashMap<String,Integer>();
+for(String str: itemType) {
+if(itemCount.containsKey(str)) {
+itemCount.put(str, itemCount.get(str)+1);
+

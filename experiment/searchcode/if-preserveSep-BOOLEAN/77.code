@@ -1,0 +1,13 @@
+boolean exactMatchFirst = params.get(EXACT_MATCH_FIRST) != null
+? Boolean.valueOf(params.get(EXACT_MATCH_FIRST).toString())
+: true;
+
+boolean preserveSep = params.get(PRESERVE_SEP) != null
+flags |= AnalyzingSuggester.EXACT_FIRST;
+}
+if (preserveSep) {
+flags |= AnalyzingSuggester.PRESERVE_SEP;
+}
+
+int maxSurfaceFormsPerAnalyzedForm = params.get(MAX_SURFACE_FORMS) != null
+

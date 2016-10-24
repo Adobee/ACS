@@ -1,0 +1,11 @@
+public void unlockElement (Element element) {
+locks.set(targets.indexOf(element), false);
+return locks.get(targets.indexOf(element));
+}
+
+public void toggleLock (Element element) {
+if (getLock(element)) unlockElement(element);
+else lockElement(element);
+}
+}
+

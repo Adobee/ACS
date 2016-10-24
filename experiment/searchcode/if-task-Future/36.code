@@ -1,0 +1,10 @@
+import java.util.concurrent.FutureTask;
+
+/**
+* Created by wws2003 on 10/20/15.
+*/
+public class ThreadPoolBasedTaskExecutorImpl implements ITaskExecutor {
+public <T> void executeTask(ITask<T> task, ITaskDelegate<T> taskDelegate) {
+Handler taskDelegateHandler = new Handler();
+if(taskDelegate != null) {
+

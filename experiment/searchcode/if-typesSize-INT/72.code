@@ -1,0 +1,8 @@
+public void readFrom(StreamInput in) throws IOException {
+super.readFrom(in);
+query = in.readNamedWriteable(QueryBuilder.class);
+
+int typesSize = in.readVInt();
+if (typesSize > 0) {
+types = new String[typesSize];
+

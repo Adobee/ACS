@@ -1,0 +1,12 @@
+* @author SWatson
+*
+*/
+public class StageBean
+{
+public static final String SESSION_ATTRIBUTE = &quot;processStage&quot;;
+StageBean stage = (StageBean) session.getAttribute(StageBean.SESSION_ATTRIBUTE);
+if (stage == null)
+{
+stage = new StageBean();
+session.setAttribute(StageBean.SESSION_ATTRIBUTE, stage);
+

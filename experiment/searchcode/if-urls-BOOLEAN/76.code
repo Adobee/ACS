@@ -1,0 +1,7 @@
+public void handle(String target, HttpServletRequest request, HttpServletResponse response, boolean[] isHandled) {
+if (checkSkip(target)) {
+return;
+public boolean checkSkip(String skipUrl) {
+if (skipUrls != null &amp;&amp; skipUrls.length > 0) {
+for (String url : skipUrls) {
+

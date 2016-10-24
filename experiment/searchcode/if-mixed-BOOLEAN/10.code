@@ -1,0 +1,13 @@
+public RestrictedComplexContentModel(ComplexType superType)
+{
+super(superType);
+}
+
+@Override
+public void setLocalMixedContent(boolean mixedContent)
+{
+if(!mixedContent)
+super.setLocalMixedContent(mixedContent);
+else
+if(!getSuperTypeContentModel().isMixedContent())
+

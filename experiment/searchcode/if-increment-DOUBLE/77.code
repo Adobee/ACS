@@ -1,0 +1,9 @@
+public final class Increment {
+
+public static Number numberIncrement(Number x) {
+if (x instanceof Long) {
+return Increment.longIncrement(Coercion.toLong(x));
+} else if ((x instanceof Float) || (x instanceof Double)) {
+return Increment.doubleIncrement(Coercion.toDouble(x));
+} else if (x instanceof BigDecimal) {
+

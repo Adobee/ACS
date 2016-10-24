@@ -1,0 +1,7 @@
+@Override
+public int hashCode() {
+int hash = 0;
+hash += (iptID == null ? 0 : iptID.hashCode());
+IPTType other = (IPTType) object;
+if ((this.iptID == null &amp;&amp; other.iptID != null) || (this.iptID != null &amp;&amp; !this.iptID.equals(other.iptID))) {
+

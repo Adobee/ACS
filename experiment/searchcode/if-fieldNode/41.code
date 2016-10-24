@@ -1,0 +1,7 @@
+for(FieldNode fieldNode: m_fields) {
+int index = -1;
+if (Option.CONST != fieldNode.getOption()) {
+index = sourceDataNode.getCellIndex(fieldNode.getFieldName());
+if (-1 == index) {
+LOG.fatal(fieldNode.getFieldName() + &quot;not define in data source xml!&quot;);
+

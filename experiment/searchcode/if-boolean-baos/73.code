@@ -1,0 +1,12 @@
+class ConsoleOutputCapturer {
+private ByteArrayOutputStream baos;
+private PrintStream oldOut, oldErr;
+private boolean capturing;
+PrintStream ps = new PrintStream(baos);
+System.setOut(ps);
+System.setErr(ps);
+}
+
+public void stop() {
+if (!capturing) {
+

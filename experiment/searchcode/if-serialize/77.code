@@ -1,0 +1,11 @@
+public static Serializer[] reindex(Serializer[] oldSerializers) {
+Serializer[] newSerializers;
+int maxId = 0;
+for (Serializer serialize : oldSerializers) {
+if(serialize.getId() > maxId) {
+maxId = serialize.getId();
+}
+}
+
+maxId++;
+

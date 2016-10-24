@@ -1,0 +1,7 @@
+private static Cursor createCustomCursor(ImageCursorFrame cursorFrame) {
+Toolkit awtToolkit = Toolkit.getDefaultToolkit();
+
+double imageWidth = cursorFrame.getWidth();
+double imageHeight = cursorFrame.getHeight();
+Dimension nativeSize = awtToolkit.getBestCursorSize((int)imageWidth, (int)imageHeight);
+

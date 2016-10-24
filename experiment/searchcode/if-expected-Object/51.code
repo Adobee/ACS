@@ -1,0 +1,11 @@
+public InvalidObjectTypeException(){
+}
+
+public InvalidObjectTypeException(Class expectedType, Class actualType){
+this.expectedType = expectedType != null ? expectedType.getName() : null;
+public String toString(){
+if(expectedType == null){
+return &quot;Invalid object type.&quot;;
+}
+else{
+

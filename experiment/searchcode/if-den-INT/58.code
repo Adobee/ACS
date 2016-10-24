@@ -1,0 +1,17 @@
+import java.util.*;
+import java.io.*;
+
+public class Rational {
+private int num, den;
+public Rational(int n, int d) {
+num = n;
+den = d;
+}
+
+//
+
+public int gcd(int a,int b) {
+if (b==0)
+return a;
+else
+

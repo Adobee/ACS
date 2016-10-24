@@ -1,0 +1,6 @@
+Calendar cal = Calendar.getInstance(TimeZone.getTimeZone(&quot;Etc/GMT&quot;));
+int millisOfDay = cal.get(Calendar.MILLISECOND) + (cal.get(Calendar.SECOND) +
+((cal.get(Calendar.MINUTE) + cal.get(Calendar.HOUR_OF_DAY) * 60) * 60) * 1000);
+
+float positionOfCurrentMillis = PApplet.round(PApplet.map(millisOfDay, 0, TimeZones.MAX_MILLIS_OF_DAY - 1, this.sketch.width, 1)) + this.sketch.width / 2F;
+

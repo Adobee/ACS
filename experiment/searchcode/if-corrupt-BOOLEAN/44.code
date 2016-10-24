@@ -1,0 +1,8 @@
+private long offset; // Offset of the block in the file
+private long length;
+private boolean corrupt;
+private static final String[] EMPTY_STR_ARRAY = new String[0];
+public BlockLocation(String[] names, String[] hosts, String[] cachedHosts, String[] topologyPaths, long offset,
+long length, boolean corrupt) {
+if (names == null) {
+

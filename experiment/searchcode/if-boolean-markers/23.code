@@ -1,0 +1,10 @@
+mcol = new Marker(chr, startPrev, end, 1, &quot;&quot;);
+if (gap <= minGap) {
+gap = 1;
+} else {
+markersCollapsed.add(mcol);
+for (Marker m : markers) {
+if (prevEnd >= 0) {
+for (int i = prevEnd; i < m.getStart(); i++)
+sb.append(&#39;-&#39;);
+

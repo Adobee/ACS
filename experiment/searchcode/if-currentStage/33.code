@@ -1,0 +1,12 @@
+import mil.navy.spawar.msco.common.JsonUtils;
+
+public class VmWorkingStatus {
+private String status;
+private String currentStage;
+private String endStage;
+VmWorkingStatus vmWorkingStatus = JsonUtils.createFromJsonString(jsonString, VmWorkingStatus.class);
+
+if(vmWorkingStatus != null)
+{
+this.status = vmWorkingStatus.status;
+

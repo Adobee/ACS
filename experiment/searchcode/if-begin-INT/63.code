@@ -1,0 +1,21 @@
+public Segment_Tool(){
+
+}
+
+
+
+
+public int getOverlap(int begin_a, int end_a, int begin_b, int end_b){
+
+return Math.max(0, Math.min(end_a,end_b) - Math.max(begin_a, begin_b));
+public boolean haveOverlap(int begin_a, int end_a, int begin_b, int end_b){
+
+if(this.getOverlap(begin_a, end_a, begin_b, end_b) > 0){
+return true;
+}
+else{
+return false;
+}
+}
+}
+

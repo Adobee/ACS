@@ -1,0 +1,8 @@
+this.tokenFilters = ImmutableMap.copyOf(tokenFilters);
+
+Map<String, AnalyzerProvider> analyzerProviders = newHashMap();
+if (analyzerFactoryFactories != null) {
+Analyzer analyzerF = analyzerFactory.get();
+if (analyzerF == null) {
+throw new IllegalArgumentException(&quot;analyzer [&quot; + analyzerFactory.name() + &quot;] created null analyzer&quot;);
+

@@ -1,0 +1,7 @@
+double[] previousX = new double[MATRIX_SIZE];
+System.arraycopy(g, 0, previousX, 0, MATRIX_SIZE);
+
+int iteration = 0;
+do {
+double[] x_k = calculateXk(B, g, previousX);
+

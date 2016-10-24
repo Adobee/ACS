@@ -1,0 +1,7 @@
+public class ActorComparator implements Comparator<Actor> {
+@Override
+public int compare(Actor actor1, Actor actor2) {
+if (actor1.getZIndex() < actor2.getZIndex()) {
+return -1;
+} else if (actor1.getZIndex() == actor2.getZIndex()) {
+

@@ -1,0 +1,12 @@
+Z3_SORT_ERROR (1),
+Z3_PARSER_ERROR (4),
+Z3_DEC_REF_ERROR (11);
+
+private final int intValue;
+
+Z3_error_code(int v) {
+public static final Z3_error_code fromInt(int v) {
+for (Z3_error_code k: values())
+if (k.intValue == v) return k;
+return values()[0];
+

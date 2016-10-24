@@ -1,0 +1,10 @@
+public synchronized boolean startForwardLoading() {
+if (!isInited) {
+return false;
+public synchronized void onForwardSliceLoaded(Long tail) {
+currentForwardHead = tail;
+}
+
+public synchronized boolean startBackwardLoading() {
+if (!isInited) {
+

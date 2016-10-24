@@ -1,0 +1,14 @@
+state[1] = &quot;0&quot;;
+}
+
+if (streamingMode) {
+state[2] = &quot;1&quot;;
+} else {
+state[2] = &quot;0&quot;;
+final String[] data = (String[]) getLastNonConfigurationInstance();
+
+if (data == null) {
+recording = false;
+dataString = &quot;&quot;;
+streamingMode = false;
+

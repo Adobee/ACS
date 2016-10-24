@@ -1,0 +1,12 @@
+double c;
+double d;
+double x;
+double startValue;
+
+public static void main(String[] args) {
+double f = f(startValue);
+double fAbl = fPrime(startValue);
+
+if (Math.abs(cross) > EPSILON) {
+cross = startValue - (f / fAbl);
+

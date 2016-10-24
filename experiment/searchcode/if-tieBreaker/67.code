@@ -1,0 +1,8 @@
+protected void doXContent(XContentBuilder builder, Params params) throws IOException {
+builder.startObject(DisMaxQueryParser.NAME);
+if (tieBreaker != -1) {
+builder.field(&quot;tie_breaker&quot;, tieBreaker);
+}
+if (boost != -1) {
+builder.field(&quot;boost&quot;, boost);
+

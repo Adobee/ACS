@@ -1,0 +1,9 @@
+double dk = jacNorm[k];
+if (dk == 0) {
+dk = 1.0;
+}
+double xk = dk * parameters[k].getEstimate();
+// check orthogonality between function vector and jacobian columns
+double maxCosine = 0;
+if (cost != 0) {
+

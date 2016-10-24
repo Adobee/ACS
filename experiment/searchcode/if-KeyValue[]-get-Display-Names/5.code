@@ -1,0 +1,10 @@
+} else if (cmd.equals(&quot;get&quot;) || cmd.equals(&quot;g&quot;) ) {
+get(tokens);
+} else if (cmd.equals(&quot;delete&quot;) || cmd.equals(&quot;d&quot;) ) {
+KeyValue keyValue = new KeyValue(key);
+keyValue.setValue(value.getBytes());
+keyValueDao.put(keyValue);
+}
+
+void putFile(String [] tokens) throws Exception {
+

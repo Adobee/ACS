@@ -1,0 +1,12 @@
+private Long minSize;
+private Long maxSize;
+
+
+public boolean match(Node node) {
+if (node.getType() != NodeType.FILE) {
+return (minSize == null || file.getSize() >= minSize.longValue())
+&amp;&amp; (maxSize == null || file.getSize() <= maxSize.longValue());
+}
+
+public FileSearchCriteria (Long minSize, Long maxSize) {
+

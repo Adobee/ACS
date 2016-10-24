@@ -1,0 +1,7 @@
+private final List<ExplainOption> options;
+
+public Explain(Statement statement, boolean analyze, List<ExplainOption> options)
+public Explain(NodeLocation location, boolean analyze, Statement statement, List<ExplainOption> options)
+{
+this(Optional.of(location), analyze, statement, options);
+

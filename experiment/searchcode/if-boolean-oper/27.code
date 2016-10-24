@@ -1,0 +1,12 @@
+left = pleft;
+oper = poper;
+right = pright;
+}
+
+@Override
+public void genC(PW pw, boolean putParenthesis) {
+if (oper == Symbol.EQ || oper == Symbol.NEQ || oper == Symbol.LE || oper == Symbol.LT ||
+oper == Symbol.GE || oper == Symbol.GT)
+return Type.booleanType;
+else if (oper == Symbol.AND || oper == Symbol.OR)
+

@@ -1,0 +1,9 @@
+final long xInt = Double.doubleToRawLongBits(x);
+final long yInt = Double.doubleToRawLongBits(y);
+
+final boolean isEqual;
+if (((xInt
+^ yInt)
+&amp; SGN_MASK) == 0l) {
+// number have same sign, there is no risk of overflow
+

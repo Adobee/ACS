@@ -1,0 +1,6 @@
+public void execute(ClientConnection connection, String args) {
+int firstSpace = args.indexOf(&quot; &quot;);
+
+if ( firstSpace == -1 ) {
+connection.writeToClientPrompt(&quot;Must specify a user and a message&quot;);
+

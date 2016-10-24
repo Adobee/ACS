@@ -1,0 +1,9 @@
+private SharedPreferences prefs;
+
+private Boolean autostart;
+private Boolean showAdvanced;
+
+public void readPrefs (Context ctx) {
+//second parameter of reading function is the initial value after installation.
+autostart = prefs.getBoolean(&quot;autostart&quot;, false);
+

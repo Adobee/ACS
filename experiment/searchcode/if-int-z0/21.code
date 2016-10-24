@@ -1,0 +1,11 @@
+public boolean inSight(WalkableBlock one, WalkableBlock two) {
+int x0 = one.x();
+int y0 = one.height();
+int z0 = one.z();
+int z1 = two.z();
+int dx = x1 - x0;
+int dy = y1 - y0;
+int dz = z1 - z0;
+int sx;
+int sy;
+

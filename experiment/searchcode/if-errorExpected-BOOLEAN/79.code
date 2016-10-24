@@ -1,0 +1,15 @@
+check();
+}
+
+void check() {
+checkCount++;
+
+boolean errorExpected = false;
+
+//error if the import refers to a non-existent symbol
+if (!nk1.exists() || !nk2.exists()) {
+errorExpected = true;
+}
+
+//error if a non-static import refers to a non-type symbol
+

@@ -1,0 +1,8 @@
+return text.length();
+}
+
+private int wikiWordLength(String candidate) {
+if (candidate.length() < 3) return 0;
+if (!isUpperCaseLetter(candidate, 0)) return 0;
+if (!isDigit(candidate, 1) &amp;&amp; !isLowerCaseLetter(candidate, 1)) return 0;
+

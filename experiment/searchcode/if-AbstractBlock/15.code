@@ -1,0 +1,9 @@
+private static boolean isInitialized = false;
+
+protected List<AbstractBlock> allBlocks = new LinkedList<AbstractBlock>();
+private ByzantineTile byzantianTile;
+
+@Override
+public AbstractBlock getVillageCenterController() {
+return villageCenterController;
+

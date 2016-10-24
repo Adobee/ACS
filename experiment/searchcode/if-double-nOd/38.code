@@ -1,0 +1,11 @@
+Iterator<NodeOrDouble> it = values.iterator();
+
+double sum = 0;
+while (it.hasNext()) {
+NodeOrDouble nod = it.next();
+if (nod.isNode()) {
+m = nod.getNode();
+}
+else {
+sum = sum + nod.getDouble();
+

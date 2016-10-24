@@ -1,0 +1,14 @@
+public static Date dayAfter(Date date)
+{
+return new Date(date.getTime() + DAY_IN_MILLISECONDS);
+}
+
+public static long numDaysBetween(Date from, Date to)
+return Math.abs(numDaysBetween(from, to));
+}
+
+public static void floorToSeconds(Date date)
+{
+long oldMillis = date.getTime();
+long newMillis = ((long) (Math.floor(oldMillis / SECOND_IN_MILLISECONDS))) * SECOND_IN_MILLISECONDS;
+

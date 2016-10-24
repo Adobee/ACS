@@ -1,0 +1,6 @@
+Pattern.compile(&quot;([a-zA-Z0-9-!#$%&amp;&#39;*+.^_`{|}~]+)/([a-zA-Z0-9-!#$%&amp;&#39;*+.^_`{|}~]+)&quot;);
+Pattern.compile(&quot;;\\s*(?:([a-zA-Z0-9-!#$%&amp;&#39;*+.^_`{|}~]+)=(?:([a-zA-Z0-9-!#$%&amp;&#39;*+.^_`{|}~]+)|\&quot;([^\&quot;]*)\&quot;))?&quot;);
+}
+
+public final boolean equals(Object paramObject)
+

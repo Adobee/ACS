@@ -1,0 +1,13 @@
+private long numberOfHours = -1L;
+
+public HoursTime(byte hours) {
+super(Type.HOURS);
+
+if (hours > 24)
+this.numberOfHours = (hours * HOURS2MILLIS);
+}
+
+@Override
+public long getExpiryTimeInMillis() {
+if (this.getActivationTime() == DISCOVERY_MODE)
+

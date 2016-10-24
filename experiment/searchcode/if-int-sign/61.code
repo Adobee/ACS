@@ -1,0 +1,5 @@
+public static int findMax1(int x,int y){
+//get diff between x and y, if x > y, diff >0, so sign-bit should be 0, otherwise sign-bit is 1.
+int diff = x - y;
+//logic right shift sign-bit to 0th bit, after that diff would be either 000.....001, which is 1 when x<y or 000.....000, which is 0 when x>=y.
+

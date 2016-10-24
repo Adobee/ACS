@@ -1,0 +1,9 @@
+public int partition(int[]array, int start, int end, int pivot) {
+while (true) {
+while (array[start] <= pivot) {
+start++;
+int pivot = array[(start + end) /2];
+int leftEnd = partition(array, start, end, pivot);
+int leftSize = leftEnd - start + 1;
+if (leftSize == rank + 1) {
+

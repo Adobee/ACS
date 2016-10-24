@@ -1,0 +1,7 @@
+public static long getPeriodAdjustment(List<Period> periods, Period currentPeriod) {
+if (currentPeriod == null || !currentPeriod.getPeriodType().isReverseTimer()) {
+public static int getPeriodAdjustmentMins(List<Period> periods, Period currentPeriod) {
+int clockAdjust = 0;
+if (currentPeriod != null) {
+for (Period period : periods) {
+

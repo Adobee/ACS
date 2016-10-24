@@ -1,0 +1,6 @@
+public SignificantInterval(Map<String,?> intervalOccupier, Interval<LogInstant> logInterval) {
+//		if (logInterval.getStart().equals(logInterval.getEnd())) {
+int logIntervalCompare = intervalComparator.compare(logInterval, otherSignificantInterval.logInterval);
+if (logIntervalCompare!=0) {
+return logIntervalCompare;
+

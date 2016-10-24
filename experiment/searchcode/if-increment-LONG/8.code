@@ -1,0 +1,14 @@
+private long lastTime;
+private boolean paused;
+
+public DropTimer(int timeIncrement) {
+lastTime = System.currentTimeMillis();
+public boolean isTimeToDrop() {
+
+if (paused) {
+return false;
+}
+
+long currTime = System.currentTimeMillis();
+if (currTime - lastTime > timeIncrement) {
+

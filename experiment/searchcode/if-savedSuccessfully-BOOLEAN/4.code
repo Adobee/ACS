@@ -1,0 +1,9 @@
+public SaveBtnListener( BackingPage backingPage ) {
+setBackingPage( backingPage );
+}
+
+@Override
+public void actionPerformed( boolean redirect ) {
+boolean savedSuccessfully = getBackingPage().saveBeanWithWrap();
+if( savedSuccessfully ) {
+

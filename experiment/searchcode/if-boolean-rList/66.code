@@ -1,0 +1,17 @@
+int ret = tmp.getRet();
+int j = tmp.getIndex();
+
+if(ret == OrderContentDataCompare.ALL_THE_SAME)
+{
+rlist.add(new OrderChangeInfo(old.get(i).getProductId(),old.get(i).getOnePrice(),i,j,true,false,0,OrderChangeInfo.NORMAL,&quot;0.00&quot; +
+BasicArithmetic.sub(&quot;0.00&quot;, old.get(i).getItemAmount())));
+}
+
+}
+
+for(int j = 0 ; j < current.size() ; j++)
+{
+
+if(getIsNewInList( rlist,j))
+continue;
+

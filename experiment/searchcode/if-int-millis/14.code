@@ -1,0 +1,10 @@
+private long time = System.currentTimeMillis();
+private final int repeatMillis;
+
+public Repeater(int repeatMillis) {
+this.repeatMillis = repeatMillis;
+}
+
+public void update() {
+if ((System.currentTimeMillis() - time)>repeatMillis) {
+

@@ -1,0 +1,9 @@
+Network network) {
+
+if (iface == null || StringUtils.isEmpty(iface.getNetworkName())) {
+return null;
+}
+
+if (network != null) {
+boolean networkInSync = build(iface, network).isNetworkInSync();
+

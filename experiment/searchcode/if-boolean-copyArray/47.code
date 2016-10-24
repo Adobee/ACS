@@ -1,0 +1,9 @@
+double P = fun.calculate(x);
+x[i] = x[i] + dx[i];       // povecamo za Dx
+double N = fun.calculate(x);
+if(N > P) {             // ne valja pozitivni pomak
+x[i] = x[i] - 2*dx[i];  // smanjimo za Dx
+N = fun.calculate(x);
+if(N > P) {          // ne valja ni negativni
+x[i] = x[i] + dx[i];  // vratimo na staro
+

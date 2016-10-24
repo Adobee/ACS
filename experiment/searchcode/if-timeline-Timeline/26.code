@@ -1,0 +1,16 @@
+public TransformTimeline getTimeline(String timelineName)
+{
+int i = _timelineList.size();
+while(i -- > 0)
+{
+if(Objects.equals(_timelineList.get(i).name, timelineName))
+return _timelineList.get(i);
+}
+}
+return null;
+}
+
+public void addTimeline(TransformTimeline timeline)
+{
+if(timeline == null)
+

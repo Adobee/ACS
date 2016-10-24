@@ -1,0 +1,11 @@
+import java.io.Serializable;
+
+@SessionScoped
+public class WizardViewDto implements Serializable {
+
+private int currentStep;
+private int previousStep;
+
+public void setCurrentStep(int currentStep) {
+if (previousStep != currentStep &amp;&amp; this.currentStep != currentStep) {
+

@@ -1,0 +1,8 @@
+void search(int row, int ld, int rd) {
+if (row != limit) {
+int available = limit &amp; ~(row | ld | rd);
+while (available != 0) {
+int p = available &amp; -available;
+available -= p;
+search(row + p, (ld + p) << 1, (rd + p) >> 1);
+

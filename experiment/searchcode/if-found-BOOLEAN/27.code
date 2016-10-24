@@ -1,0 +1,11 @@
+public class DictionaryFilter implements EquivalenceClassFilter
+{
+public DictionaryFilter(Dictionary dict, boolean keepIfFoundInDict, boolean checkSrc)
+return (m_keepIfFoundInDict &amp;&amp; found) || (!m_keepIfFoundInDict &amp;&amp; !found);
+}
+
+protected Dictionary m_dict;
+protected boolean m_keepIfFoundInDict;
+protected boolean m_src;
+}
+

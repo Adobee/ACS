@@ -1,0 +1,8 @@
+public void nextTurn() {
+int daysIn = month.getDaysInMonth(year);
+day += TURN_DAYS;
+if (day > daysIn) {
+day = day % daysIn;
+month = month.getNextMonth();
+if (month == Month.JANUARY) {
+

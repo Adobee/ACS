@@ -1,0 +1,9 @@
+import com.fachrur_122.newmovie.view.Movie;
+import com.squareup.moshi.JsonAdapter;
+import com.squareup.moshi.Moshi;
+
+import java.io.IOException;
+SharedPreferences.Editor editor = pref.edit();
+Moshi moshi = new Moshi.Builder().build();
+JsonAdapter<Movie> jsonAdapter = moshi.adapter(Movie.class);
+

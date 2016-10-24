@@ -1,0 +1,8 @@
+private boolean solve(Level level, int maxDepth, int currentDepth, List<Level> possibleSolutions) {
+
+if (gameFieldService.solvedPuzzle(level)) {
+addPossibleSolutions(new Level(level), currentDepth, possibleSolutions);
+
+if (currentDepth < highestHit) {
+highestHit = currentDepth;
+

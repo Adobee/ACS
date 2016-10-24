@@ -1,0 +1,8 @@
+FieldNode transients = classNode.getDeclaredField(&quot;transients&quot;);
+if(transients==null){
+
+transients = new FieldNode(&quot;transients&quot;,Modifier.STATIC|Modifier.PUBLIC,new ClassNode(List.class),classNode,new ListExpression());
+protected FieldNode addSqlTypeMapping(ClassNode classNode, FieldNode fieldNode,String sqlType) {
+FieldNode closure = classNode.getDeclaredField(&quot;mapping&quot;);
+if(closure==null){
+

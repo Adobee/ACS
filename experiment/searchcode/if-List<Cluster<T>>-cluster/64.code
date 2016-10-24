@@ -1,0 +1,11 @@
+private void addCLuster(DatabaseClusterObject cluster) {
+if (!clusterList.contains(cluster)) {
+clusterList.add(cluster);
+} else {
+clusterList.get(clusterList.indexOf(cluster)).setForecastDate(
+* @see edu.opinion.forecast.convert.ClusterManager#begin()
+*/
+public ClusterObject begin() {
+iterator = clusterList.iterator();
+if (!iterator.hasNext()) {
+

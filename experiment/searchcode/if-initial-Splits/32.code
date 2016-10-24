@@ -1,0 +1,11 @@
+tasw = ToBoolean(config.getString(&quot;ie.initialQueries.tupleAsStopWord&quot;).split(SEPARATOR)); //ie.initialQueries.tupleAsStopWord=true,false
+}
+
+return tasw;
+}
+
+private static List<Integer> getSplits(Configuration config) {
+
+if (splits == null){
+splits = createList(ToInteger(config.getString(&quot;ie.initialQueries.split&quot;).split(SEPARATOR))); //ie.initialQueries.split=1,5,1
+

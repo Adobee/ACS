@@ -1,0 +1,8 @@
+package org.mosspaper.objects;
+
+public class MemPerc extends AbsMossObject implements MossObject {
+public String toString() {
+double perc = 0.0;
+if (memInfo.getMemTotal() > 0) {
+perc = (double) (memInfo.getMemTotal() - memInfo.getMemFree())
+

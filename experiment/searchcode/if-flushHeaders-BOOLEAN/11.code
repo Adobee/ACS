@@ -1,0 +1,11 @@
+private final ServletOutputStream outputStream;
+
+private final HeaderCollector headerCollector;
+
+private boolean hasFlushed = false;
+
+public WrappedOutputStream(ServletOutputStream outputStream, HeaderCollector headerCollector) {
+@Override
+public void write(int i) throws IOException {
+if ( !hasFlushed ) {
+

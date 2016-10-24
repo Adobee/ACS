@@ -1,0 +1,11 @@
+return null;
+}
+
+private static IValue applyInfixLong(IValue lhs, Name op, IValue rhs)
+{
+if (op == Names.plus)
+{
+return new LongValue(lhs.longValue() + rhs.longValue());
+}
+if (op == Names.minus)
+

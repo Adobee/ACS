@@ -1,0 +1,9 @@
+public static int chromosomeFitness(Chromosome chromosome){
+int fitness = 0;
+if(chromosome.getIsSolution()){
+fitness += 1000;
+for (int i = 0; i < chromosome.getGeneArray().length; i++) {
+for (int j = 0; j < chromosome.getGeneArray().length; j++) {
+if(!chromosome.getGeneArray()[i][j].getSolution()){
+fitness += 200;
+

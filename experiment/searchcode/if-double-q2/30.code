@@ -1,0 +1,14 @@
+double z = solveCubicForQuartic(-0.5 * p, -r, 0.5 * r * p - 0.125 * q * q);
+double d1 = 2.0 * z - p;
+
+if (d1 < 0) {
+if (d1 > -1.0e-10) {
+return new double [] {};
+}
+}
+
+double d2;
+
+if (d1 < 1.0e-10) {
+d2 = z * z - r;
+

@@ -1,0 +1,9 @@
+Task task = getTask(taskPage);
+if(task==null)
+return false;
+if (task.getTaskState().equals(&quot;init&quot;)) {
+task.setTaskState(&quot;init_off&quot;);
+taskDao.update(task);
+return true;
+} else if(task.getTaskState().equals(&quot;approved_on&quot;)){
+

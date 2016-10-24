@@ -1,0 +1,12 @@
+public class OpenFileException extends Exception {
+private Reason reason;
+
+public static enum Reason {
+public Reason getReason()
+{
+if (reason == null) { return Reason.EXCEPTION; }
+return reason;
+}
+
+public void setReason(Reason reason)
+

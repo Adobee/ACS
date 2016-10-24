@@ -1,0 +1,7 @@
+for(int i = 0; i < s.length(); i++) {
+if(s.charAt(i) >= &#39;0&#39; &amp;&amp; s.charAt(i) <= &#39;9&#39;) {
+numberSeen = true;
+numberAfterE = true;
+} else if(s.charAt(i) == &#39;.&#39;) {
+if(eSeen || pointSeen) {
+

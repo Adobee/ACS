@@ -1,0 +1,13 @@
+public class QuickSort {
+
+public void sort(int[] a, int low, int high) {
+// TODO Auto-generated method stub
+if(low < high){
+sort(a, partition(a, low, high)+1, high);
+}
+}
+
+private int partition(int[] a, int low, int high) {
+// TODO Auto-generated method stub
+int pivot = a[low];
+

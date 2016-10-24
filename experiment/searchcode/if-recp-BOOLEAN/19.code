@@ -1,0 +1,9 @@
+public boolean shutdown() {
+return true;
+}
+
+public boolean connect(IUnknown pSinkIntf, String riid, long provConnID) {
+if (riid.equals(&quot;java.util.logging.Logger&quot;)){ return this.log.connectToRecp(pSinkIntf, riid, provConnID); }
+if (riid.equals(&quot;int&quot;)){ return this.port.connectToRecp(pSinkIntf, riid, provConnID); }
+if (riid.equals(&quot;comanche.Scheduler&quot;)){ return this.s.connectToRecp(pSinkIntf, riid, provConnID); }
+

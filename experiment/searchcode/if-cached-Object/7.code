@@ -1,0 +1,7 @@
+public void uncacheObject(String key){
+for(int i=0;i<this.cachedObjects.size();i++){
+if(this.cachedObjects.get(i).checkKey(key)){
+CachedObject obj = this.cachedObjects.get(i);
+if(obj.checkKey(key)){
+return this.cachedObjects.get(i).getObject();
+

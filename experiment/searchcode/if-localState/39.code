@@ -1,0 +1,14 @@
+public void run()
+{
+State localState = runState();
+for (;;)
+{
+try
+{
+if (PushConnection.access$100() != null) {
+PushConnection.access$100().onStateChange(this.this$0, this, localState);
+}
+if (isTerminal())
+{
+Parse.logI(&quot;com.parse.PushConnection&quot;, this + &quot; finished and is the terminal state. Thread exiting.&quot;);
+

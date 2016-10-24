@@ -1,0 +1,9 @@
+/** The degrees of freedom. */
+private final double degreesOfFreedom;
+/** Inverse cumulative probability accuracy. */
+/** Static computation factor based on degreesOfFreedom. */
+private final double factor;
+
+/**
+* Create a t distribution using the given degrees of freedom.
+

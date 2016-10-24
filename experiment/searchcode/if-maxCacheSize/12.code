@@ -1,0 +1,10 @@
+public class StdApplicationCache implements IApplicationCache {
+private int maxCacheSize = 100;
+private List<Object> cache = Lists.newArrayList();
+return cache.size();
+}
+
+@Override
+public synchronized int getMaxCacheSize() {
+return maxCacheSize;
+

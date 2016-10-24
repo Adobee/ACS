@@ -1,0 +1,7 @@
+public void insert(String type, Object key, Object value) {
+ConcurrentHashMap<Object, Object> objectMap = (ConcurrentHashMap<Object, Object>) basicMapParent.get(type);
+if (objectMap == null) {
+ConcurrentHashMap<Object, Object> objectMap = (ConcurrentHashMap<Object, Object>) basicMapParent.get(type);
+if (objectMap != null) {
+return objectMap.containsKey(key);
+

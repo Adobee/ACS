@@ -1,0 +1,10 @@
+listener = aListener;
+}
+
+public void parse() throws SignatureParserException, ExceptionWrapper {
+if (eatChar(C_GENERIC_START)) {
+case C_ARRAY:
+nextChar();
+listener.array();
+parseTypeSignature();
+

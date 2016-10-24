@@ -1,0 +1,13 @@
+public class LongGenerator implements Generator<Long> {
+private final int maxDigits;
+private long current = 0;
+
+
+public LongGenerator(int maxDigits) {
+private void checkMaxDigits() {
+if (current >= Math.pow(10, maxDigits) - 1) {
+current = 0;
+}
+}
+}
+

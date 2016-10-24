@@ -1,0 +1,11 @@
+public class RequestInitiator extends RequestObject {
+
+private long startTime;
+public Exception initException;
+
+public String toString() {
+public RequestInitiator(long id, long startTime) {
+super(id, true);
+this.startTime = startTime;
+if(Core.logger.shouldLog(Logger.DEBUG,this))
+

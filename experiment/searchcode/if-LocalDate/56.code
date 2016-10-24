@@ -1,0 +1,10 @@
+* with jFin; if not, write to the Free Software Foundation, Inc., 51 Franklin
+* St, Fifth Floor, Boston, MA 02110-1301 USA. </p>
+import org.joda.time.LocalDate;
+
+/**
+* Created by IntelliJ IDEA.
+* User: dmb
+* Date: 06/05/2011
+* Time: 20:15
+

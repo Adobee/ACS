@@ -1,0 +1,9 @@
+if (off < 0 || len < 0 || off + len < 0 || off + len > cbuf.length)
+throw new IndexOutOfBoundsException();
+if (len == 0) return 0;
+
+int cslen = cs.length();
+
+if (position >= cslen) return -1;
+if (position + len > cslen) len = cslen - position;
+

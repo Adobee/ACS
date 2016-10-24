@@ -1,0 +1,8 @@
+public int maxArea(int[] height) {
+int n = height.length;
+if(n<2) return 0;
+int area = (r-l)*Math.min(height[l],height[r]);
+if(area>result) result = area;
+
+if(height[l]<height[r]) l++;
+

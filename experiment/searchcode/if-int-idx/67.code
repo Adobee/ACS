@@ -1,0 +1,7 @@
+int[] tab = new int[len];
+int center = 0;
+int rightEdge = 0;
+for (int idx = 1; idx <= len - 2; idx++) {
+int mirrorIdx = center - (idx - center);
+tab[idx] = rightEdge > idx ? Math.min(tab[mirrorIdx], rightEdge - idx) : 0;
+

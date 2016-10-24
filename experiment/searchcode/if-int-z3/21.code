@@ -1,0 +1,12 @@
+package com.microsoft.z3.enumerations;
+
+/**
+* Z3_symbol_kind
+**/
+public enum Z3_symbol_kind {
+Z3_INT_SYMBOL (0),
+Z3_STRING_SYMBOL (1);
+public static final Z3_symbol_kind fromInt(int v) {
+for (Z3_symbol_kind k: values())
+if (k.intValue == v) return k;
+

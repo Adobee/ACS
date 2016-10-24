@@ -1,0 +1,10 @@
+private PaintFactory() {
+}
+public static Paint getPaint(int color) {
+Paint paint = new Paint();
+paint.setColor(color);
+private static HashMap<Integer, Paint> paints = new HashMap<Integer, Paint>();
+public static Paint getTextPaint(int color) {
+Paint paint = paints.get(color);
+if (paint == null) {
+

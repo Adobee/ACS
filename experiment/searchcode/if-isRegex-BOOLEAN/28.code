@@ -1,0 +1,10 @@
+import org.hamcrest.TypeSafeDiagnosingMatcher;
+
+import java.util.regex.Pattern;
+
+public class IsRegex extends TypeSafeDiagnosingMatcher<String> {
+
+private final Pattern pattern;
+
+public static IsRegex matchesRegex(String regex) {
+

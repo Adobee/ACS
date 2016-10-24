@@ -1,0 +1,8 @@
+public abstract class BaseRefreshHeader {
+public static final int REFRESH_STATE_IDLE = 0;
+public static final int REFRESH_STATE_PULL = 1;
+protected int mRefreshHeaderMaxHeight;
+
+public final void move(int distance, int newY, int oldY) {
+if (distance <= mRefreshHeaderMaxHeight) {
+

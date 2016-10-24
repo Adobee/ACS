@@ -1,0 +1,11 @@
+private static WeeksPool myInstance;
+
+private WeeksPool() {}
+
+public static WeeksPool getInstance() {
+if (myInstance == null) {
+@Override protected Weeks create(int numeral) {
+return new Weeks(numeral);
+}
+}
+

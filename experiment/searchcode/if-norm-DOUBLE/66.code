@@ -1,0 +1,11 @@
+* @param maxNorm the maximum norm per neuron&#39;s weights
+*/
+public void setMaxNorm(double maxNorm)
+{
+if(Double.isNaN(maxNorm) || Double.isInfinite(maxNorm) || maxNorm <= 0)
+for (int i = 0; i < W.rows(); i++)
+{
+Vec W_li = W.getRowView(i);
+double norm = W_li.pNorm(2);
+if (norm >= maxNorm)
+

@@ -1,0 +1,13 @@
+Throwable throwable = cause.getCause();
+
+if ( throwable instanceof SocketTimeoutException )
+return new NetworkFailureResponse( throwable );
+else if ( throwable instanceof ConnectException )
+return new NetworkFailureResponse( throwable );
+}
+
+return cause;
+}
+
+}
+

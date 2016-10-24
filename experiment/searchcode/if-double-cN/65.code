@@ -1,0 +1,14 @@
+* @author zhangxu
+*
+*/
+public class Pow {
+public double pow(double x, int n) {
+if (0 == x)
+return 0;
+if (0 == n || 1 == x)
+private double pPow(double x, int n) {
+if (1 == n)
+return x;
+
+double result = pPow(x, n / 2);
+

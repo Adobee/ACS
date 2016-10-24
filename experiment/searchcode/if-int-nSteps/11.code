@@ -1,0 +1,10 @@
+if (first) t = t0; else t = t1;
+int ii;
+if (first) ii = i0; else ii = i1;
+
+if (ii + nsteps > t.speed.length)
+float max = -99;
+for (int i = ii; i < ii + nsteps; ++i)
+{
+if (t.speed[i] > max) max = t.speed[i];
+

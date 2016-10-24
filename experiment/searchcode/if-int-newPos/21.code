@@ -1,0 +1,12 @@
+private int newPos;
+
+public CopyFilter(int oldPos, int newPos) {
+this.oldPos = oldPos;
+this.newPos = newPos;
+}
+
+@Override
+public void apply(List<? super NImage> images) {
+if (oldPos != newPos) {
+images.set(newPos, (NImage) images.get(oldPos));
+

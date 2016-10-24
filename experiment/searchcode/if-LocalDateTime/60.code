@@ -1,0 +1,8 @@
+package com.github.sandokandias.pojo.to.spreadsheet.format;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+public Optional<String> format(Object value, Optional<String> pattern) {
+if (value == null) {
+return Optional.empty();
+

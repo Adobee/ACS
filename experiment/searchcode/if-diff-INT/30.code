@@ -1,0 +1,11 @@
+public static int[] singleNumber(int[] nums) {
+int diff = 0;
+for (int item: nums) {
+diff ^= item;
+}
+diff = diff &amp; ~(diff-1);
+int[] res = {0,0};
+for (int item: nums) {
+if ((item &amp; diff) == 0)
+res[0] ^= item;
+

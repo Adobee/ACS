@@ -1,0 +1,9 @@
+int divide_L8_number = (int)Math.round(Math.abs(h8 - h7) / (factor * fundamentalWidth));
+if(divide_L8_number == 0)
+divide_L8_number = 1;
+double divide_L8_value = Math.abs(h8 - h7) / (double)divide_L8_number;
+int divide_W1_number = (int)Math.round(Math.abs(v1 - v0) / (factor * fundamentalWidth));
+if(divide_W1_number == 0)
+divide_W1_number = 1;
+double divide_W1_value = Math.abs(v1 - v0) / (double)divide_W1_number;
+

@@ -1,0 +1,6 @@
+public boolean hasQuery(Query query) {
+return queryMap.containsKey(query.hashCode());
+public String getResultForQuery(Query query) throws QueryCacheMissException {
+if (hasQuery(query)) {
+return queryMap.get(query.hashCode()).getLastResult();
+

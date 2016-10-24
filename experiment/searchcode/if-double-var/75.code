@@ -1,0 +1,8 @@
+double[] mu1 = {0, 0};
+double varX1 = Math.pow(.5, 2);
+double varY1 = Math.pow(.5, 2);
+double rho1 = .5;
+double covar1 = calculateCovariance(varX1, varY1, rho1);
+
+double[] mu2 = {1, 1};
+

@@ -1,0 +1,7 @@
+protected ErodingKeyedObjectPool(final KeyedObjectPool<K, V> keyedPool, final ErodingFactor erodingFactor) {
+if (keyedPool == null) {
+throw new IllegalArgumentException(&quot;keyedPool must not be null.&quot;);
+final ErodingFactor factor = getErodingFactor(key);
+synchronized (keyedPool) {
+if (factor.getNextShrink() < now) {
+

@@ -1,0 +1,11 @@
+data[idx++] = value;
+if (idx == size) {
+idx = 0;
+}
+}
+
+public int get(int r) {
+int realIndex = idx - size + r;
+if (realIndex < 0) {
+realIndex += size;
+

@@ -1,0 +1,10 @@
+boolean isInnerFieldReference = f.getType().toString().indexOf(INNER_REFERENCE) > 0 ? true : false;
+
+String innerObject=&quot;&quot;;
+if(isInnerFieldReference) {
+json += &quot;,&quot;;
+}
+
+int innerClassIndex = json.lastIndexOf(skipFieldType);
+if (innerClassIndex > 0) {
+

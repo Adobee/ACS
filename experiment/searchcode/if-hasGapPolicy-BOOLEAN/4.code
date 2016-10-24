@@ -1,0 +1,10 @@
+format = in.readOptionalString();
+if (in.readBoolean()) {
+gapPolicy = GapPolicy.readFrom(in);
+}
+units = in.readOptionalString();
+boolean hasGapPolicy = gapPolicy != null;
+out.writeBoolean(hasGapPolicy);
+if (hasGapPolicy) {
+gapPolicy.writeTo(out);
+

@@ -1,0 +1,14 @@
+public void setIgnoredKeys(String[] ignoredKeys) {
+this.ignoredKeys = ignoredKeys;
+}
+
+public boolean matchIgnores(String[] messagecodes) {
+for (int i = 0; i < ignoredKeys.length; ++ i) {
+if (ArrayUtil.indexOf(messagecodes, ignoredKeys[i]) != -1)
+return true;
+}
+return false;
+}
+
+}
+

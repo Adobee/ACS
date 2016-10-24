@@ -1,0 +1,12 @@
+text = text + &quot;商品总价：&quot; + String.format(&quot;%.2f&quot;, list.get(k).price * list.get(k).number) + &quot;元&quot; +&quot;\n&quot;;
+
+for(int i = 0; i < 9; i++)
+text = text + blank4;
+String remark;
+if(list.get(k).remark == null){
+text = text + &quot;货单备注:&quot; + &quot;\n&quot;;
+
+for(int i = 0; i < 9; i++)
+text = text + blank4;
+if(bill.remark == null){
+

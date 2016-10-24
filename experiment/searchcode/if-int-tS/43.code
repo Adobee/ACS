@@ -1,0 +1,10 @@
+this.update(ts_str);
+}
+
+//    public void update(TimeStamp ts){
+//        Calendar cal=ts.calendar;
+//        int year=cal.get(Calendar.YEAR);
+this.time_str=ts_str;
+//System.out.println(&quot;ts_str: &quot;+ts_str);
+if(ts_str.equals(&quot;not decided&quot;))
+

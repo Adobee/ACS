@@ -1,0 +1,10 @@
+* @see http://technology.chtsai.org/mmseg/
+*/
+public class SmallestVarianceRule extends Rule {
+
+private double smallestVariance = Double.MAX_VALUE;
+
+@Override
+public void addChunk(Chunk chunk) {
+if (chunk.getVariance() <= smallestVariance) {
+

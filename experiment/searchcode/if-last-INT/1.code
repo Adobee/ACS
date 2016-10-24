@@ -1,0 +1,14 @@
+
+public class MergeSortedArray {
+public static void merge(int A[], int m, int B[], int n) {
+if (m==0){
+for(int i=0;i<B.length;i++){
+A[i] = B[i];
+}
+}
+int lastA = m-1;
+int lastB = n-1;
+int last = m+n-1;
+
+while(last>=0&amp;&amp;lastB>=0){
+

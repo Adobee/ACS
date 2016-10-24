@@ -1,0 +1,9 @@
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Reducer;
+
+public class TfidfMappingReducer extends Reducer<Text, Text, Text, Text> {
+String docID = key.toString();
+int termFrequency = 0;
+String[] aValues = null;
+

@@ -1,0 +1,9 @@
+@Override
+public boolean not(boolean var) {
+if (_cache == null) {
+return super.not(var);
+final Boolean varObj = Boolean.valueOf(var);
+
+if (_cache.containsKey(varObj)) {
+return _cache.get(varObj).booleanValue();
+

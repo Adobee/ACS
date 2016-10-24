@@ -1,0 +1,14 @@
+this.grabber = new Ellipse2D.Double(0, 0, 8, 8);
+
+setOpaque(false);
+}
+
+@Override
+public void update(Observable source, Object arg)
+super.paintComponent(g);
+
+if (selectionModel.getSelected().size() < 2)
+return;
+
+Graphics2D g2 = (Graphics2D) g;
+

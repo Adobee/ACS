@@ -1,0 +1,16 @@
+public class Value {
+
+/**
+*
+*/
+public final ValueType valueType;
+
+/**
+*
+*/
+private byte valueCount;
+public byte mergeValueCount(byte b) {
+int temp=valueCount+b;
+if(temp>Byte.MAX_VALUE){
+valueCount=Byte.MAX_VALUE;
+

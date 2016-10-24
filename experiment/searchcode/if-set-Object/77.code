@@ -1,0 +1,10 @@
+public class SetObjectFactory implements ObjectFactory {
+public Object instantiate(ObjectBinder context, Object value, Type targetType, Class targetClass) {
+} else {
+HashSet<Object> set = new HashSet<Object>();
+set.add( context.bind( value ) );
+return set;
+}
+}
+}
+

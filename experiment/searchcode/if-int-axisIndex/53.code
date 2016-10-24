@@ -1,0 +1,12 @@
+public HistogramUpdate(int id, boolean f)
+{
+if (f) id |= FINAL_UPDATE;
+m_id = id;
+}
+
+public void setAxis(final int axisIndex)
+{
+m_id |= AXIS_BASE << axisIndex;
+}
+public boolean axisIsSet(final int axisIndex)
+

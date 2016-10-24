@@ -1,0 +1,10 @@
+return time + getTimeZoneOffset(time, from, to);
+}
+
+private static long getTimeZoneOffset(long time, TimeZone from, TimeZone to) {
+int fromOffset = from.getOffset(time);
+int toOffset = to.getOffset(time);
+int diff = 0;
+
+if (fromOffset >= 0){
+

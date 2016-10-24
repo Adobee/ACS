@@ -1,0 +1,9 @@
+private static ListRewrite judgeBlockToRewrite(ASTNode astNode,
+ASTRewrite rewrite){
+if(astNode instanceof Block){
+ListRewrite listRewrite = getListRewrite(rewrite, parentASTNode);
+if(listRewrite != null){
+switch(parentASTNode.getNodeType()){
+
+case ASTNode.SWITCH_STATEMENT:{
+

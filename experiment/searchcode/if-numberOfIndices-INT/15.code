@@ -1,0 +1,11 @@
+private static int FLOAT_BUFFER_BYTE_SIZE = 4;
+
+private int numberOfVertices;
+private int numberOfIndices;
+
+private FloatBuffer vertices;
+gl.glDrawElements(primitiveType, numberOfIndices,
+GL10.GL_UNSIGNED_SHORT, indices);
+gl.glDisableClientState(GL10.GL_VERTEX_ARRAY);
+if(mTextureId > 0 &amp;&amp; textureCoordinates != null) {
+

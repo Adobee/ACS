@@ -1,0 +1,17 @@
+private TimeoutListener listener;
+private boolean breaked = false;
+
+public Timeout(long timeout, TimeoutListener listener) {
+} catch (InterruptedException e) {
+if (!breaked) {
+e.printStackTrace();
+}
+}
+}
+
+public void breakTimeout() {
+breaked = true;
+interrupt();
+}
+}
+

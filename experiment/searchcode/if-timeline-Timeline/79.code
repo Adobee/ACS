@@ -1,0 +1,12 @@
+public void onStopwatchAdd(Stopwatch stopwatch, Split split, StopwatchSample sample) {
+StopwatchTimeline timeline = getStopwatchTimeline(stopwatch);
+if (timeline != null) {
+timeline.addSplit(split);
+public void onStopwatchStop(Split split, StopwatchSample sample) {
+StopwatchTimeline timeline = getStopwatchTimeline(split.getStopwatch());
+if (timeline != null) {
+timeline.addSplit(split);
+}
+}
+}
+

@@ -1,0 +1,10 @@
+public static Duration parseDuration(final String duration) {
+if(duration.endsWith(&quot;ms&quot;)) {
+return Duration.of(
+Long.parseLong(duration.substring(0, duration.length()-2)),
+ChronoUnit.MILLIS);
+}
+if(duration.endsWith(&quot;s&quot;)) {
+return Duration.of(
+Long.parseLong(duration.substring(0, duration.length()-1)),
+

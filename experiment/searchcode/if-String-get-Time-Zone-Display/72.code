@@ -1,0 +1,13 @@
+public class TimeZoneComparator implements java.util.Comparator<TimeZone> {
+
+public int compare(TimeZone o1, TimeZone o2) {
+
+if (o1.getRawOffset() != o2.getRawOffset()) {
+String n1 = o1.getDisplayName() + &quot; (&quot; + o1.getID() + &quot;)&quot;;
+String n2 = o2.getDisplayName() + &quot; (&quot; + o2.getID() + &quot;)&quot;;
+
+return n1.compareTo(n2);
+}
+
+}
+

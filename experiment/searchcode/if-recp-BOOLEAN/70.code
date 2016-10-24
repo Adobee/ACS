@@ -1,0 +1,7 @@
+return true;
+}
+
+public boolean connect(IUnknown pSinkIntf, String riid, long provConnID) {
+if (riid.equals(&quot;comanche.fraclet.IScheduler&quot;)){ return this.s.connectToRecp(pSinkIntf, riid, provConnID); }
+if (riid.equals(&quot;comanche.fraclet.IAnalyzer&quot;)){ return this.ia.connectToRecp(pSinkIntf, riid, provConnID); }
+

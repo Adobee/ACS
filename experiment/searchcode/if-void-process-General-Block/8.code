@@ -1,0 +1,9 @@
+* May be necessary to override to clean up some processes.
+*
+*/
+public void destroyProcess() {
+setParentDataBlock(null);
+removeAllDataBlocks();
+public PamProcess getParentProcess() {
+if (parentDataBlock != null) return parentDataBlock.getParentProcess();
+

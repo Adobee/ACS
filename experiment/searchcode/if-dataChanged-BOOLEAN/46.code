@@ -1,0 +1,8 @@
+public boolean refreshData()
+{
+Node<T> newRoot = new Node<T>();
+boolean dataChanged = refreshRecursively(root.get(), newRoot, _rootPath);
+if (dataChanged)
+{
+currentVersion.getAndIncrement();
+

@@ -1,0 +1,10 @@
+completed.put(stage, Boolean.valueOf(complete));
+if (!complete) return;
+int i = getStageNumber(stage);
+if (i < stages.length - 1) setStage(stages[i + 1]);
+public void store(WebSession s, Screen screen, String user)
+{
+for (int i = 0; i < stages.length; i++)
+{
+if (hasCompleted(stages[i]))
+

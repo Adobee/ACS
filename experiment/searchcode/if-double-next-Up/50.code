@@ -1,0 +1,8 @@
+double forward = game.time % 100 / 20.0;//game.controls.z;
+double right = game.controls.x;
+double up = game.controls.y;
+double walking = Math.sin(game.time / 6.0) * 0.5;
+double z = (floorPosition + up) / ceiling;
+if (Controller.walk) {
+z = (floorPosition + up + walking) / ceiling;
+

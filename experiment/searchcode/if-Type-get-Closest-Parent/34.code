@@ -1,0 +1,7 @@
+for( Class<? extends IParsedElement> possibleType : possibleTypes )
+{
+if( possibleType.isAssignableFrom( pe.getClass() ) )
+IParseTree parent = child.getParent();
+IParseTree precedingChild = parent.getChildBefore( child );
+if( precedingChild == null )
+

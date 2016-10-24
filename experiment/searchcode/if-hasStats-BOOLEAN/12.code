@@ -1,0 +1,16 @@
+} catch (IOException e) {}
+}
+}
+
+public static void setup(OfflinePlayer player){
+if(!(hasStats(player))){
+String name = player.getUniqueId().toString();
+if(!hasPath(player,&quot;total-xp&quot;)) data.set(&quot;total-xp&quot;, 0);
+try {
+data.save(file);
+} catch (IOException e) {}
+}
+}
+
+public static boolean hasStats(Player player){
+

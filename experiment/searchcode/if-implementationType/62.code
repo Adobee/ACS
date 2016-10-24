@@ -1,0 +1,9 @@
+String implementationType;
+
+void verify() {
+if (implementationType == null) {
+throw new GradleException(&quot;Invalid plugin metadata: No implementation type specified.&quot;);
+throw new GradleException(String.format(&quot;Invalid plugin metadata: Unsupported implementation type: %s.&quot;, implementationType));
+}
+if (implementation == null) {
+

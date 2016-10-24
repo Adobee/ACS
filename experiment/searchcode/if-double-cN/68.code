@@ -1,0 +1,9 @@
+import cn.edu.buaa.sei.SVI.struct.core.variable.base.DoubleVariable;
+import cn.edu.buaa.sei.SVI.struct.core.variable.impl.TypedVariableImpl;
+public Double read() throws Exception {
+if(this.val==null)return null;
+else return (Double) this.val;
+}
+
+}
+

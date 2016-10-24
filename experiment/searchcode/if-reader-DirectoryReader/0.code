@@ -1,0 +1,9 @@
+private DirectoryReader directoryReader;
+
+public XmlDirectoryReader(DirectoryReader directoryReader) {
+this.directoryReader = directoryReader;
+List<DirectoryElement> elements = directoryReader.read(directoryName);
+
+if (elements.isEmpty()) {
+return &quot;<directory />&quot;;
+

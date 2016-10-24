@@ -1,0 +1,6 @@
+public SeqDecisionModel(ClassifierGuide guide, DecisionModel prevDecisionModel, String branchedDecisionSymbol) throws MaltChainedException {
+if (branchedDecisionSymbol != null &amp;&amp; branchedDecisionSymbol.length() > 0) {
+setDecisionIndex(prevDecisionModel.getDecisionIndex() + 1);
+setPrevDecisionModel(prevDecisionModel);
+if (branchedDecisionSymbols != null &amp;&amp; branchedDecisionSymbols.length() > 0) {
+

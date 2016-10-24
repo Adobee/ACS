@@ -1,0 +1,10 @@
+// sign bit is in the same place for long and double:
+boolean aIsNegative = rawBitsA < 0;
+boolean bIsNegative = rawBitsB < 0;
+
+// compare signs
+if (aIsNegative != bIsNegative) {
+if (biasedExponentA == 0) {
+if (biasedExponentB == 0) {
+return compareSubnormalNumbers(rawBitsA &amp; FRAC_MASK, rawBitsB &amp; FRAC_MASK, aIsNegative);
+

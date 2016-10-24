@@ -1,0 +1,11 @@
+int styleStart = styleString.indexOf(styleName);
+if (styleStart != -1)
+{
+int styleEnd = styleString.indexOf(&quot;;&quot;, styleStart);
+if (styleEnd == -1)
+int valueStart = styleString.indexOf(&quot;:&quot;, styleStart);
+if (valueStart != -1)
+{
+int[] indexes = { valueStart + 1, styleEnd };
+return indexes;
+

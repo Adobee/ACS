@@ -1,0 +1,9 @@
+public class PageUtils {
+public static int getFirstNumber(int currentPage, int pageSize) {
+if (pageSize <= 0)
+public static int getLastNumber(int currentPage, int pageSize,
+int totalCount) {
+int last = currentPage * pageSize;
+if (last > totalCount)
+return totalCount;
+

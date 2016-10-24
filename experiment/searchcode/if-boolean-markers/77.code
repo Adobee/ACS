@@ -1,0 +1,9 @@
+public static void drawMarkers(GoogleMap map, List<MarkerOptions> stations){
+for(MarkerOptions st:stations){
+if(!addedYet(st)){
+markers.add(map.addMarker(st));
+public static boolean removeMarkers(){
+boolean result=false;
+if(!(markers.size()==0)){
+for(Marker m:markers){
+

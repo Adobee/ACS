@@ -1,0 +1,8 @@
+public Object format(Object value, Map<Object, Object> formatRule) {
+Object formatValue=formatRule.get(value);
+if(formatValue==null){
+formatValue=formatRule.get(value+&quot;&quot;);
+if(formatValue==null){
+formatValue=formatRule.get(&quot;&#39;&quot;+value+&quot;&#39;&quot;);
+if(formatValue==null){
+

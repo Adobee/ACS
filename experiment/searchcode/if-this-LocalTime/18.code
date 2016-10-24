@@ -1,0 +1,11 @@
+private static final long serialVersionUID = 1L;
+private int localTime;
+
+public LogicalTimeStamp(String localName) {
+super(localName);
+this.localTime = 0;
+LogicalTimeStamp logicalTimeStamp = (LogicalTimeStamp)timeStamp;
+if(this.localTime < logicalTimeStamp.getLocalTime()) {
+return -1;
+} else if(this.localTime > logicalTimeStamp.getLocalTime()) {
+

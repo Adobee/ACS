@@ -1,0 +1,9 @@
+lastAlbum = album;
+if (album != null) {
+int numStocked = album.getStockNumber();
+add(new GLabel(&quot;Album [&quot; + album.getAlbumName() +&quot;] by [&quot; + album.getBandName() + &quot;]&quot;), 10, (getHeight()- BAR_HEIGHT)/2 - SPACE);
+
+double nextX = SPACE;
+for (int i =0; i<numStocked; i++){
+double barLength = (getWidth() / (double)MAX_INVENTORY) - SPACE;
+

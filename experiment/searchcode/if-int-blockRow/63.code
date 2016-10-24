@@ -1,0 +1,6 @@
+public static Matrix createFillLocal(String matrixName, int rows, int cols,
+float fill) {
+Matrix matrix = new Matrix(matrixName, rows, cols);
+for (int blockRow = 0; blockRow <= matrix._blockRows; blockRow++) {
+for (int blockCol = 0; blockCol <= matrix._blockCols; blockCol++) {
+

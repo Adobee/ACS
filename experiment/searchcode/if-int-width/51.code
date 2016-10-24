@@ -1,0 +1,9 @@
+public static final int repeat(int x, int y, int width, int height) {
+return repeat(WrapType.REPEAT, x, y, width, height);
+}
+
+
+public static final int repeat(WrapType type, int x, int y, int width, int height) {
+
+if (type == WrapType.REPEAT) {
+

@@ -1,0 +1,13 @@
+return B[i];
+}
+
+public boolean inBounds(double [] pt) {
+for(int i=0; i<pt.length; i++) {
+if (pt[i] > B[i]) return false;
+return true;
+}
+
+public boolean inBounds(IntDoubleVector pt) {
+for(int i=0; i<A.length; i++) {
+if (pt.get(i) > B[i]) return false;
+

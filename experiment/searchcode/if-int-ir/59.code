@@ -1,0 +1,12 @@
+public IRTraversable() {
+
+}
+
+public IRTraversable upwardSearch(Class<? extends IR> irClass, int maxDepth) {
+IRTraversable curr = this;
+for (int i = 0; i <= maxDepth; i ++){
+if (curr==null){
+return null;
+}
+if (irClass.isInstance(curr.ir)){
+

@@ -1,0 +1,12 @@
+private Collection<TbLineaFac> tbLineaFacsById;
+
+public TbFacturaVenta() {
+}
+
+public TbFacturaVenta(Integer id, Date facDate, Double sub, Double total, Double impuestos, String address, String autorization) {
+if (o == null || getClass() != o.getClass()) return false;
+
+TbFacturaVenta that = (TbFacturaVenta) o;
+
+if (id != null ? !id.equals(that.id) : that.id != null) return false;
+

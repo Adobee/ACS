@@ -1,0 +1,10 @@
+@Override
+public boolean process(Event event) {
+if(!(event instanceof VMEvent)) return false;
+VMEvent vmAssertEvent = (VMEvent) event;
+return process(vmAssertEvent);
+}
+
+abstract public boolean process(VMEvent event) ;
+}
+

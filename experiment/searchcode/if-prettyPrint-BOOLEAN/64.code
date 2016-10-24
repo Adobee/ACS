@@ -1,0 +1,12 @@
+public class MJNew extends MJExpression {
+public MJNew(String name) {
+if(name == &quot;int&quot;)
+this.type = MJType.getIntType();
+else if(name == &quot;boolean&quot;)
+this.type = MJType.getClassType(name);
+}
+
+public MJNew(String name, boolean isArray) {
+if(isArray)
+this.type = MJType.getArrayType(name);
+

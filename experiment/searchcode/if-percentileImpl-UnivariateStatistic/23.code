@@ -1,0 +1,8 @@
+private UnivariateStatistic minImpl = new Min();
+/** Percentile statistic implementation - can be reset by setter. */
+private UnivariateStatistic percentileImpl = new Percentile();
+public double getPercentile(double p) throws MathIllegalStateException, MathIllegalArgumentException {
+
+if(percentileImpl instanceof Percentile) {
+((Percentile)percentileImpl).setQuantile(p);
+

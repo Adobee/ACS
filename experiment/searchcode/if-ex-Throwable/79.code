@@ -1,0 +1,11 @@
+public Throwable getRootCause() {
+Throwable cause = this.getCause();
+
+if (cause == null) {
+return this.getRootCause(cause);
+}
+}
+
+private Throwable getRootCause(Throwable ex) {
+Throwable cause = ex.getCause();
+

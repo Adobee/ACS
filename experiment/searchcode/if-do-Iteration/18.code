@@ -1,0 +1,11 @@
+import javax.servlet.jsp.tagext.IterationTag;
+import javax.servlet.jsp.tagext.Tag;
+import javax.servlet.jsp.tagext.TagSupport;
+return Tag.EVAL_BODY_INCLUDE;
+}
+
+@Override
+public int doAfterBody() throws JspException {
+x--;
+if (x > 0) {
+

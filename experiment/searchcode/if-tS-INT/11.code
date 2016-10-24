@@ -1,0 +1,12 @@
+public void setTsUsers_1(TsUsers tsUsers_1) {
+this.tsUsers_1 = tsUsers_1;
+}
+
+public boolean equals(Object other) {
+if ((this == other))
+return true;
+if ((other == null))
+return false;
+if (!(other instanceof TsFocusId))
+return false;
+

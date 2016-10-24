@@ -1,0 +1,15 @@
+private final String journalDir;
+
+private final boolean createDir;
+
+private final Journal jmsJournal;
+
+private volatile boolean started;
+private void checkAndCreateDir(final String dir, final boolean create)
+{
+File f = new File(dir);
+
+if (!f.exists())
+{
+if (create)
+

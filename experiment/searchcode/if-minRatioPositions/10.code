@@ -1,0 +1,13 @@
+final int cmp = Precision.compareTo(ratio, minRatio, maxUlps);
+if (cmp == 0) {
+minRatioPositions.add(i);
+} else if (cmp < 0) {
+minRatioPositions.add(i);
+}
+}
+}
+
+if (minRatioPositions.size() == 0) {
+return null;
+} else if (minRatioPositions.size() > 1) {
+

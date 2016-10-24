@@ -1,0 +1,8 @@
+int right = 0;  // [left, right]是当前能覆盖的区间
+if (nums.length == 1) return 0;
+
+while (left <= right) { // 尝试从每一层跳最远
+for (int i = left; i <= old_right; ++i) {
+int new_right = i + nums[i];
+if (new_right >= nums.length - 1) return step;
+

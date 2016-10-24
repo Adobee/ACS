@@ -1,0 +1,14 @@
+* 获取指令1：获取硬件是不是第一次启动（掉电上电后第一次同步要用）
+*/
+public class GetPacketSync extends GetPacket {
+
+/**
+* 返回的同步标志位， true表示手环需要同步
+*/
+public boolean res_sync;
+protected boolean handle(byte[] bytes){
+super.handle(bytes);
+
+if(bytes == null)
+return false;
+

@@ -1,0 +1,9 @@
+return create(filtered.tail(), filter);
+}
+
+@Override
+public boolean isEmpty() {
+return filtered.isEmpty();
+LazySeq<U> next = applyFilter(filtered, filter);
+if(next.isEmpty()) return new Empty<>();
+

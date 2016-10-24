@@ -1,0 +1,8 @@
+super.save(output);
+if (!active) {
+return;
+}
+output.write(&quot;shape: &quot; + shape + &quot;\n&quot;);
+shape = ParticleEmitter.SpawnShape.valueOf(CommonParser.readString(reader, &quot;shape&quot;));
+if (shape == ParticleEmitter.SpawnShape.ellipse) {
+

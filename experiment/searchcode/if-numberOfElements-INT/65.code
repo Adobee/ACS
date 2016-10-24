@@ -1,0 +1,17 @@
+import java.lang.reflect.Array;
+
+/**
+* @author Stefan Lange
+*
+*/
+public class Stack<Item> {
+
+private int numberOfElements;
+private Item[] a;
+* Holt ein Object vom Stack
+* @return Object
+*/
+public Item pop(){
+if(this.numberOfElements == 0)
+throw new StackUnderflowException();
+

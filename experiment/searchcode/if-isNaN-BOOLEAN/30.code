@@ -1,0 +1,9 @@
+boolean processUpdated = false;
+if (!Float.isNaN(process.start.pressure)) {
+if (!Float.isNaN(process.end.pressure)) {
+process.end.pressure = process.start.pressure;
+processUpdated=true;
+}
+} else if (!Float.isNaN(process.end.pressure)) {
+process.start.pressure = process.end.pressure;
+

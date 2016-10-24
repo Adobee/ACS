@@ -1,0 +1,9 @@
+TermStore term = termIterator.next();
+
+boolean suppressed = false;
+if(suppressRules){
+String termToRewrite = term.text;
+String rewrittenTermText = RewriteRules.findAndRewriteParenthesesWithSemanticType(term.text);
+if(!rewrittenTermText.equals(&quot;&quot;)){
+if(suppressRules){
+

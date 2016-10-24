@@ -1,0 +1,6 @@
+public class RawGenerator implements ValueStripper2ResultListener, ResultGenerator {
+private List<ChunkedResultHandler> resultHandlers;
+
+public void onNewResult(String label, boolean isNumeric, String value, LogEvent entry) {
+if (resultHandlers != null) {
+

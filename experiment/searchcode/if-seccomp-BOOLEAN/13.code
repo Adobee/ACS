@@ -1,0 +1,9 @@
+final Arch arch = ARCHITECTURES.get(Constants.OS_ARCH);
+boolean supported = Constants.LINUX &amp;&amp; arch != null;
+if (supported == false) {
+final int bogusArg = 0xf7a46a5c;
+
+// test seccomp(BOGUS)
+long ret = linux_syscall(arch.seccomp, bogusArg);
+if (ret != -1) {
+

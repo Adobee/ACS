@@ -1,0 +1,16 @@
+private static MenuSelectHero instant;
+
+public MenuSelectHero() {
+instant = this;
+}
+
+@Override
+public boolean process() {
+public static MenuSelectHero getInstant() {
+if (instant == null)
+instant = new MenuSelectHero();
+return instant;
+}
+
+public static void main(String[] args) throws Exception {
+

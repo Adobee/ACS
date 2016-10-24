@@ -1,0 +1,14 @@
+public default boolean addAll(Source<? extends T> source) {
+boolean added = true;
+
+Iterator<? extends T> iterator = source.cursor().toIterator();
+while (iterator.hasNext()) {
+if (!add(iterator.next())) {
+added = false;
+}
+}
+
+return added;
+}
+}
+

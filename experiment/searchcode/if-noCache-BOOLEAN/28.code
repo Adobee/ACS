@@ -1,0 +1,8 @@
+private static final boolean DEFAULT_NOCACHE = true;
+
+private static ObjectMapper mapper = new ObjectMapper();
+private static HttpServletResponse initResponseHeader( final String contentType, final String... headers ) {
+// 分析headers参数
+String encoding = DEFAULT_ENCODING;
+boolean noCache = DEFAULT_NOCACHE;
+

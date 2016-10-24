@@ -1,0 +1,19 @@
+private Integer item = 0;
+private Long bytesRead = 0l;
+private Long contentLength = -1l;
+
+public UploadStatus() {}
+
+public UploadStatus(Integer item, Long bytesRead, Long contentLength) {
+return getPercentageComplete() == 100;
+}
+
+public Long getPercentageComplete() {
+if (contentLength < 0) {
+return -1l;
+}
+
+return ((100 * bytesRead) / contentLength);
+}
+}
+

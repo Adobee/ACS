@@ -1,0 +1,11 @@
+public boolean isOneEditDistance(String s, String t) {
+if (Math.abs(s.length() - t.length()) > 1) {
+return false;
+}
+if (s.length() > t.length()) {
+t = temp;
+}
+
+for (int i = 0; i < s.length(); i++) {
+if (s.charAt(i) != t.charAt(i)) {
+

@@ -1,0 +1,16 @@
+private static Map<String, String> FORMAT_TO_CONTENTTYPE = new HashMap<String, String>();
+
+static
+{
+//音频
+FORMAT_TO_CONTENTTYPE.put( &quot;mp3&quot;, &quot;audio&quot; );
+String contentType = FORMAT_TO_CONTENTTYPE.get(&quot;null&quot;);
+
+if ( attFormat != null )
+{
+contentType = (String)FORMAT_TO_CONTENTTYPE.get( attFormat.toLowerCase() );
+}
+return contentType;
+}
+}
+

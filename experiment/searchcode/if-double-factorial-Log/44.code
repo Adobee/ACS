@@ -1,0 +1,12 @@
+
+public class LogOfFactorial {
+public static double compute(int n) {
+if(n == 1) return 0;
+return Math.log(n) + compute(n - 1);
+}
+
+public static void main(String[] args) {
+StdOut.print(compute(1000));
+}
+}
+

@@ -1,0 +1,7 @@
+// Determine the order (will apply to the first comparator).
+boolean mainOrder = false; // true = asc; false = desc
+if (oType == null || &quot;asc&quot;.compareToIgnoreCase(oType) != 0) {
+ComparatorChain comparator = new ComparatorChain();
+if (sort.equalsIgnoreCase(SORT_DATE)) {
+comparator.addComparator(Paper.dateComparator, mainOrder);
+

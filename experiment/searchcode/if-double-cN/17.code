@@ -1,0 +1,8 @@
+frwnml1(String fname, String name, String[] cn, double[] ddata,
+String[] sdata, int iunit, int isign, int[] ml, int[] ms,
+// time = elapsed time in seconds
+long jclock, nclock;
+double tick = 1.0/1000000000.0;
+if (icntrl==0)
+return;
+

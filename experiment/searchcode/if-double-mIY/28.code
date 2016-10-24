@@ -1,0 +1,11 @@
+public boolean intersectsWith(double x, double y) {
+if (x >= minX &amp;&amp; x <= maxX &amp;&amp; y >= minY &amp;&amp; y <= maxY)
+return true;
+translate(x, 0);
+
+return new double[] { x, y };
+}
+
+public double getLargestXOffset(AABB bb, double x) {
+if (maxY <= bb.minY || minY >= bb.maxY)
+

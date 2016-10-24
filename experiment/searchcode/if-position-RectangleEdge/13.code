@@ -1,0 +1,8 @@
+public void draw(final Graphics2D graphics2D, final Rectangle2D rectangle2D) {
+final RectangleEdge position = this.getPosition();
+if (position == RectangleEdge.TOP || position == RectangleEdge.BOTTOM) {
+this.drawHorizontal(graphics2D, rectangle2D);
+}
+else {
+if (position != RectangleEdge.LEFT &amp;&amp; position != RectangleEdge.RIGHT) {
+

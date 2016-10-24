@@ -1,0 +1,7 @@
+* @author Serban Balamaci
+*/
+public class AnnounceMasterAndSignalStartWorkOp extends AbstractAgentOp<Boolean> {
+public Boolean call() throws Exception {
+boolean masterChanged = getClusterAgentService().setMaster(masterUuid);
+if(masterChanged) {
+

@@ -1,0 +1,10 @@
+return this.historyCount;
+}
+
+protected int translateGet(int toFetch) {
+if (this.oldestAt == 0) {
+return toFetch;
+}
+int newIndex = toFetch + this.oldestAt;
+if (newIndex >= this.historyCount) {
+

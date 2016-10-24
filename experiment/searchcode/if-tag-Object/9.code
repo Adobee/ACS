@@ -1,0 +1,7 @@
+public class UserTagParser extends MatjiDataParser {
+public UserTag getMatjiData(JsonObject object) throws MatjiException {
+if (object == null) return null;
+
+UserTag userTag = new UserTag();
+userTag.setId(getInt(object, &quot;id&quot;));
+

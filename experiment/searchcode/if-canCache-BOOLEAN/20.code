@@ -1,0 +1,6 @@
+* invoked before call the real object. return a Response if the request can be cached, otherwise null.
+Response response = this.canCache(root, args, session);
+
+if (response != null)
+return response;
+

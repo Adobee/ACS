@@ -1,0 +1,8 @@
+public void follow(User follower, User followee) {
+final boolean followExists = 0 != followFinder.where()
+.conjunction()
+.add(Expr.eq(&quot;followee.userId&quot;, followee.userId))
+.findRowCount();
+
+if (followExists) {
+

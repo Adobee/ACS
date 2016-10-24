@@ -1,0 +1,11 @@
+import com.opengamma.strata.collect.ArgChecker;
+import com.opengamma.strata.collect.array.DoubleArray;
+
+/**
+* Parent class for root-finders that calculate a root for a vector function
+public abstract class VectorRootFinder implements SingleRootFinder<DoubleArray, DoubleArray> {
+
+/**
+* {@inheritDoc}
+* Vector root finders only need a single starting point; if more than one is provided, the first is used and any other points ignored.
+

@@ -1,0 +1,8 @@
+ListNode tmpA = result;
+ListNode tmpB = l2;
+while(tmpA != null) {
+if(tmpB == null) {
+tmpB = new ListNode(0);
+}
+int tmp = tmpA.val + tmpB.val;
+

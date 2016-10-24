@@ -1,0 +1,9 @@
+Map<TypeVariable<?>, Type> typeVarAssigns) {
+if (toType == null || toType instanceof Class<?>) {
+return isAssignable(type, (Class<?>) toType);
+if (toType instanceof ParameterizedType) {
+return isAssignable(type, (ParameterizedType) toType, typeVarAssigns);
+}
+
+if (toType instanceof GenericArrayType) {
+

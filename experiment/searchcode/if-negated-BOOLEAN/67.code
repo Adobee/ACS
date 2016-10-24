@@ -1,0 +1,8 @@
+public Value getNegatedValue() {
+return negatedValue;
+}
+
+public static Value create(Value negatedValue) {
+if (negatedValue instanceof ConstBooleanValue)
+return ConstBooleanValue.get(!((ConstBooleanValue)negatedValue).getValue());
+

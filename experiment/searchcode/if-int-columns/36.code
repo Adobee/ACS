@@ -1,0 +1,8 @@
+columns = new Schema.Column[baseSchema.columns.length + (newColumns == null ? 0 : newColumns.length)];
+int i = 0;
+for (Schema.Column c : baseSchema.columns)
+columns[i++] = c;
+if (newColumns != null) {
+for (Schema.Column c : newColumns)
+columns[i++] = c;
+

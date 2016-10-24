@@ -1,0 +1,12 @@
+public Solution4{
+public int divide(int dividend, int divisor) {
+boolean negative=dividend>0&amp;&amp;divisor<0||dividend<0&amp;&amp;divisor>0;
+divisor=Math.abs(divisor);
+int digit=0;
+while((dividend>>1)>=divisor)
+{
+divisor<<1;
+digit++;
+}
+while(digit>=0){
+

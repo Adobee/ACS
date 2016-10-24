@@ -1,0 +1,11 @@
+final BigInteger absValue = value.abs();
+final boolean simpleFormat = useSimpleFormat(radix, absValue);
+
+if (simpleFormat) {
+throw new IllegalArgumentException(&quot;Unsupported radix: &quot; + radix);
+}
+}
+
+private boolean useSimpleFormat(int radix, double absValue) {
+if (radix != 10) {
+

@@ -1,0 +1,10 @@
+private String querydnsLRU(String dns) throws UnknownHostException {
+if (lru.size() < size) {// 如果栈没有满
+if (DNS.containsKey(dns)) {
+} else {
+/*
+* 栈满了，且DNS缓存中存在指定的项，将栈底的元素移除，将这个指定的项压入栈顶。 将DNS缓存中的指定项返回
+*/
+if (DNS.containsKey(dns)) {
+lru.remove(0);
+

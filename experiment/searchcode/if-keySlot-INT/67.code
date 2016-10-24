@@ -1,0 +1,8 @@
+return clusterKeySlot(RESP.toBytes(key));
+}
+
+default int clusterKeySlot(final byte[] key) {
+return (int) sendCmd(CLUSTER, KEYSLOT.prim(), key);
+final String port = nodeInfo.substring(startPort + 1, endPort);
+if (Integer.parseInt(port) == hostPort.getPort()) {
+

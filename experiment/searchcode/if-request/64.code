@@ -1,0 +1,12 @@
+package code;
+
+public class Teller {
+
+private OpenAccountHandler openAccountRequest;
+private WithdrawMoneyHandler withdrawMoneyRequest;
+public boolean handleRequest(MyRequest myRequest) {
+if(openAccountRequest.handleRequest(myRequest)){
+return true;
+}
+if(withdrawMoneyRequest.handleRequest(myRequest)){
+

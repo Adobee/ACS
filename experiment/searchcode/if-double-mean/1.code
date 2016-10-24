@@ -1,0 +1,11 @@
+package util;
+
+public class Statistics {
+
+public static double aritmeticMean(double... values) {
+meanY = meanY + (Statistics.aritmeticMean(y));
+
+double result = 0;
+
+if (x.length == y.length){
+

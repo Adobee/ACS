@@ -1,0 +1,9 @@
+import org.jboss.modules.ModuleIdentifier;
+import org.jboss.modules.ModuleLoadException;
+import org.jboss.modules.ModuleLoader;
+protected ModuleSpec findModule(ModuleIdentifier moduleIdentifier) throws ModuleLoadException {
+
+final ModuleSpec moduleSpec = moduleSpecs.get(moduleIdentifier);
+
+if(moduleSpec == null) {
+

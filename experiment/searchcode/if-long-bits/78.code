@@ -1,0 +1,11 @@
+return Double.compare(this.x, that.x) == 0 &amp;&amp; Double.compare(this.y, that.y) == 0;
+}
+
+@Override
+public int hashCode() {
+long bitsX = Double.doubleToLongBits(x);
+long bitsY = Double.doubleToLongBits(y);
+return 31 * (int) (bitsX ^ (bitsX >>> 32)) + (int) (bitsY ^ (bitsY >>> 32));
+}
+}
+

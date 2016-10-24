@@ -1,0 +1,12 @@
+public UtilBytes(long bytes) {
+super(bytes);
+}
+
+/**
+* Returns this as a string.
+* @return this as a string.
+private long append(long bytes, StringBuilder buffer, long timeUnit, String description, boolean comma) {
+long time = bytes / timeUnit;
+if (!comma || time > 0) {
+buffer.append(time).append(&#39; &#39;).append(description).append(time == 1 ? &quot;&quot; : &quot;s&quot;).append(comma ? &quot;, &quot; : &quot;&quot;);
+

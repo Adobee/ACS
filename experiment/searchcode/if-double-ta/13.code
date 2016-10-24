@@ -1,0 +1,8 @@
+public TaV2Vectorizier(TaTohlcvWindow w) {
+super(4, w);
+if (w.getMaxWidth() < atrDays) {
+throw new TaException(&quot;&quot;);
+public Vector vectorize(int idx) {
+if (idx + atrDays > this.window.getMaxWidth()) {
+throw new TaException(&quot;no enough data.&quot;);
+

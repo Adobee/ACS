@@ -1,0 +1,9 @@
+final double[][] values = new double[nStepsP][nStepsP];
+double priceTmp1 = assetPrice1;
+for (int i = 0; i < nStepsP; ++i) {
+double priceTmp2 = assetPrice2;
+final double[][] values = new double[nNodes][nNodes];
+double priceTmp1 = assetPrice1;
+for (int i = 0; i < nNodes; ++i) {
+double priceTmp2 = assetPrice2;
+

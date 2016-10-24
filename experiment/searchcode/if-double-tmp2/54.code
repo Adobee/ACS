@@ -1,0 +1,12 @@
+private double derivative_o_p(int p){
+double c, a, b, x;
+double tmp1, tmp2;
+double denom;
+double retval=0;
+x = super.getPreNodes().get(0).getValue();
+else
+retval = -Math.log(tmp1*tmp1)*tmp2/denom;
+break;
+case 2: /* partial mf to partial c */
+if (x == c)
+

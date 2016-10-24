@@ -1,0 +1,5 @@
+Properties prop = Sys.readProp(getClass().getClassLoader(), configFile);
+
+sameHost = Boolean.parseBoolean(prop.getProperty(&quot;sameHost&quot;));
+downloadTimeout = Long.parseLong(prop.getProperty(&quot;downloadTimeout&quot;));
+

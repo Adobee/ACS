@@ -1,0 +1,14 @@
+package business;
+
+public class Asset {
+
+public Asset(double mean, double range)
+{
+this.mean = mean;
+public Asset(double mean) {
+this.mean = mean;
+range = 0;
+initialInvestment = invested = new Money(0);
+}
+public void setMeanReturn(double mean) {
+

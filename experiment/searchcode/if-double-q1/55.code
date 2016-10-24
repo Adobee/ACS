@@ -1,0 +1,9 @@
+* @param q2 the right quaternion
+*/
+public final void mulInverse(Quat4d q1, Quat4d q2) {
+double n = norm();
+// zero-div may occur.
+public final void mulInverse(Quat4d q1) {
+double n = norm();
+// zero-div may occur.
+

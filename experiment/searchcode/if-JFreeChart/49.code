@@ -1,0 +1,6 @@
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.plot.PiePlot;
+import org.jfree.chart.servlet.ServletUtilities;
+for (NoticePeople noticePeople : nps) {
+if(noticePeople.getTaskByTaskId().getDate().substring(0,7).equals(month)){
+

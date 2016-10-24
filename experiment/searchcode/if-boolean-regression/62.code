@@ -1,0 +1,9 @@
+package ru.compscicenter.ranking.trees;
+
+import ru.compscicenter.ranking.RegressionModel;
+import ru.compscicenter.ranking.data.Instance;
+public double predict(Instance instance) {
+RegressionNode current = root;
+while (!current.isLeaf()) {
+if (instance.featureValue(current.splitIndex) <= current.splitValue) {
+

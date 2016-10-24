@@ -1,0 +1,7 @@
+CS2 cs2 = provider.getCS2(instructionsDb, configsDb, scriptsDb, opcodesDb, id);
+if (cs2 == null)
+throw new DecompilerException(&quot;Couldn&#39;t find cs2:&quot; + id);
+
+FunctionInfo info = scriptsDb.getInfo(id);
+if (info != null) {
+

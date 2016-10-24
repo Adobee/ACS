@@ -1,0 +1,9 @@
+double meanY = 0, meanX = 0, tStat = 0 ;
+double meanU = 0, varU = 0, zScore = 0;
+double pValue1 = 0, pValue2 = 0;
+String groupNameSmall = &quot;&quot;, groupNameLarge = &quot;&quot;; // small means small in group size
+//showError(e + &quot;&quot;);
+}
+try {
+varU = result.getVarianceU();//((Double)result.getTexture().get(TwoIndependentWilcoxonResult.P_VALUE)).doubleValue();
+

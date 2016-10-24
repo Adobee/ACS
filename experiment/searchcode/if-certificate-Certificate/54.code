@@ -1,0 +1,7 @@
+certificateTitleView.setText(certificate.getTitle());
+
+String certificateDescriptionLocal = null;
+if (certificate.getType() == CertificateType.distinction) {
+certificateDescriptionLocal = String.format(certificateDistinctionString, certificate.getTitle());
+} else if (certificate.getType() == CertificateType.regular) {
+

@@ -1,0 +1,12 @@
+import static com.facebook.drawee.drawable.ScalingUtils.ScaleType;
+
+/**
+* Tests for scale type calculations.
+*/
+@RunWith(RobolectricTestRunner.class)
+ScaleType scaleType) {
+
+mExpectedMatrix.reset();
+if (scaleType == ScaleType.CENTER) {
+Assert.assertEquals(1.0f, scaleX, 0);
+

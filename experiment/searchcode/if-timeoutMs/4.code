@@ -1,0 +1,10 @@
+public final class WatchDog implements Runnable {
+
+private final Thread monitoredThread;
+
+private final long timeoutMs;
+private final Object syncObject = new Object();
+
+public WatchDog(long timeoutMs, Thread monitoredThread) {
+this.monitoredThread = monitoredThread;
+

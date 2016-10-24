@@ -1,0 +1,13 @@
+GM.drawTexture(x, y, 23, 23, 1, 0);
+
+for(Block bl : Common.blocks)
+{
+if(bl.x == x &amp;&amp; bl.y == y &amp;&amp; bl.eatable &amp;&amp; bl.eatenLength != 10)
+{
+Common.removeBlocks.add(bl);
+Common.addFood = true;
+}
+}
+}
+}
+

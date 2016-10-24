@@ -1,0 +1,10 @@
+if((n>2)&amp;&amp;(n<11)){
+exactPValue=distribution.computeExactProbability((int)n,R);
+}
+else{
+if((n>10)&amp;&amp;(n<31)){
+report+=&quot;R statistic: &quot;+nf6.format(R)+&quot;\n&quot;;
+
+if((n>2)&amp;&amp;(n<11)&amp;&amp;(exactPValue>-1.0)){
+report+=&quot;Exact P-Value: &quot;+nf6.format(exactPValue)+&quot;\n&quot;;
+

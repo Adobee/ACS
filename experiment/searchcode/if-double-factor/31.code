@@ -1,0 +1,11 @@
+public class AmbientLightSource3d {
+
+protected double lightingFactor;
+
+public AmbientLightSource3d(double lightningFactor) {
+return lightingFactor;
+}
+
+public void setLightingFactor(double lightingFactor) {
+if (!MathUtils.isInRangeInclusive(lightingFactor, 0, 1)) {
+

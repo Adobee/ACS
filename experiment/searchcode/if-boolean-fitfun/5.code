@@ -1,0 +1,10 @@
+res += 100 * (x[i]*x[i] - x[i+1]) * (x[i]*x[i] - x[i+1]) +
+(x[i] - 1.) * (x[i] - 1.);
+return res;
+}
+public boolean isFeasible(double[] x) {return true; } // entire R^n is feasible
+public static void main(String[] args) {
+IObjectiveFunction fitfun = new Rosenbrock();
+
+// new a CMA-ES and set some initial values
+

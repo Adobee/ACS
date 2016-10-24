@@ -1,0 +1,12 @@
+private double real;
+private double imaginary;
+public Complex()
+{
+real = 0.0;
+imaginary = 0.0;
+}
+public Complex(int real, int imaginary)
+{
+this.real = (double)real;
+this.imaginary = (double)imaginary;
+

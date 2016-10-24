@@ -1,0 +1,11 @@
+private static HashMap<TriPosition, Area> Index = new HashMap<TriPosition, Area>();
+
+private Length lij;
+private Length ljk;
+lik.addObserver(this);
+}
+
+protected void recalculate() {
+double l1 = lij.getValue();
+double l2 = ljk.getValue();
+

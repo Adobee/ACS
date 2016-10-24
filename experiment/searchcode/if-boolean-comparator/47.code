@@ -1,0 +1,6 @@
+public static JoinSimulator getJoinSimulator(EventProperty prop1, EventProperty prop2, OperatorTypeEnum op){
+Comparator<?> comparator=null;
+if(prop1.isFloat() || prop2.isFloat()){
+if(op==OperatorTypeEnum.EQUAL) comparator=neqComparator;
+else if(op==OperatorTypeEnum.LESS) comparator=nltComparator;
+

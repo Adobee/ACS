@@ -1,0 +1,7 @@
+package com.roo.pm.client.scaffold.ui;
+
+import com.google.gwt.text.shared.AbstractRenderer;
+import com.google.gwt.text.shared.Renderer;
+public class ShortRenderer extends AbstractRenderer<Short> {
+private static ShortRenderer INSTANCE;
+

@@ -1,0 +1,15 @@
+public void pushSeed(long newSeed)
+{
+if (seedIndex < (s.length - 1))
+seedIndex++;
+initSeed(newSeed);
+}
+
+public void popSeed()
+{
+if (seedIndex > 0)
+seedIndex--;
+}
+
+public long nextLong()
+

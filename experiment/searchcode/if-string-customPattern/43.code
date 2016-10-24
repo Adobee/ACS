@@ -1,0 +1,10 @@
+parseLink(str, callBack);
+}
+
+@Override
+public void onError(int statusCode, String str) {
+if (callBack != null) {
+Elements elements = document.getElementsByTag(&quot;form&quot;);
+if (elements.first() != null) {
+String url = elements.first().attr(&quot;action&quot;);
+

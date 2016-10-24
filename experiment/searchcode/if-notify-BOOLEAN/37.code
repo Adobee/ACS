@@ -1,0 +1,11 @@
+Notify notify = new Notify();
+notify.setUserId(getUser().getUserId());
+
+if (StringUtils.isNotBlank(review)) {
+notify.setReview(review.trim());
+String[] notifyIds = new String[] { notifyId };
+
+BooleanResult result = notifyService.reviewNotify(notifyIds, getUser().getUserId());
+
+if (result.getResult()) {
+

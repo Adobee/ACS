@@ -1,0 +1,14 @@
+public float deltaAxisY(float newAxisY) {
+return newAxisY - axisY;
+}
+
+public boolean isMove(MotionEvent event){
+float dx = deltaAxisX(event.getRawX());
+float dy = deltaAxisY(event.getY());
+if (i< dx*dx + dy*dy)
+return true;
+return false;
+}
+
+}
+

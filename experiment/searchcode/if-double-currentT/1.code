@@ -1,0 +1,8 @@
+d.offer(scan.nextInt());
+}
+double currentD = 0;
+double currentT = 0;
+while (!d.isEmpty() || !t.isEmpty()) {
+else if (!d.isEmpty() &amp;&amp; !t.isEmpty()) {
+if ((d.peek() - currentD) / (1.0 / speed) > t.peek() - currentT)
+

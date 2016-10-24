@@ -1,0 +1,8 @@
+public byte[] addPadding(byte[] source, int blockSize) {
+int paddingCnt = source.length % blockSize;
+int lastValue = source[source.length - 1];
+if(lastValue < (blockSize - 1)) {
+int zeroPaddingCount = lastValue - 1;
+
+for(int i=2;i<(zeroPaddingCount + 2);i++) {
+

@@ -1,0 +1,11 @@
+private boolean notifyChange;
+long id;
+
+public CrudTask(FlipCursorLoader loader, boolean notify) {
+mLoader = loader;
+protected void onPostExecute(C v) {
+if (notifyChange)
+mLoader.onContentChanged();
+}
+}
+

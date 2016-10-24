@@ -1,0 +1,15 @@
+
+
+public class Doctor extends Human {
+
+private int years;
+private String special;
+
+Doctor(int years, String special, double height, float weight,
+if (years == 1){
+return baseSalary;
+}
+else if (years > 1){
+
+for (int i = 1; i < years; i++){
+

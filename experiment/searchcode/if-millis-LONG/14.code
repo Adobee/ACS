@@ -1,0 +1,7 @@
+final class AutoValue_MembershipConfiguration extends MembershipConfiguration {
+
+private final long periodLengthMillis;
+private final long broadcastLatencyMillis;
+private final long initialStartMillis;
+private final long schedulingDelayMillis;
+

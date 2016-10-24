@@ -1,0 +1,14 @@
+public String getErrorMessage() {
+return errorMessage;
+}
+
+@Override
+public boolean equals(Object obj) {
+
+if(!(obj instanceof ErrorMessage<?>)){
+return false;
+}
+
+ErrorMessage<?> other = (ErrorMessage<?>) obj;
+if(!(ObjectUtils.equals(errorType, other.errorType))){
+

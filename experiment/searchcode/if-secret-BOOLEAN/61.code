@@ -1,0 +1,8 @@
+public class LockImpl implements Lock {
+
+protected boolean opened = true;
+private String secret;
+public void unlock(Key key) {
+if (key.getCode().equals(secret)) {
+opened = !opened;
+

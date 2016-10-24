@@ -1,0 +1,9 @@
+SkipListEntry<T>[] fixReferences = new SkipListEntry[depth];
+
+// find insert point
+int currentDepth = MAX_DEPTH - 1;
+SkipListEntry<T> current = head;
+
+while (currentDepth >= 0) {
+if (current.references[currentDepth] == null || current.references[currentDepth].value.compareTo(item) > 0) {
+

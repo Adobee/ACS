@@ -1,0 +1,8 @@
+protected void compute() {
+int searchLength = toSearch.length;
+if (toSearch.length <= 4) {
+result = searchArray();
+} else {
+int newLength = searchLength / 2;
+int[] newArray1 = ArrayUtils.subarray(toSearch, 0, newLength);
+

@@ -1,0 +1,10 @@
+public void setPageIndex(int pageIndex) {
+if (pageIndex > 0) {
+pageStart = (pageIndex - 1) * pageSize;
+return pageTotal;
+}
+
+public int getNextPage() {
+if (hasNextPage()) {
+return pageIndex + 1;
+

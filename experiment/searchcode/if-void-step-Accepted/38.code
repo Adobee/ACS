@@ -1,0 +1,8 @@
+public TransitionLogger(long interval) {
+this.interval = interval;
+}
+
+@Override
+public void afterStep(Collection<CachedPerson> population, Collection<? extends Attributable> mutations, boolean accepted) {
+if(accepted) acceptedIterations++;
+

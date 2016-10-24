@@ -1,0 +1,7 @@
+for (int i = tableau.getNumObjectiveFunctions(); i < tableau.getWidth() - 1; i++) {
+final double entry = tableau.getEntry(0, i);
+// check if the entry is strictly smaller than the current minimum
+for (int i = 0; i < tableau.getHeight(); i++) {
+if (i != pivotRow) {
+final double multiplier = tableau.getEntry(i, pivotCol);
+

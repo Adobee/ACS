@@ -1,0 +1,9 @@
+private static int numShow = 10;
+private static double minVal = 0;
+
+public static int getNumShow() {
+return numShow;
+public static void append(StringBuffer buff, double v) {
+if (minVal == 0  ||  Math.abs(v) >= minVal)
+buff.append(Float.toString((float) v));
+

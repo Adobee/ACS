@@ -1,0 +1,7 @@
+public void deposit(int amount) {balance += amount;}
+
+public void withdraw(int amount) {if (balance >= amount) {balance -= amount;}}
+
+public void getMoneyFrom(BankAccount other, int amount) {
+if (other.balance >= amount) {
+

@@ -1,0 +1,7 @@
+for (int j = 0; j < n; j++) {
+for (int i = 0; i <= j; i++) {
+if (i < j) {
+denom = d1 * d1 + alpha * beta;
+if (denom < cauchy &amp;&amp; cauchy > ZERO) {
+for (int i = 0; i < n; i++) {
+

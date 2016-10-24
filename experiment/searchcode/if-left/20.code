@@ -1,0 +1,12 @@
+if (n == null)
+return n;
+if (n.left != null) {
+TreeNode left = BTtoDLL(n.left);
+while (left.right != null)
+left = left.right;
+left.right = n;
+n.left=left;
+}
+
+if (n.right != null) {
+

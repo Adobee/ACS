@@ -1,0 +1,7 @@
+if (sourcePanel.getMängd().length()!=0) {
+if (sourcePanel.getLagerMgd()<Double.parseDouble
+(sourcePanel.getMängd()))
+private boolean eanEnter(VaruValPanel sourcePanel) {
+boolean retur=false;
+if (LabMetoder.trueEan(sourcePanel.getEan())) {
+

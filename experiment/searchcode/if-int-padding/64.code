@@ -1,0 +1,10 @@
+public abstract class AbstractIdGenerator implements IdGenerator {
+
+
+protected int paddingLength = 0;
+
+public int getPaddingLength() {
+String s = Long.toString(getNextKey());
+int len = s.length();
+if (len < this.paddingLength) {
+

@@ -1,0 +1,10 @@
+public class ClearKit implements Kit {
+
+boolean clear;
+boolean clearItems;
+
+public ClearKit(boolean clear, boolean clearItems) {
+public void apply(Player player, Boolean force) {
+if (clear || clearItems) player.getInventory().clear();
+if (clear) player.getInventory().setArmorContents(new ItemStack[]{new ItemStack(Material.AIR), new ItemStack(Material.AIR), new ItemStack(Material.AIR), new ItemStack(Material.AIR)});
+

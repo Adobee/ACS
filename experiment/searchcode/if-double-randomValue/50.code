@@ -1,0 +1,10 @@
+for (int i = 0; i < population.getIndividuals().length; i++) {
+Double randomValue = Math.random();
+int index = findIndividual(randomValue);
+newPopulation.setIndividual(i, new Individual(population.getIndividuals()[index]));
+}
+return newPopulation;
+}
+
+private int findIndividual(Double randomValue) {
+

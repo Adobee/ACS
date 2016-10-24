@@ -1,0 +1,13 @@
+for (Cluster registeredCluster : clusters)
+{
+if (name.equals(registeredCluster.getUid()))
+{
+throw new AlreadyDefinedClusterException();
+return cluster;
+}
+
+/**
+* @param clusterId The cluster id to search.
+* @return  The cluster if found.
+* @throws ClusterNotFoundException Exception
+

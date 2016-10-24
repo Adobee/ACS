@@ -1,0 +1,12 @@
+public double solve(double start, double precision, Function f, Function df){
+double x0 = start;
+double xn = x0;// = x0 - f.execute(x0)*df.execute(x0);
+xn = x0 - f.execute(x0)/df.execute(x0);
+if (Math.abs(xn  - x0) < precision) {
+return  xn;
+}
+x0 = xn;
+}
+}
+}
+

@@ -1,0 +1,9 @@
+public int[][] generateMatrix(int n) {
+int[][] ret = new int[n][n];
+int s = 1, count = 0;
+while(count*2<n){
+for(int i=count;i<n-count;i++)
+ret[count][i] = s++;
+
+for(int i=count+1;i<n-count;i++)
+

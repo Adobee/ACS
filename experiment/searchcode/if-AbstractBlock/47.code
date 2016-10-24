@@ -1,0 +1,7 @@
+import DataStructures.AbstractBlock;
+import DataStructures.BilateralBlock;
+import DataStructures.Comparison;
+import Utilities.ComparisonIterator;
+private void addComparison(Comparison comparison) {
+if (comparison.getUtilityMeasure() < minimumWeight) {
+

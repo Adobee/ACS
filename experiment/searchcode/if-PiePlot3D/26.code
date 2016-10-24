@@ -1,0 +1,8 @@
+import org.jfree.chart.labels.StandardPieItemLabelGenerator;
+import org.jfree.chart.plot.DefaultDrawingSupplier;
+import org.jfree.chart.plot.PiePlot3D;
+pieplot3d.setLabelFont(new Font(&quot;ºÚÌå&quot;,Font.PLAIN,10));
+if (m_nType == TYPE_PERCENT) {
+
+pieplot3d.setLabelGenerator(new StandardPieItemLabelGenerator(&quot;{0} = {2}&quot;, NumberFormat.getNumberInstance(),
+

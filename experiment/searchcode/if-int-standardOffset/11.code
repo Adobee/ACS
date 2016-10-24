@@ -1,0 +1,13 @@
+*     {@link Object }
+*     {@link Element }
+*
+*/
+public Object getAny(int idx) {
+if (this.any == null) {
+return this.any[idx];
+}
+
+public int getAnyLength() {
+if (this.any == null) {
+return  0;
+

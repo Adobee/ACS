@@ -1,0 +1,9 @@
+public int[] searchRange(int[] A, int target) {
+
+if (A == null || A.length == 0) {
+return new int[]{-1, -1};
+lo = searchFirst(A, 0, mi, target);
+hi = searchLast(A, mi, A.length - 1, target);
+
+return new int[]{lo, hi};
+

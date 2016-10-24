@@ -1,0 +1,17 @@
+this.integrate(iComponent, jComponent, delta);
+}
+}
+}
+
+private void integrate(PhysicsComponent iComponent, PhysicsComponent jComponent, float delta) {
+ICollider3D jCollider = jComponent.getCollider();
+if (iCollider == null || jCollider == null) {
+iComponent.integrate(delta);
+jComponent.integrate(delta);
+
+return;
+}
+}
+
+}
+

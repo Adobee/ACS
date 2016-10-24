@@ -1,0 +1,7 @@
+double max, min, mult, tmp1, tmp2, sum;
+int sz = costs.size();
+if (sz == 0) {
+tmp1 = ((Double)cit.next()).doubleValue();
+tmp2 = ((Double)cit.next()).doubleValue();
+if (tmp1 < tmp2) {
+

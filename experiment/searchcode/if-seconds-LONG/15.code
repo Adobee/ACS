@@ -1,0 +1,10 @@
+public static String printTimeSpan(long seconds) {
+
+if (seconds<0) {
+return &quot;INF&quot;;
+}
+long weeks = seconds / 604800;
+if (weeks > 0) seconds %= 604800;
+long days = seconds / 86400;
+if (days > 0) seconds %= 86400;
+

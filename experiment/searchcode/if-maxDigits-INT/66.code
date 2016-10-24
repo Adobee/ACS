@@ -1,0 +1,9 @@
+SocomRequest req, boolean template) throws NumberFormatException, SocomException, SQLException {
+int minChoices = 1, maxChoices = 1;
+if (req.containsParam(&quot;minchoices&quot;) &amp;&amp; req.containsParam(&quot;maxchoices&quot;)) {
+boolean freeAnswersVotable = Boolean.parseBoolean(req.getParam(&quot;freeanswersvotable&quot;));
+if (type.equals(&quot;text&quot;)) {
+int maxlines, maxdigits;
+try {
+maxlines = req.containsParam(&quot;maxlines&quot;) ? Integer.parseInt(req.getParam(&quot;maxlines&quot;))
+

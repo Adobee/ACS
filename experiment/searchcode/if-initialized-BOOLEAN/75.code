@@ -1,0 +1,16 @@
+public class OneTimeInitializable implements Initializable {
+private boolean initialized = false;
+
+@Override
+public void initialize() {
+if (initialized) {
+throw new IllegalStateException(&quot;Second call to initialize is not allowed&quot;);
+}
+initialized = true;
+}
+
+public boolean isInitialized() {
+return initialized;
+}
+}
+

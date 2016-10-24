@@ -1,0 +1,13 @@
+public int[] pixels, tiles;
+public int width, height;
+
+private int xOffset, yOffset;
+
+public Renderer(int width, int height) {
+this.pixels = new int[width * height];
+}
+
+public void renderTile(int xOffset, int yOffset, Tile tile) {
+xOffset = xOffset << 4;
+yOffset = yOffset << 4;
+

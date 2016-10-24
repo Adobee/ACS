@@ -1,0 +1,15 @@
+package com.qbit.commons.xss.util;
+
+import java.util.regex.Pattern;
+
+/**
+* @author Alex
+*/
+public final class XSSRequestFilter {
+Pattern.compile(&quot;onload(.*?)=&quot;, Pattern.CASE_INSENSITIVE | Pattern.MULTILINE | Pattern.DOTALL)
+};
+
+public static String stripXSS(String value) {
+if (value == null) {
+return null;
+

@@ -1,0 +1,8 @@
+public class PostJsonResult {
+
+public static <T> JsonResult get(Result<T> actionResult) {
+if (actionResult.isSuccess()) {
+return new SuccessResult<T>(actionResult.getObject());
+}
+return new ErrorResult(actionResult.getMessages());
+

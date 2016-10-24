@@ -1,0 +1,12 @@
+@Transactional
+public void save(OrderPayment orderPayment){
+
+validatePayment(orderPayment);
+
+if(validator.hasErrors()){
+validator.onErrorUsePageOf(this).payment(null);
+}
+
+if (orderPayment.getId() == null){
+entityManager.persist(orderPayment);
+

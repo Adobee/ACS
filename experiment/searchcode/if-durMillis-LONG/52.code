@@ -1,0 +1,8 @@
+* @throws IllegalArgumentException if the interval is invalid
+*/
+protected void checkInterval(long start, long end) {
+if (end < start) {
+long thisEnd = getEndMillis();
+if (interval == null) {
+long now = DateTimeUtils.currentTimeMillis();
+

@@ -1,0 +1,8 @@
+private boolean persist;
+private long maximumWeight;
+private Long expireAfterWrite;
+private Provider<CacheLoader<K, V>> loader;
+@Override
+public CacheBinding<K, V> expireAfterWrite(long duration, TimeUnit unit) {
+Preconditions.checkState(!frozen, &quot;binding frozen, cannot be modified&quot;);
+

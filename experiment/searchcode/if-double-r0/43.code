@@ -1,0 +1,10 @@
+r3 = r3.getCount();
+if (r0 < r3) goto L_0x0024;
+L_0x001d:
+r0 = r11.b;
+com.whatsapp.Conversation.b(r0, r1);
+if (r9 == 0) goto L_0x0030;
+L_0x0024:
+r0 = r11.b;
+com.whatsapp.Conversation.b(r0, r8);
+

@@ -1,0 +1,8 @@
+ColorDouble newc = other;
+double maxDelta = 0;
+double delta;
+delta = Math.abs(oldc.r - newc.r);
+if (delta > maxDelta) maxDelta = delta;
+delta = Math.abs(oldc.g - newc.g);
+if (delta > maxDelta) maxDelta = delta;
+

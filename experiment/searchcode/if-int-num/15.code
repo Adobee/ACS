@@ -1,0 +1,12 @@
+reverse num
+
+O(n) O(1)
+*/
+
+int i = num.length - 1;
+while(i > 0) {
+if(num[i] > num[i - 1]) {
+int k = i;
+for(int j = i; j <= num.length - 1; j++) {
+if(num[j] > num[i - 1] &amp;&amp; num[j] <= num[k]) {
+

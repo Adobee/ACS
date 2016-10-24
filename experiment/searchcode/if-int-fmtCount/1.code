@@ -1,0 +1,10 @@
+ParsePosition pos = new ParsePosition(0);
+char[] c = pattern.toCharArray();
+int fmtCount = 0;
+while (pos.getIndex() < pattern.length())
+case &#39;{&#39;:
+fmtCount++;
+seekNonWs(pattern, pos);
+int start = pos.getIndex();
+int index = readArgumentIndex(pattern, next(pos));
+

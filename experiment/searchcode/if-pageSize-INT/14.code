@@ -1,0 +1,9 @@
+private int pagesize;//每次请求获取新闻的数量
+private String sid;//最后一条新闻的id（用于下拉刷新数据） ,新闻ID可以从返回值中获取 可选参数。
+return url + catid + &quot;,&#39;pagesize&#39;:&quot; + pagesize + &quot;,&#39;sid&#39;:&#39;&quot; + sid + &quot;&#39;}&quot;;
+}
+}
+
+public String getUrl(int catid, int pagesize) {
+if (sid == null)
+

@@ -1,0 +1,13 @@
+private double[] w = null;
+private double[] Bc = null;
+//skipping decay update parameter
+private int skip = 0;
+private final Kernel<double[]> dot = new DoubleLinear();
+
+List<TrainingSample<double[]>> tlist;
+
+
+
+public void train(TrainingSample<double[]> t) {
+if(tlist == null)
+

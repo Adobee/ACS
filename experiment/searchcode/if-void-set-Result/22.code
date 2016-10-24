@@ -1,0 +1,15 @@
+public boolean execute(String sql)
+{
+setResultSet(null);
+if (!FatwormDB.parser.parse(sql))
+{
+return false;
+return fatwormResultSet;
+}
+
+static public void setResultSet(ResultSet r)
+{
+fatwormResultSet = (FatwormResultSet) r;
+}
+}
+

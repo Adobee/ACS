@@ -1,0 +1,14 @@
+public abstract class CInteractable extends CComponent {
+
+protected boolean focused = false;
+protected boolean enabled = true;
+protected IActionListener listener;
+this.listener = listener;
+}
+
+public IActionListener getListener() {
+return listener;
+}
+
+public boolean receiveKeyTyped(int code) {
+

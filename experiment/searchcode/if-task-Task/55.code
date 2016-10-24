@@ -1,0 +1,8 @@
+package cz.karelstefan.tasklist.service;
+
+
+import cz.karelstefan.tasklist.domain.dto.TaskDto;
+public Optional<TaskDto> getTaskDto(Long id, String taskListToken) {
+Optional<Task> task = getTask(id, taskListToken);
+if (task.isPresent()) {
+

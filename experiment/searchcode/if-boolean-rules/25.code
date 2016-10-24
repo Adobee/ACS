@@ -1,0 +1,8 @@
+Rules rules = new Rules(Person.class);
+rules.add(new RequiredIfTrue(&quot;driverLicenseNumber&quot;, new PropertyValueConstraint(&quot;age&quot;,
+new Constraint()
+{
+public boolean test(final Object argument)
+{
+return ((Integer) argument).intValue() >= 21;
+

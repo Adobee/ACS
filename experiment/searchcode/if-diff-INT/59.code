@@ -1,0 +1,9 @@
+int[] result = new int[2];
+int diff = 0;
+for(int num:nums ){
+diff ^= num;
+}
+diff &amp;= -diff;
+for(int num:nums){
+if((num &amp; diff) == 0) {
+

@@ -1,0 +1,12 @@
+return executorService;
+}
+
+public static void execute(Runnable command) {
+if (executorService != null &amp;&amp; !executorService.isShutdown()) {
+executorService.execute(command);
+}
+}
+
+public static void shutdownNow() {
+if (executorService != null &amp;&amp; !executorService.isShutdown()) {
+

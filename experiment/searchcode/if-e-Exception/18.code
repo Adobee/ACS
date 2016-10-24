@@ -1,0 +1,8 @@
+String exceptionClass = exception.getClass().getName();
+
+if (exceptionClass.contains(&quot;KeeperException&quot;)) {
+code = ((KeeperException)exception).code().intValue();
+public void throwException() throws KeeperException, InterruptedException, IllegalArgumentException {
+if (ZooFence.logger.isTraceEnabled())
+ZooFence.logger.trace(&quot;ExceptionWrapper.throwException&quot;);
+

@@ -1,0 +1,9 @@
+private int width, height;
+
+public Sprite(int[] pixels, int width, int height) {
+this.pixels = pixels;
+for (int x = 1; x < width; x++) {
+for (int y = 0; y < height; y++) {
+int col = pixels[x + y * width];
+if (col == -1 || col == 0xffff00ff) c++;
+

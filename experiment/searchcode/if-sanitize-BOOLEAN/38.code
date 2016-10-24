@@ -1,0 +1,12 @@
+public List<V> get(String key) {
+return super.get(sanitize(key));
+}
+
+@Override
+public boolean put(String key, V value) {
+return super.put(sanitize(key), value);
+}
+
+@Override
+public boolean putAll(Multimap<? extends String, ? extends V> values) {
+

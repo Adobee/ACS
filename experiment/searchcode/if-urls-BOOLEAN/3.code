@@ -1,0 +1,16 @@
+private String redirectUri;
+
+public boolean exclude(String uri) {
+if (excludeUrls != null) {
+for (String exc : excludeUrls) {
+return true;
+}
+}
+}
+return false;
+}
+
+public boolean include(String uri) {
+if (includeUrls != null) {
+for (String include : includeUrls) {
+

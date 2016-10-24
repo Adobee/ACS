@@ -1,0 +1,9 @@
+public Range getToleranceRange(final double rtValue) {
+
+final double absoluteTolerance = isAbsolute ? tolerance : rtValue
+return new Range(rtValue - absoluteTolerance, rtValue
++ absoluteTolerance);
+}
+
+public boolean checkWithinTolerance(final double rt1, final double rt2) {
+

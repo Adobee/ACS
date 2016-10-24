@@ -1,0 +1,8 @@
+public void setInitialStepSize(final double initialStepSize) {
+if ((initialStepSize < (minStep)) || (initialStepSize > (maxStep))) {
+throw new org.apache.commons.math.ode.IntegratorException((&quot;dimensions mismatch: state vector has dimension {0},&quot; + &quot; relative tolerance vector has dimension {1}&quot;) , y0.length , vecRelativeTolerance.length);
+}
+}
+
+public double initializeStep(final org.apache.commons.math.ode.FirstOrderDifferentialEquations equations, final boolean forward, final int order, final double[] scale, final double t0, final double[] y0, final double[] yDot0, final double[] y1, final double[] yDot1) throws org.apache.commons.math.ode.DerivativeException {
+

@@ -1,0 +1,9 @@
+* The application layer socket. Either an {@link SSLSocket} layered over {@link #rawSocket}, or
+* {@link #rawSocket} itself if this connection does not use SSL.
+*/
+public Socket socket;
+private Handshake handshake;
+/** Returns true if this connection is ready to host new streams. */
+public boolean isHealthy(boolean doExtensiveChecks) {
+if (socket.isClosed() || socket.isInputShutdown() || socket.isOutputShutdown()) {
+

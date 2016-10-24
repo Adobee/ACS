@@ -1,0 +1,9 @@
+int lastOffset = 8 - x2 % 8;
+
+// all within one byte
+if (lastByte - firstByte == 0){
+int mask = 0xFF >> firstOffset;
+// occupy more than one byte, has full bytes
+if (lastByte - firstByte > 1){
+int first_full_byte = firstByte + 1;
+

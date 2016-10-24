@@ -1,0 +1,10 @@
+public static String getFormattedVideoTime(long milliseconds) {
+long seconds = milliseconds / 1000;
+long minutes = seconds / 60;
+return getRepresentation(minutes) + &quot; : &quot; + getRepresentation(seconds);
+}
+
+private static String getRepresentation(long number) {
+
+if (number == 0) {
+

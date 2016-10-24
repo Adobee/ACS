@@ -1,0 +1,6 @@
+public static double getTime(double bpm, MIDI note) {
+double beatLength = 0;
+if (note.getLength() == MIDI.Length.WHOLE) beatLength = 4;
+if (note.getLength() == MIDI.Length.HALF) beatLength = 2;
+if (note.getLength() == MIDI.Length.QUARTER) beatLength = 1;
+

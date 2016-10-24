@@ -1,0 +1,14 @@
+package com.decorator;
+// 继承于Component，从外类来扩展Component类的功能
+public class Decorator extends Component {
+// 调用具体构建的基本实现函数
+// 如 mysql的访问操作
+@Override
+public  void operation(){
+if(component!=null){
+this.component.operation();
+}
+}
+
+}
+

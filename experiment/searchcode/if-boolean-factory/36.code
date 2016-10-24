@@ -1,0 +1,12 @@
+return singleton;
+}
+
+public synchronized void registerFactory(FopFactory factory) {
+if (!isRegistered()) {
+this.factory = factory;
+public Boolean isRegistered() {
+return factory != null;
+}
+
+}
+

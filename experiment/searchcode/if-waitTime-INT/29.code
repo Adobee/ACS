@@ -1,0 +1,14 @@
+public WaitTime add(WaitTime t) {
+if (this.unit == t.unit) {
+return new WaitTime(this.duration + t.duration, this.unit);
+return false;
+WaitTime other = (WaitTime) obj;
+if (duration != other.duration)
+return false;
+if (unit != other.unit)
+return false;
+return true;
+}
+
+}
+

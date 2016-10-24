@@ -1,0 +1,12 @@
+public List<Double> convert(List<String> ins) {
+List<Double> result = new ArrayList<Double>();
+
+double sum, sumsq;
+int n = 0;
+sum = sumsq = 0;
+
+for (String item: ins) {
+double x = Double.valueOf(item);
+sum += x;
+sumsq += x*x;
+

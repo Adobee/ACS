@@ -1,0 +1,12 @@
+public static enum ResultCode {
+THROW, IRNORE, MSGBOX;
+}
+
+protected ResultCode code;
+protected Object[] params;
+
+public HandlingResult(ResultCode code, Object... params) {
+super();
+this.code = code;
+this.params = params;
+

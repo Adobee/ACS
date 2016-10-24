@@ -1,0 +1,7 @@
+public class NegativeInfinity<E extends Comparable<E>> implements Comparable<E> {
+public boolean isNegativeInfinity = false;
+@Override
+public int compareTo(E o) {
+if(isNegativeInfinity){
+return -1;
+

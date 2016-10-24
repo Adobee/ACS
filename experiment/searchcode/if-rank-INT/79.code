@@ -1,0 +1,12 @@
+private Suit suit;
+private Rank rank;
+
+public Card(Suit suit, Rank rank) {
+if(suit == null || rank == null)
+throw new IllegalArgumentException(&quot;invalid suit and rank&quot;);
+this.rank = rank;
+}
+
+public Card(char suitChar, int rankVal) {
+this(Suit.fromVal(suitChar), Rank.fromVal(rankVal));
+

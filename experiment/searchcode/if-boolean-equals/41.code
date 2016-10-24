@@ -1,0 +1,10 @@
+public class Equals extends BinaryOp {
+
+public Equals(Expression left, Expression right) {
+return &quot;(&quot; + left.toString() + &quot;=&quot; + right.toString() + &quot;)&quot;;
+}
+
+@Override
+public boolean equals(Object o) {
+if (o instanceof Equals) {
+

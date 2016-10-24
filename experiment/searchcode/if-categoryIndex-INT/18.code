@@ -1,0 +1,7 @@
+// To count the number of Category Index variables
+private static int keyCount = 0;
+private static Map<Integer, CategoryIndex> varCache = Maps.newConcurrentMap();
+public static synchronized int getKeyCount() {
+keyCount++;
+if (keyCount % maxKeyCount == 0)
+

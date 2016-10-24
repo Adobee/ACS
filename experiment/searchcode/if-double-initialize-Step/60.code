@@ -1,0 +1,10 @@
+private double relTolerance;
+private double absTolerance;
+private double initialStepSize;
+private double t;
+private double t1;
+assert(prepared);
+double tNext = jni_integrateStep(jni_pointer);
+if (tNext > t1) {
+tNext = t1;
+

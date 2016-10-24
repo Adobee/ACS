@@ -1,0 +1,7 @@
+public void add(IntRangeData<T> data) {
+int index = findIndexToAdd(data.getStart(), data.getEnd());
+if (index < 0) {
+int mid = (start + end + 1) / 2;
+IntRangeData<T> c = this.arrayList.get(mid);
+if (value < c.getStart()) {
+

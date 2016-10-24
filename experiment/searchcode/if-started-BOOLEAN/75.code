@@ -1,0 +1,10 @@
+private boolean started = false;
+
+
+public void start(MWZooKeeperOperation operation) {
+if (started) throw new IllegalStateException(&quot;already started&quot;);
+public void stop() {
+if (!started) throw new IllegalStateException(&quot;already started&quot;);
+started = false;
+System.out.println(&quot;done (&quot; + (System.currentTimeMillis() - startTimestamp) + &quot; ms)&quot;);
+

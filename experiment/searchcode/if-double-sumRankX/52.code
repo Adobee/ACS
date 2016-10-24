@@ -1,0 +1,9 @@
+* @throws NoDataException
+*             if {@code x} or {@code y} are zero-length.
+*/
+private void ensureDataConformance(final double[] x, final double[] y)
+* @throws NoDataException
+*             if {@code x} or {@code y} are zero-length.
+*/
+public double mannWhitneyU(final double[] x, final double[] y) {
+

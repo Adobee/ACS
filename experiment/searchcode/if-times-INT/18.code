@@ -1,0 +1,11 @@
+return minT(times, 0, times.length - 1);
+}
+
+public int minT(int[] times, int left, int right) {
+int L = right - left + 1;
+if (L == 1)
+return times[right] + times[left] + times[left + 1];
+if (L >= 4) {
+int a = times[left], b = times[left + 1];
+int y = times[right - 1], z = times[right];
+

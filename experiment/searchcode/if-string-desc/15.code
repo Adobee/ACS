@@ -1,0 +1,15 @@
+PORTAL(&quot;Portal&quot;), //
+ARQUIVO(&quot;Arquivo&quot;);
+
+private String desc;
+
+Canal(String desc) {
+this.desc = desc;
+}
+
+public String getDesc() {
+return desc;
+}
+
+public static Canal fromDesc(String desc) {
+

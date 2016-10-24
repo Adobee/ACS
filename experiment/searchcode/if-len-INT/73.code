@@ -1,0 +1,7 @@
+int[] lenEnd = new int[nums.length];
+int maxLen = 0;
+for(int i = 0; i < nums.length; i++){
+lenEnd[i] = 1;
+for(int j = 0; j < i; j++){
+if(nums[j] < nums[i] &amp;&amp; lenEnd[j] + 1 > lenEnd[i])
+

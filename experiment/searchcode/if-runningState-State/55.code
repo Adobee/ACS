@@ -1,0 +1,15 @@
+public class ColumnInstance implements IColumnInstance
+{
+
+private IColumn column;
+private RunningState runningState;
+
+public ColumnInstance( IColumn column, RunningState runningState )
+return new StyleInstance( column.getStyle( ), runningState );
+}
+
+public String getWidth( )
+{
+DimensionType width = column.getWidth( );
+if ( width != null )
+

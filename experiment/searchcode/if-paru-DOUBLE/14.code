@@ -1,0 +1,8 @@
+public class LeMonde extends Extractor {
+public boolean dealWith(ExtractorData data) {
+if (data.getUri().indexOf(&quot;/www.lemonde.fr/&quot;) > -1) return true;
+String t = data.getText();
+String marc = &quot;Article paru dans l&#39;édition du&quot;;  // à partir de mars 2005
+int n = t.indexOf(marc);
+if (n < 0) {
+

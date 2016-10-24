@@ -1,0 +1,5 @@
+private synchronized DocumentMapper merge(DocumentMapper mapper, MergeReason reason, boolean updateAllTypes) {
+if (mapper.type().length() == 0) {
+private boolean typeNameStartsWithIllegalDot(DocumentMapper mapper) {
+boolean legacyIndex = getIndexSettings().getIndexVersionCreated().before(Version.V_5_0_0_alpha1);
+

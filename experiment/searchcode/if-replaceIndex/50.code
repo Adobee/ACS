@@ -1,0 +1,6 @@
+public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+
+if (childrenFeatures == null) {
+super.getChildrenFeatures(object);
+int replaceIndex = childrenFeatures.indexOf(EcorePackage.Literals.ECLASS__ESTRUCTURAL_FEATURES);
+

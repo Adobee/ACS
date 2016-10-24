@@ -1,0 +1,9 @@
+public Fx(T step, double time) {
+this(step,time,null);
+}
+public Fx(T step, double time, Ease method) {
+if (time < 0) throw new IllegalArgumentException(&quot;Time can&#39;t be < 0&quot;);
+@SuppressWarnings(&quot;unchecked&quot;) public T state(Fx<?> fx, double d, Ease method) {
+if (fx == null) fx = this;
+if (step instanceof Integer) return (T)new Integer(method.ease((Integer)step,(Integer)fx.step,d));
+

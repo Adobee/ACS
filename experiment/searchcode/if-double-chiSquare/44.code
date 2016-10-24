@@ -1,0 +1,11 @@
+count++ ;
+if(count % 1000 == 0) {
+System.out.print(&#39;.&#39;) ;
+}
+}
+reader.close();
+System.out.println() ;
+}
+
+public void setThreashold(double threashold){ textCollector.setChisquareThreashold(threashold); }
+

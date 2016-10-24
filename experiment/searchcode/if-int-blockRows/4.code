@@ -1,0 +1,8 @@
+//     private static final byte _signature = (byte)0xaa;
+//     private int _ncolumns, _nrows;
+//     private int _blockcolumns, _blockrows,_blockarea;
+//     public BlockedMatrixWriter(int ncols,int nrows,
+// 			       int blockrows, int blockcols,
+// 			       FileSystem fs,Path outputfolder)
+// 	throws BadStructureException, IOException{
+

@@ -1,0 +1,7 @@
+public class TranslogReader extends BaseTranslogReader implements Closeable {
+private static final byte LUCENE_CODEC_HEADER_BYTE = 0x3f;
+protected final AtomicBoolean closed = new AtomicBoolean(false);
+
+/**
+* Create a reader of translog file channel. The length parameter should be consistent with totalOperations and point
+

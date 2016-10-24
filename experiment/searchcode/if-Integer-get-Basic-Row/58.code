@@ -1,0 +1,6 @@
+for (Set<Integer> combination : combinations) {
+Set<Map.Entry<Integer, Set<Integer>>> matches = findMatches(rowMap, combination);
+if (wrongSize(matches)) {
+for (Map.Entry<Integer, Set<Integer>> entry : rowMap.entrySet()) {
+if (combination.containsAll(entry.getValue())) {
+

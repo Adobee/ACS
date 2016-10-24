@@ -1,0 +1,7 @@
+public synchronized static TimelineEngine getInstance() {
+if (TimelineEngine.instance == null) {
+TimelineEngine.instance = new TimelineEngine();
+Timeline timeline = itTimeline.next();
+if (timeline.getState() == TimelineState.SUSPENDED)
+continue;
+

@@ -1,0 +1,8 @@
+public static <T extends StateMachine<?>> T transition(T oldState, T newState) throws StateMachineException {
+
+if (oldState == null) throw new NullPointerException(&quot;old state must not be null&quot;);
+if (newState == null) throw new NullPointerException(&quot;new state must not be null&quot;);
+if (oldState == newState) return oldState;
+
+if (newState.predecessors().contains(oldState)) {
+

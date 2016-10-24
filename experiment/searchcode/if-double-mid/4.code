@@ -1,0 +1,9 @@
+int mid = l + (r - l) / 2;
+if (mid <= x / mid) {
+l = mid + 1;
+ans = mid;
+double l = 1, r = x, res = 1;
+while (l + delta < r) {
+double mid = (r + l) / 2;
+if (mid * mid <= x) {
+

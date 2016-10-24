@@ -1,0 +1,12 @@
+// special case -- this == zero
+return 0;
+}
+
+int cmaxdigits = mant.length * 4;
+int lsbthreshold = 1000;
+final int lsbshift = cmaxdigits - digits;
+final int lsd = lsbshift / 4;
+
+lsbthreshold = 1;
+for (int i = 0; i < lsbshift % 4; i++) {
+

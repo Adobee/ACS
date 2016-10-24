@@ -1,0 +1,9 @@
+public static double determinant(double A[][], int N)
+{
+double det = 0;
+if (N == 1)
+int j2 = 0;
+for (int j = 0; j < N; j++)
+{
+if (j == j1)
+

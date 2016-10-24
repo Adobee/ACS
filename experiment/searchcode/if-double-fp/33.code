@@ -1,0 +1,12 @@
+public static double randDouble() {
+return MathFP.ri.nextDouble();
+}
+
+public static double sqrt(double d) {
+public static double tan(double x) {
+return Math.tan(x);
+}
+
+public static double abs(double x) {
+if (x >= 0) {
+

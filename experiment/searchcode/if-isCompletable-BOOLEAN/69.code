@@ -1,0 +1,9 @@
+public boolean isDisplayGroup() {
+if (selectedUser.equals(workflowWebUI.getCurrentUser()) &amp;&amp; (workflowWebUI.getUserUnits().size() > 1 || workflowWebUI.getUserGroups().size() > 1))
+* Sub task could not be closed or reopened
+*
+* @return
+*/
+public boolean canDoAction() {
+if (parentTask.getState().getCode().equals(State.CLOSED_STATE)) {
+

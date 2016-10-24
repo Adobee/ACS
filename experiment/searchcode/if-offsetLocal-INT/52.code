@@ -1,0 +1,10 @@
+if (id.startsWith(&quot;+&quot;) || id.startsWith(&quot;-&quot;)) {
+int offset = parseOffset(id);
+if (offset == 0L) {
+return DateTimeZone.UTC;
+* @return the millisecond offset to add to UTC to get local time
+*/
+public final int getOffset(ReadableInstant instant) {
+if (instant == null) {
+return getOffset(DateTimeUtils.currentTimeMillis());
+

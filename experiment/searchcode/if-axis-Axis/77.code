@@ -1,0 +1,10 @@
+, listAnalysisAxis.getAnalysisAxisCode()
+, listAnalysisAxis.getAnalysisAxisName());
+if(dtos.isEmpty()) listAnalysisAxis.subPage();
+return returnCode;
+}
+
+public String prevPage(ListAnalysisAxis listAnalysisAxis) {
+String returnCode=&quot;success&quot;;
+if(listAnalysisAxis.getPage()>1) listAnalysisAxis.subPage();
+

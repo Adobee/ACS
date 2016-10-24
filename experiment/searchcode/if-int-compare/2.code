@@ -1,0 +1,8 @@
+package sort;
+class IntCompare implements Compare
+{
+@Override
+public CompareResult compare(Object a, Object b)
+{
+if ((Integer)a > (Integer) b)
+

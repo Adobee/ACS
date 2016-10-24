@@ -1,0 +1,10 @@
+public void addCookie(Cookie cookie) {
+cookies.add(cookie);
+}
+
+protected void flushHeaders() {
+for ( Cookie cookie : cookies ) {
+for ( HeaderElement<Long> d : dateHeaders) {
+if ( d.getOperation() == SET) {
+super.setDateHeader(d.getName(), d.getValue().longValue());
+

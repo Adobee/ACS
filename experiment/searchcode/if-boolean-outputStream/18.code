@@ -1,0 +1,7 @@
+private OutputStream outputStream;
+private boolean endedLastPart = true;
+public static final String boundary=&quot;86719712&quot;;
+public void startPart(String contentType) throws IOException {
+if(!endedLastPart) endPart();
+outputStream.write((&quot;Content-type: &quot; + contentType).getBytes());
+

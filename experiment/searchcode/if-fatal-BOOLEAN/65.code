@@ -1,0 +1,9 @@
+private ParserBase parser;
+private boolean found;
+public boolean isFound() {
+return this.parser.fatalState||found;
+public void execute (ParserFunction func) {
+if (!this.parser.fatalState &amp;&amp; found) func.commit(this.parser);
+}
+}
+

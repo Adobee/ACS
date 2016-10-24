@@ -1,0 +1,10 @@
+* Set providerType for performing persisting activities like Database
+* persisting, Writing to disk, etc.
+public ORMProviderType getORMProvider(String requestingResource) {
+if (providerType != null) {
+return providerType;
+}
+return ORMProviderType.HIBERNATE;
+}
+}
+

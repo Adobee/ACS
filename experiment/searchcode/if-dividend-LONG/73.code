@@ -1,0 +1,12 @@
+boolean isNeg = false;
+
+if (((dividend >>> 31) ^ (divisor >>> 31)) == 1) {
+isNeg = true;
+long divisorLong = Math.abs((long) divisor);
+
+if (dividendLong < divisorLong) {
+return 0;
+}
+
+if (dividend == divisor) {
+

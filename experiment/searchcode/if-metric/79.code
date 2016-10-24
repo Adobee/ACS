@@ -1,0 +1,9 @@
+log.debug(&quot;Creating metric: &quot; + metricType + &quot; with params: &quot; + metricParamsStr);
+AbstractPerfMonMetric metric;
+if (metricType.indexOf(&#39; &#39;) > 0) {
+MetricParamsSigar metricParams = MetricParamsSigar.createFromString(metricParamsStr, sigarProxy);
+
+try {
+if (metricType.equalsIgnoreCase(&quot;exec&quot;)) {
+metric = new ExecMetric(metricParams);
+

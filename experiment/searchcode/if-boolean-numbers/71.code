@@ -1,0 +1,12 @@
+public boolean solve(int[] numbers, int sum) {
+if (sum == 0) {
+return true;
+}
+
+if (numbers.length == 0) {
+return false;
+}
+
+if (numbers[numbers.length - 1] > sum) {
+return solve(Arrays.copyOf(numbers, numbers.length - 1), sum);
+

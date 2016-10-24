@@ -1,0 +1,8 @@
+for (int i = 0; i < _size; i++) {
+String _iceFacesId = (String)_iceFacesIds.next();
+if (updatedViewsQueueMap.containsKey(_iceFacesId)) {
+_updatedViewsQueue.purge(_sequenceNumber.longValue());
+}
+UpdatedViews _updatedViews;
+if (!_updatedViewsQueue.isEmpty()) {
+

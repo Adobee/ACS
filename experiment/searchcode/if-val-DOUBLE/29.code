@@ -1,0 +1,16 @@
+Double max = Double.MIN_VALUE;
+
+for (Attribute<Double> attribute: attributes) {
+Double val = attribute.getValue();
+min = val;
+}
+if (val > max) {
+max = val;
+}
+}
+
+Double range = max - min;
+return range;
+}
+}
+

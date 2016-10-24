@@ -1,0 +1,8 @@
+public static void checkInvariants(Setup setup, boolean initial, TraversedObjects traversedObjects) {
+
+// Complex assemblies
+Index<Integer,ComplexAssembly> complexAssemblyIdIndex = setup.getComplexAssemblyIdIndex();
+// (and add those components to the set of traversed objects)
+for(CompositePart indexedComponent : compositePartIdIndex)
+if(! traversedObjects.components.contains(indexedComponent))
+

@@ -1,0 +1,12 @@
+package jp.zin.mem.detail;
+
+import android.content.Context;
+
+import jp.zin.mem.data.Mem;
+import jp.zin.mem.data.MemAdapter;
+public void saveMem(Mem mem) {
+if(mem.getId() == null) {
+mMemAdapter.insert(mem);
+} else {
+mMemAdapter.update(mem);
+

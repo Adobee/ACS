@@ -1,0 +1,7 @@
+public double crossEntropy(Distrib<Double> _that) {
+if(_that instanceof DegenerateGamma) return 0;
+Gamma that = (Gamma)_that;
+return that.logProb(value);
+}
+public double expectedLog() { return Math.log(value); }
+

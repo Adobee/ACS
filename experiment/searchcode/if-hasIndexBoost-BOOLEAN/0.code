@@ -1,0 +1,9 @@
+builder.highlightBuilder = HighlightBuilder.PROTOTYPE.readFrom(in);
+}
+boolean hasIndexBoost = in.readBoolean();
+if (hasIndexBoost) {
+boolean hasIndexBoost = indexBoost != null;
+out.writeBoolean(hasIndexBoost);
+if (hasIndexBoost) {
+out.writeVInt(indexBoost.size());
+

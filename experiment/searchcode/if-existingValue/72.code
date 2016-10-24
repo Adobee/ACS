@@ -1,0 +1,9 @@
+public void resetToExisting() {
+if (existingValue == null)
+value = null;
+else
+value = existingValue.getMVCopy();
+existingValue = (DmcTypeGpbFieldIndicatorBaseMV) attr;
+if (existingValue != null)
+value = existingValue.getMVCopy();
+

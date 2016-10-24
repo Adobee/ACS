@@ -1,0 +1,14 @@
+this.z = z;
+return this;
+}
+
+public Vector3D multiply(double factor) {
+x *= factor;
+y *= factor;
+z *= factor;
+
+return this;
+}
+
+public double magnitude() {
+

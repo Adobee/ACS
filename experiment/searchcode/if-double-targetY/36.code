@@ -1,0 +1,8 @@
+targetX = ARROW_HALF_WIDTH;
+}
+if (sourceY < targetY) {
+y = sourceY - ARROW_HALF_WIDTH;
+if (super.contains(x, y)) {
+double vx = targetX - sourceX;
+double vy = targetY - sourceY;
+

@@ -1,0 +1,8 @@
+String sAmountOfPeople = editText.getText().toString();
+int iAmountOfPeople = Integer.parseInt(sAmountOfPeople);
+
+double resultPercent = calculate(iAmountOfPeople);
+BigDecimal result = calculation_top.divide(calculation_bottom, 5, RoundingMode.HALF_UP);
+
+double newResult = result.doubleValue();
+

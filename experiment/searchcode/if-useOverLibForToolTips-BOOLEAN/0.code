@@ -1,0 +1,9 @@
+import java.io.IOException;
+
+public class Utility {
+public static void writeImageMapExtracted(boolean useOverLibForToolTips, PrintWriter writer, String name,
+ChartRenderingInfo info) throws IOException {
+ToolTipTagFragmentGenerator toolTipTagFragmentGenerator;
+if (useOverLibForToolTips) {
+toolTipTagFragmentGenerator = new OverLIBToolTipTagFragmentGenerator();
+

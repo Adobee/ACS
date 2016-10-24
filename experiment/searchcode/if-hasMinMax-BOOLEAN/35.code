@@ -1,0 +1,9 @@
+private void populatePropertyConfigOccurs(PropertyConfig config, Element element) {
+boolean hasRef = hasAttribute(element, &quot;occursRef&quot;);
+if (hasRef) {
+config.setOccursRef(getAttribute(element, &quot;occursRef&quot;));
+}
+
+boolean hasOccurs = hasAttribute(element, &quot;occurs&quot;);
+boolean hasMinMax = hasAttribute(element, &quot;minOccurs&quot;) || hasAttribute(element, &quot;maxOccurs&quot;);
+

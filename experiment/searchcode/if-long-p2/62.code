@@ -1,0 +1,21 @@
+p1 = mesa.stringToCarta(cards_p1);
+}
+if (p2 == null) {
+p2 = mesa.stringToCarta(cards_p2);
+}
+Mao mao_p1 = new Mao(p1);
+Mao mao_p2 = new Mao(p2);
+public Carta[] getP2() {
+return p2;
+}
+
+public void setP2(Carta[] p2) {
+this.p2 = p2;
+}
+
+public static long getSerialversionuid() {
+return serialVersionUID;
+}
+
+}
+

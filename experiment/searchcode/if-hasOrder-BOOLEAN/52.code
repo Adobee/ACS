@@ -1,0 +1,15 @@
+@SerializedName(&quot;total&quot;)
+public double TotalPrice;
+@SerializedName(&quot;isClosed&quot;)
+public boolean IsClosed;
+@SerializedName(&quot;line&quot;)
+// Return true if there have currently any working order on the basket
+public boolean hasWorkingOrder() {
+boolean hasOrder = false;
+if (OrderNo > 0 || Lines.size() > 0)
+hasOrder = true;
+return hasOrder;
+}
+
+}
+

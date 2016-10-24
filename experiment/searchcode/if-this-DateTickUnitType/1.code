@@ -1,0 +1,12 @@
+if (!(obj instanceof DateTickUnitType)) {
+return false;
+}
+DateTickUnitType t = (DateTickUnitType) obj;
+if (!this.name.equals(t.toString())) {
+return true;
+}
+
+
+private Object readResolve() throws ObjectStreamException {
+if (this.equals(DateTickUnitType.YEAR)) {
+

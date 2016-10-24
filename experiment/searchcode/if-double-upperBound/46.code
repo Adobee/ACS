@@ -1,0 +1,12 @@
+package controllers.decisionTree;
+
+public class Node {
+public int property;
+public double upperBound;
+public Node[] children;
+public int output;
+
+public Node(){
+property = 0;
+upperBound = 0;
+

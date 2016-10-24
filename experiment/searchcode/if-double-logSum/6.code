@@ -1,0 +1,10 @@
+* NOTE: code needs to be modified further if INF or -INF values
+*       are expected.
+*/
+public static double LogSum(double log_a, double log_b) {
+double max = Math.max(log_a, log_b);
+double test2=Math.exp(log_b - max);
+double sum = test1 + test2;
+return Math.log(sum) + max;
+//	if(log_a>log_b){return log_a;}
+

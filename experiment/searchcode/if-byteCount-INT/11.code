@@ -1,0 +1,9 @@
+public class ByteCount implements Comparable<ByteCount>, Serializable {
+
+public static final int DEFAULT_FORMAT_PRECISION = 2;
+
+private static final ByteUnit[] BYTE_UNITS = ByteUnit.values();
+final StringBuilder sb = new StringBuilder();
+long rest = byteCount;
+for (int i=BYTE_UNITS.length - 1; i >= 0; i--) {
+

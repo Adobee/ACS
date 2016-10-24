@@ -1,0 +1,8 @@
+public static int size(int [] weight , int [] value , int item , int totalWeight , int noOfItems) {
+if(item == noOfItems) {
+return 0;
+return size(weight, value, item+1, totalWeight, noOfItems);
+}
+
+int i = Math.max(value[item] + size(weight, value, item+1, totalWeight - weight[item], noOfItems),
+

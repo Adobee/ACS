@@ -1,0 +1,12 @@
+
+public class Complex2 {
+private double real;
+private double imag;
+
+public Complex2(double real, double imag){
+this.real=real;
+this.imag=imag;
+}
+public Complex2(){
+this(0,0);
+

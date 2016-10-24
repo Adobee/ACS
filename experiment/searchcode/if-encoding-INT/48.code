@@ -1,0 +1,10 @@
+lookup.put(V0_ENCODING.getVersionPrefix(), V0_ENCODING);
+ENCODING_BY_PREFIX = lookup;
+}
+
+public static Object decode(String rawValue) {
+int pipeLocation = rawValue.indexOf(&quot;|&quot;);
+String prefix = rawValue.substring(0, pipeLocation + 1);
+ApiEncoding encoding = ENCODING_BY_PREFIX.get(prefix);
+if (encoding == null) {
+

@@ -1,0 +1,9 @@
+public class IncomeItem extends FixedAmountItem<IncomeItem> {
+
+private double taxPct = 0.0 ;
+
+public IncomeItem( double amt ) {
+public IncomeItem withTax( double pct ) {
+this.taxPct = pct ;
+if( this.taxPct > 0 ) {
+

@@ -1,0 +1,14 @@
+return new Point2D(bounds.getMinX(), bounds.getMinY());
+
+}
+
+public Bounds getBounds() {
+return bounds;
+}
+
+public boolean above(AnchorBounds other) {
+return bounds.getMinY() < other.getBounds().getMinY();
+}
+
+public boolean under(AnchorBounds other) {
+

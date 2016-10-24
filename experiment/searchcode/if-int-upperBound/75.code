@@ -1,0 +1,12 @@
+public class Main {
+final int lowerbound;
+final int upperbound;
+
+public Main(int upperbound, int n) {
+this.lowerbound = n;
+this.upperbound = upperbound;
+}
+
+public void FizzBuzz() {
+if (lowerbound % 3 != 0 &amp;&amp; lowerbound % 5 != 0)
+

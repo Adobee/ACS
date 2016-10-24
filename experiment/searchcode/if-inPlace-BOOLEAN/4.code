@@ -1,0 +1,8 @@
+public class InplaceEditorExtension_Default implements InplaceEditorExtension {
+
+@Override
+public boolean getInplaceEditorText(View view, Map<String, Object> parameters) throws  InplaceEditorParseException {
+String inplaceEditorFeature = getInplaceEditorFeature(cse);
+if (inplaceEditorFeature != &quot;&quot;) {
+parameters.put(VIEW_TEXT, CodeSyncOperationsService.getInstance().getFeatureValue(cse, inplaceEditorFeature));
+

@@ -1,0 +1,6 @@
+for (String columnFamily : columnFamilies) {
+if (innerMutationMap.get(columnFamily) == null) {
+Map<String, List<Mutation>> innerMutationMap = mutationMap.get(keySerializer.toByteBuffer(key));
+if (innerMutationMap == null) {
+innerMutationMap = new HashMap<String, List<Mutation>>();
+

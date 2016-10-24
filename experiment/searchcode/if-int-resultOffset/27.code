@@ -1,0 +1,12 @@
+protected boolean printXML = false;
+protected int numResults, resultOffset;
+
+protected boolean debugMode = true;
+
+protected XMLElement getXML(String url, String filename)
+* @return resultOffset: Result Offset
+*/
+public int getResultOffset()
+{
+return resultOffset;
+

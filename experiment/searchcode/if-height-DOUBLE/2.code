@@ -1,0 +1,25 @@
+public class Rectangle
+{
+double x;
+double y;
+double width;
+double height;
+
+public void setX(double arg)
+return width;
+}
+
+public void setHeight(double height)
+{
+if (height > 0)
+{
+this.height = height;
+}
+}
+
+public double getHeight()
+{
+return height;
+}
+}
+

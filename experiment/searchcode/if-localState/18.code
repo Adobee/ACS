@@ -1,0 +1,8 @@
+package chat.receivers;
+
+import chat.state.LocalState;
+import org.jgroups.Message;
+import org.jgroups.ReceiverAdapter;
+ChatOperationProtos.ChatAction action = (ChatOperationProtos.ChatAction) msg.getObject();
+if (!action.getNickname().equals(localState.getNickname())) {
+

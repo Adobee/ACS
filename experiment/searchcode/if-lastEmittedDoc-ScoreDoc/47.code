@@ -1,0 +1,7 @@
+import org.apache.lucene.search.ScoreDoc;
+import org.elasticsearch.action.IndicesRequest;
+import org.elasticsearch.action.OriginalIndices;
+public ShardFetchSearchRequest(SearchRequest request, long id, IntArrayList list, ScoreDoc lastEmittedDoc) {
+super(id, list, lastEmittedDoc);
+this.originalIndices = new OriginalIndices(request);
+

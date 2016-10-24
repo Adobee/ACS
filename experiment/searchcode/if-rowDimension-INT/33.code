@@ -1,0 +1,9 @@
+char[] values = this.getRowDef(rowIndex).toCharArray();
+
+for(int i = 0; i < this.columnDimension; i++){
+if(values[i] == &#39;0&#39;)
+Boolean[][] rows = new Boolean[this.rowDimension][this.columnDimension];
+
+for(int i = 0; i < this.rowDimension; i++)
+rows[i] = this.getRow(i);
+

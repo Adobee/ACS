@@ -1,0 +1,7 @@
+// Return the initial guess if it is good enough.
+double yInitial = computeObjectiveValue(initial);
+if (FastMath.abs(yInitial) <= functionValueAccuracy) {
+// Return the first endpoint if it is good enough.
+double yMin = computeObjectiveValue(min);
+if (FastMath.abs(yMin) <= functionValueAccuracy) {
+

@@ -1,0 +1,7 @@
+public abstract class AbstractFigure<T extends Number> implements Figure {
+private T linearDimension;
+
+public AbstractFigure(T linearDimension) {
+if (linearDimension.doubleValue() < 0.0) {
+throw new IllegalArgumentException(&quot;Linear dimension cannot be negative.&quot;);
+

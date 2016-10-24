@@ -1,0 +1,7 @@
+try
+{
+if (Thread.currentThread().isInterrupted())
+throw new ManifoldCFException(&quot;Interrupted&quot;,ManifoldCFException.INTERRUPTED);
+CleanupQueuedDocument dqd = dds.getDocument(j);
+if (dqd.wasProcessed() == false)
+

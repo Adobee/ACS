@@ -1,0 +1,13 @@
+public int hashCode() {
+return _r ^ _g ^ _b;
+}
+@Override
+public boolean equals(Object other) {
+if (this == other) {
+return true;
+}
+if (!(other instanceof IndexedRGB)) {
+return false;
+}
+final IndexedRGB o = (IndexedRGB) other;
+

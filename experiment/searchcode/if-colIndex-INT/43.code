@@ -1,0 +1,8 @@
+private int colIndex;
+
+public Cell2(char life, int rowIndex, int colIndex){
+this.life = life;
+this.rowIndex = rowIndex;
+int count = Grid2.getNeighbourCount(this, rowIndex, colIndex);
+if((count == 2 || count ==3) &amp;&amp; this.life == &#39;*&#39;)
+

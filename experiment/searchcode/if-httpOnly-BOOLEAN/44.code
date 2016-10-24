@@ -1,0 +1,7 @@
+public static Cookie newValidCookie(String name, String value, boolean wrap, String domain, String path, long maxAge, boolean secure, boolean httpOnly) {
+return new Cookie(validateCookieName(name), validateCookieValue(value), wrap, validateCookieAttribute(&quot;domain&quot;, domain), validateCookieAttribute(&quot;path&quot;, path), maxAge, secure, httpOnly);
+private final boolean secure;
+private final boolean httpOnly;
+
+public Cookie(String name, String value, boolean wrap, String domain, String path, long maxAge, boolean secure, boolean httpOnly) {
+

@@ -1,0 +1,7 @@
+public int move(int from_x, int from_y, int to_x, int to_y) {
+
+if(square(pieces, from_x, from_y, to_x, to_y) == MOVED) {
+private int square(Piece[][] pieces, int from_x, int from_y, int to_x, int to_y) {
+
+if((to_x == from_x &amp;&amp; Math.abs(to_y - from_y) == 1 || to_y == from_y &amp;&amp; Math.abs(to_x - from_x) == 1 || Math.abs(to_x - from_x) == 1 &amp;&amp; Math.abs(to_y - from_y) == 1) &amp;&amp; (isOccupiedByAnOpponent(pieces[to_x][to_y]) || isEmpty(pieces[to_x][to_y]))) {
+

@@ -1,0 +1,11 @@
+private double xtol;
+private int[] iflag;
+private double[] diag;
+
+public LBFGS_external(Loss loss, int m) {
+eps = 1.0E-10;
+xtol = 1.0E-12;
+iflag = new int[1];
+iflag[0] = 0;
+diag = new double [ loss.getDimension() ];
+

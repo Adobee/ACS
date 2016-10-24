@@ -1,0 +1,6 @@
+public List<User> getAllUsers(int fromIndex, int toIndex, String name, int age, boolean searchAdmin, boolean admin) {
+List<User> allFilteredUsers = filteredList(name, age, searchAdmin, admin);
+private List<User> filteredList(String name, int age, boolean searchAdmin, boolean admin) {
+List<User> filteredList = repository.findAll();
+if (name != null) {
+

@@ -1,0 +1,8 @@
+private static final @Nonnull Log logger = Log.getInstance();
+
+private final int maxRetries;
+private final int retryInterval;
+private final Predicate<HttpResponse> retryPredicate;
+
+HttpStatusCodeRetryStrategy(int maxRetries, int retryInterval, Predicate<HttpResponse> retryPredicate) {
+

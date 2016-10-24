@@ -1,0 +1,7 @@
+boolean success = false;
+
+try {
+Object actualValue = JsonPath.read(body, propertyName);
+bodyAssertDTO.setActualValue(actualValue.toString());
+if (actualValue instanceof Number) {
+

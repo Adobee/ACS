@@ -1,0 +1,14 @@
+private final LocalTime upper;
+
+private Timespan(LocalTime lower, LocalTime upper) {
+if (lower == null || upper == null) {
+return lower.hashCode();
+}
+
+@Override
+public boolean equals(Object obj) {
+if (this == obj) {
+return true;
+}
+if (obj instanceof Timespan) {
+

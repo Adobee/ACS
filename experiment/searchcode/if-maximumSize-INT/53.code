@@ -1,0 +1,9 @@
+private LoadingCache<Integer, byte[]> cache;
+private final FileIndex index;
+
+public CachedFileIndex(FileIndex index, int maximumSize) {
+public void configure(int maximumSize) {
+
+// Invalidate all of the current entries
+if(cache != null) {
+

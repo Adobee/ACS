@@ -1,0 +1,7 @@
+// If value is an AbstractInstant - includes DateTime and DateMidnight
+
+if (value instanceof AbstractInstant) {
+AbstractInstant ai = ((AbstractInstant) value);
+if (style != null) {
+formatted = DateTimeFormat.forStyle(style).withLocale(locale).print(ai);
+

@@ -1,0 +1,7 @@
+ValueExpr ve = new ValueExpr(new IntVal(3));
+IntVal i = (IntVal) ve.evaluate(env);
+assertEquals(i.toInt(), 3);
+Environment env = new Environment();
+IfExpr ife = new IfExpr(new ValueExpr(new IntVal(0)),
+new ValueExpr(new IntVal(1)),
+

@@ -1,0 +1,13 @@
+return id;
+}
+
+public boolean isForward() {
+return forward;
+}
+
+List<Coordinate> getCoordinates(SosiReader reader) throws IOException {
+List<Coordinate> coords = reader.getKurve(getId());
+if (isForward()) {
+return coords;
+} else {
+

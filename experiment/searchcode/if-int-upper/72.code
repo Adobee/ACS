@@ -1,0 +1,9 @@
+public class Quick extends AbstractSorter {
+public void sort(int[] data) {
+if (data.length < 2) {
+return;
+}
+int max = 0;
+for (int i=1; i<data.length; i++) {
+if (data[max] < data[i]) {
+

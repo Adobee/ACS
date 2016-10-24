@@ -1,0 +1,7 @@
+String summary;
+
+public TextPost(String title, String body, String category, String slug, String summary) {
+super(title, body, category, slug);
+if (body.length() > 10)
+this.summary = body.substring(0, 11);
+

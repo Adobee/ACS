@@ -1,0 +1,16 @@
+package com.sonyericsson.wm.model;
+
+import java.util.Vector;
+
+final class Listeners
+{
+private final Vector listeners;
+this.listeners = new Vector(4);
+}
+
+public void add(ModelListener listener)
+{
+synchronized (this.listeners)
+{
+if (!this.listeners.contains(listener))
+

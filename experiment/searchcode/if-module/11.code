@@ -1,0 +1,7 @@
+public static <T extends Module> T getModule(Class<T> moduleClass) {
+if (Module.equals(moduleClass)) {
+throw new ModuleException(moduleClass.getName()
++ &quot; is not a real-module.&quot;);
+}
+// if (!Module.equals(moduleClass.getSuperclass()))
+

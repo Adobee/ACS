@@ -1,0 +1,8 @@
+public class NumericEntityEscaper extends CodePointTranslator {
+
+private final int below;
+private final int above;
+private final boolean between;
+public static NumericEntityEscaper between(final int codepointLow, final int codepointHigh) {
+return new NumericEntityEscaper(codepointLow, codepointHigh, true);
+

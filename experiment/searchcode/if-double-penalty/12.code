@@ -1,0 +1,12 @@
+private double withdrawlPenalty = 20;
+private int withdrawlPenaltyTime = 6;
+
+public TimeDepositAccount(double rate)
+{
+super(rate);
+}
+
+public void addInterest()
+{
+if(withdrawlPenaltyTime > 0){
+

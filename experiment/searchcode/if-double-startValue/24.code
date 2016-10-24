@@ -1,0 +1,7 @@
+package com.netpace.jtc.api;
+
+public class Slab {
+private Double startValue;
+private Double endValue;
+private Double offsetValue; // amount you should be paying at least if income is located in this slab
+

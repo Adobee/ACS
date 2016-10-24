@@ -1,0 +1,11 @@
+final MavLinkDrone drone = droneMgr.getDrone();
+if(drone != null)
+drone.addDroneListener(this);
+
+followAlgorithm = FollowAlgorithm.FollowModes.LEASH.getAlgorithmType(droneMgr, handler);
+state = FollowStates.FOLLOW_INVALID_STATE;
+return;
+}
+
+if (isEnabled()) {
+

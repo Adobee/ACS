@@ -1,0 +1,12 @@
+public class uniquePaths62 {
+public int uniquePaths(int m, int n) {
+if (m == 0 &amp;&amp; n == 0)
+return 0;
+
+int[][] res = new int[m][n];
+
+res[0][0] = 1;
+
+for (int i = 1; i < n; i++)
+res[0][i] = res[0][i - 1];
+

@@ -1,0 +1,11 @@
+import com.musicsharing.dtos.TableRecord;
+
+public class RoutingTableSingleton {
+
+static RoutingTableSingleton routingTable;
+public  static RoutingTableSingleton getRoutingTable(){
+if(routingTable==null){
+routingTable=new RoutingTableSingleton();
+}
+return routingTable;
+

@@ -1,0 +1,12 @@
+public GregorianDate(int year, int month, int dayOfMonth) {
+super(year, month, dayOfMonth);
+}
+
+@Override
+public int dayOfYear() {
+public GregorianDate nextDate(){
+int d= dayOfMonth();
+int m= month();
+int y= year();
+if (d==monthLengths[m-1]){
+

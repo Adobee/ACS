@@ -1,0 +1,12 @@
+boolean requestParsed = false;
+boolean inHeaders = false;
+boolean inRequest = false;
+List<Header> headers = new ArrayList<Header>();
+while ((line = reader.readLine()) != null)
+{
+if (inHeaders)
+{
+if (line.trim().length() == 0)
+{
+inHeaders = false;
+

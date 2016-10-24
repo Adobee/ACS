@@ -1,0 +1,16 @@
+private Class<? extends DatabaseObject> mObjectClass;
+
+public QueryBuilder (Class<? extends DatabaseObject> klass) {
+mObjectClass = klass;
+}
+
+public Query getQuery() {
+if (mObjectClass == null) {
+return null;
+}
+
+return new Query(mObjectClass);
+}
+
+}
+

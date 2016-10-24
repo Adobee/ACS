@@ -1,0 +1,9 @@
+private T[] window;
+
+@SuppressWarnings(&quot;unchecked&quot;)
+public WithWindow(int size, Class<T> clazz) {
+this.window = (T[]) Array.newInstance(clazz, size);
+}
+
+public static <S> Function<S, WindowItem<S>> withWindow(int size, Class<S> clazz) {
+

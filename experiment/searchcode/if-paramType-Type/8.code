@@ -1,0 +1,10 @@
+public final class DataTypeNameUtil {
+
+private DataTypeNameUtil() { }
+
+public static String getDataTypeName(Class<?> paramType) {
+if (paramType == null)
+throw new IllegalArgumentException(&quot;paramType == null&quot;);
+
+if (paramType == JavaScriptFormula.class || paramType == BeanShellFormula.class)
+

@@ -1,0 +1,12 @@
+int decPos = val.indexOf(&#39;.&#39;);
+int expPos = val.indexOf(&#39;e&#39;) + val.indexOf(&#39;E&#39;) + 1;
+String mant;
+String dec;
+if(decPos > -1)
+{
+if(expPos > -1)
+{
+if(expPos < decPos)
+{
+throw new NumberFormatException(val + &quot; is not a valid number.&quot;);
+

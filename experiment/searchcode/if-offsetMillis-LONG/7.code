@@ -1,0 +1,17 @@
+if (t < 0 || M == null || C == null)
+return;
+if (k <= 0)
+k = -1;
+periodsLeft = k;
+cycleMillis = t;
+offsetMillis = (int) (t - System.currentTimeMillis() % t);
+cycle();
+}
+
+// ===================================================
+
+@message
+public void cycle() {
+try {
+long delta = offsetMillis - System.currentTimeMillis()
+

@@ -1,0 +1,12 @@
+return abortCondition;
+}
+
+@Override
+public boolean applyAction(  Strategy strategy  ) {
+if( abortCondition != null &amp;&amp; abortCondition.test( strategy ) )
+return applyActionNoAbort( strategy );
+}
+
+abstract protected boolean applyActionNoAbort( Strategy strategy );
+}
+

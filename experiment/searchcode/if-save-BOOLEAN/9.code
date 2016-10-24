@@ -1,0 +1,10 @@
+public static boolean save(){
+if(save == null) return false;
+
+save.set(&quot;s&quot;, &quot;&quot;+Util.scroll);
+save.set(&quot;a&quot;, &quot;&quot;+Util.a);
+SaveManager general = new SaveManager(&quot;0&quot;);
+save = general.get(0);
+if(save == null) save = general.create();
+save.disableAutoSave();
+

@@ -1,0 +1,7 @@
+public class CommandThatFailsSilently extends HystrixCommand<String> {
+
+private final boolean throwException;
+
+public CommandThatFailsSilently(boolean throwException) {
+super(HystrixCommandGroupKey.Factory.asKey(&quot;ExampleGroup&quot;));
+

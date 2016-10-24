@@ -1,0 +1,12 @@
+return mActivity;
+}
+
+protected void showMessage(final CharSequence message) {
+if (mActivity instanceof BaseActivity) {
+AppToast.show(mActivity, message);
+}
+}
+
+protected IntentDispatcher createIntentDispatcher() {
+if (mActivity instanceof BaseActivity) {
+

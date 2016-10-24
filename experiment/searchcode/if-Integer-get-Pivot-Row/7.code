@@ -1,0 +1,9 @@
+if (rows > 0) {
+
+row = sheet.getRow(0);
+if (row != null) {
+tmp = sheet.getRow(0).getPhysicalNumberOfCells();
+for (Map.Entry<String,Integer> column : pivotColumnsNumber.entrySet()) {
+
+if(!CollectionUtils.isEmpty(pivotMap.get(row.getCell(pivotRowColumnNumber).getStringCellValue()).get(row.getCell(column.getValue()).getStringCellValue())))
+

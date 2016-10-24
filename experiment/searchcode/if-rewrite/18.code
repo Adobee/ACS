@@ -1,0 +1,10 @@
+List fragments= declarationNode.fragments();
+Iterator iter= fragments.iterator();
+
+ListRewrite blockRewrite;
+if (declarationNode.getParent() instanceof AbstractTypeDeclaration) {
+newStatement.setType((Type)rewrite.createCopyTarget(declarationNode.getType()));
+
+ModifierRewrite modifierRewrite= ModifierRewrite.create(rewrite, newStatement);
+if (fragmentsToChange.contains(currentFragment)) {
+

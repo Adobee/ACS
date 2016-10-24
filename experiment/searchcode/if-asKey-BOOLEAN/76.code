@@ -1,0 +1,7 @@
+public class CommandThatFailsFast extends HystrixCommand<String> {
+
+private final boolean throwException;
+
+public CommandThatFailsFast(boolean throwException) {
+super(HystrixCommandGroupKey.Factory.asKey(&quot;ExampleGroup&quot;));
+

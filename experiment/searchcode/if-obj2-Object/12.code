@@ -1,0 +1,11 @@
+public final class RgbComparator implements Comparator<Object>
+{
+public static int compareRgb(RGB obj1, RGB obj2)
+{
+if(obj1 == obj2)
+return 0;
+if(isNull(obj1) ^ isNull(obj2))
+return isNull(obj2) ? 1 : -1;
+
+if(obj1.red != obj2.red)
+

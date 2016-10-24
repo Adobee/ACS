@@ -1,0 +1,10 @@
+cacheTable[pattern.charAt(i)] = pattern.length()-i-1;
+}
+// 移動量のキャッシュここまで
+
+int textIndex = pattern.length()-1;
+
+while(textIndex < text.length()){
+System.err.print(&quot;	本文:&quot; + text + &quot;\nパターン:&quot;);
+for(int i=0; i<textIndex-pattern.length()+1; i++){
+

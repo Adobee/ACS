@@ -1,0 +1,8 @@
+public SettingIntRange(Setting setting, IntRange intRange, int... value){
+super(setting);
+if(intRange==null) return;
+if(value.length>0){
+String result = String.valueOf(intRange.getLow());
+if(intRange.hasHigh()) result += &quot;-&quot;+String.valueOf(intRange.getHigh());
+return result;
+

@@ -1,0 +1,6 @@
+MongoUtils.createIndex(collection, new String[]{&quot;baz&quot;, &quot;qux&quot;},
+new boolean[]{true, false}, false, false);
+assertEquals(1, key.get(&quot;foo&quot;));
+assertEquals(Boolean.TRUE, info.get(&quot;sparse&quot;));
+} else if (key.keySet().contains(&quot;bar&quot;)) {
+

@@ -1,0 +1,13 @@
+private int num;
+private int den;
+
+public Rational(Integer i) {
+num = i;
+den = 1;
+}
+
+public Rational(int n, int d) {
+int g = gcd(n,d);
+num = n/g;
+den = d/g;
+

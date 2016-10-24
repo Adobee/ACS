@@ -1,0 +1,8 @@
+public class ReglaFalsa extends AnalisisNumerico.AbstractMetodo{
+
+private void updateList(int contador, double xm,double fxm, double error){
+mensaje += &quot;xs (&quot; +xs + &quot;) es raiz\n&quot;;
+}
+else if(fxi*fxs < 0){
+double xm = xi - ((Funciones.f(xi)*(xi-xs))/(Funciones.f(xi)-Funciones.f(xs)));
+

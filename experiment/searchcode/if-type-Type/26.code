@@ -1,0 +1,15 @@
+package org.kwet.giteway.model;
+
+public enum SearchType {
+
+OWNER(&quot;owner&quot;),KEYWORD(&quot;keyword&quot;);
+for(SearchType st:SearchType.values()){
+if(st.type.equals(type)){
+return st;
+}
+}
+throw new RuntimeException(&quot;Unknow type : &quot;+type);
+}
+
+}
+

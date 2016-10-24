@@ -1,0 +1,8 @@
+import com.pars.marc.search.query.QueryRewrite;
+import com.pars.marc.search.query.SearchQuery;
+
+import java.io.Serializable;
+public SearchQuery termClause(QueryRewrite rewrite) {
+if (rewrite == null) {
+return SearchQuery.termClause(indexFieldName(), value);
+

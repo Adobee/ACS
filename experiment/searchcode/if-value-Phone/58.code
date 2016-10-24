@@ -1,0 +1,13 @@
+public void setPhone(PhoneNumberType value) {
+this.Phone = value;
+}
+
+
+
+public String toXMLString()  {
+StringBuilder sb = new StringBuilder();
+if( Phone != null ) {
+sb.append(&quot;<ebl:Phone>&quot;);
+sb.append(Phone.toXMLString());
+sb.append(&quot;</ebl:Phone>&quot;);
+

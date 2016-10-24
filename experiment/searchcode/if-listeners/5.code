@@ -1,0 +1,5 @@
+private void doFireNotification(int type, StatusAdapter[] adapters) {
+Object[] oListeners = listeners.getListeners();
+for (int i = 0; i < oListeners.length; i++) {
+if (oListeners[i] instanceof INotificationListener) {
+

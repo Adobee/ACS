@@ -1,0 +1,14 @@
+package util;
+
+import java.util.ArrayList;
+import java.util.Map.Entry;
+import java.util.Set;
+ArrayList<Entry<ProductOffer, Integer>> result = new ArrayList<Entry<ProductOffer, Integer>>(entrySet.size());
+
+while(true)
+{
+if(entrySet.isEmpty())
+break;
+
+Entry<ProductOffer, Integer> lowestHashCodeEntry = getLowestHashCodeEntry(entrySet);
+

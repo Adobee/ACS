@@ -1,0 +1,9 @@
+private final boolean isRegex;
+private final String httpMethod;
+
+public PathScopeHelper(final boolean isRegex, final String path) {
+this(isRegex, singletonList(checkNotNull(path)), &quot;GET&quot;);
+}
+
+public PathScopeHelper(final boolean isRegex, final Collection<String> paths, String httpMethod) {
+

@@ -1,0 +1,10 @@
+private TargetPosition getCurrentPosition() {
+OptionalInt firstVisible = positioner.getFirstVisibleIndex();
+if(firstVisible.isPresent()) {
+// cell for itemIndex is assumed to be placed correctly
+
+// fill up to the ground
+int ground = fillTowardsGroundFrom0(itemIndex);
+
+// if ground not reached, shift cells to the ground
+

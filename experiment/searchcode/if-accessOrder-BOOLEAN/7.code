@@ -1,0 +1,10 @@
+final class AccessOrderDeque<E extends AccessOrder<E>> extends AbstractLinkedDeque<E> {
+
+@Override
+public boolean contains(Object o) {
+return (o instanceof AccessOrder<?>) &amp;&amp; contains((AccessOrder<?>) o);
+}
+
+// A fast-path containment check
+boolean contains(AccessOrder<?> e) {
+

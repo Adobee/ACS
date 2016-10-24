@@ -1,0 +1,8 @@
+public abstract class AnyType implements Type {
+
+public static Type max(Type t1, Type t2) throws IncomparableTypesException {
+if (t1.isSubtype(t2)) {
+public static Type uncheckedMax(Type t1, Type t2) {
+assert(t1.isSubtype(t2) || t2.isSubtype(t1));
+if(t1.isSubtype(t2)) {
+

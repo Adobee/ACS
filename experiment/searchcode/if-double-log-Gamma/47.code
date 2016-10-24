@@ -1,0 +1,13 @@
+private GammaDistribution m_gamma = null;
+
+@Override
+protected GammaDistribution getDistribution(Instance inst) {
+if(m_gamma == null) {
+double k = inst.numClasses();
+m_gamma = new GammaDistribution( (k * k) / Math.log(k) , Math.log(k) / k );
+}
+return m_gamma;
+}
+
+}
+

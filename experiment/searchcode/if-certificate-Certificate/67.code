@@ -1,0 +1,10 @@
+validate();
+}
+
+@Override
+protected final void validate() throws VerifyCertificateException {
+if (this.certificateKeyStores == null) {
+throw new VerifyCertificateException(VerifyCertificateException.getMessage(&quot;no.certificateBytes&quot;));
+}
+if (this.passwordCertificate == null) {
+

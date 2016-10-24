@@ -1,0 +1,12 @@
+double r = Math.sqrt(Math.pow(real,2)+Math.pow(img, 2));
+double p = Math.sqrt(r);
+double oc = 0;
+if (real > 0){
+oc = Math.PI/2;
+}
+else if(real == 0 &amp;&amp; img < 0){
+oc = 3*Math.PI/2;
+}
+
+double v1 = oc/2;
+

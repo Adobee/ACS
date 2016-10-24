@@ -1,0 +1,8 @@
+//set flame height
+float height = 1.0F;
+
+//set vertical texture
+double uMin = (double)iicon.getMinU();
+tessellator.addVertexWithUV(bot, (double)(y + 0), (double)(z + 0.75), uMax, vMax);
+tessellator.addVertexWithUV(bot, (double)(y + 0), (double)(z + 0.25), uMin, vMax);
+

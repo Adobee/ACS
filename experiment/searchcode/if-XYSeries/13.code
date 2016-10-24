@@ -1,0 +1,13 @@
+import org.jfree.data.xy.XYSeries;
+import org.jfree.data.xy.XYSeriesCollection;
+
+import charts.baseCharts.AreaChart;
+
+public class FrequancyDomainGraph extends AreaChart{
+double min = yData[0];
+
+for (int i = 0; i < xData.length; i++)
+{
+xySeries.add(xData[i], yData[i]);
+if (yData[i] < min) min = yData[i];
+

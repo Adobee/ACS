@@ -1,0 +1,18 @@
+this.source = source;
+this.target = target;
+}
+
+
+protected double currentAccuracy(int attackerAccuracy){
+return this.accuracy * attackerAccuracy / 100000;
+protected boolean strike(int attackerAccuracy){
+if (Math.random() <= currentAccuracy(attackerAccuracy)){
+return true;
+}
+return false;
+}
+
+public abstract void effect();
+
+}
+

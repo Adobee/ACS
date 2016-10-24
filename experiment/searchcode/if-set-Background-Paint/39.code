@@ -1,0 +1,14 @@
+//paint.setAntiAlias(true);
+//paint.setDither(true);
+paint.setColor(ImageEditorView.BACKGROUND_COLOR);
+paint.setStyle(Paint.Style.STROKE);
+paint.setStrokeCap(Paint.Cap.ROUND);
+if (originalBitmap) {
+paint.setXfermode(new PorterDuffXfermode(
+PorterDuff.Mode.CLEAR));
+}
+return paint;
+}
+
+}
+

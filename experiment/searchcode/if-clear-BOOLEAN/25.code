@@ -1,0 +1,6 @@
+SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
+boolean clearCache = sp.getBoolean(getString(R.string.sp_clear_cache), true);
+boolean clearPasswords = sp.getBoolean(getString(R.string.sp_clear_passwords), false);
+
+if (clearCache) {
+

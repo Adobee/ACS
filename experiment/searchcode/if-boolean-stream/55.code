@@ -1,0 +1,12 @@
+package org.bouncycastle2.asn1;
+
+import java.io.InputStream;
+
+abstract class LimitedInputStream extends InputStream
+protected void setParentEofDetect(boolean paramBoolean)
+{
+if ((this._in instanceof IndefiniteLengthInputStream))
+((IndefiniteLengthInputStream)this._in).setEofOn00(paramBoolean);
+}
+}
+

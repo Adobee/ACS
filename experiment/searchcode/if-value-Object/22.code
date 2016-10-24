@@ -1,0 +1,7 @@
+public static ValueObjectDouble newOrNull(Double value) {
+if (value != null) {
+return new ValueObjectDouble(value);
+public static ValueObjectDouble newOrNull(String value) {
+if (value != null &amp;&amp; value.length() > 0) {
+return new ValueObjectDouble(Double.valueOf(value));
+

@@ -1,0 +1,9 @@
+public int binarySearch(int[] arr, int value, int lower, int upper)
+{
+counter ++;
+if(lower > upper)
+int index = lower + ((value - arr[lower])*(upper - lower))/(arr[upper] - arr[lower]);
+int cmp = value - arr[index];
+if(cmp > 0)
+return binarySearch(arr, value, index + 1, upper);
+

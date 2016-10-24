@@ -1,0 +1,8 @@
+for(String f: st.getFields(c)) {
+String fsort = st.getSort(c,f);
+if (gomEnvironment.isBuiltin(fsort)) {
+continue;
+}
+if (st.isAtomType(fsort)) {
+if (fsort.equals(atomSort)) {
+

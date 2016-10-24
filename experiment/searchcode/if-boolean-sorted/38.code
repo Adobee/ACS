@@ -1,0 +1,12 @@
+public boolean MOFitnessSmaller(Individual x, Individual y)
+{
+boolean smaller=true;
+for (int i=0;i<x.getSortedMOFitness().length;i++)
+{
+if (x.getSortedMOFitness()[i]<y.getSortedMOFitness()[i])
+break;
+}
+else if (x.getSortedMOFitness()[i]>y.getSortedMOFitness()[i])
+{
+smaller=false;
+

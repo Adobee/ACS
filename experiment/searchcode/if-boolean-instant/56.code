@@ -1,0 +1,8 @@
+final int maxVoiceInstantIndex = voice.getNumVoiceInstantsOfVoice();
+
+for (final VoiceInstant voiceInstant : voice.getVoiceSequence()) {
+
+if (voiceInstantIndex >= 1 &amp;&amp; voiceInstantIndex < maxVoiceInstantIndex - 1) {
+try {
+final boolean isAllBelow = VoiceInstant.isLowerPitch(voiceInstant, nMinusOne) &amp;&amp;
+

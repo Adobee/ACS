@@ -1,0 +1,13 @@
+* Maximum allowed number of iterations.
+*/
+private int maximumIterations = 50;
+/**
+* Desired precision.
+*/
+private double desiredPrecision = DhbMath.defaultNumericalPrecision();
+initializeIterations();
+while ( iterations++ < maximumIterations )
+{
+precision = evaluateIteration();
+if ( hasConverged() )
+

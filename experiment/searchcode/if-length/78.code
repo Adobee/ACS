@@ -1,0 +1,7 @@
+//@ ensures \result == true ==> x.length == y.length &amp;&amp; (\forall int i; 0 <= i &amp;&amp; i < x.length; x[i] == y[x.length - 1 - i]);
+public static boolean Inverse(int[] x, int[] y) {
+if (x.length != y.length) return false;
+while (index < x.length) {
+if (x[index] != y[x.length - 1 - index]) {
+return false;
+

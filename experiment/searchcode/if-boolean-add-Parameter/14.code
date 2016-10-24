@@ -1,0 +1,15 @@
+BooleanParameterDeclaration bpd = null;
+try {
+bpd = Environment.addBooleanParameter(&quot;booleanPar&quot;);
+} catch (AddParameterException e) {
++ e.getMessage());
+}
+
+if(bpd == null)
+{
+fail(&quot;Add boolean parameter returned null&quot;);
+}
+}
+
+@Test
+

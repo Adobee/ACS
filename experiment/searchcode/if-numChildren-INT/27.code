@@ -1,0 +1,12 @@
+public class DBMoaraGene extends DBMySQL {
+
+static protected Connection conn;
+static private int numChildren = 0;
+
+public DBMoaraGene() {
+super();
+if (numChildren==0) {
+conn = this.init(&quot;moara_gene&quot;);
+}
+numChildren++;
+

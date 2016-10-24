@@ -1,0 +1,11 @@
+int value; // 保存链表的值
+ListNode next; // 下一个结点
+}
+
+public static ListNode deleteNode(ListNode head, ListNode toBeDeleted) {
+// 下面的情况链表至少有两个结点
+// 在多个节点的情况下，如果删除的是最后一个元素
+if (toBeDeleted.next == null) {
+// 找待删除元素的前驱
+ListNode tmp = head;
+

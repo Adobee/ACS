@@ -1,0 +1,16 @@
+break;
+}
+a += q[0];
+}
+u -= 1.;
+
+if (u <= q[0]) {
+return a + u;
+}
+
+int i = 0;
+double ustar = RNG.unif_rand(), umin = ustar;
+do {
+ustar = RNG.unif_rand();
+if (umin > ustar) {
+

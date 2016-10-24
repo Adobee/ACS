@@ -1,0 +1,8 @@
+public int removeElement(int[] A, int elem) {
+if(A == null || A.length == 0) return 0;
+int pre = 0;
+int cur = 0;
+while(pre < A.length) {
+if(A[pre] != elem) {
+A[cur++] = A[pre++];
+

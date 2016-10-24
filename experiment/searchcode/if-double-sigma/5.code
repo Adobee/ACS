@@ -1,0 +1,12 @@
+public class RBFKernel implements Kernel {
+private double sigma = 0.1;
+
+@Override
+public double kernel(SparseVector x, SparseVector y) {
+return sigma;
+}
+
+public void setSigma(double sigma) {
+if (sigma <= 0.0) {
+throw new RuntimeException(&quot;Sigma (variance) couldn&#39;t be negative or 0!&quot;);
+

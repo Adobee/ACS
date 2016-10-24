@@ -1,0 +1,10 @@
+private final BTree<K,V> bTree;
+private final RootSplitState<K,V> splitState;
+
+RootNode(BTree<K,V> bTree) {
+this.bTree = bTree;
+Optional<RealNode<K,V>> root = Optional.of(rootTag)
+.filter( tag -> tag != 0)
+.map(tag -> node(this,tag));
+this.splitState = new RootSplitState<>( root , bTree.space(), counters());
+

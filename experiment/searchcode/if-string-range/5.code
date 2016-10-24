@@ -1,0 +1,10 @@
+String rangeString = (String) obj;
+if(rangeString == null){
+return;
+}
+String[] rangeParts = rangeString.split(&quot;,&quot;);
+throw new InvalidMPTypeException(&quot;Invalid range string provided near &quot; + rangePart);
+}
+for(String rangeBound : rangeBounds){
+if(!rangeBound.trim().matches(&quot;\\d+&quot;)){
+

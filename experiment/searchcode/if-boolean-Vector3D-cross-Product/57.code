@@ -1,0 +1,12 @@
+Vector3D v0v1 = p2.subtract(p1);
+Vector3D v0v2 = p3.subtract(p1);
+Vector3D N = v0v1.crossProduct(v0v2);
+double v = N.dotProduct(v0v1.crossProduct(v0p));
+if (v < 0.0) {
+return false;
+}
+
+
+
+// inside-out test edge1
+

@@ -1,0 +1,7 @@
+public static DeadZone any(final List<DeadZone> deadZoneList){
+return new DeadZone() {
+@Override
+public boolean isInside(double value) {
+for(DeadZone deadZone : deadZoneList){
+if(deadZone.isInside(value)){
+

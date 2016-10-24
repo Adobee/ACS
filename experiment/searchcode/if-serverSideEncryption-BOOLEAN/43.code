@@ -1,0 +1,8 @@
+private final ThreadPool threadPool;
+
+private final int bufferSizeInBytes;
+
+private final boolean serverSideEncryption;
+public S3BlobStore(Settings settings, AmazonS3 client, String bucket, @Nullable String region, ThreadPool threadPool, boolean serverSideEncryption) {
+super(settings);
+

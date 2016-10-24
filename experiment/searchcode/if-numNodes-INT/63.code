@@ -1,0 +1,11 @@
+package Trees;
+
+public class NumNodes {
+
+public static int getNumNodes(TreeNode root) {
+if (root == null) {
+return 0;
+} else {
+int numNodes = 1;
+numNodes += getNumNodes(root.left);
+

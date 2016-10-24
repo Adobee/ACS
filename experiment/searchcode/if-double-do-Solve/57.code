@@ -1,0 +1,13 @@
+summ += distance(x - DELTA, prevY, x, y);
+prevY = y;
+}
+
+return summ;
+}
+
+private static double solve(Function f, double y, double minX, double maxX)
+{
+final double DELTA = 0.001;
+
+if (f.calculate(minX) > y)
+

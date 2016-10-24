@@ -1,0 +1,7 @@
+public <T> T getOrDefault(Class<T> type, KeyType key, T default_value) {
+final Map<KeyType, ?> themap = maps.get(type);
+if (themap == null)
+Map<KeyType, V> themap = (Map<KeyType, V>) maps.get(type);
+if (themap == null) {
+themap = new HashMap<KeyType, V>();
+

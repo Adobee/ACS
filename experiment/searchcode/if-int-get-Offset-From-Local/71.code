@@ -1,0 +1,11 @@
+*         <code>null</code> if this code block and none of its children
+*         contain the offset.
+*/
+public CodeBlock getDeepestCodeBlockContaining(int offs) {
+if (!containsOffset(offs)) {
+List<LocalVariable> vars = new ArrayList<LocalVariable>();
+
+if (localVars!=null) {
+for (int i=0; i<getLocalVarCount(); i++) {
+LocalVariable localVar = getLocalVar(i);
+

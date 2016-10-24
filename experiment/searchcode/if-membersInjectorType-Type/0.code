@@ -1,0 +1,7 @@
+constructorWriter = Optional.absent();
+factoryWriter = enumWriter;
+// If we have type parameters, then remove the parameters from our providedTypeName,
+// since we&#39;ll be implementing an erased version of it.
+if (!typeParameters.isEmpty()) {
+factoryWriter.annotate(SuppressWarnings.class).setValue(&quot;rawtypes&quot;);
+

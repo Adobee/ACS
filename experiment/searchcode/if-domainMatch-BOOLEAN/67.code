@@ -1,0 +1,7 @@
+Args.notNull(cookie, SM.COOKIE);
+if (domain == null) {
+throw new MalformedCookieException(&quot;Missing value for domain attribute&quot;);
+String host = origin.getHost().toLowerCase(Locale.ROOT);
+String cookieDomain = cookie.getDomain();
+if (domainMatch(host, cookieDomain) &amp;&amp; host.substring(0, host.length() - cookieDomain.length()).indexOf(46) == -1) {
+

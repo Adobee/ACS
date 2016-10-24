@@ -1,0 +1,7 @@
+highlightBuilder = in.readOptionalWriteable(HighlightBuilder::new);
+boolean hasIndexBoost = in.readBoolean();
+if (hasIndexBoost) {
+queryBuilder = in.readOptionalNamedWriteable(QueryBuilder.class);
+if (in.readBoolean()) {
+int size = in.readVInt();
+

@@ -1,0 +1,9 @@
+// ----
+
+// double curry:
+MethodHandle pa3 = insertArguments(list3, 0, &quot;curry&quot;, &quot;chutney&quot;);
+println(partialApp2.invokeExact(&quot;chicken&quot;, &quot;rice&quot;));  // [curry, chicken, rice]
+
+// double curry:
+MethodHandle partialApp3
+

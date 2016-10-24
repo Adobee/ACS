@@ -1,0 +1,9 @@
+* Return whether to profile query execution, or {@code null} if
+* unspecified.
+*/
+public boolean profile() {
+return profile;
+boolean hasIndexBoost = indexBoost != null;
+out.writeBoolean(hasIndexBoost);
+if (hasIndexBoost) {
+

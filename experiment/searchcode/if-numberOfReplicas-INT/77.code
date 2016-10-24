@@ -1,0 +1,6 @@
+public class ConsistentHash<T> {
+private final int numberOfReplicas;
+private final SortedMap<Integer, T> circle = new TreeMap<Integer, T>();
+public ConsistentHash(int numberOfReplicas, Collection<T> nodes) {
+this.numberOfReplicas = numberOfReplicas;
+

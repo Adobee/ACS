@@ -1,0 +1,11 @@
+g.drawRect(0, 0, getSize().width - 1, getSize().height - 1);
+
+}
+
+@Override
+public void update(Observable arg0, Object obj) {
+if (obj instanceof SelectedNotification) {
+Location result = null;
+for (int i = 0; i < 17; i++) {
+if (p.getY() >= bounds[i][3] - R &amp;&amp; p.getY() <= bounds[i][3] + R) {
+

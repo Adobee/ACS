@@ -1,0 +1,9 @@
+*  <li> x<sup>y</sup> = x<sup>u</sup>  *   2<sup>b</sup> * e<sup>c</sup>
+*  </ol>
+*  if |y| > 1e8, then we compute by exp(y*ln(x))   <p>
+public static Dfp acos(Dfp a) {
+Dfp result;
+boolean negative = false;
+
+if (a.lessThan(a.getZero())) {
+

@@ -1,0 +1,10 @@
+private Digest digest;
+int hashBits;
+
+HashAlgorithm(Digest digest, int hashBits) {
+this.digest = digest;
+this.hashBits = hashBits;
+}
+
+static HashAlgorithm decode(byte suiteIndex) throws SecureMailException {
+

@@ -1,0 +1,8 @@
+this.enddate = enddate;
+this.product = product;
+this.periodtype = periodtype;
+this.timezone = timezone;
+sb.append(&quot;&amp;periodtype=&quot;).append(periodtype.getType());
+if (StringUtils.isNotEmpty(timezone)) {
+sb.append(&quot;&amp;timezone=&quot;).append(URLEncoder.encode(timezone, StringUtil.UTF8));
+

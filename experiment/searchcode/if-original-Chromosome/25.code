@@ -1,0 +1,10 @@
+mockGene2.addSequence(new MockSequence(&quot;3&quot;));
+mockKeylessChromosome.addGene(mockGene2);
+originalGenes.add(mockGene2);
+
+MockGene mockGeneToReturn = new MockGene();
+liberalMutationAlgorithm.mutateChromosome(mockKeylessChromosome);
+
+assertFalse(originalGenes.equals(mockKeylessChromosome.getGenes()));
+verify(geneDaoMock, atLeastOnce()).findRandomGene(same(mockKeylessChromosome));
+

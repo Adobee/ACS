@@ -1,0 +1,6 @@
+public void processCollision(SceneObject object, SceneObject other) {
+if(onCollisionStart != null &amp;&amp; !areColliding(object, other)) {
+onCollisionStart.process(object, other);
+}
+if(onCollision != null) onCollision.process(object, other);
+

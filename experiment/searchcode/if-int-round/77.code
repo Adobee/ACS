@@ -1,0 +1,9 @@
+@Override
+public Round getCurrentRound(Country country, int season) {
+
+long yesterday = System.currentTimeMillis() - (24l * 3600l * 1000l);
+Collection<Round> rounds = roundDao.getRounds(country, season);
+
+if (rounds != null &amp;&amp; rounds.size() > 0) {
+for (Round r : rounds) {
+

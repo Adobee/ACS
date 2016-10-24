@@ -1,0 +1,11 @@
+package leetcode.powx_n;
+
+public class Solution {
+public double pow(double x, long n) {
+if(x == 0){
+if(n < 0){
+return 1 / pow(x, -n);
+}else if(n > 0){
+if(n % 2 == 0){
+double tmp = pow(x, n / 2);
+

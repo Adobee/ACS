@@ -1,0 +1,11 @@
+public class LessThanStrategy<I> extends AbstractFilterStrategy<I> {
+
+public LessThanStrategy(I start) {
+super( start, start );
+}
+
+public boolean compare(I compared) throws Exception {
+
+if ( reflector.isBoolean( compared ) ) {
+throw new IllegalArgumentException( &quot;specified type is Boolean. Boolean can&#39;t operate on between filter.&quot; );
+

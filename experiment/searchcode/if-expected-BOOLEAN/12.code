@@ -1,0 +1,12 @@
+return prob(d, true);
+}
+
+private boolean prob(double p, boolean expected) {
+exp_value++;
+if (p < 0.5) {
+expected = !expected;
+p = 1 - p;
+}
+if (prob() == expected) {
+return expected;
+

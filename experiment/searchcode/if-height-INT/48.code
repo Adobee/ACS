@@ -1,0 +1,9 @@
+public int trap(int[] height) {
+int max = 0;
+for(int i = 1; i < height.length; i++) {
+if(height[i] > height[max]) {
+int peak = 0;
+for(int i = 0; i < max; i++) {
+if(height[i] > peak) {
+peak = height[i];
+

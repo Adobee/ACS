@@ -1,0 +1,8 @@
+public static <T extends Throwable> T unwrapTarget(Class<T> target, Throwable throwable) {
+throwable = unwrapTarget(throwable);
+if(target.isAssignableFrom(throwable.getClass()))
+return target.cast(throwable);
+public static Throwable unwrapTarget(Throwable throwable) {
+if(throwable instanceof InvocationTargetException)
+return unwrapTarget(((InvocationTargetException)throwable).getTargetException());
+

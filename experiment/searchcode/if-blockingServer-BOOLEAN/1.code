@@ -1,0 +1,11 @@
+public class BlockingServer extends DatabaseServer{
+private ProxyCall call;
+
+public BlockingServer(ProxyCall call) {
+super();
+this.call = call;
+}
+
+public boolean checkIfBlocked(){
+ResultSet rs = null;
+

@@ -1,0 +1,11 @@
+case AfterConvention:
+afterConvention = object;
+}
+}
+
+public boolean hasProperty(String name) {
+if (delegateObject.hasProperty(name)) {
+return true;
+}
+if (beforeConvention != null &amp;&amp; beforeConvention.hasProperty(name)) {
+

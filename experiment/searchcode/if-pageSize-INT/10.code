@@ -1,0 +1,9 @@
+private static ThreadLocal<Integer> offset = new ThreadLocal<Integer>();;
+
+public static int getPagesize() {
+Integer _pagesize = pagesize.get();
+if (_pagesize == null) {
+return Integer.MAX_VALUE;
+}
+return _pagesize;
+

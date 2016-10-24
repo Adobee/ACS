@@ -1,0 +1,12 @@
+public int insert(MarkersCategory object) {
+getCurrentSession().save(object);
+return 1;
+}
+
+public MarkersCategory getByPK(int key) {
+MarkersCategory category = (MarkersCategory) getCurrentSession().get(MarkersCategory.class, key);
+return category;
+}
+
+public void update(MarkersCategory object) {
+

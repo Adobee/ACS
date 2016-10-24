@@ -1,0 +1,12 @@
+private Throwables()
+{
+}
+
+public static List getCausalChain(Throwable throwable)
+{
+Preconditions.checkNotNull(throwable);
+Throwable throwable1 = throwable.getCause();
+if (throwable1 != null)
+{
+throwable = throwable1;
+

@@ -1,0 +1,12 @@
+public double home;    // return value
+public double gf;
+public double ga;
+public double w;
+public double l;
+public double d;
+public double morale;
+
+public void dump(String t)
+{
+if(t == &quot;a&quot;)
+

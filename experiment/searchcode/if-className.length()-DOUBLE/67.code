@@ -1,0 +1,6 @@
+public static Object makeObject(String classname,String arg)throws Exception{
+Object vall;
+if(classname.startsWith(ENTITY_CLASSNAME)){
+vall = new Entity(new Profile(Profile.separateEntityClassname(classname)));
+}else if(classname.startsWith(PROFILE_CLASSNAME)){
+

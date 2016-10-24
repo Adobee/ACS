@@ -1,0 +1,9 @@
+add(containerClass.getCanonicalName(), scope);
+}
+
+public Scope findByName(String scopeId) {
+if (scopeIdMap.containsKey(scopeId)) {
+Scope scope = findByName(scopeId);
+if (scope == null) {
+scope = new GenericScope().scopeId(scopeId);
+

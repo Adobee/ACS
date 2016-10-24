@@ -1,0 +1,15 @@
+WEIGHT(&quot;resourceType.weight&quot;),
+PIECE(&quot;resourceType.piece&quot;);
+
+private String nameKey;
+
+private ResourceType(String nameKey) {
+this.nameKey = nameKey;
+}
+
+public String getNameKey() {
+return nameKey;
+}
+
+public void setNameKey(String nameKey) {
+

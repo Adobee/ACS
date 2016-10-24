@@ -1,0 +1,11 @@
+x = (upper+lower)/2;
+//System.out.println(&quot;x = &quot; + (x));
+fx = evaluate(x);
+if(fx == 0) return(x);
+else if((fx>0) &amp;&amp; (fu>0)){ upper = x; fu = fx;}
+public double defIntegral(double a, double b, int nsteps){
+int i;
+double h = (b-a)/nsteps;
+double x = a;
+double sum = (evaluate(a)+evaluate(b))/2;
+

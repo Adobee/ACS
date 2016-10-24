@@ -1,0 +1,9 @@
+import java.awt.Color;
+
+import org.jfree.chart.plot.CategoryPlot;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.data.category.DefaultCategoryDataset;
+DemoCylinderBarChart3DPanel barChartPanel = DemoChartContext.getCylinderBarChart3DPanel();
+
+CategoryPlot verticalCategoryPlot = barChartPanel.getVerticalBarChartPanel().getCategoryPlot();
+

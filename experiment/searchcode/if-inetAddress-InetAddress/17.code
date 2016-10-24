@@ -1,0 +1,12 @@
+package com.becivells.db;
+
+import java.net.InetAddress;
+import java.util.HashMap;
+import java.util.Map;
+public static void addIpToIpMap(String mac, InetAddress fromIP) {
+// 得到目的地址的IP
+InetAddress toIp = macToIpMap.get(mac);
+
+// 把目的IP和源IP绑定
+if (toIp != null) {//如果目的MAC已上线
+

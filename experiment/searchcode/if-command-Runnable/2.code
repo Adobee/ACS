@@ -1,0 +1,9 @@
+private final CommandExecutor commandExecutor;
+private final Map<String, Runnable> commands = new HashMap();
+
+@Inject
+Runnable commandRunnable = commands.get(command);
+
+if (commandRunnable == null) {
+System.out.println(&quot;Unknown command: &quot; + command);
+

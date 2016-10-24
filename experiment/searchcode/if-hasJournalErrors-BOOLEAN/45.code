@@ -1,0 +1,12 @@
+private int redundantOpCount;
+private boolean hasJournalErrors;
+
+// Must be read and written when synchronized on &#39;this&#39;.
+journalWriter.flush();
+
+if (hasJournalErrors) {
+return null; // Don&#39;t edit; the journal can&#39;t be written.
+}
+
+if (entry == null) {
+

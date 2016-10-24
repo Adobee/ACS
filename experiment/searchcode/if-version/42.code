@@ -1,0 +1,15 @@
+public long getVersion() {
+return version;
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+if (o == null || getClass() != o.getClass()) return false;
+
+Version version1 = (Version) o;
+
+if (version != version1.version) return false;
+
+return true;
+

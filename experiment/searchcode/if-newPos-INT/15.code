@@ -1,0 +1,8 @@
+Point position = b.getPosition(creature);
+
+Point newPos = position;
+newPos.x += generator.nextInt(3)-1;
+newPos.y += generator.nextInt(3)-1;
+
+while (!b.isFreePosition(newPos.x, newPos.y) &amp;&amp; (newPos.x == position.x &amp;&amp; newPos.y == position.y)){
+

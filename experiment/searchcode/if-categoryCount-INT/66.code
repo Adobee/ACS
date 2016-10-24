@@ -1,0 +1,12 @@
+updateCategoryToCountMaps(hit);
+}
+
+//update counts (in CategoryCount) in each tree node
+if(typeFilterEnabled) {
+for (int i = 0; i < typeFilterNode.getChildCount(); i++) {
+categoryCount.count = numHitsByTypeMap.get(categoryCount.id);
+}
+}
+if(organismFilterEnabled) {
+for (int i = 0; i < organismFilterNode.getChildCount(); i++) {
+

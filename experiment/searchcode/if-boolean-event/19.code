@@ -1,0 +1,9 @@
+public class EventHandler implements Runnable {
+
+EventNotifier notifier;
+Thread thread;
+volatile boolean connected = true;
+private boolean vmDied = false;
+private boolean handleExitEvent(Event event) {
+if (event instanceof VMDeathEvent) {
+

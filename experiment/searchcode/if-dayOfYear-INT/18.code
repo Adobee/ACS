@@ -1,0 +1,11 @@
+@Override
+public int compareTo( DayOfYear that )
+return toCalendar().getTime();
+}
+
+public int getDelta( DayOfYear doy )
+{
+int days;
+
+long millis = this.toCalendar().getTimeInMillis() -
+

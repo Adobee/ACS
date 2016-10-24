@@ -1,0 +1,12 @@
+// ... and its index is not loaded yet ...
+if (indexes.get(key) == null) {
+
+// ...save it in the cache
+IndexedDocument<?> closedIndexedDoc = (IndexedDocument<?>) closedDoc;
+return getThis();
+}
+
+@Override
+public <U extends AbstractDocument<?>> View getIndex(Class<U> clazz) {
+if (IndexedDocument.class.isAssignableFrom(clazz)) {
+

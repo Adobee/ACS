@@ -1,0 +1,9 @@
+private DecimalFormat decimalFormatWithPrecision(final int precision) {
+StringBuffer format = new StringBuffer(&quot;#&quot;);
+if (precision > 0) {
+for(int i = 0; i < precision; i++) {
+format.append(&quot;#&quot;);
+}
+}
+return getDecimalFormat(format.toString());
+

@@ -1,0 +1,10 @@
+static synchronized String randomChars(int numchars) {
+// make sure the user requested at least one char:
+if( numchars <= 0 )
+// round up to the next multiple of 3.
+int s = numchars;
+if( s % 3 != 0 )
+s = s-s%3 + 3;
+
+// get random bytes
+

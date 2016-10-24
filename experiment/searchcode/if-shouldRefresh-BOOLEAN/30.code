@@ -1,0 +1,10 @@
+public CachableRSSChannel(String rssUrl) {
+this.initialRSSUrl = rssUrl;
+}
+
+@Override
+public boolean shouldRefresh() {
+boolean shouldRefresh = true;
+if (initialRSSChannel != null) {
+shouldRefresh = initialRSSChannel.shouldRefresh();
+

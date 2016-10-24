@@ -1,0 +1,5 @@
+public static void waitInThreadIfNeeded(final List<AtomicBoolean> sync, final Runnable callback) {
+// check if anything is pending first
+if(sync != null) {
+for (AtomicBoolean obj : sync) {
+

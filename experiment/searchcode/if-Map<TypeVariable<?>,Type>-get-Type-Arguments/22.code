@@ -1,0 +1,5 @@
+Map<TypeVariable<?>, Type> typeVariableMap = getTypeVariableMap(clazz);
+Type rawType = getRawType(genericType, typeVariableMap);
+private static void populateTypeMapFromParameterizedType(ParameterizedType type, Map<TypeVariable<?>, Type> typeVariableMap) {
+if (type.getRawType() instanceof Class<?>) {
+

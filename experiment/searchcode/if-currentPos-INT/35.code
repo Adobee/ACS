@@ -1,0 +1,10 @@
+final int max = 1 << b;
+int i = 0;
+for (; i < compressedNum; i++) {
+if (max <= in[currentPos + i])
+currentPos += compressedNum;
+continue outer;
+}
+final int selector = 8;
+if (in[currentPos] >= 1 << bitLength[selector])
+

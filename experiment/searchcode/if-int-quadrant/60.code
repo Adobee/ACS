@@ -1,0 +1,9 @@
+/** The quadrant
+*/
+private int _quadrant;
+
+/** Create a new QuadrantConstraint with the given origin and
+* quadrant.
+*/
+public QuadrantConstraint (Point2D origin, int quadrant) {
+

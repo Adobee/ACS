@@ -1,0 +1,9 @@
+package org.mappush.model;
+
+public class Bounds {
+
+private double southLat;
+private double northLat;
+public boolean contains(double lat, double lng) {
+if (lat > southLat &amp;&amp; lat <= northLat &amp;&amp; lng > westLng &amp;&amp; lng <= eastLng) return true;
+

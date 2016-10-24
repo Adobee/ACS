@@ -1,0 +1,11 @@
+public class NScrollDiffSys extends Object
+implements AP_diffsys_methods
+
+{
+static final double alpha, beta, d1, ci;
+static final double k, h1, p1, q1;
+private double f0(double x, double k, double h, double i) {
+if (x > i * h + 1)
+return 2 * k;
+else if (Math.abs(x - i * h) <= 1)
+

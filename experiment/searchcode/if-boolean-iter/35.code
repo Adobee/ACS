@@ -1,0 +1,11 @@
+public class IteratorWithPeek<T> implements Iterator<T> {
+Iterator<T> iter;
+boolean nextCalled;
+T obj;
+public boolean hasNext() {
+if(nextCalled){
+return true;
+}
+else{
+return iter.hasNext();
+

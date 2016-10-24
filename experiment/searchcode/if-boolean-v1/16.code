@@ -1,0 +1,15 @@
+package utils;
+
+public class Pair<P, K> {
+P v1;
+K v2;
+
+public Pair(P v1, K v2) {
+super();
+return v1.hashCode() + v2.hashCode();
+}
+
+@Override
+public boolean equals(Object obj) {
+if (!Pair.class.isInstance(obj))
+

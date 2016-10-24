@@ -1,0 +1,7 @@
+* @param defaultOperator: The default operator to use, one amongst (AND|OR)
+* @return Query object if successfully parsed, null otherwise
+Query parsedQuery = null;
+try{
+parsedQuery = new Query(null, userQuery, defaultOperator);
+}catch(RuntimeException e){
+

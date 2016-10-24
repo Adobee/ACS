@@ -1,0 +1,13 @@
+public abstract class AbstractVO implements Serializable{
+
+public String getShortClassname(String classname){
+if (classname!=null){
+int index=classname.lastIndexOf(&quot;.&quot;);
+if (index>0){
+return classname.substring(index+1);
+}
+}
+return classname;
+}
+}
+

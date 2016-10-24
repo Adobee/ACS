@@ -1,0 +1,8 @@
+package org.hypergraphdb.util;
+
+public class KeyMapResolver<Key, Value> implements RefResolver<Key, Value>
+public Value resolve(Key key)
+{
+Key realKey = keyMap.resolve(key);
+if (realKey == null)
+

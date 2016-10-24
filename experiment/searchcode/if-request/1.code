@@ -1,0 +1,9 @@
+package chapter6.requesthandler;
+
+public class RequestHandler {
+
+private final RequestProcessor requestProcessor;
+public void handle(Request request) throws InvalidRequestException {
+if (invalidRequest(request)) {
+throw new InvalidRequestException();
+

@@ -1,0 +1,12 @@
+import java.util.Random;
+import ec.Individual;
+
+public class Population {
+
+private int populationSize;
+private int evaluations;
+private int evaluations_limit_;
+
+public Population(int populationSize) {
+if (populationSize == 0) {
+

@@ -1,0 +1,11 @@
+public abstract class BaseUrlPool implements UrlPool{
+
+private final AtomicBoolean closed=new AtomicBoolean(false);
+public int getNumNew() {
+return -1;
+}
+public void close() {
+closed.set(true);
+}
+public boolean isClosed(){
+

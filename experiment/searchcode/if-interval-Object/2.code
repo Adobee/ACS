@@ -1,0 +1,9 @@
+private Interval addInterval(Object contextValue,
+Interval neighbourInterval, boolean begin, Object value) {
+Interval interval = null;
+if (neighbourInterval != null &amp;&amp; neighbourInterval.isAggregation()) {
+continue;
+}
+Object diff = lastInterval.differenceBetween(interval);
+if (smallestDiff == null
+

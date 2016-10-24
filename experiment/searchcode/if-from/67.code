@@ -1,0 +1,8 @@
+@Override
+public V3Event adapt(Event from) {
+V3Event to = new V3Event();
+if (from.isSetLinks()) {
+to.getLinks().addAll(adaptOut(from.getLinks()));
+}
+if (from.isSetActions()) {
+

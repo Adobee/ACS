@@ -1,0 +1,6 @@
+public abstract double getScore(long subsetFreq, long subsetSize, long supersetFreq, long supersetSize);
+
+abstract public void writeTo(StreamOutput out) throws IOException;
+protected void checkFrequencyValidity(long subsetFreq, long subsetSize, long supersetFreq, long supersetSize, String scoreFunctionName) {
+if (subsetFreq < 0 || subsetSize < 0 || supersetFreq < 0 || supersetSize < 0) {
+

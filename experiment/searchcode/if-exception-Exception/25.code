@@ -1,0 +1,9 @@
+public static RestException changeCustomerExceptionCode(Exception e) {
+if (e instanceof RestException) {
+return (RestException) e;
+}
+
+ExceptionCode ec;
+if (e instanceof NullPointerException
+|| e instanceof java.lang.ClassCastException
+

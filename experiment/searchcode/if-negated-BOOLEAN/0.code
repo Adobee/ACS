@@ -1,0 +1,12 @@
+public abstract class AbstractPredicate extends AbstractExpression implements Predicate {
+
+protected boolean negated;
+
+public AbstractPredicate(boolean negated) {
+this.negated = negated;
+}
+
+@Override
+public boolean isNegated() {
+return negated;
+

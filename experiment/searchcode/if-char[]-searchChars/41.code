@@ -1,0 +1,7 @@
+private static String translate(String str, String searchChars, String replaceChars) {
+if (Strings.isNullOrEmpty(str)) {
+for(int i=0; i<sz; i++) {
+int idx = searchChars.indexOf(chrs[i]);
+if(idx != -1) {
+if(idx > withMax) {
+

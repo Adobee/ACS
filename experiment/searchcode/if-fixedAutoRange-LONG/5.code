@@ -1,0 +1,8 @@
+public void update(HistoryMetric newValues) {
+String metricName = newValues.getName();
+Iterator<Long> iter = newValues.getValues().keySet().iterator();
+* @param e  the action event.
+*/
+public void addOrUpdateData(String metric, long date, double value) {
+if(metric.equalsIgnoreCase(MetricNames.DISK_USED)) seriesUsed.addOrUpdate(new Millisecond(new Date(date)), value);
+

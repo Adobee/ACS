@@ -1,0 +1,8 @@
+* @throws IOException in case of an I/O problem
+*/
+protected int encodeAndWriteStream(OutputStream out, PDFNumber refLength)
+throws IOException {
+final Object lengthEntry;
+if (encodeOnTheFly) {
+if (!refLength.hasObjectNumber()) {
+

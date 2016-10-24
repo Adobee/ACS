@@ -1,0 +1,7 @@
+List <Round>roundList= new ArrayList();
+
+public int getScore(int roundNum) {
+Round tempRound=roundList.get(roundNum-1);
+if(tempRound.isStrike()){
+return tempRound.getScore()+roundList.get(roundNum).getScore();
+

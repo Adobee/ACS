@@ -1,0 +1,10 @@
+while (entryIterator.hasNext()) {
+MessageData messageData = entryIterator.next().getValue();
+if (messageData.id > highestId) {
+return messageData;
+}
+
+private MessageData getMessage(int msgId) {
+MessageData md = messages.get(msgId);
+if (md == null) {
+

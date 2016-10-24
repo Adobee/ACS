@@ -1,0 +1,12 @@
+&amp;&amp; isEqual(node.getAsOperator(), other.getAsOperator())
+&amp;&amp; isEqual(node.getType(), other.getType());
+}
+
+@Override
+public Boolean visitAssertStatement(AssertStatement node) {
+* @return {@code true} if the given AST nodes have the same structure
+*/
+private boolean isEqual(ASTNode first, ASTNode second) {
+if (first == null) {
+return second == null;
+

@@ -1,0 +1,11 @@
+RDinfo RD = new RDinfo();
+RD.setid(rs.getInt(7));
+RD.setdate(rs.getString(1));
+RD.setbegin(rs.getString(2));
+RD.setend(rs.getString(3));
+.prepareStatement(&quot;select * from RD where RD_ID=?&quot;);
+pstmt.setInt(1, id);
+ResultSet rs = pstmt.executeQuery();
+if (rs.next()) {
+RDinfo RD = new RDinfo();
+

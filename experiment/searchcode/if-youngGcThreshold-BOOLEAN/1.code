@@ -1,0 +1,9 @@
+new JvmGcMonitorService.GcThreshold(&quot;young&quot;, youngDebugThreshold * 3, youngDebugThreshold * 2, youngDebugThreshold));
+
+final boolean youngGcThreshold = randomBoolean();
+final JvmGcMonitorService.JvmMonitor.Threshold youngThresholdLevel = randomFrom(JvmGcMonitorService.JvmMonitor.Threshold.values());
+when(youngCollector.getCollectionCount()).thenReturn((long) (initialYoungCollectionCount + youngCollections));
+
+final int youngIncrement;
+if (youngGcThreshold) {
+

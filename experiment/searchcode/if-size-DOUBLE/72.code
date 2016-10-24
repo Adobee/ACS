@@ -1,0 +1,13 @@
+int oldend = endid - 1;
+double starttime = i*dt;
+if (X.size()>0){
+if (X.get(0)<starttime){
+X.remove(0);
+avg_delta_T += deltaT;
+}
+
+if (X.size()<=1){
+continue;
+}
+avg_delta_T = (double)(avg_delta_T/((1.0)*(X.size()-1)));
+

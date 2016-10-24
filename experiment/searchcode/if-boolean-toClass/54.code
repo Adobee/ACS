@@ -1,0 +1,16 @@
+xClasses[index] = getFactory().toXClass( classes[index], environment );
+}
+}
+return xClasses;
+}
+
+public boolean isInterface() {
+return toClass().isInterface();
+}
+
+public boolean isAbstract() {
+return Modifier.isAbstract( toClass().getModifiers() );
+}
+
+public boolean isPrimitive() {
+

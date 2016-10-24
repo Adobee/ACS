@@ -1,0 +1,7 @@
+private Map<Integer, Long> campaignOpportunityBids; //(campaign,bid)
+private Map<Integer, Double> campaignCost;
+private List<CampaignOpportunityBidHistory> campaignOpportunityBidHistories;
+public void addToCampaignCost(int campaignId, double additionalCost) {
+Double previousCost = campaignCost.get(campaignId);
+if (previousCost == null) {
+

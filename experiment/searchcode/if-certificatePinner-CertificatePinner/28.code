@@ -1,0 +1,12 @@
+import okio.ByteString;
+
+public final class CertificatePinner
+{
+public static final CertificatePinner DEFAULT = new Builder().build();
+private CertificatePinner(Builder paramBuilder)
+{
+hostnameToPins = Util.immutableMap(hostnameToPins);
+}
+
+private static ByteString sha1(X509Certificate paramX509Certificate)
+

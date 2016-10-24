@@ -1,0 +1,10 @@
+public static boolean isInclude(String line) {
+line = line.trim();
+boolean isInclude = line.startsWith(GNUMakefileConstants.DIRECTIVE_INCLUDE) &amp;&amp; line.length() > 7 &amp;&amp; Character.isWhitespace(line.charAt(7));
+return line.startsWith(GNUMakefileConstants.VARIABLE_OVERRIDE) &amp;&amp; line.length() > 8 &amp;&amp; Character.isWhitespace(line.charAt(8));
+}
+
+public static boolean isIf(String line) {
+line = line.trim();
+return (line.startsWith(GNUMakefileConstants.CONDITIONAL_IF) &amp;&amp; line.length() > 2 &amp;&amp; Character.isWhitespace(line.charAt(2))) ||
+

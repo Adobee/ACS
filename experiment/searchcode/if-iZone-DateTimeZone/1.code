@@ -1,0 +1,11 @@
+private transient DateTimeZone iZone;
+
+Stub(DateTimeZone dateTimeZone) {
+this.iZone = dateTimeZone;
+private void readObject(ObjectInputStream objectInputStream) throws IOException, ClassNotFoundException {
+this.iZone = (DateTimeZone) objectInputStream.readObject();
+}
+}
+
+static {
+

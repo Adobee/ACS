@@ -1,0 +1,9 @@
+public final short readrec(byte rp, byte[] buff)
+{
+short recp = (short)(rp&amp;0x0ff);
+byte[]  pdata;
+
+if (bCyclic) {
+if ( usCursor >= recp ) recp = (short)(usCursor-recp);
+else recp = (short)(recNum + usCursor - recp );
+

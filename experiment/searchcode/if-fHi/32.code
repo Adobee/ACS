@@ -1,0 +1,7 @@
+FHIForm fhiForm = (FHIForm) form;
+user = (FhiUser) request.getSession().getAttribute(FhiConfig.USER_NAME);
+if (user == null) {
+return mapping.findForward(&quot;login&quot;);
+}
+if(fhiForm.getMethod()==null){
+

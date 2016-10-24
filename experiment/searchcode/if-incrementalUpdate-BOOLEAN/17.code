@@ -1,0 +1,6 @@
+HashMap<String, String> tutorialHashCodes = loadQuizHashCodes();
+boolean incrementalUpdate = (tutorialHashCodes != null) &amp;&amp; (tutorialHashCodes.size() > 0);
+HashSet<String> tutorialsToKeep = new HashSet<String>();
+if (incrementalUpdate) {
+LOGD(TAG, &quot;Doing incremental update for tutorials.&quot;);
+

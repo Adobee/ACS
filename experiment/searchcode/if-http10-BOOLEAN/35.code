@@ -1,0 +1,6 @@
+private void setHeaderField(HttpResponse resp, String headerField, String value, boolean override) {
+if (override || !resp.headers().contains(headerField)) {
+// Determine if the request protocol version is HTTP 1.0
+private boolean isHttp10() {
+return nettyRequest.getProtocolVersion().equals(HttpVersion.HTTP_1_0);
+

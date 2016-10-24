@@ -1,0 +1,10 @@
+this.SubtitleBmp = SubtitleBmp;
+}
+
+public synchronized boolean hasSubTitleBmp(){
+return SubtitleBmp!=null&amp;&amp;!SubtitleBmp.isRecycled();
+}
+
+public synchronized void recycleSubTitleBmp(){
+if((SubtitleBmp!=null)&amp;&amp;(SubtitleBmp.isRecycled())){
+

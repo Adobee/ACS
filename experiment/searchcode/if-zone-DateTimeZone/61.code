@@ -1,0 +1,11 @@
+import javax.servlet.jsp.tagext.Tag;
+
+import org.joda.time.DateTimeZone;
+
+/**
+* Support for tag handlers for &amp;lt;timeZone&amp;gt;.
+public int doStartTag() throws JspException {
+if (value == null) {
+dateTimeZone = DateTimeZone.UTC;
+} else if (value instanceof String) {
+

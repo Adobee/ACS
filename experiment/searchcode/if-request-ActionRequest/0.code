@@ -1,0 +1,9 @@
+* la rutina por defecto del npc.
+*/
+
+@Override
+public ActionRequest behave(Context context) {
+ActionRequest actionRequest = new ActionRequest();
+if (!context.isMoving()) {
+actionRequest.setRequest(ActionRequest.REQUEST_MOVETO);
+

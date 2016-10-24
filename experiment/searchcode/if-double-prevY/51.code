@@ -1,0 +1,7 @@
+public class BasicParticle implements Particle {
+double x, y, prevX, prevY, accelX, accelY, density;
+boolean fixed;
+this(x, y, x, y, 0.0, 0.0, false);
+}
+public BasicParticle(double x, double y, double prevX, double prevY, double accelX, double accelY, boolean fixed) {
+

@@ -1,0 +1,8 @@
+* non-empty, but never null. Values are null if the name has no corresponding &#39;=&#39; separator, or
+* empty, or non-empty.
+*/
+private final List<String> queryNamesAndValues;
+public List<String> queryParameterValues(String name) {
+if (queryNamesAndValues == null) return Collections.emptyList();
+List<String> result = new ArrayList<String>();
+

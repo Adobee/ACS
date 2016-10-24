@@ -1,0 +1,12 @@
+this.maxLatency	=	maxLatency;
+}
+
+@Override
+public double giveReward() {
+double reward	=	0;
+double newDistance	=	singletons.SystemStatus.processLatency-obj;
+if(newDistance<0){
+newDistance	=	-newDistance;
+}
+for(int i=0;i<bolts.size();i++){
+

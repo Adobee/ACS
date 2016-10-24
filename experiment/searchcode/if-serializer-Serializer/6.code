@@ -1,0 +1,9 @@
+throws Exception {
+Class serializer = (Class) serializerCache.get(valueType);
+
+if (serializer != null) {
+while (it.hasNext()) {
+Class superSerializer = (Class) it.next();
+
+if (superSerializer.isAssignableFrom(valueType)) {
+

@@ -1,0 +1,15 @@
+return this.level;
+}
+
+
+public static Level find(String word) {
+if (word == null) return null;
+
+for (Level level : Level.values()) {
+if (level.level.equals(word)) return level;
+}
+
+return null;
+}
+}
+

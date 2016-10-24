@@ -1,0 +1,7 @@
+public synchronized void pushStage(StageBase stage) {
+this.stages.push(stage);
+StageBase currentStage = getCurrentStage();
+StageBase currentStage = getCurrentStage();
+if (currentStage.isPaused() != isPaused) {
+currentStage.handlePause(isPaused);
+

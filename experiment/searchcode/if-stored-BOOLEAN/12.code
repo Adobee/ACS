@@ -1,0 +1,9 @@
+stored.hasOutput = tag.getBoolean(&quot;hO&quot;);
+stored.hasUsage = tag.getBoolean(&quot;hU&quot;);
+if (stored.hasStorage) {
+stored.stored = tag.getLong(&quot;s&quot;);
+stored.hasUsage = buf.readBoolean();
+if (stored.hasStorage) {
+stored.stored = buf.readLong();
+stored.capacity = buf.readLong();
+

@@ -1,0 +1,8 @@
+import android.app.Activity;
+import android.net.http.HttpResponseCache;
+import android.os.Build;
+import android.os.Bundle;
+final HttpResponseCache cache = HttpResponseCache.getInstalled();
+if (cache != null) {
+cache.flush();
+

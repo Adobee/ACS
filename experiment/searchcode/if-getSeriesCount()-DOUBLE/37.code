@@ -1,0 +1,14 @@
+public class SampleXYDataset extends AbstractXYDataset
+implements XYDataset
+{
+
+private double translate;
+
+public SampleXYDataset()
+{
+translate = 0.0D;
+public Number getY(int i, int j)
+{
+if (i == 0)
+return new Double(Math.cos(-10D + translate + (double)j / 10D));
+

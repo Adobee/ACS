@@ -1,0 +1,10 @@
+List<URI> uris = new ArrayList<URI>();
+if (!StringUtils.hasText(uri.getPath())) {
+return uris;
+}
+URI relativeUri = baseUri.relativize(uri);
+for (URI uri : uris) {
+String s = uri.getScheme();
+if (null != s) {
+ub.scheme(s);
+

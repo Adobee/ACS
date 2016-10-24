@@ -1,0 +1,10 @@
+package org.caudexorigo.jpt.web.netty;
+
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.handler.codec.http.FullHttpRequest;
+page_controller.init();
+
+int http_status = jpt_ctx.getStatus();
+
+boolean allowsContent = MessageBody.allow(http_status);
+

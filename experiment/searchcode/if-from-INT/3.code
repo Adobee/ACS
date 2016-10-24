@@ -1,0 +1,13 @@
+private static final int[] to2 = new int[] { 1, 0, 0, 1, 8, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0 };
+
+public int rackMoves(int[] x) {
+int l = x.length;
+int[] from = new int[l];
+for (int i = 0; i < l; i++) {
+int l = from.length;
+int toEight = -1;
+int fromEight = -1;
+int res = 0;
+for (int i = 0; i < l; i++) {
+if (from[i] == 8 &amp;&amp; to[i] != 8) {
+

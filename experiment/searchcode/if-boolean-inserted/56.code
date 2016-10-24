@@ -1,0 +1,9 @@
+AddressBookNotification(Map<String, ?> rawData) {
+Object inserted = rawData.get(INSERTED_STRING);
+if (inserted instanceof List<?>) {
+insertedRecords.addAll((List<String>) inserted);
+}
+
+Object deleted = rawData.get(DELETED_STRING);
+if (deleted instanceof List<?>) {
+

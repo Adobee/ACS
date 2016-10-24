@@ -1,0 +1,11 @@
+public void accept(DataVisitor visitor)
+{
+visitor.visit(this);
+}
+
+@Override
+public boolean equals(Object o)
+{
+if (o == this) return true;
+if (!(o instanceof DataBoolean)) return false;
+

@@ -1,0 +1,12 @@
+public interface Logger {
+
+enum LogLevel {
+DBUG(1), INFO(2), WARN(3), ERROR(4);
+private int _level;
+
+private LogLevel(int level) {
+_level = level;
+}
+
+public int getLevel() {
+

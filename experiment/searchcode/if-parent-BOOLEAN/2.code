@@ -1,0 +1,13 @@
+public abstract Element clone();
+
+public boolean hasParent() {
+return parent != null;
+}
+
+public Node getParent() {
+return parent;
+}
+
+public boolean setParent(Node newParent) {
+if (parent != null) parent.children.remove(this);
+

@@ -1,0 +1,10 @@
+public static int getNumLines(String s)  {
+int numLines = 1;
+for(char c: s.toCharArray()) {
+if(c==&#39;\n&#39;) {
+int maxColumns = 0;
+int currentColumns = 0;
+for(char c: s.toCharArray()) {
+if(c==&#39;\n&#39;) {
+maxColumns = Math.max(maxColumns, currentColumns);
+

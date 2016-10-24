@@ -1,0 +1,11 @@
+public static ExplainManager getInstance() {
+if (instance == null) {
+instance = new ExplainManager();
+}
+return instance;
+* @return true 有绑定说明 fase 为绑定说明
+*/
+public static final boolean isExplain(int npcId) {
+if (explainMap == null) {
+return false;
+

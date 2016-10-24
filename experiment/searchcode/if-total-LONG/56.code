@@ -1,0 +1,8 @@
+* @version 2012.08.10
+*/
+public class NetworkFeatures implements IFeatures {
+private long _totalTXPackets;
+private long _totalTXBytes;
+// -1 (TrafficStats.UNSUPPORTED) is returned if the operation isn&#39;t supported
+long totalTXPackets = TrafficStats.getTotalTxPackets();
+

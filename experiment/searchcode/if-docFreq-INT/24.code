@@ -1,0 +1,16 @@
+HashMap<Integer, Float> docFreq = new HashMap<Integer, Float>();
+
+
+
+for(int i=0;i<queryArray.length;i++)
+DictionaryPosition[] postingList= diskPositionalIndex.GetPostingsWithPosition(PorterStemmer.processToken(queryArray[i]));
+
+
+if(postingList==null)
+{
+continue;
+}
+
+
+for(int j=0;j<postingList.length;j++)
+

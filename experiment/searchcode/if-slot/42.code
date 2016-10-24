@@ -1,0 +1,10 @@
+ItemStack slotStack;
+
+if (itemStack.isStackable())
+{
+while (itemStack.stackSize > 0 &amp;&amp; (!ascending &amp;&amp; slotIndex < slotMax || ascending &amp;&amp; slotIndex >= slotMin))
+slot = (Slot) this.inventorySlots.get(slotIndex);
+slotStack = slot.getStack();
+
+if (slot.isItemValid(itemStack) &amp;&amp; itemStack.getItem() == slotStack.getItem())
+

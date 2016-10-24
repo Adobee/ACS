@@ -1,0 +1,16 @@
+private double gama;
+
+private double[] h;
+
+private double Q0;
+
+private int stability;
+
+private double u;
+double fr = pr.getFitness();
+double qe, ye, ze;
+PlumeChromosome pe;
+
+if (fl > fr) {
+qe = centroid.getQ0() + gama * (qr - centroid.getQ0());
+

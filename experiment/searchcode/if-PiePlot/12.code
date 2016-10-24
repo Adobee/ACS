@@ -1,0 +1,8 @@
+import org.jfree.chart.plot.PiePlot;
+import org.jfree.chart.plot.PiePlot3D;
+import org.jfree.data.general.DefaultPieDataset;
+pieChart.getRenderingHints().put(RenderingHints.KEY_TEXT_ANTIALIASING,
+RenderingHints.VALUE_TEXT_ANTIALIAS_OFF);
+//得到饼图的Plot对象
+PiePlot3D piePlot = (PiePlot3D) pieChart.getPlot();
+

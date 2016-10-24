@@ -1,0 +1,7 @@
+* @return array of linestrings given as coordinate arrays
+*/
+protected static Coordinate[][] decompose(double dateline, Coordinate[] coordinates) {
+for (int i = 1; i < coordinates.length; i++) {
+double t = intersection(coordinates[i-1], coordinates[i], dateline);
+if(!Double.isNaN(t)) {
+

@@ -1,0 +1,8 @@
+public class Solution {
+public int maxProduct(int[] A) {
+if (A.length == 0){ return 0; }
+int maxOld = A[0];
+int minOld = A[0];
+int currentMax = A[0];
+int maxHere, minHere;
+

@@ -1,0 +1,9 @@
+* @param n
+* @return
+*/
+public double solve(double x, int n) {
+if (n == 0) return 1.0;
+if (n == 1) return x;
+double remainder = solve(x, n % 2);
+double half = solve(x, n / 2);
+

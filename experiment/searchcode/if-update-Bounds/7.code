@@ -1,0 +1,11 @@
+entities = engine.getEntitiesFor(Family.getFamilyFor(BoundsComponent.class));
+}
+
+@Override
+public void update(float deltaTime) {
+
+for(Entity entity: movedEntities.values()){
+for (Entity otherEntity: entities.values()) {
+oBounds = otherEntity.getComponent(BoundsComponent.class);
+if (!otherEntity.equals(entity) &amp;&amp; !oBounds.isPassable()) {
+

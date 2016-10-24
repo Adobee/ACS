@@ -1,0 +1,9 @@
+private long authOverdraftAmount;
+
+public CheckingAccount(String holderName, long authOverdraftAmount) {
+super(holderName);
+@Override
+public boolean withdraw(long amount) {
+long availableBal = super.getBalance() - amount;
+if (availableBal > authOverdraftAmount) {
+

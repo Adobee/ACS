@@ -1,0 +1,10 @@
+public static void sort(int[] values, int p, int r) {
+if (p >= r) {
+return;
+}
+int[] q = partition(values, p, r);
+sort(values, p, q[0] - 1);
+private static int[] partition(int[] values, int p, int r) {
+// valurs[r-1]作为p1，values[r]作为p2
+if (values[r] < values[r - 1]) {
+

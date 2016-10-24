@@ -1,0 +1,15 @@
+this.height = height;
+}
+
+public boolean overlaps(Bounds b) {
+return (x < b.x + b.width) &amp;&amp; (x + width > b.x) &amp;&amp; (y < b.y + b.height) &amp;&amp; (
+public boolean overlapsList(Iterable<Bounds> boundsList) {
+for (Bounds bounds : boundsList) {
+if (overlaps(bounds)) {
+return true;
+}
+}
+return false;
+}
+}
+

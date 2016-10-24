@@ -1,0 +1,9 @@
+int slots = header.slots();
+getSideInfo();
+int flushMain = br.getBitCount() &amp; 7;
+if (flushMain != 0) {
+ScaleFactor sfc = scaleFactors[ch];
+int[] sfl = sfc.l;
+int[][] sfs = sfc.s;
+if (gi.windowSwitching &amp;&amp; gi.blockType == 2) {
+

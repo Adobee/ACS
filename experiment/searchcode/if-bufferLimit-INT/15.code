@@ -1,0 +1,8 @@
+public static final int DEFAULT_BUFFER_LIMIT = 10 * 1024 * 1024;
+
+private final int bufferLimit;
+private volatile HttpResponse response;
+public HeapBufferedAsyncResponseConsumer(int bufferLimit) {
+if (bufferLimit <= 0) {
+throw new IllegalArgumentException(&quot;bufferLimit must be greater than 0&quot;);
+

@@ -1,0 +1,8 @@
+final int sizeY = array.getSizeY(), rowSize = array.rowSize();
+int result = 1;
+for (int y = 0; y < sizeY; y++)
+if (inf[y] == null)
+final byte[] def = array.deflated;
+for (int y = 0; y < sizeY; y++) {
+final byte[] row = inf[y];
+

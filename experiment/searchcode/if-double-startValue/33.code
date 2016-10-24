@@ -1,0 +1,9 @@
+public abstract class Sequence implements Iterable<Double> {
+protected Double startValue;
+protected Double endValue;
+protected Double increment;
+public abstract Double calculateNext(Double current);
+
+// constructor
+public Sequence(Double startValue, Double endValue,
+

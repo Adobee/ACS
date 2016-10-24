@@ -1,0 +1,5 @@
+queryString = &quot;SELECT ccid,cc.cccode,ccname,ccstatus,COUNT(project_id) AS projectsCount FROM costcenter cc LEFT OUTER JOIN acc_projects ap ON(cc.cccode=ap.cccode) WHERE orgid=&quot; + costCenterAction.getSessionOrgId();// + &quot; AND ccstatus LIKE &#39;Active&#39;&quot;;
+if (!&quot;&quot;.equalsIgnoreCase(costCenterAction.getCcCode()) &amp;&amp; costCenterAction.getCcCode() != null) {
+costCenterVTO.setBalanceAmt(costCenterVTO.getBudgetAmt() - costCenterVTO.getSpentAmt());
+if (&quot;SA&quot;.equalsIgnoreCase(costCenterAction.getTypeOfUser())) {
+

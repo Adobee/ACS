@@ -1,0 +1,6 @@
+protected void onDialogClosed(boolean positiveResult) {
+if(positiveResult) {
+persistString(mTimeString);
+// Check whether we saved the state in onSaveInstanceState
+if(state == null || !state.getClass().equals(SavedState.class)) {
+

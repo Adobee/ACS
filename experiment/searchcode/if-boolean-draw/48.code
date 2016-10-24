@@ -1,0 +1,15 @@
+redoList.clear();
+drawList.add(command);
+}
+
+public void undo() {
+if (drawList.size() > 0) {
+DrawPath undo = drawList.get(drawList.size() - 1);
+redoList.add(undo);
+}
+}
+
+public void redo() {
+if (redoList.size() > 0) {
+DrawPath redoCommand = redoList.get(redoList.size() - 1);
+

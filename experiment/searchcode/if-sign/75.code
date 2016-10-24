@@ -1,0 +1,8 @@
+* @see tk.ccbluex.EssentialsGreen.util.EventSign#change(org.bukkit.entity.Player, org.bukkit.block.Sign)
+*/
+@Override
+public Sign change(Player p, Sign sign) {
+if(p.hasPermission(&quot;EssentialsGreen.create.WarpSign&quot;)) {
+sign.setLine(0, &quot;§1[Warp]&quot;);
+if(sign.getLine(1) == null)
+

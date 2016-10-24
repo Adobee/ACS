@@ -1,0 +1,10 @@
+public class BaseExp implements ExpressionNode {
+private String sign = &quot;&quot;;
+
+private enum SIGN {
+NOT, MINUS
+public SIGN getSign(String sign) {
+if (sign.contentEquals(&quot;!&quot;)) {
+return SIGN.NOT;
+} else if (sign.contentEquals(&quot;-&quot;)) {
+

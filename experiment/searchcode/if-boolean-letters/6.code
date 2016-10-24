@@ -1,0 +1,18 @@
+public RegionItem()
+{
+this(&quot;region&quot;, true);
+}
+
+public RegionItem(String name, boolean shifted)
+{
+this.name = name;
+decodedData = buffer.reverse().toString().trim();
+}
+
+private boolean shifted;
+public static char letters[];
+
+static
+{
+letters = new char[38];
+

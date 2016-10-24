@@ -1,0 +1,8 @@
+import org.jfree.chart.plot.CategoryPlot;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.chart.renderer.category.BarRenderer3D;
+HttpServletRequest request, ServletContext sc) throws IOException {
+// 生成dataSet数据
+DefaultCategoryDataset dataset = new DefaultCategoryDataset();
+if (userList != null &amp;&amp; userList.size() > 0) {
+

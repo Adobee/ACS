@@ -1,0 +1,8 @@
+DirectoryReader directoryReader = DirectoryReader.openIfChanged(indexReader);
+if(directoryReader!=null){//index has changed
+indexReader.close();//关闭旧的reader
+try {
+DirectoryReader indexReader = indexReaders.get(configName);
+if(indexReader!=null){
+indexReader.close();
+

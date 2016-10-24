@@ -1,0 +1,7 @@
+public Integer getWeight(T key)
+{
+Integer position = nodePosition.get(key);
+if( position == null ) {
+int smallerIndex = allNodes.get(left).weight <= allNodes.get(right).weight ? left : right;
+if(allNodes.get(currentIndex).weight > allNodes.get(smallerIndex).weight){
+

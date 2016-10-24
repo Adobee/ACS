@@ -1,0 +1,8 @@
+final public void substitute(Matrix xm) {
+if (xm instanceof Matrix3D)
+substitute((Matrix3D) xm);
+final public Matrix add(Matrix xm) {
+if (xm instanceof Matrix3D)
+return add((Matrix3D) xm);
+return super.add(xm);
+

@@ -1,0 +1,9 @@
+private double upperBound;
+
+public EnsureBoundedStateHook(int index, double lowerBound, double upperBound) {
+assert(lowerBound <= upperBound);
+this.upperBound = upperBound;
+}
+
+public void call(double t, DoubleMatrix1D X, DoubleMatrix1D W, DoubleMatrix1D F, DoubleMatrix2D G) {
+

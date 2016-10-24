@@ -1,0 +1,11 @@
+tours = new Tour[TSP.ga.populationSize];
+if (initialise == true) {
+for (int i = 0; i < TSP.ga.populationSize; i++)
+tours[i] = new Tour(true);
+return Collections.min(Arrays.asList(tours));
+}
+
+public double getAvgFitness() {
+double avgFitness = 0;
+for (int i=0; i < TSP.ga.populationSize; i++)
+

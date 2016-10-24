@@ -1,0 +1,9 @@
+import org.jfree.chart.axis.AxisLocation;
+import org.jfree.chart.axis.NumberAxis;
+import org.jfree.chart.plot.CategoryPlot;
+import org.jfree.chart.plot.PlotOrientation;
+String theYearMonth = (String)((HttpServletRequest)req).getSession().getAttribute(&quot;YMForPmComp&quot;);
+String name = null;
+String title = null;
+if (&quot;group&quot;.equals((String)((HttpServletRequest)req).getSession().getAttribute(&quot;PMType&quot;))){
+

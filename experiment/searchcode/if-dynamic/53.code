@@ -1,0 +1,11 @@
+package org.esfinge.aom.model.dynamic.utils;
+
+
+public class DynamicClassLoader extends ClassLoader {
+private DynamicClassLoader(ClassLoader cl){
+super(cl);
+}
+
+public static DynamicClassLoader getInstance(ClassLoader cl){
+if(dynamicClassLoader == null){
+

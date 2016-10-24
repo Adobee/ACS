@@ -1,0 +1,9 @@
+int index = response.indexOf(beginString);
+int initialIndex = index+beginString.length();
+
+if(initialIndex == -1) {
+String remaining = response.substring(initialIndex);
+int finalIndex = remaining.indexOf(endString);
+
+if(finalIndex == -1) {
+

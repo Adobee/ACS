@@ -1,0 +1,7 @@
+private final Type ownerType;
+
+public ParameterizedTypeImpl(Class<?> rawType, Type[] actualTypeArguments, Type ownerType) {
+String prefix = (ownerType instanceof ParameterizedType) ? ((Class<?>)((ParameterizedType)ownerType).getRawType()).getName() + &#39;$&#39;
+: ((Class<?>)ownerType).getName() + &#39;$&#39;;
+if (clazz.startsWith(prefix))
+

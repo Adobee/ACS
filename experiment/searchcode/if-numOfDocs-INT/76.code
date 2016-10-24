@@ -1,0 +1,8 @@
+double scores[] = resultSet.getScores();
+int docIds[] = resultSet.getDocids();
+int numOfDocs = resultSet.getResultSize();
+int numOfModifiedDocs = 0;
+
+for (int i=0; i<numOfDocs; i++) {
+if (!satisfiers.contains(docIds[i]) &amp;&amp; !satisfiers.contains(FileList.getMetaDocId(docIds[i])) &amp;&amp; !FileList.isMeta(docIds[i]) ) {
+

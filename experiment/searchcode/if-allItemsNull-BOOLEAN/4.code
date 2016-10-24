@@ -1,0 +1,12 @@
+Number n = dataset.getValue(row, column);
+if (n != null) {
+allItemsNull = false;
+double value = n.doubleValue();
+maximum = Math.max(maximum, runningTotal);
+}
+}
+
+}
+if (!allItemsNull) {
+return new Range(minimum, maximum);
+

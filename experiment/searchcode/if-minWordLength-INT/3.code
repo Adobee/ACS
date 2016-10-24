@@ -1,0 +1,10 @@
+System.out.print(&quot;   Min word length : &quot;);
+minWordLength = in.readLine();
+
+if (minWordLength == null
+|| minWordLength.isEmpty()) {
+builder.add(PARAM_MIN_WORD_LENGTH, Integer.parseInt(minWordLength));
+JsonObject command = builder.build();
+
+// Envoi de la commande au serveur
+

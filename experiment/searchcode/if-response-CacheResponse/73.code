@@ -1,0 +1,11 @@
+package com.liferay.filters.doubleclick;
+
+import com.liferay.util.servlet.filters.CacheResponse;
+import com.liferay.util.servlet.filters.CacheResponseData;
+boolean firstRequest = false;
+
+CacheResponse cacheResponse = null;
+
+synchronized (this) {
+if (_cacheResponse == null) {
+

@@ -1,0 +1,19 @@
+public static void main (String [] a) {
+System.out.println(new Xm().draw(NUM()));
+}
+}
+
+class Xm {
+public int draw(int num) {
+int i = 1;
+if (num > 0 &amp;&amp; num%2 == 1) {
+while (i <= num) {
+System.out.println(i);
+i = i + 2;
+}
+}
+
+return ZERO();
+}
+}
+

@@ -1,0 +1,12 @@
+package com.smart.platform.gui.stechart;
+
+import org.jfree.chart.JFreeChart;
+
+import javax.swing.*;
+* Date: 2007-7-31
+* Time: 15:33:21
+* ×¨ÃÅ»­±¨±íÍ¼ÐÎµÄJPanel
+*/
+public class ChartPanel extends JPanel {
+JFreeChart chart=null;
+

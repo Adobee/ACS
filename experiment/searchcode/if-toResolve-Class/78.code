@@ -1,0 +1,6 @@
+// this implementation is made a little more complicated in an attempt to avoid object-creation
+while (true) {
+if (toResolve instanceof TypeVariable) {
+toResolve = MoreTypes.resolveTypeVariable(type, rawType, original);
+if (toResolve == original) {
+

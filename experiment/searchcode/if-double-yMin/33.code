@@ -1,0 +1,11 @@
+private static final long serialVersionUID = 2961662794L;
+boolean inited = false;
+double xmin, xmax, ymin, ymax;
+public void addPoint(Point p) {
+xmax = Double.MAX_VALUE;
+}
+if(Double.isNaN(ymin)) {
+ymin = Double.MIN_VALUE;
+}
+if(Double.isNaN(ymax)) {
+

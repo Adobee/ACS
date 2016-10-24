@@ -1,0 +1,9 @@
+public TangentialRadialField(double a, double r, double x, double y) {
+super(a, r, x, y);
+direction = Direction.CLOCKWISE;
+direction = dir;
+}
+
+private double rotateTheta(double theta) {
+if(direction == Direction.CLOCKWISE) {
+

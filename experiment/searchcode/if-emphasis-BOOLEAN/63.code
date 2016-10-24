@@ -1,0 +1,9 @@
+&quot;for the rules about naming flags), or they are ordinary flags prefixed with !, which we will call <emphasis>negated</emphasis> flags.&quot;,
+&quot;In contexts where flags are being tested, a normal (non-negated) flag is <emphasis>required</emphasis> to be present,&quot;,
+final String tidied = tag.trim().toLowerCase();
+final String tagOnly;
+boolean state;
+
+if (tidied.startsWith(&quot;!&quot;)) {
+tagOnly = tidied.substring(1);
+

@@ -1,0 +1,13 @@
+public int read(byte[] b, int offset, int len) throws IOException {
+if (hs.isExhausted())
+return -1;
+int bytesLeft = hs.getSize() - readCount;
+if (bytesLeft == 0) {
+hs.setExhausted();
+return -1;
+}
+if (bytesLeft < len) {
+len = bytesLeft;
+}
+int bytesRead = is.read(b, offset, len);
+

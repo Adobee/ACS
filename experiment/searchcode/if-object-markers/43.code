@@ -1,0 +1,8 @@
+private static final UpdateMarkersService instance = new UpdateMarkersService();
+
+private final Object lock = new Object();
+private UpdateMarkersTask updateMarkersTask;
+synchronized (lock) {
+if (updateMarkersTask != null) {
+updateMarkersTask.cancel(true);
+

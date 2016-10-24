@@ -1,0 +1,4 @@
+public InputStreamEntry getInputStream(String key) throws IOException {
+DiskLruCache.Snapshot snapshot = diskLruCache.get(toInternalKey(key));
+if (snapshot == null) return null;
+

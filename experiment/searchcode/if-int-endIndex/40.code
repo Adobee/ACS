@@ -1,0 +1,8 @@
+private static void oddBeforeEven (int[] data) {
+if (data == null || data.length <= 1)   return;
+int beginIndex = 0, endIndex = data.length-1;
+while (beginIndex < endIndex &amp;&amp; MyCompareOdd(data[endIndex]))
+endIndex --;
+if (beginIndex < endIndex) {
+int temp = data[beginIndex];
+

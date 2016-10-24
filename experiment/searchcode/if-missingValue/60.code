@@ -1,0 +1,9 @@
+private final IndexNumericFieldData<?> indexFieldData;
+private final Object missingValue;
+private final SortMode sortMode;
+
+public DoubleValuesComparatorSource(IndexNumericFieldData<?> indexFieldData, @Nullable Object missingValue, SortMode sortMode) {
+double dMissingValue;
+if (missingValue == null || &quot;_last&quot;.equals(missingValue)) {
+dMissingValue = reversed ? Double.NEGATIVE_INFINITY : Double.POSITIVE_INFINITY;
+

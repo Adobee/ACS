@@ -1,0 +1,12 @@
+//only for non-angled pieces though
+//rename isEndOfLine()?
+public boolean isIsolated() {
+int matches = 0;
+if (up != null &amp;&amp; up.getRegion() == region) {
+return matches < 2;
+}
+
+//check if it is the start or end of a line
+public boolean isLineEnd() {
+return getNumberOfNeighbors() < 2;
+

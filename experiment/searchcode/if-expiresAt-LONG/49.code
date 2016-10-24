@@ -1,0 +1,7 @@
+public synchronized boolean acquire(Jedis jedis) throws InterruptedException {
+long timeout = this.timeoutInMiliseconds;
+while (timeout >= 0) {
+long expiresAt = System.currentTimeMillis() + expiryInMiliseconds + 1;
+String actualExpiryTime = jedis.getSet(key, String.valueOf(expiresAt));
+if (actualExpiryTime != null &amp;&amp; actualExpiryTime.equals(expectedExpiryTime)) {
+

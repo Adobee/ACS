@@ -1,0 +1,10 @@
+* A helper class to navigate {@link JsonNode} objects.
+*/
+class PathSegment implements Iterable<PathSegment> {
+
+private String remainingPath;
+private String incomingPath;
+private JsonNode node;
+private PathSegment parent;
+protected char pathSeparator;
+

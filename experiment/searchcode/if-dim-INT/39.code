@@ -1,0 +1,12 @@
+public class Matrix {
+
+private final int DIM = 50;
+private boolean[][] m;
+
+public Matrix() {
+for(int i = 1; i < (DIM -1); i++)
+for(int j = 1; j < (DIM -1); j++) {
+
+int n = 0;
+if(m[i-1][j-1]) n++;
+

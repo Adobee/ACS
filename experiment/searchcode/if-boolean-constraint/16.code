@@ -1,0 +1,7 @@
+public class RegexConstraintPredicate<T> implements
+AttributeConstraintPredicate<T> {
+
+public boolean acceptValue(AttributeConstraint constraint, T value) {
+if (constraint instanceof RegexConstraint) {
+return acceptValue((RegexConstraint) constraint, value);
+

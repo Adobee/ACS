@@ -1,0 +1,12 @@
+public static Vector<Double> iterationMethod(Expression expression, double limit1, double limit2, double eps)
+{
+//left and right values
+if(limit2 < limit1)
+{
+double temp = limit1;
+double yl = expression.setVariable(&quot;x&quot;, limit1).evaluate(), yr = yl;
+do
+{
+limit1 += eps;
+if(limit1 > limit2)
+

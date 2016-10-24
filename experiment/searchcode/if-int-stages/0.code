@@ -1,0 +1,16 @@
+for(int i = 0; i<stages.size(); i++)
+{
+if(stages.get(i).ID() == s)
+{
+stages.remove(i);
+}
+}
+}
+
+public Stage getStage(int s)
+{
+Stage tmpStage = null;
+for(int i = 0; i<stages.size(); i++)
+{
+if(stages.get(i).ID() == s)
+

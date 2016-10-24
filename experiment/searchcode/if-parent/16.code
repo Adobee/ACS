@@ -1,0 +1,16 @@
+this.setSize(this.getSize() + 1);
+return;
+}
+
+Tree_Node r = this.root;
+Tree_Node parent = null;
+while(r != null) {
+if(newNode.getKey() > r.getKey()) {
+parent = r;
+r = r.getLeft();
+}
+}
+
+newNode.setParent(parent);
+if(parent.getKey() < newNode.getKey()) {
+

@@ -1,0 +1,7 @@
+public void testRawAgainstOptimized(FXYSum fxyRaw, FXYSum fxyOpt) {
+final int m = 100;
+double[][] data = new double[m][3];
+assertEquals(fxyRaw.getRootMeanSquareError(), fxyOpt.getRootMeanSquareError(), EPS);
+
+double zRaw, zOpt;
+

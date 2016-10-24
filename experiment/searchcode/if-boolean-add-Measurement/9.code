@@ -1,0 +1,9 @@
+List<Measurement> result = new ArrayList<Measurement>();
+for (Measurement measurement : measurements)
+if (measurement.LogId.equals(log.Id))
+result.add(measurement);
+callback.success(result);
+}
+
+public void error(Throwable error) {
+

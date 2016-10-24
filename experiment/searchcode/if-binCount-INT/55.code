@@ -1,0 +1,15 @@
+private final DescriptiveStatistics totalStats = new DescriptiveStatistics();
+
+private int binCount = 100;
+
+public HistogramPlot() {
+}
+
+public Map<String, Histogram> getHistograms() {
+histograms.get(series).apply(v);
+totalStats.addValue(v);
+}
+
+public int getBinCount() {
+return binCount;
+

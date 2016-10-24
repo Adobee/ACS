@@ -1,0 +1,19 @@
+public class SizeFixedMap<K,E> extends LinkedHashMap<K,E>{
+private static final long serialVersionUID = 1L;
+this.maxsize = maxsize;
+}
+
+@Override
+public E put(K key, E e){
+if(this.size() <= maxsize){
+return super.put(key,e);
+}
+else{
+return null;
+}
+
+}
+
+
+}
+

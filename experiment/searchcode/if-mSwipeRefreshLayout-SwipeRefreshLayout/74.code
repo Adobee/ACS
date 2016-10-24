@@ -1,0 +1,9 @@
+public void onPause() {
+super.onPause();
+
+if (mSwiperefreshlayout != null) {
+mSwiperefreshlayout.destroyDrawingCache();
+mSwiperefreshlayout.clearAnimation();
+}
+if (VolleyManager.newInstance() != null) {
+

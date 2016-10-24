@@ -1,0 +1,5 @@
+public static final int EIGHT = 8;
+public static final double TEMP = 1.34;
+private static final char LAST2BYTE = (char) Integer.parseInt(&quot;00000011&quot;, TWO);
+public static String getBase64Mac(String stepA, String stepB) throws NoSuchAlgorithmException, UnsupportedEncodingException,
+

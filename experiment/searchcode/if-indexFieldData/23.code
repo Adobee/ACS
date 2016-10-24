@@ -1,0 +1,6 @@
+public void setNextReader(AtomicReaderContext context) throws IOException {
+values = indexFieldData.load(context).getBytesValues(true);
+if (script != null) {
+int maxDoc = readerContext.reader().maxDoc();
+if (indexFieldData instanceof IndexFieldData.WithOrdinals) {
+

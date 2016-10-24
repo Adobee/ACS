@@ -1,0 +1,11 @@
+final private boolean forceRefresh;
+
+final private Classifier<? super Throwable, Boolean> rollbackClassifier;
+
+/**
+* Create a {@link DefaultRetryState} representing the state for a new retry
+* @param key the key for the state to allow this retry attempt to be
+* recognised
+* @param forceRefresh true if the attempt is known to be a brand new state
+* (could not have previously failed)
+

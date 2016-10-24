@@ -1,0 +1,15 @@
+touchPointNormalizedX = touchPointNormalizedY = downPointNormalizedX = downPointNormalizedY = -1.0f;
+longPressed = false;
+zoneId = 0;
+}
+
+public boolean downPointValid()
+touchPointNormalizedX = touchPointNormalizedY = -1.0f;
+}
+
+public void saveState(Bundle outState)
+{
+if(outState == null)
+return;
+outState.putBoolean(&quot;LongPressed&quot;, longPressed);
+

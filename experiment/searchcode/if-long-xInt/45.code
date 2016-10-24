@@ -1,0 +1,10 @@
+public class XCharacterStream extends XPrimitiveBaseStream<Character, XCharacterStream> {
+private final XIntStream stream;
+
+private XCharacterStream(String string) {
+private XCharacterStream(IntStream stream) {
+this.stream = XIntStream.wrap(stream);
+}
+
+private static IntStream toIntStream(String string) {
+

@@ -1,0 +1,10 @@
+import org.joda.time.ReadableDateTime;
+import org.joda.time.ReadableInstant;
+
+import static org.hamcrest.core.AllOf.allOf;
+import static org.hamcrest.core.AnyOf.anyOf;
+public static Matcher<ReadableInstant> isExplicitlyBetween( ReadableInstant instance1, ReadableInstant instance2 )
+{
+String desc = &quot;an instance is between %0 and between %1&quot;;
+if( instance1.compareTo( instance2 ) > 0 )
+

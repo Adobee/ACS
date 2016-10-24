@@ -1,0 +1,8 @@
+for(int i = 0; i < testcases; i++){
+cycles = in.nextInt();
+int sampleSize = 1;
+for(int j = 0; j < cycles; j++){
+if(j%2 == 0){
+sampleSize *= 2;
+}else{
+

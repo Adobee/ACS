@@ -1,0 +1,9 @@
+correctedSolFluxForADay = new double[2][366][];
+}
+
+public double[] getCorrectedFluxFor(int doy, int year) {
+final int yearDays = SolarFluxCorrectionFactorCalculator.getNumDaysInTheYear(year);
+double[] corrected = correctedSolFluxForADay[yearIndex][doy];
+if (corrected != null) {
+return corrected;
+

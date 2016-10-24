@@ -1,0 +1,12 @@
+static IServerAsyncBL m_serverBL = null;
+
+public static ILocalBL getLocal(Context ctx) {
+if (m_localBL == null)
+public static IServerAsyncBL getServer(Context ctx) {
+if (m_serverBL == null)
+m_serverBL = new ServerAsyncBLImpl();
+return m_serverBL;
+}
+
+}
+

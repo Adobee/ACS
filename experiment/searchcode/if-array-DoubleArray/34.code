@@ -1,0 +1,10 @@
+DoubleArrayValue daValue = v;
+if (daValue.doubleArray != null) {
+this.doubleArray = daValue.doubleArray.clone();
+return new DoubleArrayValue(this.attribute, doubleArray);
+}
+
+@Override
+public int[] getIntArray() {
+if (this.doubleArray == null) {
+

@@ -1,0 +1,12 @@
+* @return the processed string without newline characters.
+*/
+public static String removeLineBreaks(String source) {
+if(org.apache.commons.lang3.StringUtils.isNotBlank(source)) {
+source = source.replaceAll(&quot;\\r|\\n&quot;, &quot;&quot;);
+}
+return source;
+}
+
+/**
+* Append the suffix to the source string if source don&#39;t ends with the specified suffix.
+

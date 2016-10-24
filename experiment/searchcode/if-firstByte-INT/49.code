@@ -1,0 +1,10 @@
+public final class ReplayPrefixOneCharInputStream
+extends InputStream
+{
+private byte firstByte;
+
+private int byteLength;
+public void setInputUTF8(final int recorded, final InputStream wrapped) throws IOException {
+// 110yyyyy 10zzzzzz
+if ((firstByte &amp; (byte) 0xE0) == (byte) 0xC0) {
+

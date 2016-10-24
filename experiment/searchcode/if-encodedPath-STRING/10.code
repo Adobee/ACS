@@ -1,0 +1,12 @@
+public class Base64PathEncodingUtils extends PathEncodingUtils {
+
+public String encodeDir(String path) {
+if(path == null)
+return null;
+encodedPath = encodedPath.replaceAll(&quot;=&quot;, &quot;&quot;);
+return PREFIX_CODE + encodedPath;
+}
+
+public String decodeDir(String dir) {
+if(dir == null || &quot;&quot;.equals(dir))
+

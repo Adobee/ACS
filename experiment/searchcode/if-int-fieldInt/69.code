@@ -1,0 +1,7 @@
+import newtonERP.orm.field.type.FieldDate;
+import newtonERP.orm.field.type.FieldInt;
+import newtonERP.viewers.viewerData.ListViewerData;
+public Fields initFields() throws Exception
+{
+FieldInt primaryKey = new FieldInt(&quot;Numéro&quot;, getPrimaryKeyName());
+

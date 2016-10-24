@@ -1,0 +1,13 @@
+_directory = aDirectory;
+}
+
+@Override
+public boolean execute() {
+
+Directory parentDir = _directory.getDirectory();
+Group parentGroup = _directory.getGroup();
+
+_deleted = _DBService.delete(_directory);
+
+if (_deleted) {
+

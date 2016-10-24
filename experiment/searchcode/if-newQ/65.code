@@ -1,0 +1,9 @@
+public void addEnvelope(Collection<Double> fromNow){
+
+try {
+Queue<Double> newQ = new LinkedList<Double>();
+synchronized (upcomingValues) {
+
+if (!upcomingValues.isEmpty()) {
+Iterator<Double> it = upcomingValues.iterator();
+

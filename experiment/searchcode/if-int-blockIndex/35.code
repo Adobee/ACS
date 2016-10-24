@@ -1,0 +1,11 @@
+boolean[][] blocks = new boolean[9][9];
+
+for (int i = 0; i < 9; i++) {
+for (int j = 0; j < 9; j++) {
+if (board[i][j] == &#39;.&#39;) {
+if (cols[j][numIndex]) {
+return false;
+}
+cols[j][numIndex] = true;
+int blockIndex = i / 3 * 3 + j / 3;
+

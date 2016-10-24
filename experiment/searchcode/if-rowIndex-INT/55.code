@@ -1,0 +1,9 @@
+public Map(Field[][] fields) {
+this.fields = fields;
+}
+
+public Field getField(int rowIndex, int colIndex) {
+public boolean canPlayerAttackField(String player, int rowIndex, int colIndex) {
+// does this field even exist?
+if (!areThoseIndicesProper(rowIndex, colIndex))
+

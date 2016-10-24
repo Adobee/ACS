@@ -1,0 +1,14 @@
+double x     = 0;
+double y     = 0;
+double prevy = 0;
+double prevx = 0;
+
+// If horizontal opening
+if(direction == MainView.PARABOLA_RIGHT
+if(x == 0){
+prevy = y;
+prevx = x;
+}
+
+if(Double.isNaN(prevy)){
+

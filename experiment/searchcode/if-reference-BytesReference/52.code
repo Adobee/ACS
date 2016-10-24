@@ -1,0 +1,11 @@
+import org.elasticsearch.common.bytes.BytesReference;
+
+/**
+* A {@link BytesReference} representation of the text, will always convert on the fly to a {@link String}.
+public class BytesText implements Text {
+
+private BytesReference bytes;
+
+public BytesText(BytesReference bytes) {
+this.bytes = bytes;
+

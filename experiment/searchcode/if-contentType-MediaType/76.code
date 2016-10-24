@@ -1,0 +1,5 @@
+MediaType out = req.deriveTargetContentType();
+assertEquals(MediaType.JSON, out); // Match with default in, if unspecified
+private static RestRequest makeRestRequest(MediaType contentType, MediaType accept) {
+DefaultFullHttpRequest req = new DefaultFullHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.GET, &quot;/&quot;);
+

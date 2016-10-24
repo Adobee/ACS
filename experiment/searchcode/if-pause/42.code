@@ -1,0 +1,19 @@
+package com.game.set;
+
+public class PauseAnimation extends CardAnimation {
+
+
+private float mPauseLength;
+blocking = true;
+}
+
+@Override
+public boolean update(float time){
+mPauseLength -= time;
+if (mPauseLength<=0)
+return true;
+return false;
+}
+
+}
+

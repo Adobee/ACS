@@ -1,0 +1,14 @@
+final double theta1 = longitude
+* degrees_to_radians;
+final double theta2 = longitude_2
+* degrees_to_radians;
+double cos = (Math.sin(phi1) * Math.sin(phi2)
+* Math.cos(phi2));
+
+if (cos > 1) {
+cos = 1;
+}
+return Math.abs(Math.acos(cos) * 6373000);
+}
+}
+

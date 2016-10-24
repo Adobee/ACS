@@ -1,0 +1,15 @@
+public class QuickSort {
+
+public int[] sort(int[] A, int startIndex, int endIndex){
+
+if (startIndex < endIndex) {
+int p = Partion(A, startIndex, endIndex);
+sort(A, p+1, endIndex);
+}
+return A;
+}
+
+private int Partion(int[] a, int startIndex, int endIndex) {
+
+//select the povit
+

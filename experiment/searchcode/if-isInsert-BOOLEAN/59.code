@@ -1,0 +1,22 @@
+public Template save(Template vo)
+{
+Template po = null;
+boolean isInsert = false;
+if(vo != null &amp;&amp; !StringUtil.isEmpty(vo.getTemplateId()))
+po.setTemplateContent(vo.getTemplateContent());
+po.setTemplateType(&quot;01&quot;);
+if(isInsert)
+{
+insert(po);
+}
+else
+{
+update(po);
+}
+return po;
+}
+
+
+
+}
+

@@ -1,0 +1,7 @@
+import org.jboss.netty.channel.ChannelEvent;
+import org.jboss.netty.channel.ChannelHandlerContext;
+import org.jboss.netty.channel.MessageEvent;
+throws Exception {
+if(channelEvent instanceof MessageEvent) {
+getExecutor().execute(new CoordinatorWorkerThread((MessageEvent) channelEvent,
+

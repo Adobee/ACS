@@ -1,0 +1,11 @@
+public static ActivityStackUtils getScreenManager() {
+if (instance == null) {
+instance = new ActivityStackUtils();
+}
+return instance;
+}
+
+public void popActivity() {
+Activity activity = activityStack.lastElement();
+if (activity != null) {
+

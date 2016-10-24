@@ -1,0 +1,12 @@
+private void adjustValues(double value) {
+if (value<min) {
+min = value;
+}
+if (value>max) {
+max = value;
+}
+}
+
+public double convertToInterval(double min, double max, double value) {
+return r3(min, max, this.min, this.max, value);
+

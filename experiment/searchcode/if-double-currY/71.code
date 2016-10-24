@@ -1,0 +1,13 @@
+on1<Integer,Integer> succ2 = add.fst(1);
+
+System.out.println( succ2._( 2 ) );
+
+
+on1<Integer, Integer> succ3 = add.curry()._( 1 );
+on1<Integer,Integer> doubleSucc = succ.andThen( succ2 );
+
+System.out.println( doubleSucc._( 2 ) );
+}
+
+public void curry(){
+

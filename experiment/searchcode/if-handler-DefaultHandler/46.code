@@ -1,0 +1,9 @@
+public class RootHandler extends DefaultHandler implements DatasetTags
+{
+private Stack subHandlers;
+
+public RootHandler() {
+final DefaultHandler peek = this.subHandlers.peek();
+if (peek != null) {
+defaultHandler = peek;
+

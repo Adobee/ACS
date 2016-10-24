@@ -1,0 +1,15 @@
+mBuilder = new MultipartBody.Builder()
+.setType(MultipartBody.FORM);
+}
+
+public void addFilePart(String fileName, File file){
+public void addParamPart(String key, String value){
+mBuilder.addFormDataPart(key, value);
+}
+
+
+public MultipartBody getBody(){
+return mBuilder.build();
+}
+}
+

@@ -1,0 +1,7 @@
+public static java.time.LocalDateTime unmarshal(LocalDateTime data) {
+if (data == null)
+return null;
+// this is ugly:
+int millisOfDay = data.getMillisOfDay();
+int secondsOfDay = millisOfDay / 1000;
+

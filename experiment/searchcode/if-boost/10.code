@@ -1,0 +1,13 @@
+private double x, y, length, height, speed, slope, boostX, boostY;
+public JumpAccelerator(double length, double height, double speed){
+this.length = length;
+public void reset(){
+x = 0;
+y = 0;
+if (boostX > 0){
+length-=boostX;
+boostX = 0;
+}
+if (boostY > 0){
+height-=boostY;
+

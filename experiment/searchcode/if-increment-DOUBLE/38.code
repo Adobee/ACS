@@ -1,0 +1,18 @@
+public Set<T> keySet()
+{
+return map.keySet();
+}
+
+public double get(T key)
+{
+Double z = map.get(key);
+if (z==null)
+return 0;
+return z;
+}
+
+public void increment(T key)
+{
+Double z = get(key);
+map.put(key, z+1);
+

@@ -1,0 +1,11 @@
+public static ActionResponse get( ServletResponse input )
+{
+ActionResponse obj = null;
+if (input instanceof ActionResponse)
+{
+obj = (ActionResponse) input;
+}
+else if (input instanceof HttpServletResponse)
+{
+obj = new WebActionResponse( (HttpServletResponse) input );
+

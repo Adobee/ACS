@@ -1,0 +1,8 @@
+private double moveX, moveY;
+private double nextX, nextY;
+private double catchX, catchY;
+private double gravity;
+public void handle(MouseEvent event) {
+if (catchMouse) {
+nextX = event.getSceneX() - catchX;
+

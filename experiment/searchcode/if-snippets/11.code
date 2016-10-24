@@ -1,0 +1,6 @@
+ProjectSnippetsTree projectSnippetsTree = null;
+if (projectSnippetsTreeXML != null &amp;&amp; projectSnippetsTreeXML.getLocalName().equals(ProjectSnippetsTree.PROJECT_SNIPPETS_TREE)) {
+SnippetsTree snippetsTree = SnippetsTree.createSnippetsTree(childElement);
+if (snippetsTree == null) {
+throw new RuntimeException(&quot;Cannot create SnippetsTree&quot;);
+

@@ -1,0 +1,8 @@
+public SizeValue(long size, SizeUnit sizeUnit) {
+if (size < 0) {
+throw new IllegalArgumentException(&quot;size in SizeValue may not be negative&quot;);
+String suffix = &quot;&quot;;
+if (singles >= SizeUnit.C5) {
+value = petaFrac();
+suffix = &quot;p&quot;;
+

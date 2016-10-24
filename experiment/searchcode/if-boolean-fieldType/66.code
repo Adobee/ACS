@@ -1,0 +1,6 @@
+public String[] object2Relation(String className, String fieldName, String fieldType) {
+if (fieldName != null &amp;&amp; fieldType != null){
+String columnName = fieldName;
+if (fieldType.equals(&quot;boolean&quot;) || fieldType.equals(&quot;java.lang.Boolean&quot;)){
+String[] relations = {columnName, &quot;INTEGER&quot;};
+

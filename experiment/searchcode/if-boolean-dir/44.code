@@ -1,0 +1,9 @@
+public class DirFileOperations {
+/**
+* 递归删除目录下的所有文件及子目录下所有文件
+*/
+public boolean deleteDir(File dir) {
+if (dir.isDirectory()) {
+for (int i=0; i<children.length; i++) {
+boolean success = deleteDir(new File(dir, children[i]));
+

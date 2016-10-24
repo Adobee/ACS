@@ -1,0 +1,8 @@
+Enemy threat = movement.strategy.getThreat();
+if (threat != null)
+{
+double energyDiff = robot.getEnergy() - threat.getEnergy();
+Coordinate safety = getOneOnOneSafety();
+double power = 2000;
+if (safety == Coordinate.centre) power = 100000;
+

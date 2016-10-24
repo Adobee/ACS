@@ -1,0 +1,11 @@
+public static String geLocalHostIP() {
+InetAddress inetAddress = threadlocal.get();
+if (inetAddress == null) {
+try {
+} catch (UnknownHostException e) {
+e.printStackTrace();
+}
+}
+if (inetAddress != null) {
+return inetAddress.getHostAddress().toString();
+

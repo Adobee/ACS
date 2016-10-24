@@ -1,0 +1,13 @@
+double temperature = cooling(iteration++);
+
+do {
+double nextState = nextState(currentState, temperature);
+return 1/(1+Math.exp((nextStateEnergy-currentStateEnergy)/temperature));
+}
+
+public int getMaxIteration() {
+return maxIteration;
+}
+
+public void setMaxIteration(int maxIteration) {
+

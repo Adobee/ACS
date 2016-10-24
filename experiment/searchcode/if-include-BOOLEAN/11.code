@@ -1,0 +1,11 @@
+public static boolean isIncludeSystem(Context t) {
+if (sSharedPreferences == null) {
+init(t);
+}
+boolean includeSystem = sSharedPreferences.getBoolean(&quot;isIncludeSystem&quot;, false);
+return includeSystem;
+}
+
+public static void setIsIncludeSystem(Context t, boolean isIncludeSystem) {
+if (sSharedPreferences == null) {
+

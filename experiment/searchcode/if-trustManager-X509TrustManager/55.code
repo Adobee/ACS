@@ -1,0 +1,11 @@
+private final Set<X509TrustManager> trustManagers = Sets.newHashSet();
+
+public void addTrustManager(final X509TrustManager trustManager)
+{
+trustManagers.add(trustManager);
+throw new CertificateException(&quot;No trust managers installed!&quot;);
+}
+
+CertificateException ce = null;
+for (X509TrustManager trustManager : trustManagers) {
+

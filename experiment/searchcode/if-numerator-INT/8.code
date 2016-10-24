@@ -1,0 +1,9 @@
+public static int solve(int max, int numerator, int denominator) {
+int bestNumerator = 0;
+int bestDenominator = 1;
+if (i % denominator == 0) {
+continue;
+}
+int testNumerator = i * numerator / denominator;
+if (testNumerator * bestDenominator > bestNumerator * i) {
+

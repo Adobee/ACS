@@ -1,0 +1,7 @@
+public IAppendable create(int estimatedNumberOfAppends,
+int estimatedNumberOfCharacters) {
+int initialSize = estimatedNumberOfCharacters;
+
+if (initialSize < MINIMUM_INITIAL_SIZE) {
+initialSize = MINIMUM_INITIAL_SIZE;
+

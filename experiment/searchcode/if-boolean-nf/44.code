@@ -1,0 +1,9 @@
+public class GrammarInductionUtilsTest extends TestCase {
+
+private final InducedCAT N = new InducedCAT(InducedCAT.N);
+private final InducedCAT NfN = N.forward(N);
+// Allow (N/N)\N  if Config set
+Configuration.allowXbXbX = false;
+NfN.modifier = true;
+Left_Arg(inducedCategories, N, NfN);
+

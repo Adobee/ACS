@@ -1,0 +1,7 @@
+* @throws PSQLException if something goes wrong
+*/
+public static SocketFactory getSocketFactory(Properties info) throws PSQLException {
+String socketFactoryClassName = PGProperty.SOCKET_FACTORY.get(info);
+if (socketFactoryClassName == null) {
+return SocketFactory.getDefault();
+

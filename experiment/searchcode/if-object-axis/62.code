@@ -1,0 +1,12 @@
+package common;
+
+import java.awt.Point;
+
+public class Move {
+public Point point;
+public int axis;
+public boolean equals(Object object) {
+if (object instanceof Move) {
+Move move = (Move) object;
+return move.axis == axis &amp;&amp; move.point.equals(point) &amp;&amp; move.score == score;
+

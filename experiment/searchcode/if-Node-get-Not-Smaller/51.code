@@ -1,0 +1,13 @@
+public boolean delete(final T element) {
+if (element != null) {
+for (AVLNode<T> node = getNotSmaller(element); node != null; node = node.getNext()) {
+node = node.getRightNode();
+}
+}
+
+return null;
+}
+
+/**
+* Get the node whose element is not smaller than the reference object.
+

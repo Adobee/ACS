@@ -1,0 +1,9 @@
+boolean payloads = flags.contains(Flag.Payloads) &amp;&amp; fieldTermVector.hasPayloads();
+
+long termsSize = fieldTermVector.size();
+if (hasScores) {
+termsSize = Math.min(termsSize, termVectorsFilter.size(field));
+startField(field, termsSize, positions, offsets, payloads);
+
+if (flags.contains(Flag.FieldStatistics)) {
+

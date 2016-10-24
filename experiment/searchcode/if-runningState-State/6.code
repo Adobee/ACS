@@ -1,0 +1,11 @@
+public StopWatch() {
+super();
+}
+//Starts the StopWatch
+public void start() {
+if (this.runningState == STOPPED) {
+throw new IllegalStateException(&quot;Stopwatch must be reset before being restarted.&quot;);
+}
+if (this.runningState != UNSTARTED) {
+throw new IllegalStateException(&quot;Stopwatch already started.&quot;);
+

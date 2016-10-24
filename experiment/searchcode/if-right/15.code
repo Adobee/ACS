@@ -1,0 +1,6 @@
+public boolean isRightCode(Long rightCode) {
+if (rightDao.findById(rightCode) == null) {
+return false;
+public boolean isRoleRight(Long rightCode) {
+if (roleRightDao.findByProperty(&quot;sysRight.rightCode&quot;, rightCode).size()>0) {
+

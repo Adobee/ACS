@@ -1,0 +1,12 @@
+private double acrescimo;
+private int diasAtraso, localDev;
+private Double kmDev;
+private String dataDev;
+public void setDiasAtraso(int diasAtraso) {
+this.diasAtraso = diasAtraso;
+}
+
+
+public double getKmDev() {
+return kmDev;
+

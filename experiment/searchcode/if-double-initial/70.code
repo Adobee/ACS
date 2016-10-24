@@ -1,0 +1,17 @@
+private static double dJdy = 0;
+
+//
+/**
+* @param args
+*/
+
+private MyLMA cf = null;
+private double[] initialParams = null;
+private double [][] data = null;
+this.initialParams = initialParams;
+}
+
+public final double[] fit(){
+if (data.length==3){
+double[] r = new double[3];
+

@@ -1,0 +1,17 @@
+public class IsLeapYear
+{
+
+
+public static void main(String[] args)
+{
+int testYear = 2100;
+if(isInputLeapYear(testYear))
+public static boolean isInputLeapYear(int year)
+{
+if(year % 400 == 0 || (year % 100 != 0 &amp;&amp; year % 4 == 0))
+return true;
+else
+return false;
+}
+}
+

@@ -1,0 +1,8 @@
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public final class RandomValue {
+private static final Logger logger = LoggerFactory.getLogger(RandomValue.class);
+
+public static int randomInteger(int start, int end) {
+

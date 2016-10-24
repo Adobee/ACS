@@ -1,0 +1,11 @@
+public class RoomTag {
+public byte Type;   //标签类型
+public byte DescLen;  //描述语长度
+public String Desc;   //描述语
+
+public RoomTag(TDataInputStream dis){
+Desc = dis.readUTF(DescLen);
+if (Desc != null) {
+if (Desc.length() > 4) {
+Desc = Desc.substring(0, 4);
+

@@ -1,0 +1,9 @@
+double a = U * U - V * V;
+double b = -2 * x * U;
+double c = x * x + y * y;
+if (a == 0) {
+double min = Math.min(r1, r2);
+double max = Math.max(r1, r2);
+if (min >= 0)
+return min;
+

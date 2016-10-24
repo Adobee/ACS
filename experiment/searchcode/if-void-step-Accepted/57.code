@@ -1,0 +1,9 @@
+this.decider.setLocalSearchSolver(this);
+}
+
+public void setAssertStepScoreIsUncorrupted(boolean assertStepScoreIsUncorrupted) {
+decider.decideNextStep(stepScope);
+Move nextStep = stepScope.getStep();
+if (nextStep == null) {
+// TODO JBRULES-2213 do not terminate, but warn and try again
+

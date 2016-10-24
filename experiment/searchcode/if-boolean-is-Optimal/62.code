@@ -1,0 +1,10 @@
+while (!frontier.isEmpty()) {
+
+currentNode = frontier.pop();
+
+if (currentNode.name.equals(goalNode.name)) {
+System.out.println(currentNode.name + &quot; &quot; + currentNode.pathCost + &quot; &quot; + currentNode.parent.name + &quot; &quot; + currentNode.parent.parent.name + &quot; &quot; + currentNode.parent.parent.parent.name);
+}
+if (currentNode.pathCost < this.optimalPathCost) {
+this.optimalPathGoalNode = currentNode;
+

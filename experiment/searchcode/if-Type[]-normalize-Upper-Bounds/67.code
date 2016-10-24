@@ -1,0 +1,10 @@
+return new Type[] { Object.class };
+}
+return normalizeUpperBounds(paramTypeVariable);
+}
+
+public static Type[] getImplicitLowerBounds(WildcardType paramWildcardType)
+Validate.notNull(paramWildcardType, &quot;wildcardType is null&quot;, new Object[0]);
+paramWildcardType = paramWildcardType.getUpperBounds();
+if (paramWildcardType.length == 0) {
+

@@ -1,0 +1,6 @@
+import org.elasticsearch.cluster.ClusterStateTaskListener;
+import org.elasticsearch.cluster.ClusterStateUpdateTask;
+import org.elasticsearch.cluster.LocalNodeMasterListener;
+private static SafeClusterStateTaskListener safe(ClusterStateTaskListener listener, ESLogger logger) {
+if (listener instanceof AckedClusterStateTaskListener) {
+

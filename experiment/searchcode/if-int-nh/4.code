@@ -1,0 +1,11 @@
+public class NumHitsFilter implements Predicate<Alignment>  {
+
+private int maxHits;
+
+/**
+* @param maxNH Maximum value of NH tag (inclusive)
+*/
+public NumHitsFilter(int maxNH) {
+if(maxNH < 1) {
+throw new IllegalArgumentException(&quot;Max NH must be >= 1&quot;);
+

@@ -1,0 +1,14 @@
+return shardId.equals(that.shardId());
+}
+
+@Override
+public int hashCode() {
+return shardId.hashCode();
+}
+
+@Override
+public int compareTo(ShardIterator o) {
+return shardId.compareTo(o.shardId());
+}
+}
+

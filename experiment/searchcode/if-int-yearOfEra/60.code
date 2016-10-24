@@ -1,0 +1,7 @@
+* The Japanese imperial calendar year of this date.
+*/
+private transient int yearOfEra;
+static JapaneseDate ofYearDay(JapaneseEra era, int yearOfEra, int dayOfYear) {
+Jdk8Methods.requireNonNull(era, &quot;era&quot;);
+if (yearOfEra < 1) {
+

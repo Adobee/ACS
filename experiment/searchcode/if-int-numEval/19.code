@@ -1,0 +1,18 @@
+public void update(double timeStep) {
+super.update(timeStep);
+
+int tick = (int) timeStep;
+if(tick==1) {
+init();
+}
+
+this.nonRegulatedComplaintsWindow.addValue(
+Collections.sort(viewComplaintRatios);
+
+int n = viewComplaintRatios.size();
+
+
+//odd
+if(n > 0)	{
+this.setMinViewComplaintRatio(viewComplaintRatios.get(0));
+

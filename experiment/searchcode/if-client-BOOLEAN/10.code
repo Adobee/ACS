@@ -1,0 +1,15 @@
+public static synchronized XlogClient getInstance(boolean isAsyncClient){
+if(isAsyncClient){
+if(asyncClient==null){
+asyncClient=new AsyncClient();
+}
+return asyncClient;
+}else{
+if(syncClient==null){
+syncClient=new SyncClient();
+}
+return syncClient;
+}
+}
+}
+

@@ -1,0 +1,9 @@
+this.norm = norm;
+}
+
+@Override
+public Solution solve(double[][] a, double[] b, double eps) {
+int n = a.length;
+double customEps = calculateEps(a, b, eps);
+boolean useCustomEps = customEps > 0 &amp;&amp; Double.isFinite(customEps);
+

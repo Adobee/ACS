@@ -1,0 +1,8 @@
+double s = 0;
+Iterator<Double> modelIterator = model.scoringIterator(this.iterator());
+Iterator<Double> baseModelIterator = baseModel.scoringIterator(this.iterator());
+public static ScoredSequence search(SequenceIterable model, SequenceIterable baseModel, ISequence sequence) {
+int maxStartIndex = 0;
+int maxEndIndex = 0;
+double maxSum = 0.0;
+

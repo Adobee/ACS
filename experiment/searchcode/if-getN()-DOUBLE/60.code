@@ -1,0 +1,12 @@
+private int df;			//degree of freedom
+
+public ConfidenceInterval(Summary a, double x){
+s = a;
+level = x;
+df = a.getn() - 1;
+tcrit = this.calcTcrit(df);
+public ConfidenceInterval(Summary x1, Summary x2, double x, int t){
+int n = x1.getn();
+double b = x1.getMean() - x2.getMean();
+double c = x1.getVariance() + x2.getVariance();
+

@@ -1,0 +1,13 @@
+public class CircularArray {
+private int lowerBound;
+private int upperBound;
+private Renderable[] array;
+
+public CircularArray(int capacity) {
+public void emptyArray() {
+lowerBound = upperBound;
+}
+
+public int size() {
+if (upperBound >= lowerBound)
+

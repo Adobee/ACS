@@ -1,0 +1,10 @@
+for (int i = 0; i < 3; i++)
+for (int j = 0; j < 2; j++) {
+ts.createArc(&quot;s&quot; + (j + 1) + i, &quot;s&quot; + j + i, &quot;a&quot;);
+ts.createArc(&quot;s&quot; + j + i, &quot;s&quot; + (j + 1) + i, &quot;b&quot;);
+ts.createStates(&quot;s0&quot;, &quot;s1&quot;, &quot;s2&quot;, &quot;s3&quot;, &quot;s4&quot;, &quot;s5&quot;);
+ts.setInitialState(&quot;s0&quot;);
+
+for (int i = 0; i < 2; i++) {
+ts.createArc(&quot;s&quot; + i, &quot;s&quot; + (i + 1), &quot;a&quot;);
+

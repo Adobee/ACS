@@ -1,0 +1,18 @@
+public class IncrementalNanotimeStrategy extends ManageableNanotimeStrategy {
+
+private long increment;
+
+public IncrementalNanotimeStrategy(long initialNanotime) {
+public long getIncrement() {
+return increment;
+}
+
+public void setIncrement(long increment) {
+if (increment <= 0)
+return;
+
+this.increment = increment;
+}
+
+}
+

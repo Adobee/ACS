@@ -1,0 +1,12 @@
+if (req == null) {
+throw new AmazonClientException(&quot;SendEmailRequest is null&quot;);
+}
+
+if (this.hostname == null) {
+Destination dest = req.getDestination();
+if (dest == null) {
+throw new AmazonClientException(&quot;Destination is null&quot;);
+}
+
+try {
+

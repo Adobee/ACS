@@ -1,0 +1,8 @@
+dict.__setitem__(&quot;__new__&quot;, new PyNewWrapper(PyClassMethod.class, &quot;__new__&quot;, 1, 1) {
+
+public PyObject new_impl(boolean init, PyType subtype, PyObject[] args, String[] keywords) {
+protected PyObject callable;
+
+public PyClassMethod(PyObject callable) {
+if (!callable.isCallable()) {
+

@@ -1,0 +1,7 @@
+HystrixCommand<Boolean> command = new HystrixCommand<Boolean>(Setter
+.withGroupKey(HystrixCommandGroupKey.Factory.asKey(&quot;TestUtil&quot;))
+.andCommandKey(HystrixCommandKey.Factory.asKey(&quot;CommandName&quot;))) {
+
+@Override
+protected Boolean run() {
+

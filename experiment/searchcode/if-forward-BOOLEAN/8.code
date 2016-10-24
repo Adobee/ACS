@@ -1,0 +1,14 @@
+private final BlockingQueue<String> forwardQueue;
+
+private boolean forwardToListener;
+private boolean forwardToQueue;
+
+public FilterReplyListener(ReplyListener forwardReplyListener,
+this.forwardToListener = true;
+this.forwardToQueue = true;
+}
+
+@Override
+public void displayReply(String reply) {
+if (forwardToListener) {
+

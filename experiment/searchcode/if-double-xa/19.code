@@ -1,0 +1,18 @@
+u.add(this);
+}
+
+public void move(int xa, int ya) {
+if (xa > 0)
+dir = Direction.RIGHT;
+if (xa < 0)
+dir = Direction.UP;
+
+if (xa != 0 &amp;&amp; ya != 0) {
+move(xa, 0);
+move(0, ya);
+return;
+}
+
+while (xa != 0) {
+if (Math.abs(xa) > 1) {
+

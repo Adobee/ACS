@@ -1,0 +1,10 @@
+/** This class generates DSS2 image spells. */
+public class DSS2ImageGenerator implements ImageGenerator {
+
+public void getImages(double ra, double dec, double size, java.util.ArrayList<String> list) {
+double dRA  = 2*PI/nr;
+double cDec = decs[iDec];
+
+// Skip if Dec is too far off.
+if (abs(cDec - inDec) < inSize) {
+

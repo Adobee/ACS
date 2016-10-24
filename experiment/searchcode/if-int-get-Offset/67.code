@@ -1,0 +1,15 @@
+private final double[] _array;
+private int            _offset;
+
+
+public void setOffset(int offset) {
+if (offset < 0 || offset >= _array.length) throw new IllegalArgumentException(&quot;offset must be between 0 and the length of the array&quot;);
+setOffset(offset);
+}
+
+public double get(final int index) {
+return _array[_offset + index];
+}
+
+public void set(final int index, final double value) {
+

@@ -1,0 +1,9 @@
+import java.util.ArrayList;
+
+public class Servidor_DNS {
+static ServerSocket s_socket;
+public static DataInputStream inputAtualizacao;
+System.out.println(&quot;Procurando por atualizações pendentes no Servidor DNS Secundário...&quot;);
+try{
+Socket c_socket = new Socket(&quot;127.0.0.1&quot;, 8822);
+

@@ -1,0 +1,7 @@
+ForwardParser<Pattern> altRule = fwd();
+Parser<Pattern> characterRule = map(
+tok(Type.CHAR),
+// Pattern -> List<Pattern>
+expanded(seqRule),
+// List<Pattern>
+

@@ -1,0 +1,8 @@
+// When processing a JBlock, we can simplify it to something else
+// so restore JBlock if needed before reconstructing the method declaration.
+public Object visitMethodDeclaration(JMethodDeclaration self,
+int modifiers, CType returnType, String ident,
+JFormalParameter[] parameters, CClassType[] exceptions,
+JBlock body) {
+if (body != null) {
+

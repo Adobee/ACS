@@ -1,0 +1,9 @@
+return (DataSeries)series.elementAt(i);
+}
+public void setSeriesVisible(int i,boolean flag) {
+((DataSeries)series.elementAt(i)).setVisible(flag);
+for(pos=0;!curSeries.isVisible() &amp;&amp; pos<series.size()-1;)
+curSeries=(DataSeries)series.elementAt(++pos);
+}
+public boolean nextSeries() {
+

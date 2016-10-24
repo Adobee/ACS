@@ -1,0 +1,6 @@
+int order1 = Long.compare(this.getFramebufferTimestamp(), other.getFramebufferTimestamp());
+if (order1 == 0) {
+int order2 = Long.compare(this.getServerTimestamp(), other.getServerTimestamp());
+if (order2 == 0) {
+int order3 = Long.compare(this.getMessageCounter(), other.getMessageCounter());
+

@@ -1,0 +1,8 @@
+private boolean domainIsPointsInTime;
+
+/** index for mapping: points to the oldest valid time &amp; data. */
+private int oldestAt;  // as a class variable, initializes == 0
+protected int translateGet(int toFetch) {
+if (this.oldestAt == 0) {
+return toFetch;  // no translation needed
+

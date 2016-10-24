@@ -1,0 +1,5 @@
+private int maxDepth(TreeNode t, int currentDepth) {
+if (t == null) return currentDepth;
+int leftDepth = maxDepth(t.left, currentDepth + 1);
+int rightDepth = maxDepth(t.right, currentDepth + 1);
+

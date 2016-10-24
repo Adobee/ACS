@@ -1,0 +1,5 @@
+public static double getHeadingPoints(double originX, double originY, double targetX, double targetY){
+return (Math.atan2(targetX - originX, targetY - originY) + Util.FOUR_QUARTERS) % Util.FOUR_QUARTERS;
+public static double getRelativeBearing(double itemHeading, double originX, double originY, double targetX, double targetY){
+double a = ((Math.atan2(targetX - originX, targetY - originY) + Util.FOUR_QUARTERS) % Util.FOUR_QUARTERS) - itemHeading;
+

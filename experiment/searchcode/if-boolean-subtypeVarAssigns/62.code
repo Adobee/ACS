@@ -1,0 +1,7 @@
+* @return {@code true} if {@code type} is assignable to {@code toType}.
+*/
+private static boolean isAssignable(final Type type, final Type toType,
+final Map<TypeVariable<?>, Type> subtypeVarAssigns) {
+if (type instanceof Class<?>) {
+return getTypeArguments((Class<?>) type, toClass, subtypeVarAssigns);
+

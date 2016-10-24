@@ -1,0 +1,8 @@
+public IValue invoke(TupleValue self, IValue[] args) {
+return self.elms[args[0].getIntValue()];
+return true;
+} else if (!(obj instanceof TupleValue)) {
+return false;
+} else {
+IValue[] mine = elms;
+

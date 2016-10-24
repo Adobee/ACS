@@ -1,0 +1,10 @@
+return Double.compare(that.earthDays, earthDays) == 0;
+}
+
+@Override
+public int hashCode() {
+long temp = earthDays != +0.0d ? Double.doubleToLongBits(earthDays) : 0L;
+return (int) (temp ^ (temp >>> 32));
+}
+}
+

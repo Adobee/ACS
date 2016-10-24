@@ -1,0 +1,14 @@
+package rngtools;
+
+
+abstract public class PermutedRNG extends RNG
+{
+protected IRNG source;
+outputByteAmount = out;
+}
+
+
+public static PermutedRNG createXORShift( RNG rng, int in, int out )
+{
+if (8 == in &amp;&amp; 4 == out) return new XORShiftRNG_64_32( rng, in, out );
+

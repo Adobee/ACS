@@ -1,0 +1,10 @@
+* Double <==> long bit transfer for Jikes RVM.
+*
+* @author Dave Grove
+*/
+final class VMDouble {
+
+static long doubleToLongBits(double value) {
+long val = VM_Magic.doubleAsLongBits(value);
+long exponent = val &amp; 0x7ff0000000000000L;
+

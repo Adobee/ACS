@@ -1,0 +1,7 @@
+private final Set<String> acceptedByFA = new LinkedHashSet<>();
+
+public MarbleToySample(int maxInputLength) {
+inputs = createWordsIncludingLength(maxInputLength, &#39;A&#39;, &#39;B&#39;);
+for (String input : inputs) {
+if (mealy.accepts(input)) {
+

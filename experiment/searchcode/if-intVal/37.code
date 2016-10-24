@@ -1,0 +1,18 @@
+import utils.OSCDataObjectFormatException;
+
+public class OSCInt32 extends OSCDataType {
+
+private BigInteger intVal;
+
+public OSCInt32(int intVal) {
+if(!(dataObj instanceof OSCInt32))
+return false;
+
+if(((OSCInt32)dataObj).intVal.compareTo(this.intVal) != 0)
+return false;
+
+return true;
+}
+
+}
+

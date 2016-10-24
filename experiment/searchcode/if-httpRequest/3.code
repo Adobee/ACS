@@ -1,0 +1,10 @@
+package cache;
+
+import request.HttpRequest;
+import response.HttpResponse;
+
+import java.util.HashMap;
+public void add(HttpRequest httpRequest, HttpResponse httpResponse) {
+if (isFull()) {
+remove();
+

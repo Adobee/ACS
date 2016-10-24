@@ -1,0 +1,11 @@
+import org.apache.lucene.index.IndexWriterConfig.OpenMode;
+import org.apache.lucene.store.Directory;
+import org.apache.lucene.store.FSDirectory;
+public class SimpleIndexService<T> extends AbstractIndexService<T> {
+
+/**
+* 初始化参数
+*/
+private void initCheck() {
+if (getTermBuilder() == null)
+

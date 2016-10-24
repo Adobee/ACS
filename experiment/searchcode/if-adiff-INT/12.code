@@ -1,0 +1,14 @@
+return a + &quot;|&quot; + b;
+}
+
+@Override
+public int compareTo(Tuple<A, B> o) {
+int adiff = a.compareTo(o.a);
+if (adiff != 0)
+return adiff;
+else
+return b.compareTo(o.b);
+}
+
+@SuppressWarnings(&quot;unchecked&quot;)
+

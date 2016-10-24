@@ -1,0 +1,14 @@
+InputStreamReader inputStream = new InputStreamReader(System.in);
+
+nextChar = inputStream.read();
+while (nextChar != CHAR_EOF ) {
+
+// Parse Reply Code
+replyCode += (char) nextChar;
+nextChar = inputStream.read();
+}
+
+try {
+parseReplyCode(replyCode);
+} catch (Exception e) {
+

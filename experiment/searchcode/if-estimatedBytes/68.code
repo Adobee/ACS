@@ -1,0 +1,8 @@
+Terms terms = reader.terms(getFieldNames().indexName());
+if (terms == null) {
+PagedBytesAtomicFieldData emptyData = PagedBytesAtomicFieldData.empty();
+final MonotonicAppendingLongBuffer termOrdToBytesOffset = new MonotonicAppendingLongBuffer();
+final long numTerms;
+if (regex == null &amp;&amp; frequency == null) {
+numTerms = terms.size();
+

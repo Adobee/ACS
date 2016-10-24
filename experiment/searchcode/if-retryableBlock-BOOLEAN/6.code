@@ -1,0 +1,7 @@
+public void testLocalOperationWithBlocks() throws ExecutionException, InterruptedException {
+final boolean retryableBlock = randomBoolean();
+assertTrue(listener.isDone());
+if (retryableBlock) {
+try {
+listener.get();
+

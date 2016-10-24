@@ -1,0 +1,7 @@
+/** 复制的节点个数 */
+private final int numberOfReplicas;
+/** 一致性Hash环 */
+private final SortedMap<Integer, T> circle = new TreeMap<Integer, T>();
+for (int i = 0; i < numberOfReplicas; i++) {
+circle.remove(hashFunc.hash(node.toString() + i));
+

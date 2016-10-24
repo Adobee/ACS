@@ -1,0 +1,8 @@
+public class TestThrowableHandler extends ThrowableHandlerImpl {
+private volatile Throwable throwable;
+super.handleThrowable(thread, t);
+}
+
+public void throwIfNecessary() throws Throwable {
+if (throwable != null) { throw throwable;
+

@@ -1,0 +1,13 @@
+super(TYPE);
+}
+
+/**
+* Returns the field sample size.
+* If sampleSize > 0 every sample has the same size.
+this.sampleSize = sampleSize;
+}
+
+
+public long getSampleSizeAtIndex(int index) {
+if (sampleSize > 0) {
+

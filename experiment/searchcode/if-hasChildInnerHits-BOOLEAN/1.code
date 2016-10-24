@@ -1,0 +1,9 @@
+docValueFields = (List<String>) in.readGenericValue();
+if (in.readBoolean()) {
+int size = in.readVInt();
+scriptFields.add(new ScriptField(in));
+}
+}
+fetchSourceContext = in.readOptionalStreamable(FetchSourceContext::new);
+if (in.readBoolean()) {
+

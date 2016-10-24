@@ -1,0 +1,8 @@
+public abstract String getNameKey(long instant);
+public String getShortName(long instant, Locale locale) {
+if (locale == null)
+int offset = getOffset(instantUTC);
+long instantLocal = instantUTC + offset;
+
+// If there is a sign change, but the two values have the same sign...
+

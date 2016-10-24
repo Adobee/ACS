@@ -1,0 +1,5 @@
+public FractalPreciseSimpleIterateModel(int width, int height, BigCoordinate from, BigCoordinate to, FractalIteratorFactory<BigCoordinate> iteratorFactory, int maxiter, boolean julia) {
+super(new FractalPreciseSimpleBuffer(width, height, from, to), iteratorFactory, maxiter, julia);
+public FractalPreciseSimpleIterateModel(int width, int height, BigCoordinate from, BigCoordinate to, FractalIteratorFactory<BigCoordinate> iteratorFactory, int maxiter) {
+this(width, height, from, to, iteratorFactory, maxiter, false);
+

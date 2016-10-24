@@ -1,0 +1,11 @@
+public void append(final StringBuffer buffer, final String fieldName, final Object[] array, final Boolean fullDetail) {
+this.appendFieldStart(buffer, fieldName);
+if (array == null) {
+this.appendInternal(buffer, fieldName, item, this.arrayContentDetail);
+}
+}
+buffer.append(this.arrayEnd);
+}
+
+protected void reflectionAppendArrayDetail(final StringBuffer buffer, final String fieldName, final Object array) {
+

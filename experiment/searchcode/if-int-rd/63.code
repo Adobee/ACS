@@ -1,0 +1,13 @@
+} catch (SQLException e) {
+e.printStackTrace();
+}
+return 98;
+}
+
+public int update(BizData rd,BizData sd){
+data.add(&quot;HRDEPARTMENT&quot;, &quot;orgid&quot;, orgId);
+int rows = coreDAO.select(data);
+if (rows > 0)
+super.update(rd, sd);
+else {
+

@@ -1,0 +1,12 @@
+public final class WorkerQueue<T extends Object> {
+private Vector<T> content;
+private int initialSize;
+
+public WorkerQueue(List<T> content) {
+this.initialSize = 0;
+}
+
+public T pop() {
+if(! content.isEmpty()) {
+T item = content.get(0);
+

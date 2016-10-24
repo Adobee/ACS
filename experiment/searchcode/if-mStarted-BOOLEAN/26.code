@@ -1,0 +1,10 @@
+private final Runnable mRunnable;
+private final long mDelayMillis;
+private boolean mStarted;
+private volatile boolean mInterrupted;
+synchronized (this) {
+if (mStarted &amp;&amp; mInterrupted) {
+mStarted = false;
+mInterrupted = false;
+} else if (mStarted)
+

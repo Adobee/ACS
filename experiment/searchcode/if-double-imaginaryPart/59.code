@@ -1,0 +1,10 @@
+private double[][][] realPart;
+private double[][][] imaginaryPart;
+
+private String varName;
+private String polyVarName = &quot;x&quot;;
+realPart = new double[1][1][];
+realPart[0][0] = realData;
+imaginaryPart = new double[1][1][];
+imaginaryPart[0][0] = imagData;
+

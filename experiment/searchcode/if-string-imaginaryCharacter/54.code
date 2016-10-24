@@ -1,0 +1,9 @@
+/** The notation used to signify the imaginary part of the complex number. */
+private String imaginaryCharacter;
+
+/** The format used for the imaginary part. */
+* @param imaginaryCharacter The custom imaginary character.
+*/
+public ComplexFormat(String imaginaryCharacter) {
+this(imaginaryCharacter, getDefaultNumberFormat());
+

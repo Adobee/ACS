@@ -1,0 +1,8 @@
+import thebeast.nod.type.DoubleType;
+import thebeast.nod.value.IntValue;
+import thebeast.nod.value.ValueVisitor;
+import thebeast.nod.value.DoubleValue;
+public boolean equals(Object object) {
+if (object instanceof MemDouble) {
+MemDouble memDouble = (MemDouble) object;
+

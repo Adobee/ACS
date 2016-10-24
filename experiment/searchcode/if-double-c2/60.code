@@ -1,0 +1,7 @@
+public void divide(ComplexNumber c2) {
+double c = this.a;
+this.a = (this.a * c2.a + this.b * c2.b) / (c2.a * c2.a + c2.b * c2.b);
+public void multiply(ComplexNumber c2) {
+double c = this.a;
+this.a = this.a * c2.a - this.b * c2.b;
+

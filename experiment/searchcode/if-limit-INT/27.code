@@ -1,0 +1,13 @@
+package com.oklink.api.bean;
+
+public class PageParams {
+
+private int page = 1;
+private int limit = 25;
+checkLimit(limit);
+this.limit = limit;
+}
+
+void checkLimit(int limit) {
+if(limit < 0 || limit > 1000) {
+

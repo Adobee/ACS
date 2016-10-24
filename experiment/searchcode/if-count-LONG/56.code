@@ -1,0 +1,13 @@
+return solveSeq(a, b);
+}
+
+private static long solveSeq(long a, long b) {
+long count = 0;
+if (a >= b) {
+long seqParts = a / b;
+count += seqParts;
+a -= seqParts * b;
+}
+if (a > 0) {
+count += solveParallel(a, b);
+

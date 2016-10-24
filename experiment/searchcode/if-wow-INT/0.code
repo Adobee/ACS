@@ -1,0 +1,13 @@
+String name = equip.getBoss();
+WowBoss boss = bosses.get(name);
+if (boss == null) {
+boss = new WowBoss(name);
+bosses.put(name, boss);
+return new ArrayList<WowBoss>(bosses.values());
+}
+
+public List<WowWeekRow> getWeekRow(int week) {
+
+// すべてキャラクタでMapを組み立て。
+List<WowRole> roles = wowDao.findAllRole();
+

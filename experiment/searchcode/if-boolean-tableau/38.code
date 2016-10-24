@@ -1,0 +1,14 @@
+this.tableau=x;
+
+
+}
+
+public int score(){
+if(this.winner(1)) return 10;
+if(this.winner(-1)) return -10;
+return 0;
+}
+
+public boolean winner(int player){
+if(this.tableau[0][0]+this.tableau[0][1]+this.tableau[0][2]==3*player){
+

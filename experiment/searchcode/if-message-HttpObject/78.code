@@ -1,0 +1,10 @@
+((DebitDBInterface)dbInterface).updateStoreIDs();
+
+syncResultFlag = synchronizeDataset(httpObject, dbInterface, userName, password);
+if(syncResultFlag) {
+Log.d(className, &quot;PreExecute&quot;);
+
+if(!postOnlyDebits) {
+dialogMessageText = &quot;&quot;;
+progressDialog = ProgressDialog.show(context, &quot;Synchronising Configuration&quot;, dialogMessageText, true, true, new DialogInterface.OnCancelListener() {
+

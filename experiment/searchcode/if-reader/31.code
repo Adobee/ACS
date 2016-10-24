@@ -1,0 +1,8 @@
+while (reader.ready()) {
+int c = reader.read();
+
+if (Character.isWhitespace(c)) {
+whitespaceReader.readValue(reader, c);
+} else if (Character.isLetter(c)) {
+return identifierReader.getToken(reader, c);
+

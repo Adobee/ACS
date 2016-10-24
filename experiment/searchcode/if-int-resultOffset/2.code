@@ -1,0 +1,12 @@
+private String query;
+private int resultOffset;  //  the offset of this result (if pages were used)
+private int numResults;  // number of results returned
+this.query = query;
+}
+
+public int getResultOffset() {
+return resultOffset;
+}
+
+public void setResultOffset(int resultOffset) {
+

@@ -1,0 +1,16 @@
+public DecimalFormat configure(String format, long flags, Field field) {
+if (format == null) {
+return null;
+} else {
+DecimalFormat decimalFormat = new DecimalFormat(format);
+return decimalFormat;
+}
+}
+
+@Override
+public boolean isNeedsQuotes(DecimalFormat decimalFormat) {
+return true;
+}
+
+@Override
+

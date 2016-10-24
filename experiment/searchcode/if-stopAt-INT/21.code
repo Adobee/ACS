@@ -1,0 +1,7 @@
+public static void sleepShortly() {
+int sleeptime_ms = 1000;
+long now = System.currentTimeMillis();
+long stopAt = now + sleeptime_ms;
+while (now < stopAt) {
+long newSleeptime_ms = Math.max(1, stopAt - now);
+

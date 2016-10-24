@@ -1,0 +1,9 @@
+private final MapperAnalyzer mapperAnalyzer;
+private volatile boolean flushOnClose = true;
+
+/**
+* Index setting to control if a flush is executed before engine is closed
+private void createNewEngine(boolean skipTranslogRecovery, EngineConfig config) {
+synchronized (mutex) {
+if (state == IndexShardState.CLOSED) {
+

@@ -1,0 +1,9 @@
+@Override
+public double circumscribedArea(Position[] wayCoordinates) {
+if (wayCoordinates == null) return 0;
+Position center = Position.getCenter(new HashSet<Position>(Arrays.asList(wayCoordinates)));
+double maxDist = 0;
+for (Position p : wayCoordinates)
+{
+double newDistance = center.haversineDistance(p);
+

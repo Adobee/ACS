@@ -1,0 +1,8 @@
+*     &amp;lt;tokenizer class=&quot;solr.WhitespaceTokenizerFactory&quot;/&amp;gt;
+*     &amp;lt;filter class=&quot;solr.DoubleMetaphoneFilterFactory&quot; inject=&quot;true&quot; maxCodeLength=&quot;4&quot;/&amp;gt;
+*   &amp;lt;/analyzer&amp;gt;
+inject = getBoolean(INJECT, true);
+
+if (args.get(MAX_CODE_LENGTH) != null) {
+maxCodeLength = Integer.parseInt(args.get(MAX_CODE_LENGTH));
+

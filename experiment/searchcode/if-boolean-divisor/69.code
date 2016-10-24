@@ -1,0 +1,9 @@
+public class AbundantSieve extends AbstractSieve {
+
+private DivisorFinder divisorFinder = new DivisorFinder();
+
+public AbundantSieve(int maxExclusive) {
+protected boolean processValue(int x, boolean lookupValue) {
+int divisorSum = divisorFinder.getDivisorSum(x);
+if (divisorSum >= x) { // fill for perfect numbers too
+

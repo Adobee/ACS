@@ -1,0 +1,13 @@
+public class SimpleBlueMandelbrotPainter implements MandelbrotPainter {
+
+private int maxIterationCount;
+
+public SimpleBlueMandelbrotPainter(int maxIterationCount) {
+this.maxIterationCount = maxIterationCount;
+}
+
+@Override
+public Color paintPoint(int iterationCount) {
+if (iterationCount >= 0) {
+float b = (float) iterationCount / maxIterationCount;
+

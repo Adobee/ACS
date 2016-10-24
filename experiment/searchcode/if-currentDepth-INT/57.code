@@ -1,0 +1,10 @@
+int[] costs = new int[maxDepth + 1];
+
+models[0] = gameState;
+int currentDepth = 0;
+int smallestCutoff = Integer.MAX_VALUE;
+
+while (currentDepth >= 0) {
+if (goal.isFulfilled(models[currentDepth])) {
+return new DFSResult(cutoff, actions[0]);
+

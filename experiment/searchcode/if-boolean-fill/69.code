@@ -1,0 +1,15 @@
+
+enum Color{
+Black, White, Red, Yellow Green
+}
+
+boolean paintFill(Color[][] screen, int x, int y, Color ocolor, Color ncolor){
+paintFill(screen, x, y+1, ocolor, ncolor);
+}
+return true;
+}
+
+boolean paintFill(Color[][] screen, int x, int y, Color ncolor){
+paintFill(screen, x, y, screen[y][x], ncolor);
+}
+

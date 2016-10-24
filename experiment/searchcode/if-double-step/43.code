@@ -1,0 +1,13 @@
+public ArrayList<ArrayList<Double>> ddx(double a, double b, double step){
+// (f(b)-f(a))/(b-a)
+
+if(a>b) {
+double temp = a;
+b=a;
+a=temp;
+ArrayList<Double> valy = new ArrayList<Double>();
+
+for(double i=a+step; i<b-step; i+=step){
+valx.add(i);
+valy.add((fi.f(i+step)-fi.f(i-step))/(2*step));
+

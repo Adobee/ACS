@@ -1,0 +1,8 @@
+public double interpolate(double xLow, double xHigh, double xActual, double yLow, double yHigh) {
+if (xActual > Math.max(xLow, xHigh) || xActual < Math.min(xLow, xHigh)) {
+throw new IllegalArgumentException(&quot;xActual must be between xLow and xHigh&quot;);
+}
+
+double pct = getPercent(xLow, xHigh, xActual);
+double distance = yHigh - yLow;
+

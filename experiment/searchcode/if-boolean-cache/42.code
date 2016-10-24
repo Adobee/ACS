@@ -1,0 +1,8 @@
+public static final int DEFAULT_CACHE_SIZE = 1000;
+public static final Boolean DEFAULT_OVERFLOW_TO_DISK = Boolean.TRUE;
+public <K extends Serializable, V> Map<K, V> getCache(String cacheName, int cacheSize, boolean overFlowToDisk, boolean isEternal,
+long cacheTTLSeconds) {
+
+if (cacheTTLSeconds < 0)
+cacheTTLSeconds = DEFAULT_CACHE_TTL_SECONDS;
+

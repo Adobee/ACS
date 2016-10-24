@@ -1,0 +1,8 @@
+package combinator.constraint;
+
+import combinator.datamodel.Combination;
+import combinator.datamodel.Constraint;
+public boolean isSatisfied(Combination combination) {
+for (Constraint constraint : constraints) {
+if (constraint.isSatisfied(combination)) return true;
+

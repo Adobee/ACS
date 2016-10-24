@@ -1,0 +1,15 @@
+public abstract class AbstractDatabaseAdapter
+implements DatabaseAdapter
+{
+private boolean closed = false;
+
+@Override
+public boolean isClosed()
+this.closed = true;
+}
+
+protected void assertOpen()
+throws DatabaseAdapterClosedException
+{
+if (isClosed())
+

@@ -1,0 +1,14 @@
+package input;
+
+import input.bbdd.DatabaseReader;
+import input.bbdd.DatabaseType;
+import input.classes.ClassReader;
+public static ReaderFactoryImpl getInstance() {
+if (INSTANCE == null) {
+INSTANCE = new ReaderFactoryImpl();
+}
+return INSTANCE;
+}
+
+@Override
+

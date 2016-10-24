@@ -1,0 +1,6 @@
+private static boolean isAssignable(Type type, Type toType, Map<TypeVariable<?>, Type> typeVarAssigns) {
+if (toType == null || (toType instanceof Class)) {
+private static boolean isAssignable(Type type, Class<?> toClass) {
+if (type == null) {
+if (toClass == null || !toClass.isPrimitive()) {
+

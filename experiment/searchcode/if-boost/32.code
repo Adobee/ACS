@@ -1,0 +1,13 @@
+import com.games.djc.Game.Logic.World;
+
+/**
+* Created by Pius on 12.02.2015.
+*/
+public class PlayerBoost {
+
+private static final float BIG_BOOST_SIZE = 3 * World.HEIGTH;
+public boolean update(float travledDistance) {
+boostLeft -= travledDistance;
+if (boostLeft < 0) {
+return true;
+

@@ -1,0 +1,11 @@
+protected void doValidation()
+{
+if (!isIndexing())
+{
+addErrorMessage(getText(&quot;admin.indexing.optimize.index.disabled&quot;));
+protected String doExecute()
+{
+long optimizeTime;
+optimizeTime = indexLifecycleManager.optimize();
+if (optimizeTime < 0)
+

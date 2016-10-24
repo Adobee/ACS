@@ -1,0 +1,11 @@
+public static ExecutorService getExecutorService() {
+if (executorService == null) {
+executorService = Executors.newFixedThreadPool(THREAD_POOL_SIZE);
+public static void close() {
+if (executorService != null) {
+executorService.shutdown();
+}
+}
+
+}
+

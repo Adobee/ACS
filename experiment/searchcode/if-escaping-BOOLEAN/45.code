@@ -1,0 +1,10 @@
+public void insertArray(PostgresWriter sw, String escaping, Mapping mappings) {
+sw.write(&quot;()&quot;);
+}
+
+public String buildTuple(boolean quote) {
+if (p.mustEscapeRecord()) {
+quote = buildQuoteEscape(escaping);
+if (mappings != null) {
+for (int x = 0; x < quote.length(); x++) {
+

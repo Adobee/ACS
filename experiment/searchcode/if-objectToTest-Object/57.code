@@ -1,0 +1,10 @@
+protected void updateToPass(ExternalReference target) {
+target.init();
+
+}
+
+@Override
+protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+return ExternalReferenceOperations.validateExternalReferenceTemplateId(
+(ExternalReference) objectToTest, diagnostician, map);
+

@@ -1,0 +1,12 @@
+* Expiration time after last access in {@code expireAfterAccessTimeUnit}.
+*/
+@Configure
+private Long expireAfterAccess;
+
+/**
+* {@link TimeUnit} for {@code expireAfterAccess}.
+if (maximumCapacity > 0)
+cacheBuilder.maximumSize(maximumCapacity);
+if (expireAfterAccess != null)
+cacheBuilder.expireAfterAccess(expireAfterAccess, expireAfterAccessTimeUnit);
+

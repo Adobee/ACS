@@ -1,0 +1,7 @@
+private final double LENGTH;
+private final double THICKNESS;
+private final double ACCURACY_ANGLE;
+
+public Cue(Color color, double length, double thickness, double accuracyAngle) {
+if (color == null) throw new IllegalArgumentException(&quot;color cannot be null&quot;);
+

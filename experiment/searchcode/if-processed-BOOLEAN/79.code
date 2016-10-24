@@ -1,0 +1,7 @@
+private Map<Class<?>, YProcessedEntity> processedEntitiesMap = new HashMap<Class<?>, YProcessedEntity>();
+
+private boolean terminated = false;
+static YCacheProcessedEntity getInstance() throws YCacheProcessedEntityTerminatedException {
+if(YCacheProcessedEntity.singleton.isTerminated()) {
+throw new YCacheProcessedEntityTerminatedException(&quot;CacheProcessedEntity has been terminated!&quot;);
+

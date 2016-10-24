@@ -1,0 +1,7 @@
+//Removes all Jobs in toDo which have an out of date iteration number according to currentIterationNumber
+public void purgeToDo (){
+synchronized (toDo){
+for (Job j : toDo) {
+if (j.getIteration() < currentIterationNumber){
+toBeRemoved.add(j);
+

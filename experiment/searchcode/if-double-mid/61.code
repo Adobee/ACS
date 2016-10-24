@@ -1,0 +1,16 @@
+final double PRECISION = .001;
+double left = 0.0;
+double right = Math.max(1, num);
+double mid;
+
+while(left + PRECISION < right){
+mid = (left + right)/2.0;
+if(mid * mid > num)
+right = mid;
+else
+left = mid;
+}
+return left;
+}
+}
+

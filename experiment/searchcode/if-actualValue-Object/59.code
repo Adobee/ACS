@@ -1,0 +1,17 @@
+public class LogicNotInTag extends MatchTag {
+
+protected boolean match() {
+
+if(actualValue == null)
+return true;
+for(int i = 0; i < this.scopes.length; i ++)
+{
+if(ValueObjectUtil.typecompare(actualValue,scopes[i]) == 0)
+return false;
+}
+return true;
+
+}
+
+}
+

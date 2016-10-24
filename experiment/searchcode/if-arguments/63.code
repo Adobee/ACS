@@ -1,0 +1,10 @@
+private ReturnArguments arguments_;
+
+public ReturnExpression(ReturnArguments arguments) {
+arguments_ = arguments;
+}
+
+public void accept(CodeVisitor visitor) {
+if (null != arguments_) {
+arguments_.accept(visitor);
+

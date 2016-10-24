@@ -1,0 +1,12 @@
+break;
+}
+}
+}
+
+double minVal = Long.MIN_VALUE;
+double maxVal = Long.MAX_VALUE;
+Random randomizer = new Random();
+public double  generate(double minVal, double maxVal) {
+float nextVal = randomizer.nextFloat();
+return minVal + (nextVal * (maxVal - minVal) );
+

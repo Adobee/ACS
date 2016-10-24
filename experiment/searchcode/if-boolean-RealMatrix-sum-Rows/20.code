@@ -1,0 +1,7 @@
+final int nCols = m.getColumnDimension();
+final int nSum  = getColumnDimension();
+final RealMatrix out = createMatrix(nRows, nCols);
+public void visit(final int row, final int column, final double value) {
+columnSum += FastMath.abs(value);
+if (row == endRow) {
+

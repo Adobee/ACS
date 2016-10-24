@@ -1,0 +1,9 @@
+long seconds = (timestamp.getTime() - System.currentTimeMillis()) / 1000;
+if (seconds >= 86400) {
+long days = seconds / 86400;
+seconds %= 86400;
+message = message + hours + &quot; Stunde(n) &quot;;
+}
+if (seconds >= 60) {
+long min = seconds / 60;
+

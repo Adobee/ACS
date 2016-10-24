@@ -1,0 +1,10 @@
+* Created by Administrator on 2016-03-14.
+*/
+public class q  implements Serializable {
+private static final long serialVersionUID = 0xe2d57122f51e480bL;
+final void a(q q1) {
+if (e == null)
+e = new ArrayList();
+e.add(q1);
+q1.d = a;
+

@@ -1,0 +1,5 @@
+public DocumentMapper merge(String type, CompressedXContent mappingSource, MergeReason reason, boolean updateAllTypes) {
+if (DEFAULT_MAPPING.equals(type)) {
+private boolean typeNameStartsWithIllegalDot(DocumentMapper mapper) {
+boolean legacyIndex = getIndexSettings().getIndexVersionCreated().before(Version.V_5_0_0_alpha1);
+

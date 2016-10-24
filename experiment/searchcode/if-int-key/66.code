@@ -1,0 +1,16 @@
+boolean containsKey(long v) {
+int key = hash(v);
+while (map[key] != Long.MIN_VALUE) {
+if (map[key] == v) {
+return true;
+}
+key++;
+if (key == B) {
+key = 0;
+}
+}
+return false;
+}
+
+int get(long v) {
+

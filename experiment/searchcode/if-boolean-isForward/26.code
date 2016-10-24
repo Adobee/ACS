@@ -1,0 +1,7 @@
+for (int k = 0; k < MAX_PHRED; k++) {
+final boolean isForward = s >= 3;
+final boolean isReadPaired = (s % 3) >= 1;
+public EvidenceInterface evidence(int readNt, int readBasesLeft, int readBaseRight, int mapQ, int phred, int stateIndex, int maxIndelLength, boolean isUnmapped) {
+if (isUnmapped) {
+return UNMAPPED;
+

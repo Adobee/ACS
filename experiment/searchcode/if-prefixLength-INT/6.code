@@ -1,0 +1,9 @@
+private byte prefixLength;
+
+public InternalPrefix() {
+}
+
+public InternalPrefix(int prefix, byte prefixLength) {
+if (prefixLength < 0 || prefixLength > 32) {
+throw new IllegalArgumentException(&quot;Invalid prefix length&quot;);
+

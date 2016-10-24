@@ -1,0 +1,11 @@
+GoodsDef goodsDef = (GoodsDef) goodsAssistant.elementAt(index);
+
+if (this.isHHGoods(saleGoodsDef))
+return;
+
+// 批发状态下不算促销
+if (SellType.ISBATCH(saletype))
+return;
+
+clearVipZkfd(saleGoodsDef);
+

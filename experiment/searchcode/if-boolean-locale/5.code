@@ -1,0 +1,9 @@
+public static Locale getLocaleFromString(String localeString) {
+Locale locale = null;
+// to guarantee stable behavior perform null check
+if (localeString == null) {
+return Locale.ENGLISH;
+}
+
+if (localeString.length() == 2) {
+

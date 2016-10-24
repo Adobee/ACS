@@ -1,0 +1,9 @@
+public class LineStrokeConfigurator extends AbstractConfigurator implements RendererConfigurator {
+private int seriesCount;
+
+public LineStrokeConfigurator(int seriesCount) {
+this.seriesCount = seriesCount;
+final Iterator strokesIterator = chartView.getLineStyles().iterator();
+for (int seriesIndex = 0; seriesIndex < seriesCount; seriesIndex++) {
+if (strokesIterator.hasNext()) {
+

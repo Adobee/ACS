@@ -1,0 +1,13 @@
+loadFromUriLock.unlock();
+}
+}
+}
+
+private boolean waitIfPaused() {
+AtomicBoolean pause = this.engine.getPause();
+return checkViewCollected() || checkViewReused();
+}
+
+private boolean checkViewCollected() {
+if (!this.imageAware.isCollected()) {
+

@@ -1,0 +1,9 @@
+public int minPacks(int R, int G, int B) {
+int count = Math.min(R, Math.min(G, B));
+R -= count;
+G -= count;
+B -= count;
+if (R == 0) {
+R = G;
+} else if (B == 0) {
+

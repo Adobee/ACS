@@ -1,0 +1,8 @@
+String sub = transform.replaceAll(&quot;-&quot;, &quot;&quot;);
+StringBuilder sb = new StringBuilder(toResolve);
+if (transform.endsWith(&quot;-&quot;)) {
+if (toResolve.startsWith(sub)) {
+sb.delete(0, sub.length());
+}
+} else if (transform.startsWith(&quot;-&quot;)) {
+

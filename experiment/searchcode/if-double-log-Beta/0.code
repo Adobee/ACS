@@ -1,0 +1,11 @@
+private double logNorm;
+
+public BetaDistribution(double alpha, double beta) {
+if (alpha <= 0) {
+throw new IllegalArgumentException(&quot;alpha parameter must be positive: &quot; + alpha + &quot;.&quot;);
+this.logNorm = math.BetaFunction.logBeta(alpha, beta);
+}
+
+public double logDensity(double x) {
+return (alpha - 1) * Math.log(x) + (beta - 1) * Math.log(1 - x) - logNorm;
+

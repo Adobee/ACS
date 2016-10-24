@@ -1,0 +1,13 @@
+* Smell: Long method
+* Refactoring: Compose Method
+*
+*/
+public class ListImpl {
+
+private boolean readOnly;
+public void add(Object element) {
+if (!readOnly) {
+int newSize = size + 1;
+if (newSize > elements.length) {
+Object[] newElements = new Object[elements.length + 10];
+

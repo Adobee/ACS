@@ -1,0 +1,10 @@
+public boolean includes(Date date) {
+if (opening != null &amp;&amp; date.before(opening)) return false;
+if (closing != null &amp;&amp; date.after(closing))  return false;
+buf.append(opening);
+buf.append(&#39;/&#39;);
+if (closing != null) {
+buf.append(closing);
+}
+} else if (closing != null) {
+

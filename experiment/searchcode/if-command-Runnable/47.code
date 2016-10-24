@@ -1,0 +1,7 @@
+public void start(Runnable startCommand) {
+if (running) {
+throw new IllegalStateException(&quot;Already running!&quot;);
+public void stop(Runnable stopCommand) {
+if (!running) {
+throw new IllegalStateException(&quot;Already stopped!&quot;);
+

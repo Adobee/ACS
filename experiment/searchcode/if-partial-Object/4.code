@@ -1,0 +1,10 @@
+* Static only *
+*/
+private PartialPlay() {
+}
+
+public static double getPartialPlayPercentage(Object player) {
+// HACK to get around bug near 0
+final double smallestPercentage = 0.0001;
+if (partialPlayPercentage < smallestPercentage) {
+

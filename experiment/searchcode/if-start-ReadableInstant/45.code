@@ -1,0 +1,10 @@
+* @throws ArithmeticException if the duration exceeds a 64 bit long
+*/
+protected BaseDuration(ReadableInstant start, ReadableInstant end) {
+super();
+if (start == end) {
+* @return a Period created using the millisecond duration from this instance
+*/
+public Period toPeriodFrom(ReadableInstant startInstant) {
+return new Period(startInstant, this);
+

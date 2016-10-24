@@ -1,0 +1,5 @@
+public boolean hasUnalignedSequenceInput() {
+for (ACDField f : m_fields) {
+if (f.hasType(&quot;seqset&quot;) || f.hasType(&quot;seqall&quot;) || f.hasType(&quot;sequence&quot;)) {
+if (!f.hasProperty(&quot;aligned&quot;) || !f.getProperty(&quot;aligned&quot;).equals(&quot;Y&quot;))
+

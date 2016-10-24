@@ -1,0 +1,12 @@
+public class Settings {
+
+public static Object getProperty(Setting setting)
+{
+Object property = IO.config.get(setting.getString());
+if (property == null)
+{
+property = setting.getDefault();
+}
+
+return property;
+

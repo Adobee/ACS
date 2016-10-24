@@ -1,0 +1,6 @@
+if (result || diagnostics != null) result &amp;= validateOqlQuery_ConditionMustBeBoolean(oqlQuery, diagnostics, context);
+if (result || diagnostics != null) result &amp;= validateOqlQuery_WhereClauseMustBeSideEffectFree(oqlQuery, diagnostics, context);
+public boolean validateFromClause(FromClause fromClause, DiagnosticChain diagnostics, Map<Object, Object> context) {
+if (!validate_NoCircularContainment(fromClause, diagnostics, context)) return false;
+boolean result = validate_EveryMultiplicityConforms(fromClause, diagnostics, context);
+

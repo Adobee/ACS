@@ -1,0 +1,11 @@
+import java.util.Arrays;
+
+public class TaroFriends {
+
+public int getNumber(int[] coordinates, int X) {
+int max = Integer.MIN_VALUE;
+
+for (int j = 0; j < N; j++) {
+int newPos = coordinates[j];
+if (j >= i) {
+

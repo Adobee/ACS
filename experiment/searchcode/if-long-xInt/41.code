@@ -1,0 +1,7 @@
+private static String DELETE_SQL = &quot;delete from test_table1&quot;;
+private static String INSERT_SQL =
+&quot;insert into test_table1 (xbool, xint, xbigint, xstring, xts1, xts2, xblob, xbigdecimal) &quot; + &quot;values (?, ?, ?, ?, ?, ?, ?, ?)&quot;;
+assertNull(FieldGetter.getBoolean(rs, &quot;xbool&quot;));
+assertNull(FieldGetter.getInteger(rs, &quot;xint&quot;));
+assertNull(FieldGetter.getLong(rs, &quot;xbigint&quot;));
+

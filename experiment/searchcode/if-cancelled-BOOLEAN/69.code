@@ -1,0 +1,17 @@
+private CancelUtil() {}
+
+public static boolean isCancelled(Object o)
+{
+boolean isCancelled = false;
+
+if (o != null &amp;&amp; o instanceof Cancellable)
+isCancelled = ((Cancellable)o).isCancelled();
+}
+
+return isCancelled;
+}
+
+public static void cancel(Object o)
+{
+if (o != null &amp;&amp; o instanceof Cancellable)
+

@@ -1,0 +1,11 @@
+int forEachBase, float toAdjustBy) {
+int delta = fontSize - 11;
+if (delta <= 0)
+return baseSize;
+float result = baseSize + delta * toAdjustBy / forEachBase;
+* @return Height of arrow icons under the specified font size.
+*/
+public static float getArrowIconHeight(int fontSize) {
+if (fontSize < 12)
+return 2.5f + fontSize * 0.5f;
+

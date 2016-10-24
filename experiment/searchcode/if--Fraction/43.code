@@ -1,0 +1,7 @@
+return denominator;
+}
+
+public static Fraction add(Fraction a, Fraction b) {
+if (a.denominator != b.denominator) {
+if (a.denominator != b.denominator) {
+

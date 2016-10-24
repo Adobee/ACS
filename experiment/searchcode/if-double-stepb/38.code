@@ -1,0 +1,15 @@
+import sdt.stepb.*;
+
+/**
+* <p>Title: </p>
+*
+* <p>Description: </p>
+*
+* <p>Copyright: Copyright (c) 2012</p>
+isDrawAble = super.setElementXZToData();
+if(!isDrawAble)
+return isDrawAble;
+
+
+double newX3 = 0;
+

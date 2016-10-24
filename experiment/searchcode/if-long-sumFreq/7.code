@@ -1,0 +1,9 @@
+public class SearchInput extends HttpServlet {
+private static final long serialVersionUID = 1L;
+
+Connection conn = new Database().returnConnection();
+ResultSet rs = stmt.executeQuery();
+if(rs.next()) {
+if(!first) array = array.concat(&quot;,&quot;);
+array = array.concat(String.valueOf(rs.getInt(&quot;word_id&quot;)));
+

@@ -1,0 +1,8 @@
+public static String formatDurationWords(
+final long durationMillis,
+final boolean suppressLeadingZeroElements,
+final boolean suppressTrailingZeroElements) {
+String duration = formatDuration(durationMillis, &quot;d&#39; days &#39;H&#39; hours &#39;m&#39; minutes &#39;s&#39; seconds&#39;&quot;);
+if (suppressLeadingZeroElements) {
+// this is a temporary marker on the front. Like ^ in regexp.
+

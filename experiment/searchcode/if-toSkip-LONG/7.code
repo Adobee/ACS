@@ -1,0 +1,15 @@
+return mainIs.read();
+
+return -1;
+}
+
+public long skip( long toskip ) throws IOException
+{
+if( toskip > limit )
+toskip = limit;
+
+long n = mainIs.skip(toskip);
+limit-=n;
+
+return n;
+

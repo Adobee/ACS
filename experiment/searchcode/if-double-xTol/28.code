@@ -1,0 +1,6 @@
+protected int m_max_its = 200;
+//not sure how this parameter comes into play
+public double m_eps = 1.0e-3; //smaller?
+protected double xtol = 1.0e-16; //estimate of machine precision.  get this right
+//number of corrections, between 3 and 7
+

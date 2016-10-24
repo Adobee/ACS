@@ -1,0 +1,10 @@
+package seas.upenn.leetcode;
+
+public class BinarySearch {
+
+public int search(int[] input, int from, int to, int target) {
+if(from == to) {
+return input[from] == target?from:-1;
+}
+int middle = (to - from) / 2 + from;
+

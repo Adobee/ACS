@@ -1,0 +1,11 @@
+return mPrefs.getLong(LAST_SUCCESSFUL_SYNC_GREADER, 0);
+}
+
+// checks if our data need to be refreshed
+public boolean shouldSync() {
+
+//long now = System.currentTimeMillis();
+public boolean shouldSyncGoogleReader() {
+boolean forceSync = mPrefs.getBoolean(FORCE_SYNC_GREADER, false);
+if (forceSync) {
+

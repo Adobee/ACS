@@ -1,0 +1,8 @@
+final boolean useNonDeprecatedSetting = randomBoolean();
+
+// deprecated settings should also trigger a deprecation warning
+settings.add(TEST_DEPRECATED_SETTING_TRUE1);
+
+if (randomBoolean()) {
+settings.add(TEST_DEPRECATED_SETTING_TRUE2);
+

@@ -1,0 +1,8 @@
+public class Largest1Square{
+public int largest(int[][] A){
+if(A.length < 1 || A[0].length < 1)
+for(int i=1; i<r; i++){
+for(int j=1; j<c; j++){
+if(A[i][j]==1)
+tmp[i][j] = 1+Math.min(Math.min(tmp[i-1][j-1],tmp[i][j-1]), tmp[i-1][j]);
+

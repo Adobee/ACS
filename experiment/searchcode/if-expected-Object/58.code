@@ -1,0 +1,8 @@
+public static Matcher<MathObject> equalToExpression(MathObject expected) {
+return new EqualExpression(expected);
+description.appendText(&quot;expression equal to &quot; + PRINTER.prettyString(expected));
+}
+
+public void describeMismatch(Object item, Description description) {
+if (item == null) {
+

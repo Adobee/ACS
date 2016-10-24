@@ -1,0 +1,15 @@
+* Creates a new default format instance.
+*/
+@SuppressWarnings(&quot;deprecation&quot;)
+public DefaultFormat()
+{
+this.dateTimeFormat = DateTimeFormat.getMediumDateTimeFormat();
+public Date parse(DateBox dateBox, String dateText, boolean reportError)
+{
+Date date = null;
+try
+{
+if (dateText.length() > 0)
+{
+date = this.dateTimeFormat.parse(dateText);
+

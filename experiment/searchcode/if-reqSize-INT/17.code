@@ -1,0 +1,11 @@
+public static Bitmap downSizeBitmap(Bitmap bitmap,int reqSize)  {
+
+int width = bitmap.getWidth();
+int height = bitmap.getHeight();
+Bitmap resizedBitmap = Bitmap.createBitmap(bitmap, 0, 0, width, height, matrix, false);
+return resizedBitmap;
+
+/*if(bitmap.getWidth() < reqSize) {
+return bitmap;
+} else {
+

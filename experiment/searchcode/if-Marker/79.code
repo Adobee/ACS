@@ -1,0 +1,8 @@
+* Determines if the message with the given marker is a user message
+*
+* @param marker the marker
+*
+* @return if the message is a user message
+*/
+public static boolean isUserMessage(Marker marker) {
+

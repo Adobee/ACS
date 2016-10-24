@@ -1,0 +1,10 @@
+private ArrayList<EnumCardRules> rules;
+private boolean permanent;
+private String rulesText;
+
+public Spell(Card c) {
+permanent = c instanceof CardPermanent;
+if (permanent) {
+this.c = c;
+this.rulesText = c.rulesText;
+

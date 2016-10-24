@@ -1,0 +1,13 @@
+* @return amino acid rate matrix
+*/
+public static AminoAcidModel getInstance(int modelID, double[] freq)
+{
+if (modelID == AminoAcidModelID.DAYHOFF)
+return new WAG(freq);
+}
+else if (modelID == AminoAcidModelID.CPREV)
+{
+return new CPREV(freq);
+}
+else
+

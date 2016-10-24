@@ -1,0 +1,10 @@
+package OOP;
+
+/**
+* Created by ADMIN on 24.02.16.
+*/
+public class Rectangle {
+double a;
+//the calculation of the sides on the perimeter and area
+public static String calculationSidesWithAreaAndPerimeter(Rectangle r1, double area, double perimetr) {
+

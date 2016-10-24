@@ -1,0 +1,9 @@
+assertTrue(&quot;Each thread should start only after barrier completion..&quot;,
+minAfter - maxBefore > 0);
+
+long maxAfter = 0;
+long minEnd = Long.MAX_VALUE;
+long minEnd = Long.MAX_VALUE;
+for (int i = 0; i < parties; i++) {
+
+

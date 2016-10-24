@@ -1,0 +1,8 @@
+public synchronized int getUpToNPermits(int N) throws InterruptedException
+{
+if(N < 0) throw new IllegalArgumentException(&quot;Must get a non-negative amount of permits&quot;);
+//System.out.println(&quot;A1:&quot; + permits.get() + &quot;,&quot; + semaphore.availablePermits() + &quot;,&quot; + N);
+semaphore.acquire();
+
+int availablePermits;
+

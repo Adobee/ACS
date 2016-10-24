@@ -1,0 +1,8 @@
+import org.springframework.transaction.annotation.Transactional;
+
+import com.coenterprise.dao.ProtocolDao;
+public void deleteProtocol(int id) {
+Protocol protocol = getProtocol(id);
+if (protocol != null)
+getCurrentSession().delete(protocol);
+

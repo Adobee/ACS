@@ -1,0 +1,14 @@
+return format.withZoneUTC();
+}
+
+DateTimeZone ret = zones.get(zone);
+if(ret == null) {
+ret = DateTimeZone.forID(zone);
+}
+if(ret == null) {
+throw new IllegalArgumentException(&quot;DateTimeZone &#39;&quot; + zone + &quot;&#39; not supported!&quot;);
+}
+return format.withZone(ret);
+}
+}
+

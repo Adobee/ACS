@@ -1,0 +1,14 @@
+public double getCoordinate(final int index, final int axisIndex) {
+if (axisIndex >= getAxisCount()) {
+return Double.NaN;
+return super.getCoordinate(index, axisIndex);
+}
+}
+}
+
+@Override
+public int getVertexCount() {
+return super.getVertexCount() + 1;
+}
+}
+

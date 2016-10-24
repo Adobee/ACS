@@ -1,0 +1,10 @@
+return endpoint.getUrl();
+}
+public Server getServer()
+{
+boolean useHttps = false;
+if (endpoint.getNetUrl().getProtocol().equalsIgnoreCase(&quot;https&quot;)){
+useHttps = true;
+}
+return new Server(endpoint.getNetUrl().getHost(), endpoint.getNetUrl().getPort(), useHttps);
+

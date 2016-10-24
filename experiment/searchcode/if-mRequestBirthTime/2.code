@@ -1,0 +1,9 @@
+private final VolleyLog.MarkerLog mEventLog;
+private long mRequestBirthTime;
+private RequestQueue mRequestQueue;
+private boolean mResponseDelivered;
+long l1 = SystemClock.elapsedRealtime() - this.mRequestBirthTime;
+if (l1 >= 3000L)
+{
+Object[] arrayOfObject = new Object[2];
+

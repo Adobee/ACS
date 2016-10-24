@@ -1,0 +1,6 @@
+public Dataset applyTransmissionCorrection(Dataset data, Dataset twoTheta, double beamEnergy){
+return Maths.multiply(data, getTransmissionCorrection(twoTheta, beamEnergy));
+* @return the corrected data
+*/
+public Dataset getTransmissionCorrection(Dataset twoTheta, double beamEnergy){
+

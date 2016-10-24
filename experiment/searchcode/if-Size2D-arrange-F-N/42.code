@@ -1,0 +1,8 @@
+Block b = (Block) iterator.next();
+if (b != null) {
+Size2D s = b.arrange(g2, RectangleConstraint.NONE);
+RectangleConstraint c1 = constraint.toUnconstrainedHeight();
+Size2D size1 = arrange(container, g2, c1);
+
+if (constraint.getHeightRange().contains(size1.getHeight())) {
+

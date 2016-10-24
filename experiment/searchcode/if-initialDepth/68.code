@@ -1,0 +1,6 @@
+public IoTFieldsExtension parse(XmlPullParser parser, int initialDepth) throws Exception {
+int seqNr = ParserUtils.getIntegerAttributeOrThrow(parser, &quot;seqnr&quot;, &quot;IoT data request <accepted/> without sequence number&quot;);
+case XmlPullParser.END_TAG:
+if (parser.getDepth() == initialDepth) {
+break outerloop;
+

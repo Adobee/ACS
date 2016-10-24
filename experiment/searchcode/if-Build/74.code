@@ -1,0 +1,8 @@
+public CalzoneFinishedBuild lastFinishedBuild(SBuildType sBuildType) {
+SBuild lastFinished = sBuildType.getLastChangesFinished();
+if (lastFinished == null) {
+return new CalzoneFinishedBuild(FinishedBuildStatus.none, formattedTimeSinceFirstFailure(sBuildType));
+}
+
+if (lastFinished.getBuildStatus().equals(Status.UNKNOWN)) {
+

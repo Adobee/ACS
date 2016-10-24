@@ -1,0 +1,15 @@
+public ClientRepository() {
+clientIds = new ArrayList<>();
+}
+
+public boolean addClient(int clientId) {
+if (clientIds.contains(clientId)) {
+clientIds.add(clientId);
+return true;
+}
+
+public boolean clientRegistered(int clientId) {
+return clientIds.contains(clientId);
+}
+}
+

@@ -1,0 +1,13 @@
+
+public class Fraction {
+private int num;
+private int den;
+
+public Fraction() {
+this.setNum(0);
+public Fraction simplifier() {
+int a = this.getNum(),b = this.getDen(),PGCD = 1;
+while(a!=b) {
+if(a<b) {
+int tmp =a;
+

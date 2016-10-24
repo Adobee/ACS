@@ -1,0 +1,12 @@
+import java.util.Random;
+
+
+public class NormalGenerator {
+
+double mean, sd;
+Random  random;
+public double getNext(){
+double nextVal = random.nextGaussian()*sd + mean;
+if (nextVal <= 0) {
+nextVal = SMALL;
+

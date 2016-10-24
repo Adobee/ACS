@@ -1,0 +1,12 @@
+* @author Joshua Parker
+*/
+public class Turtle {
+private double xPos, yPos, prevX, prevY, heading;
+
+/**
+* Inital position of the turtle
+public Turtle(double x, double y) {
+xPos = prevX = x;
+yPos = prevY = y;
+heading = 0.0;
+

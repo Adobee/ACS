@@ -1,0 +1,9 @@
+static boolean isValidFileName(final String s) {
+final int length = s.trim().length();
+boolean b = false;
+if (length != 0) {
+final char char1 = s.charAt(i);
+final char c = Utils.invalidChars[j];
+b = false;
+if (char1 == c) {
+

@@ -1,0 +1,10 @@
+public synchronized static SocketFactory getDefaultSocketFactory() {
+if (defaultFactory == null) {
+defaultFactory = new SocketFactory();
+}
+return defaultFactory;
+}
+
+public synchronized static void setSocketFactory(SocketFactory fact) {
+if (!fact.equals(defaultFactory)) {
+

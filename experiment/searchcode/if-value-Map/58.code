@@ -1,0 +1,12 @@
+map.put(Integer.MIN_VALUE, -1);
+map.put(Integer.MAX_VALUE, -1);
+}
+void paint(int s, int t, int c) {
+if (get(t) != p) map.put(t, p);
+if (p == c) map.remove(t);
+}
+int get(int k) {
+return map.floorEntry(k).getValue();
+}
+}
+

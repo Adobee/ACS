@@ -1,0 +1,11 @@
+AttributeConstraintPredicate<String> {
+
+public boolean acceptValue(AttributeConstraint constraint, String value) {
+if (constraint instanceof ContainsConstraint) {
+return acceptValue((ContainsConstraint) constraint, value);
+}
+return false;
+}
+
+public boolean acceptValue(ContainsConstraint constraint, String value) {
+

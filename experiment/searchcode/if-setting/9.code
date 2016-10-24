@@ -1,0 +1,7 @@
+public synchronized SettingScreen getCurrentSettingScreen() {
+if (mCurrentScreen == null) {
+SettingScreen screen = getSettingManager().getSettingScreen();
+
+if (screen != null) {
+Setting setting = screen.findSetting(getIntentSettingScreenKey());
+

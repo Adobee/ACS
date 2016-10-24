@@ -1,0 +1,6 @@
+public static ActiveShardCount from(final int value) {
+if (value < 0) {
+throw new IllegalArgumentException(&quot;shard count cannot be a negative value&quot;);
+* Resolve this instance to an actual integer value for the number of active shard counts.
+* If {@link ActiveShardCount#ALL} is specified, then the given {@link IndexMetaData} is
+

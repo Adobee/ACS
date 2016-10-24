@@ -1,0 +1,12 @@
+for (Side p : Side.values()) {
+boolean allZeros = true;
+for (int i = 0; i < SLOT_WIDTH; i++)
+allZeros = allZeros &amp;&amp; get(p, i) == 0;
+if (allZeros)
+return true;
+}
+return false;
+}
+
+public Board copy() {
+

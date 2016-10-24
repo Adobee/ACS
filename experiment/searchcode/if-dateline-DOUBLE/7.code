@@ -1,0 +1,12 @@
+private static final long serialVersionUID = 8345154028331003306L;
+private int id;
+private String title;
+private String dateline;
+private String body;
+public void registerTermFreq(int freq) {
+if (this.maxTermFrequency < freq)
+this.maxTermFrequency = freq;
+}
+
+public double getWeight(String term) {
+

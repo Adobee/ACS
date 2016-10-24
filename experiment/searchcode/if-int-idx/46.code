@@ -1,0 +1,8 @@
+super( a );
+}
+
+public void sort() {
+for( int start_idx = 0; start_idx < array.length - 1; start_idx++ ){
+for( int run_idx = 0; run_idx < array.length-1-start_idx; run_idx++ ) {
+if( !adjacentInOrder( run_idx ) )
+

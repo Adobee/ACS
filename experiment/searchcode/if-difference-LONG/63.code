@@ -1,0 +1,12 @@
+long weeks;
+}
+
+public TimeContainer calculate(long future, long now) {
+if (future < now) {
+//throw new IllegalArgumentException(&quot;Parameter future is older than present!&quot;);
+}
+
+long difference = future - now;
+
+long days = TimeUnit.DAYS.convert(difference, TimeUnit.MILLISECONDS);
+

@@ -1,0 +1,16 @@
+static void wall(int x,int y){
+int i,j;
+for(i=x;i<8;i++){
+if(ch[i][y]==&#39;.&#39;)
+ch[i][y]=&#39;w&#39;;
+}
+for(i=x;0<=i;i--){
+if(x-i<0 || y-i<0) break;
+if(ch[x-i][y-1]==&#39;.&#39;)
+ch[x-i][y-i]=&#39;w&#39;;
+}
+ch[x][y]=&#39;Q&#39;;
+}
+
+static void wall2(int x,int y,int z){
+

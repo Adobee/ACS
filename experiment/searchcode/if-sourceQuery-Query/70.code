@@ -1,0 +1,6 @@
+void flatten(Query sourceQuery, IndexReader reader, Collection<Query> flatQueries) throws IOException {
+if (sourceQuery instanceof SpanTermQuery) {
+super.flatten(new TermQuery(((SpanTermQuery) sourceQuery).getTerm()), reader, flatQueries);
+} else if (sourceQuery instanceof ConstantScoreQuery) {
+ConstantScoreQuery constantScoreQuery = (ConstantScoreQuery) sourceQuery;
+

@@ -1,0 +1,10 @@
+package com.wisbook.util;
+
+import java.util.Comparator;
+import com.wisbook.model.cms.EntityValue;
+
+public class ValuesComparator implements Comparator<EntityValue>{
+
+@Override
+public int compare(EntityValue o1, EntityValue o2) {
+

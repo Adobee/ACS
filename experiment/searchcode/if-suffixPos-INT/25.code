@@ -1,0 +1,8 @@
+private static CompressFormat guessFormatFromUrl(String url) {
+int suffixPos = url.lastIndexOf(&#39;.&#39;);
+String suffix = &quot;jpg&quot;;
+if (suffixPos > 0) {
+suffix = url.substring(suffixPos + 1).toLowerCase();
+}
+if (&quot;png&quot;.equals(suffix)) {
+

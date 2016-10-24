@@ -1,0 +1,8 @@
+float d = Vector3.dot(qp, n);
+if(d <= 0.0f) return false;
+
+Vector3 ap = Vector3.sub(p, a);
+uvwt[3] = Vector3.dot(ap, n);
+if(uvwt[3] < 0.0f) return false;
+if(uvwt[3] > d) return false;
+

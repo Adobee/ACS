@@ -1,0 +1,9 @@
+public class MyTreeTableCellRenderer extends JTree implements TableCellRenderer {
+
+protected int visibleRow;
+private MyTreeTable treeTable;
+
+public MyTreeTableCellRenderer(MyTreeTable treeTable, TreeModel model) {
+public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
+if (isSelected) {
+

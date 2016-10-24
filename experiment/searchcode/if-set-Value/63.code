@@ -1,0 +1,9 @@
+private void q19() {
+machine.incCounter();
+machine.setState(&quot;q19&quot;);
+if (tape.getValue().equals(&quot;!&quot;) || tape.getValue().equals(&quot;=&quot;)) {
+machine.setState(&quot;q17&quot;);
+} else if (tape.getValue().equals(&quot;1&quot;)) {
+tape.setValue(&quot;$&quot;);
+tape.setValue(tape.stepLeft());
+

@@ -1,0 +1,8 @@
+* @return the starting position of the next field (the character
+*  immediately after the delimiter), or -1 if end of string found
+*/
+private int readNextToken(char[] chars, int start, int len, StrBuilder workArea, List tokens) {
+private boolean isQuote(char[] chars, int pos, int len, int quoteStart, int quoteLen) {
+for (int i = 0; i < quoteLen; i++) {
+if ((pos + i) >= len || chars[pos + i] != chars[quoteStart + i]) {
+

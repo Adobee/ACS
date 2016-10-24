@@ -1,0 +1,11 @@
+private CRC32 crc;
+private byte[] buf;
+private int off;
+private int len;
+private boolean gzip;
+GZipUnpackState tr = null;
+int remaining = inf.getRemaining ();
+boolean finished = false;
+if (gzip) {
+long length = inf.getBytesWritten ();
+

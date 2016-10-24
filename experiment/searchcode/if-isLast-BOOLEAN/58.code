@@ -1,0 +1,8 @@
+String[] enemyNamesPlural = new String[]{&quot;hobbits&quot;, &quot;elves&quot;, &quot;dwarves&quot;, &quot;humans&quot;};
+boolean isLast;
+for (int i = 0; i < 4; i++) {
+if (enemies[i] <= 0) continue;
+isLast = true;
+for (int j = i + 1; j < 4; j++)
+if (enemies[j] > 0) isLast = false;
+

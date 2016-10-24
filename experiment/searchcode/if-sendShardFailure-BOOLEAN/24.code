@@ -1,0 +1,6 @@
+public void failRecovery(long id, RecoveryFailedException e, boolean sendShardFailure) {
+RecoveryTarget removed = onGoingRecoveries.remove(id);
+for (RecoveryTarget status : onGoingRecoveries.values()) {
+if (status.shardId().equals(shardId)) {
+boolean cancel = false;
+

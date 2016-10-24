@@ -1,0 +1,8 @@
+long nextSize = procSize / 2;
+long difference = (procSize / 4) - 1;
+while (((procSize % difference) == 0) &amp;&amp; ((procSize % (nextSize - difference)) == 0))
+moduleSizes[0] = (procSize / 2) - difference;
+while (difference > 20) {
+long nextDifference = (difference / 2) - 1;
+while (((procSize % nextDifference) == 0) &amp;&amp; ((procSize % (difference - nextDifference)) == 0))
+

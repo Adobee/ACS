@@ -1,0 +1,9 @@
+String requete = &quot;select * from stage WHERE 1=1 &quot;;
+if (StringUtils.isNotBlank(pStage.getIntituleStage())) {
+requete += &quot; AND intitule_stage= &#39;&quot; + pStage.getIntituleStage() + &quot;&#39; &quot;;
+ResultSet rs = preparedStatement.executeQuery();
+
+if (rs.next()) {
+stage.setId(rs.getInt(&quot;id_stage&quot;));
+stage.setIntituleStage(rs.getString(&quot;intitule_stage&quot;));
+

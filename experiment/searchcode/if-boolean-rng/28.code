@@ -1,0 +1,7 @@
+public Result<Boolean> init(IProcessSetting setting) {
+Result<Boolean> result = new Result<Boolean>();
+if(setting instanceof LinRngStoreSettingImpl)
+public Result<Boolean> handle(List<Record> records) {
+//step-1 进入到盲编宽表中，并设置盲编入库编号.
+List<LinRngBaseInfo> rngBaseList = new ArrayList<LinRngBaseInfo>(records.size());
+

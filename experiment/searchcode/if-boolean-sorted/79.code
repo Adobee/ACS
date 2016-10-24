@@ -1,0 +1,15 @@
+private boolean sorted = false;
+
+@Override
+public Object invoke(MethodInvocation inv) throws Throwable {
+if (inv.getMethod().getName().equals(&quot;sort&quot;)) {
+sorted = true;
+}
+return super.invoke(inv);
+}
+
+public boolean isSorted() {
+return sorted;
+}
+}
+

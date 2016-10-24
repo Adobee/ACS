@@ -1,0 +1,9 @@
+public class MysqlConnection {
+
+private static Object obj;
+
+public static Object getObj() {
+if (obj == null) {
+synchronized (MysqlConnection.class) {
+if (obj == null) {
+

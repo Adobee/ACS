@@ -1,0 +1,9 @@
+double q1 = statistic.getPercentile(25);
+double q3 = statistic.getPercentile(75);
+double iqr = q3 - q1;
+
+double min = q1 - 1.5*iqr;
+double max = q3 + 1.5*iqr;
+for(double value : similarities) {
+if(value >= min &amp;&amp; value <= max) {
+

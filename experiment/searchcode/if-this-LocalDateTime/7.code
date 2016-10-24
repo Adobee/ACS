@@ -1,0 +1,11 @@
+LocalDateTime start;
+LocalDateTime end;
+
+public TimeInterval(LocalDateTime start, LocalDateTime end){
+this.start = start;
+this.end = end;
+}
+
+public boolean overlap(TimeInterval other){
+if(end.isEqual(other.start))	return false;
+

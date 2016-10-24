@@ -1,0 +1,6 @@
+public ProbabilisticIntervalEstimate(long lowerEstimate, long upperEstimate, double correctnessProb, boolean isOverride) {
+* @return whether this instance is exactly {@code exactEstimate}
+*/
+public boolean isExactly(long exactEstimate) {
+return this.correctnessProb == 1d &amp;&amp; this.lowerEstimate == this.upperEstimate &amp;&amp; this.upperEstimate == exactEstimate;
+

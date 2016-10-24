@@ -1,0 +1,13 @@
+&quot;10 X=0: Y=10: A = 5: B=10: CUR X, Y\n&quot; +
+&quot;20 PRINT A: PRINT B\n&quot; +
+&quot;30 PRINT \&quot;*123*\&quot;\n&quot; +
+&quot;40 PRINT A+B\n&quot; +
+&quot;50 PLOT 15,15,1: PLOT 17,15,1 &quot;;
+
+listing = &quot;CLS\n&quot;+
+&quot;PLOT 20,15,1\n&quot; +
+&quot;PLOT 21,15,1\n&quot; +
+&quot;PLOT 22,15,1&quot;;
+
+listing = &quot;CLS\n&quot;+
+

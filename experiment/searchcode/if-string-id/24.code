@@ -1,0 +1,16 @@
+@JsonProperty(&quot;_id&quot;)
+private String idAsString;
+
+public ObjectId getId()
+{
+return id;
+}
+
+public void setId(ObjectId id)
+public void setIdAsString(String idAsString)
+{
+this.idAsString = idAsString;
+if(this.id == null)
+{
+if(!ObjectId.isValid(idAsString))
+

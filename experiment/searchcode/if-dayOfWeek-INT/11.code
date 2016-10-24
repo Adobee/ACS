@@ -1,0 +1,11 @@
+SchoolDay schoolDay = (SchoolDay) o;
+
+if (dayOfWeek != schoolDay.dayOfWeek) return false;
+result = 31 * result + Arrays.hashCode(lessons);
+return result;
+}
+
+@Override
+public int compareTo(SchoolDay o) {
+if (this.dayOfWeek.getValue() > o.dayOfWeek.getValue()) {
+

@@ -1,0 +1,13 @@
+public static Result failure(CharSequence input) {
+return new Result(null, input);
+}
+
+public boolean isFailure() {
+return derivative == null;
+return derivative != null;
+}
+
+public Object derivative() {
+if (isFailure()) {
+throw new IllegalStateException(&quot;Failure&quot;);
+

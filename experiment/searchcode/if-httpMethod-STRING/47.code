@@ -1,0 +1,16 @@
+public enum HttpMethod {
+
+GET(&quot;GET&quot;), HEAD(&quot;HEAD&quot;);
+
+private String text;
+
+HttpMethod(String text) {
+this.text = text;
+}
+
+public String getText() {
+return this.text;
+}
+
+public static HttpMethod fromString(String text) {
+

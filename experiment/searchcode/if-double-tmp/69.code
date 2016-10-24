@@ -1,0 +1,7 @@
+Scanner scanner = new Scanner(System.in);
+if (scanner.hasNextDouble()) {
+double tmp = scanner.nextDouble();
+if (tmp >= 10) {
+tmp = 3 * tmp - 11;
+} else if (tmp >= 1) {
+

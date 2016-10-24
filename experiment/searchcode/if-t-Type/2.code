@@ -1,0 +1,7 @@
+* @param type1      A pokemon&#39;s first type.
+* @param type2      A pokemon&#39;s second type, if applicable.
+* @param attackType The move type.
+public static double getEffectiveness(Type type1, Type type2, Type attackType) {
+if (attackType == Type.NONE) return 0;
+double effectiveness1 = getEffectivenessForType(type1, attackType);
+

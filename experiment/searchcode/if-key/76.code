@@ -1,0 +1,12 @@
+this.keyPair = keyPair;
+}
+
+public byte[] getDecryptedKey() {
+if (decryptedKey == null) {
+decryptedKey = AsymmetricEncryption.decrypt(getEncryptedKey(), keyPair.getPrivate());
+return decryptedKey;
+}
+
+public byte[] getEncryptedKey() {
+if (encryptedKey == null) {
+

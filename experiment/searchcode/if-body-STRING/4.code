@@ -1,0 +1,10 @@
+private NestedExp condition;
+private StandaloneExp ifBody;
+private StandaloneExp elseBody;
+
+public IfExp(NestedExp condition) {
+public String getCode() {
+String code = &quot;\n&quot; + &quot;if (&quot; + condition.getCode() + &quot;) {&quot;;
+if (ifBody != null) {
+code += ifBody.getCode();
+

@@ -1,0 +1,5 @@
+TypeBinding checkedType = this.type.resolveType(scope, true /* check bounds*/);
+if (expressionType != null &amp;&amp; checkedType != null &amp;&amp; this.type.hasNullTypeAnnotation(AnnotationPosition.ANY)) {
+// don&#39;t complain if the entire operation is redundant anyway
+if (!expressionType.isCompatibleWith(checkedType) || NullAnnotationMatching.analyse(checkedType, expressionType, -1).isAnyMismatch())
+

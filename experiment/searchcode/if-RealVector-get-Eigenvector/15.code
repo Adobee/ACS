@@ -1,0 +1,9 @@
+EigenDecomposition ed = new EigenDecomposition(subr, 0);
+evals = ed.getRealEigenvalues();
+evecs = ed.getEigenvector(0);
+evecs1 = ed.getEigenvector(1);
+evecs2 = ed.getEigenvector(2);
+
+// Find the radii of the ellipsoid.
+radii = findRadii(evals);
+

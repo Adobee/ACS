@@ -1,0 +1,10 @@
+* @since 2.0
+*/
+public class LinearObjectiveFunction implements MultivariateFunction, OptimizationData, Serializable {
+public boolean equals(Object other) {
+
+if(this == other) {
+return true;
+}
+if(other instanceof LinearObjectiveFunction) {
+

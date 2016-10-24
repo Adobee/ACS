@@ -1,0 +1,12 @@
+service.minimumMasterNodes(min_master_nodes);
+
+int master_nodes = 0;
+for (DiscoveryNode node : nodes) {
+if (node.masterNode()) {
+master = service.electMaster(nodes);
+}
+
+if (master_nodes == 0) {
+assertNull(master);
+} else if (min_master_nodes > 0 &amp;&amp; master_nodes < min_master_nodes) {
+

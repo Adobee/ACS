@@ -1,0 +1,6 @@
+double realWordErrorLikelihood = suggestion.realworldErrorLikelyhood();
+final PhraseSuggestion response = new PhraseSuggestion(name, suggestion.getSize());
+DirectSpellChecker directSpellChecker = SuggestUtils.getDirectSpellChecker(generator);
+Terms terms = MultiFields.getTerms(indexReader, generator.field());
+if (terms !=  null) {
+

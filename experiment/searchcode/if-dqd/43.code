@@ -1,0 +1,9 @@
+board.reset();
+if (players[0].DQd &amp;&amp; players[1].DQd) {
+m.printf(&quot;Draw. Both DQ&#39;d%n&quot;);
+copyDumpFile(tmpFile, names, dir, gameNum, &quot;DRAW&quot;);
+System.out.println(players[who].name + &quot; &quot; + players[who].gameTimeRemaining);
+if (actualTime < 0) {
+players[who].DQd = true;
+System.err.printf(&quot;%s DQd%n&quot;, players[who].name);
+

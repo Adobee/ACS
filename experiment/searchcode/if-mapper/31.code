@@ -1,0 +1,11 @@
+import org.springframework.stereotype.Component;
+
+import com.gy.mapper.gyp_app.Mapper;
+public class MapperMgr {
+this.mapper = mapper;
+}
+
+public synchronized static MapperMgr getInstance(){
+if(single == null){
+single = new MapperMgr();
+

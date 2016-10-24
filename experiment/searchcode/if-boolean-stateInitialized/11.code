@@ -1,0 +1,9 @@
+// Initialization of the gyroscope based rotation matrix
+if (!stateInitialized)
+{
+currentRotationMatrix = matrixMultiplication(currentRotationMatrix,
+// rotation after computing it from the gyro sample data.
+if (timestampOld != 0 &amp;&amp; stateInitialized)
+{
+final float dT = (timestamp - timestampOld) * NS2S;
+

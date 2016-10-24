@@ -1,0 +1,9 @@
+Period period = PeriodType.getPeriodFromIsoString( isoPeriod );
+
+if ( period != null )
+{
+period = periodStore.getPeriod( period.getStartDate(), period.getEndDate(), period.getPeriodType() );
+public boolean retain( Period object )
+{
+return identifiers.contains( object.getId() );
+

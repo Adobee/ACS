@@ -1,0 +1,8 @@
+public class Solution {
+public int maxDepth(TreeNode root) {
+int maxDepth;
+TreeNode node = root;
+if(node != null){
+int rightMaxDepth = maxDepth(node.right);
+int leftMaxDepth = maxDepth(node.left);
+

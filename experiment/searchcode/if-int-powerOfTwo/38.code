@@ -1,0 +1,15 @@
+package leetcode.bit;
+
+
+/**
+*
+* @author bliu13 Jan 12, 2016
+*/
+public class PowerOfTwo {
+public boolean checkPowerOf2(int n) {
+long m = n;
+if (m == 0) {
+return false;
+}
+return (m &amp; (m - 1)) == 0;
+

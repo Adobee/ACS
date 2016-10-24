@@ -1,0 +1,12 @@
+// element of regular expression
+if (expChar == &#39;[&#39;) {
+int endPos;
+
+endPos = exp.indexOf(&quot;]&quot;, expPos + 1);
+
+if (endPos == -1)
+// ensure all matching chars are from allowed range
+pos = expPos + 1;
+while (pos <= endPos - 1)
+if (!this.isNormalChar(exp.charAt(pos))) {
+

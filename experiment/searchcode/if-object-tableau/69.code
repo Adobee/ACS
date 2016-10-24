@@ -1,0 +1,9 @@
+public class TableauImportExport extends ICodecModelObject {
+
+private static final TableauImportExport INSTANCE = new TableauImportExport();
+* @see fr.enib.game.editor.graphe.codec.ICodecModelObject#exportObject(java.lang.Object, org.w3c.dom.Node)
+*/
+@Override
+public boolean exportObject(Object obj, Node node) {
+if(obj instanceof INoeud){
+

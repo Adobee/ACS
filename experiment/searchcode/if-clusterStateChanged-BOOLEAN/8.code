@@ -1,0 +1,11 @@
+IndexMetaData tribeIndex = tribeState.metaData().index(index.getIndex());
+clusterStateChanged = true;
+if (tribeIndex == null || tribeIndex.getState() == IndexMetaData.State.CLOSE) {
+} // else: either the existing one is the preferred one, or we haven&#39;t seen one, carry on
+}
+}
+}
+}
+
+if (!clusterStateChanged) {
+

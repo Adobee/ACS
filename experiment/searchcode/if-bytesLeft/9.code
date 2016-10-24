@@ -1,0 +1,15 @@
+this.bytesLeft = size;
+}
+
+@Override
+public int read() throws IOException {
+
+if (bytesLeft > 0) {
+return -1;
+}
+}
+
+@Override
+public int read(byte[] b) throws IOException {
+if (bytesLeft > 0) {
+

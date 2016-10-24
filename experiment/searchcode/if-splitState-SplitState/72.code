@@ -1,0 +1,6 @@
+* <li>{@code split()}, {@code suspend()}, or {@code stop()} cannot be invoked twice</li>
+* <li>{@code unsplit()} may only be called if the watch has been {@code split()}</li>
+public void unsplit() {
+if (this.splitState != SplitState.SPLIT) {
+throw new IllegalStateException(&quot;Stopwatch has not been split!&quot;);
+

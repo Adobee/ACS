@@ -1,0 +1,9 @@
+private Scriptable scriptable;
+
+@SuppressWarnings(&quot;rawtypes&quot;)
+public NativeJavaScriptable(Scriptable scope, Object obj) {
+if (obj instanceof Wrapper) {
+((Wrapper) obj).unwrap());
+} else if (obj == null || obj == Undefined.instance) {
+this.scriptable = new NativeJavaMap(scope, new HashMap());
+

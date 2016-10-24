@@ -1,0 +1,10 @@
+public SudokuReproduccion() {
+super(1);
+}
+
+public SudokuReproduccion(int crossOverPoints) {
+Sudoku.Gen[] hijo2 = p2.cells.clone();
+Sudoku.Gen tmp;
+for (int j = 0; j < p1.cells.length; j++) {
+if (mascaraCrossOverUniforme.testBit(j)) {
+

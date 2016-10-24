@@ -1,0 +1,10 @@
+if (id.startsWith(&quot;+&quot;) || id.startsWith(&quot;-&quot;)) {
+int offset = parseOffset(id);
+if (offset == 0L) {
+return DateTimeZone.UTC;
+throw new IllegalArgumentException(&quot;Minutes out of range: &quot; + minutesOffset);
+}
+int offset = 0;
+try {
+int hoursInMinutes = FieldUtils.safeMultiply(hoursOffset, 60);
+

@@ -1,0 +1,8 @@
+static protected void writeTransaction(JsonGenerator JsonGenerator, boolean includeContents, IUpdateTransaction transaction) throws AnzoException {
+try {
+JsonGenerator.writeStartObject();
+if (transaction.getURI() != null)
+} else {
+if (includeContents) {
+writePreconditions(JsonGenerator, transaction.getPreconditions());
+

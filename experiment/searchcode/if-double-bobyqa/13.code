@@ -1,0 +1,15 @@
+optimizerType = OptimizerType.BOBYQAOptimizer; // MultivariateOptimizer
+if (nrDimensions == 1)
+{
+// BOBYQA doesn&#39;t support single dimension.
+geometry[i] = hole.getDiameter();
+}
+
+return geometry;
+}
+
+@Override
+public void setGeometryPoint(double[] point)
+{
+if (point.length != nrDimensions)
+

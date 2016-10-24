@@ -1,0 +1,8 @@
+verify( database, atLeastOnce() ).createTableIfNecessary( nextTable );
+MetricMatcher m = new MetricMatcher(
+IntStream.range( 0, 24 ).mapToObj( i -> metricsInSource[12 * i + 11] ).collect( Collectors.toList() ) );
+Collection<Metric> other = (Collection<Metric>)argument;
+Set<Metric> actual = new HashSet<>( other );
+
+if ( expected.size() != actual.size() ) {
+

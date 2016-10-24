@@ -1,0 +1,13 @@
+private static final Logger LOG = LoggerFactory.getLogger(TimeWeightedDeltaEnricher.class);
+
+Number lastValue;
+long lastTime = -1;
+
+/** unitMillis is the number of milliseconds to apply for the conversion from input to output;
+* NB for time (e.g. &quot;total milliseconds consumed&quot;) use {@link TimeFractionDeltaEnricher} */
+@SetFromFlag
+int unitMillis;
+
+@SetFromFlag
+Function<Double,Double> postProcessor;
+

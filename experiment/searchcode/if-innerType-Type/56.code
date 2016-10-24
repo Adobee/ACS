@@ -1,0 +1,11 @@
+T result = original;
+Class<?> innerType = original.getClass().getComponentType();
+
+if (originalLen != newLen) {
+System.arraycopy(original, 0, result, 0, Math.min(originalLen, newLen));
+}
+
+if (innerType.isArray()) {
+for (int i = 0; i < Array.getLength(result); ++i) {
+if (Array.get(result, i) == null) {
+

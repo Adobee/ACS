@@ -1,0 +1,9 @@
+private static final ParameterParser INSTANCE = new ParameterParser();
+
+private Map<String, ParameterHandler> handlers;
+
+private ParameterParser() {
+public Object parse(String type, InputStream stream) throws IOException {
+for (ParameterHandler h : this.handlers.values()) {
+if (h.is(type)) {
+

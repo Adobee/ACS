@@ -1,0 +1,9 @@
+ArrayList<Cluster> clusterList = clusterMap.get(entity.getId());
+Cluster cluster = null;
+
+if(clusterList == null) {
+clusterList = clusterMap.get(entity.getId());
+} else {
+for(Cluster candidateCluster : clusterList) {
+if(candidateCluster.isSimilar(sequence)) {
+

@@ -1,0 +1,6 @@
+if (Double.compare(ranks[i].getValue(), ranks[i - 1].getValue()) > 0) {
+// tie sequence has ended (or had length 1)
+pos = i + 1;
+if (tiesTrace.size() > 1) {  // if seq is nontrivial, resolve
+resolveTie(out, tiesTrace);
+

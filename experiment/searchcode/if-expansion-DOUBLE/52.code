@@ -1,0 +1,9 @@
+private List/* ChargeElement */expansion = new ArrayList();
+/* summary kwh */
+private double kwh;
+/* summary gel */
+public double kwh() {
+double kwh = 0;
+for (int i = 0; i < expansion.size(); i++) {
+kwh += ((ChargeElement) expansion.get(i)).getKwh();
+

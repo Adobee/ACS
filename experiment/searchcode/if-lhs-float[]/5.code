@@ -1,0 +1,12 @@
+public static MotionCommand obtain(MotionCommand motionCommand) {
+MotionCommand lhs = searchReadyCommand();
+if(lhs == null)
+return lhs;
+
+lhs.commandType = motionCommand.commandType;
+lhs.x3 = motionCommand.x3; lhs.y3 = motionCommand.y3;
+return lhs;
+}
+
+public static MotionCommand obtain(int commandType, float x, float y) {
+

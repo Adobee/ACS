@@ -1,0 +1,10 @@
+public Message createMessage(MessageType t) {
+return new Message(t);
+}
+
+public void passMessage(Message m) {
+if(m.type == MessageType.MESSAGE_2) {
+rightNeighbor.handleMessage(m);
+} else if(m.type == MessageType.MESSAGE_5) {
+leftNeighbor.handleMessage(m);
+

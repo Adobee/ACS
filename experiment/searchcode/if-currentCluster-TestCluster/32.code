@@ -1,0 +1,10 @@
+* By default if no {@link ClusterScope} is configured this will hold a reference to the suite cluster.
+*/
+private static TestCluster currentCluster;
+
+private static final double TRANSPORT_CLIENT_RATIO = transportClientRatio();
+clearClusters(); // all leftovers are gone by now... this is really just a double safety if we miss something somewhere
+switch (currentClusterScope) {
+case SUITE:
+if (testCluster == null) { // only build if it&#39;s not there yet
+

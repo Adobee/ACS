@@ -1,0 +1,8 @@
+CustomerCertificateDao customerCertificateDao;
+
+public void saveOrUpCustomerCertificate(CustomerCertificate customerCertificate){
+if(customerCertificate!=null&amp;&amp;customerCertificate.getCustomerCertificateID()!=null){
+CustomerCertificate customerCertificate=null;
+if(StringUtils.isNoneBlank(request.getParameter(&quot;idCard&quot;))){
+customerCertificate=new CustomerCertificate(customer.getCustomerID(),&quot;ID&quot;,request.getParameter(&quot;idCard&quot;));
+

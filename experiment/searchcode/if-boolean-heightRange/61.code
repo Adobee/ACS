@@ -1,0 +1,10 @@
+private final static int heightTallest = heightShortest + heightRange;
+private boolean antennaBuilt = false;
+private boolean tallestBuilt = false;
+
+private final static byte platformId = (byte) Material.SMOOTH_BRICK.getId();
+private void generateAntenna(RealChunk chunk, DataContext context, int x, int y, int z, boolean lastChance) {
+
+// build an antenna?
+if ((lastChance &amp;&amp; !antennaBuilt) || chunkRandom.nextBoolean()) {
+

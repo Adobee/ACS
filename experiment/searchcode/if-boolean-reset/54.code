@@ -1,0 +1,20 @@
+public Debouncer(double time) {
+this.time = time;
+}
+
+public boolean update(boolean val) {
+if (first) {
+first = false;
+t.start();
+}
+if (!val) {
+t.reset();
+}
+return t.get() > time;
+}
+
+public void reset() {
+t.reset();
+}
+}
+

@@ -1,0 +1,7 @@
+FlowGraphNode node = _currentFG.getNode(i);
+if(node.getType() == FlowGraphNode.FOR_BEGIN) {
+ForBeginNode fbeg = (ForBeginNode) node;
+FinallyBeginNode fbeg = beg.getFinally();
+if(fbeg != null) {
+node = fbeg.getOutputNode(0);
+

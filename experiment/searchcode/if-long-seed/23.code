@@ -1,0 +1,14 @@
+public class RandomManager
+{
+protected long seed;
+protected Random random;
+
+public RandomManager()
+{
+this(getDefaultSeed());
+}
+
+public RandomManager(long seed)
+{
+this.seed = seed;
+

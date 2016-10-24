@@ -1,0 +1,5 @@
+class IntervalLimit<T extends Comparable<T>> implements Comparable<IntervalLimit<T>> {
+private boolean closed;
+static <T extends Comparable<T>> IntervalLimit<T> upper(boolean closed, T value) {
+return new IntervalLimit<T>(closed, false, value);
+

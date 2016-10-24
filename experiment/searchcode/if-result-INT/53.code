@@ -1,0 +1,9 @@
+/*@ requires
+@	(i==0) &amp;&amp; (j==1);
+@ ensures
+@ (result==1);
+@*/
+int AbsMinusKO2 (int i, int j) {
+int result=i+1; // error in the assignment : result = i+1 instead of result = i
+int k = 0;
+

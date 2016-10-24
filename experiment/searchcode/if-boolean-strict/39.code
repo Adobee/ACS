@@ -1,0 +1,8 @@
+public static void a(boolean paramBoolean)
+{
+if (paramBoolean)
+{
+StrictMode.ThreadPolicy localThreadPolicy = new StrictMode.ThreadPolicy.Builder().detectDiskReads().detectDiskWrites().detectAll().penaltyLog().build();
+if (localThreadPolicy != null) {
+StrictMode.setThreadPolicy(localThreadPolicy);
+

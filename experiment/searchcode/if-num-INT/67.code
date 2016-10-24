@@ -1,0 +1,9 @@
+public class Solution {
+public int uniquePaths(int m, int n) {
+int num[][] = new int[m + 1][n + 1];
+for (int j = 1; j <= n; j++) {
+if (i == 1 &amp;&amp; j == 1)
+num[i][j] = 1;
+else
+num[i][j] = num[i-1][j] + num[i][j-1];
+

@@ -1,0 +1,5 @@
+protected void heuristicPatternMatcher(String uri, boolean allHttp, boolean sameMethod, boolean sameHost,
+boolean fourthHit, long responseDelay, int sleepTime) throws Exception {
+String uri1 = URI_SCHEME_HTTP + host1 + addUriParameters(resourcePath);
+String uri2 = (allHttp ? URI_SCHEME_HTTP : URI_SCHEME_HTTPS) + (sameHost ? host1 : host2) + addUriParameters(resourcePath);
+

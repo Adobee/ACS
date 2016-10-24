@@ -1,0 +1,13 @@
+return result;
+}
+if (p1Size > p2Size) {
+int i = 0;
+while (i < p2Size) {
+double newCoeff = p1[0].getCoeff(i) - p1[1].getCoeff(i);
+result.addCoeffDegree(newCoeffD);
+i++;
+}
+int diff = p1Size - p2Size;
+while (diff > 0) {
+double newCoeff = p1[0].getCoeff(i);
+

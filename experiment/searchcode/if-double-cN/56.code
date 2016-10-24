@@ -1,0 +1,12 @@
+package cn.programCode.eight;
+
+public class Test {
+public static void main(String[] args){
+int n = 1237;
+doubleNum(n);
+}
+
+public static void doubleNum(int n) {
+System.out.println(n);
+if (n <= 5000)
+

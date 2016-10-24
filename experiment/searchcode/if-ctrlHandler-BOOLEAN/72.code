@@ -1,0 +1,8 @@
+this.settings = settings;
+}
+
+@Override
+public boolean hasChanged(Settings current, Settings previous) {
+for (String key : previous.getAsMap().keySet()) {
+if (loggerPredicate.test(key) &amp;&amp; builder.internalMap().containsKey(key) == false) {
+

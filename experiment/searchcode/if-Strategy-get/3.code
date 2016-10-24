@@ -1,0 +1,17 @@
+public void setStrategy(IStrategy strategy) {
+this.strategy = strategy;
+}
+
+public IStrategy getStrategy() {
+return this.strategy;
+}
+
+public String action() {
+if (strategy == null) {
+return &quot;No strategy.&quot;;
+}
+
+return strategy.action();
+}
+}
+

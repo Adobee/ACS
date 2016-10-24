@@ -1,0 +1,14 @@
+package me.xeyler;
+
+public class Complex {
+
+private final double real;
+private final double imaginary;
+
+public Complex(double r, double i) {
+real = r;
+imaginary = i;
+}
+
+public Complex add(Complex complex2) {
+

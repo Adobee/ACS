@@ -1,0 +1,11 @@
+ii v0_0 = android.os.Build$VERSION.SDK_INT;
+if (v0_0 < 21) {
+if (v0_0 < 19) {
+if (v0_0 < 18) {
+this.a = new ref.WeakReference(p2);
+return;
+}
+
+
+static synthetic int a(ih p1, int p2)
+

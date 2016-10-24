@@ -1,0 +1,11 @@
+public void sort() // sort the array using selection sort
+{
+for(int i; i < array.length-1; i ++)
+{
+int minPos = minPosition(i);
+swap(minPos, i);
+}
+}
+
+public int minimumPosition(int from) // return the position of the minimum element
+

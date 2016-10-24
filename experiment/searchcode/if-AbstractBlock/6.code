@@ -1,0 +1,11 @@
+public class DefaultItemBlock extends AbstractItemBlock
+{
+private final AbstractBlock b;
+public DefaultItemBlock(Block par1)
+{
+super(par1);
+if(par1 instanceof AbstractBlock)
+if((is == null) || !(is.getItem() instanceof ItemBlock)) return;
+Block b = ((ItemBlock)is.getItem()).field_150939_a;
+if(b instanceof AbstractBlock)
+

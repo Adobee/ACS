@@ -1,0 +1,7 @@
+private StageController currentStage;
+
+public GameSetup(Configuration<Game> engineConfiguration) {
+public void loadStage(StageConfiguration stageConfiguration, StageScript script) {
+if (currentStage != null) {
+game.unregisterTickListener(currentStage);
+

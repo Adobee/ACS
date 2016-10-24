@@ -1,0 +1,10 @@
+public byte[] GetLoginByte(){
+byte[] sendBuffer = new byte[42];
+ByteUtil.putInt(sendBuffer, 0, 0);
+ByteUtil.putShort(sendBuffer, (short) 42, 4);
+for(int i=8;i<24;i++)
+{
+if(i<nameLen)
+sendBuffer[i] = username[i];
+else
+

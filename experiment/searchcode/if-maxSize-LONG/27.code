@@ -1,0 +1,8 @@
+public SizePolicy(final long maxSize) throws IllegalArgumentException {
+if (maxSize <= 0L) {
+throw new IllegalArgumentException(&quot;maxSize must be > 0&quot;);
+SizePolicy(final String maxSize) throws IllegalArgumentException {
+try {
+if (maxSize.endsWith(&quot;GB&quot;)) {
+this.maxSize = Long.parseLong(maxSize.substring(0, maxSize.length() - 2).trim()) * 1024L * 1024L * 1024L;
+

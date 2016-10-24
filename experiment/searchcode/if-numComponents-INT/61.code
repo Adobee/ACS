@@ -1,0 +1,10 @@
+import uk.ac.ed.inf.pepa.ctmc.abstraction.SequentialStateSpace;
+
+public class AtomicProperty {
+
+private int numComponents;
+private SequentialStateSpace[] stateSpaces;
+public void notifySwap(SequentialStateSpace stateSpace, int index1, int index2) {
+for (int i = 0; i < numComponents; i++) {
+if (stateSpaces[i] == stateSpace) {
+

@@ -1,0 +1,8 @@
+import org.neo4j.client.rest.RestRelationship;
+
+public class RelationshipUtil {
+
+public static boolean intersects(RelationshipType source, RelationshipType... types){
+for (RelationshipType type : types) {
+if (matches(source,type)) {
+

@@ -1,0 +1,7 @@
+File tmpFile = new File(imageFile.getAbsolutePath() + TEMP_IMAGE_POSTFIX);
+OutputStream os = null;
+boolean savedSuccessfully = false;
+} finally {
+IoUtils.closeSilently(os);
+if (savedSuccessfully &amp;&amp; !tmpFile.renameTo(imageFile)) {
+

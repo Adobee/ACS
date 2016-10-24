@@ -1,0 +1,13 @@
+public String intern(String s) {
+String previousValue = map.get(s);
+if (previousValue == null) {
+previousValue = map.putIfAbsent(s, s);
+if (previousValue == null) {
+previousValue = s;
+}
+}
+return previousValue;
+}
+
+}
+

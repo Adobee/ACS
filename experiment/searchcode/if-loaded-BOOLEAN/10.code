@@ -1,0 +1,16 @@
+package model;
+
+public abstract class Model {
+
+private boolean loaded = false;
+
+public void save() {
+if (isLoaded()) {
+update();
+} else {
+insert();
+}
+}
+
+public void setIsLoaded() {
+

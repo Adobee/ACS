@@ -1,0 +1,10 @@
+public static class Builder extends MetaHeuristic.Builder<Builder> {
+
+private int maxEvaluations = 20000;
+this.archiveSize = archiveSize;
+return this;
+}
+
+public Builder setMaxEvaluations(int maxEvaluations) {
+if (maxEvaluations != 0)
+

@@ -1,0 +1,9 @@
+public static String ensureEncrypted(String password) {
+if (password.startsWith(ENCRYPTION_PREFIX))
+return password;
+else
+return ENCRYPTION_PREFIX + encryptPassword(password);
+}
+
+private static String encryptPassword(String password) {
+

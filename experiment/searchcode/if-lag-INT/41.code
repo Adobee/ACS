@@ -1,0 +1,7 @@
+float lagSec = (systemTime - mTime) / 1000f;
+if (lagSec > 3600 * 10) {  // > 10 hour
+int lagHours = (int)(lagSec/3600);
+return lagHours + &quot;h&quot;;
+} else if (lagSec > 3600) {  // > 1 hour
+int lagHours = (int)(lagSec/3600);
+

@@ -1,0 +1,15 @@
+String message = &quot;Absurd proposal&quot;;
+int times = (int)(args[0]);
+propose(message, times);
+}
+
+public static int propose(String msg, int times) {
+if(times>=1) {
+System.out.println(msg);
+return propose(msg, --times);
+} else {
+return 0;
+}
+}
+}
+

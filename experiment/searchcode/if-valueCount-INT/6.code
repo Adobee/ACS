@@ -1,0 +1,14 @@
+protected void setValueCount(int valueCount) {
+if(this.valueCount != valueCount) {
+if(valueCount < 0)
+throw new IllegalArgumentException(&quot;Bad argument.&quot;);
+index = -1;
+if(valueCount > 0)
+setIndex(0);
+validate();
+repaint();
+}
+}
+
+public int getValueCount () {
+

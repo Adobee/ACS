@@ -1,0 +1,10 @@
+import hu.qwaevisz.store.criteria.api.DoubleRange;
+
+public class SizeSearchCriteria {
+
+private DoubleRange	widthRange;
+public boolean isValid(Size size) {
+boolean valid = true;
+if (size != null) {
+valid = (DoubleRange.isValid(this.widthRange, size.getWidth()) &amp;&amp; DoubleRange.isValid(this.heightRange, size.getHeight()) &amp;&amp; DoubleRange.isValid(
+

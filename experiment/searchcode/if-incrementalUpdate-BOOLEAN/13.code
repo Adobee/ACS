@@ -1,0 +1,7 @@
+HashSet<String> modelsToKeep = new HashSet<String>();
+
+if (incrementalUpdate) {
+LOGD(TAG, String.format(&quot;Doing incremental update for %s.&quot;, dataType));
+// add the importable model if necessary
+if (!incrementalUpdate || !modelHashCodes.containsKey(model.getId()) ||
+

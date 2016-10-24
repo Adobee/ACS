@@ -1,0 +1,15 @@
+import com.github.nemanjavuk.rps.model.exceptions.InvalidGameStateException;
+
+/**
+* Created by nemanja.
+*/
+
+public class Game {
+
+private boolean gameFinished;
+private int player2Wins;
+private int ties;
+private TurnOutcome lastTurnOutcome;
+
+public TurnOutcome finishTurn(PlayCommand player1Command, PlayCommand player2Command) {
+

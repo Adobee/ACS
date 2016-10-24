@@ -1,0 +1,8 @@
+return Arrays.asList(HttpMethod.values());
+}
+
+public static HttpMethod fromString(String method) {
+List<HttpMethod> methods = list();
+for (HttpMethod mt : methods) {
+if (mt.name().equals(method)) {
+

@@ -1,0 +1,11 @@
+private static boolean childrenHaveType(NalNode n)
+{
+for (NalNode e : n.children) {
+if (!e.hasType) {
+n.elementType = n.children.get(0).elementType;
+}
+boolean hasType = true;
+for (NalNode e : n.children) {
+if (!e.hasType) {
+hasType = false;
+

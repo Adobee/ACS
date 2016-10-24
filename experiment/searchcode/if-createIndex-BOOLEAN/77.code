@@ -1,0 +1,6 @@
+String createIndex = &quot;DO $$ BEGIN IF NOT EXISTS ( SELECT 1 FROM pg_class c JOIN pg_namespace n ON n.oid = c.relnamespace WHERE c.relname = &#39;&quot;
++ type
++ &quot; (&quot; + column + &quot;);END IF;END$$;&quot;;
+connection.prepareCall(createIndex).execute();
+} catch (SQLException exception) {
+

@@ -1,0 +1,9 @@
+private final ClassFileVersion currentVersion;
+
+private final boolean hotSpot;
+
+public JavaVersionRule() {
+Enforce enforce = method.getAnnotation(Enforce.class);
+if (enforce != null) {
+if (!enforce.sort().check(currentVersion, ClassFileVersion.ofJavaVersion(enforce.value()))) {
+

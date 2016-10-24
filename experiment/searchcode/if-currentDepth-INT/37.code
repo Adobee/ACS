@@ -1,0 +1,9 @@
+public int recursiveDepth(TreeNode node, int currentDepth) {
+if (node.left == null &amp;&amp; node.right == null) return currentDepth;
+
+int leftDepth = currentDepth;
+if (node.left != null) leftDepth += recursiveDepth(node.left, currentDepth);
+
+int rightDepth = currentDepth;
+if (node.right!= null) rightDepth += recursiveDepth(node.right, currentDepth);
+

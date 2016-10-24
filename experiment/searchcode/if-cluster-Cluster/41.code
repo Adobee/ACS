@@ -1,0 +1,7 @@
+public static <T,M> KMeanCluster<T,M> createKMeanClusterWithSeedObject( T tuple ) {
+KMeanCluster<T,M> cluster;
+if( tuple instanceof FlickrPhoto ) {
+cluster.addToCluster(tuple);
+} else if ( tuple instanceof ClusterCentroid ) {
+cluster = (KMeanCluster<T,M>) new KMeanClusterOfClusterCentroids();
+

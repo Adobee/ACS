@@ -1,0 +1,7 @@
+public void DBSCAN (double eps, int MinPts)
+{
+for(int i=0;i<colors.length;i++){
+if (!visited[i])
+List<Integer> NeighborPts = (List<Integer>) regionQuery(i, eps);
+if (NeighborPts.size() < MinPts){
+

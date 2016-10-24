@@ -1,0 +1,9 @@
+return (month() - 1) * 30 + dayOfMonth();
+}
+
+public FrenchRevolutionaryDate nextDate(){
+int newMonth = this.month();
+int nextDayOfYear = this.dayOfYear()+1;
+int newYear = (nextDayOfYear-1) / 365 + this.year(); //-1 because if its 365 out of 365 its still not the new year yet.
+int newDay = this.dayOfMonth()+1;
+

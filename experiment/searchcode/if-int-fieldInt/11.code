@@ -1,0 +1,7 @@
+public Integer getIntegerValueof(String fieldName) {
+Integer fieldInt = null;
+try {
+fieldInt = Integer.parseInt(fieldName);
+}
+catch (NumberFormatException e) {
+

@@ -1,0 +1,8 @@
+public class CommonsMultiparResolver  extends CommonsMultipartResolver{
+
+@Override
+public boolean isMultipart(HttpServletRequest request) {
+String uri = request.getRequestURI();
+//过滤使用百度EmEditor的URI
+if (uri.contains(&quot;jsp/imageUp.jsp&quot;)) {
+

@@ -1,0 +1,8 @@
+public String login() {
+
+if (null == operInfo.getOperName() || null == operInfo.getPwd()) {
+setState(false);
+for (TAuOperInfoEntity oper : operList) {
+loginOperId = oper.getOperId();
+if ((null != operInfo.getOperName()) &amp;&amp; (!oper.getOperName().equals(operInfo.getOperName()))) {
+

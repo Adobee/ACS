@@ -1,0 +1,11 @@
+public static <T extends Comparable<T>> void sort(T[] ts) {
+int N = ts.length;
+for (int k = N / 2; k >= 1; k--) {
+sink(ts, k, N);
+while (2 * k <= N) {
+int j = 2 * k;
+if (j < N &amp;&amp; less(ts, j, j + 1)) {
+j++;
+}
+if (!less(ts, k, j)) {
+

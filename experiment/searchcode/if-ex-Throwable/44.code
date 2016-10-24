@@ -1,0 +1,17 @@
+private static Throwable ex;
+
+private OrionFactory() { }
+
+public static Orion getOrion() {
+
+if (orion != null) return(orion);
+orion = new OrionImpl();
+
+// done
+
+return(orion);
+} catch (Throwable ex) {
+
+OrionFactory.ex = ex;
+return(null);
+

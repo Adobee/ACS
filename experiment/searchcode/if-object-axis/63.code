@@ -1,0 +1,8 @@
+* -1,-2,-3,-4,... are the negative axes
+* 0 is not allowed as value
+*/
+public DSignedAxis(int i) {
+if (i==0) { pos = true; axis = -1; }
+if (i>0) { pos = true; axis = i-1; }
+if (i<0) { pos = false; axis = -i-1; }
+

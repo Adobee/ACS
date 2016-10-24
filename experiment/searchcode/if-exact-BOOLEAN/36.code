@@ -1,0 +1,10 @@
+return positionExactTypeDao.deletePositionExactTypeByPositionIdAndExactTypeId(adPositionId, exactTypeId);
+}
+
+@Override
+public Boolean savePositionExactType(PositionExactType positionExactAds) {
+Assert.notNull(positionExactAds.getExactTypeId(), &quot;the exactTypeId must not be null&quot;);
+
+Boolean result = false;
+if (positionExactTypeDao.conut(positionExactAds.getAdPositionId(), positionExactAds.getExactTypeId())
+

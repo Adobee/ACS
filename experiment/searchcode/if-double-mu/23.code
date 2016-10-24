@@ -1,0 +1,9 @@
+import engine.MatchType;
+
+public class Rating implements Comparable<Rating>{
+private double mu;
+private double sigma;
+private final Map<MatchType, Rating> typedRatings = new HashMap<>();
+
+public Rating(double mu, double sigma) {
+

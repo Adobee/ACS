@@ -1,0 +1,9 @@
+int[][] res = new int[n][n];
+
+int start = 0, end = n-1;
+int k = 1;
+
+while (start < end) {
+for (int i = start; i < end; i++) {
+res[start][i] = k++;
+

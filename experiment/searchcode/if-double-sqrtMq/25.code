@@ -1,0 +1,9 @@
+/** Squared secondary diagonal of the tridiagonal matrix. */
+private double[] squaredSecondary;
+
+/** Transformer to tridiagonal (may be null if matrix is already tridiagonal). */
+final boolean chooseLeft   = (oneFourthCount - 1) >= (n - threeFourthCount);
+final double lambda;
+if(chooseLeft){
+lambda=range[0];
+

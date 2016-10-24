@@ -1,0 +1,7 @@
+public int compareTo(Event o) {
+if (this.equals(o)) return 0;
+if (o == null) return -1;
+if (startMillis == o.startMillis) return Double.compare(id, o.id);
+return this.getClass().getSimpleName() + &quot;: &quot;
++ ((long)startMillis)%10000 + &quot; &quot;
+

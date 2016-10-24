@@ -1,0 +1,12 @@
+protected FilterReader(Reader in) {
+if (in == null) {
+throw new NullPointerException();
+}
+this.in = in;
+public boolean markSupported() {
+return in.markSupported();
+}
+
+@Override
+public void mark(int readAheadLimit) throws IOException {
+

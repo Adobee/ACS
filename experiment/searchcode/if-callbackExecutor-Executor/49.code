@@ -1,0 +1,6 @@
+public class CallableCallback<T> implements Runnable {
+
+private final Consumer<Runnable> callbackExecutor;
+private final Consumer<Runnable> backgroundThread;
+public CallableCallback(Consumer<Runnable> callbackExecutor, Consumer<Runnable> backgroundThread, Callable<T> task) {
+

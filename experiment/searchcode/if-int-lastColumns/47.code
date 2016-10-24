@@ -1,0 +1,6 @@
+final double[][] data = new double[getRowDimension()][getColumnDimension()];
+final int lastColumns = columns - (blockColumns - 1) * BLOCK_SIZE;
+final int heightExcess = iHeight + rowsShift - BLOCK_SIZE;
+final int widthExcess = jWidth + columnsShift - BLOCK_SIZE;
+if (heightExcess > 0) {
+

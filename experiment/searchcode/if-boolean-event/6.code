@@ -1,0 +1,8 @@
+import org.asteriskjava.manager.event.NewStateEvent;
+
+public abstract class EventHandlerAdapter {
+
+public boolean handleEvent(ManagerEvent event, EventContextProvider context) {
+if (event instanceof NewChannelEvent) {
+return handle((NewChannelEvent)event, context);
+

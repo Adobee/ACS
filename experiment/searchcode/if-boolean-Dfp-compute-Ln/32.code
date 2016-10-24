@@ -1,0 +1,8 @@
+* must be computed (setting this flag to false is RESERVED for the internal recursive call)
+*/
+private DfpField(final int decimalDigits, final boolean computeConstants) {
+
+this.radixDigits = (decimalDigits < 13) ? 4 : (decimalDigits + 3) / 4;
+ln2String  = computeLn(highPrecisionTwo, highPrecisionOne, highPrecisionTwo).toString();
+ln5String  = computeLn(new Dfp(highPrecisionField, 5),  highPrecisionOne, highPrecisionTwo).toString();
+

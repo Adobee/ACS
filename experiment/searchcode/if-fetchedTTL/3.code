@@ -1,0 +1,7 @@
+timestamp = (String) ctx.get(&quot;_timestamp&quot;);
+
+fetchedTTL = ctx.get(&quot;_ttl&quot;);
+if (fetchedTTL != null) {
+if (fetchedTTL instanceof Number) {
+ttl = ((Number) fetchedTTL).longValue();
+

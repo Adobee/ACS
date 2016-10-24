@@ -1,0 +1,11 @@
+score += this.scoreInFrame(frame);
+
+if (frameIsSpare(frame)) {
+score += bonusForSpare(frame);
+}
+
+if (frameIsStrike(frame)) {
+protected boolean frameIsSpare(int frame) {
+boolean result = false;
+int[] framePins = this.pinsInFrame(frame);
+

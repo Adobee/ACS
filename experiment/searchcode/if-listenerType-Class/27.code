@@ -1,0 +1,7 @@
+public abstract class Eventsender<ListenerType extends EventListener, EventType extends DefaultEvent> {
+
+private final Object LOCK = new Object();
+synchronized (this.LOCK) {
+if (weakListener.size() > 0) {
+final List<WeakReference<ListenerType>> newWeakListener = new ArrayList<WeakReference<ListenerType>>(this.weakListener.size());
+

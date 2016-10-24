@@ -1,0 +1,10 @@
+protected DateTimeFormatClient(String pattern)
+{
+this.dateTimeFormat = com.google.gwt.i18n.client.DateTimeFormat.getFormat(pattern);
+return dateTimeFormat.format(date);
+}
+
+public  Date parse(String strDate)
+{
+return this.dateTimeFormat.parse(strDate);
+

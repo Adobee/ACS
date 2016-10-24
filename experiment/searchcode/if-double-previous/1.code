@@ -1,0 +1,10 @@
+package org.usfirst.frc.team2635.robot;
+
+public class AngleUnwrap
+{
+double previousAngle = 0.0;
+private double getDelta(double previousAngle, double currentAngle, double tolerance)
+{
+double delta = currentAngle - previousAngle;
+if(Math.abs(delta) > tolerance)
+

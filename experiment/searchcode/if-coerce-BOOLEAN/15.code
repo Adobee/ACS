@@ -1,0 +1,7 @@
+public Object invoke(final Object o, final Method method, final Object[] array) throws Throwable {
+final LuaValue value = this.val$lobj.get(method.getName());
+if (value.isnil()) {
+return null;
+}
+final boolean b = (method.getModifiers() &amp; 0x80) != 0x0;
+

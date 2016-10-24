@@ -1,0 +1,11 @@
+return new Iter(keys, state);
+}
+
+@Override
+public double percent(double value) {
+return percentileRank(state, value);
+return Double.NaN;
+}
+double percentileRank = state.getPercentileAtOrBelowValue(value);
+if (percentileRank < 0) {
+

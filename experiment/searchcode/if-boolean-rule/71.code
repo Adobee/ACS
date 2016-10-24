@@ -1,0 +1,15 @@
+public HashMap rules = new HashMap();
+
+public void addRule(String rule)
+{
+if (rule.equals(&quot;&quot;))
+{
+return;
+}
+
+Rule newRule = new Rule(rule);
+
+if (rules.containsKey(newRule.LHS))
+{
+LinkedList ruleGroup = (LinkedList) rules.get(newRule.LHS);
+

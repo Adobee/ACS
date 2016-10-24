@@ -1,0 +1,6 @@
+Round tempRound=roundList.get(roundNum-1);
+if(tempRound.isStrike()){
+return tempRound.getScore()+roundList.get(roundNum).getScore();
+}else if(tempRound.isSpare()){
+return tempRound.getScore()+roundList.get(roundNum).getFirstHit();
+

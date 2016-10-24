@@ -1,0 +1,12 @@
+current = current.next;
+}
+
+link (parent, entry);
+// If it is double, make it circular so max() can be computed in O(1)
+if (isDouble()){
+link (entry, first);
+}
+}
+
+private void link(Entry first, Entry second){
+

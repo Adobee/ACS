@@ -1,0 +1,8 @@
+public Date nextDate() {
+int newDay = this.dayOfMonth() + 1;
+int newMonth = this.month();
+int newYear = this.year();
+if (newDay > monthLengths[newMonth]) {
+newMonth++;
+newDay = 1;
+

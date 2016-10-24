@@ -1,0 +1,10 @@
+private static Logger logger = LogManager.getLogger( GeoLocation.class.getName());
+
+private Double	latitude;
+private Double	longitude;
+private Double	accuracy;  // Accuracy of location measured in meters
+this.longitude >= -180 &amp;&amp; this.longitude <= 180 ) {
+
+if ( this.accuracy == null || this.accuracy < 0 )
+this.accuracy = new Double( 0 );
+

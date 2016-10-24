@@ -1,0 +1,10 @@
+public void transform(Vertex point)
+{
+if (point == null) return;
+
+// Translate (Center = 0,0,0)
+double x = point.x-center.x;
+double x2 = x * m[0][0] + y * m[0][1] + z * m[0][2];
+double y2 = x * m[1][0] + y * m[1][1] + z * m[1][2];
+double z2 = x * m[2][0] + y * m[2][1] + z * m[2][2];
+

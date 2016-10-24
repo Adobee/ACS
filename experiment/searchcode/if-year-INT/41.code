@@ -1,0 +1,14 @@
+package question7_leapyear;
+
+public class LeapYear {
+private int Year;
+LeapYear(int Year_input)
+{
+Year=Year_input;
+}
+public boolean isLeapYear()
+{
+if (Year%4==0)
+{
+if (Year%400==0)
+

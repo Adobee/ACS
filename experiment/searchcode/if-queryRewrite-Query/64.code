@@ -1,0 +1,16 @@
+import java.util.*;
+
+/**
+* Created by deke on 5/24/14.
+*/
+public class QueryRewrite {
+
+private class AttributeRecord{
+private static String getTargetTable = &quot;select ID, ORIGIN, TARGET from TBL_TRANSFORM&quot;;
+
+public QueryRewrite(String sql){
+setSql(sql);
+init();
+}
+private void init(){
+

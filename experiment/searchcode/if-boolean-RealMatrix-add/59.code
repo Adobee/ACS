@@ -1,0 +1,10 @@
+import org.apache.commons.math3.linear.MatrixUtils;
+import org.apache.commons.math3.linear.RealMatrix;
+import org.apache.commons.math3.linear.RealVector;
+return matrix;
+}
+
+public RealMatrix getMatrix() {
+if (dirty) {
+this.matrix = getTranslationMatrix().multiply(getRotationMatrix().multiply(getScaleMatrix()));
+

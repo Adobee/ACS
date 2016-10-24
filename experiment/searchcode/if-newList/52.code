@@ -1,0 +1,8 @@
+private static void DFS(int k, int n, List<List<Integer>> list, List<Integer> newList, int start, int sum) {
+if(newList.size() == k &amp;&amp; n == sum) {
+list.add(new ArrayList<Integer>(newList));
+return;
+}
+for(int i = start; i < 9; i++) {
+if(newList.size() < k &amp;&amp; n > sum) {
+

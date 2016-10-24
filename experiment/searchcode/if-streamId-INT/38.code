@@ -1,0 +1,7 @@
+for (var i = 0; i < plot_data[streamid][&quot;substreams&quot;].length; i++) {
+var sstr = plot_data[streamid][&quot;substreams&quot;][i];
+if (&quot;Operator&quot; in sstr[&quot;Metadata&quot;][&quot;Extra&quot;] &amp;&amp;
+// save what operator we&#39;re using for this stream
+if (best_str >= 0) {
+plot_data[streamid][&quot;selected_operator&quot;] = known_operators[best_str];
+

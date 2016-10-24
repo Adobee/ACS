@@ -1,0 +1,7 @@
+for (int i = 0; i < BLOCKROW; i++)
+for (int j = 0; j < BLOCKCOLUMN; j++) {
+if (j<BLOCKCOLUMN/3) { block[i][j] = new Block(3, mobilesizex / BLOCKROW, BLOCKWIDTH); }
+for (int i = 0; i < BLOCKROW; i++) {
+for (int j = 0; j < BLOCKCOLUMN; j++) {
+if (block[i][j].exist) {
+

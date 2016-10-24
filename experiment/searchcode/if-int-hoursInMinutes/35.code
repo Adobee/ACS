@@ -1,0 +1,8 @@
+if (id.startsWith(&quot;+&quot;) || id.startsWith(&quot;-&quot;)) {
+int offset = parseOffset(id);
+if (offset == 0L) {
+return DateTimeZone.UTC;
+int hoursInMinutes = hoursOffset * 60;
+if (hoursInMinutes < 0) {
+minutesOffset = hoursInMinutes - minutesOffset;
+

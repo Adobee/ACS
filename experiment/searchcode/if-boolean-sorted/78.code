@@ -1,0 +1,6 @@
+public static List<Integer> topologicalSort(Graph g) {
+List<Integer> sortedVertices = new ArrayList<Integer>();
+boolean[] visited = new boolean[g.vertexCount()];
+public static void topologicalVisit(Graph g, int root, List<Integer> sorted, boolean[] visited) {
+if (!visited[root]) {
+

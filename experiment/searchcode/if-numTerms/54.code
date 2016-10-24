@@ -1,0 +1,11 @@
+public long computeNorm(FieldInvertState state) {
+final float numTerms;
+if (discountOverlaps)
+numTerms = state.getLength() - state.getNumOverlap();
+else
+numTerms = state.getLength();
+return (long) numTerms;
+}
+
+}
+

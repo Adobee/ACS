@@ -1,0 +1,8 @@
+if ((i == k &amp;&amp; j == l) || (i == 0 &amp;&amp; j == 0) || (k == 0 &amp;&amp; l == 0)) continue;
+Point p1 = new Point(i, j);
+Point p2 = new Point(k, l);
+if (solve(p1, p2)) count++;
+public static boolean solve(Point p1, Point p2){
+int a = p1.x * p1.x + p1.y * p1.y;
+int b = p2.x * p2.x + p2.y * p2.y;
+

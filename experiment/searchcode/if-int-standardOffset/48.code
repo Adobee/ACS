@@ -1,0 +1,9 @@
+ZoneOffset loopStandardOffset = firstWindow.standardOffset;
+int loopSavings = 0;
+if (firstWindow.fixedSavingAmountSecs != null) {
+loopStandardOffset, window.standardOffset));
+loopStandardOffset = window.standardOffset;
+}
+
+// check if the start of the window represents a transition
+

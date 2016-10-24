@@ -1,0 +1,13 @@
+public class DecimalNumber implements NumberOperations<DecimalNumber> {
+
+private final BigDecimal bigDecimal;
+
+public DecimalNumber(long value) {
+this(new BigDecimal(value));
+return multiply(new DecimalNumber(multiplicand));
+}
+
+@Override
+public DecimalNumber multiply(long multiplicand) {
+return multiply(new DecimalNumber(multiplicand));
+

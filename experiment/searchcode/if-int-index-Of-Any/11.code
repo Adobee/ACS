@@ -1,0 +1,10 @@
+while ((index = skipWhitespace(string, index)) < string.length())
+{
+int nextIndex;
+
+// Do we have an opening quote?
+if (string.charAt(index) == &#39;\&#39;&#39;)
+// Parse a quoted string.
+nextIndex = string.indexOf(&#39;\&#39;&#39;, index + 1);
+if (nextIndex < 0)
+

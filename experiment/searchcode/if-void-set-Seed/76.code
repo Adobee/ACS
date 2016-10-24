@@ -1,0 +1,14 @@
+private static final int q = 127773;
+private static final int r = 2836;
+
+private RandomNumberGenerator() {
+}
+
+public static void setSeed(int s)
+{
+if(s<1 || s>=m)
+{
+throw new IllegalArgumentException(&quot;invalid seed&quot;);
+}
+seed=s;
+

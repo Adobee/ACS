@@ -1,0 +1,13 @@
+return( ConfigurationManager.getInstance().getStringParameter( _name, _default ));
+}
+
+public static boolean
+setParameter(String parameter, String value)
+{
+return ConfigurationManager.getInstance().setParameter( parameter, value );
+setBooleanDefault(
+String	parameter,
+boolean	_default )
+{
+ConfigurationDefaults.getInstance().addParameter( parameter, _default );
+

@@ -1,0 +1,12 @@
+private static double tolerance = 1.E-005D;
+
+public static double[] convolveFIR(double[] input, double[] kernel)
+{
+int l = input.length;
+if (l <= 1)
+double[] output = new double[l];
+
+int indexq = kernel.length - 1;
+int indexp = 0;
+int n2 = 2 * (l - 1);
+

@@ -1,0 +1,11 @@
+Range newRange = new Range(lower, upper);
+
+if(list.size() == 0){
+list.add(newRange);
+return;
+}
+
+int insertPosition = lookupInsertPosition(newRange);
+if(insertPosition == list.size()) { //adding at the end of list
+list.addLast(newRange);
+

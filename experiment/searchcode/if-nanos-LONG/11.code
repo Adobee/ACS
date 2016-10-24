@@ -1,0 +1,14 @@
+public abstract class CachedGauge<T> implements Gauge<T> {
+
+private long timeoutNanos;
+private long lastReloadNanos;
+
+private T value;
+return currentTimeNanos - lastReloadNanos > timeoutNanos;
+}
+
+@Override
+public T getVaue() {
+long currentTimeNanos = System.nanoTime();
+if (shouldReload(currentTimeNanos)) {
+

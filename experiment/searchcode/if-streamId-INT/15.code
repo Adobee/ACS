@@ -1,0 +1,10 @@
+if (getClass() != obj.getClass())
+return false;
+StreamId other = (StreamId) obj;
+if (streamId == null) {
+if (other.streamId != null)
+return false;
+} else if (!streamId.equals(other.streamId))
+return false;
+return true;
+

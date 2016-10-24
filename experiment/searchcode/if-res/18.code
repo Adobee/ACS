@@ -1,0 +1,8 @@
+res[0] = 1;
+res[3] = Integer.MAX_VALUE;
+res[4] = Integer.MIN_VALUE;
+
+if(root == null) return res;
+// 0 - whether is BST, 1 - no. of nodes, 2 - max BST subtree, 3 - min value, 4 - max value
+if (resL[0] == 0 || resR[0] == 0 || resL[4] > root.val || resR[3] < root.val ) {
+

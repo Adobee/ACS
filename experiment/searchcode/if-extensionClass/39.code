@@ -1,0 +1,13 @@
+public Class<? extends ScimExtension> getExtensionClass(Class<? extends ScimResource> resourceClass, String urn) {
+Class<? extends ScimExtension> extensionClass = null;
+resourceMap = new HashMap<String, Class<? extends ScimExtension>>();
+registry.put(resourceClass, resourceMap);
+}
+
+if(!resourceMap.containsKey(urn)) {
+resourceMap.put(urn, extensionClass);
+}
+}
+
+}
+

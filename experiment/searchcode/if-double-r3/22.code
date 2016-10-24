@@ -1,0 +1,10 @@
+int length = variables.length;
+if (length != 5) {
+throw new IllegalArgumentException();
+}
+double[] array = new double[length];
+double f = variables[5];
+double r1 = a * x1;
+double r2 = b * x1 * x1 * x1 * x2;
+double r3 = c * Math.exp(d * x3) * (1 + Math.cos(e * x4));
+

@@ -1,0 +1,9 @@
+searchLength=1;
+while(searchLength<1000)
+{
+if(searchString.length()!=0)
+searchString.delete(0, searchString.length());
+searchString.append(str.substring(0, searchLength));
+
+if(compareString.length()!=0)
+

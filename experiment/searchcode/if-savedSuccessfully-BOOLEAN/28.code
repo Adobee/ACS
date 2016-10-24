@@ -1,0 +1,12 @@
+BufferedOutputStream os = new BufferedOutputStream(editor.newOutputStream(0), bufferSize);
+boolean savedSuccessfully = true;
+try {
+os.write(value.getBytes());
+} catch (IOException e){
+Util.closeQuietly(os);
+}
+if (savedSuccessfully) {
+editor.commit();
+} else {
+editor.abort();
+

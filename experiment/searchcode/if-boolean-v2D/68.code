@@ -1,0 +1,9 @@
+public class BallAgent extends Thread {
+
+private P2d pos;
+private V2d vel;
+private boolean stop;
+Random rand = new Random(System.currentTimeMillis());
+double dx = rand.nextDouble();
+vel = new V2d(dx,Math.sqrt(1-dx*dx));
+

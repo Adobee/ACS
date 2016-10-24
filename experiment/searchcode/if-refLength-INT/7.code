@@ -1,0 +1,10 @@
+String[] toks = line.split(&quot;\t&quot;);
+String refName = null;
+Long refLength = null;
+for(int i=0; i<toks.length; i++) {
+refLength = Long.parseLong( toks[i].replace(&quot;LN:&quot;, &quot;&quot;));
+}
+
+if (refName != null &amp;&amp; refLength != null) {
+dict.put(refName, new DictEntry(index, refLength));
+

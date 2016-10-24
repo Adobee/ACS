@@ -1,0 +1,11 @@
+package optim;
+
+import exception.NotStrictlyPositiveException;
+
+public class MaxEval implements OptimizationData {
+* @throws NotStrictlyPositiveException if {@code max <= 0}.
+*/
+public MaxEval(int max) {
+if (max <= 0) {
+throw new NotStrictlyPositiveException(max);
+

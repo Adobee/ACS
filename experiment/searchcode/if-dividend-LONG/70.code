@@ -1,0 +1,6 @@
+public int divide(int dividend, int divisor) {
+if(divisor == 0 || (dividend == Integer.MIN_VALUE &amp;&amp; divisor == -1)) {
+int sign = (dividend < 0) ^ (divisor < 0) ? -1 : 1;
+long dividendL = Math.abs((long)dividend);
+long divisorL = Math.abs((long)divisor);
+

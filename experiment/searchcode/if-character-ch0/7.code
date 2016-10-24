@@ -1,0 +1,9 @@
+public boolean incrementToken() throws IOException {
+boolean result = super.incrementToken();
+if (result) {
+char ch0 = termAtt.buffer()[0];
+&amp;&amp; ch0 != &#39;U&#39; // URL (capital U)
+&amp;&amp; !Character.isDigit(ch0) // numbers
+) {
+if (stemmer.stem(termAtt.buffer(), 0, termAtt.length()))
+

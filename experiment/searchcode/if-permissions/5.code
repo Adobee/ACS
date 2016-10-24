@@ -1,0 +1,12 @@
+public Permissions(boolean ownerWrite, boolean ownerRead, boolean groupWrite, boolean groupRead, boolean otherWrite, boolean otherRead){
+if(ownerWrite){
+permissions = (byte)(permissions|0x20);
+}
+
+if(ownerRead){
+permissions = (byte)(permissions|0x10);
+}
+
+if(groupWrite){
+permissions = (byte)(permissions|0x08);
+

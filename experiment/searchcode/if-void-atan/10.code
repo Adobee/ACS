@@ -1,0 +1,14 @@
+this.solid = true;
+this.speed = 1;
+}
+
+public void changeFacingTowards(Player target)
+{
+double opposite = target.x - this.x;
+int quadrant = Angle.getQuadrant(opposite,  adjacent);
+
+double atanTheta = 0;
+
+double angle = 0;
+if(quadrant == 2 || quadrant == 4)
+

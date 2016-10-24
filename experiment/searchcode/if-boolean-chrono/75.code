@@ -1,0 +1,7 @@
+SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+
+if (prefs.getLong(&quot;chronoStartTime&quot;, -1) == -1) {
+prefs.edit()
+SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ChronoService.this);
+if (prefs.getLong(&quot;chronoStartTime&quot;, -1) <= 0)
+

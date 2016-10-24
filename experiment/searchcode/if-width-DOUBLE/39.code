@@ -1,0 +1,12 @@
+package org.usfirst.frc.team871.robot;
+
+public class Deadband implements Filter{
+
+double width = .15;//width default
+public double update(double input) {
+
+double deadbandValue;
+
+if (input < width &amp;&amp; input > -width){
+deadbandValue = 0;
+

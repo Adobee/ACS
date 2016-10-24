@@ -1,0 +1,7 @@
+public static XMLInputFactory getXMLInputFactory() {
+if(inputFactory==null) {
+inputFactory = new WstxInputFactory();
+((WstxInputFactory)inputFactory).configureForSpeed();
+inputFactory.setProperty(XMLInputFactory.SUPPORT_DTD, Boolean.FALSE);
+inputFactory.setProperty(XMLInputFactory.IS_VALIDATING, Boolean.FALSE);
+

@@ -1,0 +1,11 @@
+int ch4;
+
+if (i + 3 < len
+&amp;&amp; 0x80 <= (ch2 = str.charAt(i + 1)) &amp;&amp; ch2 <= 0xBF
+return ERROR_CHARACTER;
+}
+
+int ch4 = readByte();
+
+if (ch4 < 0) {
+

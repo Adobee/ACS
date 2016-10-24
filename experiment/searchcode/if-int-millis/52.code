@@ -1,0 +1,6 @@
+public class ClockUpdate {
+public static String clock(long millis) {
+millis/=1000;
+int millisUntilFinished = (int) millis;
+StringBuffer timeBuffer = new StringBuffer();
+

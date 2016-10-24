@@ -1,0 +1,11 @@
+* @author bendisposto
+*
+*/
+public class Responses {
+
+private final Cache<Integer, Message> responseCache;
+Message v = responseCache.getIfPresent(i);
+if (v == null)
+throw new ReloadRequiredException();
+return v;
+

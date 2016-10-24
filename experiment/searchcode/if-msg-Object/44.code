@@ -1,0 +1,9 @@
+ObjectInputStream in=new ObjectInputStream(skt.getInputStream());
+out.writeObject(msg);
+out.flush();
+skt.shutdownOutput();
+Msg ansMsg=(Msg)in.readObject();
+if(ansMsg.getMsg()!= null)
+{
+JOptionPane.showMessageDialog(parent
+

@@ -1,0 +1,9 @@
+RunningNumber number = (RunningNumber)getInstance().getSession().createCriteria(RunningNumber.class).setMaxResults(1).uniqueResult();
+String string = null;
+if (number!=null) {
+// get number
+string = number.getWarehouseNumber();
+if (string==null || string.length()==0) {
+string = &quot;000001&quot;;
+} else if (string!=null &amp;&amp; string.equalsIgnoreCase(returnMax(string.length()))) {
+

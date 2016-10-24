@@ -1,0 +1,6 @@
+if (recursion_depth > 50) return null;
+
+if (nextX < 0 || !(nextX < map.map_width) || nextY < 0 || !(nextY < map.map_height)) return null;
+if (map.getNode(nextX, nextY).impassable) return null;
+if (samePosition(map.getNode(nextX, nextY), end)) return end;
+

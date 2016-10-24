@@ -1,0 +1,7 @@
+private HttpUriRequest httpMethod(Object args) throws Exception {
+String httpUrl = baseURL + requetURL;
+if (&quot;GET&quot;.equals(httpMethod)) {
+return new HttpGet(httpUrl);
+} else if (&quot;POST&quot;.equals(httpMethod)) {
+HttpPost httppost = new HttpPost(httpUrl);
+

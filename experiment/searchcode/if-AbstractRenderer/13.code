@@ -1,0 +1,11 @@
+import com.google.gwt.text.shared.AbstractRenderer;
+
+/**
+* Renderer that sums up Double values.
+*/
+public class SumUpRenderer extends AbstractRenderer<Double[]> {
+
+@Override
+public String render(Double[] values) {
+double sum = 0;
+

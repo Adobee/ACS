@@ -1,0 +1,15 @@
+StringWriter writer = new StringWriter();
+
+try {
+if (!serialize(writer))
+return null;
+} catch (IOException e) {
+return null;
+}
+
+return writer.toString();
+}
+
+public abstract boolean serialize(Writer writer) throws IOException;
+}
+

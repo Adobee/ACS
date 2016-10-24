@@ -1,0 +1,10 @@
+if (settings.maxTermFreq != null) {
+setMaxTermFreq(settings.maxTermFreq);
+}
+if (settings.minDocFreq != null) {
+// filter out words that occur too many times in the source
+if (freq > maxTermFreq) {
+return true;
+}
+return false;
+

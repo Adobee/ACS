@@ -1,0 +1,7 @@
+public void updateDataSet(String datasetId, Dataset dataSet) throws DatasetDoesNotExistException {
+
+final boolean resultOK = datasetDao.updateDataSet(datasetId, dataSet);
+if (!resultOK) {
+public void deleteDataSet(String datasetId) throws DatasetDoesNotExistException {
+final boolean resultOK = datasetDao.deleteDataSet(datasetId);
+

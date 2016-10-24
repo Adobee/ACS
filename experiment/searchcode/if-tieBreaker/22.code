@@ -1,0 +1,9 @@
+private static AtomicInteger numEventsCreated = new AtomicInteger();
+
+public final int scheduledTime;
+public final int tieBreaker;
+
+public Event(int time) {
+this.scheduledTime = time;
+this.tieBreaker = numEventsCreated.getAndIncrement();
+

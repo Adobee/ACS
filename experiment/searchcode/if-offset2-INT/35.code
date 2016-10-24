@@ -1,0 +1,9 @@
+private int myOffset1;
+private int myOffset2;
+private final int myUpToDateOffset1;
+private final int myUpToDateOffset2;
+byte type = getChangeTypeFrom(change);
+
+int offset1 = shift + change.line1;
+int offset2 = offset1 + change.inserted;
+

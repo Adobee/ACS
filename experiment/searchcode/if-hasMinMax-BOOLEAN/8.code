@@ -1,0 +1,7 @@
+private boolean updateScale(final Track track) {
+if (track != null &amp;&amp; track.getLength() > 0) {
+final boolean xChanged = xAxis.updateMinMax(xData, track);
+protected void onScaleChanged() {
+if (!(xAxis.hasMinMax() &amp;&amp; yAxis.hasMinMax())) {
+xAxis.scale = Double.NaN;
+

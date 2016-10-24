@@ -1,0 +1,10 @@
+import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+import java.util.concurrent.atomic.AtomicBoolean;
+
+public class CommandHttpCall extends HystrixCommand<String> {
+private final AtomicBoolean networkProblems;
+
+private static final org.slf4j.Logger logger = LoggerFactory.getLogger(CommandHttpCall.class);
+

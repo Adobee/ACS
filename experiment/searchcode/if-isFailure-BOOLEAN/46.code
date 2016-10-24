@@ -1,0 +1,16 @@
+return new Success<A>(value);
+}
+
+static Try failure() {
+return new Failure();
+}
+
+boolean isFailure();
+@Override
+public boolean isFailure(){
+return true;
+}
+}
+
+class Success<A> implements Try<A> {
+

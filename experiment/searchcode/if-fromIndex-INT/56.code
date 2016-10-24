@@ -1,0 +1,13 @@
+private static <T> int binarySearch0(T[] a, int fromIndex, int toIndex, T key, Comparator<? super T> c)
+{
+if (c == null)
+{
+return binarySearch0(a, fromIndex, toIndex, key);
+}
+int low = fromIndex;
+private static void rangeCheck(int arrayLength, int fromIndex, int toIndex)
+{
+if (fromIndex > toIndex)
+{
+throw new IllegalArgumentException(&quot;fromIndex(&quot; + fromIndex + &quot;) > toIndex(&quot; + toIndex + &quot;)&quot;);
+

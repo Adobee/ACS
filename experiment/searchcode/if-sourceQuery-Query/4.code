@@ -1,0 +1,6 @@
+void flatten(Query sourceQuery, IndexReader reader, Collection<Query> flatQueries, float boost) throws IOException {
+if (sourceQuery instanceof BoostQuery) {
+flatten(sourceQuery, reader, flatQueries, boost);
+} else if (sourceQuery instanceof SpanTermQuery) {
+super.flatten(new TermQuery(((SpanTermQuery) sourceQuery).getTerm()), reader, flatQueries, boost);
+

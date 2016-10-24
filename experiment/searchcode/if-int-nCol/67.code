@@ -1,0 +1,9 @@
+//  eventually become part of the solution.
+//-----------------------------------------------------------------
+public boolean iterativeDeepening(int nRow, int nCol)
+{
+boolean bDone = false;
+//  This method determines if a specific location is valid.
+
+private boolean mazeDepthSearch(int nRow, int nCol) {
+

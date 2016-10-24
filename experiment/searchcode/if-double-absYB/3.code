@@ -1,0 +1,5 @@
+* @exception NumberIsTooSmallException
+*                if maximal order is lower than 2
+*/
+public BracketingNthOrderBrentSolver(final double absoluteAccuracy, final int maximalOrder) throws NumberIsTooSmallException {
+

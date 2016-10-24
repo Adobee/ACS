@@ -1,0 +1,7 @@
+assert element != null;
+ensureCapacity(queue, size(queue) + 1);
+if (queue.h > 0)
+queue.queue[--queue.h] = element;
+private static void ensureCapacity(ArrayQueueADT queue, int capacity) {
+if (capacity < queue.queue.length)
+

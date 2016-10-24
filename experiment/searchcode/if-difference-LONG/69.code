@@ -1,0 +1,12 @@
+d.setTime(d.getTime() - (YstrDate.twoHours() - 1000));
+return d;
+}
+
+public long insertDifferenceRecord(Date date) {
+DifferenceGateway differenceEG = new DifferenceGateway();
+differenceEG.setEntity(differenceEntity);
+
+long rId = 0;
+try {
+rId = testEGI.insert(differenceEG);
+

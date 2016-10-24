@@ -1,0 +1,10 @@
+corruptTarget = null;
+if (!canCorruptSomeone()) {
+getBot().sendMessage(getPlayer().getName(), &quot;There are no legal targets to corrupt tonight.&quot;);
+public Player getSpecialTarget() {
+return corruptTarget;
+}
+
+private boolean canCorruptSomeone() {
+if (getStage() == null) {
+

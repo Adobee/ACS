@@ -1,0 +1,14 @@
+public class Findrank
+{
+int rank;
+public Findrank(char c[][])
+{
+if( (c[1][1]==c[0][1]) &amp;&amp; (c[2][1]==c[0][1]) &amp;&amp; (c[3][1]==c[0][1]) &amp;&amp; (c[4][1]==c[0][1]) )   //flush field
+else if( (c[1][0]==c[0][0]+1) &amp;&amp; (c[2][0]==c[0][0]+2) &amp;&amp; (c[3][0]==c[0][0]+3) &amp;&amp; (c[4][0]==c[0][0]+4) )
+rank= 9;
+
+else rank= 6;
+}
+
+else if(  ((c[0][0]==c[2][0]) &amp;&amp; (c[1][0]==c[2][0]) &amp;&amp; (c[3][0]==c[2][0]))  ||  ((c[1][0]==c[2][0]) &amp;&amp; (c[3][0]==c[2][0]) &amp;&amp; (c[4][0]==c[2][0]))  )		//four of a kind
+

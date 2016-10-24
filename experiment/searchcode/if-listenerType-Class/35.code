@@ -1,0 +1,7 @@
+private final T proxy;
+private T target;
+
+public Announcer(Class<? extends T> listenerType) {
+proxy = listenerType.cast(Proxy.newProxyInstance(
+listenerType.getClassLoader(),
+

@@ -1,0 +1,7 @@
+public static int copy(InputStream input, OutputStream output) throws IOException {
+long count = copyLarge(input, output);
+if (count > 2147483647L) {
+public static long skip(InputStream input, long toSkip) throws IOException {
+if (toSkip < 0L) {
+throw new IllegalArgumentException(&quot;Skip count must be non-negative, actual: &quot; + toSkip);
+

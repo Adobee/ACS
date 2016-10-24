@@ -1,0 +1,12 @@
+ArrayList<Object> data, AdapterCommand rowInflationAction,
+int headerLayoutId, AdapterCommand headerInflationAction) {
+this.inflater = inflater;
+this.rowLayoutId = rowLayoutId;
+return data.size();
+}
+
+@Override
+public Object getItem(int position) {
+if(hasSections)
+return dataWithHeaders.get(position);
+

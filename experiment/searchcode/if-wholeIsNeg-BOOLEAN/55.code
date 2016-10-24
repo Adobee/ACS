@@ -1,0 +1,10 @@
+pos.setIndex(initialIndex);
+return null;
+}
+
+boolean wholeIsNeg = whole.compareTo(BigInteger.ZERO) < 0;
+if (wholeIsNeg) {
+whole = whole.negate();
+}
+num = whole.multiply(den).add(num);
+

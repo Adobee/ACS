@@ -1,0 +1,8 @@
+r3 = com.whatsapp.DialogToastActivity.f;
+r0 = android.os.Build.VERSION.SDK_INT;
+r4 = 14;
+if (r0 < r4) goto L_0x001d;
+r0 = 8388661; // 0x800035 float:1.1755018E-38 double:4.144549E-317;
+r9.showAsDropDown(r10, r1, r1, r0);
+if (r3 == 0) goto L_0x0060;
+

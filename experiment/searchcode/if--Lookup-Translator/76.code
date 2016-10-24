@@ -1,0 +1,10 @@
+private static HashMap<String,Byte> reverseLookup = new HashMap<String, Byte>();
+
+private static Byte lookupresult = -1;
+public static byte lookup(String s){
+if(lookup==null){
+init();
+}
+lookupresult = reverseLookup.get(s);
+if(lookupresult==null) return -1;
+

@@ -1,0 +1,9 @@
+eventLogger.message(logSubject, TransactionLogMessages.RECOVERY_COMPLETE(entry.getKey(), true));
+virtualHost.getQueue(entry.getKey()).completeRecovery();
+}
+
+Collection<AMQQueue> allQueues = virtualHost.getQueues();
+for(AMQQueue q : allQueues)
+{
+if(!queueRecoveries.containsKey(q.getName()))
+

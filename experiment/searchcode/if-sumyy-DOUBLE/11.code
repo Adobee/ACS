@@ -1,0 +1,8 @@
+double sumXY = 0.0, sumX = 0.0, sumY = 0.0, sumXX = 0.0, sumYY = 0.0, n = 0.0;
+double correlation = 0.0;
+String delimiter = &quot;&quot;;
+
+for (Text t : values) {
+correlation = (n * sumXY - (sumX * sumY)) / (Math.sqrt(n * sumXX - (sumX * sumX)) * Math.sqrt(n * sumYY - (sumY * sumY)));
+if ((Math.sqrt(n * sumXX - (sumX * sumX)) * Math.sqrt(n * sumYY - (sumY * sumY))) == 0)
+

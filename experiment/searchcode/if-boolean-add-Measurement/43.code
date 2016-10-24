@@ -1,0 +1,12 @@
+super(value, unit);
+}
+
+@Override
+public boolean equals(Object o) {
+if (super.equals(o))
+if ((o instanceof Length)) return true;
+return new Length(measurement.getValue(), (LengthUnit) measurement.getUnit());
+}
+
+public Length add(Length other) {
+

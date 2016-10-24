@@ -1,0 +1,15 @@
+Object[] out = new Object[a.length + b.length];
+int max = Math.max(a.length, b.length);
+int outindex = 0;
+for(int i = 0; i < max; i++) {
+if(i < a.length) {
+out[outindex++] = a[i];
+}
+if(i < b.length) {
+out[outindex++] = b[i];
+}
+}
+return out;
+}
+}
+

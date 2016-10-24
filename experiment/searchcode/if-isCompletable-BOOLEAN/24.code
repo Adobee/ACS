@@ -1,0 +1,8 @@
+boolean isSingle = &quot;rx.Single&quot;.equals(canonicalName);
+boolean isCompletable = &quot;rx.Completable&quot;.equals(canonicalName);
+if (rawType != Observable.class &amp;&amp; !isSingle &amp;&amp; !isCompletable) {
+return null;
+}
+
+if (isCompletable) {
+

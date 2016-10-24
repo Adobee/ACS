@@ -1,0 +1,8 @@
+public class UrlUtil {
+
+public static UrlBuilder url(Exchange exchange, String contextPath, String... pathSegments) {
+StringBuilder path = new StringBuilder();
+path.append(contextPath);
+if (pathSegments != null) {
+for (String pathSegment : pathSegments) {
+

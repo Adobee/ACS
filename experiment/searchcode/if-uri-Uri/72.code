@@ -1,0 +1,10 @@
+public static MethodUriInfo getMethodUriInfo(String uri, String apiUri) {
+
+String resourceUri = &quot;&quot;;
+String methodUri = &quot;&quot;;
+if (uri.startsWith(apiUri)) {
+String[] split = uri.replaceFirst(&quot;/&quot;, &quot;&quot;).split(&quot;/&quot;);
+resourceUri = (split.length > 1) ? (&quot;/&quot; + split[1]) : &quot;&quot;;
+if (uri.length() > apiUri.length()) {
+methodUri = resourceUri + uri.substring(apiUri.length() + resourceUri.length());
+

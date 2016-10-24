@@ -1,0 +1,6 @@
+private transient Shape m_cachedShape; // transformed shape
+public CoTransformedShape(	CoShapeIF shape, AffineTransform transform )
+public CoShapeIF createNewInstanceFrom( CoImmutableShapeIF s )
+{
+return new CoTransformedShape( m_shape.createNewInstanceFrom( s ), m_transform );
+

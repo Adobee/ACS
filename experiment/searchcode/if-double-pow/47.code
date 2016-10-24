@@ -1,0 +1,8 @@
+public class Solution {
+public double pow(double x, int n) {
+if (n < 0) {
+public double powRecur(double x, int n) {
+if (n==1)
+return x;
+if (n==0)
+

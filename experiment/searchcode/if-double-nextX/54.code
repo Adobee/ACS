@@ -1,0 +1,10 @@
+double xStep = step * dXNormalized;
+double yStep = step * dYNormalized;
+
+double nextX = balls[0].getX() + this.actualStep * dXNormalized;
+this.actualStep %= step;
+
+gBackBuffer.setColor(Color.WHITE);
+for (; dot<nDots; ++dot) {
+if (nextX < holesX[0]) {
+

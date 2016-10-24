@@ -1,0 +1,11 @@
+Variable v = null;
+if(lastType == null)
+{
+v = findVariable(getVariable(token), model);
+}
+else
+{
+if(lastType instanceof CompositeType)
+{
+v = findVariable(getVariable(token), (CompositeType) lastType);
+

@@ -1,0 +1,13 @@
+private int mId;
+
+private DayOfWeek(int id) {
+mId = id;
+}
+
+public int getId() {
+return mId;
+}
+
+public static DayOfWeek valueOf(DateTime dateTime) {
+int dayOfWeek = dateTime.getDayOfWeek();
+

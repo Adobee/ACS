@@ -1,0 +1,9 @@
+indexService = indicesService.indexServiceSafe(shardId.getIndex());
+}
+Analyzer analyzer = null;
+boolean closeAnalyzer = false;
+String field = null;
+analyzer = new CustomAnalyzer(tokenizerFactory, charFilterFactories, tokenFilterFactories);
+closeAnalyzer = true;
+} else if (analyzer == null) {
+

@@ -1,0 +1,7 @@
+logRequest(httpRequest);
+
+if (isBogusMethod(httpRequest)) {
+return methodNotSupported(httpRequest);
+} else if (supportedMethod(httpRequest)) {
+return processRequest(httpRequest);
+

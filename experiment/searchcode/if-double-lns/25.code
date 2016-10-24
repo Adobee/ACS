@@ -1,0 +1,8 @@
+final Unit[] sv = getShiftedVector();
+final int cells = sv.length;
+
+double[] lns = new double[cells];
+Unit weight = sv[i];
+double weightValue = weight.value;
+if (weightValue < NTMMemory.EPSILON) {
+

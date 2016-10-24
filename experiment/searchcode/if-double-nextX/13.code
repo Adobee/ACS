@@ -1,0 +1,15 @@
+double exit, double max) {
+
+for (int i = 0; (Math.abs(f.func(x1)) > exit) &amp;&amp; (i < max); i++) {
+double nextX = x0 - ((x1 - x0) / (f.func(x1) - f.func(x0)))
+System.out.println(&quot;Sekante: &quot; + nextX);
+it++;
+}
+if (Math.abs(f.func(x1)) <= exit)
+return x1;
+else
+return -1;
+}
+
+}
+

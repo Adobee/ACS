@@ -1,0 +1,9 @@
+public String coerce(Object object, Class<?> toType) {
+if(object instanceof Map<?,?>) {
+return coerce((Map<?,?>) object, toType);
+}
+if(object instanceof JsonModel) {
+return coerce((JsonModel) object, toType);
+}
+if(object instanceof Enum<?>) {
+

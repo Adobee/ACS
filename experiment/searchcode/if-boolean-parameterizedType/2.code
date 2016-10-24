@@ -1,0 +1,9 @@
+final StringBuilder sb = new StringBuilder();
+boolean first = true;
+for (Object value : values) {
+if (first) {
+if (type instanceof Class<?>) {
+return (Class<?>) type;
+} else if (type instanceof ParameterizedType) {
+final ParameterizedType parameterizedType = (ParameterizedType) type;
+

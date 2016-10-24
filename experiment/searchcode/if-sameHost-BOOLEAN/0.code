@@ -1,0 +1,12 @@
+public static final String SAME_HOST_SETTING = &quot;cluster.routing.allocation.same_shard.host&quot;;
+
+/** The same host. */
+private final boolean sameHost;
+
+/**
+* Instantiates a new same shard allocation decider.
+public SameShardAllocationDecider(Settings settings) {
+super(settings);
+
+this.sameHost = settings.getAsBoolean(SAME_HOST_SETTING, false);
+

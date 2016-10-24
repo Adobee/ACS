@@ -1,0 +1,12 @@
+public VeriSinif get(Long id) {
+BL bl = new BL();
+bl.setBlId(id);
+ArrayList<BL> list = ara(bl);
+if (list.size() > 0) {
+String sql = &quot;SELECT * FROM bl WHERE 1=1&quot;;
+
+if (bl.getBlId() != null) {
+sql += &quot; AND blId=&quot; + bl.getBlId();
+}
+if (bl.getBlNo() != null &amp;&amp; !bl.getBlNo().equals(&quot;&quot;)) {
+

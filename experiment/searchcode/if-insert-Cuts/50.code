@@ -1,0 +1,8 @@
+SourcePart sourcePart=task.sources.get(sourcePosition);
+GCSourceCut sourceCut=solution.sourceCuts[j];
+if (targetLength>sourcePart.length || targetWidth>sourcePart.width)
+if (!cut.complex)
+return false;
+for (GCCut subCut:cut.cuts)
+if (tryToFit(sourcePart, sourceCut, subCut, targetPartNumber, rotated, task, targetLength, targetWidth))
+

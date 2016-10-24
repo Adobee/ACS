@@ -1,0 +1,12 @@
+double[][] dataset;	//inputs and sets
+
+public DataGen(int inputs, int sets, int min, boolean binary)
+{
+dataset = Generate(inputs,sets, min, binary);
+//Clamp for binary values.
+if(binary)
+{
+if(dataset[i][j] < 0.5)
+dataset[i][j] = 0;
+else
+

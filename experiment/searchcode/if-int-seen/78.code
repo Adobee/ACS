@@ -1,0 +1,11 @@
+int maxSeen = -1;
+for(int j = i + 1; j < n; j++)
+{
+maxSeen = Math.max(maxSeen, houses[j]);
+}
+
+if(maxSeen >= houses[i])
+{
+int toAdd = maxSeen - houses[i] + 1;
+System.out.print(Integer.toString(toAdd) + &quot; &quot;);
+

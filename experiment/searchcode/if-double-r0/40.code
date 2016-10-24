@@ -1,0 +1,11 @@
+r3 = com.whatsapp.DialogToastActivity.f;
+r0 = r14.b;
+r0 = com.whatsapp.RecordAudio.a(r0);
+if (r0 != r12) goto L_0x0046;
+r0 = r0.a();
+r4 = r0 / 1000;
+r5 = r14.a;
+if (r4 == r5) goto L_0x0032;
+L_0x001e:
+r4 = r14.b;
+

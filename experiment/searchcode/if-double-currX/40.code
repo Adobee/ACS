@@ -1,0 +1,9 @@
+public class Neighborhood3D
+{
+public double bestVal = 0;
+MutableDouble3D bestPosition = new MutableDouble3D();
+po = p;
+}
+
+public void updateBest(double currVal, double currX, double currY, double currZ)
+

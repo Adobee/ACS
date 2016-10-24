@@ -1,0 +1,14 @@
+moveToNextChar();
+Integer parse() {
+moveToNextChar(); //initially set to -1, now moving to first character
+Integer value = parseExpression();
+if (currentChar != -1)
+throw new RuntimeException(&quot;Unexpected: &quot;
++ (char) currentChar);
+return value;
+}
+
+}
+
+}
+

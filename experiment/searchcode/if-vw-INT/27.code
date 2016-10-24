@@ -1,0 +1,9 @@
+private static boolean hasClause(WordVertex vw, HashSet<Integer> visitedNodes) {
+if ( visitedNodes.contains(vw.getID())) {	return false; }
+else {	visitedNodes.add(vw.getID());}
+return true;
+}
+}
+for (int j=0; j< vw.getNumberOfChildren();j++) {
+if (Clause.hasClause(vw.getChildAt(j).getChildNode(),visitedNodes)) {
+

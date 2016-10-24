@@ -1,0 +1,14 @@
+double h = (b - a) / 2;
+double T1 = (f(a) + f(b)) * h, T0, S;
+int n = 1;
+while(true){
+T0 = T1;
+T1 = T0 / 2 + S * h / n;
+if(Math.abs(T1 - T0) >= 3 * e)n *= 2;
+else break;
+}
+return T1;
+}
+
+double romberg(double a,double b,double e,int max){
+

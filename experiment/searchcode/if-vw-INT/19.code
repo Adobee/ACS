@@ -1,0 +1,12 @@
+private static FabricaAbstrata intanciaVw, instanciaFiat;
+
+public static FabricaAbstrata getFabrica(int param){
+
+switch(param){
+
+case 1:
+
+if(intanciaVw == null)
+intanciaVw = new VW();
+return intanciaVw;
+

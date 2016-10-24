@@ -1,0 +1,5 @@
+public final static String GETTERANDSETTER = &quot;//getterAndSetter&quot;;
+
+public final static String attribute = &quot;\tprivate #fieldType# #fieldName#;\n&quot; + ATTRIBUTES;
+public final static String onlyAttribute = &quot;\tprivate #fieldType# #fieldName#;\n&quot;;
+

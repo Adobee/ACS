@@ -1,0 +1,7 @@
+public Rational(BigInteger num, BigInteger den) {
+// reduce
+if (!den.abs().equals(BigInteger.ONE)) {
+BigInteger gcd = num.gcd(den);
+if (gcd.signum() != 0 &amp;&amp; !gcd.equals(BigInteger.ONE)) {
+num = num.divide(gcd);
+

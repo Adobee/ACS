@@ -1,0 +1,10 @@
+public final static int MIN_MEMORY_CACHE_SIZE = 1024 * 1024 * 2;
+/** 内存缓存大小：默认8M */
+private int memoryCacheSize = 1024 * 1024 * 8;
+
+/** 最小磁盘缓存阀值：10M */
+public final static int MIN_DISK_CACHE_SIZE = 1024 * 1024 * 10;
+public BitmapGlobalConfig setMemoryCacheSize(int memoryCacheSize) {
+if (memoryCacheSize >= MIN_MEMORY_CACHE_SIZE) {
+this.memoryCacheSize = memoryCacheSize;
+

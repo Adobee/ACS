@@ -1,0 +1,10 @@
+return docCount;
+}
+
+@Override
+public long getDocCountError() {
+if (!showDocCountError) {
+Multimap<Object, InternalTerms.Bucket> buckets = ArrayListMultimap.create();
+long sumDocCountError = 0;
+long otherDocCount = 0;
+

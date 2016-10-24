@@ -1,0 +1,14 @@
+public void addOutputStream(OutputStream out)
+{
+if (out == null)
+{
+throw new IllegalArgumentException(&quot;Cannot redirect to a null stream&quot;);
+for (OutputStream out : outputs)
+{
+out.write(ch);
+}
+}
+
+@Override
+public void close() throws IOException
+

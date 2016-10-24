@@ -1,0 +1,14 @@
+List<CodeBlock> textChildren) {
+
+resolveEmptyAsts(cb);
+
+long minStart = cb.getAst().getRange().getStart();
+
+for (Ast child : cb.getAst().getChildren()) {
+javaCb.setBlock(javaAst);
+javaCb.setAst(child);
+javaChildren.add(javaCb);
+
+}
+if (minStart < child.getRange().getStart() - 1) {
+

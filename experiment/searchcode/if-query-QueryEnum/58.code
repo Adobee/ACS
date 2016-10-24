@@ -1,0 +1,13 @@
+public boolean runOnRefresh() {
+return runOnRefresh;
+}
+
+public enum QueryEnum {
+KICK(new Kick(&quot;kick&quot;, false)),
+CHATHISTORY(new ChatHistory(&quot;chatHistory&quot;, false));
+
+private Query queryObj;
+
+QueryEnum(Query queryObj) {
+this.queryObj = queryObj;
+

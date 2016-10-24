@@ -1,0 +1,18 @@
+public abstract String toJSON();
+
+protected String createFieldName() {
+String result = &quot;&quot;;
+
+if (fieldName != null) {
+this.fieldName = fieldName;
+}
+
+public String safeJSONString(String value) {
+if (value == null) {
+return &quot;&quot;;
+}
+
+return value.replace(&quot;\&quot;&quot;, &quot;\\\&quot;&quot;);
+}
+}
+

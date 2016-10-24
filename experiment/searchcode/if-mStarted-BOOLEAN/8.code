@@ -1,0 +1,16 @@
+public Progress(File start, File file, int percent) {
+mStarted = start.lastModified();
+mLastUpdated = file.lastModified();
+if (mLastUpdated < mStarted) {
+return mLastUpdated - mStarted;
+}
+
+public int getPercent() {
+return mPercent;
+}
+
+public boolean isCompleted() {
+return mPercent == 100;
+}
+}
+

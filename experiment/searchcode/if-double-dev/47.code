@@ -1,0 +1,12 @@
+package com.epam;
+
+
+public class CalcUtil {
+
+public static double sum(double paramX,double paramY){
+public static double diff(double paramX,double paramY){
+return paramX-paramY;
+}
+
+public static double dev(double paramX,double paramY){
+

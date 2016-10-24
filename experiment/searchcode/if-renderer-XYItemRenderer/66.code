@@ -1,0 +1,8 @@
+import org.jfree.chart.renderer.xy.XYItemRenderer;
+import org.jfree.data.time.Day;
+import org.jfree.data.time.TimeSeries;
+import org.jfree.data.time.TimeSeriesCollection;
+XYPlot xyplot = jfreechart.getXYPlot();
+XYItemRenderer xyitemrenderer = xyplot.getRenderer();
+xyitemrenderer.setToolTipGenerator(StandardXYToolTipGenerator.getTimeSeriesInstance());
+

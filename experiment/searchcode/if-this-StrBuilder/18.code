@@ -1,0 +1,13 @@
+public TupleTable(String name, List<Tuple> tuples)
+{
+super(name);
+assert (tuples != null);
+this.tuples = tuples;
+}
+
+@Override
+public String toHtml()
+{
+StringBuilder strBuilder = new StringBuilder();
+strBuilder.append(&quot;<div><table id=\&quot;&quot;).append(getName()).append(&quot;\&quot;><thead><tr>&quot;);
+

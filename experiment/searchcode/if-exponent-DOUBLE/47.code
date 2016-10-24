@@ -1,0 +1,11 @@
+public static double power(double base, int exponent) throws Exception{
+if(doubleEqual(base, 0.0) &amp;&amp; exponent < 0){
+double res = powerWithPositiveExponent2(base, absExponent);
+if(exponent < 0)
+res = 1.0/res;
+
+return res;
+}
+
+public static double powerWithPositiveExponent(double base, int exponent) {
+

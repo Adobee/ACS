@@ -1,0 +1,9 @@
+* @param key
+* @param ele
+*/
+public void put(String key,ComparableElement ele){
+Comparative val=comparable.get(key);
+if(val==null){
+if(ele.comparable instanceof ComparativeOR){
+comparable.put(key, (ComparativeOR)ele.comparable);
+

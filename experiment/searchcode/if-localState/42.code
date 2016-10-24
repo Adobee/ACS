@@ -1,0 +1,7 @@
+public Object[] getChildren(Object parentElement) {
+if (parentElement instanceof SequentialComponent) {
+LocalState[] children = ((SequentialComponent) parentElement).getLocalStates();
+public Object getParent(Object element) {
+if (element instanceof LocalState)
+return ((LocalState) element).getSequentialComponent();
+

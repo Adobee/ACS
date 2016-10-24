@@ -1,0 +1,10 @@
+controllers.clear();
+}
+
+@Override
+public void act(float deltaSeconds) {
+super.act(deltaSeconds);
+
+for (Controller controller : controllers) {
+controller.control(this, deltaSeconds);
+

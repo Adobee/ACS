@@ -1,0 +1,9 @@
+protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+
+int desiredSize = 0;
+Drawable drawable = getDrawable();
+if (drawable!=null) {
+int finalSize = Math.min(maxWidth,maxHeight);
+if (finalSize==Integer.MAX_VALUE) {
+finalSize = desiredSize;
+

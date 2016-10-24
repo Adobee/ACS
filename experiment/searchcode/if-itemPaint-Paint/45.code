@@ -1,0 +1,7 @@
+RectangleEdge base, boolean pegShadow, Graphics2D g2) {
+Paint itemPaint = renderer.getItemPaint(row, column);
+if (itemPaint instanceof Color) {
+Color c = (Color) itemPaint;
+if (c.getAlpha() == 0) {
+return;
+

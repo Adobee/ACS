@@ -1,0 +1,8 @@
+import org.apache.lucene.util.Version;
+import org.elasticsearch.index.analysis.CustomAnalyzer;
+import org.elasticsearch.index.analysis.EdgeNGramTokenFilterFactory;
+analyzer = ((NamedAnalyzer) analyzer).analyzer();
+}
+if (analyzer instanceof CustomAnalyzer) {
+final CustomAnalyzer a = (CustomAnalyzer) analyzer;
+

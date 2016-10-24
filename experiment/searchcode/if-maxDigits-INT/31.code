@@ -1,0 +1,10 @@
+public class IntegerParser implements Parser<Integer>
+{
+
+private final int minDigits;
+private final int maxDigits;
+
+public IntegerParser(final int minDigits, final int maxDigits)
+{
+Preconditions.checkArgument(minDigits > 0, &quot;Min digits must be at least 1&quot;);
+

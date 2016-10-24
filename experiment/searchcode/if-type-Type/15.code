@@ -1,0 +1,12 @@
+public void visit(Type[] types) {
+if (CollectionUtils.isEmpty(types)) {
+return;
+}
+for (Type type : types) {
+visitType(type);
+public static TypeEnum of(Type type) {
+if (isClass(type)) {
+return CLASS;
+}
+if (isTypeVariable(type)) {
+

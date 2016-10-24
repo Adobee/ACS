@@ -1,0 +1,9 @@
+public static boolean validateFilterForm(FormData form, HttpServletRequest request)
+{
+boolean valid = true;
+try {
+String[] invalidChars = { &quot;!&quot;, &quot;@&quot;, &quot;#&quot;, &quot;$&quot;, &quot;%&quot;, &quot;^&quot; };
+String methodName = filterMethods[j].getName();
+String returnType = &quot;&quot;;
+if (filterMethods[j].getReturnType().isInstance(new String()))
+

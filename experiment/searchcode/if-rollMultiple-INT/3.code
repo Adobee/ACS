@@ -1,0 +1,5 @@
+public static RollMultiple rollMultiple (RandomizableStringSource table, int numRolls, int ... ignoreRolls) {
+return rollMultiple(table, IntegerValue.newValue(numRolls), ignoreRolls);
+public static RollMultiple rollMultiple (RandomizableStringSource table, IntegerSource intSource, int ... ignoreRolls) {
+return new RollMultiple(table, intSource, ignoreRolls);
+

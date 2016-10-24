@@ -1,0 +1,12 @@
+public class ProgressInputStream extends FilterInputStream {
+
+private long read = 0;
+
+private int previous = 0;
+
+private final long toRead;
+public ProgressInputStream(InputStream in, ProgressMonitor progressMonitor,
+long toRead) {
+super(in);
+this.progressMonitor = progressMonitor;
+

@@ -1,0 +1,9 @@
+public ByteBufferInputStream( List<ByteBuffer> lst , boolean flip ){
+_lst = lst;
+if ( flip )
+for ( ByteBuffer buf : _lst )
+int toRead = Math.min( len , buf.remaining() );
+buf.get( b , off , toRead );
+
+if ( toRead == len || _pos + 1 >= _lst.size() )
+

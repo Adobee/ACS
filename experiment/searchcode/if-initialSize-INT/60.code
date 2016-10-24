@@ -1,0 +1,11 @@
+this(DEFAULT_INITIAL_SIZE);
+}
+
+public IntArrayBackedStack(int initialSize) {
+if (initialSize < 1) {
+LOGGER.error(&quot;initialSize={}, must be greater than 0&quot;, initialSize);
+throw new IllegalArgumentException(&quot;invalid initialSize&quot;);
+}
+
+LOGGER.debug(&quot;Creating IntArrayBackedStackl instance with {} elements&quot;, initialSize);
+

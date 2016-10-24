@@ -1,0 +1,8 @@
+import org.jfree.chart.renderer.AbstractRenderer;
+
+/**
+* Defines an interface to control the visibility of individual items during rendering.
+* Implementing classes can be used together with subclasses of {@link AbstractRenderer}
+* to control the rendering process.<br>
+* Works however only if the descendant of {@link AbstractRenderer} uses the per item method {@link AbstractRenderer#getItemVisible(int, int)}
+

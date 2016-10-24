@@ -1,0 +1,10 @@
+package ru.snilit;
+
+public class CalcPi {
+
+static double pi;
+
+static void byLeibnic() {
+for (double i = 1; i < 100000000; i++) {
+if (i % 2 == 0) {
+

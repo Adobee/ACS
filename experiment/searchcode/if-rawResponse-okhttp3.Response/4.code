@@ -1,0 +1,7 @@
+* Create a successful response from {@code rawResponse} with {@code body} as the deserialized
+* body.
+*/
+public static <T> Response<T> success(T body, okhttp3.Response rawResponse) {
+public static <T> Response<T> error(ResponseBody body, okhttp3.Response rawResponse) {
+if (body == null) throw new NullPointerException(&quot;body == null&quot;);
+

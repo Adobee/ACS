@@ -1,0 +1,11 @@
+double value = meanValue.doubleValue();
+double base = 0.0;
+double lclip = getLowerClip();
+double uclip = getUpperClip();
+base = uclip;
+if (value <= lclip) {
+value = lclip;
+}
+}
+else if (lclip <= 0.0) { // cases 5, 6, 7 and 8
+

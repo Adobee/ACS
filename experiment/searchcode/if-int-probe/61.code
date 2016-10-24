@@ -1,0 +1,11 @@
+return;
+}
+
+private void editAction(int id) throws ServletException, SQLException
+{
+Probe probe = Probe.getProbeByID(id);
+
+if (request.getMethod().equalsIgnoreCase(&quot;POST&quot;))
+{
+if (getParameterLong(&quot;proc&quot;) == 0)
+

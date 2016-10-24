@@ -1,0 +1,12 @@
+package neuralnetworks;
+
+import org.apache.commons.math3.util.FastMath;
+
+public class RectifiedLinearActivationFunction extends ActivationFunction {
+public double apply(double z) {
+return FastMath.max(0, z);
+}
+
+@Override
+public double applyPrime(double z) {
+

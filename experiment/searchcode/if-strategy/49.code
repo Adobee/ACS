@@ -1,0 +1,7 @@
+private InsuranceStrategy createInsuranceStrategy(double income) {
+InsuranceStrategy strategy;
+if (income <= 10000) {
+strategy = new LowInsuranceStrategy();
+} else if (income <= 30000) {
+strategy = new MediumInsuranceStrategy();
+

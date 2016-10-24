@@ -1,0 +1,8 @@
+public Point getPointType(MapLocation loc) {
+double rhs = Math.round(m*((double) loc.x) + c);
+double y = (double) loc.y;
+if (y == (rhs))
+return Point.ON_LINE;
+else if (y > (rhs))
+return Point.LEFT;
+

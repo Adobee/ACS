@@ -1,0 +1,7 @@
+return DialogDisplayer.getDefault().notify(new NotifyDescriptor(mensagem, titulo, NotifyDescriptor.DEFAULT_OPTION, NotifyDescriptor.QUESTION_MESSAGE, opcoes, null));
+}
+
+public static Boolean yesNoCancelQuestion(String titulo, String mensagem) {
+final Object result = DialogDisplayer.getDefault().notify(new NotifyDescriptor(mensagem, titulo, NotifyDescriptor.YES_NO_CANCEL_OPTION, NotifyDescriptor.QUESTION_MESSAGE, null, null));
+if (result == DialogDescriptor.CANCEL_OPTION) {
+

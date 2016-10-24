@@ -1,0 +1,10 @@
+return point.subtract(normal.multiply(computeDistanceTo(point)));
+}
+
+public IntersectionResult findIntersection(final Vector2d start, final Vector2d end) {
+if ((t0 * t1) > 0.f)
+return new IntersectionResult(false);
+
+if (t0 == t1)
+return new IntersectionResult(true, start, 0.f);
+

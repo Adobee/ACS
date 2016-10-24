@@ -1,0 +1,11 @@
+public void doChain(NodeId id, Actions action, Map<String, Object> properties){
+this.handle(id, action, properties);
+if(null != nextAction){
+nextAction.doChain(id, action, properties);
+this.logStat();
+if(null != nextAction){
+nextAction.logChain();
+}
+}
+}
+

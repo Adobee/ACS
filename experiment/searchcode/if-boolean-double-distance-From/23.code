@@ -1,0 +1,10 @@
+import org.nescent.geophylobuilder.tree.TreeNode;
+
+public class DepthVisitor implements Visitor {
+boolean useDistance;
+double depth;
+
+public void visit(TreeNode node) {
+if (useDistance) {
+if (node.getDepthFromRoot() > depth) {
+

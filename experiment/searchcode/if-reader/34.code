@@ -1,0 +1,11 @@
+package org.fantasy.net.io.reader;
+
+import java.io.IOException;
+import java.util.concurrent.ConcurrentHashMap;
+Reader reader = READER_FACTORY.get(flag);
+if(reader == null)
+throw new IOException(&quot;Unable to deserialize&quot;);
+return reader.read(oin);
+}
+}
+

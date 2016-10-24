@@ -1,0 +1,18 @@
+System.out.println(&quot;Result &quot; + check(arrayPoint));
+}
+
+
+public static boolean check(Point[] a) {
+
+double k;
+double z;
+
+if (a.length < 1) return true;
+z = ((double)a[0].x - (double)a[i].y) / ((double)a[0].y - (double)a[i].y);
+if (z != k) return false;
+}
+
+return true;
+}
+}
+

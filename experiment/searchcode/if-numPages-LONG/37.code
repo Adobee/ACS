@@ -1,0 +1,8 @@
+this.tokenFreq = new HashMap<String, Integer>();
+}
+
+public static long test(int numPages, String pageFile) {
+TokenCountV1 tokenCount = new TokenCountV1(numPages, pageFile);
+
+Thread producerThread = new Thread(tokenCount.new Producer(
+

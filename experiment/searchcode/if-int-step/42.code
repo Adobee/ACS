@@ -1,0 +1,8 @@
+public ListNode detectCycle(ListNode head)
+{
+if (head == null || head.next == null) return null;
+ListNode oneStep = null;
+twoStep = twoStep.next;
+twoStep = (twoStep == null ? null : twoStep.next);
+if (oneStep == twoStep &amp;&amp; oneStep != null)
+

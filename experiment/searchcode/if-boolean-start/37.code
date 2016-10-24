@@ -1,0 +1,18 @@
+public void set(boolean state){
+if(timer.get() > 0.5){
+waited = true;
+timer.stop();
+}
+
+if(state &amp;&amp; waited){
+toggle = !toggle;
+waited = false;
+timer.start();
+}
+}
+
+public boolean get(){
+return toggle;
+}
+}
+

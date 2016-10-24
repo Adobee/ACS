@@ -1,0 +1,8 @@
+Matcher matcher = URI_PATTERN.matcher(uri);
+File result = null;
+if (matcher.find()) {
+List<String> pathSegments = new ArrayList<String>();
+String path = URI.create(StringUtils.join(pathSegments, PATH_SEPARATOR)).normalize().toString();
+if (path.startsWith(prefix)) {
+result = new File(this.environment.getTemporaryDirectory(), path);
+

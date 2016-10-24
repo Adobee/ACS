@@ -1,0 +1,11 @@
+Object param = inStack.pop();
+
+inStack.push(umin(param));
+return;
+}
+
+public Object umin(Object param) throws ParseException {
+if (param instanceof Complex)
+return ((Complex)param).neg();
+if (param instanceof Number)
+

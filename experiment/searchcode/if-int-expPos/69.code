@@ -1,0 +1,7 @@
+/*  46:160 */     int expPos = val.indexOf(&#39;e&#39;) + val.indexOf(&#39;E&#39;) + 1;
+/*  47:    */     String dec;
+/*  51:164 */       if (expPos > -1)
+/*  52:    */       {
+/*  53:165 */         if (expPos < decPos) {
+/*  54:166 */           throw new NumberFormatException(val + &quot; is not a valid number.&quot;);
+

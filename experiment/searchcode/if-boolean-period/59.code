@@ -1,0 +1,10 @@
+period=date;
+}
+
+@Override
+public boolean period_pass (Object data) {
+Date d=TFactory.mdays((String)data);
+if(d.after(period))
+return true;
+return false;
+

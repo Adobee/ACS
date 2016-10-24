@@ -1,0 +1,7 @@
+// private final double p;  // guaranteed >= 0
+
+public DoubleProbability(double d) {
+if (d < 0) throw new RuntimeException(&quot;Probability must be >= 0 &quot; + d);
+public DoubleProbability(LongFraction prob) {
+if ((prob.num >= 0 ^ prob.den > 0)) throw new RuntimeException(&quot;Probability must be >= 0 &quot; + prob.num + &quot;/&quot; + prob.den);
+

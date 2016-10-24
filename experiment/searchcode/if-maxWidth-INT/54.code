@@ -1,0 +1,9 @@
+Stack<PNode> s1 = new Stack<PNode>();
+Stack<PNode> s2 = new Stack<PNode>();
+
+int maxWidth = 0;
+s1.push(root);
+while(!s1.empty() || !s2.empty()){
+if(maxWidth < s1.size())
+maxWidth = s1.size();
+

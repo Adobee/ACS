@@ -1,0 +1,13 @@
+public class SteppingLooper extends SpringLooper {
+
+private boolean mStarted;
+private long mLastTime;
+
+@Override
+public void start() {
+mStarted = true;
+mLastTime = 0;
+}
+
+public boolean step(long interval) {
+

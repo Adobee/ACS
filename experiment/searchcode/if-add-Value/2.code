@@ -1,0 +1,16 @@
+public void Add(int Value){
+
+if(Root == null){
+
+Root = new BstNode();
+Root.Value = Value;
+}else{
+
+AddNode(Root, Value);
+}
+}
+
+private void  AddNode(BstNode node,int Value){
+
+if(node.Value > Value){
+

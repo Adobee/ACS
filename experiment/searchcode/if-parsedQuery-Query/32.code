@@ -1,0 +1,8 @@
+public class NonSQLTypeQuery extends QueryChain{
+
+@Override
+public void execute(InputMaps inputMaps, Query query, String parsedQuery,
+QueryExecutorDAO queryExecutorDAO) throws SQLException, Exception {
+
+if (!query.isSQLTypeQuery()) {
+

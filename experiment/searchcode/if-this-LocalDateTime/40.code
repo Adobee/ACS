@@ -1,0 +1,9 @@
+import java.sql.Timestamp;
+import java.sql.Types;
+
+/**
+* ScalarType for Joda LocalDateTime. This maps to a JDBC Timestamp.
+public Object toJdbcType(Object value) {
+if (value instanceof LocalDateTime) {
+return new Timestamp(((LocalDateTime) value).toDateTime().getMillis());
+

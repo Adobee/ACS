@@ -1,0 +1,9 @@
+public static KeyProcessService getInstance() throws DocumentException {
+if (instance == null) {
+instance = new KeyProcessService();
+}
+return instance;
+private boolean isFileModified() {
+long t = file.lastModified();
+if (t != lastModified) {
+

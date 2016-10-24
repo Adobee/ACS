@@ -1,0 +1,9 @@
+return A.multiply(b).getColumn(0);
+}
+
+@Override
+public IMatrix invert(IMatrix a) {
+RealMatrix _a = unwrap(a);
+RealMatrix inverse = new LUDecomposition(_a).getSolver().getInverse();
+return new JavaMatrix(inverse);
+

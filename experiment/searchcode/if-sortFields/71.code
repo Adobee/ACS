@@ -1,0 +1,5 @@
+public List<Company> getCompanies() {
+HashMap<String, SortOrderEnum> sortFields = new HashMap<String, SortOrderEnum>();
+sortFields.put(&quot;name&quot;, SortOrderEnum.ASC);
+return getBaseService().getAll(Company.class, sortFields);
+

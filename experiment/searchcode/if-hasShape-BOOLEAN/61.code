@@ -1,0 +1,12 @@
+Statement shape1S = constraint.getProperty(SHACL.shape1);
+Statement shape2S = constraint.getProperty(SHACL.shape2);
+if(!hasShape(focusNode, shape1S.getResource()) &amp;&amp;
+else {
+return false;
+}
+}
+
+
+private boolean hasShape(Resource focusNode, Resource shape) {
+return validateNodeAgainstShape(shape, focusNode).size() == 0;
+

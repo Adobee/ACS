@@ -1,0 +1,8 @@
+// @DIable not meaningful with primitive so convert to wrapper if needed
+if (ClassHelper.isPrimitiveType(fieldNode.getType())) {
+fieldNode.setType(ClassHelper.getWrapper(fieldNode.getType()));
+final BlockStatement body = new BlockStatement();
+if (fieldNode.isStatic()) {
+addHolderClassIdiomBody(body, fieldNode, initExpr);
+} else if (fieldNode.isVolatile()) {
+

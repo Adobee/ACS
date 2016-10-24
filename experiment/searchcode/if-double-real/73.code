@@ -1,0 +1,10 @@
+public static double mse(double[] model, double[] real) {
+if(model.length == real.length){
+int length = model.length;
+double sum = 0;
+for(int i = 0; i < length; i ++){
+public static double mse(int[] model, int[] real) {
+if(model.length == real.length){
+int length = model.length;
+double sum = 0;
+

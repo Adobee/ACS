@@ -1,0 +1,10 @@
+* 记录出现网络问题时，当前音乐播放的位置
+*/
+private int errorPos;
+
+public MyAudioBinder(Context context) {
+this.service = context;
+public void onNetConnection(int type) {
+System.out.println(&quot;网络恢复&quot;);
+if (hasNetError) {//曾经有过网络异常
+

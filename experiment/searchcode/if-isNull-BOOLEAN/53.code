@@ -1,0 +1,11 @@
+public class NullFilter extends CompareFilter {
+
+private boolean isNull;
+
+public static NullFilter create(@Nullable String field) {
+filterFormatter.filter = NullFilter.newInstance(field, true);
+return filterFormatter;
+}
+
+public static NullFilter create(String field, boolean isNull) {
+

@@ -1,0 +1,11 @@
+this.balance = balance;
+}
+
+private static void checkAmountNonNegative(Long amount) {
+if (amount < 0) {
+notifyAll();
+}
+
+public synchronized void withdraw(Long amount) {
+checkAmountNonNegative(amount);
+

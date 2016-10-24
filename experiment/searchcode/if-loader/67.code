@@ -1,0 +1,10 @@
+this.mLoaderCallbacks = callbacks;
+}
+
+public void onResume() {
+if (mLoaderCallbacks != null) {
+initLoader(mLoader, null, mLoaderCallbacks);
+Loader<Cursor> loader = manager.getLoader(id);
+
+if (loader != null &amp;&amp; !loader.isReset()) {
+

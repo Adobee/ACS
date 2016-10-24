@@ -1,0 +1,16 @@
+public Object getValue()
+{
+if (isNULL()) return null;
+return value;
+}
+
+@Override
+public boolean lessThan(Type value)
+return this.value.after(((DATETIME) value).getDATETIME());
+}
+
+@Override
+public boolean equalTo(Type value)
+{
+if (isNULL()) return false;
+

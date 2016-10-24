@@ -1,0 +1,10 @@
+import model.promela.literal.Literal;
+
+public class AssertExpr extends IStmnt {
+private Expr expr;
+
+public AssertExpr(Expr expr) {
+public String toCode() throws RuleViolationException {
+if (expr == null)
+throw new RuleViolationException(&quot;There must be at least one expression in this ASSERT expression&quot;);
+

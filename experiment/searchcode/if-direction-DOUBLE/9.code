@@ -1,0 +1,5 @@
+public static double getDirectionDegree(int y1, int y2, int x1, int x2) {
+double direction = Math.toDegrees(Math.atan2(y1 - y2, x1 - x2));
+if(direction < 0)
+* public static double dirX(double direction) { double dirX = Math.cos(Math.toRadians(direction)); if(dirX > 0) return 1; else if(dirX < 0) return -1; else return 0; } public static double dirY(double direction) { double dirY = Math.sin(Math.toRadians(direction)); if(dirY > 0) return 1; else if(dirY < 0) return -1; else return 0; }
+

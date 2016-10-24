@@ -1,0 +1,8 @@
+this.geneConstraints = builder.buildGeneConstraints();
+}
+
+@Override
+public boolean satisfied(VectorizerConfig config, Genome genome) {
+if (genomeConstraints != null) {
+for (final GenomeConstraint c : genomeConstraints) {
+

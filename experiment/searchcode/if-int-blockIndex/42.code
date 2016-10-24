@@ -1,0 +1,18 @@
+protected int y;
+protected int z;
+
+protected Iterator <BlockIndex> iterator;
+
+public WorldIterator (World world, int x, int y, int z) {
+this.z = z;
+}
+
+public BlockIndex iterate () {
+if (iterator.hasNext())
+return iterator.next();
+else
+return null;
+}
+
+}
+

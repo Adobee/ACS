@@ -1,0 +1,8 @@
+Class<?> rawType = getRawType(returnType);
+
+if (rawType == Completable.class) {
+// Completable is not parameterized (which is what the rest of this method deals with) so it
+Class<?> rawObservableType = getRawType(observableType);
+if (rawObservableType == Response.class) {
+if (!(observableType instanceof ParameterizedType)) {
+

@@ -1,0 +1,8 @@
+private final SchemeSocketFactory socketFactory;
+private String stringRep;
+
+public Scheme(String str, int i, SchemeSocketFactory schemeSocketFactory) {
+this.name = str.toLowerCase(Locale.ENGLISH);
+this.defaultPort = i;
+if (schemeSocketFactory instanceof SchemeLayeredSocketFactory) {
+

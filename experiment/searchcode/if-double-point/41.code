@@ -1,0 +1,17 @@
+class Point implements Comparable<Point>{
+double x,y;
+int RGB;
+
+Point(double i,double j){
+x=i;
+y=j;
+}
+Point(Point t)
+{
+this.x=t.x;
+this.y=t.y;
+}
+public int compareTo(Point p)
+{
+if(this.x<p.x)
+

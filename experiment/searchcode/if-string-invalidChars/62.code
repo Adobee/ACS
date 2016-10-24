@@ -1,0 +1,12 @@
+* @return false, if an invalid char is in the text.
+*/
+protected boolean containsTextInvalidChar(String text) {
+for (char c : getInvalidChars()) {
+if (text.contains(String.valueOf(c))) {
+* sets the invalidChars to check.
+*
+* @param invalidChars
+*            String
+*/
+public void setAllINvalidChars(String invalidChars) {
+

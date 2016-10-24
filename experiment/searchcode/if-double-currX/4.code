@@ -1,0 +1,9 @@
+ArrayList<Rectangle>
+rectangleList) {
+Collections.sort(rectangleList);
+double currX = Constants.W;
+// int currY = 0;
+for (int i = 0; i < rectangleList.size(); i++) {
+Rectangle rect = rectangleList.get(i);
+if (rect.width <= Constants.W - currX) {
+

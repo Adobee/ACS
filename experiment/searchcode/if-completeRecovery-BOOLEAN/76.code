@@ -1,0 +1,7 @@
+public synchronized final long size() { return this.count; }
+
+public synchronized final boolean put(long fp) {
+byte b5 = (byte)((fp >>> 56) &amp; 0xffL);
+// Test if the fingerprint is already in the hashtable.
+int len = bucket == null ? 0 : bucket.length;
+

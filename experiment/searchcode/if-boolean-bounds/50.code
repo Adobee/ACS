@@ -1,0 +1,12 @@
+Point2d[] pointBoundsB = new Point2d[2];
+double[] yBoundsB = new double[2];
+
+public SegmentBBox(Point2d a, Point2d b) {
+if (Triangulator.pointCompare(a,b)<0) {
+pointBounds[1]=b;
+} else {
+pointBounds[0]=b;
+pointBounds[1]=a;
+}
+if (a.y<b.y) {
+

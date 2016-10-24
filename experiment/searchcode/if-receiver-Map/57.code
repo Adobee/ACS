@@ -1,0 +1,11 @@
+public ReceiversPanel(AddMapDialog addMapDialog, List<Receiver> allReceivers, List<Receiver> receiversOnMap) {
+
+if (addMapDialog.getOpeningMode() == AddMapDialogMode.ADD) {
+for (Receiver receiver : allReceivers) {
+if (isReceiverOnMap(receiver)) {
+receiver.setOnMap(true);
+}
+}
+
+for (Receiver receiver : allReceivers) {
+

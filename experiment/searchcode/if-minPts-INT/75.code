@@ -1,0 +1,5 @@
+public DBScan(T[] data, Distance<T> distance, int minPts, double radius) {
+this(data, new LinearSearch<T>(data, distance), minPts, radius);
+public DBScan(T[] data, Metric<T> distance, int minPts, double radius) {
+this(data, new CoverTree<T>(data, distance), minPts, radius);
+

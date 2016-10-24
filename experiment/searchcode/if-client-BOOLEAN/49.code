@@ -1,0 +1,11 @@
+public Client addClient(final Client client) {
+clients[maxClients++] = client;
+return client;
+}
+
+public boolean consistClient(Client client){
+if(client == null) return false;
+
+boolean  consist = false;
+for (int i = 0; i < maxClients; i++) {
+

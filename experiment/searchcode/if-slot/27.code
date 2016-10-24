@@ -1,0 +1,12 @@
+Slot slot = slotList.find(listener);
+if (slot == null) {
+slotList.add(slot = onCreateSlot(this, listener, once));
+slot.execute(values);
+}
+}
+
+@Override
+public Slot remove(T value) {
+Slot slot = slotList.find(value);
+if (slot != null) {
+

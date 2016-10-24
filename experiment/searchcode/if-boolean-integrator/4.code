@@ -1,0 +1,10 @@
+@AemObject(optional = true)
+private Page currentPage;
+
+private boolean integratorTemplateMode;
+private boolean integratorTemplateSecureMode;
+* Detect integrator template modes - check selectors in current url.
+*/
+private void detectIntegratorTemplateModes() {
+if (request != null &amp;&amp; RequestPath.hasSelector(request, SELECTOR_INTEGRATORTEMPLATE_SECURE)) {
+

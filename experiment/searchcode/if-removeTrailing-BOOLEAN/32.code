@@ -1,0 +1,7 @@
+private final boolean removeTrailing;
+
+@Inject
+public StopTokenFilterFactory(Index index, @IndexSettings Settings indexSettings, Environment env, @Assisted String name, @Assisted Settings settings) {
+this.ignoreCase = settings.getAsBoolean(&quot;ignore_case&quot;, false);
+this.removeTrailing = settings.getAsBoolean(&quot;remove_trailing&quot;, true);
+

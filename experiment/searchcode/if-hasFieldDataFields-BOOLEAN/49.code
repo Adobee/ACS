@@ -1,0 +1,7 @@
+explain = in.readBoolean();
+fetchSourceContext = in.readOptionalStreamable(FetchSourceContext::new);
+if (in.readBoolean()) {
+boolean hasFieldDataFields = fieldDataFields != null;
+out.writeBoolean(hasFieldDataFields);
+if (hasFieldDataFields) {
+

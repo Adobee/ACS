@@ -1,0 +1,9 @@
+final static String[] REG_EXPS = { &quot;\\.\\.&quot;, &quot;\\.&quot;, &quot;\\;\\;&quot;, &quot;\\;&quot;,
+&quot;\\,\\,&quot;, &quot;\\,&quot;, &quot;\\:\\:&quot;, &quot;\\:&quot;, &quot;\\ \\ &quot;, &quot;\\ &quot; };
+
+public static String[] splitMessage(String message, int maximumSize,
+String regExp) {
+String[] pieces = null;
+boolean restart = false;
+if (message.length() <= maximumSize) {
+

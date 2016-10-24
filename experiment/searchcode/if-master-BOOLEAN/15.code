@@ -1,0 +1,13 @@
+import com.codahale.metrics.health.HealthCheck;
+
+public class SingletonHealthCheck extends HealthCheck {
+
+private boolean master = false;
+return Result.healthy(master ? &quot;ACTIVE&quot; : &quot;PASSIVE&quot;);
+}
+
+public void setMaster(boolean master) {
+this.master = master;
+}
+}
+

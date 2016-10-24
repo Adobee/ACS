@@ -1,0 +1,10 @@
+public class NormalRewrittenUrl implements RewrittenUrl {
+
+private static Log log = Log.getLog(RewrittenUrl.class);
+
+private boolean forward = false;
+final HttpServletResponse hsResponse, final FilterChain chain)
+throws IOException, ServletException {
+boolean requestRewritten = false;
+String target = getTarget();
+

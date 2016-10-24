@@ -1,0 +1,21 @@
+return value.longValue();
+}
+
+public long incrementAndGet() {
+long v;
+do {
+v = value.longValue();
+} while (!value.compareAndSet(v, v + 1));
+return v + 1;
+}
+
+public long incrementAndGet3() {
+for (;;) {
+long v = value.longValue();
+if (value.compareAndSet(v, v + 1)) {
+return v + 1;
+}
+}
+}
+}
+

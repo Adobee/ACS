@@ -1,0 +1,12 @@
+private String fieldVal = &quot;hello world&quot;;
+private int fieldInt = 5;
+
+private static int CONSTI = 5;
+public static int CONSTJ = 7;
+int i=3;
+int j=5;
+int k=5;
+
+if(i==3 || j==5 || k==1 &amp;&amp; k < 10) {
+LOG.info(&quot;Nested or block;&quot;);
+

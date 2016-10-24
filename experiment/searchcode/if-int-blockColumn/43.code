@@ -1,0 +1,9 @@
+import at.yawk.mcworldapi.world.BlockColumn;
+import at.yawk.mcworldapi.world.Chunk;
+import at.yawk.mcworldapi.world.ChunkSection;
+static final int CHUNK_HORIZONTAL_LENGTH_BITS = CHUNK_SIZE_X_BITS + CHUNK_SIZE_Z_BITS;
+/**
+* Amount of {@link BlockColumn}s per {@link Chunk}
+*/
+static final int CHUNK_HORIZONTAL_LENGTH = 1 << CHUNK_HORIZONTAL_LENGTH_BITS;
+

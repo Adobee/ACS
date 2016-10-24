@@ -1,0 +1,8 @@
+public class StrongCache<K, V> implements Cache<K, V> {
+private SolidLengthDeque<K> keys;
+private int maxCacheSize;
+private LinkedHashMap<K, V> cache;
+public StrongCache(int maxCacheSize) {
+this.maxCacheSize = maxCacheSize;
+this.keys = new SolidLengthDeque<>(this.maxCacheSize);
+

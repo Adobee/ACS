@@ -1,0 +1,16 @@
+boolean isExpired = false;
+synchronized (lock) {
+if (ttl == 0) {
+isExpired = true;
+}
+}
+return isExpired;
+int newTtl = 0;
+synchronized (lock) {
+if (ttl > 0) {
+--ttl;
+newTtl = ttl;
+}
+}
+return newTtl;
+

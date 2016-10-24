@@ -1,0 +1,12 @@
+return this.getBaseSQLiteType().toString().equals(type.getBaseSQLiteType().toString());
+}
+
+public SQLiteType getBaseSQLiteType(){
+SQLiteType lastType = this;
+boolean con = false;
+do{
+if(lastType.mBaseType != null){
+lastType = lastType.mBaseType;
+}else{
+con = false;
+

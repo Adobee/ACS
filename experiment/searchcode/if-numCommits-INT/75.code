@@ -1,0 +1,12 @@
+case INTSET:
+if (setBench.addInt(v)) {
+i--;
+}
+break;
+case MAP:
+if (mapBench.putIfAbsent((Integer) v, (Integer) v) == null) {
+methods = benchClass.getDeclaredMethods();
+
+if (CompositionalIntSet.class.isAssignableFrom((Class<?>) benchClass)) {
+setBench = (CompositionalIntSet)c.newInstance();
+

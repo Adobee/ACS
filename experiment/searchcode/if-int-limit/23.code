@@ -1,0 +1,15 @@
+public static final int DEFAULT_START = 0;
+public static final int DEFAULT_LIMIT = 20;
+
+protected int start = 0;
+this.start = start;
+}
+}
+
+public int getLimit() {
+return limit;
+}
+
+public void setLimit(int limit) {
+if (limit <= 0) {
+

@@ -1,0 +1,7 @@
+protected static boolean isWord(String str) {
+int charCnt = str.length();
+for (int pos = 0; pos < charCnt; pos++) {
+for (String token : tokens) {
+int tokenLen = token.length();
+if ((tokenLen > 0) &amp;&amp; isWord(token)) {
+

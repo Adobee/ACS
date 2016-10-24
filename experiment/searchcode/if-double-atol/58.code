@@ -1,0 +1,8 @@
+public class ODE1SolverDopri5 extends ODE1Slave {
+
+// Solver settings
+private double rtol, atol; // relative and absolute error tolerance
+int neqn, double x, double xend, double[] y,
+double[] ydot, double rtol, double atol, long nmax,
+long nstiff, double uround, double safe, double fac1,
+

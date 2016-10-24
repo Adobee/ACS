@@ -1,0 +1,11 @@
+public class PicassoTransform implements Transformation {
+private int maxwidth;
+
+public PicassoTransform(int maxwidth) {
+this.maxwidth = maxwidth;
+}
+
+@Override
+public Bitmap transform(Bitmap source) {
+double aspectRatio = (double) source.getHeight() / (double) source.getWidth();
+

@@ -1,0 +1,16 @@
+* A <code>TimerThread</code> interrupts another thread after a timeout has
+* occurred.
+*
+* @author Nico Schlaefer
+* @version 2007-02-03
+*/
+public class TimerThread extends Thread {
+synchronized (threadToTimeout) {
+threadToTimeout.wait(timeout);
+}
+} catch (InterruptedException e) {}
+// stop thread if it is still running
+threadToTimeout.interrupt();
+}
+}
+

@@ -1,0 +1,11 @@
+long multiple =1;
+
+for(int i=2;i<=N;i++){
+if(!primeFactor[i]){
+for(int j =i;j<=N;j=j*i){
+primeFactor[j]=true;
+multiple=multiple*i;
+}
+}
+for(int j =i;j<=N;j=j+i){
+

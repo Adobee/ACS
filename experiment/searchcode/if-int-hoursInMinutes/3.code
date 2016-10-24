@@ -1,0 +1,8 @@
+int secondsRest = seconds_p % 60;
+
+int hoursInMinutes = (minutes_p + minutesInSeconds) / 60;
+int daysInHours = (hours_p + hoursInMinutes) / 24;
+int hours = (hours_p + hoursInMinutes) % 24;
+
+double inDays = ((daysInHours + hours * SECONDS_IN_HOUR + 60 * minutesRest + secondsRest)) / SECONDS_IN_DAY;
+

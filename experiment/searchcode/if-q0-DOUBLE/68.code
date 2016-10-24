@@ -1,0 +1,11 @@
+public double Normal(double m, double s)
+{
+double p0 = 0.322232431088;
+double q0 = 0.099348462606;
+double p1 = 1.0;
+u   = rnd.nextDouble();
+if(u < 0.5){
+t = Math.sqrt(-2.0 * Math.log(u));
+}
+else{
+

@@ -1,0 +1,8 @@
+while(node != null &amp;&amp; next != null) {
+if (node.val == next.val) {
+while(next != null &amp;&amp; next.val == node.val) {
+prev.next = next;
+node = next;
+if (next != null) {
+next = node.next;
+

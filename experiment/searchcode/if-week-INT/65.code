@@ -1,0 +1,7 @@
+cal.setTimeInMillis(rs.getLong(&quot;wk_date&quot;));
+int weekID = rs.getInt(&quot;wk_id&quot;);
+Week week = new Week(weekID, cal, gettWeekdays(weekID));
+public Weekday[] gettWeekdays(int weekID) {
+Weekday[] weekdaysForWeek = new Weekday[7];
+int day = 0;
+

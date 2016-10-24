@@ -1,0 +1,12 @@
+private static final long TIME_SLICE = 50;
+private long mTimeout = 3000;
+
+public PollingCheck(long timeout) {
+mTimeout = timeout;
+}
+
+protected abstract boolean check();
+
+public void run() {
+if (check()) {
+

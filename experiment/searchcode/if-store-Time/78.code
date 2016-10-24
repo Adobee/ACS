@@ -1,0 +1,4 @@
+public boolean lock(Data key, String caller, long threadId, long referenceId, long leaseTime) {
+LockStore lockStore = getLockStoreOrNull();
+return lockStore != null &amp;&amp; lockStore.lock(key, caller, threadId, referenceId, leaseTime);
+

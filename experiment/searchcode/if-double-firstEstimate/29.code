@@ -1,0 +1,7 @@
+public EstimatedParameter(String name, double firstEstimate) {
+this.name = name;
+estimate  = firstEstimate;
+public EstimatedParameter(String name,
+double firstEstimate,
+boolean bound) {
+

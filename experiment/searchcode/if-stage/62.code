@@ -1,0 +1,17 @@
+_stages = new HashMap<String, Stage>();
+_actualStageName = &quot;&quot;;
+}
+
+public void RegisterStage(Stage stage)
+{
+if (!_stages.containsKey(stage.GetName()))
+_stages.put(stage.GetName(), stage);
+}
+}
+
+public void SetStage(String name)
+{
+try
+{
+if (_actualStageName.length() != 0)
+

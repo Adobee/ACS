@@ -1,0 +1,10 @@
+LnbDraw mapping = null;
+
+//If not valid draw data return
+if(!isValidDrawData(draw)){
+return mapping;
+Date playedDate = DateFunctions.parseDateFromString(draw.get(DrawMappingDefinition.DRAW_DATE_MAPPING_INDEX), &quot;dd-MM-yyyy&quot;);
+if (playedDate != null) {
+mapping = new LnbDraw();
+mapping.setDrawID(playedDate.getTime());
+

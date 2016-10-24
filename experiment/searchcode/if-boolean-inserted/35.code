@@ -1,0 +1,10 @@
+private double temperature = ATMOSPHERIC_TEMPERATURE;
+
+private boolean potInserted = true;
+
+@Override
+public synchronized void heat(double degree) {
+if (isPotInserted()) {
+temperature += degree;
+if (temperature > BOILING_TEMPERATURE) {
+

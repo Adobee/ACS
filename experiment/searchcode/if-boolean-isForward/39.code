@@ -1,0 +1,8 @@
+queue.add(root);
+boolean isForward = true;
+while(queue.size() != 0){
+int size = queue.size();
+TreeNode tmp = queue.remove(0);
+if(isForward) ret.add(tmp.val);
+else ret.add(0,tmp.val);
+

@@ -1,0 +1,11 @@
+public class BetaDistribution extends DoubleDistribution {
+
+private double alpha;
+private double beta;
+private double norm;
+private double logNorm;
+
+public BetaDistribution(double alpha, double beta) {
+if (alpha <= 0) {
+throw new IllegalArgumentException(&quot;alpha parameter must be positive: &quot; + alpha + &quot;.&quot;);
+

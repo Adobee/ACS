@@ -1,0 +1,9 @@
+public class OHLCSeriesCollection extends AbstractXYDataset implements OHLCDataset, Serializable {
+private List data;
+private TimePeriodAnchor xPosition;
+
+public OHLCSeriesCollection() {
+result = period.getMiddleMillisecond();
+} else if (this.xPosition == TimePeriodAnchor.END) {
+result = period.getLastMillisecond();
+

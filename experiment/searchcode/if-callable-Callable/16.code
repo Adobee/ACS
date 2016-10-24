@@ -1,0 +1,14 @@
+import static uk.co.cameronhunter.aws.glacier.utils.Check.notNull;
+
+import java.util.concurrent.Callable;
+
+public class After<T> implements Callable<T> {
+@Override
+public T call() throws Exception {
+T value = callable.call();
+if ( callback != null ) callback.run( value );
+return value;
+}
+
+}
+

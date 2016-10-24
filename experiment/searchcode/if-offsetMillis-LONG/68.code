@@ -1,0 +1,7 @@
+public Duration getDurationToFire(LocalTime from) {
+if ( !fixedTime.isPresent() || fixedTime.get().isBefore(from) ) {
+String msg = String.format(&quot;Cannot start auction in the past! from=%s fixedTime=%s&quot;,
+throw new SchedulerException(msg + &quot; &quot; + toString());
+}
+long offsetMillis = fixedTime.get().getLong(ChronoField.MILLI_OF_DAY) - from.getLong(ChronoField.MILLI_OF_DAY);
+

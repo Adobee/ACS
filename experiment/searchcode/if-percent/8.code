@@ -1,0 +1,11 @@
+public void updatePercent(EventParam params) {
+Percent percent = params.getParam(&quot;percent&quot;);
+double per = 0;
+if (StringUtils.isEmpty(percent.getProperty())) {
+List<Percent> init = (List<Percent>) percentRepo.findAll();
+if (init.size() == 0) {
+this.init();
+}
+
+init = (List<Percent>) percentRepo.findAll();
+

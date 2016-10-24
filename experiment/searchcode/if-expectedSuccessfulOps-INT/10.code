@@ -1,0 +1,9 @@
+protected final int expectedSuccessfulOps;
+private final int expectedTotalOps;
+
+protected final AtomicInteger successfulOps = new AtomicInteger();
+protected void releaseIrrelevantSearchContexts(AtomicArray<? extends QuerySearchResultProvider> queryResults,
+AtomicArray<IntArrayList> docIdsToLoad) {
+if (docIdsToLoad == null) {
+return;
+

@@ -1,0 +1,7 @@
+public static <T extends Fragment> T replaceOrRestore(FragmentManager fragmentManager, int containerViewId, String tag, Func0<T> fragmentFactory)
+T fragment = (T)fragmentManager.findFragmentByTag(tag);
+
+if (fragment == null)
+{
+fragment = fragmentFactory.call();
+

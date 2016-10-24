@@ -1,0 +1,11 @@
+public BaseOperation constructOperation(String[] operation) {
+String operationName = operation[0];
+int value = Integer.valueOf(operation[1]);
+if (&quot;apply&quot;.equals(operationName)) {
+return new InitialOperation(value);
+}
+if (&quot;add&quot;.equals(operationName)) {
+return new AddOperation(value);
+}
+if (&quot;multiply&quot;.equals(operationName)) {
+

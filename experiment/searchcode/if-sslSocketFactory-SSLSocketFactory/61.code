@@ -1,0 +1,12 @@
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+import javax.net.ssl.SSLSocketFactory;
+
+class SSLUtils {
+private static int HANDSHAKE_TIMEOUT = 10000;//10s, gc is 10s
+* Returns a {@link SSLSocketFactory}.  Optionally bypass all SSL certificate checks.
+*
+* @param insecure if true, bypass all SSL certificate checks
+

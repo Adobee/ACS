@@ -1,0 +1,11 @@
+BlockingQueue<RecordedRequest> result = new LinkedBlockingQueue<RecordedRequest>(queue);
+return result;
+}
+
+public MockResponse takeRecordedResponseBlocking(RecordedRequest request) {
+queue.add(request);
+}
+
+private void addHeaders(MockResponse mockResponse) {
+if (!headers.isEmpty()) {
+

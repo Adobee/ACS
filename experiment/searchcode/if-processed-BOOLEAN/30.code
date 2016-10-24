@@ -1,0 +1,10 @@
+private String value;
+private String rawValue;
+private boolean isProcessed = false;
+
+
+public Cell(String rawValue) {
+public synchronized String getValue() throws IOException {
+if (!isProcessed) {
+processValue();
+

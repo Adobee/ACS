@@ -1,0 +1,8 @@
+public static Number add(Number p1, Number p2) {
+double d = ((Number) p1).doubleValue() + ((Number) p2).doubleValue();
+int i = (int)d;
+if (d == i) return i;
+double d = ((Number) p1).doubleValue() - ((Number) p2).doubleValue();
+int i = (int)d;
+if (d == i) return i;
+

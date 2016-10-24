@@ -1,0 +1,11 @@
+return factory.criaLivroDAO().adicionar(livro);
+}
+
+public boolean remover(int id) {
+DaoFactoryIF factory = DaoFactory.createFactory(DaoFactory.DAO_BD);
+return factory.criaLivroDAO().remover(id);
+}
+
+public boolean atualizar(Livro livro) {
+DaoFactoryIF factory = DaoFactory.createFactory(DaoFactory.DAO_BD);
+

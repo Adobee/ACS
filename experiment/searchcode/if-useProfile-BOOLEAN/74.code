@@ -1,0 +1,9 @@
+int optLevel = compiler.getOptLevel();
+boolean useProfile = compiler.useProfile();
+boolean useCodeCoverage = compiler.useCodeCoverage();
+cmd.add( &quot;-Wc,-ftest-coverage&quot; );
+cmd.add( &quot;-Wc,-fprofile-arcs&quot; );
+}
+
+if ( useProfile ) {
+

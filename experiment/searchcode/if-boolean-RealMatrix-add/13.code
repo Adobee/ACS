@@ -1,0 +1,13 @@
+for (int i = 0; i < y.length; i++) {
+if (y[i] < (k - 1)) {
+Y[i][(new Double(y[i])).intValue()] = 1;
+W[i * P.length + k][j * P.length + k] = i == j ? P[k][i] * (1 - P[k][j]) : P[k][i] * P[k][j] * (-1);
+}
+}
+}
+return W;
+}
+
+public boolean stop(RealMatrix b_old, RealMatrix b_new) {
+boolean stopit = true;
+

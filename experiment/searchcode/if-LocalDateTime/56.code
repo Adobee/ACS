@@ -1,0 +1,7 @@
+public class TriggerCommunicationOut {
+
+public static boolean checkTrigger( LocalDateTime time ){
+
+if (GlobalTime.period.getSeconds()/60 >= 60 ){
+if (time.isAfter(LocalDateTime.of(2013,1,14,0,0)) &amp;&amp; time.isBefore(LocalDateTime.of(2013,1,14,19,0))) {
+

@@ -1,0 +1,8 @@
+public static String toTitleCase(CharSequence cs) {
+int csLength = -1;
+if (cs == null || (csLength = cs.length()) <= 0) {
+return &quot;&quot;;
+result.append(Character.toTitleCase(cs.charAt(0)));
+if (csLength > 1) {
+result.append(cs.subSequence(1, csLength));
+

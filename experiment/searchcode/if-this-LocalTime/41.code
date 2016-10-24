@@ -1,0 +1,12 @@
+public class Aburrida implements Estado{
+
+LocalTime tiempoAburrida;
+
+public Aburrida(){
+this.tiempoAburrida = LocalTime.now();
+}
+
+@Override
+public void come(Mascota mascota) {
+if (tiempoAburrida.minusMinutes(80).isAfter(LocalTime.now()))
+

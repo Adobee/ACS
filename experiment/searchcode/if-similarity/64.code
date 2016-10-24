@@ -1,0 +1,11 @@
+public double Preprocessing(WordModel wordModel1, WordModel wordModel2)
+{
+double similarity = 1.0;
+if ((wordModel1.Vector == null) &amp;&amp; (wordModel2.Vector == null))
+if (wordModel1.Text.equals(wordModel2.Text))
+similarity = 0.0;
+else
+similarity = LEAST_SIMILARITY;
+}
+else if (wordModel1.Vector == null){
+

@@ -1,0 +1,9 @@
+import com.google.gwt.text.shared.AbstractRenderer;
+import com.google.gwt.text.shared.Renderer;
+
+/**
+* A simple renderer of Float values.
+*/
+public class FloatRenderer extends AbstractRenderer<Float> {
+private static FloatRenderer INSTANCE;
+

@@ -1,0 +1,8 @@
+public void depthFirstSearch() {
+for (int startIndex = 0; startIndex < n; startIndex++) {
+depthfs(startIndex);
+System.out.println(result);
+}
+for (int j = 0; j < n; j++) {
+if (mat[startIndex][j] == 1 &amp;&amp; visited[j] == 0) {
+

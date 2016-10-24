@@ -1,0 +1,11 @@
+package org.deeplearning4j.nn.conf.override;
+
+import org.deeplearning4j.nn.api.LayerFactory;
+import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
+@Override
+public void overrideLayer(int i, NeuralNetConfiguration.Builder builder) {
+if(i == layer)
+builder.layerFactory(layerFactory);
+}
+}
+

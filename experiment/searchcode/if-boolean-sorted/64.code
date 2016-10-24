@@ -1,0 +1,9 @@
+public class BogoSort extends Sort {
+
+@Override
+public void sort(Comparable[] unsortedArray) {
+boolean sorted = false;
+for (int i = 0; i < unsortedArray.length - 1; i++) { // check whether array is sorted
+if (less(unsortedArray[i + 1],(unsortedArray[i]))) {
+sorted = false; // array is not sorted, shuffle before checking again
+

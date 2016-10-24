@@ -1,0 +1,8 @@
+private HibernateTemplate hibernateTemplate;
+
+@Override
+public boolean addFollow(Follow follow) {
+this.hibernateTemplate.save(follow);
+List<Long> list = this.hibernateTemplate.find(&quot;select count(*) from Follow where follow.id=?&quot;,followid);
+if(list!=null&amp;&amp;list.size()>0){
+

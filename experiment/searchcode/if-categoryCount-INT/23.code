@@ -1,0 +1,8 @@
+private final IntegerCounter[] categories;
+final IntegerCounter all;
+private final int categoryCount;
+byte mask = 1;
+for (int i = 0; i < categoryCount; i++) {
+if ((categories &amp; mask) != 0)
+this.categories[i].addValue(value);
+

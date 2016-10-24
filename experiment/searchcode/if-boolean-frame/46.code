@@ -1,0 +1,10 @@
+public int scoreCurrentFrame(int position) {
+Frame frame = frames.get(position);
+if (frame.isStrike()) {
+handleStrike(position);
+} else if (frame.isSpare()) {
+handleSpare(position);
+
+} else {
+frameScore += frame.roll();
+

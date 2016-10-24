@@ -1,0 +1,11 @@
+Logger.d(strBuilder.toString());
+
+} else if (msg instanceof ByteBuf) {
+
+ByteBuf inByteBuf = (ByteBuf) msg;
+strBuilder.append(&quot;Token Data: &quot;);
+strBuilder.append(coapMessage.getTokenString());
+strBuilder.append(&quot;\n&quot;);
+
+if (coapMessage instanceof CoapRequest) {
+

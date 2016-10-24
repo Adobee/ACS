@@ -1,0 +1,7 @@
+public static JSONValueType getType(Object object) {
+if (object instanceof JSONValueType) {
+return (JSONValueType)object;
+}
+if (object instanceof JSONValue) {
+object = ((JSONValue)object).getValue();
+

@@ -1,0 +1,9 @@
+// Aik (across row i of A) by the entries Bkj (down column j of B)
+
+static void mul33(Matrix dest, Matrix lhs, Matrix rhs) {
+if (rhs == dest) {
+for (int i = 0; i < 3; i++) {
+for (int i = 0; i < 3; i++) {
+final float ai0 = lhs.get(i, 0), ai1 = lhs.get(i, 1), ai2 = lhs.get(i, 2);
+dest.set(i, 0, ai0 * rhs.get(0, 0) + ai1 * rhs.get(1, 0) + ai2 * rhs.get(2, 0));
+

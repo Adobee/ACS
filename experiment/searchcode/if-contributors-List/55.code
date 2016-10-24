@@ -1,0 +1,9 @@
+ContributorsDeserializer deserializer=new ContributorsDeserializer(serverResponse.getEntity(String.class));
+List<Contributor> contributors=deserializer.getContributors();
+
+Gson gson=new Gson();
+return gson.toJson(contributors, new TypeToken<List<Contributor>>(){}.getType());
+}
+
+}
+

@@ -1,0 +1,9 @@
+for (Pair<Double, Boolean> item : pred)
+if (item.getSecond())
+totP++;
+for (Pair<Double, Boolean> item : pred) {
+cnt++;
+if (item.getSecond())
+hit++;
+double tp = hit / (totP + 0.0);
+

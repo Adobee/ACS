@@ -1,0 +1,10 @@
+package company.scheduler;
+
+import org.quartz.JobKey;
+import org.quartz.Scheduler;
+import org.quartz.SchedulerException;
+public void delete(QuartzTask task) throws SchedulerException {
+JobKey jobKey = task.jobKey();
+if (scheduler.checkExists(jobKey)){
+scheduler.deleteJob(jobKey);
+

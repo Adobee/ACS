@@ -1,0 +1,17 @@
+public abstract double tInterval();
+
+public abstract double tStart();
+
+public abstract double tEnd();
+
+public abstract double xValue(double t);
+public Coordinate getPoint(int pointNum)
+{
+double t = tValue(pointNum);
+
+if(t > tEnd())
+{
+return null;
+}
+else if((t >= tEnd()) &amp;&amp; (t - tInterval() <= tEnd()))
+

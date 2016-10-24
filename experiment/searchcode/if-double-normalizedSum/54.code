@@ -1,0 +1,8 @@
+public static double[] ebeAdd(double[] a, double[] b)
+throws DimensionMismatchException {
+if (a.length != b.length) {
+throw new MathIllegalArgumentException(LocalizedFormats.NORMALIZE_INFINITE);
+}
+if (Double.isNaN(normalizedSum)) {
+throw new MathIllegalArgumentException(LocalizedFormats.NORMALIZE_NAN);
+

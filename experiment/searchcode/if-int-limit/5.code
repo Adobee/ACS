@@ -1,0 +1,11 @@
+private ArrayList<WeakReference<Limit>> hashTable = new ArrayList<WeakReference<Limit>>(hashNumber);
+
+private int hasher (int price)
+{	return price%hashNumber;		  }
+public WeakReference<Limit> getBucket (int price)
+{		return hashTable.get(hasher(price));	}
+
+public Limit getLimit (int price)
+{
+if (getBucket(price)==null) return null;
+

@@ -1,0 +1,9 @@
+double velocity;
+double distance;
+
+if (wallType == WallType.VERTICAL) {
+center = ball.getCenterX();
+double a22b22 = Math.pow(a2, 2.0) + Math.pow(b2, 2.0);
+double dsq = a22b22 * c - Math.pow(a2 * b1 - a1 * b2, 2.0);
+if (dsq < 0) {
+

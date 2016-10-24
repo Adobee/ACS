@@ -1,0 +1,7 @@
+private void selectionSort(int[] array, int startIndex, int size) {
+if (startIndex >= size - 1)
+return;
+int minIndex = startIndex;
+for (int index = startIndex + 1; index < size; index++) {
+if (array[index] < array[minIndex])
+

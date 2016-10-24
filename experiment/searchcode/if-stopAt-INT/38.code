@@ -1,0 +1,8 @@
+getStoppingAt(train.getTerminatingLocation().getLocation()).add(train);
+}
+
+private Set<Train> getStoppingAt(String station) {
+Set<Train> stopAt = allTrainsGroupedByStop.get(station);
+if (stopAt == null) {
+stopAt = new HashSet<Train>();
+

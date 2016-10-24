@@ -1,0 +1,11 @@
+this.eventDelegate = new DataListenerDelegate();
+}
+
+@Override
+public void resize(int... newShape) {
+if (base != null) {
+throw new UnsupportedOperationException(&quot;Changing the shape of a view is not allowed&quot;);
+int rank = shape.length;
+if (newShape.length != rank) {
+throw new IllegalArgumentException(&quot;Rank of new shape must match current shape&quot;);
+

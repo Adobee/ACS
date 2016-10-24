@@ -1,0 +1,7 @@
+Scanner input=new Scanner(System.in);
+int size=input.nextInt();
+int listSize, a, b;
+int array[];
+for(int i=0;i<size;i++){
+listSize=input.nextInt();
+

@@ -1,0 +1,10 @@
+protected final DiscoveryNodes nodes;
+
+protected final int expectedSuccessfulOps;
+
+private final int expectedTotalOps;
+// we need to add 1 for non active partition, since we count it in the total!
+expectedTotalOps = shardsIts.totalSizeWith1ForEmpty();
+
+if (expectedSuccessfulOps == 0) {
+

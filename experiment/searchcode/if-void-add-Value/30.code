@@ -1,0 +1,17 @@
+mValue[1] = y;
+}
+}
+
+public void setValue(float value[])
+{
+if (value.length < 2)
+return;
+setValue(value[0], value[1]);
+synchronized (mValue) {
+mValue[0] += x;
+mValue[1] += y;
+}
+}
+
+public void add(float value[])
+

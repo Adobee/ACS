@@ -1,0 +1,8 @@
+private int currentOffset = 0;
+private final CharSequence seq;
+
+public CharSeqReader(final CharSequence seq) {
+final int read = Math.min(len, seq.length() - currentOffset);
+if (seq instanceof CharSeq) {
+((CharSeq) seq).copyToArray(currentOffset, cbuf, off, read);
+

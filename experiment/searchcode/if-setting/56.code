@@ -1,0 +1,10 @@
+return toViewObject(updated);
+}
+
+@Override
+public void deleteSetting(SettingVO setting) {
+if (contactSettingRepository.exists(setting.getId())) {
+public ContactSetting toModel(SettingVO view) {
+ContactSetting setting;
+if (view.getId() == null) {
+

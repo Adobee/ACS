@@ -1,0 +1,13 @@
+public class DensityMap {
+
+private final World world;
+
+private final double[][][] densityMap;
+
+private final Map<Biome, BiomeData> biomeData = new HashMap<Biome, BiomeData>();
+public void setDensity(int x, int y, int z, double density) {
+densityMap[x][y][z] = density;
+
+if (y > 0) {
+for (int offset = 1; offset < 16; offset++)
+

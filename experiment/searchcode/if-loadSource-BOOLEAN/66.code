@@ -1,0 +1,7 @@
+private void setUpEnvironment(boolean disableCallAssertions, boolean disableParamAssertions, File... extraClassPath) {
+myEnvironment = KotlinCoreEnvironment.createForTests(getTestRootDisposable(), configuration, EnvironmentConfigFiles.JVM_CONFIG_FILES);
+}
+
+private void loadSource(@NotNull String fileName) {
+loadFileByFullPath(KotlinTestUtils.getTestDataPathBase() + &quot;/codegen/&quot; + getPrefix() + &quot;/&quot; + fileName);
+

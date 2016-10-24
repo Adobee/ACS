@@ -1,0 +1,14 @@
+super(parameters, commandContext);
+}
+
+
+@Override
+protected boolean canDoAction() {
+if (!super.canDoAction()) {
+if (!validate(getVirtioRngValidator().canAddRngDevice(getVdsGroup(), getParameters().getRngDevice()))) {
+return false;
+}
+}
+
+if (getRngDevices().isEmpty()) {
+

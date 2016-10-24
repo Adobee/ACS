@@ -1,0 +1,13 @@
+private int maxIterations;
+private double upperBound;
+
+public double getUpperBound() {
+return upperBound;
+}
+
+public void setUpperBound(double upperBound) {
+this.upperBound = upperBound;
+}
+
+public int getMaxIterations() {
+

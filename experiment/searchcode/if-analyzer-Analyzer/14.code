@@ -1,0 +1,7 @@
+private AnalyzerProvider() { }
+
+public static Analyzer getAnalyzer(AnalyzerName analyzerName) {
+if (ANALYZER_MAP.get(analyzerName) == null) {
+synchronized (ANALYZER_MAP) {
+if (ANALYZER_MAP.get(analyzerName) == null) {
+

@@ -1,0 +1,12 @@
+private transient SimpleBooleanProperty autoSave;
+
+private double height;
+private double width;
+
+public double getHeight() {
+this.autoSaveProperty().set(autoSave);
+}
+
+public BooleanProperty autoSaveProperty() {
+if (autoSave == null) {
+

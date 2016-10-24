@@ -1,0 +1,7 @@
+BackedTimeSeriesDataItem deferred = getDeferredFor(changedItem);
+Date oldTime = deferred.getPeriod().getTime();
+if (oldTime.equals(changedItem.getDTG().getDate())) {
+TimeSeriesDataItem lastChartItem = myTimeSeries.getDataItem(seriesSize - 1);
+if (lastChartItem.compareTo(chartItem) < 0) {
+//thats hopefully most frequent case
+

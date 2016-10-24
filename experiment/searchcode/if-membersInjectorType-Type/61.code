@@ -1,0 +1,11 @@
+messager.printMessage(Kind.NOTE, String.format(&quot;%s: process()&quot;, TAG));
+if (done) {
+return false;
+}
+
+Set<TypeElement> components =
+new HashSet<>(Collections2.transform(env.getElementsAnnotatedWith(Component.class),
+Utils.sortByFullName(getComponentDependencies(component));
+TypeElement dependencyComponent = null;
+if (!sortedComponentDependencies.isEmpty()) {
+

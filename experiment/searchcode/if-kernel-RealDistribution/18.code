@@ -1,0 +1,6 @@
+final double upper = binBounds[bin];
+final RealDistribution kernel = findKernel(lower, upper);
+private RealDistribution findKernel(double lower, double upper) {
+if (lower < 1) {
+return new NormalDistribution(5d, 3.3166247903554);
+

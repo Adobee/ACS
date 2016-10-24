@@ -1,0 +1,16 @@
+return 1;
+}
+return -1;
+}
+
+public boolean second_order(double[] v, double[] w) {
+double aa;
+aa = aa(v, w);
+if (aa == 0) {
+return false;
+}
+return true;
+}
+
+public double delta(double[] v, double[] w) {
+

@@ -1,0 +1,9 @@
+swapAndPrintCombination(i, array.clone());
+}
+}
+
+private void swapAndPrintCombination(int initialIndex, int[] array) {
+int currentIndex = initialIndex;
+boolean oneRound = false;
+while(true) {
+

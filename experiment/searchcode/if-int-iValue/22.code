@@ -1,0 +1,11 @@
+public void add( Object key ) {
+Integer ivalue =  (Integer) map.get( key ) ;
+if ( ivalue == null ) {
+map.put( key, new Integer(1) ) ;
+throw new NoSuchElementException( &quot;Cannot remove count for &quot; + key ) ;
+}
+}
+else {
+if ( ivalue.intValue() == 1 ) {
+map.remove( key ) ;
+

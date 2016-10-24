@@ -1,0 +1,8 @@
+public static final String R_REFS = &quot;refs/&quot;;
+
+/** Branch name key */
+public static class NameKey extends StringKey<Project.NameKey> {
+private static final long serialVersionUID = 1L;
+
+@Column
+

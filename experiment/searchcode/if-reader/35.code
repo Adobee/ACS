@@ -1,0 +1,11 @@
+public class ReaderFactory extends AbstractFactoryReader {
+
+@Override
+public Reader getReader(String readerType) {
+
+if(readerType == null){
+return null;
+}
+if(readerType.equalsIgnoreCase(&quot;COMPRASGESTION&quot;)){
+return new ComprasGestionReader();
+

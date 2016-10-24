@@ -1,0 +1,8 @@
+public IBounds getLegalBounds(IBounds currentBounds) {
+if (isDisjoint(currentBounds)) {
+return currentBounds;
+}
+if (isLeftOverlap(currentBounds)) {
+currentBounds.setX(currentBounds.getX()
++ (getX() - (currentBounds.getX() + currentBounds
+

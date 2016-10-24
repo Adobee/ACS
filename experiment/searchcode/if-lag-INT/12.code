@@ -1,0 +1,9 @@
+private void processZeroLag() throws InterruptedException {
+
+synchronized (calculatedZeroLagMacd) {
+if (calculatedZeroLagMacd.isEmpty()) {
+calculatedZeroLagMacd.wait();
+}
+int index = calculatedZeroLagMacd.size() - 1;
+if (index > 1) {
+

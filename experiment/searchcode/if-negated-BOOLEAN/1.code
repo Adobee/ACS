@@ -1,0 +1,15 @@
+public class LiteralModel implements DiscretElement {
+private boolean negated;
+private String atomic;
+
+public LiteralModel(boolean negated, String atomic) {
+this.atomic = atomic.toUpperCase();
+}
+
+@Override
+public boolean isNegated() {
+return negated;
+}
+
+public void setNegated(boolean negated) {
+

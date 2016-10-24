@@ -1,0 +1,10 @@
+int T = Integer.parseInt(stdin.readLine());
+int ncol=5;
+
+int[] vals = new int[L];
+for (i=1; i <= L; ++i)
+int ncol1=ncol+1; // One extra column
+
+/* Try finding values on the T:th row
+* If we fail and truncated any row, retry using
+

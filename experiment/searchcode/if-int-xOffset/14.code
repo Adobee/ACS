@@ -1,0 +1,6 @@
+int xOffset = (Matrix.getWidth() / 2);
+int yOffset = (Matrix.getHeight() / 2);
+System.out.println(&quot;X Value is: &quot; + (x + xOffset));
+System.out.println(&quot;Y Value is: &quot; + (y + yOffset));
+if ((x + xOffset) <= Matrix.getWidth() - 1 &amp;&amp; (yOffset + y) <= Matrix.getHeight() - 1 &amp;&amp; (x + xOffset) >= 0
+

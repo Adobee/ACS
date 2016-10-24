@@ -1,0 +1,8 @@
+public class GlobalConfiguration {
+
+private Persona selected;
+private static GlobalConfiguration singletonObject;
+public static synchronized GlobalConfiguration getSingletonObject() {
+if (singletonObject == null) {
+singletonObject = new GlobalConfiguration();
+

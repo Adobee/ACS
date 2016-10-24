@@ -1,0 +1,9 @@
+protected final boolean isSingle;
+
+public BacktrackingBarrier(boolean isSingle) {
+super(isSingle ? SINGLE_COLON_LABEL : DOUBLE_COLON_LABEL);
+rule().event(this, &quot;hit backtracking barrier&quot;);
+if (isSingle)
+throw new SingleColonBarrier(this);
+throw new DoubleColonBarrier(this);
+

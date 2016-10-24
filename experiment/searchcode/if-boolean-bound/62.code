@@ -1,0 +1,9 @@
+int getUpperBound() {
+return mUpperBound;
+}
+boolean[] calculateUpToBound() {
+boolean[] res = new boolean[mUpperBound + 1];
+// src: https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes#Implementation
+for (int i = 2; i <= mUpperBound/2; i++) {
+if (res[i]) {
+

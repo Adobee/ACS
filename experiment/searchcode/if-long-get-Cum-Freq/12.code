@@ -1,0 +1,8 @@
+Assert.assertEquals(&quot;total count&quot;,0,f.getSumFreq());
+f.addValue(ONE_LONG);
+f.addValue(TWO_LONG);
+f.addValue(1);
+Assert.assertEquals(&quot;total count&quot;,4,f.getSumFreq());
+Assert.assertEquals(&quot;zero cumulative frequency&quot;, 0, f.getCumFreq(0));
+Assert.assertEquals(&quot;one cumulative frequency&quot;, 3,  f.getCumFreq(1));
+

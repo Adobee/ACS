@@ -1,0 +1,6 @@
+public boolean execute(MessageContext context) {
+String arguments = getArguments(context);
+int firstSpace = arguments.indexOf(&#39; &#39;);
+if (firstSpace == -1) {
+sendUsageBack(context);
+

@@ -1,0 +1,8 @@
+public int compare(TaggedImage img1, TaggedImage img2) {
+if (swapXandY_) {
+try {
+double x1 = img1.tags.getDouble(&quot;XPositionUm&quot;);
+double y1 = img1.tags.getDouble(&quot;YPositionUm&quot;);
+double y2 = img2.tags.getDouble(&quot;YPositionUm&quot;);
+if (y1 != y2) {
+

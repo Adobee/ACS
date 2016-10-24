@@ -1,0 +1,9 @@
+public LinearTagger(Alphabet xAlpha, Alphabet yAlpha,
+SequenceFeatureFunction fxy) {
+w = new double[fxy.wSize()];
+yAlphabet = yAlpha;
+xAlphabet = xAlpha;
+gamma[t][yt] = Double.NEGATIVE_INFINITY;
+for (int ytm1 = 0; ytm1 < yAlphabet.size(); ytm1++) {
+if (gamma[t][yt] < gamma[t - 1][ytm1] + scores[t][ytm1][yt]) {
+

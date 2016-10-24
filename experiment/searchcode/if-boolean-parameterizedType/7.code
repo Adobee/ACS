@@ -1,0 +1,13 @@
+&quot;, parameters=&quot; + parameters +
+&#39;)&#39;;
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+if (o == null || getClass() != o.getClass()) return false;
+
+ParameterizedType that = (ParameterizedType) o;
+
+if (!rawType.equals(that.rawType)) return false;
+

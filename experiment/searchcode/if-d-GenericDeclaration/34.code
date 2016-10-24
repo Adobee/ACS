@@ -1,0 +1,5 @@
+private static GenericDeclaration nextLayer(GenericDeclaration decl) {
+if (decl instanceof Class) {
+decl = (GenericDeclaration) AnnotationAccess.getEnclosingMethodOrConstructor(cl);
+if (decl != null) {
+

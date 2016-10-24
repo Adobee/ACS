@@ -1,0 +1,10 @@
+params.put(&quot;merchants&quot;, &quot;%&quot; + upgrade.getMerchants() + &quot;%&quot;);
+}
+// 软件版本号
+if (StringUtils.isNotBlank(upgrade.getVersion())) {
+params.put(&quot;version&quot;, &quot;%&quot; + upgrade.getVersion() + &quot;%&quot;);
+}
+// 软件包标题
+if (StringUtils.isNotBlank(upgrade.getTitle())) {
+whereHql += &quot; and title like :title&quot;;
+

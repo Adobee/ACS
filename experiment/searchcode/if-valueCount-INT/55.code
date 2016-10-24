@@ -1,0 +1,10 @@
+public static void fillInterpolate(
+int valueCount,
+int[] buf,
+int offset,
+int length)
+{
+assert offset+length <= buf.length;
+int[] valueLengths = interpolatedLengths(valueCount, length);
+for (int i = 0; i < valueLengths.length; i++) {
+

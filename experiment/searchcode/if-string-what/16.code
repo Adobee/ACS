@@ -1,0 +1,13 @@
+println(&quot;What would you like to do?&quot;);
+println();
+
+String what = input();
+
+what = what.toLowerCase();
+return Commands.begins(what, commands);
+}
+
+private boolean escape(String what) {
+if (what == null) {
+return false;
+

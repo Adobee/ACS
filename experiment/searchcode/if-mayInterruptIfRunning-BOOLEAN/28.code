@@ -1,0 +1,11 @@
+public DelegatingFuture(Future<D> delegate) {
+super();
+this.delegate = delegate;
+}
+
+public boolean cancel(boolean mayInterruptIfRunning) {
+return delegate.cancel(mayInterruptIfRunning);
+}
+
+public boolean isCancelled() {
+

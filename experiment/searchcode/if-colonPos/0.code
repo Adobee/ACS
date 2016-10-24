@@ -1,0 +1,10 @@
+private String _name = &quot;&quot;;
+
+public TexEnvironment(String s) {
+int colonPos = s.indexOf(&#39;:&#39;);
+
+if (colonPos > 0) {
+_name = s.substring(0, colonPos).trim();
+if (s.length() > colonPos + 1)
+_comment = s.substring(colonPos + 1).trim();
+

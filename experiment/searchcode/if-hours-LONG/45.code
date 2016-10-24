@@ -1,0 +1,12 @@
+public static void main (String[] args) throws Exception {
+if(args.length < 1) {
+die();
+}
+
+Duration time = Duration.ofSeconds(Long.parseLong(args[0]));
+
+long hours = time.toHours();
+time = time.minusHours(hours);
+
+long minutes = time.toMinutes();
+

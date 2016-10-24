@@ -1,0 +1,11 @@
+private int flagsIndex;
+
+public TogglingFlag(int truePercent) {
+if(truePercent>100) {
+throw new IllegalArgumentException(&quot;truePercent>100&quot;);
+flags = new boolean[poolsize];
+int level=0;
+for (int i = 0; i < poolsize; i++) {
+level+=truePercent;
+if(level>=100) {
+

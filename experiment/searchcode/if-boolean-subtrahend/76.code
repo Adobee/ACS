@@ -1,0 +1,9 @@
+Attribute minuendId = minuendSet.getAttributes().getId();
+Attribute subtrahendId = subtrahendSet.getAttributes().getId();
+
+// sanity checks
+if ((minuendId == null) || (subtrahendId == null)) {
+throw new UserError(this, 129);
+}
+if (minuendId.getValueType() != subtrahendId.getValueType()) {
+

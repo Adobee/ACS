@@ -1,0 +1,7 @@
+public static double[] getLambdaBounds(double[] startPoint,
+double[] direction, double[] lowerBound, double[] upperBound) {
+double minUpper = 0;
+double maxLower = 0;
+for (int i = 0; i < startPoint.length; i++) {
+double upper = (upperBound[i] - startPoint[i]) / direction[i];
+

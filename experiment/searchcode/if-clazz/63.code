@@ -1,0 +1,6 @@
+public <T> void put( Class<T> interfaceClazz, Class<? extends T> implementationClazz ) {
+if ( !interfaceClazz.isInterface() ) {
+throw new IllegalArgumentException( &quot;interfaceClazz should be interface&quot; );
+}
+if ( !interfaceClazz.isAssignableFrom( implementationClazz ) ) {
+

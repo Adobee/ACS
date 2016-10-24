@@ -1,0 +1,12 @@
+x.computeDistanceMatrix();
+
+double range = Double.MIN_VALUE;
+for(int j=0; j<x.getDimensionality(); j++) {
+
+if (x.getRange(j) > range)
+P.println(m+&quot; iterations completed&quot;);
+m++;
+
+if (y.diff(nextY)<C.SMALL_DOUBLE) {
+hasConverged=true;
+

@@ -1,0 +1,9 @@
+public int compareTo(ComplexNumber o) {
+if (a.subtract(o.a).equals(0))
+return (b.compareTo(o.b));
+return (new ComplexNumber(a, b.negate()));
+}
+
+public ComplexNumber divide(ComplexNumber cplx) {
+Fraction denom = cplx.a.power(2).add(cplx.b.power(2));
+

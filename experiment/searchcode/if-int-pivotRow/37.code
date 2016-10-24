@@ -1,0 +1,9 @@
+public String toString() {
+StringBuilder builder = new StringBuilder();
+for (int row = 1; row <= height; row++) {
+if (row > 1) {
+while (pivotRow <= height &amp;&amp; pivotColumn <= width) {
+sortRows();
+int pivotValue = get(pivotRow, pivotColumn);
+if (pivotValue == 0) {
+

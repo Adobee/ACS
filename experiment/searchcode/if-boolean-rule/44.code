@@ -1,0 +1,8 @@
+public boolean matches( MHttpRequest request, MResultCache resultCache )
+{
+boolean match = true;
+int ruleCount = ruleList.size();
+MAbstractRule rule = ( MAbstractRule )ruleList.get( i );
+boolean ruleMatches = resultCache.getResult( rule );
+if( ruleMatches == false )
+

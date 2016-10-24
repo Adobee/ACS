@@ -1,0 +1,6 @@
+public static String decodePassword(String encodedPassword, Object seed) {
+if (encodedPassword == null||seed == null) return null;
+encodedPassword = encodedPassword.replaceAll(&quot; &quot;, &quot;&quot;);
+seed=seed.toString().replaceAll(&quot; &quot;,&quot;&quot;);
+if (encodedPassword.equals(&quot;&quot;) || seed.equals(&quot;&quot;)) return null;
+

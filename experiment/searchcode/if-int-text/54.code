@@ -1,0 +1,11 @@
+package is.ru.stringcalculator;
+
+public class Calculator {
+
+public static int add(String text){
+if(text.equals(&quot;&quot;)){
+return 0;
+}
+
+else if(text.contains(&quot;,&quot;) || text.contains(&quot;\n&quot;)){
+

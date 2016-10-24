@@ -1,0 +1,12 @@
+package com.ee.trainsignaling;
+
+
+public class Train {
+
+private Block currentBlock;
+private Block previousBlock;
+public void move(Block block) {
+if(block.canMove()){
+currentBlock.setSignalStatusOfCurrentBlockAsTrainIsMoving();
+if(previousBlock != null){
+

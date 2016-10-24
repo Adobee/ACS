@@ -1,0 +1,10 @@
+public class RandomIterator<T> implements Iterable<T> {
+
+private final static Random random = new Random();
+List<T> coll;
+public T next() {
+T ret = null;
+if (coll != null) {
+int length = coll.size();
+int rIndex = random.nextInt(length);
+

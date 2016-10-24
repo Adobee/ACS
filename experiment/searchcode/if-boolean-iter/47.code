@@ -1,0 +1,13 @@
+iter= l.listIterator();
+for(int i =0; i< l.size(); i ++)
+{
+if(i==4)
+assertFalse(iter.hasNext());
+for(int i = l.size(); i > 0; i --)
+{
+if(i==0)
+assertFalse(iter.hasPrevious());
+else
+{
+assertTrue(iter.hasPrevious());
+

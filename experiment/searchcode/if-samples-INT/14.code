@@ -1,0 +1,14 @@
+private final short[] samples = new short[AudioThread.SAMPLES_PER_BUFFER];
+int i;
+
+Send(Sampler input) {
+super(input);
+}
+
+@Override
+protected short processSample(short sample) {
+samples[i] = sample;
+
+i++;
+if (i == samples.length) {
+

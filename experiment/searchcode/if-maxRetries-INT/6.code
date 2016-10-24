@@ -1,0 +1,8 @@
+public class LinearRetryForAllExceptions extends DefaultRetryStrategy {
+
+public LinearRetryForAllExceptions(int maxRetries, int waitInterval, int defaultTimeoutInSeconds) {
+super(maxRetries, waitInterval, defaultTimeoutInSeconds);
+}
+
+public boolean canRetry(int currentRetryCount, Exception e) throws AzureCloudException {
+

@@ -1,0 +1,10 @@
+package ch01;
+import java.util.*;
+public class DoubleStacksQueue_Test {
+
+public static class DoubleStacksQueue{
+public static void main(String[] args) {
+DoubleStacksQueue dsq = new DoubleStacksQueue();
+dsq.add(100);
+dsq.add(200);
+

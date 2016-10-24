@@ -1,0 +1,12 @@
+public boolean addToCache(Plugin plugin, File file) {
+if (!canCache(file)) {
+return false;
+}
+try {
+return addToCache(plugin, new FileInputStream(file), file.getName());
+public boolean addToCache(Plugin plugin, String fileUrl) {
+if (!canCache(fileUrl)) {
+return false;
+}
+boolean isLocal = !(fileUrl.contains(&quot;http.&quot;) || fileUrl
+

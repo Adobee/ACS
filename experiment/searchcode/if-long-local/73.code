@@ -1,0 +1,11 @@
+Object localObject = (Queue)this.lxa.get(paramLong);
+if (localObject == null) {
+localObject = new LinkedList();
+Queue localQueue = (Queue)this.lxa.remove(paramLong);
+if (localQueue == null)
+return;
+while (!localQueue.isEmpty())
+((dWn)localQueue.poll()).avs();
+}
+}
+

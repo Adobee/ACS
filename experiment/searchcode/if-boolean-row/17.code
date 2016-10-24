@@ -1,0 +1,9 @@
+public boolean isValidSudoku(char[][] a) {
+int n = 9;
+
+boolean[][] row = new boolean[n][n];
+boolean[][] col = new boolean[n][n];
+boolean backtrack(int k, int row, int col, char[][] a, boolean[] f){
+if(k >= 9){
+return validSubSum(a, row, col);
+

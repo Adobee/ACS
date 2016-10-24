@@ -1,0 +1,9 @@
+along with Subsonic.  If not, see <http://www.gnu.org/licenses/>.
+
+Copyright 2009 (C) Sindre Mehus
+* @see net.sourceforge.subsonic.service.SearchService#getRandomSongs
+*/
+public class RandomSearchCriteria {
+private final int count;
+private final String genre;
+

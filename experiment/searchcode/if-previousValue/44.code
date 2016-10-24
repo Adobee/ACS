@@ -1,0 +1,10 @@
+private boolean executed = false;
+private V previousValue = null;
+
+private K key;
+
+public UnsetCommand(K key) {
+public String execute(Database<K, V> db) {
+if (executed) {
+throw new CommandAlreadyExecutedException();
+

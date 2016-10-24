@@ -1,0 +1,7 @@
+public FramedStream pushStream(int associatedStreamId, List<Header> requestHeaders, boolean out)
+throws IOException {
+if (client) throw new IllegalStateException(&quot;Client cannot push requests.&quot;);
+void start(boolean sendConnectionPreface) throws IOException {
+if (sendConnectionPreface) {
+frameWriter.connectionPreface();
+

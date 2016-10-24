@@ -1,0 +1,7 @@
+public class Solution {
+public int rob(int[] num) {
+if(num.length == 0) return 0;
+if(num.length == 1) return num[0];
+
+int[] P = new int[num.length];
+

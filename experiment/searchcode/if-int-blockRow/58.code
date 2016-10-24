@@ -1,0 +1,9 @@
+for (int i = 0; i < rowNum + 2; i++)
+{
+if ((i == 0) || (i == rowNum + 1))
+{
+for (int j = 0; j < columnNum + 2; j++)
+for (int i = 1; i <= blockNum; i++)
+{
+int blockRow = Env.getInteger(&quot;blockRow&quot; + i) + 1;
+

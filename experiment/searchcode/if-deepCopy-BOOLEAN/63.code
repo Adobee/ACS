@@ -1,0 +1,9 @@
+@SuppressWarnings(&quot;all&quot;)
+@Override
+public boolean equals(final Object x, final Object y) {
+return ObjectUtils.equals(x, y);
+public Serializable disassemble(final Object value) {
+final Object deepCopy = this.deepCopy(value);
+
+if (!(deepCopy instanceof Serializable)) {
+

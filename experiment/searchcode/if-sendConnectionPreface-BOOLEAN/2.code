@@ -1,0 +1,14 @@
+((Platform)localObject).configureTls(paramRequest, route.address.uriHost, route.tlsVersion);
+boolean bool = route.supportsNpn();
+if (bool) {
+((Platform)localObject).setProtocols(paramRequest, route.address.protocols);
+httpConnection = new HttpConnection(pool, this, socket);
+}
+
+boolean clearOwner()
+{
+synchronized (pool)
+{
+if (owner == null) {
+return false;
+

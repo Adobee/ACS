@@ -1,0 +1,7 @@
+public WildcardTypeImpl(Type[] upperBounds, Type[] lowerBounds) {
+if (upperBounds.length == 0)
+throw new IllegalArgumentException(&quot;There must be at least one upper bound. For an unbound wildcard, the upper bound must be Object&quot;);
+return &quot;? super &quot; + GenericTypeReflector.getTypeName(lowerBounds[0]);
+} else if (upperBounds[0] == Object.class) {
+return &quot;?&quot;;
+

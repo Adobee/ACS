@@ -1,0 +1,7 @@
+private static final int	DEFAULT_BUFFERLIMIT = 300000;
+
+public static String formatExceptionStackTrace(Throwable exception, Template template)
+public static String formatExceptionStackTrace(Throwable exception, Template template, int stacktraceLimit, int bufferLimit)
+{
+if (null == exception)		throw new IllegalArgumentException(&quot;exception can&#39;t be null.&quot;);
+

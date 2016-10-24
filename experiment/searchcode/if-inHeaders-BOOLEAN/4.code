@@ -1,0 +1,12 @@
+handleLine(line);
+}
+});
+private String command;
+private boolean inHeaders = true;
+
+public void handle(Buffer buffer) {
+String line = buffer.toString().trim();
+if (inHeaders) {
+if (command == null) {
+command = line;
+

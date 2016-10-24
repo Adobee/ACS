@@ -1,0 +1,9 @@
+public class LCMSetEasy {
+public String include(int[] S, int x) {
+long lcm = 1;
+for (int i = 0; i < S.length; i++)
+if (x % S[i] == 0)
+lcm = lcm(lcm, S[i]);
+if (lcm == x)
+return &quot;Possible&quot;;
+

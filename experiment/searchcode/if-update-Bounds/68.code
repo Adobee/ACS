@@ -1,0 +1,10 @@
+when(screenCapture.captureScreen(fullscreenBounds, 0)).thenReturn(new ImageMock(&quot;Format4_3.png&quot;));
+service.run();
+service.run();
+verify(currentBounds, times(1)).updateBounds(new Rectangle(240, 0, 1440, 1080));
+// We call run multiple times to be sure we don&#39;t call the update bounds
+// if it doesn&#39;t change
+resetCurrentBounds();
+service.run();
+service.run();
+

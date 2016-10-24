@@ -1,0 +1,11 @@
+rs = ps.executeQuery();
+if(rs.next()){
+usr = new UserBean();
+usr.setId(rs.getInt(&quot;userId&quot;));
+ps.setInt(2, userId);
+rs = ps.executeQuery();
+if(rs.next()){
+rightPass = true;
+}
+}catch(SQLException e){
+

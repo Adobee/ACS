@@ -1,0 +1,9 @@
+Context appContext = context.getApplicationContext();
+
+long now = System.currentTimeMillis();
+long expiresAt = now + unit.toMillis(expiresIn);
+String token = sharedPref.getString(ACCESS_TOKEN, null);
+long expiresAt = sharedPref.getLong(EXPIRES_AT, 0L);
+
+if (token == null || expiresAt < System.currentTimeMillis()) {
+

@@ -1,0 +1,14 @@
+package com.eric.android.http;
+
+import java.lang.ref.WeakReference;
+
+public class RequestHandle {
+mRequestRef = new WeakReference<AsyncHttpRequest>(request);
+
+}
+
+public void cancel() {
+
+AsyncHttpRequest request = mRequestRef.get();
+if(request != null) {
+

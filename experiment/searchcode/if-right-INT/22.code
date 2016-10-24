@@ -1,0 +1,10 @@
+package sort;
+
+public class QuickSort {
+public static void quickSort(int[]n,int left,int right){
+int dp;
+if(left<right){
+dp = partition(n,left,right);
+quickSort(n,left,dp-1);
+quickSort(n,dp+1,right);
+

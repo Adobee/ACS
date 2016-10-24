@@ -1,0 +1,10 @@
+public class SqrtDouble {
+
+private static double eps =1E-6;
+
+private static double sqrt(double n){
+double left = 0;
+double right = n / 2;
+while(Math.abs((right - left)) > eps){
+double mid = left + (right - left) / 2;
+

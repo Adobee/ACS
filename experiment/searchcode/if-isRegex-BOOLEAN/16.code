@@ -1,0 +1,9 @@
+public class PathFilter implements EventHandler<WebSocketRequest, Boolean> {
+
+private String path;
+private boolean isRegex, whitelist;
+public PathFilter(String path, boolean isRegex, boolean whitelist) {
+this.path = path;
+this.isRegex = isRegex;
+this.whitelist = whitelist;
+

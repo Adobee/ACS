@@ -1,0 +1,9 @@
+observerList = new ArrayList<DnsObserver>();
+}
+
+public static DnsSubject getInstance() {
+if (instance == null) {
+synchronized (DnsSubject.class) {
+if (instance == null) {
+instance = new DnsSubject();
+

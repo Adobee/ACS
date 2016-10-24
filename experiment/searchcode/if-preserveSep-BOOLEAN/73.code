@@ -1,0 +1,10 @@
+? Boolean.valueOf(params.get(EXACT_MATCH_FIRST).toString())
+: true;
+
+boolean preserveSep = params.get(PRESERVE_SEP) != null
+int flags = 0;
+if (exactMatchFirst) {
+flags |= AnalyzingSuggester.EXACT_FIRST;
+}
+if (preserveSep) {
+

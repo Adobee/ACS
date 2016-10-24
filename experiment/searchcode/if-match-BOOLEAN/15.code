@@ -1,0 +1,12 @@
+return matchExp(input.toLowerCase(),match.toLowerCase(),0,0);
+}
+
+static boolean  matchExp(String input, String match, int i, int j){
+
+
+if(i==input.length() &amp;&amp; j==match.length()) return true;
+if(j==match.length()) return false;
+
+if(match.charAt(j)==&#39;*&#39;){
+boolean matchVal = false;
+

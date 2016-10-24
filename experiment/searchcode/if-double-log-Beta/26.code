@@ -1,0 +1,12 @@
+return Double.POSITIVE_INFINITY;
+}
+return Math.log(beta);
+}
+if (val == 1.) {
+if (beta > 1.) {
+return Double.NEGATIVE_INFINITY;
+return regularizedIncBetaQuadrature(alpha, beta, x);
+}
+double bt = Math.exp(-logBeta(alpha, beta) + alpha * Math.log(x) + beta * Math.log1p(-x));
+if (x < (alpha + 1.0) / (alpha + beta + 2.0)) {
+

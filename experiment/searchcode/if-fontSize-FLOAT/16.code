@@ -1,0 +1,17 @@
+public class FontInfo
+{
+private BaseFont bf;
+
+private float fontSize;
+
+private int fontStyle;
+
+private float fontPadding;
+* @return the height of the font, it equals ascent+|descent|+leading
+*/
+public float getWordHeight( )
+{
+if ( bf == null )
+return fontSize;
+return bf.getFontDescriptor( BaseFont.AWT_ASCENT, fontSize )
+

@@ -1,0 +1,12 @@
+public boolean isArgumentDelimiter() {
+return hasType(ExpressionTokenType.ARGUMENT_DELIMITER);
+}
+
+public boolean isFunction() {
+public boolean isOperator() {
+return hasType(ExpressionTokenType.OPERATOR);
+}
+
+public boolean hasAllOperands() {
+if ( ! isOperator() ) {
+

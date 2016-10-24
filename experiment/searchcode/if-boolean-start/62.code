@@ -1,0 +1,10 @@
+@Parameter(names = &quot;--start&quot;, description = &quot;Start the server.&quot;, required = false)
+Boolean start = Boolean.FALSE;
+
+@Parameter(names = &quot;--stop&quot;, description = &quot;Stop the server.&quot;, required = false)
+Boolean help = Boolean.FALSE;
+
+public void postProcess() {
+if (help) {
+return;
+

@@ -1,0 +1,9 @@
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.chart.plot.XYPlot;
+import org.jfree.data.Range;
+import org.jfree.data.xy.XYDataset;
+getChart().setBackgroundPaint(parent.getBackground());
+
+XYPlot xyPlot = (XYPlot) getChart().getPlot();
+xyPlot.setBackgroundPaint(parent.getBackground());
+

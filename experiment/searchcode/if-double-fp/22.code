@@ -1,0 +1,11 @@
+public int total_instances;
+public double tp;
+public double fp;
+public double fn;
+
+public Classes() {
+tp = 0.0;
+public double cal_precision() {
+if ((tp + fp) != 0.0) {
+double p = tp / (tp + fp);
+

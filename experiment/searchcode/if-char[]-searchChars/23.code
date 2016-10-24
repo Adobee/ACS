@@ -1,0 +1,11 @@
+public static char characterTranslate(char subject, char[] searchChars, char[] replaceChars)
+{
+for(int i=0;i<searchChars.length;i++)
+{
+if (subject == searchChars[i])
+public static char characterTranslate(char subject, String searchChars, String replaceChars)
+{
+for(int i=0;i<searchChars.length();i++)
+{
+if (subject == searchChars.charAt(i))
+

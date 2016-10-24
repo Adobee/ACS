@@ -1,0 +1,7 @@
+public void averageRssi(@NonNull ScanResult newResult) {
+if (Build.VERSION.SDK_INT >= 17 &amp;&amp; newResult.timestamp == scanResult.timestamp) {
+return;
+}
+int newRssi = newResult.level;
+newResult.level = scanResult.level;
+

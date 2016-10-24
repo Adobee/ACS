@@ -1,0 +1,12 @@
+**From http://www.spoj.com/problems/NSTEPS/
+*/
+
+import java.util.Scanner;
+
+
+public class Nsteps {
+
+public static void main( String[] args ) {
+public static void printStepValue( final int x, final int y ) {
+if ( x - y == 0 || x - y == 2) {
+

@@ -1,0 +1,10 @@
+package ppa.marc.writer;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.util.List;
+public void writeRecords(OutputStream outputStream, List<Record> records) throws IOException {
+boolean isFirstRecord = true;
+for(Record record : records) {
+if(!isFirstRecord) outputStream.write(&#39;\n&#39;);
+

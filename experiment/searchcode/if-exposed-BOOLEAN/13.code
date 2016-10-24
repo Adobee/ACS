@@ -1,0 +1,8 @@
+private static Map<String, L2NetworkType> types = Collections.synchronizedMap(new HashMap<String, L2NetworkType>());
+private final String typeName;
+private boolean exposed = true;
+types.put(typeName, this);
+}
+
+public L2NetworkType(String typeName, boolean exposed) {
+

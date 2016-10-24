@@ -1,0 +1,13 @@
+public void setTsPoster(TsPoster tsPoster) {
+this.tsPoster = tsPoster;
+}
+
+public boolean equals(Object other) {
+if ((this == other))
+&amp;&amp; castOther.getTsPoster() != null &amp;&amp; this
+.getTsPoster().equals(castOther.getTsPoster())));
+}
+
+public int hashCode() {
+int result = 17;
+

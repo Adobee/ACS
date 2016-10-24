@@ -1,0 +1,15 @@
+public boolean isZero() {
+return x == 0 &amp;&amp; y == 0;
+}
+
+public Point v(Point p2) {
+if (p2.isZero())
+return this;
+if (isZero())
+public Point h(Point p2, int hs) {
+if (p2.isZero())
+return this;
+if (this.isZero())
+return p2;
+return new Point(width() + hs + p2.width(), height() + p2.height());
+

@@ -1,0 +1,14 @@
+protected boolean readOnly = false;
+Set<Shape> shapeSet = new HashSet<>();
+
+
+
+public static ShapeGroup initializeWithReadOnly(Shape[] shapes) {
+public void add(Shape shape) {
+if (readOnly) {
+return;
+}
+
+if (contains(shape)) {
+return;
+

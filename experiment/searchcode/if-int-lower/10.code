@@ -1,0 +1,6 @@
+public static long binomial_factorial(long upper,long lower){
+if(upper<lower||lower<0)
+throw new IllegalArgumentException(&quot;upper should bigger than lower and lower should be nonnegative number!&quot;);
+
+if(lower==0||upper==lower)
+

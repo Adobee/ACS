@@ -1,0 +1,10 @@
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonValue;
+/**
+* HttpMethod
+* @author liujunpeng
+@JsonCreator
+public static HttpMethod valueOf(int value) {
+for (HttpMethod method : HttpMethod.values()) {
+if (method.code() == value) {
+

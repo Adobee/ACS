@@ -1,0 +1,7 @@
+m_si.log(&quot;Failed to Insert Row: %s, Response: %s, Error: %s&quot;, metaData.rawLine, response.getStatus(), response.getStatusString());
+long fc = m_failedCount.incrementAndGet();
+if ((m_maxerrors > 0 &amp;&amp; fc > m_maxerrors)
+sb.append(vals[i]).append(&quot;,&quot;);
+} else if (vt.isFloat() || vt.isNumeric()) {
+vals[i] = reader.getDouble(i);
+

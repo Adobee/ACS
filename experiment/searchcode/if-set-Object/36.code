@@ -1,0 +1,16 @@
+public static ObjectCacheFactory getInstance(){
+if(objectCacheFactory==null){
+objectCacheFactory=new ObjectCacheFactory();
+return objectCache;
+}
+
+public void setObjectCacheSize(int size){
+objectCache.maxSize=size;
+}
+
+public void resetObjectCache(){
+objectCache=new ObjectCache();
+}
+
+}
+

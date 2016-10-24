@@ -1,0 +1,6 @@
+private static TimeZone getTimeZone(DateTimeZone displayZone) {
+if(displayZone==null)
+displayZone= DateTimeZone.UTC;
+DateTimeZone nextZone = GwtZoneInfoProvider.singleton().getZone(displayZone.getID());
+if(nextZone instanceof GwtTimeZone){
+

@@ -1,0 +1,10 @@
+public class TFIDFComparator implements Comparator<TermStats> {
+private int numDocs;
+
+public TFIDFComparator(int numDocs) {
+this.numDocs = numDocs;
+}
+
+public int compare(TermStats a, TermStats b) {
+double tfa = Math.sqrt(a.totalTermFreq);
+

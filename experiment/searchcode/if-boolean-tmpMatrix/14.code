@@ -1,0 +1,7 @@
+protected float[] modelMatrix = new float[16]; // submesh transformation in world space
+protected float[] tmpMatrix = new float[32]; // allocate matrices for transformation computing
+TransformationComponent tf = (TransformationComponent) parent.findComponent(&quot;transformation&quot;);
+
+Matrix.setIdentityM(tmpMatrix, 0);
+Matrix.translateM(tmpMatrix, 0, tf.pos.x, tf.pos.y, tf.pos.z);
+

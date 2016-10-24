@@ -1,0 +1,11 @@
+public Response createBook(@WebParam(name = &quot;BookTO&quot;) JAXBElement<BooksTOType> booksTOTypeJAXBElement)
+{
+BooksTOType booksTOType = booksTOTypeJAXBElement.getValue();
+
+if (LOG.isDebugEnabled())
+LOG.debug(&quot;Books List size&quot; + booksTOType.getBookTO().size());
+}
+if (booksTOType.getBookTO().size() > 0)
+{
+BookTOType bookTOType = booksTOType.getBookTO().get(0);
+

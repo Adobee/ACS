@@ -1,0 +1,7 @@
+for(int j = 0 ; j < count.length ; j++)
+{
+count[j] /= ((double)align.length);
+if(count[j] >= moreThanPercGaps)
+double normalizedSum = (sum[i][j].doubleValue() / (double)(sum.length))*beta;
+ret[i][j] = PointRes.valueOf(1 - max*Math.tanh(normalizedSum)).multiply(probs[i][j]);
+

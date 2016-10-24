@@ -1,0 +1,9 @@
+public void and(QueryParam queryParam) {
+if (this.queryMode == BASIC) {
+throw new RuntimeException(
+&quot;Current QueryParam was set as BASIC mode, can not be added a QueryParam!&quot;);
+}
+this.queryMode = ADVANCED;
+if (orParams == null) {
+orParams = new LinkedList<QueryParam>();
+

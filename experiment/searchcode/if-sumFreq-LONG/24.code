@@ -1,0 +1,7 @@
+public double getPct(Object v) {
+final long sumFreq = getSumFreq();
+if (sumFreq == 0) {
+public double getCumPct(Object v) {
+final long sumFreq = getSumFreq();
+if (sumFreq == 0) {
+

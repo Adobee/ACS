@@ -1,0 +1,10 @@
+*     Red Hat, Inc. - initial API and implementation
+******************************************************************************/
+
+package org.jboss.tools.hibernate.jpt.core.internal.context.orm;
+
+import java.util.ListIterator;
+
+import org.eclipse.jpt.common.core.utility.TextRange;
+import org.eclipse.jpt.common.utility.internal.CollectionTools;
+

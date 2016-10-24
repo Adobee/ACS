@@ -1,0 +1,12 @@
+public class TheLongestIncSubseq {
+
+static int findHigher(int[] A, int[] H, int l, int r, int v) {
+for (int i = r; i >= l; i--) {
+if (A[H[i]] < v) {
+int[] P = new int[n]; // previous indices
+int[] H = new int[n]; // head indices
+P[0] = -1;
+H[0] = 0;
+int nh = 1;
+for (int i = 1; i < A.length; i++) {
+

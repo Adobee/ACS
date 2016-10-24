@@ -1,0 +1,15 @@
+// 乱数シード
+private static Long seed;
+
+// 乱数ジェネレータ
+private static Random rand;
+
+private MyRandom() {
+
+}
+
+public static Random getInstancee() {
+if(rand == null) {
+if (seed == null) {
+setSeed(System.currentTimeMillis());
+

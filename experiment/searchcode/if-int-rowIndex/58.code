@@ -1,0 +1,7 @@
+public static List<Integer> getRow(int rowIndex) {
+List<Integer> MyList = new ArrayList<Integer>(rowIndex+1);
+/*	if (rowIndex == 0) {
+MyList.add(0, 0);
+} else if (rowIndex == 1) {
+MyList.add(0, 1);
+

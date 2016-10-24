@@ -1,0 +1,12 @@
+private String selectedUnit;
+private boolean addObservation;
+
+@FXML
+void categoryChanged(ActionEvent event) {
+if (!executingUseCase()) {
+addState(new StateTransition(ANY_STATE, BEGIN) {
+
+@Override
+public boolean canChangeToNextState() {
+if (stateToChangeTo() == ADD_OBSERVATIONS_SENT)
+

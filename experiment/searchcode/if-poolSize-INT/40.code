@@ -1,0 +1,7 @@
+private static ExecutorService instance = null; // 创建一个可重用固定线程数的线程池
+static {
+ConfigReadWrite config = new ConfigReadWrite();
+int poolSize = 2;
+if (!&quot;&quot;.equals(poolSize)) {
+poolSize = Integer.parseInt(config.getConfigVal(&quot;poolSize&quot;));
+

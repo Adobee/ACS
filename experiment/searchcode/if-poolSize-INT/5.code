@@ -1,0 +1,9 @@
+*            poolSize > 0 进程池大小为poolSize * CPU个数
+*/
+public SkyThreadPool(int poolSize)
+{
+if (poolSize < 0)
+poolSize = 0;
+threadPoolSize = poolSize;
+if (poolSize == 0)
+

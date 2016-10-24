@@ -1,0 +1,6 @@
+final Type rawType = parameterizedType.getRawType();
+if(List.class.equals(rawType) || Set.class.equals(rawType)) {
+final ASTBase innerObject = recursionProvider.parse(getName, setName, typeArguments[0]);
+if(List.class.equals(rawType)) {
+return new ASTList(getName, setName, innerObject);
+

@@ -1,0 +1,11 @@
+import com.google.gwt.text.shared.AbstractRenderer;
+
+public class DefaultStringValueRenderer extends AbstractRenderer<String> {
+public String render(String object) {
+if (object == null) {
+return defaultValue;
+}
+return object;
+}
+}
+

@@ -1,0 +1,10 @@
+double gradientStep = safeDivide(v2 - v1, Math.abs(steps) + 1);
+double gradVal = v1;
+int tmp;
+if (steps > 0) {
+corners[indexes[i1]][0] - corners[indexes[i2]][0],
+diffY(i1, i2, indexes, corners));
+}
+
+public static double stepB(int i1, int i2, int[] indexes, int[] brightnesses, int[][] corners) {
+

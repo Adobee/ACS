@@ -1,0 +1,9 @@
+double var_X = a / 500 + var_Y;
+double var_Z = var_Y - b / 200.0;
+
+if (Math.pow(var_Y, 3) > 0.008856)
+double var_G = var_X * -0.9689 + var_Y * 1.8758 + var_Z * 0.0415;
+double var_B = var_X * 0.0557 + var_Y * -0.2040 + var_Z * 1.0570;
+
+if (var_R > 0.0031308)
+

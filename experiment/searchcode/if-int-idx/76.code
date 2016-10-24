@@ -1,0 +1,13 @@
+if(ratings.length == 1)
+return 1;
+
+int candies = 1;
+
+int idx = 1;
+int currR;
+while(idx<ratings.length){
+
+if (ratings[idx-1]<ratings[idx]){
+int candy = 2;
+while(idx<ratings.length){
+

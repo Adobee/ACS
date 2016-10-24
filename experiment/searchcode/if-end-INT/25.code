@@ -1,0 +1,10 @@
+public void merge(int A[], int m, int B[], int n) {
+
+
+int j = m-1, i=n-1;
+int end = m+n-1;
+
+while( i >= 0 &amp;&amp; j >=0){
+if(B[i]>=A[j]) {
+A[end] = B[i];
+

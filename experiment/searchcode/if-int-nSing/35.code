@@ -1,0 +1,12 @@
+public void singForce(ForceData data);
+}
+
+static final class Sing {
+// Number of singularities
+int Nsing;
+
+// Value of the singularities
+for(int j = 0; j < aux2.Nsing; j++) {
+if(aux.type[i].equals(aux2.type[j])) {
+FillForceData(aux2, j, aux, i, fdata);
+

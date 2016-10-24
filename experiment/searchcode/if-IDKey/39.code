@@ -1,0 +1,12 @@
+public class LocalizationStringsId implements java.io.Serializable {
+
+private short idkey;
+private byte idlanguage;
+
+public LocalizationStringsId() {
+}
+
+public LocalizationStringsId(short idkey, byte idlanguage) {
+this.idkey = idkey;
+this.idlanguage = idlanguage;
+

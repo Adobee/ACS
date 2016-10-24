@@ -1,0 +1,10 @@
+
+public class Problem42_Trapping_Rain_Water {
+public int trap(int[] height) {
+int curmaxid = 0;
+int l = height.length;
+if(l == 0)
+return 0;
+for(int i = 0; i < l; i++){
+if(height[i] >= height[curmaxid]){
+

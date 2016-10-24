@@ -1,0 +1,10 @@
+Expression exp = new Expression(a,1);
+expressions.add(exp);
+*/
+
+//String vertexId = a.getId().toString();
+
+Iterable<OrientVertex> iterable;
+do {
+iterable = (Iterable<OrientVertex>) 		responseDB.getGraph().command(new OCommandSQL(&quot;select * from Expression WHERE nao_terminais = 0 and tested = false limit 1 &quot;)).execute();
+

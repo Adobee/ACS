@@ -1,0 +1,13 @@
+public void solve(double timeStep, double time, Vector y, IvpOdeSystemSolver.SolutionStepInfo solutionStepInfo) {
+solutionStepInfo = null;
+
+int order = y.elements.length;
+
+if (order == 0) return;
+
+if (order != lastOrder) {
+f.evaluate(time, y, k1);
+k1.scaleYourself(timeStep);
+
+f.evaluate(time + timeStep/2, y.linearCombineConstruct(1, 0.5, k1), k2);
+

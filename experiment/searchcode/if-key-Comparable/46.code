@@ -1,0 +1,11 @@
+put(writable.toString(), mw.get(writable).toString());
+}
+if (mw.get(sortFieldKey) != null) {
+this.comparable = mw.get(sortFieldKey).toString();
+}
+}
+
+@Override
+public int compareTo(RowComparable row) {
+// This logic ensures that when sorting, null sort fields show up at the beginning
+

@@ -1,0 +1,13 @@
+return Math.pow(x + 5, 4);
+}
+
+public static void main(String[] args) {
+double l = -10;
+double r = 15;
+for (double eps : new double[] { 0.1, 0.01, 0.001, 1e-5, 1e-7 }) {
+goldenSection(l, r, eps);
+}
+}
+
+private static void goldenSection(double l, double r, double eps) {
+

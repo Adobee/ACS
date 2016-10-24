@@ -1,0 +1,13 @@
+Locale result = findLocale(locale);
+if (result == null) {
+result = defaultLocale;
+}
+return result;
+}
+
+private Locale findLocale(Locale locale) {
+Locale result = null;
+
+for (Locale aLocale : locales) {
+if (aLocale.equals(locale)) {
+

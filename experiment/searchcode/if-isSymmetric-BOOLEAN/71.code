@@ -1,0 +1,12 @@
+import java.util.*;
+
+class Solution {
+public boolean isSymmetric(TreeNode root) {
+if (root == null) {
+return true;
+}
+return isSymmetric(root, root);
+}
+
+private boolean isSymmetric(TreeNode p, TreeNode q) {
+

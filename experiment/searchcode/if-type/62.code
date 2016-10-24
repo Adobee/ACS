@@ -1,0 +1,10 @@
+Status.init(rc);
+RobotType type = rc.getType();
+
+if(type == RobotType.HQ) {
+HQ.run(rc);
+} else if(type == RobotType.AEROSPACELAB) {
+AeroSpaceLab.run(rc);
+} else if(type == RobotType.BARRACKS) {
+Barracks.run(rc);
+

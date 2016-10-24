@@ -1,0 +1,9 @@
+public abstract class RefreshableFragment extends BaseFragment{
+
+public SwipeRefreshLayout mSwipeRefreshLayout;
+
+@Override
+public void onViewCreated(View view, Bundle savedInstanceState) {
+public void setupSwipeRefreshLayout(View view) {
+mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+

@@ -1,0 +1,9 @@
+super(input);
+previousState = 0;
+}
+
+public boolean getButtonToggle(int buttonNumber) {
+boolean retValue = false;
+boolean buttonWasOff = (bitValue &amp; previousState) == 0;
+boolean buttonIsOn = getRawButton(buttonNumber);
+

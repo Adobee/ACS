@@ -1,0 +1,6 @@
+public long getValueAsLong(long duration, long instant) {
+return iField.getValueAsLong(duration, instant);
+}
+public long getMillis(int value, long instant) {
+return iField.getMillis(value, instant);
+

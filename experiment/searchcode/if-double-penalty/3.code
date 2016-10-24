@@ -1,0 +1,9 @@
+private static final double INCREASEFACTOR = 0.125;
+private static final double MINVALUE = 0;
+private double penaltyFactor = 0.0;
+
+@Override
+public double doPenalty(TTPSolution sol) {
+
+double result = sol.getScTotal() * penaltyFactor;
+

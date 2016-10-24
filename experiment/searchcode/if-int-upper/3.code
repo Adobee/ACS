@@ -1,0 +1,9 @@
+int lowerI = 0;
+int upperI = matrix.length - 1;
+int lowerJ = 0;
+int upperJ = matrix[0].length - 1;
+upperI--;
+}
+if(canContinue(lowerI, upperI, lowerJ, upperJ)){
+for(int i = upperI; i>= lowerI; i--)
+

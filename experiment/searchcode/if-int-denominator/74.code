@@ -1,0 +1,9 @@
+public Rational(int numerator, int denominator)
+{
+this.numerator = numerator;
+if(denominator > 0)
+private static int lcm(int thisDenominator, int incomingDenominator)
+{
+int num1, num2;
+if (thisDenominator > incomingDenominator) {
+

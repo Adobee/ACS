@@ -1,0 +1,11 @@
+public static Uri getCalendarContentUri() {
+Uri uri;
+if(OSUtils.osAtLeastFroyo()) {
+uri = CALENDAR_CONTENT_URI_FROYO_PLUS;
+return uri;
+}
+
+public static Uri getEventContentUri() {
+Uri uri;
+if(OSUtils.osAtLeastFroyo()) {
+

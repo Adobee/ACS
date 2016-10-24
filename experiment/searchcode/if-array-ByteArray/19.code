@@ -1,0 +1,13 @@
+buf.insert(0, str);
+
+return buf.toString();
+}
+}
+
+public static byte[] intToByte(int value)
+{
+byte[] byteArray = new byte[Integer.SIZE/Byte.SIZE];
+
+byteArray[0] = (byte)((value >> 24)&amp; 0xff);
+byteArray[1] = (byte)((value >> 16)&amp; 0xff);
+

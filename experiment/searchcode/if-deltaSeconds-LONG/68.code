@@ -1,0 +1,9 @@
+public static void physicsUpdate(long delta){
+for(Asteroid asteroid : MainGame.asteroidList)
+updateEntity(asteroid, delta);
+entity.setRotation((float)((entity.getRotation()+(float)(entity.getAngularVelocity()*deltaSeconds))%(2*Math.PI)));
+}
+
+public static void handleCollisions(long delta){
+// collision?
+

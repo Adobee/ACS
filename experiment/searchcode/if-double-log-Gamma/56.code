@@ -1,0 +1,7 @@
+for (int k = 0; k < model.num_topics; k++)
+{
+doc.gamma[k] = model.alpha + (doc.total/((double) model.num_topics));
+double exp_theta_square = 0;
+double sum_gamma = 0;
+for(int k = 0; k < num_topics; k++)
+

@@ -1,0 +1,11 @@
+public static void add(ListIterator<Integer> d1, ListIterator<Integer> d2, int carry) {
+int num = carry;
+if (d2.hasNext()) {
+num += d2.next();
+}
+
+if (d1.hasNext()) {
+num += d1.next();
+
+d1.set(num%10); // set current digit result
+

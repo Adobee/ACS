@@ -1,0 +1,9 @@
+import javax.portlet.ActionRequest;
+import javax.portlet.ActionResponse;
+import javax.portlet.PortletException;
+import javax.xml.namespace.QName;
+String categoryIds = ParamUtil.getString(actionRequest, &quot;categoryIds&quot;);
+
+if (Validator.isNotNull(categoryIds)) {
+actionResponse.setRenderParameter(&quot;categoryId&quot;, categoryIds);
+

@@ -1,0 +1,7 @@
+final IndexSearcher searcher = newSearcher(reader);
+
+final boolean trackScores = randomBoolean();
+final int pageSize = randomIntBetween(1, numDocs / 2);
+Query query = new TermQuery(new Term(&quot;foo&quot;, &quot;bar&quot;));
+if (trackScores == false) {
+

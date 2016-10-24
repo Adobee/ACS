@@ -1,0 +1,7 @@
+public boolean isSubtype(ConcreteType that) {
+if (rawType.desc.equals(RawType.coreBottom))
+return true;
+
+SuperType[] myGenericArgsForThat = rawType.superGenerics.get(that.rawType);
+if (myGenericArgsForThat == null)
+

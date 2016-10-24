@@ -1,0 +1,13 @@
+* 清除beanFactory静态变量.
+*/
+public static void cleanBeanFactory() {
+beanFactory = null;
+}
+
+public static boolean isContextReady() {
+return beanFactory != null;
+}
+
+private static void checkBeanFactory() {
+if (beanFactory == null) {
+

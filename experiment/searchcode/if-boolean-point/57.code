@@ -1,0 +1,16 @@
+public class ContainsPointCommand implements Command {
+
+private boolean ok = false;
+
+private Point point;
+public void execute(PointStorage points) {
+if (points.containsPoint(point)) {
+ok = true;
+}
+}
+
+public boolean isOk() {
+return ok;
+}
+}
+

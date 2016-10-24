@@ -1,0 +1,11 @@
+t = new Thread (this, String.valueOf(threadNumber));
+t.start ();
+}
+Values.iterationArray[threadNumber-1]++;
+do {} while (Values.iterationArray[0]!=Values.iterationArray[1] &amp; Values.iterationArray[1]!=Values.iterationArray[2] &amp; Values.iterationArray[2]!=Values.iterationArray[3] &amp; Values.iterationArray[3]!=Values.iterationArray[0]);
+System.out.println(&quot;r&quot; + threadNumber + &quot; iteratorArray=&quot; + Arrays.toString(Values.iterationArray));
+}
+
+public void run() {
+System.out.println(&quot;r&quot; + threadNumber + &quot; is running&quot;);
+

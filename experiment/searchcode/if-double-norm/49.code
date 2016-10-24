@@ -1,0 +1,12 @@
+public class ArraySFTFunction implements SFTFunction{
+
+private Complex[] values;
+private double infNorm; //Uninitialised
+
+
+/**if user somehow knows infNorm, he will kindly tell us.
+* default should be 1.0, for WAV files values are bounded by -1 &amp; 1. */
+public ArraySFTFunction(Complex[] values, double infNorm){
+this.values=values;
+this.infNorm=infNorm;
+

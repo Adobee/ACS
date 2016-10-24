@@ -1,0 +1,8 @@
+public ProductTemplateDetails update(String fillType, ProductTemplateDetails templateDetails) throws Exception {
+if(fillType.equals(&quot;ALL&quot;)) {
+addColumnList(&quot;template_name, template_jsp, active, default_template&quot;);
+}
+
+if(fillType.equals(&quot;DEFAULT&quot;)) {
+addColumnList(&quot;default_template&quot;);
+

@@ -1,0 +1,15 @@
+public class Job implements Comparable<Job>
+{
+private int id;
+private String name;
+private String[] args;
+if(id < other.id)
+return -1;
+else if (id > other.id)
+return 1;
+else
+return 0;
+}
+
+public String toString()
+

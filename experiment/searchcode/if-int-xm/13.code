@@ -1,0 +1,7 @@
+int xm = x + size.width/2;    // The &quot;middle&quot; of symbol in x direction
+int xr = x + size.width;      // The &quot;right&quot; of symbol in x direction
+int ym = y + size.height/2;   // The &quot;middle&quot; of symbol in y direction
+int yb = y + size.height;     // The &quot;bottom&quot; of symbol in y direction
+
+if(orientation.equals(&quot;UP&quot;) &amp;&amp; relationship==&#39;F&#39;)
+

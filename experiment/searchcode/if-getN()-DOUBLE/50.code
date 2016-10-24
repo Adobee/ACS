@@ -1,0 +1,14 @@
+public GaussDiagonale(double[][] a, double[] y) {
+super(a, y);
+} // Costruttore normale
+@Override protected void triangolarizza() { // diagonalizza
+for (int k = j; k <= n; k++)
+a[i][k] -= c * a[j][k];
+}
+}
+}
+} // triangolarizza
+@Override protected double[] calcoloSoluzione() {
+int n = getN();
+double[] x = new double[n];
+

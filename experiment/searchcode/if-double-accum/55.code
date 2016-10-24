@@ -1,0 +1,13 @@
+return ret;
+}
+
+public double evalError(double x) {
+double ret = super.evalError(x)*evalCount(x);
+if (_normalizing)
+ret /= (_binWidth * _fullSum);
+return ret;
+}
+
+
+public void accum(double x, double y) {
+

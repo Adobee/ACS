@@ -1,0 +1,15 @@
+package db.sql;
+
+import db.Constant;
+
+public enum PredicateOp {
+
+LT {
+public String getStringId() {
+for (PredicateOp op : values()) {
+if (op.getStringId().equals(str)) {
+return op;
+}
+}
+throw new UnsupportedOperationException(String.format(
+

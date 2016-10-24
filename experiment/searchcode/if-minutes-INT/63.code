@@ -1,0 +1,11 @@
+// pre: hours >= 0 &amp;&amp; minutes >= 0
+public Timespan(){
+this(0,0);
+}
+public Timespan(int hours, int minutes){
+add(hours, minutes);
+// pre: hours >= 0 &amp;&amp; minutes >= 0
+public void add(int hours, int minutes){
+if (hours < 0 || minutes <0){
+throw new IllegalArgumentException();
+

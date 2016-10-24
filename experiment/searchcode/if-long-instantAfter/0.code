@@ -1,0 +1,8 @@
+public abstract String getNameKey(long instant);
+public String getShortName(long instant, Locale locale) {
+if (locale == null)
+long offsetBefore = getOffset(instantBefore);
+long offsetAfter = getOffset(instantAfter);
+
+if (offsetBefore <= offsetAfter)
+

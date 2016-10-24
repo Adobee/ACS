@@ -1,0 +1,8 @@
+public double cosineSimilarity(int[] A, int[] B) {
+double cosine = 0.0;
+double sumA = 0.0;
+double sumB = 0.0;
+double sumMolecule = 0.0;
+for (int i = 0; i < A.length; i++) {
+sumA += A[i] * A[i];
+

@@ -1,0 +1,11 @@
+* Creates an undirected edge without weight
+* between two vertices
+*
+* @param vFrom, vTo
+*
+*/
+public void addEdge(int vFrom, int vTo)
+{
+edgeList[vFrom].addToBeginning(new Node(vTo));
+edgeList[vTo].addToBeginning(new Node(vFrom));
+

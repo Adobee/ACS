@@ -1,0 +1,6 @@
+public void move(boolean[][] collisionMap, Direction dir) {
+Vector2D newPos = pos.addVector(new Vector2D(dir.getX(), dir.getY()));
+if (orientation == Direction.UP) {
+if (dir == Direction.DOWN) {
+if (!collisionMap[newPos.getX()][newPos.getY() + 1]
+

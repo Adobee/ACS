@@ -1,0 +1,9 @@
+builder.addFormDataPart(entry.getKey(), entry.getValue().value());
+}
+
+// 二进制/文件拼接
+final Map<String, MultipartFormData.BinaryBody> fileForm = formData.getFileForm();
+RequestBody requestBody;
+if (entry.getValue().isFile()) {
+requestBody = RequestBody.create(MediaType.parse(entry.getValue().mediaType()),
+

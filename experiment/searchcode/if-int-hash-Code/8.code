@@ -1,0 +1,14 @@
+// Hash code generation utility methods start
+// ============================================================================
+/**
+* Number used in hash code generation.
+*/
+protected static final int HASH_PRIME = 37;
+return (hash * HASH_PRIME + in);
+}
+
+public static int hashCode(int hash, Object o) {
+if (o == null)
+return hash;
+return hashCode(hash, o.hashCode());
+

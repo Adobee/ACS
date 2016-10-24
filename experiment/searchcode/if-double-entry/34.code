@@ -1,0 +1,10 @@
+Map<Integer,Double> map = map2;
+for (Map.Entry<Integer,Double> entry : map1.entrySet()) {
+Integer key = entry.getKey();
+Double value1 = entry.getValue();
+
+Double value2 = map2.get(key);
+
+if (value2 != null) {
+map.put(key,value1+value2);
+

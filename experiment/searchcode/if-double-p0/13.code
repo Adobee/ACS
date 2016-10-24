@@ -1,0 +1,7 @@
+public double getYValue(double x) {
+double[] p0 = Arrays.stream(this.doubles).parallel()
+.filter(doubles1 -> doubles1[0] <= x)
+.filter(doubles1 -> doubles1[0] >= x)
+.min((o1, o2) -> Double.compare(o1[0], o2[0])).get();
+if (Arrays.equals(p0, p1))
+

@@ -1,0 +1,12 @@
+System.out.println(-1);
+return;
+}
+long min = m < n ? m : n;
+long max = m < n ? n : m;
+long result;
+if (k >= max - 1) {
+result = min / (k - max + 2);
+}
+else if (k > min - 1) {
+result = ((long) (max / (k + 1))) * min;
+

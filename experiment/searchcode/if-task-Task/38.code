@@ -1,0 +1,17 @@
+this.task = task;
+}
+
+public CallRet get(){
+if(task != null){
+try {return task.get();} catch (Exception e) {}
+return task != null &amp;&amp; task.isUpCancelled();
+}
+
+public void cancel(){
+if(task != null){
+try{task.cancel();}catch(Exception e){}
+}
+}
+
+}
+

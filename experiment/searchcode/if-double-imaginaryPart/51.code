@@ -1,0 +1,7 @@
+* If number of arguments is different than three, or if entered degree is integer less than or equal 1, program exits with error.
+* If first two arguments cannot be parsed as {@link double}, or if third argument cannot be parsed as {@link int} program will crash.
+double imaginaryPart = Double.parseDouble(args[1]);
+int degree = Integer.parseInt(args[2]);
+
+if(degree < 2) {
+

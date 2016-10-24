@@ -1,0 +1,7 @@
+public int hashCode() {
+final int prime = 31;
+int result = 1;
+result = prime * result + Float.floatToIntBits(color_b);
+result = prime * result + Float.floatToIntBits(color_g);
+result = prime * result + Float.floatToIntBits(color_r);
+

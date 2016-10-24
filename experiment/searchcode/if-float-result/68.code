@@ -1,0 +1,8 @@
+return result;
+}
+
+public static float constrains(float input, float a, float b) {
+float result = input;
+final float min = Math.min(a, b);
+final float max = Math.max(a, b);
+

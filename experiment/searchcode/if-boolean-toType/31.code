@@ -1,0 +1,9 @@
+import java.util.Map;
+
+/**
+* Fix for default {@link ognl.DefaultTypeConverter}
+* Made it tolerant for boolean &quot;false&quot; value
+public Object convertValue(Map context, Object value, Class toType) {
+if (toType == boolean.class &amp;&amp; value instanceof String)
+return Boolean.valueOf((String) value);
+

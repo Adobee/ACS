@@ -1,0 +1,8 @@
+public void tick(double dt) {
+super.tick(dt);
+if(health <= 0) {
+delete();
+if(speed > maxSpeed) speed = maxSpeed;
+double dp = speed * dt;
+if(dest == null) {
+

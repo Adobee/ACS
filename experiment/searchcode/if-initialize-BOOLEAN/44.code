@@ -1,0 +1,13 @@
+public AbstractComputingIterator() {
+this(true);
+}
+
+public AbstractComputingIterator(final boolean initialize) {
+super();
+if (initialize) {
+initialize();
+}
+}
+
+protected abstract E compute();
+

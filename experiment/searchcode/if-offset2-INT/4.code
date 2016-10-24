@@ -1,0 +1,7 @@
+public static float inner(int size, float[] v1, int offset1, float[] v2, int offset2) {
+if (size % 4 != 0) {
+throw new IllegalArgumentException(&quot;Vector size must be a multiple of 4&quot;);
+// (current JVM does not support vectorized accumulation)
+for (int i = 0; i < size; i += 4) {
+x0 += v1[offset1 + i + 0] * v2[offset2 + i + 0];
+

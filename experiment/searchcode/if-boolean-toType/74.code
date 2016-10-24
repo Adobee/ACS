@@ -1,0 +1,8 @@
+public <T> T convertTo(Serializable value, Class<T> toType)
+throws PropertyConversionException {
+if (value == null || Boolean.class == toType) {
+return (T) value;
+}
+Boolean v = (Boolean) value;
+if (toType == String.class) {
+

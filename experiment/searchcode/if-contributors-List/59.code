@@ -1,0 +1,8 @@
+private List<Contributor> contributors;
+
+public RepositoryImpl(RepositoryServiceSPI service) {
+this.service = service;
+public List<Contributor> getContributors() {
+if( contributors == null ) {
+contributors = service.findContributors(this);
+

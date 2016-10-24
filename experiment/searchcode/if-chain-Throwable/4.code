@@ -1,0 +1,9 @@
+while (currentThrowable != null) {
+Throwable parentThrowable = ExceptionUtils.getParentThrowable(currentThrowable);
+if (parentThrowable != null) {
+pw.print(message);
+if (parentThrowable != null) {
+pw.print(&quot;  &quot;);
+}
+currentThrowable = parentThrowable;
+

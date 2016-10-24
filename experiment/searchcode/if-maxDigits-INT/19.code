@@ -1,0 +1,10 @@
+for (int i = res.length - 1; i >= 0; i--)
+for (int j = 0; j < waterHeight.length; j++)
+if (res.length - i <= waterHeight[j] &amp;&amp; res[i][left + j] == BLANK)
+return res;
+}
+
+public static int maxDigits(int[] arr) {
+int maxDigits = 1;
+int max = max(arr);
+

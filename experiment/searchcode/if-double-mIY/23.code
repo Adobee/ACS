@@ -1,0 +1,7 @@
+throw new IllegalArgumentException(&quot;Attempt to read before Hash is Finalized&quot;);
+}
+ReturnValues.clear();
+if(XA > XB){double T = XB; XB = XA; XA = T;}
+if(YA > YB){double T = YB; YB = YA; YA = T;}
+int iX = (int)Math.max(Math.floor((XA - POSX) / Width), 0);
+

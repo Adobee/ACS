@@ -1,0 +1,12 @@
+public enum BuffType implements ABuffType {
+
+Ghost {
+@Override
+public Buff newBuffHook(APlayer p, boolean infinite) {
+return new GhostBuff(p, infinite);
+}
+},
+Speed {
+@Override
+public Buff newBuffHook(APlayer p, boolean infinite) {
+

@@ -1,0 +1,12 @@
+private volatile boolean mIsCancelled = false;
+private volatile boolean mCancelable = true;
+
+public abstract Identifier<?> getIdentifier();
+final synchronized boolean isCancelled() {
+return mIsCancelled;
+}
+
+final synchronized boolean cancel() {
+if (mCancelable) {
+mIsCancelled = true;
+

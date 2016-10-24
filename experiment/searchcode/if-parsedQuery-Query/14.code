@@ -1,0 +1,8 @@
+for(String table : parsedQuery.selectFrom) {
+BibaObject obj = this.objectManager.getObject(table);
+if(obj == null) continue;
+if(parsedQuery.getReadIL() == null)
+parsedQuery.setReadIL(obj.getIntegrityLevel());
+else {
+if(obj.getIntegrityLevel().getValue() < parsedQuery.getReadIL().getValue())
+

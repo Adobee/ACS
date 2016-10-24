@@ -1,0 +1,16 @@
+public class Lesson_32_Activity_Two {
+
+public static void monthDays(int a)
+{
+int days;
+
+days = a;
+
+if(a == 1)
+days = 31;
+if(a == 2)
+days = 28;
+if(a == 3)
+days = 31;
+if(a == 4)
+

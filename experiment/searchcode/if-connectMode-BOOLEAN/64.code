@@ -1,0 +1,10 @@
+int connectMode = getIntFromMap(mapConnection, &quot;ConnectMode&quot;, PPP_ON_DEMAND);
+if (connectMode == PPP_ON_DEMAND) {
+sts.connectMode = RouterStatus.CONNECT_MODE_AUTO;
+sendRequest(&quot;dialup/dial&quot;, &quot;<Action>0</Action>&quot;);
+}
+
+boolean update() {
+if ((mapStatus = getResponse(&quot;monitoring/status&quot;)) == null) {
+return false;
+

@@ -1,0 +1,8 @@
+public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+if(l1 == null){ return l2;}
+ListNode head = l1;
+int carry = 0;
+
+while(l1 != null &amp;&amp; l2 != null) {
+l1.val += l2.val + carry;
+

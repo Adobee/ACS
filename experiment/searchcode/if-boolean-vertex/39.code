@@ -1,0 +1,9 @@
+cost=Cost;
+vertexA=VertexA;
+vertexB=VertexB;
+}
+public boolean equals(Object o){
+if (o instanceof Edge){
+Edge e=(Edge)o;
+return (e.vertexA==vertexA &amp;&amp; e.vertexB==vertexB) || (e.vertexA==vertexB &amp;&amp; e.vertexB==vertexA);
+

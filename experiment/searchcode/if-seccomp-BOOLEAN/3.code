@@ -1,0 +1,9 @@
+final Arch arch = ARCHITECTURES.get(Constants.OS_ARCH);
+boolean supported = Constants.LINUX &amp;&amp; arch != null;
+if (supported == false) {
+throw new UnsupportedOperationException(&quot;seccomp unavailable: &#39;&quot; + Constants.OS_ARCH + &quot;&#39; architecture unsupported&quot;);
+// test seccomp(BOGUS)
+long ret = linux_syscall(arch.seccomp, bogusArg);
+if (ret != -1) {
+throw new UnsupportedOperationException(&quot;seccomp unavailable: seccomp(BOGUS_OPERATION) returned &quot; + ret);
+

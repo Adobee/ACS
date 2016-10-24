@@ -1,0 +1,9 @@
+public class Solution {
+public int minDepth(TreeNode root) {
+
+int result = 0;
+if(root == null) return 0;
+int rightDepth = minDepth(root.right);
+int leftDepth = minDepth(root.left);
+if(leftDepth != 0)
+

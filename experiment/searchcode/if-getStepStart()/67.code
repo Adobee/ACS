@@ -1,0 +1,10 @@
+StepDO result = getSteps().get(name.toUpperCase());
+if (result == null) {
+throw new WorkflowException(&quot;Reference to unknown workflow step: &quot; + name, getName());
+}
+return result;
+}
+
+public void addStep(StepDO step) {
+if (getSteps().size() == 0) {
+

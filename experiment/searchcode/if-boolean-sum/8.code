@@ -1,0 +1,11 @@
+return hasPathSum(root, sum, tmpSum);
+}
+public static boolean hasPathSum(TreeNode root, int sum, Integer tmpSum){
+if(root == null){
+if(root.left == null &amp;&amp; root.right == null){
+return tmpSum == sum;
+}
+
+boolean b = hasPathSum(root.left, sum, tmpSum);
+if(b){
+

@@ -1,0 +1,9 @@
+int rootX = root(x);
+int rootY = root(y);
+if(rootX==rootY) return;
+if(size[rootX]>=size[rootY]) {
+id[rootY] = rootX;
+size[rootX] = size[rootX] + size[rootY];
+}else{
+id[rootX] = rootY;
+

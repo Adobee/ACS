@@ -1,0 +1,12 @@
+public PowerEmitterEntity() {
+super();
+this.maxPower = 100;
+}
+
+int i = 0;
+@Override
+public void updateEntity() {
+super.updateEntity();
+if(i >= 2 &amp;&amp; this.canStorePower()) {
+int gen = this.maxPower - this.power;
+

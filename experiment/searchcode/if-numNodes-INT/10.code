@@ -1,0 +1,12 @@
+int numpops = dem.getNumPops();
+int i;
+double rate = 0;
+int numnodes;
+int popsize;
+
+for (i = 0; i < numpops; i++) {
+popsize = dem.getPopSizeByIndex(i);
+if (numnodes > 1)
+rate += (double) (numnodes * (numnodes - 1))
+/ (4 * popsize);
+

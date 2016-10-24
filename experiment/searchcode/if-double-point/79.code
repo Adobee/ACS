@@ -1,0 +1,9 @@
+System.out.println(String.valueOf(a) + &quot;*x+&quot; + String.valueOf(b));
+
+double pointX = Double.valueOf(args[2]);
+double pointY = Double.valueOf(args[3]);
+
+if(a * pointX + b > pointY)
+System.out.println(&quot;Ni>|<e&quot;);		//ниже
+else if(a * pointX + b == pointY)
+

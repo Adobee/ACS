@@ -1,0 +1,12 @@
+public static double getMean(double []data) {
+double sum = 0;
+for (double d : data)
+sum += d;
+return sum / data.length;
+temp += Math.pow((mean - d), 2);
+return temp / data.length;
+}
+
+public static double getStdDev(double []data) {
+double var = Statistics.getVariance(data);
+

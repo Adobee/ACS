@@ -1,0 +1,12 @@
+boolean unique(String s) {
+if (s == null || s.length() > 256)
+return false;
+boolean[] appeared = new boolean[256];
+for (char c : s.toCharArray()) {
+if (appeared[c])
+return false;
+appeared[c] = true;
+}
+return true;
+}
+

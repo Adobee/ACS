@@ -1,0 +1,11 @@
+if(azimuth == null || distance == null) {
+return;
+}
+
+int leftPosition = getLeft(leftArm, rightArm, canvas.getWidth());
+int topPosition = 30;
+canvas.drawLine(leftPosition, 0, leftPosition, canvas.getHeight(), markerPaint);
+
+// if description would be out of viewport show this left aligned
+if (canvas.getWidth() - leftPosition < textWidth) {
+

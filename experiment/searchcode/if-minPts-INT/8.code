@@ -1,0 +1,13 @@
+final public static int DEF_MIN_PTS = 5;
+
+final protected int minPts;
+protected double eps = DEF_EPS;
+
+public AbstractDBSCAN(RealMatrix data, AbstractDBSCANParameters<? extends AbstractDBSCAN> planner) {
+super(data, planner);
+
+this.minPts = planner.getMinPts();
+
+if(this.minPts < 1)
+throw new IllegalArgumentException(&quot;minPts must be greater than 0&quot;);
+

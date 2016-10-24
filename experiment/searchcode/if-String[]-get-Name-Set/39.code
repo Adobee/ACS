@@ -1,0 +1,18 @@
+if (name.length > 0)
+{
+this.setPrefix(name[0]);
+}
+if (name.length > 1)
+{
+this.name = name[1];
+}
+if (name.length > 2)
+{
+this.setPostfix(name[2]);
+}
+}
+
+public String getName()
+{
+return NameUtil.getClassName(getPrefix() + name + getPostfix());
+

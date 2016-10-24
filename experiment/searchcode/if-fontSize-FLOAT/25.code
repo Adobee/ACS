@@ -1,0 +1,12 @@
+private float fontSize;
+private float spaceWidth;
+public GameObject[] characters = new GameObject[0];
+s = font.getSprite(String.valueOf(text.charAt(i)));
+break;
+}
+if (s == null) continue;
+
+float width = (s.w / s.h) * fontSize;
+
+characters[i] = new GameObject(null, new GuiRenderer(font, s, width, fontSize));
+

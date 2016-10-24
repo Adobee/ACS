@@ -1,0 +1,14 @@
+package com.sukanya.Array;
+
+public class MaxSum
+{
+public int maxSubArray(int[] A)
+{
+if(A == null)
+else
+{
+int sum = A[0];
+int max = A[0];
+
+for(int i=1;i<A.length;i++)
+

@@ -1,0 +1,9 @@
+public static void subscribeSyncRegistration(SyncRegistrationWithExternalServices syncRegistrationWithExternalServices) {
+syncExternalRegistrations.add(syncRegistrationWithExternalServices);
+}
+
+public static boolean triggerSyncPersonToExternal(Person person) {
+for (SyncPersonWithExternalServices syncExternalPerson : syncExternalPersons) {
+boolean callSuccess = syncExternalPerson.syncStudentToExternal(student);
+if (!callSuccess) {
+

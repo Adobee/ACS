@@ -1,0 +1,7 @@
+{ return x == 0 &amp;&amp; Math.copySign(1, x) == -1; }
+
+private static boolean cmpDenorm(double x, double y) {
+if (Double.isNaN(x) &amp;&amp; Double.isNaN(y)) return true;
+if (x == pinf &amp;&amp; y == pinf) return true;
+if (x == minf &amp;&amp; y == minf) return true;
+

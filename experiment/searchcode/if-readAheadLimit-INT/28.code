@@ -1,0 +1,11 @@
+public class LineColumnReader extends LineNumberReader {
+
+private int column = 0;
+private int markedColumn = 0;
+
+public LineColumnReader(Reader in) {
+@Override public int read() throws IOException {
+int c = super.read();
+if (c == &#39;\n&#39;) {
+column = 0;
+

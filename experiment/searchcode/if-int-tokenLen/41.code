@@ -1,0 +1,11 @@
+final String token = parseToken(mPattern, indexRef);
+i = indexRef[0];
+
+final int tokenLen = token.length();
+if (tokenLen == 0) {
+break;
+}
+
+Rule rule;
+final char c = token.charAt(0);
+

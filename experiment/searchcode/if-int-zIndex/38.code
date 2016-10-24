@@ -1,0 +1,10 @@
+public abstract class ZIndexAllocator {
+private static int _nextZIndex = 1;
+private static TreeMap<Integer, Element> _zIndexMap = new TreeMap<Integer, Element>();
+public static void reset() {
+_nextZIndex = 1;
+_zIndexMap.clear();
+}
+
+public static int allocateSetZIndex(Element element) {
+

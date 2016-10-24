@@ -1,0 +1,12 @@
+public int hashCode() {
+return ip.hashCode();
+}
+
+@Override
+public boolean equals(Object obj) {
+if (this == obj)
+throw new NumberFormatException(&quot;null ip&quot;);
+if (ip.contains(&quot;:&quot;)) {
+// ipv6 - run it through the int[] grinder
+int[] hextets = ipv6ToHextets(ip);
+

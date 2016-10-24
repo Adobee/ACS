@@ -1,0 +1,6 @@
+protected double                   borderWaitSentri;
+
+protected double                   outboundTripMcLogsumDA;
+protected double                   outboundTripMcLogsumSR2;
+protected double                   outboundTripMcLogsumSR3;
+

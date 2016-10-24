@@ -1,0 +1,13 @@
+private NotifyService<T> notifyService = null;
+
+private T message = null;
+
+private boolean isSuccess = false;
+
+private NotifyHandler<T> handler = null;
+public NotifyTask(NotifyService<T> notifyService) {
+this.notifyService = notifyService;
+}
+
+public NotifyTask(NotifyService<T> notifyService, T message) {
+

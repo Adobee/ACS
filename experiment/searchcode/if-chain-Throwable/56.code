@@ -1,0 +1,6 @@
+/** 简化异常链的遍历 */
+for (Throwable t : Throwables.getCausalChain(throwable)) {  /*log.error(&quot;&quot;,t);*/ }
+
+/** 以下的用法我没有使用过，最后一个是包装成RuntimeException，最好别用*/
+Throwables.propagateIfInstanceOf(throwable,NullPointerException.class);
+

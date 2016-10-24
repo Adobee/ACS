@@ -1,0 +1,10 @@
+Integer extIndex = StringUtils.lastIndexOf(path, &quot;.&quot;);
+if(extIndex == -1){
+return StringUtils.EMPTY;
+}else{
+Integer extIndex = StringUtils.lastIndexOf(path, &quot;/&quot;);
+if(extIndex == -1){
+return StringUtils.EMPTY;
+}else{
+return StringUtils.substring(path, extIndex+1, path.length());
+

@@ -1,0 +1,7 @@
+// change recovery source (only works for inactive primaries)
+if (otherRouting.active() || otherRouting.primary() == false) {
+} while (newState == otherRouting.state());
+
+UnassignedInfo unassignedInfo = otherRouting.unassignedInfo();
+if (unassignedInfo == null &amp;&amp; (newState == ShardRoutingState.UNASSIGNED || newState == ShardRoutingState.INITIALIZING)) {
+

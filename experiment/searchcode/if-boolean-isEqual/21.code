@@ -1,0 +1,13 @@
+this.chained = chained;
+}
+
+@Override
+public boolean isEqual(char a, char b) {
+Boolean r = false;
+if (a == &#39;?&#39; || chained.isEqual(a, b)) {
+r = true;
+}
+return r;
+}
+}
+

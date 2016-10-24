@@ -1,0 +1,8 @@
+DateAxis dateAxis = new DateAxis(chartAxisData.getLabel());
+if(chartAxisData.getFormat() != null)
+dateAxis.setDateFormatOverride(new SimpleDateFormat(chartAxisData.getFormat()));
+XYPlot plot = chart.getXYPlot();
+if(chartAxisData.isDomain())
+{
+plot.setDomainAxis(plot.getDomainAxisCount() - 1, axis);
+

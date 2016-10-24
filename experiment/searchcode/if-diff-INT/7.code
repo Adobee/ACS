@@ -1,0 +1,15 @@
+public int solution(int A, int B) {
+long diff = A - B;
+
+long answer = -1;
+
+if( B > diff ) {
+System.out.println(&quot;(diff - B) &quot; + (diff - B) +  &quot; ((diff - B) / 4)&quot; + (double)((diff - B) / 4));
+answer = (diff - 2 * ((diff - B) / 4));
+}
+
+return answer > 1000000000 ? -2 : (int) answer;
+}
+
+}
+

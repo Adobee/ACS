@@ -1,0 +1,7 @@
+int minDocID;                                 // minimum docID that needs renumbering
+int maxDocID;                                 // 1+ the max docID that needs renumbering
+return oldDocID;
+else if (oldDocID >= maxDocID)
+// This doc was &quot;after&quot; the merge, so simple shift
+return oldDocID - docShift;
+

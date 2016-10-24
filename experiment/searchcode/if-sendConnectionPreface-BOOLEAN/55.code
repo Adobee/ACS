@@ -1,0 +1,7 @@
+public VFrameStream pushStream(int associatedStreamId, List<VHeader> requestHeaders, boolean out)
+throws IOException {
+if (client) throw new IllegalStateException(&quot;Client cannot push requests.&quot;);
+public void writeData(int streamId, boolean outFinished, VBuffer buffer, long byteCount)
+throws IOException {
+if (byteCount == 0) { // Empty data frames are not flow-controlled.
+

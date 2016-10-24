@@ -1,0 +1,10 @@
+public String convert(String s, int nRows) {
+if (nRows == 1)
+return s;
+StringBuilder sbs[] = new StringBuilder[nRows];
+for (int i = 0; i < nRows; i++) {
+int j = i;
+if (i == 0 || i == nRows - 1) {
+while (j < s.length()) {
+sbs[i].append(s.charAt(j));
+

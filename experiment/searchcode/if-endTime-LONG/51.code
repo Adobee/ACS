@@ -1,0 +1,13 @@
+import javax.persistence.Embeddable;
+
+@Embeddable
+public class TimeInterval {
+
+private long startTime;
+private long endTime;
+
+public TimeInterval(long start, long end) {
+// otherInterval.endTime is after this.startTime
+if (otherInterval.getEndTime() > (this.endTime) ) {
+long overlap = Math.min(otherInterval.getEndTime()
+

@@ -1,0 +1,6 @@
+* @return The requested normalized value
+* @throws NormalizationException If the normalization cannot be performed for any reason (e.g. control wells not available)
+NormalizedGrid grid = normalizationCache.getGrid(p, f, norm);
+if (grid == null) {
+NormalizationKey key = new NormalizationKey(p, f, norm);
+

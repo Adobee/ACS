@@ -1,0 +1,13 @@
+public class NewClassExpression extends NewExpression
+{
+
+private ClassBody body;
+
+@Override
+public String toString()
+{
+String r = &quot;new &quot; + type.toString();
+if(body != null)
+r += body.toString();
+return r;
+

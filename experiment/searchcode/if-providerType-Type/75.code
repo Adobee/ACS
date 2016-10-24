@@ -1,0 +1,8 @@
+Criteria criteria = this.sessionFactory.getCurrentSession().createCriteria(ProviderType.class);
+
+if (StringUtility.isInteger(term)) {
+criteria.add(Restrictions.or(Restrictions.eq(&quot;id&quot;, Integer.parseInt(term)), Restrictions.eq(&quot;code&quot;,  Integer.parseInt(term))));
+ProviderType providerType = this.get(providerTypeId);
+if (providerType != null) {
+this.sessionFactory.getCurrentSession().delete(providerType);
+

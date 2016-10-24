@@ -1,0 +1,7 @@
+BooleanProperty objPr = new SimpleBooleanProperty(true);
+scrollPane.pannableProperty().bind(objPr);
+assertEquals(&quot;Pannable cannot be bound&quot;, scrollPane.pannableProperty().getValue(), true);
+assertTrue(styleable.isSettable(scrollPane));
+BooleanProperty other = new SimpleBooleanProperty();
+scrollPane.fitToWidthProperty().bind(other);
+

@@ -1,0 +1,11 @@
+public List<Player> getIgnoredPlayers() {
+return ignoredPlayers;
+}
+
+public boolean ignorePlayer(String player) {
+Player p = Bukkit.getPlayer(player);
+if (p != null) {
+ignoredPlayers.add(p);
+return true;
+} else {
+

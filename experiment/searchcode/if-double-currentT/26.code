@@ -1,0 +1,7 @@
+Hit firstHit = null;
+if (this.checkBoundingBox(r)) {
+double currentT = Double.MAX_VALUE;
+for (Geometry geo : geometries) {
+Hit h = geo.hit(r);
+if (h != null &amp;&amp; h.t < currentT + Dbl.getEpsilon()) {
+

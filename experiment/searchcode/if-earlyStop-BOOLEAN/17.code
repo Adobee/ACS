@@ -1,0 +1,10 @@
+private CmdErrorHandler errorHandler = new CmdErrorHandler();
+protected boolean earlyStop;
+private InputStream inputStreamForStdErr;
+public void forceEarlyStop() {
+earlyStop = true;
+}
+
+public boolean requestsEarlyStop() {
+return earlyStop;
+

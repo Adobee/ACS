@@ -1,0 +1,11 @@
+ExtraInfo.bindTexture(ExtraInfo.iconsTexture);
+GL.color(1, 1, 1);
+
+float jumpCharge = pl.getHorseJumpPower();
+int barLength = 182;
+int barFill = (int)(jumpCharge * (barLength + 1));
+int barY = height - 32 + 3;
+ExtraInfo.drawTexturedRect(barX, barY, 0, 84, barLength, 5);
+
+if(barFill > 0) ExtraInfo.drawTexturedRect(barX, barY, 0, 89, barFill, 5);
+

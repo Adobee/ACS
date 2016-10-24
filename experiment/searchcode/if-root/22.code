@@ -1,0 +1,14 @@
+static Node Insert(Node root, int value)
+{
+if(root == null)
+{
+root = new Node();
+root.data = value;
+}
+else
+{
+if(value <= root.data)
+root.left = Insert(root.left, value);
+else
+root.right = Inser(root.right, value);
+

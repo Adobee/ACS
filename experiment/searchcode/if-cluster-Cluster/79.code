@@ -1,0 +1,7 @@
+for (Clusterable cluster : clusters) {
+if (cluster instanceof Cluster) {
+if (((Cluster) cluster).getItems().size() > 0) {
+float distanceChange = ClusterUtils.getEuclideanDistance(((Cluster) cluster).getClusterMean(),
+cluster.getLocation());
+if (distanceChange > mDriftTolerance) {
+

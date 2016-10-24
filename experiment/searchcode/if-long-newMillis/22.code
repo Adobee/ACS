@@ -1,0 +1,9 @@
+public abstract class WorldDriverBase implements Runnable {
+
+protected long period; //in milliseconds
+protected final World world;
+protected TimerTask mainTimerTask = new TimerTask() {
+protected void updateObjects() {
+long newMillis = System.currentTimeMillis();
+for (WorldObject object : world.getObjects()) {
+

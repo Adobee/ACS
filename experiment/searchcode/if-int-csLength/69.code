@@ -1,0 +1,12 @@
+boolean eq = false;
+if (cs == null) {
+eq = strs == null;
+}
+
+if (strs != null) {
+for (int i = 0; i < strs.length; i++) {
+for (int i = 0; i < csLength; i++) {
+char ch = cs.charAt(i);
+for (int j = 0; j < searchLength; j++) {
+if (searchChars[j] == ch) {
+

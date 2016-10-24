@@ -1,0 +1,8 @@
+int targetIterationId = moveStoriesForm.getTargetIterationId();
+
+if (targetIterationId > 0) {
+Session session = getSession(request);
+Iteration iteration = getIteration(Integer.parseInt(moveStoriesForm.getIterationId()));
+
+if (targetIteration.getId() != iteration.getId()) {
+

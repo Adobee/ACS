@@ -1,0 +1,12 @@
+char[]     vtype,  // variable types (continuous, binary, etc.)
+double[]   solution) {
+
+boolean success = false;
+// Solve model
+
+model.optimize();
+
+// Extract solution
+
+if (model.get(GRB.IntAttr.Status) == GRB.OPTIMAL) {
+

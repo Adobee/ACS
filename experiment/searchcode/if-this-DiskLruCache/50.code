@@ -1,0 +1,7 @@
+DiskLruCache.Snapshot snapshot = diskLruCache.get(key);
+if (snapshot == null) {
+final DiskLruCache.Editor editor = diskLruCache.edit(key);
+if (diskLruCache == null) {
+synchronized (this) {
+if (diskLruCache == null &amp;&amp; cacheFolder != null) {
+

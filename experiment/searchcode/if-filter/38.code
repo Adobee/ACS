@@ -1,0 +1,5 @@
+@Override public FilterBuilder buildFilter(SearchFilter searchFilter) throws InvalidFilterException {
+if (FilterType.IN.toString().equals(searchFilter.getFilterType().toString())) {
+return new com.abid.search.filter.InFilterBuilder().buildFilter(searchFilter);
+} else if (FilterType.NOT_IN.toString().equals(searchFilter.getFilterType().toString())) {
+

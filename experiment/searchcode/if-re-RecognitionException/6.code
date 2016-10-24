@@ -1,0 +1,9 @@
+public void stat() throws RecognitionException {
+// 尝试解析选项 1： list EOF
+if (speculate_stat_alt1()) {
+return;
+// 之前没有在tokenIndex处解析过
+try {
+_list();
+} catch (RecognitionException re) {
+

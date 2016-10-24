@@ -1,0 +1,10 @@
+ItemStack stack = null;
+Slot currentSlot = (Slot)inventorySlots.get(slotID);
+
+if(currentSlot != null &amp;&amp; currentSlot.getHasStack())
+stack = slotStack.copy();
+
+if(slotID >= 0 &amp;&amp; slotID <= 26)
+{
+if(!mergeItemStack(slotStack, 27, inventorySlots.size(), false))
+

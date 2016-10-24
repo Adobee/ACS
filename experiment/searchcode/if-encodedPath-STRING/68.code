@@ -1,0 +1,10 @@
+String scheme = intent.getScheme();
+Uri uri = intent.getData();
+
+StringBuilder builder = new StringBuilder();
+
+if (uri != null) {
+String path = uri.getPath();
+String encodedPath = uri.getEncodedPath();
+String queryString = uri.getQuery();
+

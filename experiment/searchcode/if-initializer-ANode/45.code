@@ -1,0 +1,9 @@
+addPropertyLink(modelNode, property, schemaStore, nodeInitializerRegistry);
+}
+if (isNamedType()) {
+// Only initialize &quot;name&quot; child node if the schema has such a managed property.
+throw new UnmanagedPropertyMissingSetterException(property.getName());
+}
+}
+} else if (!shouldHaveANodeInitializer(property, propertySchema) &amp;&amp; !property.isWritable() &amp;&amp; !isNamePropertyOfANamedType(property)) {
+

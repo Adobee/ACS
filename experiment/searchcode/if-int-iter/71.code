@@ -1,0 +1,9 @@
+public void deleteNode(ListNode node) {
+if(node==null) return;
+ListNode iter=node.next;
+ListNode pre=node;
+while(iter!=null){
+pre.val=iter.val;
+if(iter.next!=null) pre=iter;
+else pre.next=null;
+

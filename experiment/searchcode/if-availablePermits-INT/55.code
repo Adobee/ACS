@@ -1,0 +1,21 @@
+* 初始值
+*/
+private int value;
+
+/**
+*
+*/
+public Quota() {
+this(0);
+}
+
+public Quota(int value) {
+if (value < 0)
+this.value = value;
+this.state = new Semaphore(value);
+}
+
+/** @return 当前剩余配额. */
+public int state() {
+return state.availablePermits();
+

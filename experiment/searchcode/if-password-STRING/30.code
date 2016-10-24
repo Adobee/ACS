@@ -1,0 +1,9 @@
+import org.jasypt.util.password.ConfigurablePasswordEncryptor;
+
+public class PasswordEngine {
+
+private String encryptedPassword;
+
+public String encrypt(String inputPassword) {
+ConfigurablePasswordEncryptor passwordEncryptor = new ConfigurablePasswordEncryptor();
+

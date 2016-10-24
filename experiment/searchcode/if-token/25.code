@@ -1,0 +1,10 @@
+characters = ArrayUtils.addAll(characters, more);
+}
+
+@Override
+public String normalize(String token) {
+
+//String str = StringUtils.strip(token, new String(characters));
+
+if (StringUtils.containsAny(token.toLowerCase(),characters)) {
+

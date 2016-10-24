@@ -1,0 +1,9 @@
+private int evictToRecoverBytes(int bytesToRecover) {
+int entriesToEvict = 0;
+if (bytesToRecover > 0) {
+// determine how many headers need to be evicted.
+int bytesToRecover = (dynamicTableByteCount + delta) - maxDynamicTableByteCount;
+int entriesEvicted = evictToRecoverBytes(bytesToRecover);
+
+if (index == -1) { // Adding a value to the dynamic table.
+

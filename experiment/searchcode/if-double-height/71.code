@@ -1,0 +1,9 @@
+public double theProbablity(int width, int height, int x, int y, int steps){
+d = new double[width][height];
+double[][] b = new double[width][height];
+for(int j=0;j<height;j++){
+b = new double[width][height];
+if(i!=0){				b[i][j]+=d[i-1][j];
+}
+if(i!=d.length-1){
+

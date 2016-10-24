@@ -1,0 +1,9 @@
+public static char check() {
+char winner = Field.DEFAULT_SYMBOL;
+
+//Проверка победителя по строкам
+for(int i = 0; i < Field.FIELD_SIZE; i++) {
+//Проверка победителя по столбцам
+for(int i = 0; i < Field.FIELD_SIZE; i++) {
+if(Field.field[0][i] == Field.field[1][i] &amp;&amp; Field.field[1][i] == Field.field[2][i] &amp;&amp; Field.field[0][i] != Field.DEFAULT_SYMBOL) {
+

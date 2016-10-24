@@ -1,0 +1,6 @@
+public static double lower(int df, double t) {
+double c2 = df / (df + t * t), s = Math.sqrt(1 - c2);
+if (t < 0) s = -s;
+double p = 0;
+for (int i = df % 2 + 2; i <= df; i += 2) {
+

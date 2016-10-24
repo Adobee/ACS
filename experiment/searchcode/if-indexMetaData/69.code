@@ -1,0 +1,6 @@
+// Throws an exception if there are too-old segments:
+if (isUpgraded(indexMetaData)) {
+return indexMetaData;
+IndexMetaData newMetaData = upgradeLegacyRoutingSettings(indexMetaData);
+newMetaData = addDefaultUnitsIfNeeded(newMetaData);
+

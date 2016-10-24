@@ -1,0 +1,9 @@
+* The garbage generates recycled material for the robot that uses it
+* @return true if the garbage was transformed in recycled material
+public boolean use(RobotEngine r, NavigationModule nav) {
+boolean ok = false;
+
+if (this.canBeUsed()) {
+ok = true;
+r.addRecycledMaterial(this.recycledMaterial);
+

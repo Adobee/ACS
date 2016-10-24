@@ -1,0 +1,9 @@
+import org.joda.time.MutableDateTime;
+import org.joda.time.base.AbstractPartial;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
+String str = this.options.getPattern();
+if (JodaUtils.isJodaDateTimeFormat(str))
+{
+str = DateTimeFormat.patternForStyle(this.options.getPattern(), locale);
+

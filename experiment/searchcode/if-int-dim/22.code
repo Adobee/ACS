@@ -1,0 +1,23 @@
+private int nDiago;
+private int dim;
+
+public MatriceDiagonale(int n, int dim){
+nDiago=n;
+this.dim=dim;
+}
+
+public int get(int i, int j){
+for(int i=0;i<dim;i++){
+for(int j=0;j<dim;j++){
+if(i==j)
+matrice[i][j]=nDiago;
+else
+matrice[i][j]=0;
+}
+}
+return matrice;
+}
+
+
+}
+

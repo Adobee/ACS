@@ -1,0 +1,8 @@
+EARLY_MORNING(5), /* Dalle 5 (inclusa) alle 7 (escluse) */
+NIGHT(0); 			/* Dalle 00 alle 5 */
+
+private int fromInclusive;
+public static TIME_TYPE fromLocalDate(int h) {
+for(TIME_TYPE t : values()) {
+if(h >= t.fromInclusive){
+

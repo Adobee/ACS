@@ -1,0 +1,9 @@
+public Long createProfile(Visitor visitor) {
+if (visitor.getRfid() == null || visitor.getRfid().length() != rfidLength) {
+throw new IllegalArgumentException(&quot;RFID must consist of 10 characters.&quot;);
+return visitorDao.createVisitor(visitor);
+}
+
+public boolean updateProfile(final Visitor visitor) {
+return visitorDao.updateStationProfile(visitor);
+

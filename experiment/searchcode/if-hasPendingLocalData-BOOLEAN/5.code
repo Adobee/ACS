@@ -1,0 +1,8 @@
+// the local content was changed or not. If it was, we replace the remote content.
+boolean hasPendingLocalData = false;
+Log.d(TAG, &quot;Starting Drive AppData sync. hasPendingData = &quot; + hasPendingLocalData);
+
+boolean dataChanged = syncImpl(actions, hasPendingLocalData);
+
+if (hasPendingLocalData) {
+

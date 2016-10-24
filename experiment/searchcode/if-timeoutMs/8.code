@@ -1,0 +1,13 @@
+public static WebElement waitFindElement(By by){
+List<WebElement> w = waitForElement(by);
+if(w.isEmpty()) throw new NoSuchElementException(format(&quot;Element %s is not found!)&quot;, by.toString()));
+} while (timeoutMs > 0 &amp;&amp; w.isDisplayed() != b);
+
+if (timeoutMs <= 0) {
+return !b;
+}
+return b;
+}
+
+}
+

@@ -1,0 +1,14 @@
+StringBuilder sb = null;
+
+while (true)
+{
+int io1 = text.indexOf(&quot;&amp;#&quot;);
+if (io1 == -1)
+{
+if (sb == null)
+return text;
+break;
+}
+
+int io2 = text.indexOf(&#39;;&#39;, io1 + 2);
+

@@ -1,0 +1,7 @@
+protected <T, S> Path<?> getPath(From<T, S> root, String name) {
+int index = name.indexOf(&quot;.&quot;);
+if (index > 0 ) {
+String attribute = name.substring(0, index);
+From<S, ?> join = getJoin(attribute, root.getJoins());
+if (join == null) {
+

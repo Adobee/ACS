@@ -1,0 +1,7 @@
+double cn = Double.valueOf(dataPOs[i].get(&quot;close&quot;).toString());
+double ln = 65536,hn = -65536;
+//计算ln（前time时间内最低价）和hn（前time时间内最高价）
+for(int j=i-timeperiod;j<i;j++){
+ln = ln > Double.valueOf(dataPOs[j].get(&quot;close&quot;).toString())? Double.valueOf(dataPOs[j].get(&quot;close&quot;).toString()):ln;
+hn = hn < Double.valueOf(dataPOs[j].get(&quot;high&quot;).toString())? Double.valueOf(dataPOs[j].get(&quot;high&quot;).toString()):hn;
+

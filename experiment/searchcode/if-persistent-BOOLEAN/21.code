@@ -1,0 +1,11 @@
+private Constructor<K> keyConstructor;
+
+private K key;
+private T persistent;
+
+private boolean isKeyPersistent = false;
+@SuppressWarnings(&quot;unchecked&quot;)
+public K newKey() throws Exception {
+if(isKeyPersistent)
+return (K)((Persistent)key).newInstance(new StateManagerImpl());
+

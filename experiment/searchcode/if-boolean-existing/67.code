@@ -1,0 +1,10 @@
+private String toFolder;
+private boolean subfolderSearch;
+private boolean overwriteExistingFiles;
+
+public boolean isSubfolderSearch() {
+this.setSubfolderSearch(node.getBoolean(incrementalSearch, true));
+this.setOverwriteExistingFiles(node.getBoolean(overwriteExisting, true));
+
+if (fromFolder.length() != 0 &amp;&amp; toFolder.length() != 0) {
+

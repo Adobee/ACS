@@ -1,0 +1,14 @@
+private final int[] vector;
+private final int dimension;
+
+public IntVector(int dim) {
+this(new int[dim]);
+}
+
+public IntVector(int[] vector) {
+return dimension >= 0 &amp;&amp; dimension < this.dimension;
+}
+
+public int getValueInDimension(int dimension) {
+if( !checkDimension(dimension) )
+

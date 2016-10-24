@@ -1,0 +1,14 @@
+double umin=paramBounds[0];
+double umax=paramBounds[1];
+double vmin=paramBounds[2];
+double vmax=paramBounds[3];
+
+// Handle the case of infinite geometry
+if(!geom.isUClosed())
+{
+umin=0;
+umax=1;
+}
+
+if(!geom.isVClosed())
+

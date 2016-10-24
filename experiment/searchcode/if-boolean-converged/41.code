@@ -1,0 +1,7 @@
+private Map<String, Boolean[]> isSingleConverged;
+
+private NotConvergedBehavior getNotConvergedBehavior() {
+if (Boolean.valueOf(componentContext.getConfigurationValue(ConvergerComponentConstants.NOT_CONVERGED_FAIL))) {
+return NotConvergedBehavior.Fail;
+} else if (Boolean.valueOf(componentContext.getConfigurationValue(ConvergerComponentConstants.NOT_CONVERGED_NOT_A_VALUE))) {
+

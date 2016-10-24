@@ -1,0 +1,6 @@
+* Local-remote implementation of {@link ICacheFactory}. Item is first looked up
+* from &quot;local&quot; cache, then &quot;remote&quot; cache if &quot;local&quot; cache is a miss.
+protected AbstractCache createCacheInternal(String name, long capacity, long expireAfterWrite,
+long expireAfterAccess) {
+ICache localCache = localCacheFactory != null ? localCacheFactory.createCache(name,
+

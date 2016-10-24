@@ -1,0 +1,5 @@
+private Throwables() {}
+
+public static <X extends Throwable> void propagateIfInstanceOf(@Nullable Throwable throwable, Class<X> oclass) throws X {
+if (throwable != null &amp;&amp; oclass.isInstance(throwable)) {
+

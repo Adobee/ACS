@@ -1,0 +1,11 @@
+public static DialogUtilsLanguages getDialogUtilsLanguages(Locale locale)
+{
+if (locale == null)
+{
+return DialogUtilsLanguages.ENGLISH;
+if (locale.getCountry() != null &amp;&amp; !locale.getCountry().equals(&quot;&quot;))
+{
+buffer.append(&#39;_&#39;).append(locale.getCountry());
+
+if (locale.getVariant() != null &amp;&amp; !locale.getVariant().equals(&quot;&quot;))
+

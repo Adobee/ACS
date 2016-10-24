@@ -1,0 +1,11 @@
+public static void Actualizar (Item item){
+Quality(item);
+SellIn(item);
+}
+
+public static void Quality(Item item){
+if ((item.getSellIn() <= 10 &amp;&amp; item.getSellIn()>=6) &amp;&amp; item.getQuality() <= 50) {
+item.setQuality(item.getQuality()+2);
+}
+else if ((item.getSellIn() <= 5 &amp;&amp; item.getSellIn()>0) &amp;&amp; item.getQuality() <=50) {
+

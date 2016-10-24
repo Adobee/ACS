@@ -1,0 +1,12 @@
+private BitSet ports = new BitSet(1000);
+
+private/* synchronized */int randomPort() {
+int maxRandom = ports.size();
+
+int port;
+return ports.nextClearBit(0);
+}
+
+public synchronized int newPort() throws IOException {
+int port = randomPort();
+

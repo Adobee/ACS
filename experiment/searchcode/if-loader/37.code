@@ -1,0 +1,6 @@
+private static ClassLoader resolveClassLoader(ClassLoader parentClassLoader) {
+if (parentClassLoader == null) {
+parentClassLoader = DynamicClassLoader.class.getClassLoader();
+}
+if (parentClassLoader == null) {
+

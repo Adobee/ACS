@@ -1,0 +1,8 @@
+protected Field parseCreateField(ParseContext context) throws IOException {
+if (!enabledState.enabled) {
+return null;
+builder.field(&quot;store&quot;, fieldType().stored());
+}
+if (enabledState != Defaults.ENABLED_STATE) {
+builder.field(&quot;enabled&quot;, enabledState.enabled);
+

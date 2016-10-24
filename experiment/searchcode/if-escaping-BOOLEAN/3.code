@@ -1,0 +1,13 @@
+public class LiteralPhraseModifierProcessor extends PatternBasedElementProcessor {
+
+private final boolean escaping;
+
+public LiteralPhraseModifierProcessor(boolean escaping) {
+this.escaping = escaping;
+}
+
+@Override
+public void emit() {
+if (escaping) {
+getBuilder().characters(group(1));
+

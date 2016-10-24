@@ -1,0 +1,7 @@
+CollectionSort collSort1 = (CollectionSort)term.sub(1).sort();
+if (collSort0.getCollectionKind() != CollectionSort.SET
+|| collSort1.getCollectionKind() != CollectionSort.SET) {
+OclSort elemSort1
+= ((CollectionSort)subTerm[1].sort()).getElemSort();
+if (elemSort0.extendsTrans(elemSort1)) {
+

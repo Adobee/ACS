@@ -1,0 +1,6 @@
+msg.append(&quot;7th code &quot;);
+
+int csLen = codes.subCodes.size() - 1;
+Iterator<String> it = codes.subCodes.iterator();
+for(int ci = 0; ci <= csLen; ci++) {
+

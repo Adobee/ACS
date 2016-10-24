@@ -1,0 +1,10 @@
+BuildContextCaptureBuildAction lastBuildAction = getBuildContextCaptureBuildAction(project);
+if (lastBuildAction == null) {
+AbstractBuild<?, ?> lastBuild = project.getLastBuild();
+if (lastBuild == null) {
+return null;
+}
+return lastBuild.getAction(BuildContextCaptureBuildAction.class);
+}
+}
+

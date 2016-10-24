@@ -1,0 +1,10 @@
+public class CondUtil {
+
+public static boolean attempt(F0<Boolean> testF, P0 resetF, F0<Boolean>... corrections) {
+if (testF.e()) {
+return true;
+}
+
+for (F0<Boolean> correctF : corrections) {
+if (!correctF.e()) {
+

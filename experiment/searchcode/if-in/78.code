@@ -1,0 +1,9 @@
+private void insert(Node nodeIn, int dataIn){
+Node insertNode = new Node(null,null,dataIn);
+if(nodeIn == null){
+root = insertNode;
+}else{
+if(dataIn<=nodeIn.getData()){
+if(nodeIn.getLeft() != null){
+insert(nodeIn.getLeft(), dataIn);
+

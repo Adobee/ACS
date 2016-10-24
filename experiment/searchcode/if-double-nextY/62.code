@@ -1,0 +1,7 @@
+for (int y = 0; y < n; y++) {
+if (!visited[x][y])
+max = Math.max(max, floodFill(x, y, mid, grid, visited));
+int nexty = curr[1] + movey[z];
+
+if (nextx < 0 || nexty < 0 || nextx >= n || nexty >= n || visited[nextx][nexty] || Math.abs(grid[nextx][nexty] - curr[2]) > mid)
+

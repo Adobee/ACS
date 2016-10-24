@@ -1,0 +1,13 @@
+return var;
+}
+
+public double getCoefficient() {
+if (constantTerm==null)
+return coefficient;
+else
+return constantTerm.getValue();
+}
+
+protected void setCoefficient(double coefficient) {
+this.coefficient = coefficient;
+

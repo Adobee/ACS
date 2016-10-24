@@ -1,0 +1,11 @@
+public static boolean AlmostEqual2sComplement(double a, double b, long maxUlps)
+throws IllegalArgumentException
+{
+if (maxUlps < 1)
+int intDiff = Math.abs(aInt - bInt);
+if (intDiff <= maxUlps)
+return true;
+return false;
+}
+}
+

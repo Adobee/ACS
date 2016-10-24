@@ -1,0 +1,10 @@
+private String endpoint;
+private String stem;
+private boolean shouldFail;
+
+public GrouperRemoveStemStep(String stem, String endpoint) {
+// remove stem
+try {
+grouper.deleteStem(new StemIdentifier(null, this.stem));
+if (this.shouldFail) {
+

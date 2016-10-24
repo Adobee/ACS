@@ -1,0 +1,8 @@
+* @return This quaternion for chaining.
+*/
+public final Quaternion set(Vector3D axis, float angle) {
+double norm = axis.getNorm();
+double squaredSine = mQ1 * mQ1 + mQ2 * mQ2 + mQ3 * mQ3;
+if (squaredSine == 0) {
+return new Vector3D(1, 0, 0);
+

@@ -1,0 +1,6 @@
+for (int multiplicand = start; multiplicand <= upperLimit; multiplicand += steps) {
+if (number % multiplicand == 0) {
+boolean[] pandigitalDigitPresence = digitPresence.clone();
+
+if (hasDifferentUniqueDigits(multiplicand, pandigitalDigitPresence) &amp;&amp; hasDifferentUniqueDigits(number / multiplicand, pandigitalDigitPresence)) {
+

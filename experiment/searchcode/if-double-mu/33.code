@@ -1,0 +1,7 @@
+protected double bALattice, volume, latticeDensity;
+protected double lastP, lastVacancyConcentration;
+
+public DataSourceMuRoot(MCMoveOverlapListener mcMoveOverlapMeter, double bmu, DataDistributer pSplitter, double bALattice, double latticeDensity, double volume) {
+super(&quot;mu&quot;, Null.DIMENSION);
+this.mcMoveOverlapMeter = mcMoveOverlapMeter;
+

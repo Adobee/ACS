@@ -1,0 +1,9 @@
+public static void benchmark() {
+int numRuns = 10;
+int tokenLen = 5;
+
+int numStrings = 100000;
+int tokenLen) {
+List<String> strings = new ArrayList<String>(numStrings);
+for (int i = 0; i < numStrings; i++) {
+

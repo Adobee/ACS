@@ -1,0 +1,12 @@
+private /*@ spec_public @*/ final int tiebreaker;
+private /*@ spec_public @*/ static int nextTiebreaker = 0;
+
+//@ public invariant weight > 0;
+if(this.weight > o.weight) return +1;
+if(this.weight < o.weight) return -1;
+
+//Same cost, pick one to be the &quot;larger&quot;
+return tiebreaker - o.tiebreaker;
+}
+}
+

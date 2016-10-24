@@ -1,0 +1,12 @@
+public int getVal( int pos ) {
+return a[pos];
+}
+
+public MaxHeap( int size ) {
+this.size = size;
+a = new int[size];
+}
+
+public int parent( int pos ) {
+return (pos-1)/2;
+

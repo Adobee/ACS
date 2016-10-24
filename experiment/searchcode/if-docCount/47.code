@@ -1,0 +1,12 @@
+super(&quot;ALL&quot;);
+this.docCount = docCount;
+}
+
+protected boolean nextDoc(RankInfo rankInfo) {
+if(pos < docCount){
+if(isExplain()){
+rankInfo.explain(id, 0, &quot;&quot;);
+}
+rankInfo.init(pos, 0);
+pos++;
+

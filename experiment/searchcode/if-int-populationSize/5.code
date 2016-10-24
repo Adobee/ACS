@@ -1,0 +1,4 @@
+public List<NEATGenome> generateInitialPopulation(int populationSize, Random rng) {
+List<NEATGenome> population = new ArrayList<>(populationSize);
+for (int i = 0; i < populationSize; i++) {
+

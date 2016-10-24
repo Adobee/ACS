@@ -1,0 +1,13 @@
+return;
+}
+
+// rescale if necessary
+for (int j = 0; j < cols; ++j) {
+diag[j] = Math.max(diag[j], jacNorm[j]);
+if (nSing < solvedCols) {
+work[j] = 0;
+}
+}
+if (nSing > 0) {
+for (int j = nSing - 1; j >= 0; --j) {
+

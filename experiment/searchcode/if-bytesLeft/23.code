@@ -1,0 +1,8 @@
+// This cannot occur within a multi-byte char.
+if (bytesLeft > 0) return -1;
+} else if ((b &amp; 0xC0) == 0x80) { // 0b10xxxxxx
+// Continuation byte (of a multi-byte char).
+// This cannot occur now.
+if (bytesLeft == 0) return -1;
+// Decrease the number of continuation bytes left.
+

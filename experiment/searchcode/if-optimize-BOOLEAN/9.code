@@ -1,0 +1,9 @@
+private long _optimizeDuration;
+
+private volatile boolean _optimizeScheduled;
+private OptimizeType _optimizeType;
+
+private Timer _optimizeTimer;
+public synchronized void setOptimizeDuration(long optimizeDuration){
+if (_optimizeDuration!= optimizeDuration){
+

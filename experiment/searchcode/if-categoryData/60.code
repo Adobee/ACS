@@ -1,0 +1,9 @@
+public class CategoryDataCache {
+
+private Cache<String, Object> categoryData = CacheBuilder.newBuilder()
+public Object getCategoryData(Category category, String key) {
+return this.categoryData.getIfPresent(category.getId() + &quot;:&quot; + key);
+}
+
+public void setCategoryData(Category category, String key, Object categoryData) {
+

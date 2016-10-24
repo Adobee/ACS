@@ -1,0 +1,10 @@
+package com.watchmen.utilities;
+
+import org.quartz.SchedulerFactory;
+
+public class Scheduler {
+public static Scheduler getInstance() {
+if(instance == null) {
+instance = new Scheduler();
+scheduler = new org.quartz.impl.StdSchedulerFactory();
+

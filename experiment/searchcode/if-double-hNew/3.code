@@ -1,0 +1,12 @@
+public class RungeKutta implements ODESolver {
+
+private ODE ode;
+private double time;
+private double h, hnew, hmin = 1e-7, hmax = 0.1, eps = 1e-8, errorOffset = 0.01, safety = 0.9;
+public void setMinTimeStep(double minTimeStep) {
+hmin = minTimeStep;
+if (h < hmin) h = hmin;
+}
+
+public void setMaxTimeStep(double maxTimeStep) {
+

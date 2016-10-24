@@ -1,0 +1,13 @@
+System.out.println(FastCubeRoot(636056));
+
+}
+
+private static int FastCubeRoot(int number) {
+
+int firstDigit, secondDigit;
+for (int i = 1; i < 11; i++) {
+
+if (i * i * i > number) {
+firstDigit = i - 1;
+return firstDigit * 10 + secondDigit;
+

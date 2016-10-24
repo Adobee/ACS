@@ -1,0 +1,10 @@
+public class DoubleNumeric implements Numeric<Double> {
+
+private DoubleNumeric() {}
+
+@Override
+public Double add(Double n1, Double n2) {
+if (n1 == null &amp;&amp; n2 == null) {
+if (n1 == null &amp;&amp; n2 == null) {
+return zero();
+

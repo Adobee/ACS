@@ -1,0 +1,9 @@
+for (int i = 0; i < size(); i++) {
+StokItem stok = (StokItem) get(i);
+if (stok.getIdkey().equals(idkey)) {
+found = stok;
+StokItem stok = (StokItem) get(i);
+if (stok.getModelItem().getIdkey().equals(idkey)) {
+found = stok;
+break;
+

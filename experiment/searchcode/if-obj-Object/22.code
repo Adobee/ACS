@@ -1,0 +1,15 @@
+public int factoryID = -1;
+public LabObjDescriptor []labBookObjDesc;
+
+protected LabObjectFactory(int id)
+{
+factoryID = id;
+return obj;
+}
+
+public void initializeObj(LabObject obj)
+{
+if(obj != null ){
+obj.init();
+obj.factory = this;
+

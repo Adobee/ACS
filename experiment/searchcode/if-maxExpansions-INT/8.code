@@ -1,0 +1,9 @@
+private String analyzer;
+
+private int slop = MatchQuery.DEFAULT_PHRASE_SLOP;
+
+private int maxExpansions = FuzzyQuery.defaultMaxExpansions;
+public MatchPhrasePrefixQueryBuilder maxExpansions(int maxExpansions) {
+if (maxExpansions < 0) {
+throw new IllegalArgumentException(&quot;No negative maxExpansions allowed.&quot;);
+

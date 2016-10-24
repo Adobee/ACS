@@ -1,0 +1,14 @@
+return -1;
+}
+if (o1.upper > o2.upper) {
+return 1;
+}
+return 0;
+}
+});
+
+int count = 0;
+int currentUpper = 0;
+for (int i = 0; i < 1 << n; i++) {
+if (range[i].upper <= 9000 || range[i].upper <= currentUpper) {
+

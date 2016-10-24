@@ -1,0 +1,9 @@
+int thisPeriod = lastPeriod + 1;
+
+double priceThisPeriod = mPrice[thisPeriod];
+if (mDividends != null) {
+double grossReturnThisPeriod = priceThisPeriod / mPrice[lastPeriod];
+
+if (mCPI != null) {
+double cpiThisPeriod = (mCPI[thisPeriod] - mCPI[lastPeriod]) / mCPI[lastPeriod] + 1;
+

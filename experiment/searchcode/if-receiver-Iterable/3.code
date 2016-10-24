@@ -1,0 +1,10 @@
+public Object get(Iterable<?> objs, int size) {
+Context context = (Context) objs.iterator().next();
+IndexedIterable<Receiver> receivers = context.getObjects(Receiver.class);
+public void reset() {
+}
+
+private double minAir(IndexedIterable<Receiver> receivers) {
+double runningMinAir = 1;
+for (Receiver receiver : receivers) {
+

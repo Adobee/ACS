@@ -1,0 +1,11 @@
+//cast x to long first, cause it may overflow.
+//long longx = (long)x;
+
+long start = 0;
+long end = x;
+
+while(start<end){
+long mid = (start+end)/2;
+if(mid*mid==x)
+return (int)mid;
+

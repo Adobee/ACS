@@ -1,0 +1,6 @@
+import com.coremedia.objectserver.web.links.ParameterAppendingLinkTransformer;
+import com.coremedia.personalization.preview.PreviewPersonalizationHandlerInterceptor;
+public String transform(String source, Object bean, String view, HttpServletRequest request, HttpServletResponse response, boolean forRedirect) {
+if(bean instanceof CMLinkable) {
+String transformed = testContextAppender.transform(source, bean, view, request, response, forRedirect);
+

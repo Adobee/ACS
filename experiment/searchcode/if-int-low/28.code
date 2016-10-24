@@ -1,0 +1,11 @@
+private static int divide(int a[], int low, int high) {
+int k = a[low];
+do {
+while (low<high &amp;&amp; a[high]>=k) --high;
+return low;
+}
+
+private static void qsort(int a[], int low, int high) {
+int mid;
+if (low >= high) return;
+

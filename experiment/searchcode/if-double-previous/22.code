@@ -1,0 +1,10 @@
+import com.uvg.paint.brush.BrushManager;
+
+public class Line extends Brush{
+
+private double previousX, previousY;
+private boolean dead;
+
+public Line(double x, double y, double previousX, double previousY, Paint paint) {
+super(x, y, paint);
+

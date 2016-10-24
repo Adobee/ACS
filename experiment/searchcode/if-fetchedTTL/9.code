@@ -1,0 +1,9 @@
+protected Result prepare(UpdateRequest request, final GetResult getResult) {
+long getDateNS = System.nanoTime();
+if (!getResult.isExists()) {
+if (request.upsertRequest() == null &amp;&amp; !request.docAsUpsert()) {
+private TimeValue getTTLFromScriptContext(Map<String, Object> ctx) {
+Object fetchedTTL = ctx.get(&quot;_ttl&quot;);
+if (fetchedTTL != null) {
+if (fetchedTTL instanceof Number) {
+

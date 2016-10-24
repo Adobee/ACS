@@ -1,0 +1,9 @@
+closeIO();
+}
+
+public void handleNode(MibNode aNode) throws IOException {
+
+// Check if the node is a nested group or not. A nested group
+// has some children but is not a associated.
+if (aNode.isGroup() || aNode.hasNestedGroups()) {
+

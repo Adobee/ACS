@@ -1,0 +1,15 @@
+super(&quot;Shuffle&quot;, ICON);
+putValue(SELECTED_KEY, false);
+}
+
+public static ToggleShuffleAction getInstance() {
+if (instance == null) {
+return instance;
+}
+
+@Override
+public void actionPerformed(ActionEvent e) {
+c.getModel().setShuffleOn((Boolean) getValue(SELECTED_KEY));
+}
+}
+

@@ -1,0 +1,6 @@
+for (BooleanTypeVisitor<T, R> visitor : booleanTypeVisitors) {
+if (visitor.appliesTo((BooleanType) o, context)) {
+return visitor.visit((BooleanType) o, context, this);
+for (BooleanExpressionVisitor<T, R> visitor : booleanExpressionVisitors) {
+if (visitor.appliesTo((BooleanExpression) o, context)) {
+

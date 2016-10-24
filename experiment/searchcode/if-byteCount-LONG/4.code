@@ -1,0 +1,10 @@
+static final Logger log = LoggerFactory.getLogger(ByteCount.class);
+
+static final long BYTES_IN_KILOBYTE = 1024L;
+static final long BYTES_IN_MEGABYTE = 1024L * 1024L;
+public static final ByteCount ONE_GB = new ByteCount(BYTES_IN_GIGABYTE, &quot;1g&quot;);
+
+public static final ByteCount ZERO = new ByteCount(0, &quot;0&quot;);
+
+final long totalBytes;
+

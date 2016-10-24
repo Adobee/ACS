@@ -1,0 +1,5 @@
+@Override
+public boolean onCommand(final CommandSender sender, Command command, String label, String[] args) {
+if (!sender.hasPermission(command.getPermission())) {
+sender.sendMessage(ERROR_NO_PERMISSION);
+

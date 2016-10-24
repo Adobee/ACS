@@ -1,0 +1,11 @@
+return SimpleDateFormat.getTimeInstance(DateFormat.SHORT, Locale.getDefault());
+}
+};
+
+public static String format(long unixtimeMS, Context context) {
+
+Date currentDate = new Date(System.currentTimeMillis());
+String convertedTime = timeInstanceGetter.get().format(convertableDate);
+
+if (currentDate.getYear() == convertableDate.getYear()) {
+

@@ -1,0 +1,14 @@
+if (getClass() != obj.getClass())
+return false;
+Song other = (Song) obj;
+if (title == null) {
+if (other.title != null)
+return false;
+} else if (!title.equals(other.title))
+return false;
+return true;
+}
+
+
+}
+

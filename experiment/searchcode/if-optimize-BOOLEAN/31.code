@@ -1,0 +1,7 @@
+private long optimizeDuration;
+
+private volatile boolean optimizeScheduled;
+private final OptimizeType optimizeType;
+public synchronized void setOptimizeDuration(long optimizeDuration) {
+if (this.optimizeDuration != optimizeDuration) {
+

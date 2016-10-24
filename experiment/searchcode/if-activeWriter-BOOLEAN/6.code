@@ -1,0 +1,12 @@
+private int activeReaders; /**< counts how many readers are currently reading content **/
+private boolean activeWriter;/**< Flag to see whether there is an active writer or not **/
+writeQ.Signal();//signal the writeQ
+}
+m.UnLock();
+}
+
+
+public void StartWrite() {
+m.Lock();
+if (activeWriter == true &amp;&amp; dbState != NOTUSED){//If there is someone else writing AND state is not free, block me
+

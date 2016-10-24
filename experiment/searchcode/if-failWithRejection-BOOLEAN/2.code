@@ -1,0 +1,6 @@
+private long retryTestCase(boolean failWithRejection) throws Exception {
+int totalFailures = randomIntBetween(1, mainRequest.getMaxRetries());
+action.sendBulkRequest(request);
+if (failWithRejection) {
+BulkIndexByScrollResponse response = listener.get();
+

@@ -1,0 +1,6 @@
+public static boolean isEquals(final Object lhs, final Object rhs) {
+if (!lhs.getClass().isArray()) {
+return lhs.equals(rhs);
+} else if (lhs instanceof int[]) {
+return Arrays.equals((int []) lhs, (int []) rhs);
+

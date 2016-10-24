@@ -1,0 +1,9 @@
+public class CapacityLimiter extends QuotaLimiter {
+
+private int capacity;
+private int acquired;
+* {@inheritDoc}
+*/
+public boolean tryAcquire(int permits) {
+if (acquired + permits <= capacity) {
+

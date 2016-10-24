@@ -1,0 +1,11 @@
+return ((ReferenceBinding)this.upperBounds[0]).getMethods(selector);
+return super.getMethods(selector);
+}
+
+public TypeBinding erasure() {
+if (this.upperBounds != null &amp;&amp; this.upperBounds.length > 1) {
+for (int i = 0; i < this.upperBounds.length; i++) {
+TypeBinding aBound = this.upperBounds[i];
+// capture of ? extends X[]
+if (aBound != null &amp;&amp; aBound.isArrayType()) {
+

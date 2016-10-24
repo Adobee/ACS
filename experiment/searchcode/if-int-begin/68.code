@@ -1,0 +1,7 @@
+public static int find(int[] a, int begin, int end, int k) {
+if (begin == end) {
+return a[begin];
+}
+int i = partition(a, begin, end); // 划分后中间元素的下标
+int j = k - 1 + begin; // 第k个大元素的下标
+

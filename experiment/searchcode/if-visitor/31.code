@@ -1,0 +1,6 @@
+public final LessVisitorStatus accept(final LessVisitor visitor,
+final Context context){
+final LessVisitorStatus status = visitor.visit(this, context);
+if(status == LessVisitorStatus.DESCEND)
+if(dispatchVisitor(visitor, context) == LessVisitorStatus.BREAK)
+

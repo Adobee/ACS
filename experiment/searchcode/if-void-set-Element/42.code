@@ -1,0 +1,12 @@
+isIn[element] = true;
+}
+}
+
+//@ requires element >= 0;
+public void removeElement(int element) {
+if(element < isIn.length) {
+isIn[element] = false;
+// loop invariant: 0 <= i <= maxElement
+for(int i = 0; i < maxElement; i++) {
+if(this.hasElement(i) || set.hasElement(i)) {
+

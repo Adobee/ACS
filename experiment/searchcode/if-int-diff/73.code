@@ -1,0 +1,10 @@
+public class ThreeSumClosestSolution {
+public int threeSumClosest(int[] num, int target) {
+Arrays.sort(num);
+int minDiff = num[0] + num[1] + num[2] - target;
+int s = num[i] + num[j] + num[k];
+int diff = s - target;
+if (diff * diff > preDiff * preDiff)
+break;
+preDiff = diff;
+

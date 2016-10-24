@@ -1,0 +1,14 @@
+this.secondIter = secondIter;
+//currentIter = firstIter;
+}
+
+@Override
+public boolean hasNext() {
+return firstIter.hasNext() || secondIter.hasNext();
+
+}
+
+@Override
+public T next() {
+if(firstIter.hasNext())
+

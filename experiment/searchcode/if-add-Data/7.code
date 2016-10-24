@@ -1,0 +1,10 @@
+ArrayList<DataEntry> data = new ArrayList<DataEntry>();
+
+public Storage() {
+}
+
+public void addData(DataEntry data) throws HobbitException {
+
+if (this.data.contains(data)){
+throw new HobbitException(&quot;Den Datensatz gibts schon ... &quot; + data.name);
+

@@ -1,0 +1,6 @@
+public List<String> restoreIpAddr(String s, int level) {
+List<String> rList = new ArrayList<String>();
+if(level * 3 < s.length() || s.length() < level) return rList;
+if(level == 1) {
+if(isValid(s)) rList.add(s);
+

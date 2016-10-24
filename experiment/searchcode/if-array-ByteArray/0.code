@@ -1,0 +1,11 @@
+public static byte[] toByteArray(long value, Class<?> type)
+{
+byte[] byteArray = new byte[0];
+
+if(type == Short.class)
+byteArray[1] = (byte)(((value &amp; 0x000000FF) >>> 0) &amp; 0xFF);
+byteArray[0] = (byte)(((value &amp; 0x0000FF00) >>> 8) &amp; 0xFF);
+}
+else
+if(type == Integer.class)
+

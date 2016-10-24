@@ -1,0 +1,17 @@
+for (int j=0; (j<b.length &amp;&amp; !added);j++){
+if (a[i]<=b[j]) {
+for (int k=b.length-1;k>j;k--) b[k]=b[k-1];
+
+b[j]=a[i];
+added=true;
+}
+}
+if (!added) {
+b[i]=a[i];
+added=true;
+}
+}
+return b;
+}
+}
+

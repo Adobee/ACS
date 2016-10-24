@@ -1,0 +1,10 @@
+double limMin = 273;
+double limMax = 5526;
+double min;
+if (ts == null)
+throw new NullPointerException(&quot;ts não pode ser null!&quot;);
+if (ts.length == 0)
+return 0;
+min = ts[0];
+for (int i = 0; i < ts.length; i++) {
+

@@ -1,0 +1,12 @@
+*     Red Hat, Inc. - initial API and implementation
+******************************************************************************/
+package org.jboss.tools.hibernate.jpt.ui.internal.mapping.details;
+defaultName
+);
+}
+else {
+value = JptJpaUiDetailsMessages.PROVIDER_DEFAULT;
+}
+}
+if (value.startsWith(NONE_KEY)) {
+

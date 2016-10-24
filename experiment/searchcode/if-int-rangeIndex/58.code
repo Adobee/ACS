@@ -1,0 +1,9 @@
+protected void reduce(MapOutputKey key, Iterable<LongWritable> values,
+Context context) throws IOException, InterruptedException {
+int rangeIndex = key.getRangeIndex();
+mos.write(CalculationDriver.OUTPUT_TOTAL, null, new Text(rangeIndex
++ &quot; &quot; + String.valueOf(total)));
+}
+
+private String buildRangeOutput(String word, int rangeIndex, long count,
+

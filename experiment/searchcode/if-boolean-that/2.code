@@ -1,0 +1,11 @@
+public boolean equals(Object o)
+{
+if (o == this) return true;
+if (!(o instanceof DataBoolean)) return false;
+
+DataBoolean that = (DataBoolean) o;
+
+return this.value.equals(that.value);
+}
+}
+

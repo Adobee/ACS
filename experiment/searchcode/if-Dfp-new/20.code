@@ -1,0 +1,8 @@
+this.dfpLineItem = dfpLineItem;
+
+try {
+String className = dfpLineItem.getClass().getName();
+
+if (!(DfpClassUtil.isValidDfpPackage(className) &amp;&amp; className.endsWith(&quot;LineItem&quot;))) {
+throw new RuntimeException(&quot;The parameter provided is not an object of LineItem&quot;);
+

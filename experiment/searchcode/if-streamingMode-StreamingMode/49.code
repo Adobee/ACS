@@ -1,0 +1,6 @@
+import org.apache.flink.configuration.Configuration;
+import org.apache.flink.runtime.StreamingMode;
+import org.apache.flink.runtime.jobgraph.JobGraph;
+super(config, StreamingMode.BATCH_ONLY);
+setTaskManagerNumSlots(parallelism);
+

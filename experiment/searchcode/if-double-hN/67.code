@@ -1,0 +1,7 @@
+double hr2 = haters.stream().mapToDouble(uv -> uv.getVote() * uv.getVote()).sum();
+int hn = haters.size();
+double ur2 = r2 - lr2 - hr2;
+int un = n - ln - hn;
+
+double error = (un == 0 ? 0 :(ur2 - ur * ur / un)) +
+

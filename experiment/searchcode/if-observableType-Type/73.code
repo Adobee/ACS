@@ -1,0 +1,6 @@
+public static <T extends IObservable> T create(Realm realm, Class<T> observableType, ClassLoader loader, Class<?>... mixins) {
+if (observableType == IObservableList.class) {
+return (T) DelegatingObservableList.create(realm, loader, mixins);
+} else if (observableType == IObservableSet.class) {
+return (T) DelegatingObservableSet.create(realm, loader, mixins);
+

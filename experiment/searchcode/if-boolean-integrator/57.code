@@ -1,0 +1,9 @@
+int integratorCountOffset;
+boolean calibrated;
+double voltsPerLSB;
+double theta;
+
+public Gyro(final Orc orc, final int port) {
+final double integratorCount = s.gyroIntegratorCount[this.port] - this.integratorCountOffset;
+if (integratorCount == 0.0) {
+

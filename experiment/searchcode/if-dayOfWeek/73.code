@@ -1,0 +1,9 @@
+public void shouldGetValueOfDays() {
+assertEquals(1, DayOfWeek.Monday.getValue());
+assertTrue(days.contains(DayOfWeek.Monday));
+}
+
+@Test
+public void shouldReturnDaysOfWeek_IfOnlyToday() {
+List<DayOfWeek> days = DateUtil.daysStarting(DayOfWeek.Saturday, 0);
+

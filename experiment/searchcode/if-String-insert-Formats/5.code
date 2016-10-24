@@ -1,0 +1,5 @@
+public boolean addFileFormats(int deliverableId, ArrayList<String> fileFormatsIds) {
+LOG.debug(&quot;>> addFileFormats(deliverableId={}, fileFormatsIds={})&quot;, deliverableId, fileFormatsIds);
+for (int fileFormatId : fileFormatIds) {
+String preparedInsertQuery = &quot;INSERT INTO deliverable_formats (deliverable_id, file_format_id) VALUES (?, ?)&quot;;
+

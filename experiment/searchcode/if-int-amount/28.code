@@ -1,0 +1,16 @@
+public class NormalAmount extends Amount
+{
+int probability;
+int amount;
+
+public NormalAmount(int amount, int probability)
+public void Do(IAmountable amountable)
+{
+if(amount == 0)
+{
+return;
+}
+
+Random rnd = new Random();
+if (rnd.nextInt(100) <= probability * 100)
+

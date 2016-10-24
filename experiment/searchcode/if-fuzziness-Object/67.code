@@ -1,0 +1,8 @@
+float floatValue = randomFloat();
+String json = jsonBuilder().startObject()
+.field(Fuzziness.X_FIELD_NAME, floatValue)
+.field(Fuzziness.X_FIELD_NAME, randomBoolean() ? &quot;AUTO&quot; : &quot;auto&quot;)
+.endObject().string();
+if (randomBoolean()) {
+json = Fuzziness.AUTO.toXContent(jsonBuilder().startObject(), null).endObject().string();
+

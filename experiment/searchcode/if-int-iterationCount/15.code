@@ -1,0 +1,8 @@
+public void sort(int[] array) {
+boolean sorted = false;
+
+for (int iterationCount = 0, noSwapPassCount = 0; !sorted &amp;&amp; noSwapPassCount != 2; iterationCount++) {
+noSwapPassCount++;
+for (int i = iterationCount % 2; i < array.length - 1; i += 2) {
+if (array[i] > array[i + 1]) {
+

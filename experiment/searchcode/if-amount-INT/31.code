@@ -1,0 +1,10 @@
+int balance = sc.nextInt();
+int amountRequested = sc.nextInt();
+int amount = amountRequested;
+int result = balance;
+
+if( amount >= balance )
+System.out.println(balance);
+
+if( (amount % 20) == 0 || (amount % 50) == 0 )
+

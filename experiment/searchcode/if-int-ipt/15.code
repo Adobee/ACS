@@ -1,0 +1,6 @@
+package gplx.gfui; import gplx.*;
+public class IptEventType {//_20101217
+public int Val() {return val;} int val;
+public String Name() {return name;} private String name;
+public IptEventType Add(IptEventType comp) {return IptEventType_.add_(this, comp);}
+

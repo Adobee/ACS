@@ -1,0 +1,12 @@
+int repeat=1;
+double slope =0.0;
+map.clear();
+for(int j=i+1;j<length;j++){
+if(points[i].x==points[j].x &amp;&amp; points[i].y==points[j].y){
+map.put(slope, map.containsKey(slope) ? map.get(slope)+1:1);
+}
+if(map.size()==0){
+max=Math.max(max, repeat);
+}
+for(Double key : map.keySet()){
+

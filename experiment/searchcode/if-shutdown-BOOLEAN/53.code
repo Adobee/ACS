@@ -1,0 +1,7 @@
+public class Installer extends ModuleInstall {
+
+@Override
+public boolean closing() {
+if (!SimulationExecutor.isShutdown() &amp;&amp; !SimulationExecutor.isShuttingDown()) {
+SimulationExecutor.shutdown();
+

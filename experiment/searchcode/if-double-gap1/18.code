@@ -1,0 +1,14 @@
+ppot = (HP[BEHIND][AHEAD] + (HP[BEHIND][TIED] / 2) + (HP[TIED][AHEAD] / 2)) / (double) den1;
+else
+ppot = 0;
+if (den2 > 0)
+npot = (HP[AHEAD][BEHIND] + (HP[AHEAD][TIED] / 2) + (HP[TIED][BEHIND] / 2)) / (double) den2;
+for (rk = 0; rk < NUM_RANKS; rk++)
+{
+if (present[rk] != 0)
+{
+gap0_straight++;
+gap1_straight++;
+}
+else if (r1 == rk || r2 == rk)
+

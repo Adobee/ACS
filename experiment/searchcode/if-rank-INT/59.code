@@ -1,0 +1,10 @@
+int[] indexes = new int[N];
+for (int i = 0; i < N; i++) {
+int rank = t[i] - &#39;a&#39;;
+int nRank = i + 1 >= N ? -1 : t[i + 1] - &#39;a&#39;;
+suffixes[i] = new Suffix(i, rank, nRank);
+}
+Arrays.sort(suffixes);
+
+int k = 4;
+

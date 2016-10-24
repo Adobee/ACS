@@ -1,0 +1,13 @@
+public double[] lineIntersection(double[] A, double[] B) {
+double det = A[0]*B[1] - B[0]*A[1];
+if(det == 0)
+return null;
+else {
+double x = (B[1]*A[2] - A[1]*B[2]) / det;
+double y = (A[0]*B[2] - B[0]*A[2]) / det;
+
+return new double[]{x, y};
+}
+}
+}
+

@@ -1,0 +1,9 @@
+public HashPartitioner(int maxShards){
+if (maxShards < 0)
+throw new RuntimeException(&quot;partitions must =0 in HashPartitioner&quot;);
+* from 0 or 1,
+*/
+public int idToIndex(int id, int shardId) {
+if (maxShards == 1){
+return id;
+

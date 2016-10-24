@@ -1,0 +1,8 @@
+public Pair<Table, Iterator<HashMap<String, TableElement>>> exec() throws Exception {
+int affectedRows = 0;
+while (iterator.hasNext()) {
+String tableName = curr.getTableName();
+if (curr.isDeleted())
+continue;
+if(!tableManager.hasTable(tableName))
+

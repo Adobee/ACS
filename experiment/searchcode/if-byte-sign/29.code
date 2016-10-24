@@ -1,0 +1,10 @@
+public class PublicKeyAuthenticationToken implements AuthenticationToken, HostAuthenticationToken {
+private static final long serialVersionUID = -5835308990612834491L;
+private byte[] sign = new byte[0];
+System.arraycopy(sign, 0, ret, 0, sign.length);
+return ret;
+}
+public void setSign(byte[] sign) {
+if (sign != null) {
+this.sign = new byte[sign.length];
+

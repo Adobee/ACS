@@ -1,0 +1,11 @@
+private FollowDAO dao;
+
+public FollowService() {
+this.dao = new FollowDAOjdbc();
+}
+
+public boolean follow(FollowVO bean) {
+boolean result = false;
+if (bean != null) {
+int temp = dao.insert(bean);
+

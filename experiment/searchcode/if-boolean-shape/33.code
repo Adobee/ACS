@@ -1,0 +1,12 @@
+/* Return true if the given shape defeats this shape. */
+public boolean isDefeatedBy(Shape shape) {
+Shape[] responses = defeatedBy();
+return responses[0] == shape || responses[1] == shape;
+}
+
+/* Return true if this shape defeats the given shape. */
+public boolean defeats(Shape shape) {
+return shape.isDefeatedBy(this);
+}
+}
+

@@ -1,0 +1,10 @@
+public SyncAdapter(Context context, boolean autoInitialize) {
+super(context, autoInitialize);
+}
+
+public SyncAdapter(Context context, boolean autoInitialize, boolean allowParallelSyncs) {
+public void onPerformSync(Account account, Bundle extras, String authority,
+ContentProviderClient provider, SyncResult syncResult) {
+
+final boolean uploadOnly = extras.getBoolean(ContentResolver.SYNC_EXTRAS_UPLOAD, false);
+

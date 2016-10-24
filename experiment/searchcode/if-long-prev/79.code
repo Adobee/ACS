@@ -1,0 +1,10 @@
+return 0;
+}
+if (A.length == 1) {
+return A[0];
+}
+long maxPrev = Math.max(A[0], A[1]);
+for (int i = 2; i < A.length; i++) {
+long tempMax = Math.max(max2Before + A[i], maxPrev);
+max2Before = maxPrev;
+

@@ -1,0 +1,13 @@
+private DynamicService dynamicService;
+private Dynamic dynamic;
+private boolean flag;
+private List<Long> ids;
+
+@Override
+public Dynamic getModel() {
+return dynamic;
+}
+
+public void prepare() throws Exception {
+if (getRequestId() == null || getRequestId() == 0) {
+

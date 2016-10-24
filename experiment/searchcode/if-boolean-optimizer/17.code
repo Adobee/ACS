@@ -1,0 +1,6 @@
+public <T> T optimize(final T input, final String suffix) throws JBOPClassException {
+if (OptimizerUtils.existsInstance(input)) {
+final ClassNode classNode = OptimizerUtils.readClass(input);
+for (final IOptimizer optimizer : optimizers) {
+if (optimizer instanceof IInputObjectAware) {
+

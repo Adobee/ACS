@@ -1,0 +1,9 @@
+private static final double NANO_TO_SECOND = 1000000000.0;
+
+private long startTime, endTime;
+private boolean started = false;
+
+public void start() {
+if (started)
+throw new RuntimeException(&quot;Error: This timer has already been started!&quot;);
+

@@ -1,0 +1,5 @@
+@SuppressWarnings(&quot;unchecked&quot;)
+public <T> T as(final Class<T> type) {
+if (is(type)) return (T) object;
+throw new RuntimeException(&quot;Could not convert the given object of type &quot; + object.getClass().getSimpleName() + &quot; to requested type &quot; + type.getSimpleName());
+

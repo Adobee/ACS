@@ -1,0 +1,10 @@
+private double x;
+private double y;
+private double direction;
+private int width;
+private int height;
+private Timer shakeTimer;
+
+public Camera(double x, double y, double direction, int width, int height) {
+this.x = x;
+

@@ -1,0 +1,7 @@
+public static double solucionar(Polinomio[] L, double[] fx, double x) {
+double acum = 0;
+int n = fx.length;
+for (int j = 0; j < n; j++) {
+if (i != j) {
+double[] co = {-xs[j], 1};
+

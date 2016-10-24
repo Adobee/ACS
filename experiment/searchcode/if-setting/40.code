@@ -1,0 +1,5 @@
+BooleanDomainSetting domainSetting = DomainSettingCache.getInstance().getBooleanDomainSetting(settingName, domainName);
+if (domainSetting != null) log.info(&quot;getDomainSettingFromCache: domainSetting=&quot;+domainSetting);
+BooleanDomainSetting domainSetting = domainSettingDAO.findBooleanDomainSetting(settingName, domainName);
+if (domainSetting != null) log.info(&quot;getDomainSettingFromDAO: domainSetting=&quot;+domainSetting);
+

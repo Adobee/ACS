@@ -1,0 +1,8 @@
+private Map<String, StaticResource> cachedResources = new HashMap<String, StaticResource>();
+private Set<String> excludedCacheResources = new HashSet<String>();
+
+private int cacheMaxSize;
+
+public CacheResourceResolver(ResourceResolver decorated, int cacheMaxSize) {
+this.decorated = decorated;
+

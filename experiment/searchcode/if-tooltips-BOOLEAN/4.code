@@ -1,0 +1,12 @@
+public class ComboboxToolTipRenderer extends DefaultListCellRenderer
+{
+ArrayList<String> tooltips;
+
+@Override
+public Component getListCellRendererComponent(JList list, Object value,
+value, index, isSelected, cellHasFocus);
+
+if (-1 < index &amp;&amp; null != value &amp;&amp; null != tooltips)
+{
+list.setToolTipText(tooltips.get(index));
+

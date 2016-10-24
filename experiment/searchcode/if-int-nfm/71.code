@@ -1,0 +1,14 @@
+protected FontMetrics _nfm;
+
+
+private int _cachedLastLine = -1;
+
+
+public LineEnumRule(DefinitionsPane p) {
+_increment = _fm.getHeight();
+
+_newFont = _getLineNumFont();
+_nfm = getFontMetrics(_newFont);
+
+SIZE = (int) _nfm.getStringBounds(&quot;99999&quot;, getGraphics()).getWidth() + 3;
+

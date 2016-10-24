@@ -1,0 +1,6 @@
+final double levenbergMarquardtEpsfcn = Math.pow(10, -0.8); //FIXME: how to write this as 1e-0.8???
+final double levenbergMarquardtXtol = Math.pow(10, -0.8); //FIXME: how to write this as 1e-0.8???
+final double levenbergMarquardtEpsfcn,
+final double levenbergMarquardtXtol,
+final double levenbergMarquardtGtol){
+

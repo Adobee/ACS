@@ -1,0 +1,13 @@
+MappedByteBuffer mapping;
+long mappingPosition;
+
+public void checkMapping() throws IOException {
+if (!(position >= mappingPosition &amp;&amp; position < mappingPosition + MAPPING_SIZE)) {
+System.err.println(&quot;fixing level &quot; + level + &quot;...&quot;);
+
+long startPosition = position;
+
+long size = readLong();
+if (size != 0) {
+long objectChunkSize = readLong();
+

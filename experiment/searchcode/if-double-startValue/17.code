@@ -1,0 +1,6 @@
+public Rectangle animate(double pos, Rectangle startValue, Rectangle endValue) {
+if (startValue == endValue) {
+return startValue;
+}
+if (startValue == null) {
+

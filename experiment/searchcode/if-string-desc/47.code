@@ -1,0 +1,14 @@
+FileSync(&quot;文件同步&quot;),
+CacheSync(&quot;缓存同步&quot;);
+
+private String desc;
+
+private RMIServiceType(String desc){
+this.desc = desc;
+for(RMIServiceType type : values()){
+if(type.toString().equalsIgnoreCase(typeStr)){
+return type;
+}
+}
+return null;
+

@@ -1,0 +1,7 @@
+import org.apache.http.HttpRequest;
+import org.apache.http.HttpRequestInterceptor;
+import org.apache.http.annotation.ThreadSafe;
+public void process(HttpRequest httpRequest, HttpContext httpContext) {
+Args.notNull(httpRequest, &quot;HTTP request&quot;);
+if ((httpRequest instanceof HttpEntityEnclosingRequest) &amp;&amp; !httpRequest.containsHeader(HTTP.DATE_HEADER)) {
+

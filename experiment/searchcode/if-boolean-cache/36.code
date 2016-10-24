@@ -1,0 +1,8 @@
+public class UglyNumbers {
+public static int find150number() {
+boolean[] cache = new boolean[10000];
+cache[2] = cache[3] = cache[4] = cache[5] = true;
+
+for (int i = 6; i < cache.length; i++) {
+if (cache[i / 2] || cache[i / 3] || cache[i / 5]) {
+

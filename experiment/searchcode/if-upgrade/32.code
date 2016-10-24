@@ -1,0 +1,13 @@
+upgradeMultiplierAccel = 1.5f;
+upgradeMultiplierAeroDyn = 1.5f;
+upgradeMultiplierFuel = 1.5f;
+}
+
+public boolean upgradeTurning() {
+if (cash >= upgradeCostTurning) {
+upgradeMultiplierTurning *= 0.8f;
+if (upgradeMultiplierTurning < 1.1f) {
+upgradeMultiplierTurning = 1.1f;
+}
+return true;
+

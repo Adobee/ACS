@@ -1,0 +1,7 @@
+DirectionQuery query, ObjectMapper mapper, UriInfo uriInfo,
+boolean includePrevious, boolean trace) {
+ObjectNode root = mapper.createObjectNode();
+next.put(&quot;href&quot;, LinkBuilder.getDirection(&quot;next&quot;, channel, uriInfo, list.get(list.size() - 1), count).toString());
+if (includePrevious) {
+ObjectNode previous = links.putObject(&quot;previous&quot;);
+

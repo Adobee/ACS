@@ -1,0 +1,12 @@
+public void setZone(TimeZone zone) {
+this.zone = zone;
+}
+
+public String zoneDisplayName() {
+ERXLocalizer loc = ((ERXSession)session()).localizer();
+zoneIDs = new NSArray<String>(TimeZone.getAvailableIDs());
+}
+for(String id: zoneIDs) {
+TimeZone tz = TimeZone.getTimeZone(id);
+if(!result.contains(tz)) { result.addObject(tz); }
+

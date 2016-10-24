@@ -1,0 +1,7 @@
+LOGGER.debug(&quot;Rewrite iteration begins for q={}&quot;, q);
+QueryExpression newq = q;
+if (q instanceof UnaryLogicalExpression) {
+LOGGER.debug(&quot;Rewritten nested query={}&quot;, newNestedq);
+if (newNestedq != nestedq) {
+newq = new UnaryLogicalExpression(((UnaryLogicalExpression) q).getOp(), newNestedq);
+

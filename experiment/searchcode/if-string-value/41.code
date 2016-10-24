@@ -1,0 +1,10 @@
+@Override
+public String toString(String value) {
+return &#39;&quot;&#39; + value + &#39;&quot;&#39;;
+}
+
+@Override
+public String toValue(String value) {
+if (value.length() > 1) {
+if (value.charAt(0) == &#39;&quot;&#39; &amp;&amp; value.charAt(value.length() - 1) == &#39;&quot;&#39;) {
+

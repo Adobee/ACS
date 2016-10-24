@@ -1,0 +1,13 @@
+int b = cin.nextInt();
+int count = 0;
+for (int i=a; i<=b; i++){
+count += f(i);
+}
+System.out.println(count);
+}
+cin.close();
+}
+
+private static int f(int n) {
+int count = 0;
+

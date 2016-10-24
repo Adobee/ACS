@@ -1,0 +1,11 @@
++ (1-fractionDistribution)*getRecallHypergeometric(n*(1-fractionDistribution), N*(1-fractionDistribution));
+}
+
+private double getRecallWallenius(double n, double N, int iter){
+if(N==0){
+return 0;
+double den = k1*Math.pow(coefExp, w-1)+k2;
+double newResult = result - num/den;
+if(result==newResult){
+//If the result did not change it means that we will not make more progress.
+

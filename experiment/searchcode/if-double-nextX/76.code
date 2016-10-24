@@ -1,0 +1,11 @@
+public Sprite sprite;
+private double x;
+private double y;
+private double nextX;
+private double nextY;
+public void setX(double x) {
+this.x = x;
+this.nextX = x;
+}
+public void setY(double y) {
+

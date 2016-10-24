@@ -1,0 +1,10 @@
+if (rowIndex >= 8 &amp;&amp; columnIndex >= 8 &amp;&amp; suduko[rowIndex][columnIndex] != 0) {
+return true;
+}
+
+for (int value = 1; value < 10; value++) {
+if (checkAll(rowIndex, columnIndex, value)) {
+private boolean checkColumn (int columnIndex, int value) {
+for (int i = 0; i < 9; i++) {
+if (suduko[i][columnIndex] == value) {
+

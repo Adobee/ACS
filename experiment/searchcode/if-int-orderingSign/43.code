@@ -1,0 +1,7 @@
+final double maxCheckInterval,
+final double convergence,
+final int maxIterationCount) {
+/** {@inheritDoc} */
+public int compare(EventState es0, EventState es1) {
+return orderingSign * Double.compare(es0.getEventTime(), es1.getEventTime());
+

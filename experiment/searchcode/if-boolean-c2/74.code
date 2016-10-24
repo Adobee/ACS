@@ -1,0 +1,12 @@
+public String toString() {
+String s = &quot;On &quot;;
+
+if (getC1() != null &amp;&amp; getC2() != null)
+s += getC1().getName() + &quot; &quot; + getC2().getName();
+return new On((Block) getC1(), (Block) getC2());
+}
+
+public boolean dependsOn(On other)
+{
+if (this.getC1().equals(other.getC2()))
+

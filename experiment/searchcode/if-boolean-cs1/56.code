@@ -1,0 +1,9 @@
+int i2 = new Random().nextInt(99999999);
+String salt = String.valueOf(i1) + String.valueOf(i2);
+if (salt.length() < 16) {
+salt += &quot;0&quot;;
+}
+}
+password = md5Hex(password + salt);
+char[] cs1 = password.toCharArray();
+

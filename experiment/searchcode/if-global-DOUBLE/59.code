@@ -1,0 +1,10 @@
+public class RandomGenerator {
+private int globalSeed;
+private int lastSeed;
+
+private Random globalRandom;
+private Random currentRandom;
+int rand = globalRandom.nextInt() + currentRandom.nextInt();
+if (rand < 0) {
+rand = -rand;
+

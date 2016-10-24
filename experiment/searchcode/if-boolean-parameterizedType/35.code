@@ -1,0 +1,9 @@
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+import java.util.Collection;
+
+import org.adorsys.xlseasy.utils.ReflectionUtils.FieldFilter;
+public boolean matches(Field field) {
+Type genericType = field.getGenericType();
+if (genericType instanceof ParameterizedType) {
+

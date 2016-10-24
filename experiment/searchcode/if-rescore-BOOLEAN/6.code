@@ -1,0 +1,7 @@
+public QueryRescorerBuilder(QueryBuilder builder) {
+if (builder == null) {
+throw new IllegalArgumentException(&quot;rescore_query cannot be null&quot;);
+queryRescoreContext.setRescoreQueryWeight(this.rescoreQueryWeight);
+queryRescoreContext.setScoreMode(this.scoreMode);
+if (this.windowSize != null) {
+

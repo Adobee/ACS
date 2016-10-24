@@ -1,0 +1,15 @@
+public class WhiteSpaceToken implements Token {
+@Override
+public ConsumedToken consume(String input, int index) {
+int i = index;
+if(!Character.isWhitespace(input.charAt(i))) {
+break;
+}
+}
+if(i == index) {
+return null;
+}
+return new ConsumedToken(i - index, null);
+}
+}
+

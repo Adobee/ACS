@@ -1,0 +1,12 @@
+public class DateTimeHelper {
+
+public static Date getDate() {
+return getDate(0);
+}
+
+public static Date getDate(int hoursOffset) {
+DateTime dtMadrid = new DateTime(DateTimeZone.forID(&quot;Europe/Madrid&quot;));
+
+// Apply offset (if zero, returns the same object)
+dtMadrid = dtMadrid.withFieldAdded(DurationFieldType.hours(), hoursOffset);
+

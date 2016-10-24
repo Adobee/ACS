@@ -1,0 +1,13 @@
+* @return inverse
+*/
+public Quaternion inverse(){
+double norm2 = x*x + y*y + z*z + w*w;
+return new Quaternion(-x/norm2, -y/norm2, -z/norm2, w/norm2);
+public void setUndefined(){
+x = Double.NaN;
+}
+
+/**
+*
+* @return true if this quaternion is defined
+

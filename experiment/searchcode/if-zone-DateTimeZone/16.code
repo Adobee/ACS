@@ -1,0 +1,10 @@
+private final ZoneId dateTimeZone;
+
+public JavaLocalTimeToTimeConverter(ZoneId dateTimeZone) {
+this.dateTimeZone = dateTimeZone;
+}
+
+@Override
+public Time convert(LocalTime in) throws Exception {
+if (in == null) return null;
+

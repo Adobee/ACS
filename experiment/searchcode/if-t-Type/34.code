@@ -1,0 +1,11 @@
+super(x, y, 32, 32, type == EnemyType.TYPE_A ? &quot;enemy1_1&quot; : &quot;enemy2_2&quot;);
+this.type = type;
+}
+
+public void animate() {
+if (type == EnemyType.TYPE_A) {
+if (animateFrame == 0) {
+setFileName(&quot;enemy1_2&quot;);
+animateFrame = 1;
+} else if (animateFrame == 1) {
+

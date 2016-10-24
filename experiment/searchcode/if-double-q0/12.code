@@ -1,0 +1,10 @@
+double dd0 = _a1 / (n0 * k0);
+
+double fact2 = dd0 * dd0 / 2;
+
+double t0 = POW(TAN(phi1), 2);
+
+double Q0 = e1sq * POW(COS(phi1), 2);
+
+double fact3 = (5 + 3 * t0 + 10 * Q0 - 4 * Q0 * Q0 - 9 * e1sq) * POW(dd0, 4)/ 24;
+

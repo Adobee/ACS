@@ -1,0 +1,8 @@
+public Population(int populationSize, boolean initialise){
+tours = new Tour[populationSize];
+
+if(initialise){
+for (int i = 0; i < populationSize(); i++) {
+Tour newTour = new Tour();
+newTour.generateIndividual();
+

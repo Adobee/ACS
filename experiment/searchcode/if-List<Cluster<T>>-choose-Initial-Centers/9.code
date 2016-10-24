@@ -1,0 +1,9 @@
+protected abstract Clusterable[] getNewClusters(Clusterable[] clusters);
+
+
+protected Cluster[] calculateInitialClusters(List<? extends Clusterable> values, int numClusters){
+Cluster[] clusters = new Cluster[numClusters];
+//choose centers and create the initial clusters
+Random random = new Random(1);
+Set<Integer> clusterCenters = new HashSet<Integer>();
+

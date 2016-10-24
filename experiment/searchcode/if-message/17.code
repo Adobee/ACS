@@ -1,0 +1,15 @@
+package ssuimobile.gameengine.event;
+
+
+/**
+*
+*/
+public class MessageEvent extends FSMEvent {
+public MessageEvent(String message) {
+super(FSMEventType.MESSAGE_ARRIVED);
+if (message == null)
+message = &quot;&quot;;
+_message = message;
+}
+}
+

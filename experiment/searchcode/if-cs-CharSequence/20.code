@@ -1,0 +1,14 @@
+import java.util.NoSuchElementException;
+
+class StringItr implements Iterator<Character> {
+
+private CharSequence cs;
+private int index = 0;
+
+public StringItr(CharSequence cs) {
+this.cs = cs;
+}
+
+@Override
+public boolean hasNext() {
+

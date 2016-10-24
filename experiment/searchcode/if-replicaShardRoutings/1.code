@@ -1,0 +1,7 @@
+* Allocates an unassigned replica shard to a specific node. Checks if allocation deciders allow allocation.
+*/
+public class AllocateReplicaAllocationCommand extends AbstractAllocateAllocationCommand {
+final RoutingNodes routingNodes = allocation.routingNodes();
+RoutingNode routingNode = routingNodes.node(discoNode.id());
+if (routingNode == null) {
+

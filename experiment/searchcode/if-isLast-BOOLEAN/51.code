@@ -1,0 +1,11 @@
+public PackedData(byte data) {
+this.data = data;
+}
+
+public PackedData(boolean isLast, int button, byte type) {
+data = isLast;
+data += (button * 2 + type * 32);
+}
+
+public void setIslast(boolean isLast) {
+

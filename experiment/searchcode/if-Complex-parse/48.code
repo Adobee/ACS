@@ -1,0 +1,11 @@
+public static void main(String[] args) {
+int size = FFT.DEFAULT_SIZE;
+if (args.length > 0) {
+size = Integer.parseInt(args[0]);
+/* Linear Version */
+public static Complex[] sequentialFFT(Complex[] x) {
+int N = x.length;
+
+// base case
+if (N == 1) return new Complex[] { x[0] };
+

@@ -1,0 +1,8 @@
+private Integer treatment;
+private Long sampleSize;
+
+public AbstractNetworkMetaAnalysisProblemEntry(String study, Integer treatment, Long sampleSize) {
+AbstractNetworkMetaAnalysisProblemEntry that = (AbstractNetworkMetaAnalysisProblemEntry) o;
+
+if (!sampleSize.equals(that.sampleSize)) return false;
+

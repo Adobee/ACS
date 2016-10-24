@@ -1,0 +1,12 @@
+public abstract class AbstractInstant implements ReadableInstant {
+
+public abstract long getMillis();
+
+
+/**
+* Compares this object with the specified object for ascending
+* All ReadableInstant instances are accepted.
+*
+* @param other  a readable instant to check against
+* @return negative value if this is less, 0 if equal, or positive value if greater
+

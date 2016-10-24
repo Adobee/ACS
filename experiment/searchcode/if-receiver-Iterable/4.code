@@ -1,0 +1,8 @@
+import org.reactivestreams.Subscriber;
+import rsc.flow.MultiReceiver;
+import rsc.subscriber.MultiSubscriptionSubscriber;
+extends Px<T>
+implements MultiReceiver {
+
+final Iterable<? extends Publisher<? extends T>> iterable;
+

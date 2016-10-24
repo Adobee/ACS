@@ -1,0 +1,19 @@
+package org.twitterReplica.model.providers;
+
+import scala.Serializable;
+
+public enum ProviderType implements Serializable {
+for (ProviderType pt : ProviderType.values()) {
+if (pt.toString().equals(label)) {
+return pt;
+}
+}
+return null;
+}
+
+public String toString(){
+return name;
+}
+
+}
+

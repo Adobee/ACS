@@ -1,0 +1,14 @@
+how many possible ways the child can run up the stairs */
+
+public class NSteps {
+
+public static int NStepsMethod(int n, int[] map) //dynamic programming
+{
+if (n < 0)
+return 0;
+
+if (n == 0)
+return 1;
+
+if (map[n] > -1)
+

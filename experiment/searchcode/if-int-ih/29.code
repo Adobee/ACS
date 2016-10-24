@@ -1,0 +1,10 @@
+instructionHandleList.add(ih);
+labels++;
+} else if (instrName.equals(&quot;putstatic&quot;)) {
+int arg = getFieldConstRef(instrElems, cpg, labels);
+ih = instructions.append(new PUTSTATIC(arg));
+instructionHandleList.add(ih);
+labels++;
+} else if (instrName.equals(&quot;putfield&quot;)) {
+int arg = getFieldConstRef(instrElems, cpg, labels);
+

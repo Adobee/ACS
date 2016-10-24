@@ -1,0 +1,13 @@
+public int[][] generateMatrix(int n) {
+int[][] res = new int[n][n];
+if (n == 0) {
+return res;
+}
+right(res, 0, 0, 1, n, true);
+private void down(int[][] m, int x, int y, int start, int steps, boolean decrease) {
+for (int i=0; i<steps; i++) {
+m[x++][y] = start++;
+}
+x--;
+if (start > m.length*m.length) {
+

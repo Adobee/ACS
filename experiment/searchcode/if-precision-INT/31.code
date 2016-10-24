@@ -1,0 +1,11 @@
+public String getMySQLDefinition() {
+String s = new String();
+
+int length = getLength();
+int precision = getPrecision();
+
+if (length > 0 &amp;&amp; precision == 0) {
+if (length <= 11)
+s = &quot;INT(&quot; + length + &quot;)&quot;;
+else if (length > 11)
+

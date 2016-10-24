@@ -1,0 +1,19 @@
+double x1 = (A[i] + A[i+1])/2.0d;
+double x2 = (A[i] + A[i+1] + A[i+2]) / 3.0d;
+
+if(minAvg > x1){
+index = i;
+}
+}
+
+int amax = A.length -2;
+double x3 = (A[amax] + A[amax+1])/2.0d;
+if(minAvg > x3){
+minAvg = x3;
+index = amax;
+}
+
+return index;
+}
+}
+

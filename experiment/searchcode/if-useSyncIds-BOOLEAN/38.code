@@ -1,0 +1,10 @@
+boolean indexToAllShards = randomBoolean();
+
+if (indexToAllShards) {
+// insert enough docs so all shards will have a doc
+client().admin().indices().prepareFlush().setWaitIfOngoing(true).setForce(true).get();
+
+boolean useSyncIds = randomBoolean();
+if (useSyncIds == false) {
+logger.info(&quot;--> disabling allocation while the cluster is shut down&quot;);
+

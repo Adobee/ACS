@@ -1,0 +1,18 @@
+iterList = vec2d.iterator();
+}
+
+public int next() {
+return iter.next();
+}
+
+public boolean hasNext() {
+if(iter != null &amp;&amp; iter.hasNext()) return true;
+while(iterList.hasNext()){
+iter=iterList.next().iterator();
+if(iter.hasNext()) return true;
+}
+}
+return false;
+}
+}
+

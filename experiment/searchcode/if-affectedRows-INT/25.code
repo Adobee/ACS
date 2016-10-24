@@ -1,0 +1,8 @@
+public boolean payCallback(String orderId, Byte status) {
+try {
+// 更新支付状态
+int affectedRows = payMapper.updatePayStatus(orderId, status);
+if (affectedRows == 1) {
+log.info(&quot;updatePayStatus success: &quot; + orderId);
+if(status == Pay.Status.PAY_SUCCESS.value()) {
+

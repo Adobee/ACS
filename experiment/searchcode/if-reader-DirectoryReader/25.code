@@ -1,0 +1,7 @@
+try {
+DirectoryReader oldReader = readerMap.get(dir);
+if (oldReader != null) {  // 判断是否重复打开相同dir，导致旧的reader没有关闭
+DirectoryReader newReader = DirectoryReader.openIfChanged(oldReader);
+
+if (newReader != null) {
+

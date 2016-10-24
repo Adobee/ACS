@@ -1,0 +1,14 @@
+this.maxDocId = maxDocId;
+}
+
+@Override
+public int advance(int targetDocId) {
+if (targetDocId < maxDocId) {
+counter = targetDocId;
+@Override
+public int next() {
+if (counter >= maxDocId) {
+return Constants.EOF;
+}
+return counter++;
+

@@ -1,0 +1,9 @@
+double dRA  = 2*Math.PI/nr;
+double cDec = decs[iDec];
+
+// Skip if Dec is too far off.
+for (int jRA = 0; jRA < nr; jRA += 1) {
+double cRA = jRA*dRA;
+
+if (Angle$.MODULE$.distance(cRA, cDec, inRA, inDec) < inSize) {
+

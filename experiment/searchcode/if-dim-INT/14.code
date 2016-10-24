@@ -1,0 +1,8 @@
+public static final MemDim EMPTY = new MemDim(0, 0, 0);
+public static final MemDim INT_DIM = new MemDim(1, 0, 0);
+public static final MemDim INT2_DIM = new MemDim(2, 0, 0);
+public static MemDim create(int xInt, int xDouble, int xChunk) {
+MemDim dim = new MemDim(xInt, xDouble, xChunk);
+MemDim old = cache.get(dim);
+if (old != null) return old;
+

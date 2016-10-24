@@ -1,0 +1,14 @@
+public String include(int[] S, int x) {
+final String y = &quot;Possible&quot;;
+final String n = &quot;Impossible&quot;;
+long lcm = 1;
+for (int i = 0; i < S.length; i++) {
+if (x % S[i] == 0) {
+lcm = lcm(lcm, S[i]);
+}
+}
+return lcm == x ? y : n;
+}
+
+}
+

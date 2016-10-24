@@ -1,0 +1,15 @@
+int pivotColumn = pivotColumn();
+int pivotRow = pivotRow();
+for (int i = 0; i < z_.length; i++)
+{
+for (int j = 0; j < z_[i].length; j++)
+z_[pivotRow][pivotColumn]);
+}
+}
+}
+for (int j = 0; j < z_[pivotRow].length; j++)
+{
+if (j != pivotColumn)
+{
+z_[pivotRow][j].divide(z_[pivotRow][pivotColumn]);
+

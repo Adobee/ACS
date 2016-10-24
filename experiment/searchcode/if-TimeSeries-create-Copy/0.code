@@ -1,0 +1,6 @@
+boolean doCreate = (boolean) properties.get(&quot;create.if.not.exists&quot;);
+Timeseries timeseries = getTimeseries(name, doCreate);
+private Timeseries getTimeseries(String name, boolean doCreate) throws NanoException {
+Timeseries timeseries = ts.get(name);
+if (timeseries == null &amp;&amp; !doCreate) {
+

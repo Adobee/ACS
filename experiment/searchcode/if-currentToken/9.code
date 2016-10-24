@@ -1,0 +1,8 @@
+String nextToken() {
+currentToken = null;
+if (tokens.hasNext()) {
+currentToken = tokens.next();
+void skipToken(String token) {
+if (!token.equals(currentToken)) {
+System.err.println(&quot;Warning: &quot; + token + &quot; is expected, but &quot;
+

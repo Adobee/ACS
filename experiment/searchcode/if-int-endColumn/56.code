@@ -1,0 +1,10 @@
+int  endRow=end.getNumber1();
+int  endColumn=end.getNumber2();
+if((startRow==endRow || startColumn==endColumn) || (Math.abs(startRow-endRow) == Math.abs(endColumn-startColumn)))
+if(startRow==endRow || startColumn==endColumn)
+{
+int diffPos=0;
+if(startRow==endRow)
+{
+diffPos= startColumn  <  endColumn ? 1:-1;
+

@@ -1,0 +1,8 @@
+final BytesRef bytes) throws IOException {
+if (in instanceof IndexInput) {
+IndexInput indexInput = (IndexInput) in;
+long filePointer = indexInput.getFilePointer();
+
+Entry entry = _entry.get();
+if (!entry.isValid(indexInput, name, filePointer)) {
+

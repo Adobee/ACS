@@ -1,0 +1,9 @@
+
+
+public class AccessorMethodUtil {
+
+public static String determineAccessedFieldname(boolean get, String methodName,
+String value) {
+String fieldName;
+if (value == null || value.isEmpty()) {
+

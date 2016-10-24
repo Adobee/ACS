@@ -1,0 +1,9 @@
+public synchronized void move(int xa, int ya){
+if(xa != 0 &amp;&amp; ya != 0){
+move(xa,0);
+move(0, ya);
+return;
+double xt = (xa + c % 2 * 32 )/16;
+double yt = (ya + c / 2 * 32)/16;
+if(level.getTile((int)xt, (int)yt).solid()) solid = true;
+

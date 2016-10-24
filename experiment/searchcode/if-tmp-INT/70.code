@@ -1,0 +1,9 @@
+int tmp_min_res=0;
+for(int i=0;i<nums.length;i++){
+if(tmp_max_res<=0){
+tmp_max_res=nums[i];
+tmp_min_res=tmp_min_res*nums[i];
+}
+if(tmp_max_res<tmp_min_res){
+int tmp=tmp_max_res;
+

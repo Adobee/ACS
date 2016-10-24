@@ -1,0 +1,6 @@
+for (Block abstractBlock : blocks) {
+if (abstractBlock.getStart() >= pos) {
+abstractBlock.setStart(abstractBlock.getStart() + message.length());
+}
+if (abstractBlock.getEnd() >= pos) {
+

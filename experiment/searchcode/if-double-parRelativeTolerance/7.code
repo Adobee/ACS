@@ -1,0 +1,7 @@
+/**  Desired relative error in the approximate solution parameters. */
+private final double parRelativeTolerance;
+/** Desired max cosine on the orthogonality between the function vector
+double costRelativeTolerance,
+double parRelativeTolerance,
+double orthoTolerance,
+

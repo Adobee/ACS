@@ -1,0 +1,9 @@
+char LastChar = sourceOfCharArray[indexOfSource++];
+Token token = new Token();
+
+if (Character.isAlphabetic(LastChar)) {
+if (indexOfSource <= sourceOfCharArray.length) {
+indexOfSource--;
+}
+} else if (Character.isDigit(LastChar) || &#39;.&#39; == LastChar) {
+

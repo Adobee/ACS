@@ -1,0 +1,9 @@
+* </copyright>
+*
+*******************************************************************************/
+package org.eclipse.jpt.jpadiagrameditor.ui.tests.internal.feature;
+IFile entity = factory.createEntity(jpaProject, &quot;org.eclipse.Entity1&quot;);
+jpt = (PersistentType)JPACreateFactory.getPersistentType(entity);
+int c = 0;
+while ((jpt == null) &amp;&amp; (c < 100)) {
+

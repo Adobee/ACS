@@ -1,0 +1,8 @@
+boolean okay(long x, long a, long b) {
+if (x < a) return true;
+return (x - a) % b != 0;
+}
+public long countThem(long a, long b, long c, long d, long upperBound) {
+long ret = 0;
+if (a <= upperBound) {
+

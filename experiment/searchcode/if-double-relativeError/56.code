@@ -1,0 +1,14 @@
+import sat.timemeasure.CPUTiming;
+
+public class Solver {
+
+public static void main(String[] args) {
+
+if (args.length != 2) {
+return;
+}
+
+int solutionFound = 0;
+//		float relativeError, totalRelativeError = 0;
+//		long startTime = CPUTiming.getCpuTime();
+

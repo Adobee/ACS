@@ -1,0 +1,7 @@
+private static final double epsilonFactor = 0.01;
+private final double epsilon;
+private final double F;
+for(Page page : pages.values()) {
+double normalizedSum = page.getBase()/sum;
+page.setScore(normalizedSum);
+

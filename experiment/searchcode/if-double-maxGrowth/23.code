@@ -1,0 +1,8 @@
+private double maxGrowth;
+private double maxDeath;
+
+private JLabel genLabel, popLabel, maxPopLabel, minPopLabel, maxGrowthLabel, maxDeathLabel;
+double tDeath = (population - nextPop)/population;
+if (tGrowth > maxGrowth) maxGrowth = tGrowth;
+if (tDeath > maxDeath) maxDeath = tDeath;
+

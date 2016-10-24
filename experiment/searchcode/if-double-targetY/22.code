@@ -1,0 +1,13 @@
+* @param targetX
+* @param targetY
+*/
+public void setTarget(double startX, double startY, double targetX,
+double dx = targetX - bodyX;
+double dy = targetY - bodyY;
+
+if (dx == 0 &amp;&amp; dy == 0) {
+return 0;
+}
+
+double txr = dx * Math.cos(-bodyAngle) - dy * Math.sin(-bodyAngle);
+

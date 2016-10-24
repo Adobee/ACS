@@ -1,0 +1,7 @@
+public void bad_sink(int data , HttpServletRequest request, HttpServletResponse response) throws Throwable
+{
+
+int valueToAdd = (new SecureRandom()).nextInt(99)+1; /* adding at least 1 */
+
+/* POTENTIAL FLAW: if (data+valueToAdd) > MAX_VALUE, this will overflow */
+

@@ -1,0 +1,9 @@
+for (int i = 0; i < n - 1; i++) {
+if (A[i] == A[i + 1])
+result = result + 1;
+}
+int r = 0;
+int count = 0;
+for (int i = 0; i < n; i++) {
+if (i >= 0) {
+

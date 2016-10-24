@@ -1,0 +1,8 @@
+public static boolean revertLABToRGB(double colorL, double colora, double colorb)
+{
+try
+{
+double var_Y =  (colorL + 16) / 116;
+double var_X = colora / 500 + var_Y;
+double var_Z = var_Y - colorb / 200;
+

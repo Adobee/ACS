@@ -1,0 +1,10 @@
+private String version;
+private long updated;
+@Nullable
+private String updatedDate;
+@Nullable
+public void setUpdated(final long updated) {
+this.updated = updated;
+if (updated > 0) {
+final DateFormat formatter = new SimpleDateFormat(&quot;yyyy-MM-dd&#39;T&#39;HH:mmZ&quot;);
+

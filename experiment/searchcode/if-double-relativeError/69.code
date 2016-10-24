@@ -1,0 +1,12 @@
+public RelativeError(RelativeError sc) {
+super(sc);
+}
+
+@Override
+public double countExample(double label, double predictedLabel) {
+double absLabel = Math.abs(label);
+if (Tools.isZero(absLabel)) {
+return Double.NaN;
+} else {
+return diff / absLabel;
+

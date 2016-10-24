@@ -1,0 +1,18 @@
+setYear(year);
+}
+
+public void setYear(int year){this.year = year;}
+
+public boolean isLeapYear(){
+if ((year%4)==0){
+if ((year%100)==0 &amp;&amp; (year%400!=0))
+return false;
+else
+return true;
+}
+
+else
+return false;
+}
+}
+

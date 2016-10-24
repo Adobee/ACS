@@ -1,0 +1,9 @@
+private static final long serialVersionUID = -5962461716457143437L;
+
+/** Number of rows of the matrix. */
+private final int rowDimension;
+* @param columnDimension number of columns of the matrix
+*/
+public OpenMapRealMatrix(int rowDimension, int columnDimension) {
+super(rowDimension, columnDimension);
+

@@ -1,0 +1,11 @@
+private TimecardHours(int hours) {
+super(Hours.hours(hours), 0, 24);
+}
+
+@Override
+protected int nullSafeToInteger(Hours hours) {
+return hours.getHours();
+}
+
+public static TimecardHours hours(int h) {
+

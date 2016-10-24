@@ -1,0 +1,10 @@
+private final ArrayDeque<CompletableFuture<SemaphorePermit>> waitQueue = new ArrayDeque<>();
+
+private final AtomicInteger availablePermits;
+
+public AsyncSemaphore(int initialPermits) {
+CompletableFuture<SemaphorePermit> f = new CompletableFuture<>();
+
+if (availablePermits.get() > 0) {
+availablePermits.decrementAndGet();
+

@@ -1,0 +1,7 @@
+public class TimeZoneObject {
+public String zoneID;
+public String regionDisplayName;
+public String fullDisplayName;
+private String getZoneOffsetDisplay(TimeZone tz){
+long rawOffsetHrs = tz.getRawOffset()/(1000*60*60);
+

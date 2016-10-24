@@ -1,0 +1,12 @@
+super(x, y);
+}
+
+@Override
+public int update(double accum, int accumIdx, double x, int xIdx){
+return (accum >= x ? accumIdx : xIdx);
+}
+
+@Override
+public int update(double accum, int accumIdx, double x, double y, int idx){
+return (accum >=x ? accumIdx : idx);
+

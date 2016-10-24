@@ -1,0 +1,12 @@
+//		if(row!=inputArray.length&amp;&amp;col!=inputArray[inputArray.length][inputArray[inputArray.length].length]){
+//go left to rigth
+//		int tempCounter=1;
+int[] startIndex = new int[]{row,col+1};
+if(startIndex[1]<inputArray[row].length &amp;&amp; inputArray[startIndex[0]][startIndex[1]]==number+1){
+Count=nextNumber(inputArray,number+1,startIndex[0],startIndex[1],Count+1);
+}
+startIndex[0]=row;
+startIndex[1]=col;
+startIndex = new int[]{row+1,col};
+if(startIndex[0]<inputArray.length &amp;&amp; inputArray[startIndex[0]][startIndex[1]]==number+1){
+

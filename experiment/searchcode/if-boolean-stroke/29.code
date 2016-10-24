@@ -1,0 +1,17 @@
+public SetStrokeEvent(Trace trace, int eventID) {
+
+super(trace, eventID);
+
+}
+
+public void paint(Graphics2D g) {
+
+if(getStroke() != null)
+g.setStroke(stroke);
+
+}
+
+public boolean segmentsOutput() { return false; }
+
+public Value getStrokeProducedEvent() { return getArgument(1); }
+

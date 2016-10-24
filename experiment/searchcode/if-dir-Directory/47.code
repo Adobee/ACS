@@ -1,0 +1,8 @@
+public DirectoryNode(File dir) {
+super(dir);
+if (! dir.isDirectory())
+throw new IllegalArgumentException(&quot;File &quot; + dir.getAbsolutePath() + &quot; is not a directory&quot;);
+public void setDirectory(File dir) {
+if (! dir.isDirectory())
+throw new IllegalArgumentException(&quot;File &quot; + dir.getAbsolutePath() + &quot; is not a directory&quot;);
+

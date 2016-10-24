@@ -1,0 +1,17 @@
+/**
+*
+*/
+package pattern.Strategy;
+
+/**
+* 环境角色
+* <p>
+* 持有一个Strategy对象的引用
+*
+* @author 刘晨伟
+public Strategy getStrategy() {
+if (strategy == null) {
+strategy = new DefaultStrategy();
+}
+return strategy;
+

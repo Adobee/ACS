@@ -1,0 +1,10 @@
+public String unmarshall(Document document) {
+Elements elements = document.select(&quot;div.errorMessage&quot;);
+
+String errorMessage = null;
+
+if (!elements.isEmpty()) {
+errorMessage = elements.first().text();
+
+if (errorMessage.startsWith(ERROR_PREFIX)) {
+

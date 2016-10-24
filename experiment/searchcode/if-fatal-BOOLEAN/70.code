@@ -1,0 +1,13 @@
+public void error(SAXParseException exception) throws SAXException {
+addError(exception.getMessage());
+}
+
+public boolean hasWarnings() {
+if (getWarnings() == null) {
+return !getErrors().isEmpty();
+}
+
+public boolean hasFatalErrors()
+{
+if (getFatalErrors() == null) {
+

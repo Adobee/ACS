@@ -1,0 +1,12 @@
+Directory dir = directoryDAO.getDirectory(id);
+Directory pdir = dir.getPdir();
+deleteDirectory(dir);
+
+if(!directoryDAO.hasChild(pdir)){
+directoryDAO.setLeaf(pdir.getId(),true);
+}
+}
+
+public void deleteDirectory(Directory dir){
+if(dir.isLeaf() &amp;&amp; !dir.isFolder()){
+

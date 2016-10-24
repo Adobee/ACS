@@ -1,0 +1,14 @@
+public static idVec5 oMulSet(idVec5 vec, final idMat5 mat) {
+vec = mat.oMultiply(vec);
+return vec;
+}
+
+public boolean Compare(final idMat5 a) {// exact compare, no epsilon
+hash = 29 * hash + Arrays.deepHashCode(this.mat);
+return hash;
+}
+
+@Override
+public boolean equals(Object obj) {
+if (obj == null) {
+

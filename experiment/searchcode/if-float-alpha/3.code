@@ -1,0 +1,9 @@
+public class AlphaAnimation extends Animation {
+
+private float alphaBegin,
+alphaEnd,
+delay,
+speed;
+
+public AlphaAnimation(float alphaBegin, float alphaEnd, float speed) {
+

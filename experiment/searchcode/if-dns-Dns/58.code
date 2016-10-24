@@ -1,0 +1,13 @@
+/* 实例为空则重新创建 */
+if ( dnsUpStreamMap == null ) dnsUpStreamMap = new DnsUpStreamMap();
+}
+
+private String verify() {
+retStr = verify_add();
+if ( retStr != null )
+{
+return retStr;
+}
+
+retStr = dnsUpStreamMap.addDnsUpStream(dnsUpStream);
+

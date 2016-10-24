@@ -1,0 +1,9 @@
+import java.net.Socket;
+
+import javax.net.SocketFactory;
+
+public class AsyncSocketFactoryTask extends AsyncTask<String, Void, String> {
+protected String doInBackground(String... urls) {
+if (urls.length < 1) {
+throw new IllegalArgumentException(&quot;a URL is required&quot;);
+

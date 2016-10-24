@@ -1,0 +1,11 @@
+textureId = TextureLoader.loadTexture(fontmap);
+
+fontSize = size;
+
+base = GL11.glGenLists(256);
+float s = 1.0f / 16.0f;
+public void print(String msg, int x, int y, int color){
+float a = (color>>24)&amp;0xFF;
+if(a == 0.0f) a = 1.0f;
+GL11.glPushMatrix();
+

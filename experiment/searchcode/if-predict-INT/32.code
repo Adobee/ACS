@@ -1,0 +1,8 @@
+while (step < oracle.finalStep()) {
+if (!predict.isGold()) {
+ArrayList<DPState> predictChain = predict.listStates();
+agenda.addExceptNull(predict.takeFinish());
+if (!agenda.isEmpty()) {
+predict = max(agenda);
+} else {
+

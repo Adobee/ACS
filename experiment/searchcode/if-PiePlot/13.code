@@ -1,0 +1,7 @@
+import org.jfree.chart.plot.PiePlot;
+import org.jfree.chart.plot.PiePlot3D;
+import org.jfree.data.general.DefaultPieDataset;
+//得到饼图的Plot对象
+PiePlot3D piePlot = (PiePlot3D) pieChart.getPlot();
+setSection(piePlot);//设置扇区颜色，可省略
+

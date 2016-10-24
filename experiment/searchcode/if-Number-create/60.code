@@ -1,0 +1,12 @@
+import javax.persistence.NoResultException;
+
+/**
+* Created by cooper on 9/15/15.
+*/
+@Name(&quot;numberPool&quot;)
+@AutoCreate
+public class NumberPool {
+public String genContractNumber(){
+try {
+NumberRecord numberRecord = entityManager.createQuery(&quot;select numberPool from NumberRecord numberPool where numberPool.projectNumber.projectCode = :projectCode and numberPool.type =:poolType&quot;, NumberRecord.class)
+

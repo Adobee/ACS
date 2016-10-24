@@ -1,0 +1,8 @@
+user = (FhiUser) request.getSession().getAttribute(FhiConfig.USER_NAME);
+if (user == null) {
+return mapping.findForward(&quot;login&quot;);
+throws Exception {
+FhiUcWorkPlan workPlan = ucWorkPlanForm.getUcWorkPlan();
+
+if(workPlan.getId()==null||&quot;&quot;.equals(workPlan.getId())){
+

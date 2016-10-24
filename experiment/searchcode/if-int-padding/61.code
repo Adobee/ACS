@@ -1,0 +1,8 @@
+protected void updateAWTMargin(Border margin) {
+if (padding != null) {
+// Add padding to AWT margin
+super.updateAWTMargin(margin.add(padding));
+public void setText(String text) {
+// Make sure we update padding if text changes
+Border padding = getPadding();
+

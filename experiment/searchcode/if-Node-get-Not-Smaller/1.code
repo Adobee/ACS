@@ -1,0 +1,10 @@
+* all nodes less than x come before all nodes greater or equal to x.
+*/
+
+//Do not get a single node from original linked list
+//will cause infinity loop
+Node iterator = head;
+while(iterator!=null){
+if(iterator.data <= x){
+if(smaller == null){//if it was the first node
+

@@ -1,0 +1,10 @@
+public class UglyNumber {
+//这种方法会超时
+public boolean isUgly1(long num)
+{
+int factor = 2;
+while (factor * factor <= num)
+num /= factor;
+System.out.println(factor);
+if (factor != 2 &amp;&amp; factor != 3 &amp;&amp; factor != 5)
+

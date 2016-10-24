@@ -1,0 +1,17 @@
+public static JulianCalendar of(
+HistoricEra era,
+int yearOfEra,
+int month,
+int dayOfMonth
+) {
+
+if (era == null) {
+public int getLengthOfYear(
+CalendarEra era,
+int yearOfEra
+) {
+
+int pYear;
+
+if (era == HistoricEra.AD) {
+

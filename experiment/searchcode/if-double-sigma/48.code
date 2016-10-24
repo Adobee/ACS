@@ -1,0 +1,7 @@
+Matrix sigma_el = linearMatrix(t).times(depsilon);
+double Sx = sigma_el.get(0, 0);
+double Sy = sigma_el.get(1, 0);
+double Sz = mu*(Sx+Sy);
+double Txy = sigma_el.get(2, 0);
+double S1 = (Sx+Sy)/2+Math.sqrt(Math.pow((Sx-Sy)/2,2) + Math.pow(Txy,2));
+

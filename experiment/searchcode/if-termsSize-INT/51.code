@@ -1,0 +1,9 @@
+private Agent agent = null; // the agent where this function was used
+
+public ArithFunctionTerm(String functor, int termsSize) {
+@Override
+protected int calcHashCode() {
+if (isEvaluated())
+return value.hashCode();
+else
+

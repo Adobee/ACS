@@ -1,0 +1,13 @@
+public static int getMaxWidthInDigits(IFont pFont) {
+int maxWidth = 0;
+for (int i = 0; i < 10; i++) {
+Letter l = pFont.getLetter((char) (&#39;0&#39; + i));
+if (maxWidth < l.mWidth) {
+maxWidth = l.mWidth;
+}
+}
+
+return maxWidth;
+}
+}
+

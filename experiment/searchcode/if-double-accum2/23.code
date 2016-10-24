@@ -1,0 +1,11 @@
+* @return the skewness of the available values.
+*/
+public double getResult() {
+
+if (moment.n < 3) {
+return Double.NaN;
+double skewness = Double.NaN;
+if (variance < 10E-20) {
+skewness = 0.0;
+} else {
+

@@ -1,0 +1,11 @@
+static int comp(double a) {
+if (a < eps) return -1;
+if (a > eps) return 1;
+return 0;
+}
+static double sqr(double a) {
+static P2 sub(P2 a, P2 b) {
+return new P2(a.x - b.x, a.y - b.y);
+}
+static P2 mult(P2 a, double b) {
+

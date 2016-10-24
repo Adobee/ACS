@@ -1,0 +1,9 @@
+Analyzer analyzer = null;
+boolean closeAnalyzer = false;
+String field = null;
+if (request.field() != null) {
+analyzer = new CustomAnalyzer(tokenizerFactory, new CharFilterFactory[0], tokenFilterFactories);
+closeAnalyzer = true;
+} else if (analyzer == null) {
+if (indexService == null) {
+

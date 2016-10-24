@@ -1,0 +1,9 @@
+@param nenner: Nenner des Bruches
+*/
+private Fraction(int zaehler, int nenner) {
+if (nenner == 0) throw new IllegalArgumentException(&quot;Denominator is zero.&quot;);
+public static Fraction parseFraction(String s) {
+if (!s.matches(&quot;^-?\\d+/-?\\d+$&quot;))
+return null;
+String[] numbers = s.split(&quot;/&quot;);
+

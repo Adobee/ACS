@@ -1,0 +1,8 @@
+public static void main(String[] args) throws Exception {
+long startTime = 0, endTime = 0, totalTime = 0;
+double avgFindAccuracy = 0, avgRepairAccuracy = 0;
+endTime = System.currentTimeMillis();
+
+double findAccuracy = TestUtil.findAccuracy(truth, found);
+double repairAccuracy = TestUtil.repairAccuracy(truth, found);
+

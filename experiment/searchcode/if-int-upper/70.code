@@ -1,0 +1,22 @@
+
+public class Range {
+private  int lower;
+private int upper;
+
+public Range(int lowValue, int upValue)
+public boolean contains(int num)
+{
+boolean result = false;
+
+if (num > this.lower &amp;&amp; num < this.upper)
+result = true;
+
+return result;
+}
+
+
+
+
+
+}
+

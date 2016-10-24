@@ -1,0 +1,7 @@
+import org.elasticsearch.action.support.ActiveShardCount;
+import org.elasticsearch.action.support.master.MasterNodeReadOperationRequestBuilder;
+import org.elasticsearch.client.ElasticsearchClient;
+public ClusterHealthRequestBuilder setWaitForActiveShards(ActiveShardCount waitForActiveShards) {
+if (waitForActiveShards.equals(ActiveShardCount.DEFAULT)) {
+// the default for cluster health is 0, not 1
+

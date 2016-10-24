@@ -1,0 +1,11 @@
+public int compare(Piece c1, Piece c2) {
+if (c1 == null &amp;&amp; c2 == null)
+return 0;
+if (c1 != null &amp;&amp; c2 == null)
+return -1;
+if (c1 == null &amp;&amp; c2 != null)
+return 1;
+
+if (c1.width != c2.width) {
+return (int) ((c1.width - c2.width) * decreasingFactor);
+

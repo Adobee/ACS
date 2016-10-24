@@ -1,0 +1,9 @@
+import org.hibernate.type.VersionType;
+
+/**
+* Represents a replication strategy.
+*
+* @see Session#replicate(Object, ReplicationMode)
+public boolean shouldOverwriteCurrentVersion(Object entity, Object currentVersion, Object newVersion, VersionType versionType) {
+if (versionType==null) return true; //always overwrite nonversioned data
+

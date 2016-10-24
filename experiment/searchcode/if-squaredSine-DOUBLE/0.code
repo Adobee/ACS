@@ -1,0 +1,8 @@
+/*   35:     */   {
+/*   36: 175 */     double norm = axis.getNorm();
+/*   37: 176 */     if (norm == 0.0D) {
+/*   38: 177 */       throw new MathIllegalArgumentException(LocalizedFormats.ZERO_NORM_FOR_ROTATION_AXIS, new Object[0]);
+/*  133: 343 */     double c = k.dotProduct(u3);
+/*  134: 344 */     double inPlaneThreshold = 0.001D;
+/*  135: 345 */     if (c <= 0.001D * k.getNorm() * u3.getNorm())
+

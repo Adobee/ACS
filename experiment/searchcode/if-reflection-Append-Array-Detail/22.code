@@ -1,0 +1,11 @@
+public void appendDetail(StringBuffer stringbuffer, String s, Object object) {
+if (!ClassUtils.isPrimitiveWrapper(object.getClass()) &amp;&amp; !String.class.equals(object.getClass()) &amp;&amp; this.accept(object.getClass())) {
+this.appendIdentityHashCode(stringbuffer, collection);
+this.appendDetail(stringbuffer, s, collection.toArray());
+}
+
+protected boolean accept(Class<?> oclass) {
+return true;
+}
+}
+

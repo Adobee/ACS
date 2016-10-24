@@ -1,0 +1,14 @@
+m_PSR_IConversor = new OCM_SingleReceptacle<IConversor>(IConversor.class);
+}
+
+@Override
+public boolean connect(IUnknown iu, String string, long l) {
+if (string.equalsIgnoreCase(&quot;test.src.IConversor&quot;)) {
+return m_PSR_IConversor.connectToRecp(iu, string, l);
+}
+else return false;
+}
+
+@Override
+public boolean disconnect(String string, long l) {
+

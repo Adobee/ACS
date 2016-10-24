@@ -1,0 +1,12 @@
+public void setForegroundDrawable(Drawable draw) {
+if (draw == mForeground) {
+return;
+}
+if (mForeground != null) {
+mForeground.setCallback(null);
+}
+mForeground = draw;
+if (draw != null) {
+if (draw.isStateful()) {
+draw.setState(getDrawableState());
+

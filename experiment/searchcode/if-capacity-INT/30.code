@@ -1,0 +1,10 @@
+package comp;
+
+public class DataBus implements IntBus {
+private static int capacity = 8;
+private static int capacityMask = 0xFF;
+
+@Override
+public void createMask(int n) {
+capacityMask = ~((int)-1 << n);
+

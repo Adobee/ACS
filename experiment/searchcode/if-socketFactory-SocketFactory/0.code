@@ -1,0 +1,9 @@
+SocketFactory socketFactory, boolean delimited) {
+if (serverAddr == null) {
+throw new IllegalArgumentException();
+}
+if (socketFactory == null) {
+socketFactory = SocketFactory.getDefault();
+}
+this.serverAddr = serverAddr;
+

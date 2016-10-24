@@ -1,0 +1,13 @@
+public final class motion_plan_t implements lcm.lcm.LCMEncodable
+{
+public long utime;
+public int nsteps;
+public double xy[][];
+
+public motion_plan_t()
+outs.writeLong(this.utime);
+
+outs.writeInt(this.nsteps);
+
+for (int a = 0; a < this.nsteps; a++) {
+

@@ -1,0 +1,7 @@
+static public native void f119(int p0);
+static public native void f120(int p0);
+static public native void f121(long p0);
+static public native void f122(long p0);
+static public native void f123(float p0);
+static public native void f124(double p0);
+

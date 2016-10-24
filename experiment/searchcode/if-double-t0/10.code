@@ -1,0 +1,10 @@
+double sps = 44100;
+int N = (int) (sps * t);
+double[] wave = new double[N];
+double t0 = 0;
+int j = 0;
+int n = 0;
+double temp_pitch = opt_freqs[(int) (Math.random()*opt_freqs.length)];
+double temp_duras = opt_duras[(int) (Math.random()*opt_duras.length)];
+if ((t - t0) < temp_duras) temp_duras = t - t0;
+

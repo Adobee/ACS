@@ -1,0 +1,14 @@
+* @return A boolean.
+*/
+public boolean equals(Object o) {
+
+if (this == o) {
+return true;
+}
+if (!(o instanceof ItemLabelAnchor)) {
+return false;
+}
+
+final ItemLabelAnchor order = (ItemLabelAnchor) o;
+if (!this.name.equals(order.toString())) {
+

@@ -1,0 +1,14 @@
+public void add( float input ){
+if(numEntries < BUFFER_SIZE){
+numEntries++;
+buffer[head] = input;
+head = (head + 1)%BUFFER_SIZE;
+tail = (tail + 1)%BUFFER_SIZE;
+}
+
+}
+
+public float get(){
+if(numEntries > 0){
+float value = buffer[tail];
+

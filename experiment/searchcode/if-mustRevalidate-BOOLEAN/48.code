@@ -1,0 +1,14 @@
+if (event.equals(&quot;VALIDATE_POS&quot;) &amp;&amp; (npc != null))
+{
+Location coords = DAY_COORDS;
+boolean mustRevalidate = false;
+if ((npc.getX() != NIGHT_COORDS.getX()) &amp;&amp; GameTimeController.getInstance().isNight())
+else if ((npc.getX() != DAY_COORDS.getX()) &amp;&amp; !GameTimeController.getInstance().isNight())
+{
+mustRevalidate = true;
+}
+
+if (mustRevalidate)
+{
+npc.getSpawn().setLocation(coords);
+

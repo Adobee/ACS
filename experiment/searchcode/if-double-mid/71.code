@@ -1,0 +1,9 @@
+public class Solution {
+public double pow(double x, int n) {
+if(x == 1) return 1;
+if(n == 0) return 1;
+
+double mid = pow(x,n/2);
+double remainder = pow(x,n%2);
+return mid * mid * remainder;
+

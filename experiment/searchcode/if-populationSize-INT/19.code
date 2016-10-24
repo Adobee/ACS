@@ -1,0 +1,12 @@
+public class RNI extends MetricHandler {
+
+private int populationSize;
+public RNI(int numObj, int populationSize) {
+if(front.size() > 0)
+toReturn= ((double)front.size()/(double)this.populationSize);
+if(toReturn > 1.0)
+toReturn=1.0;
+return toReturn;
+}
+}
+

@@ -1,0 +1,11 @@
+this.retrofit = retrofit;
+}
+
+public Builder networkBehavior(NetworkBehavior behavior) {
+if (behavior == null) throw new NullPointerException(&quot;behavior == null&quot;);
+return this;
+}
+
+public MockRetrofit build() {
+if (behavior == null) behavior = NetworkBehavior.create();
+

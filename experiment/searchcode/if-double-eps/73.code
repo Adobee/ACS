@@ -1,0 +1,9 @@
+public static void main(String[] args) {
+final double eps = 1.0e-6;
+for(double q = 0.5 + eps;q<1.0;q+=eps) {
+final double check = logit(q) - 4.0*(q-0.5);
+if(check<0) {
+System.out.println(&quot;q: &quot; + q);
+}
+double x = 0;
+

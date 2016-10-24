@@ -1,0 +1,6 @@
+public DimensionBuilder divide(Dimension dimension) {
+if (products.containsKey(dimension)) {
+public DimensionBuilder pow(Dimension dimension, int n) {
+if (products.containsKey(dimension)) {
+products.put(dimension, products.get(dimension) + n);
+

@@ -1,0 +1,10 @@
+* Returns the map value with the key the same as <code>propertyName</code>.
+*/
+public Object get(Object focus, String propertyName) {
+if(canAccess(focus, propertyName)) {
+* (even if the value is null).
+*/
+public boolean canAccess(Object focus, String propertyName) {
+if(focus == null) {
+return false;
+

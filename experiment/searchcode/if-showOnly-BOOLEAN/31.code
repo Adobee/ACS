@@ -1,0 +1,15 @@
+public final boolean evaluate() {
+return !isClosed();
+}
+
+/**
+* show.
+*/
+public final void showOnly() {
+if (!isVisible()) {
+showOnly();
+}
+
+if (WindowManager.isInputThread()) {
+WindowManager.blockInputThread(this);
+

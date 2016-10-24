@@ -1,0 +1,8 @@
+// boolean u = (w2 &amp; 0x80000000) != 0; // Unused.
+int newStreamId = (w2 &amp; 0x7fffffff);
+
+if (newType != TYPE_CONTINUATION) {
+if (length != 4) throw ioException(&quot;TYPE_PRIORITY length: %d != 4&quot;, length);
+if (streamId == 0) throw ioException(&quot;TYPE_PRIORITY streamId == 0&quot;);
+int w1 = in.readInt();
+

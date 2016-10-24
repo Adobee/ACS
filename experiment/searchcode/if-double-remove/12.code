@@ -1,0 +1,14 @@
+for(int j = 0; j < arr2.size(); j++){
+
+if(arr2.get(j).equals(&quot;+&quot;)){
+
+Double d1 = Double.parseDouble(arr2.get(j-2));
+Double d2 = Double.parseDouble(arr2.get(j-1));
+arr2.remove(j-1);
+arr2.remove(j-2);
+
+j--;
+j--;
+}else if(arr2.get(j).equals(&quot;*&quot;)){
+Double d1 = Double.parseDouble(arr2.get(j-2));
+

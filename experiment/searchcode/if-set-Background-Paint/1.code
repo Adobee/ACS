@@ -1,0 +1,11 @@
+public void setStyle(String style, Paint value) {
+setBackgroundPaint(value);
+}
+
+@Override
+public void resetStyles() {
+setBackgroundPaint(null);
+//System.out.println(&quot;Painting: &quot; + m_backgroundPaint + &quot; &quot; + m_node.getWidth() + &quot; &quot; + m_node.getHeight());
+p.setPaint(m_backgroundPaint);
+if (m_backgroundRadius == 0) p.fillRect(0, 0, m_node.getWidth(), m_node.getHeight());
+

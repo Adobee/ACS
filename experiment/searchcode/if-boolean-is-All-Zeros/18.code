@@ -1,0 +1,8 @@
+private static boolean isSquare(SquareCell[][] matrix, int row, int col, int size) {
+SquareCell topLeft = matrix[row][col];
+SquareCell bottomLeft = matrix[row + size - 1][col];
+if (topLeft.zerosRight < size) { // Check top edge
+return false;
+}
+if (topLeft.zerosBelow < size) { // Check left edge
+

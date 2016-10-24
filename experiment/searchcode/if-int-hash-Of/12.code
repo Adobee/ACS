@@ -1,0 +1,13 @@
+for(int i = 0; i < str.length(); i++)
+{
+hash = (hash << 4) + str.charAt(i);
+if((x = (int)(hash &amp; 0xF0000000L)) != 0)
+return (hash &amp; 0x7FFFFFFF);
+}
+/* End Of DJB Hash Function */
+
+/**
+* DEK算法
+*/
+public static int DEKHash(String str)
+

@@ -1,0 +1,9 @@
+package cz.bbmri.action.sample;
+
+import cz.bbmri.action.base.PermissionActionBean;
+import cz.bbmri.entities.sample.Sample;
+public Sample getSample() {
+if (sample == null) {
+if (sampleId != null) {
+sample = sampleService.get(sampleId);
+

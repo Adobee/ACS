@@ -1,0 +1,14 @@
+public static final double PIE = 3.14159d;
+
+public static double sin(double x_) {
+
+if (Double.isNaN(x_)) {
+return Double.NaN;
+}
+
+int sign = 1;
+
+// sin(-x) = -sin(x)
+if (x_ < 0.0d) {
+sign = -1;
+

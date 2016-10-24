@@ -1,0 +1,6 @@
+private boolean equals(Collection<ClosestPoints.Point> points, int[][] xys) {
+ClosestPoints.Point p;
+for (int[] xy : xys) {
+p = new ClosestPoints.Point(xy[0], xy[1]);
+if (!points.remove(p)) return false;
+

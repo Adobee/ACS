@@ -1,0 +1,8 @@
+@Override public EdgeInterface<T> addEdge(T from, T to, Double cost) {
+Vertex<T> vFrom = Vertex.of(from), vTo = Vertex.of(to);
+return addEdge(vFrom, vTo, cost);
+endVertices.add(vFrom, vTo);
+endEdges.add(vFrom,e);
+if (type == TYPE.UNDIRECTED) {
+Edge<T> reverse = Edge.of(vTo, vFrom).cost(cost).isDirected(type == TYPE.DIRECTED);
+

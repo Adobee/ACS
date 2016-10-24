@@ -1,0 +1,8 @@
+while (result == 0 &amp;&amp; pos1 < len1 &amp;&amp; pos2 < len2) {
+char ch1 = str1.charAt(pos1);
+char ch2 = str2.charAt(pos2);
+
+if (Character.isDigit(ch1)) {
+result = Character.isDigit(ch2) ? compareNumbers() : -1;
+} else if (Character.isLetter(ch1)) {
+

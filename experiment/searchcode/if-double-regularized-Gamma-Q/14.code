@@ -1,0 +1,8 @@
+public GammaTest(String name) {
+super(name);
+}
+
+private void testRegularizedGamma(double expected, double a, double x) {
+double actual = Gamma.regularizedGammaP(a, x);
+TestUtils.assertEquals(expected, actual, 10e-5);
+

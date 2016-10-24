@@ -1,0 +1,9 @@
+import org.assertj.core.util.VisibleForTesting;
+import org.elasticsearch.common.bytes.BytesReference;
+import org.elasticsearch.common.xcontent.XContentHelper;
+return Observable.just(new BulkResponse().doParse(new ByteBufBytesReference(content)));
+}
+
+@VisibleForTesting
+protected BulkResponse doParse(BytesReference bytesReference) {
+

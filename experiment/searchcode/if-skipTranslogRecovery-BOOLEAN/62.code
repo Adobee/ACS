@@ -1,0 +1,6 @@
+public Engine.CommitId flush(FlushRequest request) throws ElasticsearchException {
+boolean waitIfOngoing = request.waitIfOngoing();
+boolean force = request.force();
+private Map<String, Mapping> internalPerformTranslogRecovery(boolean skipTranslogRecovery) {
+if (state != IndexShardState.RECOVERING) {
+

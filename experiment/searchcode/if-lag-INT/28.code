@@ -1,0 +1,10 @@
+package fr.cartooncraft.essentials.lag;
+
+import main.java.com.webkonsept.minecraft.lagmeter.LagMeter;
+public class EssentialsLag extends JavaPlugin {
+
+private int lagListenerID;
+
+public void onEnable() {
+this.lagListenerID = LagMeter.getInstance().registerSyncLagListener(new LagListener(this));
+

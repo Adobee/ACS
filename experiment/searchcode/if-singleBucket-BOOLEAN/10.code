@@ -1,0 +1,7 @@
+long currTime = System.currentTimeMillis();
+if (refresh.containsKey(node)) {
+// Check that it didn&#39;t get reply for a long time
+ArrayList<KademliaId> result = new ArrayList<KademliaId>();
+for (SingleKBucket singleBucket : buckets) {
+if (!singleBucket.isFresh()) {
+

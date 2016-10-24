@@ -1,0 +1,10 @@
+/** {@inheritDoc} */
+@Override
+protected UnivariatePointValuePair doOptimize() {
+final boolean isMinim = getGoalType() == GoalType.MINIMIZE;
+// Best point encountered so far (which is the initial guess).
+UnivariatePointValuePair best = current;
+
+while (true) {
+final double m = 0.5 * (a + b);
+

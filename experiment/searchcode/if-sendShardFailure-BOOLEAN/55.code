@@ -1,0 +1,13 @@
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicLong;
+
+/**
+*
+*/
+
+
+public class RecoveryStatus extends AbstractRefCounted {
+* @param sendShardFailure indicates whether to notify the master of the shard failure
+*/
+public void fail(RecoveryFailedException e, boolean sendShardFailure) {
+

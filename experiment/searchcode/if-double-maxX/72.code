@@ -1,0 +1,17 @@
+public abstract class Astral {
+BufferedImage image;
+double x,
+y,
+sx, //speed x
+sy,
+maxX = 0,
+maxY = 0;
+
+public void step(){
+
+if(maxX > 0){
+if(x+sx > maxX){
+x = maxX-(x+sx);
+}
+else if(x+sx < 0){
+

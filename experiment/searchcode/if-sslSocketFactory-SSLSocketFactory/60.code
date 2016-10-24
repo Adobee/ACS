@@ -1,0 +1,11 @@
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+import javax.net.ssl.SSLSocketFactory;
+
+public class SSLUtils {
+public synchronized static final SSLSocketFactory getSSLSocketFactory(boolean insecure) {
+if (insecure) {
+if (sInsecureFactory == null) {
+

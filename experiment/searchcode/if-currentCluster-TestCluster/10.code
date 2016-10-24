@@ -1,0 +1,8 @@
+* By default if no {@link ClusterScope} is configured this will hold a reference to the global cluster carried
+* on across test suites.
+*/
+private static TestCluster currentCluster;
+public TestCluster buildAndPutCluster(Scope currentClusterScope, boolean createIfExists) throws IOException {
+TestCluster testCluster = clusters.get(this.getClass());
+if (createIfExists || testCluster == null) {
+

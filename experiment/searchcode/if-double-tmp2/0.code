@@ -1,0 +1,9 @@
+double[] tmp2 = new double[numSaidas];
+int out = scan.nextInt();
+
+if(out == 1)
+tmp2[5] = 0;
+tmp2[6] = 0;
+}
+else if(out == 2)
+

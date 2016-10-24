@@ -1,0 +1,14 @@
+if (frame > totalFrames)
+{
+if (wrapMode == WrapMode.ONCE)
+{
+frame = 1;
+isPlaying = false;
+return;
+}
+if (wrapMode == WrapMode.CLAMP)
+{
+frame = totalFrames;
+}
+if (wrapMode == WrapMode.LOOP)
+

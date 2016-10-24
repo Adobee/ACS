@@ -1,0 +1,11 @@
+Vector3d tmp = new Vector3d();
+
+//closest point origin from line segment
+Vector3d from = simplexVectorW[0];
+Vector3d to = simplexVectorW[1];
+boolean hasSeperation = closestPtPointTetrahedron(p,a,b,c,d,cachedBC);
+
+if (hasSeperation)
+{
+tmp1.scale(cachedBC.barycentricCoords[0], simplexPointsP[0]);
+

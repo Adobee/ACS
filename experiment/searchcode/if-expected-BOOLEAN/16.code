@@ -1,0 +1,6 @@
+public boolean test(Object receiver, String property, Object[] args, Object expectedValue) {
+if (property.equals(&quot;deleted&quot;) &amp;&amp; receiver instanceof IDeletable) {
+boolean expected = false;
+if (expectedValue instanceof Boolean) {
+expected = ((Boolean)expectedValue).booleanValue();
+

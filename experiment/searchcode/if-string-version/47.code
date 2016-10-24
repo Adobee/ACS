@@ -1,0 +1,9 @@
+public HttpVersion parse(String versionString)
+{
+String[] versionParts = versionString.split(&quot;\\.&quot;);
+if (versionParts.length != 2)
+throw new IllegalArgumentException(&quot;Unknown version format: &quot; + versionString);
+}
+long majorVersion = Long.parseLong(versionParts[0]);
+long minorVersion = Long.parseLong(versionParts[1]);
+

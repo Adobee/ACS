@@ -1,0 +1,19 @@
+package lumarca.action;
+
+public class Action{
+
+protected boolean init = false;
+
+public void init(){
+System.out.println(&quot;DEFAULT ACTION&quot;);
+}
+
+public static void executeAction(Action action){
+if(action != null){
+if(!action.init)
+action.init();
+action.execute();
+}
+}
+}
+

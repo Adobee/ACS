@@ -1,0 +1,9 @@
+public class FixedInterval implements RetryStrategy {
+
+private final int maxRetries;
+private final long retryInterval;
+
+public FixedInterval(int maxRetries, long retryInterval) {
+this.maxRetries = maxRetries;
+this.retryInterval = retryInterval;
+

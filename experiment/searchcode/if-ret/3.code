@@ -1,0 +1,13 @@
+public long getTime(long d) {
+//        long ret = ((long)Math.sqrt(1 + 4 * d) - 1) / 2;
+//        if (ret * ret + ret > d) {
+//            ret--;
+//        }
+long ret = 0;
+while (d - (ret*ret+ret) >= 0) {
+ret++;
+}
+return ret-1;
+}
+}
+

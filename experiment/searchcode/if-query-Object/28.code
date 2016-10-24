@@ -1,0 +1,10 @@
+newQuery = newQuery.replaceFirst(&quot;#&quot;, String.valueOf(object));
+
+} else if (object instanceof String) {
+
+newQuery = newQuery.replaceFirst(&quot;#&quot;, &quot;&#39;&quot; + object + &quot;&#39;&quot;);
+Date date = (Date) object;
+newQuery = newQuery.replaceFirst(&quot;#&quot;, &quot;&#39;&quot; + date + &quot;&#39;&quot;);
+
+} else if (object instanceof Boolean) {
+

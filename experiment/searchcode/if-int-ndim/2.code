@@ -1,0 +1,13 @@
+private int ndim;
+
+public RealDoubleFFT(int n) {
+ndim = n;
+norm_factor = n;
+if (wavetable == null || wavetable.length != (2 * ndim + 15)) {
+rffti(ndim, wavetable);
+}
+
+public void ft(double x[]) {
+if (x.length != ndim)
+throw new IllegalArgumentException(&quot;The length of data can not match that of the wavetable&quot;);
+

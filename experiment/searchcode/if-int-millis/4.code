@@ -1,0 +1,14 @@
+public long getMillis() {
+return millis;
+}
+
+
+public int compareTo( Duration d ) {
+return ComparatorUtils.compareAsc(this.millis, d.millis);
+public int hashCode() {
+return (int) millis;
+}
+
+public boolean equals( Object o ) {
+if ( !(o instanceof Duration) ) {
+

@@ -1,0 +1,10 @@
+public AbsoluteTime absolute(Clock clock, AbsoluteTime absoluteTime) { return null; }
+
+public RelativeTime add(long l, int i) {
+long newMillis = millis+l;
+int newNanos = nanos+i;
+return new RelativeTime(newMillis, newNanos);
+}
+
+public RelativeTime add(long l, int i, RelativeTime relativeTime) { return null; }
+

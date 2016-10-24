@@ -1,0 +1,8 @@
+private static ByteBuffer sendBuffer = ByteBuffer.allocate(BLOCK);
+/* 发送数据缓冲区 */
+private static ByteBuffer receiveBuffer = ByteBuffer.allocate(BLOCK);
+for (SelectionKey selectionKey : selectionKeys) {
+// 判断是否为建立连接的事件
+SocketChannel socketChannel;
+if (selectionKey.isConnectable()) {
+

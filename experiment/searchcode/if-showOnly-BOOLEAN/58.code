@@ -1,0 +1,18 @@
+public List<String> getData() {
+return new ArrayList<>();
+}
+
+@Override
+public boolean showOnly() {
+return false;
+public List<Object> getParameters(int item, String input) throws SQLException {
+List<Object> result = new ArrayList<>(parameters);
+
+if (item == 1) {
+dao.addQuestion(projectId, input);
+}
+
+return result;
+}
+}
+

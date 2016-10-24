@@ -1,0 +1,10 @@
+if(value < 1.0 || value > 99.0)
+value = 1.0f;
+}
+else
+{
+if(value < 0.0 || value > 9.9)
+packet.addByte((byte)(value.toString().charAt(0)));
+if(value == 0.0)
+packet.addByte((byte)&#39;0&#39;);
+

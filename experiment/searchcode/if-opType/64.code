@@ -1,0 +1,10 @@
+public void setType(String opType) {
+if (this.opType == null) {
+this.opType = this.getOpType(opType);
+}
+}
+
+private OpType getOpType(String opType) {
+if (&quot;select&quot;.equalsIgnoreCase(opType)) {
+return OpType.query;
+

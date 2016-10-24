@@ -1,0 +1,10 @@
+private String _name;
+
+Alarm(String name, LocalDateTime when, Runnable task)
+{
+this._when = when;
+this._task = task;
+synchronized(this) {
+if (this._hasBeenSetOff) return false;
+if (this._when.isBefore(LocalDateTime.now())) {
+

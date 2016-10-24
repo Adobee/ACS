@@ -1,0 +1,9 @@
+private final ScrollableControl<? extends Scrollable> scrollable;
+private final Composite adapter;
+
+boolean scrollableEnabled;
+boolean adapterEnabled;
+boolean setEnabled( boolean enabled ) {
+boolean result = enabled;
+if( enableAdapter( enabled ) &amp;&amp; enableScrollable() ) {
+

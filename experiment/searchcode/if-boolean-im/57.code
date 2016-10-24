@@ -1,0 +1,16 @@
+this.re = n_re;
+}
+
+@Override
+public boolean equals(Object object)
+{
+if (this == object) return true;
+if (object == null) return false;
+return ((Math.abs(this.re - ((ComplexNumber)object).re) < delta) &amp;&amp; (Math.abs(this.im - ((ComplexNumber)object).im) < delta));
+}
+
+public String toString()
+{
+if (im == 0)
+return re.toString();
+

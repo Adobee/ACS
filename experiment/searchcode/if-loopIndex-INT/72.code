@@ -1,0 +1,7 @@
+public int type (int index, String indent, TCOffsets tcoffsets, String name, SymtabEntry entry, PrintWriter stream) {
+int offsetOfType = tcoffsets.offset (entry.type ().fullName ());
+if (offsetOfType >= 0)
+String length = &quot;_len&quot; + index++;
+stream.println (indent + &quot;int &quot; + length + &quot; = istream.read_long ();&quot;);
+if (seq.maxSize () != null)
+

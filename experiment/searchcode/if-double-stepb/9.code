@@ -1,0 +1,8 @@
+private void createLine3D(stepb_vertex_point startVertex, stepb_vertex_point endVertex, math_vector3d nodeVecUnit, double vecLength)
+{
+stepb_edge_curve edgeCurve;
+stepb_cartesian_point startCpt;
+
+startCpt = new stepb_cartesian_point(startVertex.GetCartesianPoint());
+if (nodeVecUnit != null)
+

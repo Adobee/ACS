@@ -1,0 +1,12 @@
+private double weight;
+
+ProductByWeight(String name, double price, double weight) {
+super(name,price);
+if (weight > 0) {
+void setQuantity(double quantity) {
+if(quantity>0){
+this.weight=quantity;
+}
+}
+}
+

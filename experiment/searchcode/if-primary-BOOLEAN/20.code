@@ -1,0 +1,16 @@
+public class CompanyMapnoDAO extends BaseDAO<CompanyMapno> {
+
+public boolean isPrimary(Integer id) {
+boolean primary = false;
+String query = &quot;select cm.primary from CompanyMapno cm where cm.id = :cmid&quot;;
+if (res != null) {
+primary = res.booleanValue();
+}
+} catch (Exception e) {
+log.error(&quot;&quot;, e);
+}
+return primary;
+}
+
+}
+

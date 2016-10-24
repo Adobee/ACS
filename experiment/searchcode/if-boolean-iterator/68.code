@@ -1,0 +1,14 @@
+private Iterator getIterator() {
+if (iterator==null) {
+iterator = map.values().iterator();
+}
+return iterator;
+}
+
+public LazyIterator(Map map) {
+this.map = map;
+}
+
+public boolean hasNext() {
+return getIterator().hasNext();
+

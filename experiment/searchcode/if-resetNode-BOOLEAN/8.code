@@ -1,0 +1,11 @@
+Node parent;
+int x, y;
+WorldObject worldObj;
+double gScore, fScore, distance;
+boolean opened, closed;
+public ArrayList<Node> getNeighbourNodes(Node[][] map) {
+ArrayList<Node> neighbourNodes = new ArrayList<Node>();
+
+if (x - 1 >= 0) {
+neighbourNodes.add(map[x - 1][y]);
+

@@ -1,0 +1,9 @@
+this.damage = damage;
+}
+
+@Override
+public boolean isValid(ItemStack stack) {
+if (stack.getItem() == item) {
+if (damage != -1 &amp;&amp; stack.getItemDamage() != damage) {
+return false;
+

@@ -1,0 +1,11 @@
+for (int i = 0; i < triggers.size(); i++) {
+final Integer level = i + 1;
+if (triggers.get(i).fire(currentValue) &amp;&amp; isLevelValid(achievementBean, level) &amp;&amp; !isLevelUnlocked(userId, achievementBean.getId(), level)) {
+return Optional.of(achievementUnlockedEvent);
+}
+}
+return Optional.empty();
+}
+
+private boolean isLevelValid(final IAchievementBean counterAchievement, final Integer triggerIndex) {
+

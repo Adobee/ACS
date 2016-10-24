@@ -1,0 +1,10 @@
+package com.redv.rmbtb.secure.domain;
+
+public enum Type {
+
+BID(&quot;bid&quot;), ASK(&quot;ask&quot;), LIMIT(&quot;limit&quot;);
+
+public static Type toType(String typeString) {
+for (Type type : Type.values()) {
+if (type.getType().equals(typeString)) {
+

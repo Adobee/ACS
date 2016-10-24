@@ -1,0 +1,15 @@
+private static final ExtendedAlphabet beta=new ExtendedAlphabet();
+public String encode(String s, int shift, boolean extended)
+int deshift=alphabet.getSize()-shift;
+
+return encode(s,deshift, extended);
+
+}
+public Alphabet choose(boolean extended)
+{
+if(extended)
+return beta;
+else return alpha;
+}
+}
+

@@ -1,0 +1,10 @@
+double y1 = input [2];
+double y2 = input [3];
+double dist;
+if ((Math.sqrt(x2*x2 + y2*y2) > 1) &amp;&amp; !(x2==0 &amp;&amp; y2==0)){
+/*double x2temp=x2;
+double y2temp=y2;
+x2=x2-y2temp;
+y2=y2-x2temp;*/
+x2 =Math.sqrt(1-x2*x2);
+

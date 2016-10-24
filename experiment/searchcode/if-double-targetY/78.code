@@ -1,0 +1,12 @@
+static int targetX;
+static int targetY;
+
+
+public EnemyRectangle(double width, double height, int e) {
+
+setWidth(width);
+@Override
+public void handle(Event event) {
+if(getFill()==javafx.scene.paint.Color.GREEN){
+setFill(javafx.scene.paint.Color.RED);
+

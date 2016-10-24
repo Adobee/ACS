@@ -1,0 +1,10 @@
+out.writeBoolean(cookies.hostOnly());
+out.writeBoolean(cookies.persistent());
+}
+
+private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
+boolean httpOnly = in.readBoolean();
+boolean hostOnly = in.readBoolean();
+boolean persistent = in.readBoolean();
+Cookie.Builder builder = new Cookie.Builder();
+

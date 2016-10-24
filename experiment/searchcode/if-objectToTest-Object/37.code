@@ -1,0 +1,8 @@
+@Override
+public boolean matches(final Object objectToTest) {
+if (!(objectToTest instanceof ITestResult)) {
+return false;
+}
+final ITestResult testResult = (ITestResult) objectToTest;
+if (testResult.getThrowable() == null) {
+

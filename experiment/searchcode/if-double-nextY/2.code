@@ -1,0 +1,10 @@
+public static double ks(List<Double> x, List<Double> y, boolean sorted)
+{
+if(!sorted)
+{
+x = new ArrayList<Double>(x);
+double nextY = j < y.size() - 1 ? y.get(j + 1) : Double.POSITIVE_INFINITY;
+
+double next;
+if(nextX == nextY) // test at nextX == nextY
+

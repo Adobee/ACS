@@ -1,0 +1,15 @@
+private final Iterator<T> iterator;
+private boolean hasPeek = false;
+private T nextPeek = null;
+
+public PeekableIterator(Iterator<T> iterator) {
+public T next() {
+if (hasPeek) {
+hasPeek = false;
+return peek();
+}
+return (T) iterator.next();
+}
+
+public T peek() {
+

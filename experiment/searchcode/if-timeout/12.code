@@ -1,0 +1,14 @@
+protected void onUpdate(float tpf) {
+super.onUpdate(tpf);
+
+// Reduce the timeout
+timeout -= tpf;
+
+// Timeout happend
+if (timeout <= 0) {
+* @return this for chaining.
+*/
+public Timeout timeout(float timeout) {
+if (timeout < 0) {
+throw new IllegalArgumentException(&quot;Timeout must be >= 0&quot;);
+

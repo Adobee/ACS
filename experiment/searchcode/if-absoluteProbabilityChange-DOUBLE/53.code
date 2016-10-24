@@ -1,0 +1,7 @@
+protected InternalAggregations aggregations;
+double score;
+
+protected Bucket(long subsetDf, long subsetSize, long supersetDf, long supersetSize, InternalAggregations aggregations) {
+double absoluteProbabilityChange = subsetProbability - supersetProbability;
+if (absoluteProbabilityChange <= 0) {
+

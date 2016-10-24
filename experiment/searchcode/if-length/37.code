@@ -1,0 +1,10 @@
+for (int n1 : a) {
+for (int n2 : b) {
+if (n1 == n2)
+c++;
+if (a.length < b.length &amp;&amp; c == a.length)
+return &quot;LESS&quot;;
+if (a.length > b.length &amp;&amp; c == b.length)
+return &quot;GREATER&quot;;
+if (c == a.length &amp;&amp; c == b.length)
+

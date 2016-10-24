@@ -1,0 +1,10 @@
+boolean fromInclusive, boolean toInclusive, List<Short> result) {
+if (root == null)
+return;
+
+if (fromValue != toValue) {
+// recursively call on left and right subtrees.
+if (toInclusive)
+result.add(root.id);
+searchIdsInRangeRecursive(root.left, fromValue, toValue, fromInclusive, toInclusive, result);
+

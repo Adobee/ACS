@@ -1,0 +1,11 @@
+* @return double representing the phase angle in radians.
+*/
+public double phaseAngle(){
+if(real==0 &amp;&amp; imaginary == 0) return 0;
+else return Math.atan(imaginary/real);
+ComplexNumber z3 = new ComplexNumber();
+double n = z2.cNorm();
+
+z3.real = ((z1.real*z2.real) + (z1.imaginary*z2.imaginary))/n;
+z3.imaginary = ((z2.real*z1.imaginary) - (z1.real*z2.imaginary))/n;
+

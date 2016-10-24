@@ -1,0 +1,11 @@
+mIsFileOwner = true;
+if (isInner()) {
+char c = innerType.charAt(0);
+if (c < &#39;0&#39; || c > &#39;9&#39;) {
+type = internal.substring(pos + 1);
+}
+
+pos = type.indexOf(&#39;$&#39;);
+if (pos != -1) {
+innerType = type.substring(pos + 1);
+

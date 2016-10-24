@@ -1,0 +1,10 @@
+public class EuclidSqrMetric implements Metric {
+public double getDistance(double[] v1, double[] v2) {
+double result = 0;
+if (v1.length == v2.length)
+for (int i = 0; i < v1.length; i++)
+result += v1[i] * v2[i];
+return result;
+}
+}
+

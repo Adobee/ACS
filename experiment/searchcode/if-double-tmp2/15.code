@@ -1,0 +1,7 @@
+double tmp1 = score[b]     + scoreA;
+double tmp2 = score_min[b] + scoreA;
+double tmp3 = score[b-1]     * scoreB;
+score_min[b] = tmp1;
+if (tmp2 > score[b]    ) {score[b]     = tmp2;}
+if (tmp2 < score_min[b]) {score_min[b] = tmp2;}
+

@@ -1,0 +1,16 @@
+package cn.newtouch.base.memory;
+
+class Point1
+{
+private double x;
+
+private double y;
+
+Point1(double x1, double y1)
+{
+x = x1;
+y = y1;
+}
+
+public double getX()
+

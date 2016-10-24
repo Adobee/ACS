@@ -1,0 +1,9 @@
+* @return true, if successful
+*/
+public Batch addFLow(Flow flow) {
+boolean existsBatch = false;
+Batch currentBatch = null;
+for (Batch b : this) {
+if (b.getSource() == flow.getSource()
+&amp;&amp; b.getDestination() == flow.getDestination()) {
+

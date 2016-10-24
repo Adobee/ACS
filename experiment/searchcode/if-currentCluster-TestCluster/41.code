@@ -1,0 +1,6 @@
+switch (currentClusterScope) {
+case SUITE:
+if (testCluster == null) { // only build if it&#39;s not there yet
+return randomRepoPath(((InternalTestCluster) currentCluster).getDefaultSettings());
+} else if (currentCluster instanceof CompositeTestCluster) {
+

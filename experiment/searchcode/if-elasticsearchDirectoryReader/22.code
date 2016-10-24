@@ -1,0 +1,7 @@
+import org.elasticsearch.common.lucene.index.ElasticsearchDirectoryReader;
+import org.elasticsearch.test.ESTestCase;
+
+import java.io.IOException;
+try (DirectoryReader reader = DirectoryReader.open(writer, random().nextBoolean())) {
+ElasticsearchDirectoryReader wrap = ElasticsearchDirectoryReader.wrap(reader, id);
+

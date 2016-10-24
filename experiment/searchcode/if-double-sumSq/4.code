@@ -1,0 +1,14 @@
+private int n;
+private double sum;
+private double sumsq;
+
+public void reset() {
+this.n = 0;
+this.sum = 0.0;
+this.sumsq = 0.0;
+}
+
+public synchronized void addValue(double x) {
+++this.n;
+this.sum += x;
+

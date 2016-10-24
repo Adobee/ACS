@@ -1,0 +1,11 @@
+private double lat;
+private double lon;
+
+public GeoLocation(double lat, double lon) {
+this.lat = lat;
+this.lon = lon;
+GeoLocation that = (GeoLocation) o;
+
+if (Double.compare(that.lat, lat) != 0) return false;
+return Double.compare(that.lon, lon) == 0;
+

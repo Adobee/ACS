@@ -1,0 +1,7 @@
+protected Pattern getInternalPattern(String externalPattern) throws Exception {
+List<ConversionRule> rules = extractRules(externalPattern);
+return Pattern.compile(toRegexPattern(prepare(externalPattern), rules));
+}
+
+protected List<ConversionRule> extractRules(String externalPattern) throws Exception {
+

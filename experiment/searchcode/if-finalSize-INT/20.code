@@ -1,0 +1,9 @@
+for (int i = 0; i < n; i++) {
+num[i] = in.nextInt();
+if (num[i] > maxNum) {
+maxNum = num[i];
+for (int i = 1; i < n; i++) {
+minStep = gcd(num[i], minStep);
+}
+final int finalSize = maxNum / minStep;
+

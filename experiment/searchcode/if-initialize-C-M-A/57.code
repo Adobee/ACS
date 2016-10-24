@@ -1,0 +1,13 @@
+static long max = 2000000000, fact;
+
+static void initialize(long n) {
+humble[index++] = n;
+fact = 7 * n;
+if (fact <= max)
+initialize(fact);
+if (n % 7 == 0)
+return;
+fact = 5 * n;
+if (fact <= max)
+initialize(fact);
+

@@ -1,0 +1,8 @@
+private SharedPreferences appSharedPrefs;
+private Editor prefsEditor;
+private static int valueCount;
+private static int savedCount = 0;
+appSharedPrefs = _context.getSharedPreferences(APP_SHARED_PREFS, Activity.MODE_PRIVATE);
+prefsEditor = appSharedPrefs.edit();
+valueCount = appSharedPrefs.getInt(SAVE_VAL, 0);
+

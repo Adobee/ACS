@@ -1,0 +1,12 @@
+private int hour = 0;
+private int minutes = 0;
+private int seconds = 0;
+
+public Time(){
+
+}
+
+public Time(int hours,int minutes,int seconds){
+this.hour = hours;
+this.minutes = minutes;
+

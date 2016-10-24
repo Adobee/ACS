@@ -1,0 +1,11 @@
+double maxWidth = 0;
+for (int i=0; i<rc.DOFs.size(); i++) {
+double width = rc.DOFmax.get(i) - rc.DOFmin.get(i);
+if (width > maxWidth) {
+maxWidth = width;
+dofi = i;
+}
+}
+
+double min = rc.DOFmin.get(dofi);
+

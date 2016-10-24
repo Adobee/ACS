@@ -1,0 +1,8 @@
+&quot;The index contained an element less than zero: &#39;%s&#39;&quot;, matcherIdxEntry.group(0)));
+}
+if (offsetCur <= offsetPrev) {
+throw new IndexBrokenException(String.format(
+boolean stopReading = false;
+int eventType, scanNumOrdinal = 0;
+long offset, offsetPrev = -1;
+

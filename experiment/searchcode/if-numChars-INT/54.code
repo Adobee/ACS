@@ -1,0 +1,9 @@
+public class MarkovZero extends AbstractMarkovModel {
+private int n = 0;
+
+public String getRandomText(int numChars) {
+if (myText == null) {
+for (int k = 0; k < numChars; k++) {
+int index = myRandom.nextInt(myText.length());
+sb.append(myText.charAt(index));
+

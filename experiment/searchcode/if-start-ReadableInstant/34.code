@@ -1,0 +1,6 @@
+* Returns the duration of the period denoted by start and end in fration hours.
+*/
+public static double getDurationAsFractionHours( ReadableInstant start, ReadableInstant end ) {
+final long timeMilliSec = end.getMillis() - start.getMillis();
+final long timeMin = timeMilliSec / 1000 / 60;
+

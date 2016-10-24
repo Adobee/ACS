@@ -1,0 +1,9 @@
+Player p = event.getPlayer();
+
+if ((PlotManager.isPlotWorld(p)) &amp;&amp; (!(PlotMe.cPerms(p, &quot;plotme.admin.bypassdeny&quot;))))
+String idTo = PlotManager.getPlotId(to);
+
+if (!(idTo.equalsIgnoreCase(&quot;&quot;)))
+{
+Plot plot = PlotManager.getPlotById(p, idTo);
+

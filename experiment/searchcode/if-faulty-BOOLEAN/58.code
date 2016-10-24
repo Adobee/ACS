@@ -1,0 +1,8 @@
+StringBuilder buf = new StringBuilder(super.getMessage());
+if (faultyMembers==null || faultyMembers.size() == 0 ) {
+buf.append(&quot;; No faulty members identified.&quot;);
+* @param mbr FaultyMember
+*/
+public boolean addFaultyMember(FaultyMember mbr) {
+if ( this.faultyMembers==null ) this.faultyMembers = new ArrayList<>();
+

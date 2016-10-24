@@ -1,0 +1,8 @@
+if (reason instanceof PoolTimeoutException) {
+this.poolExhastedCount.incrementAndGet();
+}
+else if (reason instanceof TimeoutException) {
+this.socketTimeoutCount.incrementAndGet();
+}
+else if (reason instanceof OperationTimeoutException) {
+

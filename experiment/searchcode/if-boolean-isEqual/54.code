@@ -1,0 +1,15 @@
+public class Solution {
+public boolean isMatch(String s, String p) {
+int sLen = s.length(), pLen = p.length();
+dp[i][j] = dp[i - 1][j - 1] &amp;&amp; isEqual(p.charAt(j - 1), s.charAt(i - 1));
+}
+}
+
+return dp[sLen][pLen];
+}
+
+private boolean isEqual(char i, char j) {
+return i == j || i == &#39;.&#39;;
+}
+}
+

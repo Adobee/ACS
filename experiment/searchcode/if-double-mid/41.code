@@ -1,0 +1,13 @@
+public static double squareroot(double input){
+double precision = 0.001;
+double start = 0.0;
+double end   = input;
+
+if (input < 1){
+end = 1;
+}
+
+while(true){
+double mid = (start + end)/2;
+if (mid * mid == input){
+

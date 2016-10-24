@@ -1,0 +1,10 @@
+private int currentPage;
+private int numPages;
+private int numElementsPerPage;
+private long numElements;
+private String searchQuery;
+page.numPages = (int) (page.numElements / page.numElementsPerPage);
+if (page.numPages <= 0) {
+page.numPages = 1;
+} else if (page.numElements % page.numElementsPerPage != 0) {
+

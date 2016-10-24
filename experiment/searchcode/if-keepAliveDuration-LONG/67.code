@@ -1,0 +1,7 @@
+* A shared connection pool that uses system properties for tuning parameters:
+* <p>
+* <ul>
+* <li>{@code http.keepAlive} true if HTTP and SPDY connections should be pooled at all. Default
+String keepAliveDurationString = System.getProperty(&quot;http.keepAliveDuration&quot;);
+long keepAliveDurationMs = keepAliveDurationString != null
+

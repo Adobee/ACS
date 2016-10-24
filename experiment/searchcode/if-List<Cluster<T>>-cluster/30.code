@@ -1,0 +1,10 @@
+public Cluster findClusterByElement(DataPoint e) {
+Cluster cluster = null;
+for(Cluster c : allClusters) {
+if( c.contains(e) ) {
+return cluster;
+}
+
+public List<Cluster> getAllClusters() {
+return new ArrayList<Cluster>(allClusters);
+

@@ -1,0 +1,9 @@
+private static Logger logger = Logger.getLogger(UpdateWriter.class.getName());
+private boolean isSizeUpdater = false;
+
+public UpdateWriter(int fileId, JChannel dataChannel, String path, ReplicaStateManager replicaStateManager, SizeUpdateSender sizeUpdateSender) throws FileNotFoundException {
+public Object handle(Message updateMessage) {
+boolean failure = false;
+Object result = null;
+long sizeBefore = 0;
+

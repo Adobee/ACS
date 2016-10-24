@@ -1,0 +1,5 @@
+renderer.vertex(x + bot, y + miy, z + maz);
+if (df == 0 &amp;&amp; mt != null &amp;&amp; mt.renderSideMultitexture(world, x, y, z, 2)) {
+renderer.vertex(x + mix, y + miy, z + bot);
+if (df == 0 &amp;&amp; mt != null &amp;&amp; mt.renderSideMultitexture(world, x, y, z, 3)) {
+

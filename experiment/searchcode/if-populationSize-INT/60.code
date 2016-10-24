@@ -1,0 +1,10 @@
+import pl.waw.mizinski.pszt.model.population.Population;
+
+public class Model
+{
+private int populationSize = 1000;
+private double mutationProbability = 0.01;
+public static boolean checkPopulationSize(int populationSize)
+{
+if(populationSize >= 10 &amp;&amp; populationSize <=20000)
+

@@ -1,0 +1,14 @@
+public class SubsetSum {
+static {
+System.loadLibrary(&quot;native_bench&quot;);
+}
+
+public static boolean sum(int[] set, int size, int sum) {
+if (sum == 0)
+return true;
+
+if (size == 0)
+return false;
+
+return sum(set, size - 1, sum)
+

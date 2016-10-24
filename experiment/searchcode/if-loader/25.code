@@ -1,0 +1,15 @@
+package com.salama.util;
+
+public final class ClassLoaderUtil {
+private ClassLoaderUtil() {
+} catch (Throwable e) {
+}
+
+if (classLoader == null) {
+classLoader = ClassLoaderUtil.class.getClassLoader();
+}
+
+return classLoader;
+}
+}
+

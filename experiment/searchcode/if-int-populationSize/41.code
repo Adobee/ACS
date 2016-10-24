@@ -1,0 +1,8 @@
+prob[0][0] = 1; prob[1][1] = 1;
+for (int j = 1; j < sampleSize; j++){
+if (j < populationSize) upperIndex = j + 1; else upperIndex = (int)populationSize;
+double distinct = 0;
+for (int i = 1; i <= sampleSize; i++){
+int j = (int)(populationSize * Math.random());
+if (count[j] == 0) distinct++;
+

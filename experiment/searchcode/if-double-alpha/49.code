@@ -1,0 +1,9 @@
+public Alpha(HMM hmm, int T) {
+this.hmm = hmm;
+this.T = T;
+}
+
+public double[] alpha(int t, int[] observations) {
+final double[][] alpha = new double[T][];
+for (int u = 0; u < t + 1; u++) {
+

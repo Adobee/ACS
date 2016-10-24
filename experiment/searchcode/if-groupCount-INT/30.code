@@ -1,0 +1,12 @@
+public String[] test(String phrase)
+{
+Matcher matcher = regexp.matcher(phrase);
+int groupCount = matcher.groupCount();
+
+if (!matcher.matches())
+return null;
+
+String[] ret = new String[groupCount];
+
+for (int i = 0; i < groupCount; i++)
+

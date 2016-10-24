@@ -1,0 +1,10 @@
+package cn.coderz.utils;
+
+import org.codehaus.jackson.map.ObjectMapper;
+
+public class Common {
+public static synchronized ObjectMapper getMapperInstance(boolean createNew){
+if(createNew){
+return new ObjectMapper();
+}else if(mapper == null){
+

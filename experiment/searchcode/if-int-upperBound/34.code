@@ -1,0 +1,12 @@
+private final int lowerBound;
+private final int upperBound;
+
+public Range(int lowerBound, int upperBound) {
+if (lowerBound > upperBound) {
+this.lowerBound = lowerBound;
+this.upperBound = upperBound;
+}
+
+public int getLowerBound() {
+return lowerBound;
+

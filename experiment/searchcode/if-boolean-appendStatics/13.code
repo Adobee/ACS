@@ -1,0 +1,13 @@
+return new ReflectionToStringBuilder(object).setExcludeFieldNames(excludeFieldNames).toString();
+}
+
+private boolean appendStatics = false;
+private boolean appendTransients = false;
+setAppendTransients(outputTransients);
+setAppendStatics(outputStatics);
+}
+
+protected boolean accept(Field field)
+{
+if (field.getName().indexOf(&#39;$&#39;) != -1) {
+

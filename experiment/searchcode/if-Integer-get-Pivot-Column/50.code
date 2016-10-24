@@ -1,0 +1,8 @@
+while (pivotRow <= height &amp;&amp; pivotColumn <= width) {
+sortRows();
+int pivotValue = get(pivotRow, pivotColumn);
+if (pivotValue == 0) {
+for (int row = pivotRow + 1; row <= height; row++) {
+int value = get(row, pivotColumn);
+if (value == 0) break;
+

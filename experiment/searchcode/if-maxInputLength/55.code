@@ -1,0 +1,7 @@
+public Builder maxInputLength(int maxInputLength) {
+if (maxInputLength <= 0) {
+throw new IllegalArgumentException(Fields.MAX_INPUT_LENGTH.getPreferredName() + &quot; must be > 0 but was [&quot; + maxInputLength + &quot;]&quot;);
+final String originalInput = input;
+if (input.length() > maxInputLength) {
+final int len = correctSubStringLen(input, Math.min(maxInputLength, input.length()));
+

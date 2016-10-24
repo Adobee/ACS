@@ -1,0 +1,11 @@
+package org.esfinge.comparison.processor;
+
+import org.esfinge.comparison.difference.Difference;
+double dif = Math.abs(((Double) newValue) - ((Double) oldValue));
+if (dif > tolerance) {
+return new PropertyDifference(prop, newValue, oldValue);
+}
+return null;
+}
+}
+

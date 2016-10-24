@@ -1,0 +1,6 @@
+ontology.getResultFile().setWritable(true);
+
+strQueryLocal = queryRewrite(strQueryGlobal, ontology.getAlignFile());
+queryLocal = repositoryConnection.prepareTupleQuery(QueryLanguage.SPARQL, strQueryLocal);
+if(queryLocal != null){
+

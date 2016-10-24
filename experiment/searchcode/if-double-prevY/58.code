@@ -1,0 +1,7 @@
+double prevX = 0, prevY = 0;
+double moveX = 0, moveY = 0;
+for (PathIterator i = new FlatteningPathIterator(shape.getPathIterator(new AffineTransform(), tolerance), tolerance); !i.isDone(); i.next()) {
+case PathIterator.SEG_CLOSE:
+if (Geom.lineContainsPoint(
+prevX, prevY, moveX, moveY,
+

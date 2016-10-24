@@ -1,0 +1,11 @@
+private Index index;
+private int numOfDocs;
+
+public LinearScorer(int numOfDocs, Index _index) {
+type = &quot;linear&quot;;
+this.numOfDocs = numOfDocs;
+totalScores = new HashMap<String, Double>();
+}
+
+private void precomputeScores(int numOfDocs) {
+

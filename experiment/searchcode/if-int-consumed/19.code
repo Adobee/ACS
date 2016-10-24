@@ -1,0 +1,12 @@
+return consumed_;
+}
+
+@Override
+public T next() {
+if (consumed_) {
+throw new NoSuchElementException();
+@Override
+public T previous() {
+if (!consumed_) {
+throw new NoSuchElementException();
+

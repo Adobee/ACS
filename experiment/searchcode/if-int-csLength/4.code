@@ -1,0 +1,9 @@
+private JComboBox cbCSDataType;
+private JLabel labelCSLength;
+private JComboBox cbCSLength;
+
+private String csTableName = null;
+System.out.println(&quot;selected: &quot; + currentSelect);
+//		if(currentSelect.equalsIgnoreCase(&quot;确定&quot;)){
+int selectedIndex = cbMappingType.getSelectedIndex();
+

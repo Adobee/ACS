@@ -1,0 +1,6 @@
+public static Point2D checkIntersection (Point2D.Double p1,
+Point2D.Double p2, Point2D.Double p3, Point2D.Double p4){
+Double d = (p1.x-p2.x)*(p3.y-p4.y)-(p1.y-p2.y)*(p3.x-p4.x);
+if(d==0) return null;
+Double  xi = ((p3.x-p4.x)*(p1.x*p2.y-p1.y*p2.x)-
+

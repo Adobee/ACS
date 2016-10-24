@@ -1,0 +1,9 @@
+Set<Location> possibleMoves = new HashSet<>();
+int x = this.loc.x;
+int y = this.loc.y;
+Location loc;
+loc = new Location(x, y);
+if (hasMotion(loc)) {
+possibleMoves.add(loc);
+if (!isEmpty(loc)) break;
+

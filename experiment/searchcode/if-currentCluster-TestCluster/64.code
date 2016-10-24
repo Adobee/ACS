@@ -1,0 +1,9 @@
+// TODO Auto-generated catch block
+e.printStackTrace();
+} finally {
+if (gzipCompressor != null)
+CodecPool.returnCompressor(gzipCompressor);
+Map<String, Set<String>> mergedSrcClusterToStreamsMap = new HashMap<String, Set<String>>();
+for (String cluster : sourceClusters) {
+Cluster currentCluster = config.getClusters().get(cluster);
+

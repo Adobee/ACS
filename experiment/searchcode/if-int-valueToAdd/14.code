@@ -1,0 +1,12 @@
+ArithmeticMeanAggregate ss;
+long sum, valueToAdd, testResult;
+int i, j;
+
+rand = new Random();
+
+for (j = 0; j < 10; j++) {
+innerLoop: for (;;) {
+valueToAdd = (rand.nextInt(100001) - 50000);
+
+testResult = (sum + valueToAdd);
+

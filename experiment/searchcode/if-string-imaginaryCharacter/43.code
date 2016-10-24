@@ -1,0 +1,8 @@
+this(DEFAULT_IMAGINARY_CHARACTER, realFormat, imaginaryFormat);
+}
+
+public ComplexFormat(java.lang.String imaginaryCharacter) {
+this(imaginaryCharacter, org.apache.commons.math.util.CompositeFormat.getDefaultNumberFormat());
+public ComplexFormat(java.lang.String imaginaryCharacter ,java.text.NumberFormat format) {
+this(imaginaryCharacter, format, ((java.text.NumberFormat)(format.clone())));
+

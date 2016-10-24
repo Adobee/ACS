@@ -1,0 +1,14 @@
+* lower bound
+*/
+private final double lowerBound;
+
+/*
+* upper bound
+*/
+private final double upperBound;
+* @param upper
+*            upper bound
+*/
+public Interval(double lower, double upper) {
+if (lower > upper) {
+

@@ -1,0 +1,9 @@
+private static String OS = System.getProperty(&quot;os.name&quot;).toLowerCase();
+protected static URLFetcher urlF;
+protected String version;
+protected int intVersion;
+protected Date date;
+public void setVersion(String version) {
+this.version = version;
+this.intVersion = toIntVersion(version);
+

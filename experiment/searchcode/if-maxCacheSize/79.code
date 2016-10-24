@@ -1,0 +1,9 @@
+long imageSize = bufferedImage.getColorModel().getPixelSize() * bufferedImage.getHeight() * bufferedImage.getWidth();
+totalSize += imageSize;
+if (totalSize > maxCacheSize) {
+break;
+}
+}
+if (totalSize > maxCacheSize) {
+Logger.getLogger(&quot;at.tuwien.ifs.somtoolbox&quot;).info(
+

@@ -1,0 +1,10 @@
+public class CosineScorer extends TermScorer<String> {
+
+public CosineScorer(int numOfDocs) {
+type = &quot;cosine&quot;;
+gen = new TFIDFFeatureGenerator(numOfDocs);
+}
+
+@Override
+public double getSimScore(Map<String, Double> featureMap) {
+

@@ -1,0 +1,14 @@
+private transient Logger log = LogManager.getLogger(this.getClass().getName());
+private String seriesTitle;
+private Integer id = null;
+
+@Override
+public Integer getId() {
+// if deriving: appendSuper(super.hashCode()).
+append(seriesTitle).
+toHashCode();
+}
+
+public boolean equals(Object obj) {
+if (!(obj instanceof MeetingSeriesBE))
+

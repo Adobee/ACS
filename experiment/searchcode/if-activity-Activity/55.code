@@ -1,0 +1,12 @@
+private ActivityManagerUtil() {
+}
+
+public synchronized static ActivityManagerUtil getInstance() {
+if (instance == null) {
+return instance;
+}
+
+//退出栈顶Activity
+public void popActivity(SoftReference<Activity> activity) {
+if (activity != null) {
+

@@ -1,0 +1,10 @@
+StringBuilder queryText = new StringBuilder(
+&quot;from VisitEntity where 1=1&quot;);
+if (form.getDateFrom() != null) {
+queryText.append(&quot; and startTime >= &#39;&quot;
+queryText.append(&quot; and doctor.id = &#39;&quot; + form.getDoctor().getId()
++ &quot;&#39;&quot;);
+}
+if (form.getPatient() != null) {
+queryText.append(&quot; and patient.id = &#39;&quot; + form.getPatient().getId()
+

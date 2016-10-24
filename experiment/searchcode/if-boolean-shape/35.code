@@ -1,0 +1,7 @@
+// add a pi
+private static boolean fittedShapeUsed = false;
+private static Shape[] elevenShapes = {generateDiag(11), generateAlmostDiag(true), generateAlmostDiag(false), generateAntiDiag(11), generateLine(11)};
+public static Shape getNextFiveShape(Shape[] shapes, Shape[] opponentShapes) {
+Shape ad_shape = getFittedShape(opponentShapes[0], 5, 0);
+if (ad_shape != null) {
+

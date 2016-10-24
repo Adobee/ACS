@@ -1,0 +1,6 @@
+private BooleanPropertyProvider enabled = new BooleanPropertyProvider(SoarProperties.EXPLAIN);
+ExplainChunk chunk = find_chunk(explain_chunk_list, chunk_name);
+if (chunk != null)
+{
+chunk.explain_trace_chunk(context.getPrinter());
+

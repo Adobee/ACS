@@ -1,0 +1,11 @@
+@Embeddable
+public class MonthOfYear implements Serializable, Comparable {
+
+private int month;
+private int year;
+if (o == null || getClass() != o.getClass()) return false;
+
+final MonthOfYear month1 = (MonthOfYear) o;
+
+if (month != month1.month) return false;
+

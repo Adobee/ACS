@@ -1,0 +1,7 @@
+public void createGroundItem(Client c, int itemId, int itemX, int itemY, int itemAmount, int playerId) {
+if(itemId > 0) {
+c.getItems().createGroundItem(itemId, itemX, itemY, itemAmount);
+public void removeGlobalItem(GroundItem i, int itemId, int itemX, int itemY, int itemAmount) {
+for (Player p : Server.playerHandler.players){
+if(p != null) {
+

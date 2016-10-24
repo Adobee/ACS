@@ -1,0 +1,10 @@
+* Return factory singleton instance.
+*
+* @return
+*/
+public static SerializerFactory getInstance() {
+if (singleton == null) {
+synchronized (SerializerFactory.class) {
+if (singleton == null) {
+singleton = new SerializerFactory();
+

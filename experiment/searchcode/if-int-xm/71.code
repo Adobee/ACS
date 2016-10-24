@@ -1,0 +1,11 @@
+* as SWT.APPLICATION_MODAL.  The generic Motif
+* Window Manager honours all modes.
+*/
+int dialogStyle = OS.XmDIALOG_MODELESS;
+if ((style &amp; SWT.PRIMARY_MODAL) != 0) dialogStyle = OS.XmDIALOG_PRIMARY_APPLICATION_MODAL;
+/* Open the dialog and dispatch events. */
+if (!defaultPos) {
+OS.XtRealizeWidget (dialog);
+int[] argList1 = new int[] {
+OS.XmNwidth, 0,
+

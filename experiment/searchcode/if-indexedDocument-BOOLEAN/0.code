@@ -1,0 +1,6 @@
+Comparator<IndexedDocument> comparator = IndexedDocument.getComparator(sort);
+if (size==Integer.MAX_VALUE) {
+unlimitedSizeQueue = new java.util.PriorityQueue<IndexedDocument>(11, comparator);
+protected boolean lessThan(IndexedDocument a, IndexedDocument b) {
+return comparator.compare(a, b) < 0;
+

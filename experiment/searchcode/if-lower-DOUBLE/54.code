@@ -1,0 +1,10 @@
+public class EnsureBoundedStateHook implements StepHook {
+
+private int index;
+private double lowerBound;
+private double upperBound;
+public void call(double t, DoubleMatrix1D X, DoubleMatrix1D W, DoubleMatrix1D F, DoubleMatrix2D G) {
+double value = X.get(index);
+if (value < lowerBound)
+X.set(index, lowerBound);
+

@@ -1,0 +1,10 @@
+private long lastFrame, timeSinceLastBomb;
+private boolean firstIteration = true;
+private Texture bombTexture = Main.loadTexture(&quot;lightbomb&quot;, &quot;png&quot;);
+this.x += 6;
+}
+
+public PongDoge attack(PongDoge doge) {
+if (firstIteration) {
+lastFrame = getTime();
+

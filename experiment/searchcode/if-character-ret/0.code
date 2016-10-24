@@ -1,0 +1,8 @@
+public static String convertCase(String s){
+String ret = &quot;&quot;;
+for(int i=0; i<s.length(); i++) {
+if(Character.isLowerCase(s.charAt(i))) {
+ret += Character.toString(Character.toUpperCase(s.charAt(i)));
+} else if(Character.isUpperCase(s.charAt(i))) {
+ret += Character.toString(Character.toLowerCase(s.charAt(i)));
+

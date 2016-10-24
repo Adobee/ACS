@@ -1,0 +1,7 @@
+public IncompleteGammaFunction(double alpha) {
+this.alpha = alpha;
+alphaLogGamma = GammaFunction.logGamma(alpha);
+private double evaluateSeries(double x){
+if(series==null){
+series = new IncompleteGammaFunctionSeries(alpha);
+

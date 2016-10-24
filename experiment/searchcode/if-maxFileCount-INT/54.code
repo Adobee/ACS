@@ -1,0 +1,7 @@
+* @param maxFileCount
+*            Maximum file count for cache. If file count in cache directory exceeds this limit then file with the
+*            most oldest last usage date will be deleted.
+*/
+public FileCountLimitedDiscCache(File cacheDir, int maxFileCount) {
+this(cacheDir, DefaultConfigurationFactory.createFileNameGenerator(), maxFileCount);
+

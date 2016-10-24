@@ -1,0 +1,10 @@
+private static class RepeatStatement extends Statement {
+private final Statement statement;
+private final int repeat;
+
+public RepeatStatement(Statement statement, int repeat) {
+Repeat repeat = description.getAnnotation(Repeat.class);
+if (repeat != null) {
+int times = repeat.value();
+result = new RepeatStatement(statement, times);
+

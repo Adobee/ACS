@@ -1,0 +1,9 @@
+public class UIImage extends SmartImageView {
+private ScaleType scaleType;
+public enum ScaleType{
+protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec){
+Drawable d = getDrawable();
+
+if(d != null &amp;&amp; scaleType == ScaleType.FIT_WIDTH){
+int width = MeasureSpec.getSize(widthMeasureSpec);
+

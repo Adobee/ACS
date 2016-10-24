@@ -1,0 +1,7 @@
+import org.jocean.http.util.RxNettys;
+import org.jocean.xharbor.api.HttpMessageTransformer;
+
+import io.netty.handler.codec.http.HttpObject;
+public Observable<HttpObject> call(final HttpObject msg) {
+if (msg instanceof HttpRequest) {
+

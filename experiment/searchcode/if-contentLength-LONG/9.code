@@ -1,0 +1,16 @@
+public class HttpMessage<M extends HttpMessage<M>> extends BaseMessage<M> {
+
+protected URI uri;
+protected long contentLength = -1;
+
+public URI uri() {
+return uri;
+return (M) this;
+}
+
+public long contentLength() {
+return contentLength;
+}
+
+@SuppressWarnings({&quot;unchecked&quot;})
+

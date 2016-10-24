@@ -1,0 +1,14 @@
+public final int weight;
+
+public static Medal getByWeight(int weight) {
+for (Medal m : Medal.values()) {
+if (m.weight == weight) return m;
+}
+return null;
+}
+
+private Medal(int weight) {
+this.weight = weight;
+}
+}
+

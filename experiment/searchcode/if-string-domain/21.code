@@ -1,0 +1,10 @@
+DomainInventoryPatternCandidateByBusinessDomain other = (DomainInventoryPatternCandidateByBusinessDomain) obj;
+if (domain == null) {
+if (other.domain != null) {
+return false;
+}
+} else if (!domain.equals(other.domain)) {
+return false;
+}
+return true;
+

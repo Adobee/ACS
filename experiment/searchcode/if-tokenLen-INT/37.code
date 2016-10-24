@@ -1,0 +1,8 @@
+final int muteInterval) {
+if (null != text) {
+int tokenLen = text.length();
+if (tokenLen > 0) {
+int[] tokens = new int[tokenLen];
+int i;
+for (i = 0; i < tokenLen; ++i) {
+

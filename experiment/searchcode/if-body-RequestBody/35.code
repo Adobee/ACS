@@ -1,0 +1,9 @@
+import android.support.annotation.NonNull;
+import java.io.IOException;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+public class PutRequest extends BaseRequest<PutRequest> {
+@Override
+protected RequestBody generateRequestBody() {
+if (requestBody != null) return requestBody;
+

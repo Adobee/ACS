@@ -1,0 +1,11 @@
+import com.hiperfabric.tables.memory.MemoryTable;
+
+public class TableStream extends AbstractTableStream {
+private final int endRow;
+
+public TableStream(MemoryTable table) {
+public TableStream(MemoryTable table, int startRow, int endRow) {
+super(table);
+this.endRow = endRow;
+this.rowIndex = startRow - 1;
+

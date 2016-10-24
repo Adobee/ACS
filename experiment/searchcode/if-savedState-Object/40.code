@@ -1,0 +1,7 @@
+Log.d(TAG, &quot;onSaveInstanceState() [id: &quot; + getId() + &quot;]&quot;);
+SavedState ss = new SavedState(superState);
+//ss.stateToSave = this.gatherDataToObject();
+protected void onRestoreInstanceState(Parcelable state) {
+if (!(state instanceof SavedState)) {
+super.onRestoreInstanceState(state);
+

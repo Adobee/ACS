@@ -1,0 +1,7 @@
+fieldDataFields = (List<String>) in.readGenericValue();
+if (in.readBoolean()) {
+int size = in.readVInt();
+out.writeBoolean(hasChildInnerHits);
+if (hasChildInnerHits) {
+out.writeVInt(childInnerHits.size());
+

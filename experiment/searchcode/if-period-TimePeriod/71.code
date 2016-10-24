@@ -1,0 +1,9 @@
+public void setAttributes(Map map) {
+super.setAttributes(map);
+String t = (String) map.get(&quot;timePeriod&quot;);
+if(t!=null &amp;&amp; t.trim().length()>0) {
+timePeriod = TimePeriod.valueOf(t);
+if(timePeriod == null ) throw new Exception();
+}
+catch(Exception ex) {
+

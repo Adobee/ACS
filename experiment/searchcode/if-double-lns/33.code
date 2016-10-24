@@ -1,0 +1,11 @@
+import org.apache.hadoop.io.Writable;
+
+import pls.vrp.LnsExtraData;
+
+public abstract class SolutionData implements Comparable<SolutionData> {
+public abstract void init(BytesWritable bytes) throws IOException;
+
+public abstract double getBestCost();
+
+public abstract BytesWritable getBestSolutionBytes();
+

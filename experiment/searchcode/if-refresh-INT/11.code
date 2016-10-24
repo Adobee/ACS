@@ -1,0 +1,12 @@
+public class RefreshWithoutDelete implements Refresh {
+private int upperBound;
+private Refresh refresh;
+
+public RefreshWithoutDelete(int upperBound, Refresh refresh) {
+this.refresh = refresh;
+}
+
+@Override
+public Population refresh(Population population) {
+if (population.getAll().size() < upperBound)
+

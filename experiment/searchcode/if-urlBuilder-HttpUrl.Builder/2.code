@@ -1,0 +1,10 @@
+Request original = chain.request();
+
+HttpUrl originalHttpUrl = original.url();
+HttpUrl.Builder urlBuilder = originalHttpUrl.newBuilder();
+urlBuilder.addQueryParameter(&quot;oauth_token&quot;, AppPrefs.getSoundCloundAccessToken());
+}
+HttpUrl url = urlBuilder.build();
+
+Request.Builder requestBuilder = original.newBuilder()
+

@@ -1,0 +1,12 @@
+sb.append(&quot;{ Rows: [&quot;);
+if (Clazzs.size() > 0) {
+for (Clazz clazz : Clazzs) {
+sb.append(&quot;{\&quot;clazzId\&quot;: \&quot;&quot;).append(clazz.getClazzId()).append(&quot;\&quot;,&quot;);
+* 如果主键为0，就是增加，否则就是修改
+*
+* @param model
+*/
+public void save(Clazz model) {
+if (model.getClazzId() == 0) {
+clazzDAO.insert(model);
+

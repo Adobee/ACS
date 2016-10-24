@@ -1,0 +1,11 @@
+public Ticker(EnumSet<TickType> tickTypes) {
+this.ticks = tickTypes;
+}
+
+@Override
+public void tickStart(EnumSet<TickType> tickTypes, Object... tickData) {
+for (TickType tick : tickTypes) {
+if (!Schematica.instance.onTick(tick, start)) {
+this.ticks.remove(tick);
+this.ticks.removeAll(tick.partnerTicks());
+

@@ -1,0 +1,9 @@
+Complex result=new Complex(a*other.a-b*other.b,a*other.b+b*other.a);
+return result;
+}
+
+public Complex divide(Complex other){
+double norm=other.norm();
+Complex result=other.conjugate().multiply(this);
+if (norm==0){
+

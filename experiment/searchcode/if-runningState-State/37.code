@@ -1,0 +1,7 @@
+public StopWatch start() {
+if (this.runningState == STATE_STOPPED) {
+throw new IllegalStateException(&quot;Stopwatch must be reset before being restarted. &quot;);
+public StopWatch stop() {
+if (this.runningState != STATE_RUNNING &amp;&amp; this.runningState != STATE_SUSPENDED) {
+throw new IllegalStateException(&quot;Stopwatch is not running. &quot;);
+

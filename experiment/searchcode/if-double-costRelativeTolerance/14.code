@@ -1,0 +1,5 @@
+private final double initialStepBoundFactor;
+/** Desired relative error in the sum of squares. */
+private final double costRelativeTolerance;
+public LevenbergMarquardtOptimizer(double initialStepBoundFactor, ConvergenceChecker<PointVectorValuePair> checker, double costRelativeTolerance, double parRelativeTolerance, double orthoTolerance, double threshold) {
+

@@ -1,0 +1,10 @@
+int q1 = n / 2;
+int q2 = (int) (l / 2L);
+if (q1 != q2) {
+System.err.println(&quot;l=&quot; + l + &quot; q1=&quot; + q1 + &quot; q2=&quot; + q2);
+}
+}
+}
+public void test_4() {
+for (long l = Integer.MIN_VALUE; l <= Integer.MAX_VALUE; ++l) {
+

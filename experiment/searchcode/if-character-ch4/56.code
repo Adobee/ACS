@@ -1,0 +1,7 @@
+public class Ch4_Methods_with_Conditional_Execution {
+public static void main(String[] args) {
+String s = &quot;four score and seven years ago&quot;;
+for (int i = 0;i < a.length();i++){
+if (a.charAt(i) == b){
+System.out.println(&quot;The index of character: &quot;+b+&quot; is at index location: &quot; +i+
+

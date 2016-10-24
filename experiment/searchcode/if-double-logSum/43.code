@@ -1,0 +1,9 @@
+double maxLogP = Double.NEGATIVE_INFINITY;
+for (int i = 0; i < log.length; i++) {
+if (maxLogP < log[i]) maxLogP = log[i];
+}
+
+double expPartSum = 0;
+for (int i = 0; i < log.length; i++) {
+if (Double.NEGATIVE_INFINITY != log[i]) {
+

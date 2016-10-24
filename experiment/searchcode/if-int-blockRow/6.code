@@ -1,0 +1,10 @@
+solver(board, 0, N, K);
+}
+
+private boolean solver(char[][] board, int start, int N, int K) {
+if (start >= N * N) return true;
+mark(used, board, 0, col, N-1, col);
+int blockRow = row / K;
+int blockCol = col / K;
+mark(used, board, blockRow * K, blockCol * K, blockRow * K + K - 1, blockCol * K + K - 1);
+

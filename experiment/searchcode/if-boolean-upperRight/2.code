@@ -1,0 +1,13 @@
+return upperRight.getLongitude() - lowerLeft.getLongitude();
+}
+
+@Override
+public boolean equals(Object obj) {
+if (this == obj)
+return true;
+if (obj instanceof BoundingBox) {
+if (other.lowerLeft.getLongitude() < lowerLeft.getLongitude()) {
+lowerLeft.setLongitude(other.lowerLeft.getLongitude());
+}
+if (other.upperRight.getLongitude() > upperRight.getLongitude()) {
+

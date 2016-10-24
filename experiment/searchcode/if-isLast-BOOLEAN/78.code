@@ -1,0 +1,10 @@
+public class regLastVisitor extends regularExpressionBaseVisitor<Boolean> {
+
+private ArrayList<Leaf> leafs;
+private int counter;
+private boolean isLast;
+public Boolean visitAltn(regularExpressionParser.AltnContext ctx) {
+boolean last = this.isLast;
+int i = 0;
+List<regularExpressionParser.ConcatContext> con = ctx.concat();
+

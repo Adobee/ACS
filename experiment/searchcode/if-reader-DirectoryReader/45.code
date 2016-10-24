@@ -1,0 +1,8 @@
+* Subclasses should implement doWrapDirectoryReader to return an instance of the
+* subclass.
+*
+* If the subclass wants to wrap the DirectoryReader&#39;s subreaders, it should also
+@Override
+protected final DirectoryReader doOpenIfChanged() throws IOException {
+return wrapDirectoryReader(in.doOpenIfChanged());
+

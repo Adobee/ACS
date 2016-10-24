@@ -1,0 +1,10 @@
+public static Matrix toMatrix(List<List<Double>> list) {
+double[][] array = new double[list.size()][];
+for (int i = 0; i < list.size(); ++i) {
+public static double linInterpolation(double Y1, double Y2, double targetY, double X1, double X2) {
+return X1 + (targetY - Y1)*(X2-X1)/(Y2-Y1);
+}
+
+
+}
+

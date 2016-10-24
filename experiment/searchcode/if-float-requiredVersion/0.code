@@ -1,0 +1,8 @@
+JAVA_LATEST_SUPPORTED(maxVersion(), SourceVersion.latest().name());
+
+public static float maxVersion() {
+final String lastValidName = SourceVersion.latest().name();
+for (KnownJavaVersion knownVersion : KnownJavaVersion.values()) {
+if (knownVersion.name.equals(lastValidName)) {
+return knownVersion.value;
+

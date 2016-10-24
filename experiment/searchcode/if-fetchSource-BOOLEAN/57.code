@@ -1,0 +1,8 @@
+public static final FetchSourceContext DO_NOT_FETCH_SOURCE = new FetchSourceContext(false);
+private boolean fetchSource;
+private String[] includes;
+private String[] excludes;
+if (token == XContentParser.Token.VALUE_BOOLEAN) {
+fetchSource = parser.booleanValue();
+} else if (token == XContentParser.Token.VALUE_STRING) {
+

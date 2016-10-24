@@ -1,0 +1,10 @@
+date = DateFormatUtils.toDate(timestamp, DateFormatUtils.pattern12);
+} else {
+date = new Date(Long.parseLong(timestamp));
+}
+minutes = date.getMinutes() + 1;
+
+if (minutes >= 0 &amp;&amp; minutes <= 5) {
+fiveMinute = &quot;05&quot;;
+} else if (minutes > 5 &amp;&amp; minutes <= 10) {
+

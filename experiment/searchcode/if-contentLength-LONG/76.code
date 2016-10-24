@@ -1,0 +1,10 @@
+return body.contentType();
+}
+
+@Override
+public long contentLength() {
+return body.contentLength();
+public long read(Buffer sink, long byteCount) throws IOException {
+long currentRead = super.read(sink, byteCount);
+if (contentLength > 0) {
+

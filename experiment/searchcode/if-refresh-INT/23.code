@@ -1,0 +1,12 @@
+private long refreshTime;
+
+public int compareTo(Object o) {
+if(this.refreshTime >= ((CompBean)o).refreshTime)
+return 1;
+else
+return -1;
+}
+
+public boolean needsRefresh(long cacheTimeInMillis){
+if(System.currentTimeMillis() - refreshTime > cacheTimeInMillis){
+

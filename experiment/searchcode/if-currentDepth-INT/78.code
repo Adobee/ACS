@@ -1,0 +1,13 @@
+public boolean isBalanced(TreeNode root) {
+if(root == null){
+return true;
+}
+
+int depthOfLeft = getDepth(root.left, 1);
+int depthOfRight = getDepth(root.right, 1);
+private int getDepth(TreeNode tree, int currentDepth){
+if(tree == null){
+return currentDepth;
+}
+return Math.max(getDepth(tree.left, currentDepth+1),
+

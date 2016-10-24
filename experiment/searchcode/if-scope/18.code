@@ -1,0 +1,9 @@
+ScopeDTO scopeDto = scopeCache.findById(id);
+
+if (scopeDto == null) {
+synchronized (scopeCache) {
+scopeDto = scopeCache.findById(id);
+
+if (scopeDto == null) {
+scopeDto = scopeConnector.findById(id);
+

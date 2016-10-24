@@ -1,0 +1,14 @@
+private AtomicLong counter;
+private long end;
+private long increment;
+
+
+
+public AtomicCounter ()
+{
+counter = new AtomicLong();
+public long getNext() {
+
+long l = counter.getAndAdd(increment); // No need for synchronization
+if (increment > 0 &amp;&amp; l<=end) return l;
+

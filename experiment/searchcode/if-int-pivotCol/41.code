@@ -1,0 +1,8 @@
+// Find row with more than one non-zero coefficient
+int i;
+for (i = 0; i < rows - 1; i++) {
+if (countNonzeroCoeffs(i) > 1) break;
+while(pivotCol < cols &amp;&amp; matrix[i][pivotCol] == 0) pivotCol++;
+if (pivotCol == cols) continue;
+int pivot = matrix[i][pivotCol];
+

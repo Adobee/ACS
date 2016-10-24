@@ -1,0 +1,7 @@
+throw new Exception(&quot;Credentials not found&quot;);
+}
+HttpUrl url = new UrlBuilder()
+.setClientId(credentials.get().id)
+.addScope(UrlBuilder.Scope.AUDIO)
+.addScope(UrlBuilder.Scope.DOCS)
+

@@ -1,0 +1,11 @@
+public SimpleEditableLookup(int initialSize) {
+if (initialSize < 0) {
+throw new IllegalArgumentException(&quot;size must not be negative&quot;);
+values = new Object[initialSize];
+}
+
+@Override
+public Object find(String name) {
+for (int i = 0; i < length; i++) {
+if (Objects.equals(names[i], name)) {
+

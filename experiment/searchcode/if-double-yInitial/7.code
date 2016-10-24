@@ -1,0 +1,9 @@
+* @param variation The random variation range for the launch angle in degrees.
+* @throws EmitterException If the two angles are not legal.
+*/
+public LaunchSparkEmitter(double initialXPos, double initialYPos, double initialXV, double initialYV,
+public ArrayList<LaunchSpark> launch(double time) {
+double angle, vXInitial, vYInitial;
+double[] position = getPosition();
+double[] velocity = getVelocity();
+

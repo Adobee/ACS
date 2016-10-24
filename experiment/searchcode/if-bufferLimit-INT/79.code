@@ -1,0 +1,10 @@
+private volatile int bufferLimit;
+private final int asyncWriteBufferSize;
+
+
+public AbstractServletOutputStream(int asyncWriteBufferSize) {
+* Must hold writeLock to call this method.
+*/
+private void writeInternal(byte[] b, int off, int len) throws IOException {
+if (listener == null) {
+

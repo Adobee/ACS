@@ -1,0 +1,11 @@
+public abstract class ListPredicate<G> implements ElementPredicate<G> {
+
+private final String name;
+private boolean enabled = true;
+setEnabled(enabled);
+}
+
+public boolean contains(G element) {
+if (!isEnabled()) return false;
+return test(element);
+

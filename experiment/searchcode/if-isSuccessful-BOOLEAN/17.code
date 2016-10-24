@@ -1,0 +1,13 @@
+this.downloaders = downloaders;
+}
+
+public boolean isSuccessful() {
+for (NIODownloader downloader : downloaders) {
+if (downloader.isSuccessful() == false) {
+return false;
+}
+}
+return true;
+}
+}
+

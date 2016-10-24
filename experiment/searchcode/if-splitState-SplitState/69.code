@@ -1,0 +1,6 @@
+* 2. unsplit() may only be called if the watch has been split()<br>
+* 3. resume() may only be called if the watch has been suspend()<br>
+public void unsplit() {
+if (this.splitState != SplitState.SPLIT) {
+throw new IllegalStateException(&quot;Stopwatch has not been split. &quot;);
+

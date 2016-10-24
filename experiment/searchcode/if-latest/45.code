@@ -1,0 +1,7 @@
+List<Products> latestProducts = productsService.findLatestProducts();
+if (!latestProducts.isEmpty()) {
+if (latestProducts.size() > 10 &amp;&amp; latestProducts.size() <= maxItem) {
+latestProducts = latestProducts.subList(0, latestProducts.size());
+}
+if (latestProducts.size() <= perpage) {
+

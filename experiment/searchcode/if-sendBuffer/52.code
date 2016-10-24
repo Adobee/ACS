@@ -1,0 +1,9 @@
+private static int flag = 1;
+private static int blockSize = 4096;
+private static ByteBuffer sendBuffer = ByteBuffer.allocate(blockSize);
+while(it.hasNext()){
+selectionKey = it.next();
+
+if(selectionKey.isConnectable()){
+System.out.println(&quot;client connet&quot;);
+

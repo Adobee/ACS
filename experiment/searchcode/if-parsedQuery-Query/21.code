@@ -1,0 +1,9 @@
+int totalHits = 0;
+String parsedQuery = results.get(0).parsedQuery;
+
+for(QueryResult r : results){
+totalHits += r.totalHits;
+
+if(!r.parsedQuery.equals(parsedQuery)){
+throw new ResultsMergerException(&quot;Incompatible result. Expected &#39;&quot; + parsedQuery + &quot;&#39; but was &#39;&quot; + r.parsedQuery);
+

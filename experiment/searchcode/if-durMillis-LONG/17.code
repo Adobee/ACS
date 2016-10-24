@@ -1,0 +1,12 @@
+* associated with the Berkeley Lab Scientific Data Management Group projects.
+* All rights reserved.
+*
+* If you have questions about your rights to use or distribute this software,
+public TSRMUploadCommon(SRMFileTransfer txf, String remoteLoc, TSRMLocalFile f, GSSCredential cred) {
+_transfer = txf;
+_file = f;
+_remoteLoc = remoteLoc;
+
+if (cred != null) {
+_transfer.setCredentials(cred);
+

@@ -1,0 +1,9 @@
+public void sendHeader(ActionResponse response) {
+// Decide whether to close the connection or not.
+boolean http10 = request.getProtocolVersion().equals(HttpVersion.HTTP_1_0);
+// Build the response object.
+HttpResponseStatus status = HttpResponseStatus.OK;
+HttpResponse resp = null;
+if (http10) {
+resp = new DefaultHttpResponse(HttpVersion.HTTP_1_0, status);
+

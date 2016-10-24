@@ -1,0 +1,13 @@
+public static Scale getInstance()
+{
+if (instance == null) instance = new Scale();
+return instance;
+}
+
+public float scale(float f) {
+return f * scale;
+}
+
+public int scale(int i) {
+return (int) ((float) i * (float) scale);
+

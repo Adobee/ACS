@@ -1,0 +1,8 @@
+while(pos < s.length()){
+String value = s.substring(pos, pos+1);
+if((pos == s.length() - 1)){
+int temp =explvl(s.substring(last, pos+1));
+int set = setter(s.substring(last,pos+1));
+rtn[temp] = set;
+if(neg){
+

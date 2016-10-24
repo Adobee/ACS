@@ -1,0 +1,10 @@
+*  Generate permutations by transposing adjacent elements using the
+*  Johnson-Trotter algorithm.
+*
+*  This program is a Java version based on the program SJT.c
+private static HashMap<Integer,ArrayList<int[]>> knownPerms = new HashMap<Integer,ArrayList<int[]>>();
+
+public static ArrayList<int[]> perm(int N) {
+/* memoization */
+if(knownPerms.containsKey(Integer.valueOf(N))) return knownPerms.get(Integer.valueOf(N));
+

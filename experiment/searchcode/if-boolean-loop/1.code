@@ -1,0 +1,12 @@
+void addLoop(LoopStack stack) {
+if(nextLoop != null)
+nextLoop.addLoop(stack);
+else if(count == 0) {
+else
+nextLoop = stack;
+}
+
+void removeLowestLoop() {
+if(nextLoop == null)
+count = 0;
+

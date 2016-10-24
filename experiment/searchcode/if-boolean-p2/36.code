@@ -1,0 +1,13 @@
+public Edge(PointDouble p1, PointDouble p2)
+{
+this.p1 = p1;
+this.p2 = p2;
+}
+public PointDouble p1, p2;
+return p1.hashCode() ^ p2.hashCode();
+}
+@Override public boolean equals(Object obj)
+{
+if (!(obj instanceof Edge)) return false;
+Edge other = (Edge)obj;
+

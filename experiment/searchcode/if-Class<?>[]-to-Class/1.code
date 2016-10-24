@@ -1,0 +1,9 @@
+public class PrimitiveWrapperType extends Type {
+
+private static Map<Class, Class> wrapperClassToPrimitiveClass;
+
+private static Map<Class, Class> primitiveClassToWrapperClass;
+public static boolean isWrapperClass(String className) {
+for (Class wrapperClass : wrapperClassToPrimitiveClass.keySet())
+if (wrapperClass.getName().equals(className))
+

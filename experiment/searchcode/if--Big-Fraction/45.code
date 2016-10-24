@@ -1,0 +1,9 @@
+public BigFraction reduce() {
+BigInteger newNumerator, newDenominator;
+
+if (numerator.signum() == denominator.signum()) {
+BigInteger gdc = newNumerator.gcd(newDenominator);
+
+if (BigInteger.ONE.equals(gdc))
+return new BigFraction(newNumerator, newDenominator);
+

@@ -1,0 +1,14 @@
+public long getLastUpdateTime() {
+return lastUpdateTime;
+}
+
+@Override
+public boolean shouldRefresh(DataSource<TResponse> dataSource) {
+// reset update time.
+if (shouldRefresh) {
+lastUpdateTime = System.currentTimeMillis();
+}
+return shouldRefresh;
+}
+}
+

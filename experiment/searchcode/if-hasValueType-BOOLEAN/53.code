@@ -1,0 +1,8 @@
+PrintWriter printWriter = context.tryCreate(logger, composer.getCreatedPackage(), composer.getCreatedClassShortName());
+if(printWriter == null)
+return composer.getCreatedClassName();
+// {username: [a-zA-Z][a-zA-Z_0-9]}
+
+writer.indent();
+writer.println(&quot;protected boolean exec(final String token) throws Exception {&quot;);
+

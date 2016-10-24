@@ -1,0 +1,9 @@
+package carl.utils;
+
+public class Maths_utils
+{
+public static float sigmoid(float input, float gain, float threshold, float zero)
+{
+float s = gain*(threshold - input);
+s = 1/(1+ (float)Math.exp(s));
+

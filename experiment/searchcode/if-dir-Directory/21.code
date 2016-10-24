@@ -1,0 +1,8 @@
+public static boolean createDir(String directory) {
+
+File dir = new File(directory);
+if (!dir.isDirectory()) {
+boolean success = dir.mkdirs();
+if (!success) {
+System.out.println(&quot;Unable to create directory &quot; + directory);
+

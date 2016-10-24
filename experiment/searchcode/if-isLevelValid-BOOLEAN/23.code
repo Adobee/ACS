@@ -1,0 +1,10 @@
+public ImmutableMap<ShardRouting, CommonStats> asMap() {
+if (shardStatsMap == null) {
+ImmutableMap.Builder<ShardRouting, CommonStats> mb = ImmutableMap.builder();
+boolean isLevelValid = &quot;indices&quot;.equalsIgnoreCase(level) || &quot;shards&quot;.equalsIgnoreCase(level) || &quot;cluster&quot;.equalsIgnoreCase(level);
+if (!isLevelValid) {
+return builder;
+}
+
+builder.startObject(&quot;_all&quot;);
+

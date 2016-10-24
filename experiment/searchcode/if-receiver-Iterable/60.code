@@ -1,0 +1,10 @@
+public abstract class AbstractMarker extends Term.NonTerminal
+{
+protected final int bindIndex;
+protected final ColumnSpecification receiver;
+
+protected AbstractMarker(int bindIndex, ColumnSpecification receiver)
+public NonTerminal prepare(String keyspace, ColumnSpecification receiver) throws InvalidRequestException
+{
+if (!(receiver.type instanceof CollectionType))
+

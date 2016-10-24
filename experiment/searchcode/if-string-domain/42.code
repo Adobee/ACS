@@ -1,0 +1,10 @@
+private String fromDomain;
+private String toDomain;
+
+public Connection(String fromDomain, String toDomain) {
+this.fromDomain = fromDomain;
+this.toDomain = toDomain;
+}
+
+public String getFromDomain() {
+

@@ -1,0 +1,11 @@
+armor.put(l, null);
+}
+}
+
+public boolean equip(Item item) {
+if (! item.isEquipable()) return false;
+public boolean unequip(Item item) {
+if (item.isEquipable()) {
+if (item.isWeapon()) {
+return unequipWeapon(item);
+

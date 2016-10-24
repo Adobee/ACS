@@ -1,0 +1,15 @@
+estimate *= 1 - (1/leakyness);
+if(success){
+estimate += 1/leakyness;
+}
+}
+}
+
+public double successRate(){
+return estimate;
+}
+
+public void  print(){
+if(!(name.contains(&quot;=&quot;) &amp;&amp; n == 0))
+System.out.println(String.format(&quot;%-15s:  success rate=%.3f&quot;, name, estimate));
+

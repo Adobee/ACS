@@ -1,0 +1,13 @@
+break;
+case &#39;_&#39;:
+extractVariable();
+break;
+default:
+if(Character.isLetter(latestChar)|| latestChar.equals(&#39;_&#39;))
+latestChar = getNext();
+if(latestChar == &#39;n&#39;)
+{
+currentToken.append(latestChar);
+latestChar = getNext();
+if(latestChar == &#39;d&#39;)
+

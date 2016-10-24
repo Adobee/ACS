@@ -1,0 +1,7 @@
+return cacheVal.computeIfAbsent(point, point1 -> internalFunction.valueAt(point1));
+}
+
+@Override
+protected Point internalGradientAt(Point point) {
+return cacheGrad.computeIfAbsent(point, point1 -> internalFunction.gradientAt(point1));
+

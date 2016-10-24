@@ -1,0 +1,8 @@
+import static fi.solita.utils.functional.Collections.emptyList;
+import static fi.solita.utils.functional.Collections.newList;
+import static fi.solita.utils.functional.Collections.newSet;
+List<Integer> list = newList(1, 2, 3);
+
+assertTrue(newList(take(-1, list)).isEmpty());
+assertTrue(newList(take(0, list)).isEmpty());
+

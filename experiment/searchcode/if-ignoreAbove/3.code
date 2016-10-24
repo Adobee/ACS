@@ -1,0 +1,9 @@
+public Builder ignoreAbove(int ignoreAbove) {
+if (ignoreAbove < 0) {
+throw new IllegalArgumentException(&quot;[ignore_above] must be positive, got &quot; + ignoreAbove);
+if (value == null || value.length() > ignoreAbove) {
+return;
+}
+
+if (context.includeInAll(includeInAll, this)) {
+

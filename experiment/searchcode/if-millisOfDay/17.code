@@ -1,0 +1,6 @@
+* a separate attribute. No time zone is involved. If the chronology is {@link ISOChronology} the
+* attribute is serialized as an empty string, thus {@link ISOChronology} is considered to be
+final int packedYearMonthDay = (int)(packedLocalDateTime / 86400000);
+final int millisOfDay = (int)(packedLocalDateTime % 86400000);
+final Chronology chronology = IdentifiableChronology.readChronology(input);
+

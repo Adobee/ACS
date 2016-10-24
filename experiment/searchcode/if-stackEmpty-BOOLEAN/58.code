@@ -1,0 +1,18 @@
+urls = new Stack<String>();
+
+while (matcher.find()) {
+if (matcher.group(1).endsWith(&quot;.pdf&quot;)) {
+
+urls.push(matcher.group(1));
+return urls.pop();
+}
+
+public boolean stackEmpty() {
+if (urls.empty()) {
+return true;
+}
+return false;
+}
+
+}
+

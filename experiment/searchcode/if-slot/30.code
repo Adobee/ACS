@@ -1,0 +1,15 @@
+public enum ArmorSlot {
+
+SHOES(36),
+PANTS(37),
+SHIRT(38),
+HAT(39);
+
+private static ArmorSlot[] values = ArmorSlot.values();
+public static ArmorSlot fromSlot(int slot) {
+return slots.get(slot);
+}
+
+public static ArmorSlot fromIndex(int index) {
+if(index < 0 || index >= values.length) {
+

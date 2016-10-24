@@ -1,0 +1,14 @@
+@param aN the root number extracted
+*/
+public RootApproximator(double anA, int aN)
+{
+a = anA;
+n = aN;
+xold = 1;
+@return the next guess number
+*/
+public double nextGuess()
+{
+xold = xnew;
+xnew = xold * (1 - 1.0 / n) + a / (n * Math.pow(xold, n - 1));
+

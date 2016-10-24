@@ -1,0 +1,11 @@
+import java.io.IOException;
+import java.io.InputStream;
+
+public class ChunkedStream extends InputStream {
+
+private InputStream chunked;
+private int currentRemaining = 0;
+private boolean first = true;
+
+public ChunkedStream(InputStream chunked) {
+

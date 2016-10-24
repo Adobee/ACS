@@ -1,0 +1,9 @@
+if (x2 > width - 1) {
+x2 = width - 1;
+}
+int firstByte = y * rows + x1 / 8;
+int firstBit = 7 - x1 % 8;
+int lastBit = 7 - x2 % 8;
+if (firstByte == lastByte) {
+screen[firstByte] |= setBits(lastBit, firstBit);
+

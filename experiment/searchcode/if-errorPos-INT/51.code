@@ -1,0 +1,8 @@
+reportTypeCheckError(&quot;type.error.assign.self&quot;, Utils.errorPos(assign.id));
+}
+super.applyAssign(assign);
+if (Utils.isParent(assign.expr.typeInfo, assign.id.typeInfo)) {
+super.applyPlus(plus);
+if (plus.left.typeInfo.type() != TypeEnum.INT) {
+reportTypeCheckError(&quot;type.error.expected&quot;, Constant.INT, plus.left.typeInfo.toString(), Utils.errorPos(plus.left));
+

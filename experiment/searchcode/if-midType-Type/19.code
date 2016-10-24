@@ -1,0 +1,14 @@
+public class FetchAndPlayTracks extends AsyncTask<Void, Void, Boolean>
+{
+private Cursor mCursor;
+private int    mIdType;
+private Id     mId;
+
+
+private BaseMp3TunesListActivity mActivity;
+public FetchAndPlayTracks(int type, Id id, BaseMp3TunesListActivity activity)
+{
+mIdType   = type;
+mId       = id;
+mActivity = activity;
+

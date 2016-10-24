@@ -1,0 +1,8 @@
+private boolean showDevelopmentNumbers;
+private boolean showTestNumbers;
+private boolean showApprovedNumbers;
+public boolean isValid(GraphNode node) {
+boolean valid = false;
+if (isShowDevelopmentNumbers()) {
+valid |= node.getMakStatus().equals(&quot;development&quot;);
+

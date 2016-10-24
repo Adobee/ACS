@@ -1,0 +1,10 @@
+super(start, goal, pt);
+}
+
+@Override
+void start(long start, long end) {
+this.position = start;
+int diff = Long.signum(goal - position)*SPEED;
+if(Math.abs(goal - position) <= SPEED){
+this.stop();
+

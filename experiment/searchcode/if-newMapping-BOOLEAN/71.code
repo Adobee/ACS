@@ -1,0 +1,8 @@
+private boolean checkExistence(FinancialObjectCodeMapping newMapping) {
+
+boolean valid = true;
+if (StringUtils.isNotBlank(newMapping.getRateClassCode()) &amp;&amp; StringUtils.isNotBlank(newMapping.getRateTypeCode())) {
+valid &amp;= checkExistenceFromTable(Unit.class,pkMap,&quot;unitNumber&quot;, &quot;Unit Number&quot;);
+
+if (StringUtils.isNotEmpty(((FinancialObjectCodeMapping) newMapping).getActivityTypeCode())) {
+

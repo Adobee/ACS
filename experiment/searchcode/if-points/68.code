@@ -1,0 +1,13 @@
+return 0;
+return (val>0)?1:2;
+}
+
+static void convexHull(Points points[],int n)
+{
+if(n<3)
+Vector<Points> hull=new Vector<Points>();
+
+int l=0;
+for(int i=1;i<n;i++)
+if(points[i].x<points[l].x)
+

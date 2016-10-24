@@ -1,0 +1,9 @@
+package synchedthread;
+
+public class SynchedMain {
+public static volatile Boolean shouldStop;
+public void run() {
+shouldStop = new Boolean(false);
+//5 sec
+final long wait =  System.currentTimeMillis() + 5000;
+

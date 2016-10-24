@@ -1,0 +1,10 @@
+oper = poper;
+right = pright;
+}
+public void genC( PW pw, boolean putParenthesis  ) {
+if (putParenthesis)
+pw.out.print(&quot; &quot;+oper.toString()+&quot; &quot;);
+right.genC(pw, true);
+if (putParenthesis)
+pw.out.print(&quot; )&quot;);
+

@@ -1,0 +1,9 @@
+private static boolean auxBST1(TreeNode current, TreeNode prev) {
+if (current == null) return true;
+boolean ret = auxBST1(current.left, prev);
+return auxBST1(current, null);
+}
+
+private static boolean auxBST2(TreeNode current, int min, int max) {
+if (current == null) return true;
+

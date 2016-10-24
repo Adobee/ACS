@@ -1,0 +1,6 @@
+public class Solution {
+public void merge(int A[], int m, int B[], int n) {
+for (int total = m + n; total > 0; total--) {
+if (m > 0 &amp;&amp; n > 0)
+A[total - 1] = A[m - 1] > B[n - 1] ? A[--m] : B[--n];
+

@@ -1,0 +1,15 @@
+public WtmCategoryInfo(JSONObject jsonContents)
+{
+categoryInfo = jsonContents;
+setCategoryInfo();
+}
+
+private void setCategoryInfo()
+{
+try
+{
+if(categoryInfo.has(&quot;categories&quot;))
+categoryList = categoryInfo.getJSONArray(&quot;categories&quot;);
+
+for(int categoryIndex = 0; categoryIndex < categoryList.length(); categoryIndex++)
+

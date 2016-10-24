@@ -1,0 +1,8 @@
+mydao = Lookup.getDefault().lookup(IGenericAPI.class);
+}
+
+@Override
+public boolean insertUnitsOfMeasurement(UnitsOfMeasurement unitsOfMeasurement) {
+if (mydao.insertData(unitsOfMeasurement)) {
+return true;
+

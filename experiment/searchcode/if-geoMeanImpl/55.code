@@ -1,0 +1,9 @@
+if (varianceImpl != variance) {
+varianceImpl.increment(value);
+}
+if (geoMeanImpl != geoMean) {
+geoMeanImpl.increment(value);
+// holds in dest; otherwise copy stat
+if (source.geoMean == source.geoMeanImpl) {
+dest.geoMean = (GeometricMean) dest.geoMeanImpl;
+

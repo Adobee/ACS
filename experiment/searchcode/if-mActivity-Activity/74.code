@@ -1,0 +1,8 @@
+private final Activity mActivity;
+
+public ThemeChangerListener(Activity activity) {
+mActivity = activity;
+if (android.os.Build.VERSION.SDK_INT >= 11) {
+mActivity.recreate();
+} else {
+

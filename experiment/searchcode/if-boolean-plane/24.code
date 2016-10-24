@@ -1,0 +1,9 @@
+public Plane getPlaneForDirection(Vector3 direction) {
+for (Map.Entry<Vector3, Plane> planeVector : planeVectors.entrySet()) {
+if (planeVector.getKey().equals(direction)) {
+return Plane.DIAGONAL;
+}
+
+public boolean isHorizontal(ImosDrilling drilling) {
+Plane plane = getPlaneForDirection(drilling.getDirection());
+

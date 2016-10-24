@@ -1,0 +1,8 @@
+Parser parser = new Parser(&quot;src/test/resources/unit_tests/array_if_else.txt&quot;);
+parser.parse();
+Optimizer optimizer = new Optimizer(parser, parser.getPhiInstructionNumbers(), parser.getProgramInstructions());;
+optimizer.optimize(true, false);
+print(parser, &quot;array_if_else.txt.vcg&quot;);
+}
+}
+

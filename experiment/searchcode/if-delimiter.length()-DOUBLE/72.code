@@ -1,0 +1,12 @@
+*  @param  delimiter  the delimiter.
+*/
+public void setDelimiter(String delimiter)
+{
+if (delimiter.length() != 1)
+throw new IllegalArgumentException( &quot;Delimiter must be a single character&quot; );
+//  Parsing is different depending on the number of delimiters
+
+if (singleDelimiter || delimiter.length() == 1)
+{
+return parseUsingSingleDelimiter();
+

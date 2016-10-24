@@ -1,0 +1,8 @@
+public Bitmap getDefaultPackDrawable (String folder, String file, int fixedHeight, AssetManager am) {
+if (am == null || imgs == null)
+is = am.open(DEFAULT_COMIC_PACK + &quot;/&quot; + folder + &quot;/&quot; + file);
+Bitmap bmp = BitmapFactory.decodeStream(is);
+if (bmp != null) {
+if (fixedHeight > 0) {
+Bitmap tmp = bmp;
+

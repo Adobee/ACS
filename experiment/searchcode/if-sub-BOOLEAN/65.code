@@ -1,0 +1,17 @@
+int n = s.length();
+
+if (n == 0) return false;
+
+Boolean[] T = new Boolean[n + 1];
+String sub = s.substring(j - 1, i);
+
+if (dict.contains(sub)) {
+T[i] = T[i] || T[j - 1];
+}
+}
+}
+
+return T[n];
+}
+}
+

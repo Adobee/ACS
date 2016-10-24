@@ -1,0 +1,8 @@
+* an immutable translog filereader
+*/
+public class TranslogReader extends BaseTranslogReader implements Closeable {
+protected final AtomicBoolean closed = new AtomicBoolean(false);
+
+/**
+* Create a reader of translog file channel. The length parameter should be consistent with totalOperations and point
+

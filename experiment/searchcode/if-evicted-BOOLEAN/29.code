@@ -1,0 +1,10 @@
+public void addUser(AuthenticatedUser user, boolean singleUserAccess) {
+
+if(singleUserAccess) {
+// remove any cheater first
+memCachedClient.replace(VALID_USERS, validUsers);
+}
+
+public boolean userHasBeenRemoved(String token) {
+ensureEvictedUsers();
+

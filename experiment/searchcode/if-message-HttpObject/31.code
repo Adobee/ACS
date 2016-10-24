@@ -1,0 +1,10 @@
+conn.setDoInput(true);
+
+if(httpObject.getHeaders() != null) {
+for (Utils.Pair pair : httpObject.getHeaders()) {
+conn.setRequestProperty(pair.getKey(), pair.getValue());
+}
+}
+
+//            if(httpObject.getParams() != null) {
+

@@ -1,0 +1,15 @@
+public class SpikeLimit extends DigitalInput{
+
+boolean toggle = false;
+boolean previous = false;
+boolean current = false;
+return current;
+}
+
+public boolean isBumped() {
+update();
+if (current &amp;&amp; (!previous)) {
+return true;
+}
+return false;
+

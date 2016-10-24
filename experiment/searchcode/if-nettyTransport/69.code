@@ -1,0 +1,11 @@
+import org.slf4j.LoggerFactory;
+
+/**
+* Test NettyTransport.
+*/
+public class NettyTransportTest extends TestBase {
+private static final Logger LOG = LoggerFactory
+@Test(timeout=10000, expected=IllegalArgumentException.class)
+public void testInvalidPort() throws Exception {
+NettyTransport transport = new NettyTransport(getHostPort(-1), NOOP,
+

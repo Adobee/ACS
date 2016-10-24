@@ -1,0 +1,10 @@
+private long timeout;
+
+private boolean raiseException = true;
+
+private volatile boolean isTimeout = false;
+public TimeoutThread(long timeout, boolean raiseException) {
+super();
+this.timeout = timeout;
+this.raiseException = raiseException;
+

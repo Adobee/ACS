@@ -1,0 +1,7 @@
+TimeStore ns = (TimeStore)namedStore.get(aName);
+if (ns == null) {
+synchronized (this) {
+ns = (TimeStore)namedStore.get(aName);
+if (ns == null) {
+ns = new TimeStore(aName);
+

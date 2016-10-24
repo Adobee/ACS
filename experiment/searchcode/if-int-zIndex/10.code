@@ -1,0 +1,16 @@
+import com.DHalvin.pixelzoo.ZooMap;
+
+public class Coordinates implements Serializable
+{
+
+private int xCoord, yCoord, zIndex;
+public void setZIndex(int z)
+{
+if(z <= ZooMap.NUMBER_OF_Z_LAYERS &amp;&amp; z > 0)
+{
+zIndex = z;
+}
+}
+
+public String toString()
+

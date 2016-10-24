@@ -1,0 +1,9 @@
+final boolean renderDefaults = request.paramAsBoolean(&quot;include_defaults&quot;, false);
+clusterStateRequest.local(request.paramAsBoolean(&quot;local&quot;, clusterStateRequest.local()));
+return new BytesRestResponse(RestStatus.OK, renderResponse(response.getState(), renderDefaults, builder, request));
+}
+});
+}
+
+private XContentBuilder renderResponse(ClusterState state, boolean renderDefaults, XContentBuilder builder, ToXContent.Params params) throws IOException {
+

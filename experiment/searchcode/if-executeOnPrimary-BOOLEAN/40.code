@@ -1,0 +1,6 @@
+//so we need to wait for the intitialization to finish rather than counting on the manager.getAllConnections()
+//to wait for a primary
+boolean done = false;
+public Connection createClientToServerConnection(ServerLocation location, boolean forQueue) {
+if(nextConnections == null || nextConnections.isEmpty()) {
+

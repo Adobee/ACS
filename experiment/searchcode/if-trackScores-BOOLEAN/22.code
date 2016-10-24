@@ -1,0 +1,10 @@
+TopDocs execute(IndexSearcher searcher, Query query, int size, boolean trackScores) throws IOException {
+ScanCollector collector = new ScanCollector(size, trackScores);
+private final List<ScoreDoc> docs;
+
+private final int size;
+
+private final boolean trackScores;
+
+private Scorer scorer;
+

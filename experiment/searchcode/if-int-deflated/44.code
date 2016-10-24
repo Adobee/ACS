@@ -1,0 +1,6 @@
+* You should have received a copy of the Open Software Licence along with this
+* application. if not, contact the Open Source Initiative (www.opensource.org)
+DeflatedString d = new DeflatedString(message);
+float duration = 0f;
+for (int outerloop=0; outerloop<2; outerloop++ ) {
+

@@ -1,0 +1,7 @@
+public static int divide(int dividend, int divisor) {
+if (divisor == 0) //除数为0
+return 0;
+if (dividend == Integer.MIN_VALUE) { //被除数为最小值 没有相反数
+if (divisor < 0) //除数小于零
+return divide(dividend - divisor, divisor)==Integer.MAX_VALUE ? //判断是否是MAX_INT
+

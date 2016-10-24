@@ -1,0 +1,10 @@
+name.append(&#39;-&#39;).append(getClass().getSimpleName());
+return name.toString();
+}
+
+protected final IterationState getIterationState() {
+if (iterationState != null) {
+return iterationState;
+}
+int currentIteration = getIteration();
+

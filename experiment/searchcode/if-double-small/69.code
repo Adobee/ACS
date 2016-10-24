@@ -1,0 +1,17 @@
+double b = input.nextDouble();
+System.out.print(&quot; c = &quot;);
+double c = input.nextDouble();
+
+double smallest;
+if (a <= b  &amp;&amp; a <= c) {
+smallest = b;
+}
+else
+{
+smallest = c;
+}
+
+int tempSmall = (int)smallest;
+
+if (tempSmall == smallest) {
+

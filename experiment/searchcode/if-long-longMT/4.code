@@ -1,0 +1,7 @@
+/*  41:    */   public void setSeed(int seed)
+/*  42:    */   {
+/*  43:144 */     long longMT = seed;
+/*  44:    */
+/*  45:146 */     this.mt[0] = ((int)longMT);
+/*  46:147 */     for (this.mti = 1; this.mti < 624; this.mti += 1)
+

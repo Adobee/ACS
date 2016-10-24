@@ -1,0 +1,7 @@
+private final List<Converter.Factory> converterFactories;
+private final List<CallAdapter.Factory> adapterFactories;
+private final Executor callbackExecutor;
+public CallAdapter<?> nextCallAdapter(CallAdapter.Factory skipPast, Type returnType,
+Annotation[] annotations) {
+checkNotNull(returnType, &quot;returnType == null&quot;);
+

@@ -1,0 +1,11 @@
+protected boolean scrollable;
+
+public ParallaxLayer() {}
+
+public ParallaxLayer(GameCamera camera, boolean isScrollable) {
+pGLState.pushModelViewGLMatrix();
+
+float widthRange;
+if(levelWidth != 0) {
+widthRange = levelWidth;
+

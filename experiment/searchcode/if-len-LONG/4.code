@@ -1,0 +1,8 @@
+void add(int adl, int adr, long x, long k, int l, int si, int len) {
+int r = l + len;
+if (adl <= l &amp;&amp; r <= adr) {
+segK[si] = (segK[si] + k) % mod;
+} else if (adl < r &amp;&amp; l < adr) {
+add(adl, adr, x, k, l, si * 2 + 1, len / 2);
+add(adl, adr, x, k, l + len / 2, si * 2 + 2, len - len / 2);
+

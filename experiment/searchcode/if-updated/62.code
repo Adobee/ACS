@@ -1,0 +1,10 @@
+import com.noisyz.databindinglibrary.callback.DataUpdatedCallback;
+
+/**
+* Created by Oleg on 24.03.2016.
+*/
+public abstract class AbsUIBinder<O extends Object, V extends Object> implements UIBinder<O> {
+protected void onObjectUpdated(O object, String propertyName, V value) {
+if (dataUpdatedCallback != null) {
+dataUpdatedCallback.onDataUpdated(this, object, propertyName, value);
+

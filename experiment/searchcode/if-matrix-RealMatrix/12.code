@@ -1,0 +1,12 @@
+public RealMatrix update_H()
+{
+if( this.updateType == EUCLIDEAN ) {
+return update_H_euclidian();
+RealMatrix newH = MyMatrixUtil.multiplyEntity(H, MyMatrixUtil.divideEntity(numeratorH, denomH));
+return newH;
+}
+
+public RealMatrix update_W()
+{
+if( this.updateType == EUCLIDEAN ) {
+

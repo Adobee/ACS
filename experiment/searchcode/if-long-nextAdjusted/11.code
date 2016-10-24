@@ -1,0 +1,9 @@
+* @return the human-readable short name in the specified locale
+*/
+public String getShortName(long instant, Locale locale) {
+if (locale == null) {
+nextLocal = Long.MAX_VALUE;
+}
+long nextAdjusted = nextTransition(instantLocal - offset);
+if (nextAdjusted == (instantLocal - offset)) {
+

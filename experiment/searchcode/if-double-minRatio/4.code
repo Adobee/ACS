@@ -1,0 +1,22 @@
+public class NumericComparator implements Comparator {
+private double minratio;
+
+public boolean isTokenized() {
+return false;
+}
+
+public void setMinRatio(double minratio) {
+double tmp = d2;
+d2 = d1;
+d1 = tmp;
+}
+
+double ratio = d1 / d2;
+if (ratio < minratio)
+return 0.0;
+else
+return ratio;
+}
+
+}
+

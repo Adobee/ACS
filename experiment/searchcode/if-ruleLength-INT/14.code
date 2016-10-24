@@ -1,0 +1,8 @@
+* @param queryLength the length of the query (should >= the ruleLength and <= diseaseSize)
+*/
+public void init(int patientSize, int diseaseSize, int medSize, int ruleLength, int queryLength) {
+kb = new KnowledgeBase();
+// Assign each patient to a <code>ruleLength</code> diseases
+for (int i = 0; i < patientSize; i++) {
+int patient_id = env.symTab().addSymbol(patient_name + i, SymType.CONSTANT);
+

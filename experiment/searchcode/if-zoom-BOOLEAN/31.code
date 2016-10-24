@@ -1,0 +1,10 @@
+windowsZoomOut = zoomOut.iterator();
+}
+
+public boolean isZooming() {
+return windowsZoomOut.hasNext() || windowsZoomIn.hasNext();
+}
+
+public ZoomWindow zoom() {
+if (windowsZoomOut.hasNext()) {
+

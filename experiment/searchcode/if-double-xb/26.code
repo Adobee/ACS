@@ -1,0 +1,11 @@
+static double humpLeftArea(double u, double v, double a, double humpArea) {
+if (a - u < v - a) {
+double w = a - u;
+return 0.5 * w * w;
+} else {
+double w = v - a;
+double minDist = 1, bestX = 0;
+for (;;) {
+double delta = (xb - xa) / 1000;
+if (delta < 1.0e-10) {
+

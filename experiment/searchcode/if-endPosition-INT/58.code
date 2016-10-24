@@ -1,0 +1,10 @@
+int beginPosition = 0;
+int endPosition = 0;
+String oneUrl = &quot;&quot;;
+while (true) {
+beginPosition = webBody.indexOf(&quot;src=\&quot;..&quot;, endPosition);
+endPosition = webBody.indexOf(&quot;.png&quot;, beginPosition);
+if (beginPosition == -1 || endPosition == -1)
+break;
+oneUrl = tieba + webBody.substring(beginPosition+8, endPosition)+&quot;.png&quot;;
+

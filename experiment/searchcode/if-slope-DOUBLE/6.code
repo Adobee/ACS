@@ -1,0 +1,9 @@
+public static int findPeakFrom1D_data(ArrayList<Double> data_1D){
+
+int count = 0 ;
+double previousSlope = 0.0;
+double slope = 0.0 ;
+
+for (int i = 1 ; i < data_1D.size() ; i++){
+slope = data_1D.get(i) - data_1D.get(i-1);
+

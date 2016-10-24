@@ -1,0 +1,8 @@
+public class NormalizedGradientL2Norm extends GradientL2Norm{
+
+/**
+* Stop if gradientNorm/(originalGradientNorm) smaller
+public boolean stopOptimization(Objective obj){
+double norm = MathUtils.L2Norm(obj.gradient);
+if(originalGradientNorm == -1){
+

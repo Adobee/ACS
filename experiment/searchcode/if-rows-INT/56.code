@@ -1,0 +1,9 @@
+package leetcode;
+
+public class ZigZagConversion {
+public String convert(String s, int numRows) {
+int count = s.length();
+for(int i = 0; i < count; i++){
+if((i / (numRows -1) )% 2 == 0){
+rows[i % (numRows - 1)].append(s.charAt(i));
+

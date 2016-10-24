@@ -1,0 +1,8 @@
+private int stopAt;
+
+public DealerPlayerChangedStop(int stopAt) {
+this.stopAt = stopAt;
+public Response prompt(Hand playerHand, Hand dealerHand, boolean canSplit) {
+if(dealerHand.getValue() < stopAt) return Response.H;
+else if(dealerHand.getValue() > stopAt) return Response.S;
+

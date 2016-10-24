@@ -1,0 +1,13 @@
+mant = new int[field.getRadixDigits()];
+nans = FINITE;
+this.field = field;
+
+boolean isLongMin = false;
+if (x == Long.MIN_VALUE) {
+exp++;
+}
+
+if (isLongMin) {
+// remove the shift added for Long.MIN_VALUE
+// we know in this case that fixing the last digit is sufficient
+

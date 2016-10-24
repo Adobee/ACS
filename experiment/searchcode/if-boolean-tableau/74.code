@@ -1,0 +1,7 @@
+Tableau tableau = new Tableau(currentFormula, theory);
+tableau.setMakeLemmas(true);
+if (tableau.getCloser() == null)
+new EpsilonAllTheWayTask(tableau).run();
+if (tableau.getCloser() == null)
+throw new Error(&quot;Failed to prove Q1: &quot; + currentFormula);
+

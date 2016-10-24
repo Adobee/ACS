@@ -1,0 +1,7 @@
+public class GpsListenerFactory {
+
+public static GpsListenerInf createListener (Object listenerType){
+if(listenerType instanceof MapNavigatorActivity)
+return new GpsMapListener(listenerType);
+else if(listenerType instanceof CompassActivity)
+

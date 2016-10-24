@@ -1,0 +1,8 @@
+// A button or control in the GUI has been used.
+
+if (e.getActionCommand().equals(&quot;objectypechanged&quot;)) {
+selectedObjectType = ObjectType.valueOf(((JComboBox)e.getSource()).getSelectedItem().toString());
+// Right mouse button down, select closest vertex if close enough
+EVector closestVert = getClosestVert(mx, my);
+if (closestVert != null &amp;&amp; closestVert.getDistanceTo(new EVector(mx, my)) < snapDistance) {
+

@@ -1,0 +1,13 @@
+void forward() {
+++nextPlayer_;
+}
+
+void backward() {
+--nextPlayer_;
+if (nextPlayer_ < -1) {
+canvas.drawRect(cell, borderPaint);
+}
+
+if (selected != null) {
+Paint fillPaint = new Paint();
+

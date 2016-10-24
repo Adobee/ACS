@@ -1,0 +1,12 @@
+public static enum Axis {
+None, SixWay, FourWay;
+}
+
+public static ForgeDirection[] getValidFacing(Axis input) {
+if (input == Axis.SixWay) return SIXWAY_AXES;
+if (input == Axis.FourWay) return FOURWAY_AXES;
+return new ForgeDirection[] {};
+}
+
+public static int determineOrientation(World world, Axis axis, int x, int y, int z, EntityLivingBase entity) {
+

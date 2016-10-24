@@ -1,0 +1,8 @@
+public class MethodNameGenerator {
+
+public String setMethod(Field field) {
+return &quot;set&quot; + capitalize(field.getName());
+Class<?> type = field.getType();
+String prefix = &quot;&quot;;
+if (type.equals(Boolean.class) || type.getName().equals(&quot;boolean&quot;)) {
+

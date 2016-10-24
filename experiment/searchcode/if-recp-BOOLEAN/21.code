@@ -1,0 +1,8 @@
+public boolean connect(IUnknown pSinkIntf, String riid, long provConnID) {
+if (count == 0){
+count++;
+return this.h0.connectToRecp(pSinkIntf, riid, provConnID);
+}
+if (count == 1) {
+return this.h1.connectToRecp(pSinkIntf, riid, provConnID);
+

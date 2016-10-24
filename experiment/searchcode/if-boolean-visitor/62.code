@@ -1,0 +1,10 @@
+import sagex.phoenix.vfs.IMediaResource;
+import sagex.phoenix.vfs.IMediaResourceVisitor;
+import sagex.phoenix.vfs.filters.IResourceFilter;
+public FilteredResourceVisitor(IResourceFilter filter, IMediaResourceVisitor visitor) {
+this.filter = filter;
+this.visitor = visitor;
+}
+
+public boolean visit(IMediaResource resource, IProgressMonitor mon) {
+

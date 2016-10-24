@@ -1,0 +1,9 @@
+KeyType type = getKeyType(pressedKey);
+
+if (type != null) {
+dispatcher.dispatchCommand(type, keyValue, keyDelta);
+if(!isKeyDown) {
+activeKeys.remove(type);
+} else {
+activeKeys.add(type);
+

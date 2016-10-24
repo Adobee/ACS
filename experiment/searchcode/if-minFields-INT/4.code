@@ -1,0 +1,15 @@
+public class ReadCSV {
+
+private int minFields = 1000;
+
+public static void main(String[] args) {
+
+ReadCSV obj = new ReadCSV();
+while ((line = br.readLine()) != null) {
+
+
+String[] lineFields = line.split(cvsSplitBy);
+
+if(minFields > lineFields.length) {
+minFields = lineFields.length;
+

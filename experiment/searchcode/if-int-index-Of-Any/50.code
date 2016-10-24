@@ -1,0 +1,8 @@
+Entry entry = getEntry(sparse, intIndex(index));
+
+if (entry != null)
+return (entry.Value &amp; maskArray(index)) != 0;
+Entry current = sparse[foldedIntIndex];
+
+if (current != null &amp;&amp; current.IntIndex == intIndex)
+

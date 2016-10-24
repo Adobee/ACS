@@ -1,0 +1,10 @@
+import com.google.common.collect.AbstractIterator;
+import com.google.inject.internal.Lists;
+
+class BindingImpl<T> implements Binding<T> {
+
+private final Class<T> iface;
+private final List<T> objs;
+
+BindingImpl(Class<T> iface, List<T> objs) {
+

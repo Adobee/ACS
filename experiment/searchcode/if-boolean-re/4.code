@@ -1,0 +1,9 @@
+* Searches for re anywhere in text.
+* @param re
+* @param text
+* @return
+*/
+public static boolean match(String re, String text) {
+if (!re.isEmpty() &amp;&amp; re.charAt(0) == &#39;^&#39;)
+return matchHere(re, 1, text, 0);
+

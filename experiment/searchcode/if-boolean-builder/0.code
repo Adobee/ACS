@@ -1,0 +1,9 @@
+public ITypeBuilder typeBuilder() {
+if (typeBuilder == null) {
+typeBuilder = createTypeBuilder();
+}
+return typeBuilder;
+typeBuilder = new CharacterBuilder(typeBuilder);
+typeBuilder = new BooleanBuilder(typeBuilder);
+typeBuilder = new StringBufferBuilder(typeBuilder);
+

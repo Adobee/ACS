@@ -1,0 +1,6 @@
+private void writeSettings(Settings settings, XContentBuilder builder, Params params) throws IOException {
+final boolean renderDefaults = request.paramAsBoolean(&quot;include_defaults&quot;, false);
+settings.toXContent(builder, params);
+builder.endObject();
+if (renderDefaults) {
+

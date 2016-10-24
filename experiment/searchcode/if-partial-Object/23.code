@@ -1,0 +1,13 @@
+public class Function<Returntype> implements IFunction {
+
+IFunction function;
+Object[] partialArgs;
+
+public Function(IFunction thefunction){
+this.function = thefunction;
+}
+
+@SuppressWarnings(&quot;unchecked&quot;)
+public Returntype apply(Object[] args){
+if(partialArgs != null){
+

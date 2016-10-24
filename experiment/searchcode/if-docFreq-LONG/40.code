@@ -1,0 +1,10 @@
+Integer termDocFreq = this.docFreqMap.get(term);
+if (termDocFreq == null) {
+termDocFreq = indexReader.docFreq(new Term(field, term));
+return termDocFreq;
+
+}
+
+public double getScoreForTerm(long termFreq, long docFreq) {
+return similarity.tf(termFreq) * similarity.idf(docFreq, numDocs);
+

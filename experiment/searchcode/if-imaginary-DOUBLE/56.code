@@ -1,0 +1,9 @@
+if (Double.doubleToLongBits(imaginary) != Double.doubleToLongBits(other.imaginary))
+return false;
+if (Double.doubleToLongBits(real) != Double.doubleToLongBits(other.real))
+return new StringBuffer(format(real)).append(&quot; + &quot;).append(format(imaginary)).append(&#39;i&#39;).toString();
+}
+
+public String format(double d){
+if(d % 1 == 0)
+

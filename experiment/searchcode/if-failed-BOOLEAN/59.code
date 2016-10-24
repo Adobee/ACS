@@ -1,0 +1,8 @@
+public void assertEquals(int expected, int actual) {
+if (expected != actual)
+myFailedConditions.add(new BooleanCondition(expected + &quot;==&quot; + actual));
+}
+
+public void flush() {
+if (myFailedConditions.size() == 0) return;
+

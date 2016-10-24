@@ -1,0 +1,9 @@
+private void setHttpURL(boolean selected, IDataModel dataModel) {
+String httpURL = dataModel.getValue(&quot;/admin/serverconnsetting/baseurl&quot;);
+if (selected) {
+httpURL = httpURL.replace(&quot;https:&quot;, &quot;http:&quot;);
+}
+dataModel.setValue(&quot;/admin/serverconnsetting/baseurl&quot;, httpURL);
+}
+}
+

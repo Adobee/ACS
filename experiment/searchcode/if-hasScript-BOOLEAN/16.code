@@ -1,0 +1,11 @@
+private HashSet<String> _scripts;
+
+public Object invokeMethod(String name, Object args) {
+
+if (!hasLocalMethod(name) &amp;&amp; hasScript(name))
+throw new GroovyRuntimeException(&quot;Error while Executing Script&quot;,e);
+}
+}
+
+private boolean hasScript(String name) {
+

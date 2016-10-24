@@ -1,0 +1,11 @@
+public void resize(int nBytes)
+{
+if(nBytes < 0)
+{
+count += nBytes; //reduce the count by nBytes
+if(count < 0)
+count = 0;	 //Sanity check
+}
+else if(nBytes > 0)
+while(nBytes-- > 0)
+

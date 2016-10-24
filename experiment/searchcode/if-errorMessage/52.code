@@ -1,0 +1,11 @@
+protected static String buildMessage(String target, String errorMessage) {
+String result = &quot;&quot;;
+if (target != null) {
+result += target + &quot;: &quot;;
+}
+result += errorMessage;
+return result;
+}
+
+public ValidationError(String errorMessage, String target, Throwable cause) {
+

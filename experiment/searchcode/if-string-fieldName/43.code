@@ -1,0 +1,9 @@
+* {example} cleanField(row1.Names).
+*/
+public static String cleanField(String fieldName) {
+if(fieldName != null){
+
+fieldName = fieldName.replaceAll(&quot;(?i)Co[^m]&quot;,&quot;Company&quot;);
+fieldName = fieldName.replaceAll(&quot;(?i)UW$&quot;,&quot;Underwriters&quot;);
+String replacements[] = {&quot;via&quot;, &quot;Via&quot;, &quot;LLC&quot;, &quot;Ins[^a-zA-Z]&quot;, &quot;(?i)inc[^a-zA-Z]&quot;, &quot;(?i)inc$&quot;};
+

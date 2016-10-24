@@ -1,0 +1,6 @@
+public class DBSCAN {
+public static ArrayList<Cluster> DBSCAN(ArrayList<DataPoint> dataset, double eps, int minpts, WeightParams wp){
+neighbors = regionQuery(dp,eps,dataset,wp);
+if(neighbors.size() < minpts){
+dp.setNoise(true);
+

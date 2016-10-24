@@ -1,0 +1,6 @@
+public static boolean hasSameComparator(final Comparator comparator, final Iterable iterable) {
+Preconditions.checkNotNull(comparator);
+Comparator comparator2;
+if (iterable instanceof SortedSet) {
+comparator2 = comparator((SortedSet)iterable);
+

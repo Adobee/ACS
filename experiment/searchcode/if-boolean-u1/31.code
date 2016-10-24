@@ -1,0 +1,8 @@
+//Maximum matching for bipartite graph. Kuhn&#39;s algorithm in O(E*V)
+public class BipartiteMatching {
+
+private static boolean findPath(List<Integer>[] g, int u1, int[] matching,
+boolean[] vis) {
+vis[u1] = true;
+for (int v : g[u1]) {
+

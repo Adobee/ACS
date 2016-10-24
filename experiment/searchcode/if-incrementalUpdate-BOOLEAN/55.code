@@ -1,0 +1,7 @@
+HashMap<String, String> sessionHashCodes = loadSessionHashCodes();
+boolean incrementalUpdate = (sessionHashCodes != null) &amp;&amp; (sessionHashCodes.size() > 0);
+// set of sessions that we want to keep after the sync
+HashSet<String> sessionsToKeep = new HashSet<String>();
+
+if (incrementalUpdate) {
+

@@ -1,0 +1,9 @@
+ArgumentsMatcher.this.constraints = (Constraint[])constraints.clone();
+}
+
+public boolean matches( Invocation invocation ) {
+return constraints.length == invocation.parameterValues.size()
+for (int i = 0; i < constraints.length; ++i) {
+if (!constraints[i].eval(list.get(i))) {
+return false;
+

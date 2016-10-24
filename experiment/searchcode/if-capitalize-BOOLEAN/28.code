@@ -1,0 +1,12 @@
+return capitalize(s, null, true);
+}
+
+public static String capitalize(String s, String delimiter,
+boolean capitalizeBeginning) {
+if (s.isEmpty())
+Pattern p = delimiter != null ? Pattern.compile(delimiter)
+: DEFUALT_DELIMITER;
+char[] chars = s.toCharArray();
+if (capitalizeBeginning) {
+chars[0] = Character.toUpperCase(chars[0]);
+

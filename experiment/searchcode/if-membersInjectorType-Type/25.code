@@ -1,0 +1,7 @@
+* Returns true if the key type is Provider (but not a subclass of Provider).
+*/
+static boolean isProvider(Key<?> key) {
+Type membersInjectorType = key.getTypeLiteral().getType();
+if (!(membersInjectorType instanceof ParameterizedType)) {
+throw errors.cannotInjectRawMembersInjector().toException();
+

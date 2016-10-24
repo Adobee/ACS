@@ -1,0 +1,9 @@
+if (MathUtils.compareTo(tableau.getEntry(i, col), 0, epsilon) >= 0) {
+double ratio = rhs / tableau.getEntry(i, col);
+if (ratio < minRatio) {
+throw new UnboundedSolutionException();
+}
+
+// set the pivot element to 1
+double pivotVal = tableau.getEntry(pivotRow, pivotCol);
+

@@ -1,0 +1,14 @@
+package stack;
+
+/*	single linked list stack */
+public class MyStack {
+Node top;
+
+int pop() {
+if(top == null) return -1;
+
+int returnData = top.data;
+
+if(top == top.next) top = null;
+else top = top.next;
+

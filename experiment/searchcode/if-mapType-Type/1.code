@@ -1,0 +1,16 @@
+* @author &quot;Jonathan Dray <jonathan@social-computing.com>&quot;
+*
+*/
+public enum MapType {
+
+ALBUM(&quot;album&quot;),
+RELARTIST(&quot;relArtist&quot;),
+for(MapType mapType : MapType.values()){
+if(mapType.type.equalsIgnoreCase(value)) {
+return mapType;
+}
+}
+throw new InvalidEnumerationElement(MapType.class, value);
+}
+}
+

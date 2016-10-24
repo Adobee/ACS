@@ -1,0 +1,7 @@
+public class NumberUtils {
+public static final double clamp( double a, double min, double max ) {
+return a < min ? min : ( a > max ? max : a );
+}
+
+public static final double clampMotor( double a ) {
+

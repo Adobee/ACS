@@ -1,0 +1,14 @@
+checkCorrectDocumentClassification(new SimpleNaiveBayesDocumentClassifier(leafReader, null, categoryFieldName,field2analyzer,  new String[]{textFieldName}), getBatmanDocument(), VIDEOGAME_ANALYZED_RESULT);
+} finally {
+if (leafReader != null) {
+leafReader.close();
+}
+}
+}
+
+@Test
+double score4 = checkCorrectDocumentClassification(new SimpleNaiveBayesDocumentClassifier(leafReader, null, categoryFieldName,field2analyzer,  new String[]{textFieldName}), getBatmanDocument(), VIDEOGAME_ANALYZED_RESULT);
+assertEquals(0.52,score4,0.01);
+} finally {
+if (leafReader != null) {
+

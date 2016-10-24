@@ -1,0 +1,7 @@
+public boolean available() {
+if (!iterator.available())
+return false;
+if (!diff(iterator.current())) {
+for (; iterator.available(); iterator.next()) {
+if (diff(iterator.ahead())) {
+

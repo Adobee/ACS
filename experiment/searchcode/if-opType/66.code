@@ -1,0 +1,7 @@
+public static String getPath(BenchmarkOperations opType, FilePool filePool) {
+String path = null;
+if (opType == BenchmarkOperations.SET_REPLICATION) {
+path = filePool.getFileToSetReplication();
+} else if (opType == BenchmarkOperations.FILE_INFO) {
+path = filePool.getFileToInfo();
+

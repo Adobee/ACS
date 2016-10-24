@@ -1,0 +1,14 @@
+A[h] = pivot;
+while (lowIndex < highIndex){
+if (A[lowIndex] < pivot){
+lowIndex++;
+}
+else {
+int temp = A[lowIndex];
+A[lowIndex] = A[highIndex];
+A[highIndex] = temp;
+highIndex--;
+}
+}
+if (A[lowIndex] < pivot){
+

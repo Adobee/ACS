@@ -1,0 +1,10 @@
+* Percentage based discount rule. The discount is applied if
+* the number of required items with the specified sku is in
+* the list of items. Can be used to offer 10% discount on a
+return name;
+}
+
+@Override
+public double getDiscount() {
+long price = Item.SKU_TO_PRICE_MAPPING.get(sku);
+

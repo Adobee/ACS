@@ -1,0 +1,6 @@
+OkHttpClient client = new OkHttpClient.Builder().build();
+
+HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.GEOCODING_ROOT_URL).newBuilder();
+urlBuilder.addQueryParameter(&quot;address&quot;, location);
+urlBuilder.addQueryParameter(&quot;key&quot;, API_KEY);
+

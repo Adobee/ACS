@@ -1,0 +1,8 @@
+public static RealMatrix toRealMatrix(final double[] matrix, final int rowDimension, final int columnDimension) {
+
+if(rowDimension < 0)
+throw new IllegalArgumentException(&quot;rowDimension&quot;);
+if(columnDimension < 0)
+throw new IllegalArgumentException(&quot;columnDimension&quot;);
+if(matrix == null || matrix.length != rowDimension*columnDimension)
+

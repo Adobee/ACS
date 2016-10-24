@@ -1,0 +1,7 @@
+* @param connectionTypes
+* @param sampleSize How many samples shoudl be generated.
+* @param emptyQueries true if we want to test queries that returns zero
+for (int i = 0; i < sampleSize; ++i) {
+Query query = Generator.generateQuery(tables, 3, Generator.Flag.ALL);
+if (emptyQueries) {
+

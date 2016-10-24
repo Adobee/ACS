@@ -1,0 +1,5 @@
+if (this.isInvalidationRandomized) {
+// If using randomized invalidation, subtract 0-10% of the timeToLive
+int randomDelta = this.random.nextInt((int)this.timeToLive / 10);
+return key.getReadTime() + (this.timeToLive - randomDelta);
+

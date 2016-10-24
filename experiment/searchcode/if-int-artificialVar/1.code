@@ -1,0 +1,6 @@
+int artificialVar = 0;
+for (int i = 0; i < constraints.size(); i++) {
+LinearEquation constraint = constraints.get(i);
+for (int artificialVar = 0; artificialVar < numArtificialVariables; artificialVar++) {
+int row = getBasicRow(getArtificialVariableOffset() + artificialVar);
+

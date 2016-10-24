@@ -1,0 +1,8 @@
+for (int i = 0; i < height.length; ++i) {
+if (height[i] > current_max_height) {
+for (int j = current_max_height + 1; j <= height[i]; ++j)
+current_max_height = height[i];
+}
+if (leftmost[height[i]] != -1) {
+int area = (i - leftmost[height[i]]) * height[i];
+

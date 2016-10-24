@@ -1,0 +1,12 @@
+* handles password security - encrypts and compares if password matches
+* Encrypted password = hashed and salted password
+public static boolean isPasswordLegit(String inputPassword, String encryptedPassword){
+if (passwordEncryptor.checkPassword(inputPassword, encryptedPassword)) {
+return true;
+} else {
+return false;
+}
+}
+
+}
+

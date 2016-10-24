@@ -1,0 +1,9 @@
+return axises;
+}
+
+public Axis getNext(Axis axis){
+if(this == axis) return this;
+return invertAxisList(this, axis).iterator().next();
+}
+public boolean orientChangeNeeded(Axis axis, boolean forward){
+

@@ -1,0 +1,8 @@
+buffer[bufferIndex] = pulse;
+bufferIndex = (++bufferIndex) % buffer.length;
+if (bufferSize < buffer.length)
+bufferSize++;
+for (int k = 0; k < buffer.length; k++) {
+int j = (bufferIndex + k) % buffer.length;
+double angle = 2 * Math.PI * frequency * sampleTime * k;
+

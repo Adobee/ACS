@@ -1,0 +1,9 @@
+private IModel<List<Site>> siteListModel = null;
+private Boolean canCache = true;
+
+@Override
+public void build(Criteria criteria) {
+criteria.add(Restrictions.eq(&quot;inNotebook&quot;, inNotebook.booleanValue()));
+if (orderByNotebookInsert.equals(Boolean.TRUE))
+criteria.addOrder(Order.desc(&quot;notebookInsertTime&quot;));
+

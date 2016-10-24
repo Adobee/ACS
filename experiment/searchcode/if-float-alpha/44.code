@@ -1,0 +1,17 @@
+private int x;
+private int y;
+private float alpha;
+
+public ScreenOut() {
+x = 0;
+y = 0;
+alpha = 0;
+g2d.setComposite(oldComposite);
+}
+
+public void addAlpha(float alpha) {
+if(this.alpha+alpha>=1)
+this.alpha=1;
+else
+this.alpha += alpha;
+

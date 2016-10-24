@@ -1,0 +1,10 @@
+public static long parse(DateTimeFormatter format, String date) {
+for(Entry<String, DateTimeZone> e : zones.entrySet()) {
+String zone = e.getKey();
+return format.withZoneUTC();
+}
+
+DateTimeZone ret = zones.get(zone);
+if(ret == null) {
+ret = DateTimeZone.forID(zone);
+

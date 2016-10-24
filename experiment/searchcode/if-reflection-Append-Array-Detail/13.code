@@ -1,0 +1,6 @@
+private static final long serialVersionUID = 1L;
+
+public void appendDetail(StringBuffer buffer, String fieldName, Object value)
+if ((!ClassUtils.isPrimitiveWrapper(value.getClass())) &amp;&amp; (!String.class.equals(value.getClass())) &amp;&amp; (accept(value.getClass()))) {
+buffer.append(ReflectionToStringBuilder.toString(value, this));
+

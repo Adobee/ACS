@@ -1,0 +1,7 @@
+public static boolean isButtonPressingWithCode(int buttonFlag, int... buttonCode) {
+if (buttonCode==null || buttonCode.length==0) {
+return false;
+}
+for (int code : buttonCode) {
+if ((buttonFlag &amp; 1<<code) == 0) {
+

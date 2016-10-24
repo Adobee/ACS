@@ -1,0 +1,7 @@
+private static String verifyTimezone(String dateString) {
+
+boolean hasTimezone = dateString.matches(&quot;.+\\.*\\d*[-+]\\d{2}:\\d{2}&quot;);
+if (LOGGER.isDebugEnabled()) LOGGER.debug(&quot;Has timezone: &quot; + hasTimezone);
+if (hasTimezone) {
+int timezoneIndex = dateString.lastIndexOf(&quot;-&quot;);
+

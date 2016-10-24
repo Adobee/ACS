@@ -1,0 +1,9 @@
+public ActionIntegrate(IIntegrator integrator, boolean ignoreOverlap) {
+super();
+this.integrator = integrator;
+try {
+integrator.reset();
+}
+catch (ConfigurationOverlapException e) {
+if (!ignoreOverlap) {
+

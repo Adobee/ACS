@@ -1,0 +1,15 @@
+private Properties featuresObj;
+
+public void setFeaturesObj(Properties proObj){
+if(proObj != null &amp;&amp; !proObj.isEmpty()) {
+this.features = writer.toString();
+}
+}
+
+public Properties getFeaturesObj(){
+if(featuresObj != null) {
+return featuresObj;
+}
+
+if(StringUtils.isNotBlank(this.features)) {
+

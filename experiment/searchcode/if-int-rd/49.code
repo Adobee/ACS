@@ -1,0 +1,12 @@
+return getDepth(root) != -1;
+}
+
+public int getDepth(TreeNode root) {
+if (root == null) {
+if (ld == -1) {
+return -1;
+}
+int rd = getDepth(root.right);
+if (rd == -1) {
+return -1;
+

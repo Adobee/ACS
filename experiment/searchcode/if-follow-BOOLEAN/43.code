@@ -1,0 +1,10 @@
+public FollowJob(Unit unit) {
+this.follow = unit;
+}
+
+@Override
+public void tick() {
+if (follow != null) {
+if (unit.life % unit.speedMod == 0) {
+double dist = MathHelper.distance(follow.x, follow.y, unit.x, unit.y);
+

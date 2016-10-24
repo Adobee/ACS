@@ -1,0 +1,11 @@
+package jmips.utils;
+
+public class ReadableSeedRandom {
+private static final long multiplier = 0x5DEECE66DL;
+private static final long mask = (1L << 48) - 1;
+
+private long seed = 0;
+
+public ReadableSeedRandom(long seed) {
+this.seed = seed;
+

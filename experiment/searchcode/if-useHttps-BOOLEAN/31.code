@@ -1,0 +1,5 @@
+TypeSafeProperty expectedProperty = new TypeSafeProperty(&quot;aws.useHttps&quot;, &quot;false&quot;, &quot;java.lang.Boolean&quot;);
+assertEquals(expectedProperty, unit.analyzeProperty(&quot;aws.useHttps&quot;, &quot;false&quot;));
+public void testAnalyzeResolvesBooleanIfNameStartsWithIs() {
+TypeSafeProperty expectedProperty = new TypeSafeProperty(&quot;isPasswordProtected&quot;, &quot;true&quot;, &quot;java.lang.Boolean&quot;);
+

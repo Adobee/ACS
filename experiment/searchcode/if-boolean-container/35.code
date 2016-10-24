@@ -1,0 +1,16 @@
+* Interface to runadock. @see &quot;https://runadock.io/api/v1&quot;
+*
+* @author stefan
+*
+*/
+public interface Runadock {
+
+/**
+* Create a new container.
+*            if set to true all containers including terminated will be described.
+*
+* @return all Containers.
+*/
+List<Container> describeContainers(final Boolean all);
+}
+

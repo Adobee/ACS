@@ -1,0 +1,9 @@
+long data = dataArray[2];
+
+/* POTENTIAL FLAW: if data == Long.MAX_VALUE, this will overflow */
+long result = (long)(data + 1);
+long data = dataArray[2];
+
+/* FIX: Add a check to prevent an overflow from occurring */
+if (data < Long.MAX_VALUE)
+

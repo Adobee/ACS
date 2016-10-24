@@ -1,0 +1,9 @@
+public HttpProxyHandlerFactory(final SocketAddress proxyAddress) {
+this(proxyAddress, null, null);
+}
+
+/**
+* Creates a new proxy handler factory that will create HTTP proxy handlers that use the proxy at the given
+public HttpProxyHandlerFactory(final SocketAddress proxyAddress, final String username, final String password) {
+this.proxyAddress = proxyAddress;
+

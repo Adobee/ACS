@@ -1,0 +1,7 @@
+ReaderEntry<R> readerEntry = (directory == null ? null : directory.getReaderEntry(segName));
+if (readerEntry == null)
+{
+readerEntry = new ReaderEntry<R>(new ZoieInternalIndexReader(sr),decorator);
+}
+else if(readerEntry.undecorated.numDeletedDocs() != sr.numDeletedDocs())
+

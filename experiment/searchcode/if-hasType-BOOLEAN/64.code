@@ -1,0 +1,15 @@
+public class CastExpression extends Symbol implements Expression {
+
+private boolean hasType;
+private boolean hasExpr;
+
+private Layout layout;
+private Symbol getTypeSymbol() {
+if (hasType)
+return getInner(0);
+else
+return null;
+}
+
+private Symbol getExprSymbol() {
+

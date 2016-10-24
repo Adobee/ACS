@@ -1,0 +1,6 @@
+public void generateMap(int xOffset) {
+for (int y = 0; y < height; y++) {
+for (int x = xOffset; x < width + xOffset; x++) {
+double a = 300 / 16 * 9 / 2, b = 1d / 100d, c = 0, d = a;
+if (y > a * Math.sin(b * (x + c)) + d || x == xOffset || x == xOffset + width - 1)
+

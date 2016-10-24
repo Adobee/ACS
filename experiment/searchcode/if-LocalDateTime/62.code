@@ -1,0 +1,9 @@
+import java.util.Iterator;
+
+import org.joda.time.LocalDateTime;
+import org.junit.Before;
+import org.junit.Test;
+private final Logger logger = LoggerFactory.getLogger(SnakeTest.class);
+
+private Snake<LocalDateTime> snake;
+

@@ -1,0 +1,9 @@
+request instanceof ConfigurationChangeRequest;
+}
+
+public Object handleRequest(BusRequest request) {
+if(request instanceof GetConnectionPoolRequest) {
+handleGetConnectionPoolRequest((GetConnectionPoolRequest) request);
+} else if(request instanceof TestConnectionRequest) {
+handleTestConnectionRequest((TestConnectionRequest) request);
+

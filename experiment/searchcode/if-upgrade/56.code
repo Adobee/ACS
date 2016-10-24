@@ -1,0 +1,8 @@
+package jelly.service.upgrade;
+
+import jelly.entity.upgrade.ShipUpgrade;
+import jelly.exception.upgrade.ShipUpgradeNotFound;
+public ShipUpgrade findById(long id) throws ShipUpgradeNotFound {
+ShipUpgrade ship = entity.findOne(id);
+if (ship == null)
+

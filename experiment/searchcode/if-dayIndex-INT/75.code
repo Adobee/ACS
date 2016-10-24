@@ -1,0 +1,9 @@
+public static double getMaxTemperatureForDay(String weatherJsonStr, int dayIndex)
+throws JSONException {
+
+// TODO: add parsing code here
+JSONArray weatherOfDays = (new JSONObject(weatherJsonStr)).getJSONArray(&quot;list&quot;);
+if(dayIndex >= weatherOfDays.length())
+return -1;
+JSONObject desiredDay = weatherOfDays.getJSONObject(dayIndex);
+

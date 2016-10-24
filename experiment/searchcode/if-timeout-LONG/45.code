@@ -1,0 +1,14 @@
+private long mTimeout = 3000;
+
+public PollingCheck() {
+}
+
+public PollingCheck(long timeout) {
+public void run() {
+if (check()) {
+return;
+}
+
+long timeout = mTimeout;
+while (timeout > 0) {
+

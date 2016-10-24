@@ -1,0 +1,10 @@
+public final double xmin, xmax, ymin, ymax;
+
+public Rect(final double xmin, final double xmax, final double ymin, final double ymax) {
+if (xmax < xmin || ymax < ymin) throw new IllegalArgumentException();
+if (rect.ymin < ymin) ymin = rect.ymin;
+if (rect.ymax > ymax) ymax = rect.ymax;
+}
+
+public double perimeter() {
+

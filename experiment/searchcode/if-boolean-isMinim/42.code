@@ -1,0 +1,12 @@
+@Override
+protected UnivariatePointValuePair doOptimize() {
+
+final boolean isMinim = getGoalType() == GoalType.MINIMIZE;
+private UnivariatePointValuePair best(UnivariatePointValuePair a, UnivariatePointValuePair b, boolean isMinim) {
+
+if(a == null) {
+return b;
+}
+if(b == null) {
+return a;
+

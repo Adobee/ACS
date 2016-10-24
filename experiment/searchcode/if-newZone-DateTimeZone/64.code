@@ -1,0 +1,7 @@
+public static void setDefault(DateTimeZone zone) {
+if (zone == null) {
+throw new IllegalArgumentException(&quot;The datetime zone must not be null&quot;);
+public long getMillisKeepLocal(DateTimeZone newZone, long oldInstant) {
+if (newZone == null) {
+newZone = DateTimeZone.getDefault();
+

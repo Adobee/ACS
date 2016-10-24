@@ -1,0 +1,11 @@
+private TextView mOutputView;
+
+public static int iHrbMod;
+public static String sHrbName;
+
+@Override
+public void onCreate(Bundle savedInstanceState) {
+int tokenLen = token.length();
+int start = text.toString().indexOf(token) + tokenLen;
+int end = text.toString().indexOf(token, start);
+

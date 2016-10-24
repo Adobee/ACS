@@ -1,0 +1,12 @@
+public class FixupDuration extends InputVerifier {
+
+boolean allowEmpty;
+
+public FixupDuration(boolean allowEmpty) {
+this(false);
+}
+
+@Override
+public boolean verify(JComponent input) {
+if (input instanceof JTextField) {
+

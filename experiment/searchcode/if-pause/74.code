@@ -1,0 +1,10 @@
+* Used to pause the consumer. This does not pause the running process, if there is one.
+* It stops the consumer consuming more jobs and running them.
+return false;
+PauseBean other = (PauseBean) obj;
+if (pause != other.pause)
+return false;
+return true;
+}
+}
+

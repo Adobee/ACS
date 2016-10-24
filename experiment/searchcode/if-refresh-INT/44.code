@@ -1,0 +1,9 @@
+public abstract class CommonFragment extends CommonBaseFragment {
+
+private static final int MIN_REFRESH_TIMES = 300;
+protected boolean isPullRefresh = false;
+
+@Override
+protected void initView(Bundle savedInstanceState) {
+if (mNeedRefresh) {
+

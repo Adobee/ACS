@@ -1,0 +1,15 @@
+setName(&quot;Document delete thread &#39;&quot;+id+&quot;&#39;&quot;);
+setDaemon(true);
+}
+
+public void run()
+{
+resetManager.registerMe();
+
+try
+DeleteQueuedDocument dqd = dds.getDocument(j);
+
+if (dqd.wasProcessed() == false)
+{
+// Pop this document back into the jobqueue in an appropriate state
+

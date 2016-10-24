@@ -1,0 +1,12 @@
+newSegments.add(segment);
+return new PropertyPath(newSegments);
+}
+
+@Override
+public String toString() {
+if (segments.isEmpty()) {
+for (final PathSegment segment : segments) {
+result.append(segment.toString());
+}
+if (result.charAt(0) == &#39;.&#39;) {
+

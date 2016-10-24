@@ -1,0 +1,7 @@
+int domainIndex = login.indexOf(&quot;\\&quot;);
+if (domainIndex > 0) {
+// if the username is in the form &quot;user\domain&quot;
+String domain = login.substring(0, domainIndex);
+if (login.length() > domainIndex + 1) {
+String user = login.substring(domainIndex + 1);
+

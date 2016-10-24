@@ -1,0 +1,9 @@
+public void solve(int testNumber, InputReader in, PrintWriter out) {
+int itemCount = in.nextInt();
+int cardCount = in.nextInt();
+Node[] items = new Node[itemCount];
+for (int i = 0; i < cardCount; ++i) {
+int need = cards[i].cost;
+if (need > itemCount) continue;
+int perc = cards[i].percents;
+

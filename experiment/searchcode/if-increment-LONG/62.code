@@ -1,0 +1,12 @@
+private final AtomicLong nextValue;
+
+private final long increment;
+
+private final long lowerBound;
+
+private final long upperBound;
+void append(final StringBuilder buffer)
+{
+long value = nextValue.getAndAdd(increment);
+if (value > upperBound)
+

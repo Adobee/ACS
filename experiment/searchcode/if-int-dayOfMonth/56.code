@@ -1,0 +1,19 @@
+private int		year, month, dayofmonth, hour, minute;
+private boolean	undefined;
+
+
+public Time(int year, int month, int dayofmonth, int hour, int minute)
+return year;
+}
+
+
+public int getMonth()
+{
+return month;
+}
+
+
+public int getDayOfMonth()
+{
+return dayofmonth;
+

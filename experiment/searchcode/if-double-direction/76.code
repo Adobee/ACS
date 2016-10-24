@@ -1,0 +1,12 @@
+public static double normalizeDirection(double Direction)
+{
+if(Direction<0)
+{
+Direction+=2*Math.PI;
+return Direction;
+public void reflectX()
+{
+double angle = Math.abs(Math.PI/2 - direction);
+if(angle > Math.PI/2)
+angle-=Math.PI/2;
+

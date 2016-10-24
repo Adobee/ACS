@@ -1,0 +1,7 @@
+import org.eclipse.jdt.core.dom.VariableDeclarationStatement;
+import org.eclipse.jdt.core.dom.rewrite.ASTRewrite;
+import org.eclipse.jdt.core.dom.rewrite.ListRewrite;
+ASTNode modifier= (ASTNode) iterator.next();
+ASTNode copy= fModifierRewrite.getASTRewrite().createCopyTarget(modifier);
+if (copy != null) { //paranoia check (only left here because we&#39;re in RC1)
+

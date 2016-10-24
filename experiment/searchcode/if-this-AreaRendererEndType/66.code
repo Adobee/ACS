@@ -1,0 +1,8 @@
+AreaRendererEndType t = (AreaRendererEndType) o;
+if (!this.name.equals(t.toString())) {
+return false;
+private Object readResolve() throws ObjectStreamException {
+Object result = null;
+if (this.equals(AreaRendererEndType.LEVEL)) {
+result = AreaRendererEndType.LEVEL;
+

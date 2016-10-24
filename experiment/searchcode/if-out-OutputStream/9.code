@@ -1,0 +1,10 @@
+public Sender(boolean debug){
+this.debug = debug;
+}
+
+public void writeToPort(String outString) {
+if (outputStream == null)
+return;
+try {
+outputStream.write((outString+&quot;\r\n&quot;).getBytes());
+

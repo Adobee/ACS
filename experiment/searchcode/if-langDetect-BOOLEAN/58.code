@@ -1,0 +1,7 @@
+@Override
+public LangdetectMapper build(BuilderContext context) {
+if (positionIncrementGap != -1) {
+if (langdetectService.getSettings().getAsBoolean(&quot;binary&quot;, false)) {
+try {
+byte[] b = parser.binaryValue();
+

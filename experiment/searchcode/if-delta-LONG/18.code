@@ -1,0 +1,12 @@
+public byte[] getDeltaTimeAsBytes() {
+return getDataAsBytes(getDeltaTime());
+}
+
+public long getAbsoluteTime() {
+return messageAbsoluteTime;
+}
+
+public static byte[] getDataAsBytes(int deltaTime) {
+byte[] bytes;
+if (deltaTime < 128) {
+

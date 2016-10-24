@@ -1,0 +1,10 @@
+void insert(Node node, int object){
+if (object < node.object){
+if (node.left == null)
+node.left = new Node(object); //新しいノードを追加
+else
+insert(node.left, object);	//左の子を辿る
+}
+else {
+if (node.right == null)
+

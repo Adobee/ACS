@@ -1,0 +1,6 @@
+double evalNode(AlphaBetaTreeNode currentNode, int currentDepth) {
+if (currentDepth == MAX_SEARCH_DEPTH || currentNode.isFinished())
+for (AlphaBetaTreeNode nextCandidate : rootNode.enumerateNextStates()) {
+double candidateEval = evalNode(nextCandidate, 1);
+if (maxEval < candidateEval) {
+

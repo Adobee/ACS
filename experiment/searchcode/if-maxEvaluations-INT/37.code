@@ -1,0 +1,12 @@
+public class HillClimbing extends Algorithm
+{
+private Problem problem;
+private NeighborVisitor visitor;
+private int maxEvaluations;
+int pendingWalker = 0;
+int evaluations = 0;
+
+while (evaluations < maxEvaluations)
+{
+if (pendingCount <= pendingWalker)
+

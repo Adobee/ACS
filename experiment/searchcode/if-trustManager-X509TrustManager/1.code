@@ -1,0 +1,7 @@
+public class X509TrustManagerWrapper implements X509TrustManager {
+
+public static TrustManager[] wrap(TrustManager[] trustManagers) {
+TrustManager trustManager = trustManagers[i];
+
+if (trustManager instanceof X509TrustManager) {
+

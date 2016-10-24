@@ -1,0 +1,13 @@
+public class MasterKeyService {
+private static MasterKeyService instance = null;
+public static MasterKeyService getInstance() {
+if(instance == null) {
+public void setMasterKey(String masterKey) {
+this.masterKey = masterKey;
+}
+
+public boolean isValid(String userKey) {
+return this.masterKey.equalsIgnoreCase(userKey);
+}
+}
+

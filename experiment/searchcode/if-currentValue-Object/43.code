@@ -1,0 +1,14 @@
+public Source(T initialValue) {
+currentValue = initialValue;
+}
+
+private List<Receiver<T>> receivers(){
+if (receivers == null)
+public synchronized void supply(T value) {
+
+if (ObjectUtils.equals(currentValue, value)){
+return;
+}
+
+for (Receiver<T> receiver : receivers()){
+

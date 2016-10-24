@@ -1,0 +1,13 @@
+this.tree      = new BSPTree<S>(Boolean.TRUE);
+this.tolerance = tolerance;
+}
+
+/** Build a region from an inside/outside BSP tree.
+return (minusCode == plusCode) ? minusCode : Location.BOUNDARY;
+
+}
+
+/** {@inheritDoc} */
+public BSPTree<S> getTree(final boolean includeBoundaryAttributes) {
+if (includeBoundaryAttributes &amp;&amp; (tree.getCut() != null) &amp;&amp; (tree.getAttribute() == null)) {
+

@@ -1,0 +1,13 @@
+public static String getUTCDate() {
+Instant t1 = Instant.now();
+return t1.toString();
+}
+
+public static Long generateSixDigitNumber() {
+Integer count = Integer.parseInt(invalidOtpCount);
+if( count > 3) {
+return isOtpValidationAllowed;
+}
+
+Instant otpInstantTime = Instant.parse(otpCreationDateTime);
+

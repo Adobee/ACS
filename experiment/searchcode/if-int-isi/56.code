@@ -1,0 +1,9 @@
+private int [] scores;  //0 = mechanical ... 5 = fashion/interiors
+private int [] answerArray;
+
+public ISI(JSONObject fullJson) {
+answerArray = new int[30];
+scores = new int[6];
+String isi = fullJson.get(&quot;isi&quot;).toString();
+String [] isiNumbers = isi.split(&quot;\\|&quot;);
+

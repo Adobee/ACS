@@ -1,0 +1,7 @@
+long blockSize = Long.parseLong(configuration.get(MatrixMultJob.BLOCK_SIZE_CONF_KEY));
+int matrixNo = ((FileSplit) context.getInputSplit()).getPath().getName().contains(&quot;B&quot;) ? 1 : 0;
+double value = Double.parseDouble(words[2]);
+
+if (matrixNo == 0) {
+for (long i = 0; i < blockColumns; ++i) {
+

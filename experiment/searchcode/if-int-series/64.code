@@ -1,0 +1,11 @@
+public void add(Double value) {
+timeSeries.add(value);
+}
+
+public TimeSeries[] getRotations() {
+if (rotations == null) {
+rotations = new TimeSeries[timeSeries.size()];
+rotations[0] = this;
+for (int i = 1; i < timeSeries.size(); ++i) {
+TimeSeries rotation = new TimeSeries();
+

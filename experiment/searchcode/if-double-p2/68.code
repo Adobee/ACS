@@ -1,0 +1,9 @@
+this.p1 = p1;
+this.p2 = p2;
+}
+
+public void draw(Graphics2D g2) {
+if(p1.getZ() >= 0 &amp;&amp; p2.getZ() >= 0) {
+g2.draw(new Double(p1.get2Dx(), p1.get2Dy(), p3.get2Dx(), p3.get2Dy()));
+} else if (p2.getZ() >= 0) {
+

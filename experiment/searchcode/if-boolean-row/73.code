@@ -1,0 +1,9 @@
+public class Sodoku {
+
+public boolean solve(char[][] board) {
+for (int row = 0; row < board.length; row++) {
+boolean[] r = new boolean[9];
+for (int i = 0; i < 9; i++) {
+if (board[row][i] >= &#39;1&#39; &amp;&amp; board[row][i] <= &#39;9&#39;) {
+if (r[board[row][i] - &#39;1&#39;] == false)
+

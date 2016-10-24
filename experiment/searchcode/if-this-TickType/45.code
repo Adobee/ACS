@@ -1,0 +1,7 @@
+@Override
+public void tickEnd(EnumSet<TickType> type, Object... tickData) {
+if (!initialized) {
+for (TickType tickType : type) {
+if (tickType == TickType.CLIENT) {
+if (FMLClientHandler.instance().getClient().currentScreen == null) {
+

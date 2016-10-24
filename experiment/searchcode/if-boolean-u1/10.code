@@ -1,0 +1,11 @@
+else if (sort.equals(&quot;comment&quot;)) {
+String	u0 = r0.getComment();
+String	u1 = r1.getComment();
+
+if (u0 == null || u1 == null)
+return (asc ? u0.compareTo(u1) : u1.compareTo(u0));
+}
+else if (sort.equals(&quot;ads&quot;)) {
+Boolean	u0 = r0.getParsedPage().isHasAds();
+Boolean	u1 = r1.getParsedPage().isHasAds();
+

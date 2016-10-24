@@ -1,0 +1,10 @@
+* Created by stefania on 9/5/16.
+*/
+public class SizeInfo {
+
+@XmlJavaTypeAdapter(SizeUnitAdapter.class)
+enum SizeUnit {
+public static SizeUnit forValue(String value) {
+for (SizeUnit ut: values()) {
+if (ut.getValue().equals(value))
+

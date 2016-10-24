@@ -1,0 +1,18 @@
+package decrese;
+
+public class Solution {
+public int cal(int a,int b,int c,int d,int upper){
+int res = 0;
+
+while(c<upper){
+if(c<a) c*=d;
+else{
+if((c-a)%b==0) res++;
+c*=d;
+}
+}
+
+return res;
+}
+}
+

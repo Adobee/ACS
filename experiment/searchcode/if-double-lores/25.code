@@ -1,0 +1,11 @@
+ch = instance;
+}
+
+
+public void registerLore(String name, ItemStack book, Player sender) {
+if (isLoreRegistered(name)) {
+Set<String> sec = df.getData().getConfigurationSection(&quot;lores&quot;).getKeys(false);
+Iterator<String> it = sec.iterator();
+
+if (df.getData().getConfigurationSection(&quot;lores&quot;).getKeys(false).isEmpty()) {
+

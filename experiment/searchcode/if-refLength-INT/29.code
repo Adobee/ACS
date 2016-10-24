@@ -1,0 +1,6 @@
+public static BreakpointHomology calculate(ReferenceLookup lookup, BreakpointSummary bs, String insertedSequence, int maxBreakendLength, int margin) {
+if (bs.start - bs.end != 0 || bs.start2 - bs.end2 != 0) throw new IllegalArgumentException(&quot;Breakpoint position must be exact&quot;);
+if (insertedSequence == null) insertedSequence = &quot;&quot;;
+int seqLength = maxBreakendLength;
+int refLength = maxBreakendLength + insertedSequence.length() + margin;
+

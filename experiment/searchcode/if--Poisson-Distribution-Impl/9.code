@@ -1,0 +1,9 @@
+import org.apache.commons.math.distribution.PoissonDistributionImpl;
+import org.uncertml.IUncertainty;
+import org.uncertml.distribution.continuous.PoissonDistribution;
+return evaluate(new PoissonDistributionImpl(d.getRate().get(0)));
+}
+
+protected abstract double evaluate(PoissonDistributionImpl d);
+}
+

@@ -1,0 +1,9 @@
+// restrict the interpolator to the first part of the step, up to the event
+final double eventT = currentEvent.getEventTime();
+remaining.stepAccepted(eventT, eventY);
+}
+return eventT;
+}
+
+if (currentEvent.reset(eventT, eventY)) {
+

@@ -1,0 +1,13 @@
+package com.demshape.dempred.grouper;
+
+import java.io.Serializable;
+
+public class AboveThreshold implements GrouperInterface, Serializable {
+this.threshold = threshold;
+}
+
+public int getGroup(double value) {
+if (value > threshold)
+return 1;
+else
+

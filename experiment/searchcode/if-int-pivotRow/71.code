@@ -1,0 +1,9 @@
+headerCell.setCellValue(factory.createRichTextString(pivotRow.getLabel()));
+headerCell.setCellStyle(rowHeaderStyles[indent]);
+
+if(pivotRow.isLeaf()) {
+for(Entry<PivotTableData.Axis, Integer> entry : colIndexMap.entrySet()) {
+
+PivotTableData.Cell pivotCell = pivotRow.getCell(entry.getKey());
+if(pivotCell != null) {
+

@@ -1,0 +1,8 @@
+Response response = chain.proceed(request);
+if (AppUtils.networkIsAvailable(MallApp.getInstance())) {
+int maxAge = 0;
+} else {
+// 无网络时，设置超时为4周
+int maxStale = 60 * 60 * 24 * 28;
+response.newBuilder()
+

@@ -1,0 +1,12 @@
+public final Quat mul(Quat q1, Quat q2)
+{
+if (this != q1 &amp;&amp; this != q2) {
+
+this.w = q1.w*q2.w - q1.x*q2.x - q1.y*q2.y - q1.z*q2.z;
+* itself and q1 (this = this * q1).
+* @param q1 the other quaternion
+*/
+public final Quat mul(Quat q1)
+{
+double w = this.w*q1.w - this.x*q1.x - this.y*q1.y - this.z*q1.z;
+

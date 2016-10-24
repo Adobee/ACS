@@ -1,0 +1,10 @@
+package com.luyuan.poker.game.poker.round.betting;
+
+public enum BettingRoundName {
+ANTE(false), PRE_FLOP(false), FLOP(false), TURN(true), RIVER(true);
+this.doubleBetRound = doubleBetRound;
+}
+
+public BettingRoundName next() {
+if (ordinal() + 1 == BettingRoundName.values().length) {
+

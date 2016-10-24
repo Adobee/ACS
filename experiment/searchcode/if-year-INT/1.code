@@ -1,0 +1,12 @@
+
+public class RunYear {
+
+public static void main(String[] args) {
+
+//打印出从1900年至2050年期间所有的闰年。
+int year=1900;
+
+while(year<=2050)
+{
+if((year%4==0&amp;&amp;year%100!=0)||(year%400==0))
+

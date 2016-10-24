@@ -1,0 +1,9 @@
+if(id2.getBytes().length != ID.getLengthInBytes())					{throw new IllegalArgumentException(&quot;Invalid ID length for id2.&quot;);}
+if(timeToLive.getBytes().length != TimeToLive.getLengthInBytes())	{throw new IllegalArgumentException(&quot;Invalid TimeToLive length.&quot;);}
+public UDPMessage(DatagramPacket datagramPacket)
+{
+byte[] 	srcArray;
+int		destPos;
+
+if(datagramPacket == null)					{throw new IllegalArgumentException(&quot;UDPMessage(datagramPacket) constructor, datagramPacket is null&quot;);}
+

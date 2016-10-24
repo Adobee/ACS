@@ -1,0 +1,15 @@
+private Plus(RegExp re) {
+_re = re;
+_type = RE_PLUS;
+}
+
+public static RegExp Factory(RegExp re) {
+if (re._type == RE_PLUS)
+return re;
+
+if (re._type == RE_EPSILON)
+return re;
+
+else
+return new Plus(re);
+

@@ -1,0 +1,9 @@
+private static final String SQL_SELECT_TABLE = &quot;select DESC_1_1_1, DESC_1_1_2, DESC_1_1_3, DESC_1_1_4, DESC_1_3_1, DESC_1_3_2 from MPSR_EXE_SUM WHERE MPSR_ID=?&quot;;
+
+private String desc_1_1_1;
+private String desc_1_1_2;
+private String desc_1_1_3;
+private String desc_1_1_4;
+private String desc_1_3_1;
+private String desc_1_3_2;
+

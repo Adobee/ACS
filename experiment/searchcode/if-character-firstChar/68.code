@@ -1,0 +1,13 @@
+msg = msg.trim().replaceAll(&quot; +&quot;, &quot; &quot;);
+
+//First word is capital
+if(msg.length()>1){
+char firstChar = Character.toUpperCase(msg.charAt(0));
+msg=firstChar + msg.substring(1);
+}
+
+return msg;
+}
+
+}
+

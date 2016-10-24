@@ -1,0 +1,8 @@
+int nRow = matrix.length;
+if (nRow == 0)
+return false;
+int nCol = matrix[0].length;
+if (nCol == 0)
+return false;
+int begin = 0, end = nRow * nCol - 1, mid;
+

@@ -1,0 +1,10 @@
+if (!(o1 instanceof CompositeMap) || !(o2 instanceof CompositeMap))
+return 0;
+if (sortFields == null)
+return 0;
+int result = 0;
+String v2 = c2.getString(sortFields[i].getField());
+int cs = compareString(v1, v2);
+if (cs != 0) {
+result = sortFields[i].isAsc() ? cs : cs * -1;
+

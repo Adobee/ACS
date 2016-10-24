@@ -1,0 +1,9 @@
+public static void quickSort(int[] data,int startIndex,int endIndex){
+if(startIndex<endIndex){
+int middle = getMiddleIndex(data, startIndex, endIndex);
+quickSort(data, middle+1, endIndex);
+}
+}
+
+private static int getMiddleIndex(int[] data,int startIndex,int endIndex){
+

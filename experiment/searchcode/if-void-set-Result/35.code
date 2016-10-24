@@ -1,0 +1,11 @@
+private boolean finished = false;
+
+void setResult(Result result) {
+this.result = result;
+this.finished = true;
+}
+
+public Result getResult() {
+if (!isFinished()) {
+throw new IllegalStateException(&quot;The result is not acquired yet.&quot;);
+

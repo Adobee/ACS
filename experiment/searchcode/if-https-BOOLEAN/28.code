@@ -1,0 +1,10 @@
+public class HypervisorCredential implements Credential {
+private boolean https;
+private String user;
+private String password;
+
+public HypervisorCredential() {
+public HypervisorCredential(Map map) {
+if(map.containsKey(&quot;https&quot;)){
+https = (Boolean) map.get(&quot;https&quot;);
+

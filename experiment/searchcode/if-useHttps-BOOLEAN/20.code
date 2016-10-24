@@ -1,0 +1,7 @@
+return &quot;&quot;;
+}
+
+boolean defaultPort =
+info.port == -1 || (info.useHttps &amp;&amp; info.port == 80) || (!info.useHttps &amp;&amp; info.port == 443);
+boolean defaultPath = TextUtils.isEmpty(info.path) || (info.useJson &amp;&amp; CMIS_JSON.equals(info.path)) ||
+

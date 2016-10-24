@@ -1,0 +1,8 @@
+public boolean equals(Object o) {
+if (this == o) return true;
+if (o == null || getClass() != o.getClass()) return false;
+
+Unary unary = (Unary) o;
+
+if (!expression.equals(unary.expression)) return false;
+

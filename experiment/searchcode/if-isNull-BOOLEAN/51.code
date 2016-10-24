@@ -1,0 +1,16 @@
+public class Null extends Scalar {
+
+private final boolean isNull;
+
+public Null(FormulaElement arg, boolean isNull) {
+super(arg);
+this.isNull = isNull;
+arg.sql(dialect, sb);
+sb.append(&quot; IS &quot;);
+if (!isNull) {
+sb.append(&quot;NOT &quot;);
+}
+sb.append(&quot;NULL&quot;);
+}
+}
+

@@ -1,0 +1,13 @@
+Throwable getJavaThrowable() {
+return javaThrowable;
+}
+
+static Throwable getJavaThrowable(JThrowable jThrowable) {
+if(jThrowable instanceof ThrowableImpl) {
+public String getMessage() {
+return javaThrowable.getMessage();
+}
+
+public JThrowable getCause() {
+return JavaFactory.getInstance().buildThrowable(javaThrowable.getCause());
+

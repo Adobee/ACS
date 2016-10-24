@@ -1,0 +1,9 @@
+DetailedRule detailedRule = null;
+if (null == detailedRuleEvaluateResult.getDetailedRuleIds()) {
+return;
+}
+for (int i = 0; i < detailedRuleEvaluateResult.getDetailedRuleIds().length; i++) {
+detailedRule = getSimpleDetailedRuleById(detailedRuleEvaluateResult
+.getDetailedRuleIds()[i]);
+if (detailedRuleEvaluateResult.getScores()[i] != null
+

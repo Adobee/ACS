@@ -1,0 +1,6 @@
+return (Integer) lhs + (Integer) rhs;
+} else if (lhs instanceof Integer &amp;&amp; rhs instanceof Double) {
+return (Integer) lhs + (Double) rhs;
+} else if (lhs instanceof Double &amp;&amp; rhs instanceof Integer) {
+return (Double) lhs + (Integer) rhs;
+

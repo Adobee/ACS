@@ -1,0 +1,12 @@
+private int maxStartIndex = 0;
+private int maxEndIndex = 0;
+
+public String longestPalindrome(String s) {
+if (s == null || s.equals(&quot;&quot;))
+return s.substring(maxStartIndex, maxEndIndex + 1);
+}
+
+private void findPalindrome(String s, int i, int j) {
+int offset = 0;
+for (; i - offset >= 0 &amp;&amp; j + offset < s.length(); offset++) {
+

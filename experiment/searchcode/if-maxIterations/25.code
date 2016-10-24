@@ -1,0 +1,13 @@
+public static double iterate(final Complex c, final int maxIterations) {
+int i = 0;
+double x = 0;
+double y = 0;
+double x2, y2;
+do {
+x2 = x * x;
+x = x2 - y2 + c.getReal();
+i++;
+} while (i < maxIterations &amp;&amp; (x2 + y2) < 4);
+double nsmooth;
+if (i == maxIterations) {
+

@@ -1,0 +1,13 @@
+double start = 0;
+double end = x;
+if(x <=0){
+return 0;
+}
+
+while(start<end){
+double mid = (start + end)/2;
+if(mid*mid-x>diff){
+end = mid;
+}else if(mid*mid-x<0){
+start = mid;
+

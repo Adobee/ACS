@@ -1,0 +1,10 @@
+for (int j = 0; j < columnDimension; j++) {
+// Apply previous transformations.
+for (int i = 0; i < rowDimension; i++) {
+if (Math.abs(LU[i][j]) > Math.abs(LU[p][j])) {
+p = i;
+}
+}
+if (p != j) {
+for (int k = 0; k < columnDimension; k++) {
+

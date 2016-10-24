@@ -1,0 +1,12 @@
+package common;
+
+public class BezierTiming {
+
+private double a, b, c, d;
+
+public BezierTiming(double c0x, double c0y, double c1x, double c1y) {
+public double at(double time) {
+double y0a = 0.00; // initial y
+double x0a = 0.00; // initial x
+double y1a = b;    // 1st influence y
+

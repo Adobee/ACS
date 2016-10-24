@@ -1,0 +1,9 @@
+*    Copyright (C) 2015 George Antony Papadakis (gpapadis@yahoo.gr)
+*/
+
+package BlockProcessing.BlockRefinement;
+
+import DataStructures.AbstractBlock;
+AbstractBlock currentBlock = (AbstractBlock) blocksIterator.next();
+if (maxEntities < currentBlock.getTotalBlockAssignments()) {
+

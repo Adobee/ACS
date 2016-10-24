@@ -1,0 +1,8 @@
+int[] monthLengths = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+int daysPassed = 0;
+int dayOfMonth = 0;
+daysPassed++;
+//If a month passes
+if (dayOfMonth > monthLengths[month]) {
+dayOfMonth = 1;
+

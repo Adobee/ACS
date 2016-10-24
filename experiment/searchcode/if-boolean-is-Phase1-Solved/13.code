@@ -1,0 +1,13 @@
+case 2:
+s += &quot;2 &quot;;
+break;
+case 3:
+s += &quot;&#39; &quot;;
+break;
+
+}
+if (i == depthPhase1 - 1)
+if (minDistPhase1[n + 1] == 0 &amp;&amp; n >= depthPhase1 - 5) {
+minDistPhase1[n + 1] = 10;// instead of 10 any value >5 is possible
+if (n == depthPhase1 - 1 &amp;&amp; (s = totalDepth(depthPhase1, maxDepth)) >= 0) {
+

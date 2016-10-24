@@ -1,0 +1,10 @@
+private static final class VectorTypeImpl extends TypeBaseClass implements VectorType, AtomicTypeSpecifier, CompoundTypeSpecifier {
+
+/**
+* The dimensions of the {@link VectorType} type.
+*/
+private final DimensionsDesignator size;
+private boolean checkVectorTypeImplEquality(final VectorTypeImpl vectorTypeImpl) {
+if (size == null) {
+return elementType.equals(vectorTypeImpl.elementType);
+

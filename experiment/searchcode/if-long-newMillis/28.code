@@ -1,0 +1,7 @@
+public static Timestamp readGrowingDateTime(DataInput dataInput, Timestamp baseDateTime) throws IOException {
+long newMillis = readGrowing(dataInput, baseDateTime.getTime());
+return new Timestamp(newMillis);
+}
+
+public static long readGrowing(DataInput dataInput, long lastValue) throws IOException {
+

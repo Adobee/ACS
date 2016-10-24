@@ -1,0 +1,17 @@
+public class PidController
+{
+double Kp;
+double Ki;
+double Kd;
+
+//double error;
+double prevError; //static
+//for first time the dt should be 0
+double dt;
+if(prevUtime == 0)
+dt = 0;
+else
+dt = currUtime - prevUtime;
+
+//integral += error*dt;
+

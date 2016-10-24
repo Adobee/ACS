@@ -1,0 +1,12 @@
+public ProgressBar(String processName_, int barLength) {
+processName = processName_;
+this.barLength = barLength;
+}
+
+
+public void update(double percentage) {
+int progressLength = (int) (barLength * percentage);
+System.err.print(&quot;[&quot;);
+for (int i = 0; i < barLength; ++i) {
+if (i <= progressLength)
+

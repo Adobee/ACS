@@ -1,0 +1,9 @@
+RcopiaDb pbmNameCodeDb = DatabaseFactory.instance().get(
+Names.PBM_NAME_CODES, Display.getMasterLogger());
+ArrayList pbmNameCodeInfoList = pbmNameCodeDb.getAll();
+String pbmName = pbmNameCodeInfo.getString(Names.PBM_NAME);
+String pbmCode = pbmNameCodeInfo.getString(Names.PBM_CODE);
+
+boolean wildcard = false;
+if (pbmName.endsWith(&quot;*&quot;)) {
+

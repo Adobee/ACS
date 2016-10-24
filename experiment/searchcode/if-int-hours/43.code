@@ -1,0 +1,14 @@
+public void addHours(int hours) {
+hours = hours % 24;
+this.hours += hours;
+if (this.hours > 23){
+this.hours -= 24;
+this.minutes -= 60;
+}
+}
+
+public void subHours(int i) {
+this.hours = (this.hours - i) % 24;
+if(this.hours < 0){
+this.hours = this.hours * (-1);
+

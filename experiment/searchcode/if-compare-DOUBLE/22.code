@@ -1,0 +1,11 @@
+if (x < 0.0) {
+throw new IllegalArgumentException(&quot;x < 0&quot;);
+}
+if (Double.compare(x, 0.0) == 0) {
+return 0.0;
+}
+if (Double.compare(x, 1.0) == 0) {
+return 1.0;
+}
+double l = (Double.compare(x, 1.0) < 0 ? x : 1.0);
+

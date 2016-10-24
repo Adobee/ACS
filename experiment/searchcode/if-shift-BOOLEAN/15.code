@@ -1,0 +1,17 @@
+private ShiftBroker()
+{
+}
+
+public static ShiftBroker getBroker()
+{
+if(sb == null)
+{
+sb = new ShiftBroker();
+}
+return sb;
+}
+
+public boolean saveAll(ArrayList a)
+{
+return shiftDB.saveAll(a);
+

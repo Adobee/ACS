@@ -1,0 +1,9 @@
+public class UndoManager<R extends Round> extends RoundManager<R> implements Undoable {
+
+protected int maxUndoRoundCount;
+
+public UndoManager(final CollectionFactory collectionFactory, final int maxUndoRoundCount) {
+for (int i = 0; i < roundCount; ++i) {
+final R round = popLastRound();
+if (round == null) {//恢复?
+

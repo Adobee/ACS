@@ -1,0 +1,8 @@
+assertEquals(&quot;1&quot;, threadContext.getHeader(&quot;default&quot;));
+assertEquals(&quot;baz&quot;, threadContext.getHeader(&quot;foo.bar&quot;));
+if (randomBoolean()) {
+public void testResponseHeaders() {
+final boolean expectThird = randomBoolean();
+
+final ThreadContext threadContext = new ThreadContext(Settings.EMPTY);
+

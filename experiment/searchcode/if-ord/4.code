@@ -1,0 +1,10 @@
+* @method insert information into database table
+* @return Ord_ID(long) if successfully
+* */
+public long insertOrder(Orders ord){
+long flag = 0;
+ResultSet rs = this.conn.executeQuery(&quot;select Ord_ID from Orders where Ord_date = &#39;&quot;+ord.getOrd_date()+&quot;&#39; and Acc_ID = &quot;+ord.getAcc_ID()+&quot; and Prod_ID = &quot;+ord.getProd_ID()+&quot; and Add_ID = &quot;+ord.getAdd_ID()+&quot;&quot;);
+try{
+if(rs.next()){
+flag = rs.getLong(&quot;Ord_ID&quot;);
+

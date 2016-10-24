@@ -1,0 +1,10 @@
+synchronized(listeners) {
+if(listeners.contains(l)){
+return;
+}
+listeners.add(l);
+protected T[] getListenersArray(){
+synchronized(listeners){
+if(listenersCache==null)
+listenersCache= listeners.toArray((T[])java.lang.reflect.Array.newInstance(getListenerClass(), listeners.size()));
+

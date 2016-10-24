@@ -1,0 +1,9 @@
+package com.miki.travian.v2.strategy;
+
+/**
+* Created by Miki on 6/28/2015.
+*/
+public class QueueFinishedStrategy {
+public static BuildStrategy getBuildStrategy(Object strategyStr) {
+if (strategyStr == null || strategyStr.toString().length() == 0) {
+

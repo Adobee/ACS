@@ -1,0 +1,7 @@
+* @throws IllegalArgumentException If the dimensions don&#39;t match
+*/
+public OpenMapRealVector add(OpenMapRealVector v) throws IllegalArgumentException{
+public OpenMapRealVector append(RealVector v) {
+if (v instanceof OpenMapRealVector) {
+return append((OpenMapRealVector) v);
+

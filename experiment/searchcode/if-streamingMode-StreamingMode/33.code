@@ -1,0 +1,8 @@
+String contentLengthHeader = requestBuilder.getHeaders().get(CONTENT_LENGTH);
+
+Object payload = event.getMessage().getPayload();
+
+if (streamingMode == HttpStreamingType.AUTO) {
+} else if (streamingMode == HttpStreamingType.ALWAYS) {
+if (contentLengthHeader != null) {
+

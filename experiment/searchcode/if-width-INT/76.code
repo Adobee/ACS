@@ -1,0 +1,11 @@
+public int y;
+public int width;
+public int height;
+
+public Rectangle() {
+height = r_.height;
+}
+
+public Rectangle(int x_, int y_, int width_, int height_) {
+x = x_;
+

@@ -1,0 +1,9 @@
+import javafx.util.Pair;
+import org.jfree.data.xy.XYSeries;
+import org.jfree.data.xy.XYSeriesCollection;
+
+import java.util.IntSummaryStatistics;
+private static XYSeries measureReplacementSelection(final int n , final int h, final int times, XYSeries xySeries){
+
+if(times == 0){
+

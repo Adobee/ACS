@@ -1,0 +1,11 @@
+private final Source framedMessageSource = new FramedMessageSource();
+
+private boolean closed;
+private boolean messageClosed;
+
+// Stateful data about the current frame.
+messageClosed = false;
+listener.onMessage(Okio.buffer(framedMessageSource), type);
+if (!messageClosed) {
+throw new IllegalStateException(&quot;Listener failed to call close on message payload.&quot;);
+

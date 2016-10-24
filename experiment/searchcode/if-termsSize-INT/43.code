@@ -1,0 +1,7 @@
+long termsSize = fieldTermVector.size();
+if (hasScores) {
+termsSize = Math.min(termsSize, termVectorsFilter.size(field));
+for (int j = 0; j < freq; j++) {
+int curPos = docsAndPosEnum.nextPosition();
+if (positions) {
+

@@ -1,0 +1,13 @@
+public static long findMin(long a, long b, long c, long d) {
+
+long diff = a - b;
+long min;
+
+if (c == 0) {
+long ctr = diff/d;
+min = diff - (ctr * d);
+
+long t = ((ctr + 1) * d) - diff;
+
+if (t < min) {
+

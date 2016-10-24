@@ -1,0 +1,6 @@
+UnassignedInfo unassignedInfo = null;
+if (randomInt(5) == 1) {
+unassignedInfo = new UnassignedInfo(randomReason(), randomAsciiOfLength(10));
+ClusterBlocks.Builder builder = ClusterBlocks.builder().blocks(clusterState.blocks());
+int globalBlocksCount = clusterState.blocks().global().size();
+

@@ -1,0 +1,14 @@
+* limitations under the License.
+*/
+package com.bzym.myrxjava.retrofit;
+
+import java.io.IOException;
+import okhttp3.HttpUrl;
+import okhttp3.Interceptor;
+Retrofit retrofit = new Retrofit.Builder()
+.baseUrl(&quot;http://www.coca-cola.com/&quot;)
+.callFactory(okHttpClient)
+.build();
+
+Pop pop = retrofit.create(Pop.class);
+

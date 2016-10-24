@@ -1,0 +1,5 @@
+public abstract class BooleanFunction extends LispFunction{
+public static void defineIn(LispContext context) throws LispRuntimeException {
+context.define(&quot;or&quot;, BooleanFunction.OR);
+context.define(&quot;and&quot;, BooleanFunction.AND);
+

@@ -1,0 +1,8 @@
+if (k == 1) return Math.min(A[start_A], B[start_B]);
+int shift_A = 0;
+int shift_B = 0;
+if (end_A - start_A <= k/2) {
+shift_A = end_A - start_A;
+shift_B = k - shift_A;
+} else if (end_B - start_B <= k/2) {
+

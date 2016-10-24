@@ -1,0 +1,9 @@
+public static String format(Context context, int duration) {
+if (duration < 0) {
+return formatEmptyDuration();
+}
+long hours = 0;
+long mins = 0;
+if (duration > 0) {
+hours = TimeUnit.MINUTES.toHours(duration);
+

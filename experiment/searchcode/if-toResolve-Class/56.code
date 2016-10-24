@@ -1,0 +1,8 @@
+EList<EReference> references = eObject.eClass().getEAllReferences();
+for (EReference reference : references) {
+if (isDerived(reference) != 0)
+public static VSpecResolution setResolved(VSpecResolution target, VSpec toResolve) {
+
+target.setResolvedVSpec(toResolve);
+if (target instanceof ChoiceResolution) {
+

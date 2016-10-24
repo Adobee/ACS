@@ -1,0 +1,11 @@
+public static final Equality from(boolean isEquals) {
+return isEquals ? TRUE : FALSE;
+}
+
+private static final Equality FALSE = new Equality(false);
+private static final Equality TRUE = new Equality(true);
+
+private final boolean isEquals;
+
+private Equality(boolean isEquals) {
+

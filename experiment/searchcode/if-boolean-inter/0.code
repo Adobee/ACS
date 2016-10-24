@@ -1,0 +1,17 @@
+public boolean intersects(Interval inter)
+{
+if(this.min > inter.max)
+{
+return false;
+}
+if (this.max < inter.min)
+{
+return false;
+}
+return true;
+}
+
+public float getIntersection(Interval inter)
+{
+if(this.min >= inter.max || this.max <= inter.min)
+

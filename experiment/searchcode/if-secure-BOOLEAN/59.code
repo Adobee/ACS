@@ -1,0 +1,13 @@
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
+@XStreamAlias(&quot;IconSynchSecure&quot;)
+public class DataIconSynchSecure
+extends DataIconSynch
+{
+private static final long serialVersionUID = 1L;
+i = 31 * i + (int)(this.aSecurePass ^ this.aSecurePass >>> 32);
+return i;
+}
+
+public boolean equals(Object paramObject)
+

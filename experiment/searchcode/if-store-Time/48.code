@@ -1,0 +1,8 @@
+MsgBean checkResult = checkStoreInfo(store, null);
+
+if (checkResult.getCode() != Code.SUCCESS) {
+return checkResult;
+store.setApplyTime(new Date());
+store.setOpenStoreDate(new Date());
+store.setFullMemberFlg(Flg.OFF);
+

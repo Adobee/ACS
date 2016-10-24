@@ -1,0 +1,7 @@
+public static boolean testVariance(double stdbar, int n, double H0std, boolean is_twoTailed, double aLevel) throws IllegalArgumentException {
+if(n<=1 || H0std<=0) {
+//standardize it
+double chisquare=(n-1.0)*stdbar*stdbar/(H0std*H0std);
+
+boolean rejectH0=checkCriticalValue(chisquare, n, is_twoTailed, aLevel);
+

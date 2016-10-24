@@ -1,0 +1,9 @@
+private String type;
+private long version;
+private boolean forcedRefresh;
+protected Operation operation;
+* only return true here if they run out of refresh listener slots (see {@link IndexSettings#MAX_REFRESH_LISTENERS_PER_SHARD}).
+*/
+public boolean forcedRefresh() {
+return forcedRefresh;
+

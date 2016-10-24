@@ -1,0 +1,15 @@
+package syntaxAnalyzer;
+
+public class ArrayInitializer{
+
+public static Object eval(Object o ){
+
+if( 	&quot;{&quot;.equals((String)o) &amp;&amp;
+&quot;}&quot;.equals((String)o) ){
+return true;
+}
+
+
+if( 	&quot;{&quot;.equals((String)o) &amp;&amp;
+((Boolean)VariableInitializers.eval(o)) &amp;&amp;
+

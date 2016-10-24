@@ -1,0 +1,15 @@
+assertThat(cache.estimatedSize(), is(2L));
+
+if (context.isGuava()) {
+cache.cleanUp();
+}
+
+long count = context.initialSize() - 1;
+assertThat(map.size(), is(2));
+
+if (context.isGuava()) {
+context.cleanUp();
+}
+
+long count = context.initialSize() - 1;
+

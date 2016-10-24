@@ -1,0 +1,9 @@
+for(Event e : events)
+if(e.shouldTriggerEvent()) e.triggerEvent();
+}
+public boolean removeEvent(String uid) {
+Event e = getEvent(uid);
+return e != null &amp;&amp; events.remove(e);
+}
+public boolean addEvent(Event e) {
+

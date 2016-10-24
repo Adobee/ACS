@@ -1,0 +1,6 @@
+// evaluate 3 hours before and after to work out if anything is happening
+long instantBefore = instant - 3 * MILLIS_PER_HOUR;
+long offsetBefore = getOffset(instantBefore);
+long offsetAfter = getOffset(instantAfter);
+if (offsetBefore <= offsetAfter) {
+

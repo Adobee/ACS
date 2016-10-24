@@ -1,0 +1,9 @@
+public static Scoping forAnnotation(final Class<? extends Annotation> scopingAnnotation) {
+if (scopingAnnotation == Singleton.class) {
+return SINGLETON_ANNOTATION;
+return visitor.visitScopeAnnotation(scopingAnnotation);
+}
+
+@Override
+public Class<? extends Annotation> getScopeAnnotation() {
+

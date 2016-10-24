@@ -1,0 +1,11 @@
+zAxis.normalize();
+
+float zDotUp = zAxis.dot(up);
+
+if ((zDotUp < -MathHelper.TOLERANCE_DOT_PRODUCT_PARALLEL) || (zDotUp > MathHelper.TOLERANCE_DOT_PRODUCT_PARALLEL)) {
+h = MathHelper.ArcTan2(-xAxis.z, xAxis.x);
+}
+
+h = -MathHelper.ToDegrees(h) + 360f;
+if (h > 360f) {
+

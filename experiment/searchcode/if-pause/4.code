@@ -1,0 +1,13 @@
+import java.awt.event.ActionListener;
+
+import org.nowireless.vision.api.Pausable;
+
+public class PauseButtonListener implements ActionListener {
+public PauseButtonListener(Pausable pause) {
+this.pause = pause;
+}
+
+@Override
+public void actionPerformed(ActionEvent e) {
+if(pause.isPaused()) {
+

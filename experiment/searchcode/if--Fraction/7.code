@@ -1,0 +1,16 @@
+Fraction h = new Fraction(3,5);
+if (!f.equals(g.multiply(h))) System.out.println(&quot;Multiply failed&quot;);
+System.out.println(num2);
+
+
+
+}
+
+static void test(Fraction f1, Fraction f2, String msg){
+if (! f1.equals(f2))
+System.out.println(msg);
+}
+
+
+}
+

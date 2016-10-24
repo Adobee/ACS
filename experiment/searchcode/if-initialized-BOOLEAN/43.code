@@ -1,0 +1,8 @@
+public static <T> Supplier<T> withInitializer(Supplier<T> initializer) {
+return new Supplier<T>() {
+boolean initialized;
+private boolean initialized;
+
+public T get(Supplier<T> initializer) {
+if (!initialized) {
+

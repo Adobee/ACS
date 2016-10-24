@@ -1,0 +1,9 @@
+import java.util.List;
+
+public class LatencyPenalty implements Penalty {
+
+@Override
+public double getPenalty(FoodSource foodSource, GreenDataCenter dc) {
+double penalty;
+double maxPenalty = 0;
+

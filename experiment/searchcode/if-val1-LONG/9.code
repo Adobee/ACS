@@ -1,0 +1,11 @@
+boolean neg=false;
+if(n<0) {
+neg=true;
+n=-n;
+}
+
+long val1 = helper(a,b,n/2)%b;
+long val2 = helper(a,b,n-2*(n/2))%b;
+
+return !neg? (((val1*val1)%b)*val2)%b :(1/(((val1*val1)%b)*val2))%b;
+

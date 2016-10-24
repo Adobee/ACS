@@ -1,0 +1,9 @@
+private static JFrame jframe = new JFrame();
+public static int xTol = 60;
+public static int yTol = 35;
+
+private static int motorASpeed, motorBSpeed;
+if (Vision.xCoord != 0 &amp;&amp; Math.abs(Vision.xCoord - 320) > xTol) {
+if (Vision.xCoord < 320 &amp;&amp; Motor.A.getTachoCount() < 400) {
+Motor.A.forward();
+

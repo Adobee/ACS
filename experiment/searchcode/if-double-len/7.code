@@ -1,0 +1,12 @@
+public static void filledTriangle(double x, double y, double len){
+double a[] = {x,x+(len/2),x-(len/2)};
+double b[] = {y,y+Math.sqrt(3)*len/2,y+Math.sqrt(3)*len/2};
+filledTriangle(x,y,len);
+//base case
+if (n <= 1) {
+return;
+}
+//recursive case
+else {
+double rec = len/2;
+

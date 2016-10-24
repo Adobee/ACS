@@ -1,0 +1,13 @@
+v.add(x);
+
+double start = System.currentTimeMillis();
+
+
+
+p1[0] = CS[0];
+p1[1] = CS[1];
+
+p2[0] = CS[2];
+if((k = run(p2[2],p2[3],p2[4],p2[5],p2[6]))<p2b) p2b = k;
+if((k = run(p2[1],p2[3],p2[4],p2[5],p2[6]))<p2b) p2b = k;
+

@@ -1,0 +1,9 @@
+long milliDiff = millis - params.millis;
+if (milliDiff == 0)
+return params;
+
+long milliDiffInNanos = milliDiff * 1000000;
+long expectedMinNanoDiff = milliDiffInNanos - 999999;
+long nanoDiff = nanos - params.nanos;
+if (nanoDiff > expectedMaxNanoDiff) {
+

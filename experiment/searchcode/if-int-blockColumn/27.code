@@ -1,0 +1,9 @@
+int blockRow = blockList.get(i).getRow();
+int blockColumn = blockList.get(i).getColumn();
+
+if(blockRow == row &amp;&amp; blockColumn == column) {
+NormalBlock block = (NormalBlock)getBlock(blockRow, blockColumn);
+
+// Remove the ports on other blocks connecting to this block.
+if (block.getModuleWrapper() != null) {
+

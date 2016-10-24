@@ -1,0 +1,9 @@
+ReaderEntry<R> readerEntry = directory == null ? null : directory.getReaderEntry(segName);
+if (readerEntry == null){
+readerEntry = new ReaderEntry<R>(new ZoieInternalIndexReader(sr),decorator);
+private static <R extends IndexReader>void deleteDocsForSegment(IndexReader luceneReader,SegmentReader segReader,int start,IntSet delSet,ReaderDirectory<R> readerDir) throws IOException{
+
+ReaderEntry<R> entry = null;
+if (readerDir!=null){
+entry = readerDir.getReaderEntry(segReader.getSegmentName());
+

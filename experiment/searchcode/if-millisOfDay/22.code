@@ -1,0 +1,5 @@
+User user = userService.getUserWithAuthorities();
+Report report = getCurrentReport(user);
+if (report == null) {
+DateTime dateTimeStart = localDateTime.dayOfMonth().withMinimumValue().millisOfDay().withMinimumValue().toDateTime();
+

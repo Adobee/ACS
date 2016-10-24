@@ -1,0 +1,12 @@
+package utils;
+import data.Cluster;
+
+public class ClusterDistance {
+
+private Cluster c1;
+private Cluster c2;
+private double distance;
+
+public double getDistance() {
+return distance;
+

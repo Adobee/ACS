@@ -1,0 +1,7 @@
+public void convertTo(final SerializeWriter out, final Map<K, V> value) {
+final Map<K, V> map = value;
+if (map == null) {
+this.valueSerializeParser.convertTo(out, en.getValue());
+if (first) {
+first = false;
+

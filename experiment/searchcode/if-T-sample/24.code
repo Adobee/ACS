@@ -1,0 +1,8 @@
+package com.philheenan.immaterial.remote.sample;
+
+import com.philheenan.immaterial.remote.ModelFactory;
+public Sample fromEntity(SampleEntity entity) {
+Sample sample = new Sample();
+if (entity != null) {
+sample.name = (entity.name != null &amp;&amp; entity.name.length() > 0 ? entity.name + &quot; &quot; : &quot;&quot;);
+

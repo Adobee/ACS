@@ -1,0 +1,9 @@
+public List<LagFix> getLagFixList() {
+return LagFixList;
+}
+
+public List<LagFix> getEnabledList(int EnabledStatus) {
+List<LagFix> list = new ArrayList<LagFix>();
+for (LagFix fix : LagFixList) {
+if (fix.getEnabledStatus() == EnabledStatus) {
+

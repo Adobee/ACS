@@ -1,0 +1,10 @@
+class Qoint {//点类
+private double x;
+private double y;
+Qoint(double x1, double y1) {
+x = x1;
+y = y1;
+}
+public double getX() { return x; }
+public double getY() { return y; }
+

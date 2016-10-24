@@ -1,0 +1,9 @@
+this.increment(key, Counter.DEFAULT_INCREMENT);
+}
+
+public void increment(String key, int increment) {
+Long count = this.counts.get(key);
+if (count != null) {
+this.counts.put(key, count + increment);
+} else {
+

@@ -1,0 +1,9 @@
+scheduleSynchronization(getScheduleInterval(-1), false, false);
+}
+
+void adjustBackgroundSchedule(int minutes, boolean startNow) {
+if (entryManager.isAutoSyncEnabled())
+private void scheduleSynchronization(int synchIntervalMinutes, boolean uploadOnly, boolean startNow) {
+if (uploadOnly) {
+getAlarmManager().set(AlarmManager.RTC_WAKEUP,
+

@@ -1,0 +1,13 @@
+private int dimX;
+private int dimY;
+private int dimZ;
+
+public Size(int x, int y, int z) {
+dimX = x;
+dimY = y;
+dimZ = z;
+}
+
+public boolean canTakePacket(Size size) {
+if (size.getDimX() <= dimX
+

@@ -1,0 +1,8 @@
+public class JumpGame2{
+public int jump(int[] A){
+int start = 0;
+int end = 0;
+int count = 0;
+if (A.length==1) return 0;
+while(end<n)
+

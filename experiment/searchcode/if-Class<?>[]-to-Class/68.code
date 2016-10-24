@@ -1,0 +1,15 @@
+String superClassName = classBlueprint.getSuperclass();
+
+if(superClassName != null) {
+CtClass ctSuperClass;
+try {
+setClassAttributes(ctClass, classBlueprint);
+
+// Set methods
+setClassMethods(ctClass, classBlueprint);
+
+return ctClass.toClass();
+}
+
+}
+

@@ -1,0 +1,13 @@
+this.s = s;
+ix = 0;
+}
+
+@Override
+public Stream read() {
+if(!hasData()) return null;
+return new CharConstant(s.charAt(ix++));
+}
+
+@Override
+public boolean hasData() {
+

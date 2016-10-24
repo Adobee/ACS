@@ -1,0 +1,11 @@
+return AppManager.manager( SslManager.class ).instance();
+}
+
+public static boolean matches( String hostNameTemplate, String hostName )
+{
+if ( DNS_WILDCARD_PATTERN.matcher( hostNameTemplate ).matches() )
+return hostNameTemplate.equals( hostName );
+}
+
+private static boolean needsNormalization( String hostname )
+

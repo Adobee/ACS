@@ -1,0 +1,9 @@
+cH = (float)((((fH - iH == 0) ? -1 : fH - iH)*p + iH - 1)%1);
+break;
+}
+default : {
+if (Math.abs(fH - iH) <= 0.5) {
+cH = (float) (iH + p * (fH - iH));
+} else if (fH > iH) {
+cH = (float) (iH - p * (1 - (fH - iH)) + 1);
+

@@ -1,0 +1,9 @@
+package MyTreadFractal;
+
+
+public class BoundCanvas implements Canvas {
+private double maxX = Double.NEGATIVE_INFINITY;
+public void drawLine(double x1, double y1, double x2, double y2) {
+if (x1 > maxX) {
+maxX = x1;
+

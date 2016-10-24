@@ -1,0 +1,13 @@
+public final class LongRange implements Range<Long> {
+
+private final long minValue;
+private final long maxValue;
+
+public static final LongRange FULL = new LongRange();
+public Long clamp(final Long value) {
+return clampLong(value);
+}
+
+public long clampLong(final long value) {
+if (value < minValue) return minValue;
+

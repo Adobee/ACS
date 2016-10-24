@@ -1,0 +1,13 @@
+public class PngByteArrayOutputStream extends ByteArrayOutputStream {
+
+private final int initialSize;
+
+public PngByteArrayOutputStream() {
+return buf;
+}
+
+public void reset() {
+super.reset();
+if (buf.length > initialSize) {
+buf = new byte[initialSize];
+

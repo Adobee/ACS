@@ -1,0 +1,8 @@
+private final int minFreshSeconds;
+private final boolean onlyIfCached;
+private final boolean noTransform;
+
+String headerValue; // Lazily computed, if absent.
+
+private CacheControl(boolean noCache, boolean noStore, int maxAgeSeconds, int sMaxAgeSeconds,
+

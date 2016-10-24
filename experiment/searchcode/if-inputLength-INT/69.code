@@ -1,0 +1,10 @@
+package kata;
+
+public class Lexer {
+public static final char EOS = (char) 0;
+
+private int index;
+public RuntimeException parseError(String message) {
+int inputLength = input.length();
+String prefix = input.substring(0, Math.min(index, inputLength));
+

@@ -1,0 +1,16 @@
+
+public class Point {
+public double x;
+public double y;
+
+public Point(double x, double y) {
+y += point.y;
+return this;
+}
+
+public Point clone() {
+return new Point(x, y);
+}
+
+public Point deviate(double deviation, double max) {
+

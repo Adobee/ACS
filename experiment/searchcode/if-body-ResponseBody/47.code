@@ -1,0 +1,11 @@
+import okhttp3.MediaType;
+import okhttp3.ResponseBody;
+import okio.Buffer;
+import okio.BufferedSource;
+import okio.ForwardingSource;
+* Created by leichao on 2016/4/26.
+*/
+public class ProgressResponseBody extends ResponseBody {
+//实际的待包装响应体
+private final ResponseBody responseBody;
+

@@ -1,0 +1,10 @@
+package main.java.model;
+
+public enum Language {
+English		(Locale.en),
+Ukrainian	(Locale.uk),
+public static Language findByCulture(Locale locale) {
+Language fl = null;
+for (Language l : Language.values()) {
+if (l.locale.equals(locale)) {
+

@@ -1,0 +1,11 @@
+return mResult.size() + mSougouResultCount;
+}
+
+public synchronized boolean add(SogouSearchResult result) {
+lastBuffer = mResultBuffers.get(mResultBuffers.size() - 1);
+
+boolean shouldRefresh = false;
+mSougouResultCount++;
+
+if (lastBuffer != null &amp;&amp; !lastBuffer.isFull()) {
+

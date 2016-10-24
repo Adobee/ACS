@@ -1,0 +1,11 @@
+boolean[] inputIndices = tt.getInputIndices(); // Used to create first row, names of inputs / outputs.
+boolean[] outputIndices = tt.getOutputIndices();
+
+table = (TableLayout) inflater.inflate(R.layout.truth_table, (ViewGroup) activity.findViewById(R.layout.activity_main));
+for (int i = 0; i < outputIndices.length; i++)
+{
+if (outputIndices[i])
+{
+tv = new TextView(activity);
+tv.setText(&quot;y[&quot; + i + &quot;]&quot;);
+

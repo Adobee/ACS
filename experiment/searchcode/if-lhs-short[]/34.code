@@ -1,0 +1,9 @@
+public class OnlineComparator implements Comparator<DssShortInfo> {
+
+
+
+@Override
+public int compare(DssShortInfo lhs, DssShortInfo rhs) {
+if (lhs.isOnline()==rhs.isOnline()) return 0;
+if (lhs.isOnline()==false&amp;&amp;rhs.isOnline()==true) return 1;
+

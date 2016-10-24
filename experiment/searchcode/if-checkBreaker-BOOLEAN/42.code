@@ -1,0 +1,8 @@
+final boolean checkBreaker;
+
+@Inject
+public BigArrays(Settings settings, PageCacheRecycler recycler, @Nullable final CircuitBreakerService breakerService) {
+public BigArrays(Settings settings, PageCacheRecycler recycler, @Nullable final CircuitBreakerService breakerService, boolean checkBreaker) {
+super(settings);
+this.checkBreaker = checkBreaker;
+

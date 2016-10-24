@@ -1,0 +1,14 @@
+dout.writeShort(((Short)idToIndex.get(id)).shortValue());
+}
+}
+
+static int parseYear(String str, int def) {
+str = str.toLowerCase();
+if (str.equals(&quot;minimum&quot;) || str.equals(&quot;min&quot;)) {
+MutableDateTime mdt = new MutableDateTime(0, getLenientISOChronology());
+int pos = 0;
+if (str.startsWith(&quot;-&quot;)) {
+pos = 1;
+}
+int newPos = p.parseInto(mdt, str, pos);
+

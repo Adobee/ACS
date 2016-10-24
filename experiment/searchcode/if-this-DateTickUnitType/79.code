@@ -1,0 +1,8 @@
+* @throws ObjectStreamException if there is a problem.
+*/
+private Object readResolve() throws ObjectStreamException {
+if (this.equals(DateTickUnitType.YEAR)) {
+return DateTickUnitType.YEAR;
+}
+else if (this.equals(DateTickUnitType.MONTH)) {
+

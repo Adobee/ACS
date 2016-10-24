@@ -1,0 +1,14 @@
+public static boolean isBST( Node node, int[] prev, boolean[] started)
+{
+if(node == null)
+{
+return true;
+}
+
+if(!isBST(node.left, prev, started))
+{
+return false;
+}
+
+if(!started[0])
+

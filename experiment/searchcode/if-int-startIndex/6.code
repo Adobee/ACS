@@ -1,0 +1,8 @@
+this.rotate90Degrees(matrix, 0, matrix.length - 1);
+}
+
+private void rotate90Degrees(int[][] matrix, int startIndex, int endIndex) {
+if (startIndex >= endIndex) return;
+
+for (int i = startIndex; i < endIndex; i++) {
+

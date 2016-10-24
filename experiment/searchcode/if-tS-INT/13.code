@@ -1,0 +1,9 @@
+public static <T extends Comparable<T>> void sort(T[] ts, int lo, int hi) {
+if (lo >= hi) {
+return;
+}
+int min = lo;
+for (int i = lo; i <= hi; i++) {
+if (less(ts[i], ts[min])) {
+min = i;
+

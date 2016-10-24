@@ -1,0 +1,10 @@
+public double calcNetForceExertedByX(Planet[] pA) {
+int count,len;
+double nfX;
+count = 0;
+nfX = 0;
+len = pA.length;
+while (count < len) {
+if (!pA[count].equals(this)) {
+nfX = nfX + calcForceExertedByX(pA[count]);
+

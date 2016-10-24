@@ -1,0 +1,12 @@
+this.sortMode = sortMode;
+}
+@Override
+public int compare(Polygon p1, Polygon p2) {
+int res=0;
+if (sortMode==0){
+else if (sortMode==1){
+res=p1.getName().compareTo(p2.getName());
+}
+else {
+if (p1.doPerimeter()>p2.doPerimeter()) res=1;
+

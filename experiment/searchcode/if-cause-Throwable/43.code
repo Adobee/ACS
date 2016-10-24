@@ -1,0 +1,9 @@
+cause = getCauseByFieldName(delegatedThrowable, throwableClass, CAUSE_FIELD_NAMES[i]);
+}
+}
+
+if (cause == delegatedThrowable) {
+isWellKnownType = true;
+cause           = ((SQLException) throwable).getNextException();
+} else if (throwable instanceof InvocationTargetException) {
+

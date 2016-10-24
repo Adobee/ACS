@@ -1,0 +1,7 @@
+public class BufferedPostingsIterator implements IOIterator<PostingsData> {
+
+private final DataInputStream file;
+private final int docCount;
+public BufferedPostingsIterator(DataInputStream file, int docCount, SequentialPostings sequentialPostings) {
+this(file, docCount, sequentialPostings, 100);
+

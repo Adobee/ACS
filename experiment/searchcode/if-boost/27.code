@@ -1,0 +1,7 @@
+public static void setCpuBoostInputFreq(int value, int core, Context context) {
+if (Utils.readFile(CPU_BOOST_INPUT_BOOST_FREQ).contains(&quot;:&quot;)) {
+run(Control.write(core + &quot;:&quot; + value, CPU_BOOST_INPUT_BOOST_FREQ),
+List<Integer> list = new ArrayList<>();
+String value = Utils.readFile(CPU_BOOST_INPUT_BOOST_FREQ);
+if (value.contains(&quot;:&quot;)) {
+

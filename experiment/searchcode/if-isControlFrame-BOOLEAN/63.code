@@ -1,0 +1,9 @@
+private boolean isFinalFrame;
+private boolean isControlFrame;
+private boolean isMasked;
+
+private final byte[] maskKey = new byte[4];
+// Control frames must be final frames (cannot contain continuations).
+if (isControlFrame &amp;&amp; !isFinalFrame) {
+throw new ProtocolException(&quot;Control frames must be final.&quot;);
+

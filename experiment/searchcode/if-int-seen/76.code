@@ -1,0 +1,17 @@
+* Anyone who needs further docs for this module has some serious Java issues.
+* :)
+*/
+
+// Holds the NickServ result
+class SeenObj
+{
+public int id;
+public String name;
+public String nick;
+&quot;<Name>&quot;,
+&quot;<Name> is the user to look for.&quot;
+};
+public void commandSeen( final Message mes )
+{
+if (lockedUntil>new GregorianCalendar().getTimeInMillis())
+

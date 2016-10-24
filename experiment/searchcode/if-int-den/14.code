@@ -1,0 +1,10 @@
+java.util.Scanner in = new java.util.Scanner(System.in);
+int num = in.nextInt();
+int den = in.nextInt();
+int X = num/den;
+num -= X*den;
+for(int i=1;i<=num||i<=den;i++)
+if(num%i==0&amp;&amp;den%i==0)
+{
+num/=i;
+

@@ -1,0 +1,9 @@
+// in-core input : used by illustrator
+private Map<String, DataBag> inputBuffer = null;
+
+private boolean valueLoaded = false;
+@Override
+public Object exec(Tuple input) throws IOException {
+if (!valueLoaded) {
+if (input == null || input.size() == 0) {
+

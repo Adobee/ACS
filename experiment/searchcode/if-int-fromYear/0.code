@@ -1,0 +1,9 @@
+// deduct last month remainder at each time
+if (isLeapYear(fromYear)) {
+for (int i = MONTH_MM - 1; i > 0; i--) {
+REMAINDER = REMAINDER - REMAINDERS_MONTH_LEAPYEAR[i - 1];
+int rmd = REMAINDER;
+int[] remainders;
+for (int i = fromYear; i <= toYear; i++) {
+if (isLeapYear(i)) {
+

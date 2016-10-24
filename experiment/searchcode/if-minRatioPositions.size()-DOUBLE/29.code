@@ -1,0 +1,13 @@
+final double entry = tableau.getEntry(i, col);
+
+if (Precision.compareTo(entry, 0d, maxUlps) > 0) {
+final double ratio = rhs / entry;
+minRatioPositions.add(i);
+}
+}
+}
+
+if (minRatioPositions.size() == 0) {
+return null;
+} else if (minRatioPositions.size() > 1) {
+

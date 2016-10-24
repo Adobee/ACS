@@ -1,0 +1,12 @@
+* @author Dan Mercer
+*
+*/
+public class RMRSolenoid extends Solenoid {
+public final boolean inverted;
+super(moduleNumber, channel);
+this.inverted = inverted;
+}
+
+public void set(boolean on) {
+if (inverted) {
+

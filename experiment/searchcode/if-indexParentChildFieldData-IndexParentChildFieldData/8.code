@@ -1,0 +1,6 @@
+import org.elasticsearch.index.fielddata.IndexParentChildFieldData;
+import org.elasticsearch.index.fielddata.plain.ParentChildIndexFieldData;
+Query parentRewritten = parentQuery.rewrite(reader);
+if (parentRewritten != parentQuery) {
+Query rewritten = new ParentConstantScoreQuery(parentChildIndexFieldData, parentRewritten, parentType, childrenFilter);
+

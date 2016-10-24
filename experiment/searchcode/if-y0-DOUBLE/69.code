@@ -1,0 +1,11 @@
+package home.poolplayer.model;
+
+public class PoolCircle {
+double x;
+double y;
+double r;
+
+public PoolCircle() {
+public boolean isPointWithin(double x0, double y0) {
+if ((x0 - x) * (x0 - x) + (y0 - y) * (y0 - y) <= r * r)
+

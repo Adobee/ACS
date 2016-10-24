@@ -1,0 +1,14 @@
+public static void writeLong(ByteWriter bw, Long i) throws IOException
+{
+if (i == Long.MIN_VALUE)
+{
+bw.writeString(&quot;-9223372036854775808&quot;);
+return;
+r = i2 - ((q2 << 3) + (q2 << 1)); // r = i2-(q2*10) ...
+buf[--charPos] = IntIOWriter.digits[r];
+i2 = q2;
+if (i2 == 0)
+break;
+}
+if (sign != 0)
+

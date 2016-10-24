@@ -1,0 +1,9 @@
+char c = query.charAt(i);
+if (Character.isWhitespace(c)) {
+if (lastType==2) {
+result.append(&#39; &#39;);
+}
+lastType = 0;
+} else if (!isWhiteSpaceSensitive(c)) {
+if (lastType==0 &amp;&amp; result.length() > 0)
+

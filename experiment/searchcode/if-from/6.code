@@ -1,0 +1,13 @@
+public class Castling extends Move
+{
+public Castling(int from, int to)
+{
+super(from, to);
+}
+
+public void doit(Piece[][] board)
+{
+board[to / 8][to % 8] = board[from / 8][from % 8];
+board[from / 8][from % 8] = null;
+if(from > to)
+

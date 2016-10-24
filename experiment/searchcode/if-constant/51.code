@@ -1,0 +1,10 @@
+ConstantDate constant = dao.findById(constant_name);
+
+if (constant == null) {
+constant = new ConstantDate(constant_name, constant_value,
+constant_desc);
+} else {
+constant.setConstantValue(constant_value);
+
+if (!&quot;&quot;.equals(constant_desc) &amp;&amp; constant_desc != null)
+

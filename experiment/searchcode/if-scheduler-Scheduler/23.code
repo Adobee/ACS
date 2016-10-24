@@ -1,0 +1,10 @@
+import org.quartz.Scheduler;
+import org.quartz.impl.StdSchedulerFactory;
+
+public class SimpleScheduler {
+private static Logger LOGGER = Logger.getLogger(SimpleScheduler.class);
+private void modifyScheduler(Scheduler scheduler) {
+try {
+if(!scheduler.isInStandbyMode()) {
+scheduler.standby();
+

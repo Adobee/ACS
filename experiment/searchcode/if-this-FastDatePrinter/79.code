@@ -1,0 +1,7 @@
+* @throws NullPointerException if pattern, timeZone, or locale is null.
+*/
+protected FastDatePrinter(final String pattern, final TimeZone timeZone, final Locale locale) {
+String value = cTimeZoneDisplayCache.get(key);
+if (value == null) {
+// This is a very slow call, so cache the results.
+

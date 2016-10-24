@@ -1,0 +1,8 @@
+public static PressureRangeAxis create(Pressure min, Pressure max) {
+PressureRangeAxis axis = new PressureRangeAxis();
+axis.setRange(min.get(), max.get());
+PressureRangeAxis axis = new PressureRangeAxis();
+axis.setAutoRange(true);
+axis.setAutoRangeIncludesZero(false);
+return axis;
+

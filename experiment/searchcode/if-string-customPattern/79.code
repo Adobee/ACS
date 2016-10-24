@@ -1,0 +1,7 @@
+Locale locale = getCurrencyLocale(pRequest, pResponse);
+
+// Is there custom format specified for the current locale?
+String customPattern = getCustomCurrencyPattern(locale.toString());
+
+if (!StringUtils.isEmpty(customPattern)){
+

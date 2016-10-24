@@ -1,0 +1,12 @@
+Hashtable numberPairs;
+
+RotorInner(Hashtable np) throws Exception{
+if(containsAllNumbers(np)){
+numberPairs = np;
+
+}else{
+private boolean containsAllNumbers(Hashtable np) {
+for(int i = 1; i<26; i++){
+if(np.containsKey(i)==false){
+return false;
+

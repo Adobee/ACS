@@ -1,0 +1,8 @@
+public void notifyIsLocked(final EObject instance) {
+if (shouldRefresh(instance))
+refreshEditMode();
+for (final EObject eObject : instances) {
+if (shouldRefresh(eObject)) {
+refreshEditMode();
+return;
+

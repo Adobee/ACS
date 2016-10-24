@@ -1,0 +1,11 @@
+public static boolean[] getPrimeNumber(int num) {
+
+boolean[] res = new boolean[num];
+for (int i = 2; i < num; ++i) {
+res[i] = true;
+}
+for (int i = 2; i < num; ++i) {
+
+if (res[i]) {
+for (int j = 2*i; j < num; j += i) {
+

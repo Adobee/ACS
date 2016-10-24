@@ -1,0 +1,11 @@
+import com.streamsets.pipeline.api.Stage;
+
+import java.util.List;
+
+public abstract class DStage<C extends Stage.Context> implements Stage<C> {
+public final List<ConfigIssue> init(Info info, C context) {
+if(stage == null) {
+stage = createStage();
+}
+return stage.init(info, context);
+

@@ -1,0 +1,17 @@
+int dy = y1 - y0;
+
+// Draw a vertical line
+if (dx == 0) {
+if (dy < 0) {
+x0 = x0 ^ x1;
+x1 = x0 ^ x1;
+x0 = x0 ^ x1;
+y0 = y0 ^ y1;
+}
+
+int x = x0;
+int y = y0;
+
+for (int i = 0; i <= x1 - x0; ++i) {
+if ((x + i) % (dash_length + 1) == 0)
+

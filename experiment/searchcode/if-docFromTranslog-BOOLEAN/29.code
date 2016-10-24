@@ -1,0 +1,6 @@
+/* fetched from translog is treated as an artificial document */
+if (docFromTranslog) {
+request.doc(get.source().source, false);
+termVectorsByField = generateTermVectorsFromDoc(indexShard, request, !docFromTranslog);
+// if no document indexed in shard, take the queried document itself for stats
+

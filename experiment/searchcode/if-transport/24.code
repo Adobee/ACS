@@ -1,0 +1,9 @@
+public void insertTransport() {
+FacesContext context = FacesContext.getCurrentInstance();
+
+if (dao.createTransport(this.addTransport)) {
+FacesContext context = FacesContext.getCurrentInstance();
+
+if (dao.updateTransport(this.addTransport)) {
+this.addTransportList = dao.transportList();
+

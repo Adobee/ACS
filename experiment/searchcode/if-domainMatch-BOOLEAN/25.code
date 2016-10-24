@@ -1,0 +1,10 @@
+return cookie.expiresAt() < System.currentTimeMillis();
+}
+
+private static boolean domainMatch(Cookie cookie, String urlHost) {
+return cookie.hostOnly()
+: domainMatch(urlHost, cookie.domain());
+}
+
+public static boolean domainMatch(String urlHost, String cookieDomain) {
+

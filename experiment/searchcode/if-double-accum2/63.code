@@ -1,0 +1,10 @@
+public void increment(final double d) {
+if (incMoment) {
+moment.increment(d);
+public double getResult() {
+
+if (moment.n < 3) {
+return Double.NaN;
+}
+double variance = moment.m2 / (moment.n - 1);
+

@@ -1,0 +1,13 @@
+protected int temps;
+Fenetre fen;
+boolean finGeree;
+
+/*---------Constructeur(s)---------*/
+
+public Chrono(Fenetre maFenetre){
+if(temps!=0){
+temps--;
+fen.impChrono(temps);
+}if(temps==0 &amp;&amp; !finGeree){
+fen.jeu.finPartie();
+

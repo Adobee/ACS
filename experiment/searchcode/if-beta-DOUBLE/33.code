@@ -1,0 +1,13 @@
+void add(double alpha, double beta, Vector b)
+{
+for(int i=0; i<size(); i++)
+values[i] = alpha*values[i]+beta*b.values[i];
+void set(double gamma, Vector c, double beta, SparseMatrix A, Vector b)
+{
+add(0.0, beta, A, b, gamma, c);
+}
+
+void assign(double alpha, Vector b)
+{
+if(size() != b.size()) resize(b.size());
+

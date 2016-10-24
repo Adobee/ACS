@@ -1,0 +1,5 @@
+private Request buildPostRequest(String requestKey, String url, RequestParams params) {
+FormBody.Builder formBuilder = new FormBody.Builder();
+for (Map.Entry<String, String> entry : params.getParams().entrySet()) {
+formBuilder.add(entry.getKey(), entry.getValue());
+

@@ -1,0 +1,12 @@
+double upper,
+double inverseCumAccuracy)
+throws NumberIsTooLargeException {
+super(rng);
+if (lower >= upper) {
+solverAbsoluteAccuracy = inverseCumAccuracy;
+}
+
+/** {@inheritDoc} */
+public double density(double x) {
+if (x < lower || x > upper) {
+

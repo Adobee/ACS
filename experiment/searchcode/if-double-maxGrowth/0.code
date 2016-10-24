@@ -1,0 +1,8 @@
+private double maxGrowth;
+private double maxDeath;
+private LinkedList<boolean[][]> worlds;
+private int prevPop;
+maxPop = max(maxPop,currentPop);
+if (prevPop>0){
+maxGrowth = max(maxGrowth, (double) (currentPop-prevPop)/prevPop);
+

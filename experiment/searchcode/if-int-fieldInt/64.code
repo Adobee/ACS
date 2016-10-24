@@ -1,0 +1,13 @@
+* Exists to get loaded in test cases. DO NOT CHANGE LINE NUMBERS!
+*
+* @author csallner@gatech.edu (Christoph Csallner)
+*/
+public class Loadee {
+
+/***/public int fieldInt = 0;
+
+/***/public Loadee() { /* Empty */ }
+
+/***/public Loadee(int p) {
+fieldInt = p;
+

@@ -1,0 +1,11 @@
+labels[i]=net.allNodes.objs[i].toString();
+return labels;
+}
+
+// must be called BEFORE degreeDistributionLabels
+int maxDegree;
+Bag b = (out ? ioi.out : ioi.in);
+int d = (b==null)? 0: b.numObjs;
+data[k]= d;
+if(d>maxDegree) maxDegree = d;
+

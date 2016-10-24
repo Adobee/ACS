@@ -1,0 +1,12 @@
+public void start(long curr, long interval, boolean immediate) {
+this.interval = interval;
+if(immediate) {
+this.nextTime = curr;
+* @param curr
+* @return
+*/
+public boolean isOnce(long curr) {
+//未初始化或已停止
+if(interval == -1) {
+return false;
+

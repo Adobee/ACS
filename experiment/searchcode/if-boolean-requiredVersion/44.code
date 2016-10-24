@@ -1,0 +1,8 @@
+ZipEntry ent;
+ent = file.getNextEntry();
+while (ent != null) {
+if (ent.getName().contains(&quot;Minecraft.class&quot;)) {
+public boolean shouldUpdate(String jarFilePath) {
+String requiredVersion = ModPack.getSelectedPack().getMcVersion();
+if (Settings.getSettings().isForceUpdateEnabled()) {
+

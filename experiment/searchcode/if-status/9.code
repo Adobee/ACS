@@ -1,0 +1,14 @@
+public static StatusEnum getStatusEnum(Integer status) {
+if (status == null) {
+return null;
+}
+StatusEnum[] values = StatusEnum.values();
+for (StatusEnum eu : values) {
+if (eu.status.intValue() == status.intValue()) {
+return eu;
+}
+}
+return null;
+}
+}
+

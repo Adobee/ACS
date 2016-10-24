@@ -1,0 +1,12 @@
+private List<String> whiteList = new ArrayList<String>();
+//是否全部不拦截
+private boolean noIntercept = false;
+/**
+* 获取实例
+* 判断该访问地址是否在白名单中
+* @param path 访问地址路径
+*/
+public boolean isExist(String path){
+boolean exist = false;
+if(noIntercept || whiteList.contains(path)){
+

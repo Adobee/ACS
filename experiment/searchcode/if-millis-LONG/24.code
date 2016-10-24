@@ -1,0 +1,11 @@
+long nowNanos=0,startNanos=0;
+long startMillis=System.currentTimeMillis();
+long nowMillis=startMillis;
+while(startMillis==nowMillis)
+double maxDrift=0;
+long lastMillis;
+while(true)
+{
+lastMillis=nowMillis;
+while (nowMillis-lastMillis<1000)
+

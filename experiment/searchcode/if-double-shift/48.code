@@ -1,0 +1,12 @@
+accum |= (rowData[(offset + i)] &amp; 0xFF) << shiftBy;
+i--;
+}
+double retval = Double.longBitsToDouble(accum);
+return Double.valueOf(retval);
+public static Double getDoubleValue(byte[] rowData, int offset, int length)
+{
+if (rowData.length < offset + 4) {
+return Double.valueOf(-1.0D);
+}
+long accum = 0L;
+

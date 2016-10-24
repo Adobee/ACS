@@ -1,0 +1,12 @@
+int[] failure = computeFailure(pattern);
+
+int j = 0;
+if (data.length() == 0)
+return -1;
+
+for (int i = 0; i < data.length(); i++) {
+int patternSize = pattern.length();
+int[] kmpPrefix = new int[patternSize];
+int prefixPos = 0;
+int suffixPos = 1;
+

@@ -1,0 +1,6 @@
+private void validate(String localTime) {
+LocalTimeValidator validator = new LocalTimeValidator();
+if (!validator.validate(localTime))
+StringTokenizer stringTokenizer = new StringTokenizer(localTime, &quot;:&quot;);
+this.hour = new Hour(Integer.parseInt(stringTokenizer.nextToken()));
+

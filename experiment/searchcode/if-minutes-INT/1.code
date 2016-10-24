@@ -1,0 +1,11 @@
+minutes = new HashMap<Integer, Minutes>();
+}
+
+Minutes retrieveMinutes(int numeral) {
+
+Minutes result = this.getMinutes(numeral);
+
+if (result == null) {
+result = new Minutes(numeral);
+this.addMinutes(numeral, result);
+

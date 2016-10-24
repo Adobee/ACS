@@ -1,0 +1,12 @@
+private long timeout;
+private boolean isTimeout = true;
+public static final int CALLBACK_NONE = -1;
+public static final int CALLBACK_TIMEOUT_ENDLESS = 0;
+this.timeout = timeout;
+}
+
+public synchronized String waitBack() {
+try {
+if (timeout >= 0) {
+wait(timeout);
+

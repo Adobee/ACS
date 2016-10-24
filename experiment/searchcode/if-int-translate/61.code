@@ -1,0 +1,8 @@
+public List<ProductBaseTranslate> getAllTranslatePaged(int page,
+int pageSize,int websiteId) {
+return productbTranslateMapper.getPagedAllTranslate(page * pageSize,
+pageSize,websiteId);
+}
+
+public int getAllTranslateCount(Integer websiteId) {
+

@@ -1,0 +1,14 @@
+private Reference reference;
+
+public ReferenceFilter(Reference reference) {
+this.reference = reference;
+}
+
+public boolean matches(Reference reference) {
+if (this.reference == null) {
+return null == reference;
+}
+return this.reference.equals(reference);
+}
+}
+

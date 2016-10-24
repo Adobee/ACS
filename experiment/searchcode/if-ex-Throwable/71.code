@@ -1,0 +1,9 @@
+public class DefaultExceptionHandler implements ExceptionHandler {
+
+@Override
+public void handleEventException(Throwable ex, long sequence, Object event)
+{
+ex.printStackTrace();
+if(event instanceof Fallible) {
+((Fallible)event).setFailed(ex);
+

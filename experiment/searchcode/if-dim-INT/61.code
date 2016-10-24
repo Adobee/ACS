@@ -1,0 +1,13 @@
+public VoxelGradient getGradient(int x, int y, int z) {
+return data[x + dimX * (y + dimY * z)];
+}
+
+
+public void setGradient(int x, int y, int z, VoxelGradient value) {
+public VoxelGradient getVoxel(int i) {
+return data[i];
+}
+
+public int getDimX() {
+return dimX;
+

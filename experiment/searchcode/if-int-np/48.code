@@ -1,0 +1,7 @@
+public TreeNode buildTree(int[] inorder, int[] postorder) {
+int np =postorder.length;
+int ni= inorder.length;
+private TreeNode build(int[] postorder, int sp, int np, int[] inorder, int si, int ni) {
+if(sp>np||si>ni) return null;
+int i =si;                  //i 是指inorder坐标系内， 不能直接用于post坐标系。最好用绝对值
+

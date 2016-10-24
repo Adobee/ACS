@@ -1,0 +1,6 @@
+for (Annotation annotation : attribute.getAttrAnnotations()) {
+if (FillBoolean.class.isAssignableFrom(annotation.getClass())) {
+public Boolean fillWith(AttributeInfo attribute) {
+FillBoolean filling = getFilling(attribute);
+if (filling == null) {
+

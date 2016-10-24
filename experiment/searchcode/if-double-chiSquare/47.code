@@ -1,0 +1,10 @@
+* OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+* EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*
+* @version     1.3, 28 Jan 2005
+* @author      John Miller, Zhiwei Zhang
+chi1   = new ChiSquare (m, i);
+chi2   = new ChiSquare (n, i);
+
+params [0] = new Double (n);
+

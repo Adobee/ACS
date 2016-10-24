@@ -1,0 +1,7 @@
+*  You should have received a copy of the GNU General Public License
+*  along with OSMNavigation.  If not, see <http://www.gnu.org/licenses/>.
+public int compare(final Node stepA, final Node stepB) {
+
+double a = getMetric(stepA);
+double b = getMetric(stepB);
+

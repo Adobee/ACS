@@ -1,0 +1,7 @@
+List<ExistingConditionDetail> existingConditionDetailList = existingConditionDetailDAO.findByExistingCreditFacility(existingCreditFacility);
+if(existingConditionDetailList!=null &amp;&amp; existingConditionDetailList.size()>0){
+existingConditionDetailDAO.delete(existingConditionDetailList);
+}
+
+if(existingCreditFacilityView.getExistingConditionDetailViewList()!=null &amp;&amp; existingCreditFacilityView.getExistingConditionDetailViewList().size() > 0) {
+

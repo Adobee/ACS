@@ -1,0 +1,8 @@
+long[][] field = new long[n + 2][n + 1];
+if (n == 0)
+return field;
+int l = n + 1;
+field[0][0] = 1;
+for (int i = 1; i <= l; i++) {
+field[i][0] = 1;
+

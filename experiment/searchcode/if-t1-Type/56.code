@@ -1,0 +1,7 @@
+StringBuilder sql = new StringBuilder(&quot;SELECT t1.*, t2.total_num, IFNULL(t3.cdate,&#39;&#39;) last_date FROM (SELECT t1.id, t1.cdate, t1.language, t1.app_id, t1.user_id, t1.batch_id, t1.cps_income, SUM(t1.down_num) down_num, t1.pub_status, t1.nickname, t1.cps_divide_ratio FROM (SELECT CAST(CONCAT(t1.language, &#39;_&#39;, t1.app_id, &#39;_&#39;, t1.user_id, &#39;_&#39;, t1.batch_id) AS CHAR) id, DATE_FORMAT(t1.cdate,&#39;%Y-%m-%d&#39;) cdate, t1.language, t1.app_id, t1.user_id, t1.batch_id, t1.cps_income, t1.down_num, t1.pub_status, t2.nickname, t3.cps_divide_ratio FROM t_cps_income t1 LEFT JOIN sso.permit_user t2 ON t1.user_id = t2.user_id LEFT JOIN t_partners_income_conf t3 ON t1.user_id = t3.user_id WHERE t1.user_type = 4&quot;);
+List<Object> plist = new ArrayList<Object>();
+if (mu.isBlank(para.get(&quot;pubStatus&quot;))) {
+sql.append(&quot;) t1 GROUP BY t1.id) t1 LEFT JOIN (SELECT t1.app_id, t1.language, SUM(t1.down_num) total_num FROM t_cps_income t1 WHERE t1.user_type = 4&quot;);
+if (mu.isNotBlank(para.get(&quot;pubStatus&quot;))) {
+sql.append(&quot; AND t1.pub_status = ?&quot;);
+

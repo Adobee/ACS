@@ -1,0 +1,6 @@
+protected boolean leftOf(Bound<T> bound, T value) {
+if (value.compareTo(bound.bound()) > 0) {
+return false;
+}
+if (value.compareTo(bound.bound()) == 0 &amp;&amp; bound.type() == BoundType.Open) {
+

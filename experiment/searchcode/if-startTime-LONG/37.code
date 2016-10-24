@@ -1,0 +1,11 @@
+private long totalTime = 0;
+private long startTime = -1;
+
+public synchronized void startRecordingTime() {
+startTime = -1;
+}
+
+synchronized long getTotalTime() {
+long add = 0;
+if (startTime != -1) add = System.currentTimeMillis() - startTime;
+

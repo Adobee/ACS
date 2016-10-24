@@ -1,0 +1,18 @@
+public class Vote implements Comparable<Vote>{
+Voter voter;
+double distance;
+
+public Vote(Voter voter, double distance) {
+super();
+this.voter = voter;
+public int compareTo(Vote v) {
+
+double d = v.getDistance();
+if (this.distance < d) {
+return -1;
+} else {
+return 1;
+}
+}
+}
+

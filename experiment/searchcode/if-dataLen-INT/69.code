@@ -1,0 +1,10 @@
+char[] data    = s.toString().toLowerCase().toCharArray();
+int dataLen    = data.length;
+while (dataLen > 0) {
+if (!this.ignore(data[dataLen - 1]))
+output.add((byte) ((b7 << 5) | b8));
+}
+
+if (data[dataLen - 6] == &#39;=&#39;) {
+output.add((byte) (((decoding[data[dataLen - 8]]) << 3) | (decoding[data[dataLen - 7]] >> 2)));
+

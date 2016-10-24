@@ -1,0 +1,6 @@
+super(i_worldServer, i_player, i_worldHistory, i_undoSequenceNumber);
+currentStage = ActionStage.SETUP;
+AsynchronousToken token = worldHistory.performComplexUndoAsynchronous(entityPlayerMP, worldServer, transactionToUndo);  // repeat for any other undo
+if (token == null) {
+currentStage = ActionStage.COMPLETE;
+

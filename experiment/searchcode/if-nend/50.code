@@ -1,0 +1,14 @@
+nEnd = sCurrentLine.indexOf(&quot;,&quot;, nStart)-1;
+if (nEnd < 0)
+{
+nEnd = sCurrentLine.length()-1;
+}
+
+if(nEnd >= nStart)
+nStart = sCurrentLine.indexOf(&quot;,&quot;, nStart)+1;
+}
+
+if (nEnd >= sCurrentLine.length()-1)
+{
+nStart = -1;
+

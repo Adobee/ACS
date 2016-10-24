@@ -1,0 +1,7 @@
+public Call createGet(String url, Map<String, String> urlParams) {
+
+HttpUrl.Builder urlBuilder = HttpUrl.parse(url).newBuilder();
+if (urlParams != null) {
+for (Map.Entry<String, String> params : urlParams.entrySet()) {
+urlBuilder.addQueryParameter(params.getKey(), params.getValue());
+

@@ -1,0 +1,9 @@
+/*   5: 32 */   JAVA_0_9(1.5F, &quot;0.9&quot;),  JAVA_1_1(1.1F, &quot;1.1&quot;),  JAVA_1_2(1.2F, &quot;1.2&quot;),  JAVA_1_3(1.3F, &quot;1.3&quot;),  JAVA_1_4(1.4F, &quot;1.4&quot;),  JAVA_1_5(1.5F, &quot;1.5&quot;),  JAVA_1_6(1.6F, &quot;1.6&quot;),  JAVA_1_7(1.7F, &quot;1.7&quot;),  JAVA_1_8(1.8F, &quot;1.8&quot;);
+/*   6:    */
+/*   7:    */   private float value;
+/*   8:    */   private String name;
+/*   9:    */
+/*  10:    */   private JavaVersion(float value, String name)
+/*  11:    */   {
+/*  12: 90 */     this.value = value;
+

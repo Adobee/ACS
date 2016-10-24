@@ -1,0 +1,12 @@
+int myY = pressed.gety();
+int currX = myX;
+int currY = myY;
+
+currY++;
+if (currY < 8)
+while (boardState[currY][currX].getColor() == otherColor &amp;&amp; currY < 7) {
+currY++;
+}
+if (currY < 8) {
+if (boardState[currY][currX].getColor() == currColor) {
+

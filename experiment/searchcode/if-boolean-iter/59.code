@@ -1,0 +1,14 @@
+return innerIter.next();
+}
+
+public boolean hasNext() {
+if(innerIter.hasNext()){
+return true;
+}
+
+if(!outterIter.hasNext()){
+return false;
+}
+
+innerIter = outterIter.next().iterator();
+

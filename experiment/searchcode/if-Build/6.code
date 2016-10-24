@@ -1,0 +1,9 @@
+public BuildTO(String buildInfo) {
+String pVersaoBuild = StringUtil.separaTexto(buildInfo, &quot; - &quot;, 1);
+if (pVersaoBuild.startsWith(&quot;Version &quot;)) {
+versaoBuild = pVersaoBuild;
+}
+
+String pDataBuild = StringUtil.separaTexto(buildInfo, &quot; - &quot;, 2);
+if (pDataBuild.indexOf(&quot; h&quot;) != -1) {
+

@@ -1,0 +1,8 @@
+private static ByteBuffer sendbuffer = ByteBuffer.allocate(blockSize);//ByteBuffer没有构造函数，直接使用静态的方法allocate()创建一个指定大小的缓冲实例
+client.register(selector, SelectionKey.OP_WRITE);
+
+}
+}
+if(selectionKey.isWritable()){
+sendbuffer.clear();
+

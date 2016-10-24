@@ -1,0 +1,8 @@
+for (int sz = 1; sz < N; sz += sz) {
+for (int firstIndex = 0; firstIndex < N - sz; firstIndex += sz + sz) {
+System.arraycopy(a, firstIndex, aux, firstIndex, lastIndex-firstIndex+1);// 数组复制
+
+for (int k = firstIndex; k <= lastIndex; k++) {
+if (i > midIndex) {
+a[k] = aux[j++];
+

@@ -1,0 +1,14 @@
+for (int i = a.length - 1; count >= 0; i--)
+if(a[i] == min)
+c[count--] = i;
+return c;
+}
+
+public static int max(int a, int b){
+return a > b ? a : b;
+}
+
+public static int max(int a, int b, int c){
+int max = a;
+if(b > max) max = b;
+

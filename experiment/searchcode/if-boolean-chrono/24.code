@@ -1,0 +1,9 @@
+protected IntMap<ChronoField> fields = new IntMap<>(new EnumMap<ChronoField,IntReference>(ChronoField.class));
+protected Clock clock;
+protected boolean needCalc;
+public boolean isSupported(TemporalField field)
+{
+if (field instanceof ChronoField)
+{
+ChronoField chronoField = (ChronoField) field;
+

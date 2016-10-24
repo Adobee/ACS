@@ -1,0 +1,9 @@
+public static final InternedEncoding UTF_8 = intern(&quot;UTF-8&quot;);
+
+public static InternedEncoding intern(String encoding) {
+if (encoding == null) {
+encoding = internEncodingName(encoding);
+InternedEncoding interned = INTERNED.get(encoding);
+if (interned != null) {
+return interned;
+

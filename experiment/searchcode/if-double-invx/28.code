@@ -1,0 +1,11 @@
+ft.play();
+}
+
+public void changeSize(final double newr) {
+if(Math.abs(getR() - newr) < 0.1) return;
+public void changePosition(double x, double y) {
+if(index != 0){
+return;
+}
+final double invx = (x - getX()) / ANIMATIONINV;
+

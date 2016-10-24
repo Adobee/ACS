@@ -1,0 +1,8 @@
+private Loger loger = Loger.getInstanse();
+
+public int insert(CascadeOrder cascadeOrder){
+OrderDao orderDao = new OrderDaoImpl();
+OrderItemDao orderItemDao = new OrderItemDaoImpl();
+
+int orderId = orderDao.insert(cascadeOrder);
+

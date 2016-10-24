@@ -1,0 +1,7 @@
+protected Class<EstimateConfig> getDomainClass() {
+return EstimateConfig.class;
+}
+public boolean updateConfirmField(long estimateConfigId,boolean status){
+Session session = getSession();
+String hql=&quot;update &quot;+domainClass.getName()+&quot; e  set e.confirm =:status where e.id =:estimateConfigId  &quot;;
+

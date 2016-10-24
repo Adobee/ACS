@@ -1,0 +1,11 @@
+assert a != null;
+AbstractBlock<?> dominator = a;
+int i = 0;
+while (dominator != null) {
+if (i++ == Integer.MAX_VALUE) { // For safety
+static AbstractBlock<?> commonDominator(AbstractBlock<?> a, AbstractBlock<?> b) {
+if (a == null) {
+return b;
+}
+if (b == null) {
+

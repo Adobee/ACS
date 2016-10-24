@@ -1,0 +1,7 @@
+double minRatio = Double.MAX_VALUE;
+Integer minRatioPos = null;
+for (int i = table.getNumObjectiveFunctions(); i < table.getHeight(); i++) {
+// set the rest of the pivot column to 0
+for (int i = 0; i < table.getHeight(); i++) {
+if (i != pivotRow) {
+

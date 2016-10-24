@@ -1,0 +1,10 @@
+int lowerBound = 0;
+int upperBound = a.length;
+while(a[i] != value){
+if(a[i] < value){
+i = i+upperBound/2
+int upperBound = a.length;
+int i = a.length/2;
+if(a[i] == value){return i;}
+else{rbsearch(lowerBound,upperBound)}
+

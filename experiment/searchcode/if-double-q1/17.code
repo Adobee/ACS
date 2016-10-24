@@ -1,0 +1,9 @@
+public Quaternion(Matrix4f mat)
+{
+double T = 1 + mat.m00 + mat.m11 + mat.m22;
+if( T > 0.00000001 ) //to avoid large distortions!
+public final void mul(Quaternion q1, Quaternion q2)
+{
+if (this != q1 &amp;&amp; this != q2) {
+this.w = q1.w*q2.w - q1.x*q2.x - q1.y*q2.y - q1.z*q2.z;
+

@@ -1,0 +1,9 @@
+public void start() throws IOException {
+if(t == null) {
+t = new Thread(this);
+t.start();
+mSocket.updateTimestamp(ts);
+
+if(frameLength - sum > MAXPACKETSIZE - RTP_HEADER_LENGTH - 4) {
+length = MAXPACKETSIZE - RTP_HEADER_LENGTH - 4;
+

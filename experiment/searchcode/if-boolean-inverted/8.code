@@ -1,0 +1,11 @@
+private NETSignal signal;
+private boolean inverted;
+
+public NETSignalOccurence(NETSignal signal, boolean inverted) {
+this.signal = signal;
+return getWrittenForm();
+}
+public String getWrittenForm() {
+if (signal == null) return &quot;--&quot;;
+if (inverted) return (&quot;/&quot; + signal.getNormalizedName()); else return signal.getNormalizedName();
+

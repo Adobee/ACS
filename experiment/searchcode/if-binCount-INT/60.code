@@ -1,0 +1,14 @@
+* @author bob
+*
+*/
+public class GEHH extends StatsCollectorAdapter {
+private String name;
+private int binCount=10;
+public GEHH(String n,String binCount){
+this(n);
+this.binCount=Integer.parseInt(binCount);
+}
+
+@Override
+public double[] collectStatsImp(SegmentEventRecoder recorder) {
+

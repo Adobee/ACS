@@ -1,0 +1,16 @@
+public SumLogic(int n, int c){
+this.n=n;
+this.c=c;
+}
+
+public double findSum(){
+double sum=0;
+for(int i=1;i<=this.n;i++){
+public double getSum(int i){
+double sum=1;
+
+if(i==1){
+return 0;
+}else if(i-1>this.c){
+for(int j=i-1;j>=i-c;j--){
+

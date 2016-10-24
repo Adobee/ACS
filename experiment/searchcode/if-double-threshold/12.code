@@ -1,0 +1,20 @@
+public class ChebyshevMetric extends AbstractMetric<DoubleDescriptor> {
+private double threshold;
+
+public ChebyshevMetric() {
+threshold = Double.POSITIVE_INFINITY;
+double d = Math.abs(xdata[i] - ydata[i]);
+
+if (d > max)
+max = d;
+}
+
+return max;
+}
+
+
+public void setThreshold(double threshold) {
+this.threshold = threshold;
+}
+}
+

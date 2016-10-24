@@ -1,0 +1,7 @@
+splunkEvent.addEventObject(&quot;Field1&quot;, &quot;Value1&quot;);
+splunkEvent.addEventObject(&quot;FieldInt&quot;, 123);
+
+// Check event fields
+assertTrue(&quot;Field1 value should be equal to Value1&quot;, &quot;Value1&quot;.equals(eventObject.remove(&quot;Field1&quot;)));
+assertTrue(&quot;FieldInt value should be int value and be equal to 123&quot;, (int) eventObject.remove(&quot;FieldInt&quot;) == 123);
+

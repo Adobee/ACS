@@ -1,0 +1,15 @@
+lastInput=0;
+lastChar=&#39;a&#39;;
+currChar=&#39;a&#39;;
+}
+
+public int getKey(){
+currInput = Keyboard.getEventKey();
+if(currInput!=lastInput)
+return currInput;
+}
+
+public char getChar(){
+currChar = Keyboard.getEventCharacter();
+if(currChar!=lastChar)
+

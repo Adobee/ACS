@@ -1,0 +1,12 @@
+public class JavaFileComparer extends FileComparer {
+
+protected boolean skipLine (String line) {
+if (super.skipLine(line))
+return true;
+if (line.matches(&quot;^\\s*//.*$&quot;))
+return true;
+return false;
+}
+
+protected boolean skipRegionStart (String line) {
+

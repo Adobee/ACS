@@ -1,0 +1,10 @@
+
+public class MinimumPathSum_64_solution1 {
+
+public int minPathSum(int[][] grid) {
+if (grid == null || grid.length == 0 || grid[0].length == 0) {
+int nRow = grid.length;
+int nCol = grid[0].length;
+int[][] result = new int[nRow][nCol];
+result[0][0] = grid[0][0];
+

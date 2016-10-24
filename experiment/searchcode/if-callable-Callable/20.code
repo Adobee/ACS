@@ -1,0 +1,14 @@
+package homeWork12;
+
+
+import java.util.concurrent.Callable;
+
+public class Task<T> {
+private Callable<? extends T> callable;
+public Task(Callable<? extends T> callable) {
+this.callable = callable;
+}
+
+public T get() {
+if (result == null){
+

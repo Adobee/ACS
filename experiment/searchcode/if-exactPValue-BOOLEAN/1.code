@@ -1,0 +1,10 @@
+T=2*(sumC-sumQ)/(double)(n*(n-1));
+
+//compute exact p-value
+if((n>2)&amp;&amp;(n<11)){
+exactPValue=distribution.computeExactProbability((int)n,T);
+}
+else{
+if((n>10)&amp;&amp;(n<31)){
+exactPValue=distribution.computeApproximatedProbability((int)n,T);
+

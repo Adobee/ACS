@@ -1,0 +1,15 @@
+public abstract class AbstractFreeTextFilter<T> implements SortFilter<T> {
+
+protected String filterValue;
+
+protected SortMode sortMode;
+
+
+protected AbstractFreeTextFilter() {
+filterValue = &quot;&quot;;
+sortMode = SortMode.Unsorted;
+}
+
+@Override
+public SortMode getSortMode() {
+

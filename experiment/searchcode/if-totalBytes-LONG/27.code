@@ -1,0 +1,14 @@
+private static final long serialVersionUID = 1L;
+private int max;
+private long totalBytes = 0;
+
+public LimitedArrayList(int max){
+super(max);
+this.max = max;
+Object rem = this.remove(max-1);
+if(rem instanceof byte[]){
+totalBytes -= ((byte[])rem).length;
+}
+}
+if(o instanceof byte[]){
+

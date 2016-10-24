@@ -1,0 +1,10 @@
+public void applyInPlace(FastBitmap fastBitmap) {
+
+if(fastBitmap.isGrayscale()){
+
+double[][] diff = fastBitmap.toMatrixGrayAsDouble();
+int h = diff.length;
+int w = diff[0].length;
+
+double[][] deltaN = new double[h][w];
+

@@ -1,0 +1,6 @@
+Log.d(&quot;AutoStart.Intent&quot;, intent.getAction().toString());
+Log.d(&quot;AutoStart&quot;, Intent.ACTION_BOOT_COMPLETED);
+if (intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED) &amp;&amp; Preferences.readBooleanFromPreferences(context, context.getString(R.string.UPDATE), true)) {
+handler.removeVP(new HWGrade(Preferences.readStringFromPreferences(context, context.getString(R.string.PREF_FILE_NAME), &quot;NULL&quot;)));
+if (Preferences.readBooleanFromPreferences(context, context.getString(R.string.DEVELOPER_MODE), false)) {
+

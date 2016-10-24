@@ -1,0 +1,8 @@
+public Object convertToJdbc(Connection connection, RunnerContext runnerContext, String name, Object value) {
+if (value == null || (value instanceof String &amp;&amp; ((String) value).trim().length()==0))
+return new Timestamp(((Number) v).longValue());
+
+String vStr = v.toString();
+
+String customPattern = typesFacade.getCustomDatePattern();
+

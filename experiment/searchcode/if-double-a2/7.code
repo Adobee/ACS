@@ -1,0 +1,12 @@
+public double a1,
+a2;
+
+public VectorColumn_2() {}
+
+public VectorColumn_2(double[] a)
+{
+if(a != null &amp;&amp; a.length == 2)
+{
+a1 = a[0];
+a2 = a[1];
+

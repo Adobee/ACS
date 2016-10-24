@@ -1,0 +1,10 @@
+public void load(ImmutableConfiguration cfg, boolean resetChanged)
+{
+try
+{
+property.set(cfg.getBoolean(key));
+if (resetChanged)
+public void save(Configuration cfg, boolean resetChanged)
+{
+cfg.setProperty(key, property.get());
+

@@ -1,0 +1,11 @@
+private boolean sendCmd = true;
+private boolean registed = false;
+private boolean includeT2 = false;
+private boolean remoteRegisted = false;
+private boolean encrypted = false;
+private boolean resv = false;
+
+public Flag unpack(byte flag) {
+if ((flag &amp; 1) == 1) {
+needReply = true;
+

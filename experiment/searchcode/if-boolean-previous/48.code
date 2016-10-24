@@ -1,0 +1,12 @@
+update();
+SmartDashboard.putBoolean(&quot;current&quot;, current);
+SmartDashboard.putBoolean(&quot;previous&quot;, previous);
+if (current &amp;&amp; (!previous)) {
+return true;
+}
+return false;
+}
+
+public boolean isToggled() {
+if (isBumped()) {
+

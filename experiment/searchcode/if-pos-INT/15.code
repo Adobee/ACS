@@ -1,0 +1,9 @@
+public class Solution {
+public int removeDuplicates(int[] A) {
+if(A == null){
+return n;
+}
+int pos = 2;
+for(int i=2; i<n; i++){
+if(A[i]!=A[pos-1] || A[i]!=A[pos-2]){
+

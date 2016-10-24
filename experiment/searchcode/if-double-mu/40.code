@@ -1,0 +1,19 @@
+private static final long serialVersionUID = -4799360517803678236L;
+/**
+* location
+*/
+private double mu;
+/*
+* Scale
+*/
+private double b;
+
+public Laplace(double mu, double b)
+return mu;
+}
+
+public void setB(double b)
+{
+if (b <= 0)
+throw new ArithmeticException(&quot;The scale parameter must be > 0&quot;);
+

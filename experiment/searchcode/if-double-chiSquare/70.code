@@ -1,0 +1,11 @@
+* Representation of TOA minimization function (&#39;minim_TOA&#39; from IDL breadboard)
+*
+* @author olafd
+*/
+public class ToaMinimization implements MvFunction {
+private double[] chiSquare;
+this.visOld = visOld;
+
+chiSquare = new double[ScapeMConstants.NUM_REF_PIXELS];
+lpwInt = new double[ScapeMConstants.L1_BAND_NUM];
+

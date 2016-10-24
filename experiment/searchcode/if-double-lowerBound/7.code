@@ -1,0 +1,9 @@
+public Double runMTDF ( Map<Node, Node> root, Double f, Double d ) {
+double g = f;
+double upperBound = Double.MAX_VALUE;
+double lowerBound = Double.MIN_VALUE;
+
+double beta = 0;
+while ( lowerBound < upperBound ) {
+if ( g == lowerBound ) {
+

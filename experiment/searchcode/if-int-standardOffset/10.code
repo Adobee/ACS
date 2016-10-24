@@ -1,0 +1,10 @@
+public Object getAny(int idx) {
+if (this.any == null) {
+throw new IndexOutOfBoundsException();
+}
+return this.any.get(idx);
+}
+
+public int getAnyLength() {
+if (this.any == null) {
+

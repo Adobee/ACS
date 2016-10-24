@@ -1,0 +1,13 @@
+permute(a, 0, a.length - 1);
+}
+
+private static void permute(int a[], int start, int end) {
+if (start == end) {
+for (int i = 0; i < a.length; i++) {
+return;
+}
+int temp;
+for (int i = start; i <= end; i++) {
+if (i != start) {
+temp = a[i];
+

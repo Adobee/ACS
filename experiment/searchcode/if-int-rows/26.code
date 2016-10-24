@@ -1,0 +1,15 @@
+assertEquals(7, rows * page - rows + 1);
+assertEquals(9, rows * page);
+
+page = 4;
+int end = rows * page;
+if (end > allCount) {
+assertEquals(8, rows * page);
+
+page = 5;
+int end = rows * page;
+if (end > allCount) {
+end = allCount;
+}
+assertEquals(9, rows * page - rows + 1);
+

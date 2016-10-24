@@ -1,0 +1,10 @@
+formatter = new DateTimeFormatterBuilder()
+.append(ISODateTimeFormat.date().getParser())
+.appendOptional(new DateTimeFormatterBuilder()
+.appendLiteral(&#39; &#39;)
+.append(ISODateTimeFormat.hourMinuteSecond()).toParser())
+.toFormatter();
+return formatter.withZoneUTC();
+}
+}
+

@@ -1,0 +1,7 @@
+List<Problem> problemList = getProblemsByMajorAndSub(problem.getMajorCode(), problem.getSubjectCode());
+boolean existed = false;
+if(problemList != null) {
+for(Problem problem1 : problemList) {
+if(problem1.getId() == problem.getId()) {
+problem1 = problem;
+

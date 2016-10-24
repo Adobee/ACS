@@ -1,0 +1,14 @@
+private Map<Integer, T> map;
+
+private Map<Integer, Integer> keyIndex;
+
+private int cursor;
+
+public SparseArray(int ca) {
+return map.get(keyAt(index));
+}
+
+public int keyAt(int index) {
+for (Integer key : keyIndex.keySet())
+if (keyIndex.get(key).intValue() == index) return key;
+

@@ -1,0 +1,9 @@
+List<Question1> q1List = questionBiz.getEntitiesByTwoColumn(Question1.class, &quot;org&quot;, org, &quot;year&quot;, year);
+if (q1List != null &amp;&amp; q1List.size() > 0) {
+q1 = q1List.get(0);
+q1.setCreateDate(new Date());
+q1.setYear(year);
+questionBiz.saveOrUpdateEntity(q1);
+}
+if(q1.getStatus()!=null &amp;&amp; q1.getStatus().equals(1) ){
+

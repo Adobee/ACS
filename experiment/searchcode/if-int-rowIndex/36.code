@@ -1,0 +1,13 @@
+for (int columnIndex = 0; columnIndex < dimension; columnIndex++) {
+
+int referenceIndex = columnIndex - offset;
+int rowIndex = referenceIndex;
+&amp;&amp; matrix.getElementAt(rowIndex, columnIndex).isZero()) {
+
+rowIndex++;
+}
+
+if (rowIndex < dimension &amp;&amp; rowIndex != columnIndex) {
+
+matrix = matrix.swapRows(rowIndex, columnIndex);
+

@@ -1,0 +1,10 @@
+public class Solution {
+public int countDigitOne(int n) {
+int ret = 0;
+if (n <= 0)
+long b = n % i;
+long c = (n % (i * 10)) / i;
+if (c < 1) {
+ret += a * i;
+} else if (c > 1) {
+

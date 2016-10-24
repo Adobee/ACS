@@ -1,0 +1,8 @@
+* @throws ConvergenceException if the algorithm fails to converge.
+*/
+public double evaluate(double x) throws ConvergenceException {
+final double b = getB(n, x);
+
+double dN = a + b * dPrev;
+if (Precision.equals(dN, 0.0, small)) {
+

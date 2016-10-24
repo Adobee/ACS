@@ -1,0 +1,10 @@
+return null;
+}
+int nvm = nvars - 1;
+base_pos = r.length - (nvm - in) * (nvm - in + 1) / 2;
+if (d[in] > 0.0) {
+int next;
+int i;
+int l;
+if (list.length < 1 || list.length > nvars + 1 - pos1) {
+

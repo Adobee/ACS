@@ -1,0 +1,9 @@
+public void solve(int testNumber, InputReader in, OutputWriter out) {
+int count = in.readInt();
+int maxPower = in.readInt();
+int[] values = IOUtils.readIntArray(in, count);
+for (int i = 1; i <= 1000000; i++) {
+if ((current + countPerPower[i]) * i > maxPower) {
+if (current != 0)
+times++;
+

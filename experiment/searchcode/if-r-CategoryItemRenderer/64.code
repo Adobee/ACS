@@ -1,0 +1,9 @@
+import org.jfree.chart.renderer.category.BarRenderer;
+import org.jfree.chart.renderer.category.CategoryItemRenderer;
+import org.jfree.data.category.CategoryDataset;
+public static BufferedImage getGraph(String[] groups, String[] dates, double[][] values, String title)
+{
+if (groups.length != values.length)
+{
+throw new RuntimeException(&quot;Not enough group titles for the amount of data groups supplied&quot;);
+

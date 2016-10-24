@@ -1,0 +1,10 @@
+public static int ps(int[] A) {
+if (A.length == 0 || A.length == 1)
+return 0;
+
+List<Integer> seen = new ArrayList<Integer>();
+
+for (int i = 0; i < A.length; i++) {
+if (!seen.contains(A[i]))
+seen.add(A[i]);
+

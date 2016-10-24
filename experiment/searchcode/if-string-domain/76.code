@@ -1,0 +1,11 @@
+private static final long serialVersionUID = -6268415080685362463L;
+protected String domain;
+protected String oldDomain;
+
+public DomainHistoryItem() {
+this(target.getID(), (target.getDomain() == null ? null : target
+.getDomain().getID()), (domain == null ? null : domain.getID()));
+}
+
+public DomainHistoryItem(String target, String oldDomain, String domain) {
+

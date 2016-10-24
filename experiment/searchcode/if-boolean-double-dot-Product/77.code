@@ -1,0 +1,8 @@
+private VectorMath() { }
+
+public static double dotProduct( Vector3D a, Vector3D b ) {
+return a.x * b.x + a.y * b.y + a.z * b.z;
+public static void reflect( Vector3D v, Vector3D across, Vector3D dest ) {
+double dot = dotProduct( v, across );
+dest.x = -2 * dot * across.x + v.x;
+

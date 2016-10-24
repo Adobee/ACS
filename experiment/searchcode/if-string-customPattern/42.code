@@ -1,0 +1,8 @@
+String subStr = pattern.substring(start + 2, end);
+String[] strs = subStr.split(SPLITTER);
+
+if (strs != null &amp;&amp; strs.length == 3) {
+for (CustomInfo customInfo : customInfos) {
+String customPattern = customInfo.getPattern();
+String itemId = m_keyHelper.generateKey(customInfo.getKey(), customInfo.getDomain(),
+

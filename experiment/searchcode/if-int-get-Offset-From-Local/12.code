@@ -1,0 +1,9 @@
+private long offset;
+private int localOffset, slot = -1;
+private final int slots;
+private final RandomInputStream file;
+public int readInt() throws IOException, InterruptedException {
+if (-1 == slot) map();
+assert(0 == (localOffset &amp; 3));
+int res = intBuffer[(slot * (PAGE_SIZE/4)) + localOffset/4];
+

@@ -1,0 +1,13 @@
+package net.gnosm.accelerometer2;
+
+public class Integrator {
+private double lastT;
+private double lastVal;
+public Integrator () {
+out = 0.0;
+firstSample = true;
+}
+
+public double integrate (double t, double val) {
+if (!firstSample) {
+

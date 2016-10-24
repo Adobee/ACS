@@ -1,0 +1,11 @@
+public static QPSolution solve(RealMatrix Q, RealMatrix c, double l, double u, double epsilon, RealMatrix x0) {
+
+int d = Q.getColumnDimension();
+double fval = 0;
+RealMatrix x = null;
+if (x0 != null) {
+* Grad = Q * x + c
+*/
+RealMatrix Grad = Q.multiply(x).add(c);
+fval = innerProduct(x, Q.multiply(x)) / 2 + innerProduct(c, x);
+

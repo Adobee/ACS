@@ -1,0 +1,6 @@
+double match = scores[i-1][j-1] + Span.score(s1[i-1], s2[j-1]);
+double gap1 = scores[i][j-1] + s1[i-1].gap();
+double gap2 = scores[i-1][j] + s2[j-1].gap();
+if (match>=gap1 &amp;&amp; match>=gap2) {
+scores[i][j] = match;
+

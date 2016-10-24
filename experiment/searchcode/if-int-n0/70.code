@@ -1,0 +1,13 @@
+return (x1 + x2) / 2.0;
+}
+}
+
+public int findK(int[] nums1, int m0, int m, int[] nums2, int n0, int n, int k) {
+if (m < n)
+return nums1[m0 + k - 1];
+if (k == 1)
+return Math.min(nums1[m0], nums2[n0]);
+
+int j = Math.min(n, k / 2);
+int i = k - j;
+

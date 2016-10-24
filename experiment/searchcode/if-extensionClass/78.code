@@ -1,0 +1,6 @@
+public synchronized void tryRegisterExtension(final Class<?> extensionClass, final DeploymentUnit deploymentUnit) throws DeploymentUnitProcessingException {
+if (!Extension.class.isAssignableFrom(extensionClass)) {
+throw WeldLogger.ROOT_LOGGER.extensionDoesNotImplementExtension(extensionClass);
+}
+if (extensions.containsKey(extensionClass)) {
+

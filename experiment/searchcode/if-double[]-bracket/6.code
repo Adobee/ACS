@@ -1,0 +1,8 @@
+private static final int LOW_INCOME_TAX_BRACKET = 14000;
+private static final double MIDDLE_INCOME_TAX_RATE = 0.21;
+private static final double LOW_INCOME_TAX_RATE = 0.125;
+public double calculateIncome(final double income) {
+if (income <= LOW_INCOME_TAX_BRACKET) {
+return taxOnLowIncomeBracket(income);
+} else {
+

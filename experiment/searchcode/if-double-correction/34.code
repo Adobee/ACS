@@ -1,0 +1,8 @@
+double minSNR, double lowPPMUsedForSTD, double highPPMUsedForSTD,
+double[] peaks, double[] fft) {
+int nrOfPeaks = peaks.length;
+if (isBrainH == false) {
+public double[] shift(Integer correction, double[] fft) {
+
+if (!correction.equals(null))// let&#39;s play it safe,who knows what kind
+

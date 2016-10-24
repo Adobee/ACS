@@ -1,0 +1,16 @@
+public Object clone() throws CloneNotSupportedException
+{
+if(_currentAction != null)
+{
+return new PlayerState(_stateType, (Action) _currentAction.clone());
+public String toString()
+{
+String str = _stateType.toString();
+if(_currentAction != null)
+{
+str += &quot; &quot; + _currentAction.toString();
+}
+return str;
+}
+}
+

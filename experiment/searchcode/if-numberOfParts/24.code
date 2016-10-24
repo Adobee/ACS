@@ -1,0 +1,8 @@
+public class DownloadPartEditor extends BaseDialogBuilder {
+
+private int numberOfParts = 1;
+private TextView preview;
+super(baseScreen, R.layout.download_part_dialog);
+this.baseScreen = baseScreen;
+this.numberOfParts = baseScreen.app.getUserSettings().getDownloadPart();
+

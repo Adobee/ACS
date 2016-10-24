@@ -1,0 +1,11 @@
+private static void closeInputStream0(InputStream is, boolean quiet) {
+if (null != is) {
+try {
+is.close();
+} catch (IOException e) {
+closeOutputStream0(out, false);
+}
+
+private static void closeReader0(Reader r, boolean quiet) {
+if (null != r) {
+

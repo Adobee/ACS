@@ -1,0 +1,14 @@
+ua[i][j] += -alpha * householderVectors[i][k - diagOffset];
+}
+}
+}
+}
+if (diagOffset > 0) {
+ua[0][0] = 1;
+}
+cachedU = MatrixUtils.createRealMatrix(ua);
+final double[] hK = householderVectors[k - diagOffset];
+va[k][k] = 1;
+if (hK[k] != 0.0) {
+for (int j = k; j < n; ++j) {
+

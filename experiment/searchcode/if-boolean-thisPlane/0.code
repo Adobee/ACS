@@ -1,0 +1,7 @@
+/*  32: 58 */     Line inter = otherPlane.intersection(thisPlane);
+/*  33: 60 */     if (inter == null)
+/*  34:    */     {
+/*  35: 63 */       double global = otherPlane.getOffset(thisPlane);
+/*  40: 76 */     Vector3D crossP = Vector3D.crossProduct(inter.getDirection(), thisPlane.getNormal());
+/*  41: 77 */     if (crossP.dotProduct(otherPlane.getNormal()) < 0.0D)
+

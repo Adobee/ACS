@@ -1,0 +1,13 @@
+public class Variable<T> implements Expression3<T>{
+String name;
+
+public Variable(String name) {
+this.name = name;
+}
+
+@Override
+public T evaluate(T x,T y, T z) {
+if (name.equals(&quot;x&quot;) )
+return x;
+if (name.equals(&quot;y&quot;))
+

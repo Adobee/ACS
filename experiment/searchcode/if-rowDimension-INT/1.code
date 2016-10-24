@@ -1,0 +1,6 @@
+public class AdaptableSizeFastMatrixParameter extends FastMatrixParameter {
+public AdaptableSizeFastMatrixParameter(String id, int rowDimension, int colDimension, int maxRow, int maxCol, double startingValue) {
+super(id, maxRow, maxCol, startingValue);
+if(maxRow < rowDimension){
+throw new RuntimeException(&quot;Row Dimension: &quot; + rowDimension + &quot;, is greater than Max Row Dimension: &quot; + maxRow + &quot; in &quot; + getParameterName());
+

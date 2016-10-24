@@ -1,0 +1,13 @@
+public AnimateObjectQue(EObject obj, double x, double y, long d, int t, double r)
+{
+object = obj;
+targetX = x;
+targetY = y;
+duration = d;
+type = t;
+framerate = r;
+points = p;
+targetX = (double)points.remove(0);
+targetY = (double)points.remove(0);
+if(object.x < targetX) xh = true; else xh = false;
+

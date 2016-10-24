@@ -1,0 +1,14 @@
+package math;
+
+public class Sqrt {
+
+double sqrt(double a){
+if(a==0||a==1){
+return 1;
+end=1;
+}
+while(end-start>precision){
+double mid = (start+end)/2;
+if(mid*mid==a){
+return mid;
+

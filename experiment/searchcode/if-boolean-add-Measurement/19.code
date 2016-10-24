@@ -1,0 +1,14 @@
+int queueLength;
+boolean currentlyRunningMeasurement;
+synchronized(this)
+{
+measurementQueue.add(measurement);
+MeasurementManager.this.notifyAll();
+}
+}
+
+@Override
+public void addJobToExecutionQueue(JobExecutionQueueElement job)
+{
+if(measurement.isRunning())
+

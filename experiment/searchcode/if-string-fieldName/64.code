@@ -1,0 +1,11 @@
+public class MvelApplyOrderFieldValue<O, I> extends MvelAction<O, I>{
+
+protected String fieldName;
+
+public String getFieldName() {
+return fieldName;
+}
+
+public void setFieldName(String fieldName) {
+this.fieldName = fieldName;
+

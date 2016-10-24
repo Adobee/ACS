@@ -1,0 +1,12 @@
+public static void shellSort(int[] data){
+int i,j;
+int increment = data.length;
+
+while(increment > 1){
+increment = increment/3 +1;
+/*分组后对每个组进行直接插入排序*/
+int temp = data[i];
+
+if(data[i] < data[i-increment]){
+for( j=i-increment;j>=0 &amp;&amp; temp < data[j];j-=increment){
+

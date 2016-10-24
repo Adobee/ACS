@@ -1,0 +1,7 @@
+public void readFields(DataInput in) throws IOException {
+longLength = in.readInt();
+if(longArray==null)
+longArray = new long[longLength*2];
+else if(longArray.length<longLength)
+longArray = new long[longLength*2];
+

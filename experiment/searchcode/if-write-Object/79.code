@@ -1,0 +1,13 @@
+public void write(JSONSerializer serializer, Object object, Object fieldName, Type fieldType) throws IOException {
+if (object == null) {
+} else {
+out.writeNull();
+}
+return;
+}
+
+serializer.write(object.toString());
+}
+
+}
+

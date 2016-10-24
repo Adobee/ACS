@@ -1,0 +1,7 @@
+public List<Artist> findSimilar(Artist artist) {
+try {
+String encodedName = URLEncoder.encode(artist.getName().toLowerCase(), &quot;UTF-8&quot;);
+
+// might return a 400 if search doesn&#39;t match
+BufferedReader reader = new BufferedReader(
+

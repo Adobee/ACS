@@ -1,0 +1,11 @@
+public GenerationTerminator() {}
+
+public GenerationTerminator(int gens) {
+maxGenerations = gens;
+}
+
+@Override
+public boolean isTerminated(PopulationInterface pop) {
+if (maxGenerations < pop.getGeneration()) {
+msg = maxGenerations + &quot; generations reached.&quot;;
+

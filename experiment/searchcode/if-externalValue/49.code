@@ -1,0 +1,7 @@
+String externalValue = internalToExternalMap.get(internalValue);
+if( externalValue == null)
+throw new IllegalArgumentException(&quot;Unable to find external value for &quot; + internalValue);
+T internalValue = externalToInternalMap.get(externalValue);
+if( internalValue == null)
+throw new IllegalArgumentException(&quot;Unable to find external value for &quot; + externalValue);
+

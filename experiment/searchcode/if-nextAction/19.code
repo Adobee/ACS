@@ -1,0 +1,12 @@
+private static final long serialVersionUID = 1L;
+
+private String nextAction;
+
+public String execute(){
+
+if(!this.isLogin()){
+return Constants.LOGOUT;
+}
+
+if(Constants.SAVE_MEMBER.equals(nextAction)){
+

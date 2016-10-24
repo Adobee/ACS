@@ -1,0 +1,15 @@
+public static int mergeRGB(int rgb1, int rgb2, double d, double e) {
+double w = d + e;
+d /= w; e /= w;
+
+int r = 0;
+for ( int k = 0; k < 4; ++k ) {
+int c = (int)(c1 * d + c2 * e);
+if ( c < 0 ) c = 0;
+if ( c > 255 ) c = 255;
+r |= c << (k * 8);
+}
+return r;
+}
+}
+

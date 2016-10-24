@@ -1,0 +1,8 @@
+public double mcUairExp(Person2010 p, TripType type, int d, int o, int toy) {
+double tourAirCost = logsum.tourAirCost(o, d, toy);
+if(tourAirCost == Double.POSITIVE_INFINITY) {
+tmp3 = logsum.tourTrainCost(so, d);
+}
+
+if (tmp1 == Double.POSITIVE_INFINITY || tmp2 == Double.POSITIVE_INFINITY || tmp3 == Double.POSITIVE_INFINITY) {
+

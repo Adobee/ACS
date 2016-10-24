@@ -1,0 +1,13 @@
+double t = 1.0 -a;
+double p = t/(t+a*Math.exp(-t));
+double s = 1.0/a;
+for(;;){
+r1 = random.randomDouble();
+if(r1<=p){
+x = t + Math.log((1.0-p)/ (1.0-r1));
+w = t * Math.log(x/t);
+}
+r2 = random.randomDouble();
+if((1.0-r2)<=w){
+if((1.0/r2 -1.0) <= w)
+

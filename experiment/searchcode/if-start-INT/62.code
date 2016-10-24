@@ -1,0 +1,14 @@
+int len = gas.length;
+int maxLen = 0;
+int total = 0;
+int maxStart = 0;
+int start = 0;
+
+for (int i = 0; i < 2 * len; ++i) {
+total += remain;
+if (total < 0) {
+start = i + 1;
+total = 0;
+} else {
+if (maxLen < i - start + 1) {
+

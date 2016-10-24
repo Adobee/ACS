@@ -1,0 +1,9 @@
+<T> T doInTransactionMandatory(Callable<T> callable) throws Exception;
+
+/**
+* Execute call() non-transactionally, throw an exception if a transaction exists.
+* Execute call() non-transactionally, suspend the current transaction if one exists.
+*
+* @param callable
+* @throws Exception
+

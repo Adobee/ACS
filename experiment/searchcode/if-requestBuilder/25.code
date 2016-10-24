@@ -1,0 +1,9 @@
+import org.apache.commons.lang.StringUtils;
+import org.asynchttpclient.Request;
+import org.asynchttpclient.RequestBuilder;
+import org.asynchttpclient.RequestBuilderBase;
+requestBuilder.setHeader(HttpHeader.USERAGENT.getValue(),getUserAgent());
+
+if (StringUtils.isNotEmpty(getReferer())) {
+requestBuilder.setHeader(HttpHeader.REFERER.getValue(), getReferer());
+

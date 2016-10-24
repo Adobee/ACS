@@ -1,0 +1,8 @@
+Set<Long> notInImageIds = new HashSet<Long>();
+for (Image image : store.getImages()) {
+if (image.getId() != null) {
+notInImageIds.add(image.getId());
+}
+}
+if (store.getId() != null) {
+

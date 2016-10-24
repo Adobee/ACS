@@ -1,0 +1,9 @@
+return capacity;
+}
+
+public void setCapacity(int newCapacity) {
+if (newCapacity == capacity) {
+newBuffer = new byte[newCapacity];
+if (capacity > 0) {
+int len = capacity;
+

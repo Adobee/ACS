@@ -1,0 +1,9 @@
+private void convertFromDouble() throws FloPoCoException {
+if( Double.isNaN(value) ) {
+set(0, true);
+set(1, true);
+y = new FloPoCoFloat(x, 11, 53);
+z = y.toDouble();
+w = x-z;
+if( w!=0 ) throw new FloPoCoException(&quot;Conversion fail.&quot;);
+

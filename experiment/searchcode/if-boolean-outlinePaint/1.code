@@ -1,0 +1,7 @@
+public Box(PointF location, float width, Paint color, boolean useOutline ) {
+super(location, width, color, useOutline);
+float bottom = (this.getLocation().y) + (this.getWidth() / 2);
+if (useOutline()) {
+Paint outlinePaint = new Paint();
+outlinePaint.setStyle(Style.STROKE);
+

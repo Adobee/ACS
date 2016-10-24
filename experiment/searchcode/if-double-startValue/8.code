@@ -1,0 +1,11 @@
+public class LevelToReachHistoryFactory extends HistoryFactory {
+private double factor;
+private double startValue;
+
+
+public LevelToReachHistoryFactory(Element element) {
+double newDouble = newValue==null ? startValue : newValue.getDouble();
+double oldDouble = oldValue==null ? startValue : oldValue.getDouble();
+double offset;
+if(newValue!=null){
+

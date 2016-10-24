@@ -1,0 +1,8 @@
+private int getConstraintTypeCounts(final Relationship relationship) {
+int count = 0;
+for (final LinearConstraint constraint : constraints) {
+if (constraint.getRelationship() == relationship) {
+for (int i = 0; i < getNumArtificialVariables(); i++) {
+int col = i + getArtificialVariableOffset();
+if (getBasicRow(col) == null) {
+

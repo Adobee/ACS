@@ -1,0 +1,6 @@
+public static Long generateRandomLongFromInterval(MathUtils.Interval interval) {
+return Math.round(getRandomValueFromInterval(interval));
+double rand = interval.min + (interval.max - interval.min) * r.nextDouble();
+if(r.nextDouble() > 0.1) {
+return Math.floor(rand * 100.0) / 100.0;
+

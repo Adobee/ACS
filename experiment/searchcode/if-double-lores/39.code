@@ -1,0 +1,7 @@
+List<String> lores = item.meta.getLore();
+if (lores == null) {
+lores = new ArrayList<String>();
+sender.sendMessage(&quot;§cInvalid index. The index is an integer greater than 0.&quot;);
+} else if (lores == null || index > lores.size()) {
+sender.sendMessage(MessageFormat.format(&quot;§cLore line with index {0} doesn&#39;&#39;t exist!&quot;, index));
+

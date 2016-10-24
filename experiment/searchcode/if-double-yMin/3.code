@@ -1,0 +1,11 @@
+public class BoundingBox {
+boolean inited = false;
+double xmin, xmax, ymin, ymax;
+public void addPoint(Point p) {
+if(p == null) { return; }
+if(Double.isNaN(ymin)) {
+ymin = Double.MIN_VALUE;
+}
+if(Double.isNaN(ymax)) {
+ymax = Double.MAX_VALUE;
+

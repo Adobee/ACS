@@ -1,0 +1,8 @@
+String contentType = MediaType.APPLICATION_JSON;
+if (consumes != null) {
+contentType = ((Consumes) consumes).value()[0];
+public static String path(String uri) {
+int pathEndPos = uri.indexOf(&#39;?&#39;);
+if (pathEndPos < 0) {
+return uri;
+

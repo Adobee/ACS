@@ -1,0 +1,10 @@
+chromosomes.clear();
+return true;
+}
+
+public Optional<Chromosome> getBestChromosome() {
+if (chromosomes.isEmpty()) {
+Chromosome best = null;
+for (Chromosome c : chromosomes) {
+if (best == null || c.fitness() > best.fitness()) {
+

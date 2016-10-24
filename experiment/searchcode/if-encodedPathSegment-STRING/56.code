@@ -1,0 +1,7 @@
+* segments [&quot;a&quot;, &quot;b&quot;] build &quot;/a/b&quot; and the segments [&quot;a&quot;, &quot;b&quot;, &quot;&quot;] build &quot;/a/b/&quot;.
+*
+* <p>If a path&#39;s last segment is the empty string then the path ends with &quot;/&quot;. This class always
+public Builder setEncodedPathSegment(int index, String encodedPathSegment) {
+if (encodedPathSegment == null) {
+throw new NullPointerException(&quot;encodedPathSegment == null&quot;);
+

@@ -1,0 +1,13 @@
+this.column = column;
+this.value = NULL;
+if (notNull) {
+this.matchType = ISNOT;
+}
+else {
+this.matchType = IS;
+public MatchCriteria(Column column, String matchType, boolean addPercents, String value) {
+this.column = column;
+this.matchType = matchType;
+if (value == null) {
+this.value = value;
+

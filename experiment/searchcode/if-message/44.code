@@ -1,0 +1,10 @@
+public class MessageConsumer implements MessageListener {
+
+@Override
+public void onMessage(final Message message) {
+if (message instanceof TextMessage) {
+} catch (JMSException e) {
+e.printStackTrace();
+}
+} else if (message instanceof MapMessage) {
+

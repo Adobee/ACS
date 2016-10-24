@@ -1,0 +1,13 @@
+public void addToGraph(Graph g, String start, String end, Set<Character> alphabet) {
+String literalStart = newQ();
+String literalEnd = newQ();
+g.addEdge(start, RegExp.EPSILON, literalStart);
+g.addEdge(literalStart, c, literalEnd);
+}
+g.addEdge(literalEnd, RegExp.EPSILON, end);
+if (DEBUG) {
+System.out.println(this.getClass());
+}
+}
+}
+

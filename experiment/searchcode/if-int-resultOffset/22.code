@@ -1,0 +1,9 @@
+protected boolean printXML = false;
+protected int numResults, resultOffset;
+
+protected boolean debugMode = true;
+* Default is 0, which displays the first item in the list.
+* @return resultOffset: Result Offset
+*/
+public int getResultOffset()
+

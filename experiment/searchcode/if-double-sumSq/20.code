@@ -1,0 +1,12 @@
+double sum = 0;
+double sumSq = 0;
+
+double discount = 1 / Math.exp(rateOfYear * T);
+
+for(int i = 0; i < M; i++) {
+double miu = sum / M;
+double omigaSq = sumSq / M - miu * miu;
+if(omigaSq < 0)
+omigaSq = 0;
+double omiga = Math.sqrt(omigaSq);
+

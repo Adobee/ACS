@@ -1,0 +1,9 @@
+private Dataset dataset;
+private boolean closed = false;
+
+public DatasetWrapper(Dataset dataset) {
+public Dataset getDataset() {
+if (!closed) {
+return dataset;
+} else throw new RuntimeException(&quot;No operations on a closed dataset&quot;);
+

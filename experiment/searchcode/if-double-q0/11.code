@@ -1,0 +1,11 @@
+public class PuffChromosome implements Comparable{
+
+private double Q0;
+private double x0;
+private double y0;
+private double z0;
+private double fitness;
+
+public String toStringWithName(){
+String showStr = &quot;Q0 = &quot; + Q0 + &quot;\t&quot;;
+

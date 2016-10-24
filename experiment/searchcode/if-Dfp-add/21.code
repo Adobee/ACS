@@ -1,0 +1,8 @@
+String className = dfpPlacementPage.getClass().getName();
+
+if (!(DfpClassUtil.isValidDfpPackage(className) &amp;&amp; className.endsWith(&quot;PlacementPage&quot;))) {
+P[] dfpPlacements = on(this.dfpPlacementPage).call(&quot;getResults&quot;).get();
+
+if (dfpPlacements != null) {
+for (P dfpPlacement : dfpPlacements) {
+

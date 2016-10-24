@@ -1,0 +1,6 @@
+@SuppressWarnings(&quot;unused&quot;)
+private static final int DAY_IN_MILLIS = 86400000;
+private static final long HOUR_IN_MILLIS = 3600000;
+private static final long MINUTE_IN_MILLIS = 60000;
+private static final int SECOND_IN_MILLIS = 1000;
+

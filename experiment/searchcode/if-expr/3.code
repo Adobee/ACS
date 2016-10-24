@@ -1,0 +1,11 @@
+package org.wrylang.ast;
+
+public interface ExprVisitor<R> {
+public R visit(BinaryOpExpr expr);
+public R visit(ClassExpr expr);
+
+public R visit(IfExpr expr);
+
+public R visit(WhileExpr expr);
+}
+

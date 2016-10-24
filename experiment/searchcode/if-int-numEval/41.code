@@ -1,0 +1,7 @@
+minSin + 9.876 * delta,
+init);
+final int numEval = optimizer.getEvaluations();
+minSin - 6.789 * delta,
+minSin + 9.876 * delta);
+final int numEval = optimizer.getEvaluations();
+

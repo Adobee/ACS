@@ -1,0 +1,8 @@
+//step 3
+Double xMedium1 =upperBound - r*(upperBound - lowerBound);
+Double xMedium2 =lowerBound + r*(upperBound - lowerBound);
+
+//step 4
+Double f1 = function(xMedium1);
+Double f2 = function(xMedium2);
+

@@ -1,0 +1,8 @@
+private int[] sz;    // sz[i] = êîëè÷åñòâî îáúåêòîâ â ïîääåðåâå ñ êîðíåì i
+private int count;   // êîë-âî êîìïîíåíòîâ
+public void union(int p, int q) {
+int i = find(p);
+int j = find(q);
+if (i == j) return;
+if   (sz[i] < sz[j]) {
+

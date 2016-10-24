@@ -1,0 +1,10 @@
+* @author Matthias Thurow
+*/
+public double[] rungeKutta(double y1, double y2, double zielwert, double schrittweite, int f) {
+r2[0] = y2; // Anfangswert fuer y&#39;
+
+// Sebastian Wolff
+double h = schrittweite;
+
+double t = 0; // Anfangswert fuer t
+

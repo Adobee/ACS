@@ -1,0 +1,9 @@
+public class ReservoirSampling {
+
+public static int[] sample(int[] array, int sampleSize) {
+int[] reservoir = new int[sampleSize];
+
+Random random = new Random();
+
+for (int i = 0; i < array.length; i++) {
+

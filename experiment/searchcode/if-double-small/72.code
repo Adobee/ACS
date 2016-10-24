@@ -1,0 +1,13 @@
+public class Choose {
+
+public static void main (String args[])
+{
+double i;
+i=50;
+double j;
+j=Double.parseDouble(args[0]);
+while(i!=j){
+if(j>i)
+System.out.println(&quot;big&quot;);
+if(j<i)
+

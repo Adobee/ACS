@@ -1,0 +1,11 @@
+private final DayType dayType;
+@Range(min = 1, max = 31)
+private final int dayOfMonth;
+@Range(max = 1)
+private final double worked;
+private final double recup;
+private final String description;
+
+public static TimeEntry workDay(int dayOfMonth) {
+return new TimeEntry(dayOfMonth, DayType.WORK, 1, 0, 0, 0, 0, &quot;&quot;);
+

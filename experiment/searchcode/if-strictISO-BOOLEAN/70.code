@@ -1,0 +1,9 @@
+boolean extended,
+boolean strictISO) {
+
+if (fields == null || fields.size() == 0) {
+throw new IllegalArgumentException(&quot;The fields must not be null or empty&quot;);
+private static void checkNotStrictISO(Collection fields, boolean strictISO) {
+if (strictISO) {
+throw new IllegalArgumentException(&quot;No valid ISO8601 format for fields: &quot; + fields);
+

@@ -1,0 +1,16 @@
+private Problem problem ;
+
+private int maxEvaluations ;
+
+/** Constructor */
+private RandomSearch(Builder builder) {
+this.maxEvaluations = builder.maxEvaluations ;
+}
+
+/* Getter */
+public int getMaxEvaluations() {
+return maxEvaluations;
+}
+
+/** Builder class */
+

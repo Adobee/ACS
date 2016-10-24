@@ -1,0 +1,11 @@
+return &quot;angle:&quot; + this.angle + &quot; vecteur:&quot; + this.vector + &quot; dimension:&quot; + this.dimension;
+}
+
+public void updatePosition(Vector2 vector, double angle, double k){
+if(this.dimension.getHeight()<60 &amp; this.dimension.getWidth()<60 &amp; k<1)
+System.out.println(&quot;Security, too small :P&quot;);
+else
+this.dimension = new Dimension(
+(int)(this.dimension.getWidth()*k),
+(int)(this.dimension.getHeight()*k));
+

@@ -1,0 +1,12 @@
+PathfindingNode top = queue.poll();
+count++;
+if (top.equals(end)) {
+System.out.println(count);
+while (top != null) {
+result[top.loc.x][top.loc.y] = top.dir;
+top = top.prev;
+}
+return result;
+}
+if (top.equals(null))
+

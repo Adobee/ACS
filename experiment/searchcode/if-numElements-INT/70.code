@@ -1,0 +1,8 @@
+public double transform(List<Double> values, double mean)
+{
+double variance = 0;
+int numElements = values.size();
+
+for (int i=0; i < numElements; i++) {
+variance += (values.get(i) - mean) * (values.get(i) - mean);
+

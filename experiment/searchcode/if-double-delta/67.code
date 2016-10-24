@@ -1,0 +1,11 @@
+public class SaferQuadraticSolver{
+public static void main(String args[]){
+double a=Double.parseDouble(args[0]);
+double c=Double.parseDouble(args[2]);
+
+double delta = b*b-4*a*c;
+
+if(delta<0)
+System.out.println(&quot;Cannot solve for real x!&quot;);
+else if (a==0) {
+

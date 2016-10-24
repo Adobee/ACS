@@ -1,0 +1,10 @@
+private static final double RIGHTVAL = 10.0;// right value
+private static final int NSTEPS = 10000;// computing steps
+private static final int BitsOfNSTEPS = digitsOf(NSTEPS) - 1;
+* @return
+*/
+private static int digitsOf(int number) {
+int result = 0;
+if (number < 0)
+number = -number;
+

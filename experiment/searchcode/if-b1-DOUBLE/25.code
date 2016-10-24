@@ -1,0 +1,13 @@
+package fr.eurecom.engine;
+
+public class SysLinEq {
+private double a, b, c, a1, b1, c1;
+this.a1 = a1;
+}
+
+public void setB1(double b1) {
+this.b1 = b1;
+}
+
+public void setC1(double c1) {
+

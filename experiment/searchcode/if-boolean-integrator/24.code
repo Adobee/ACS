@@ -1,0 +1,9 @@
+public void add(IModIntegration integrator) {
+modIntegrators.add(integrator);
+}
+
+public boolean verify(String[] deps) {
+public void init(Stage stage) {
+for(IModIntegration integrator: modIntegrators) {
+if(verify(integrator.getDependencies())) {
+

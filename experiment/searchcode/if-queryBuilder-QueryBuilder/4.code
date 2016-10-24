@@ -1,0 +1,11 @@
+public abstract class BaseQueryBuilder implements IQueryBuilder {
+
+IQueryBuilder queryBuilder;
+
+public String getQuery() throws Exception {
+String query = getOwnQuery();
+if (queryBuilder == null)
+return query;
+
+return query + &quot; &quot; + queryBuilder.getQuery();
+

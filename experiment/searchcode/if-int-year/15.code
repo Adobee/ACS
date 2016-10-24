@@ -1,0 +1,12 @@
+package pkgqq.pkgserver;
+
+public class LeapYear {
+static boolean isLeapYear(int year){
+if((year%4==0&amp;&amp;year%1!=0)||(year%400==0))
+{
+return true;
+}
+return false;
+}
+}
+

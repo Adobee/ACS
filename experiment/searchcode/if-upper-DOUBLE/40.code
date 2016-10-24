@@ -1,0 +1,7 @@
+private Arrow<Double, Double> arrow;
+private double lowerLimit, upperLimit;
+
+public Integral(Arrow<Double, Double> arrow, double lowerLimit, double upperLimit) {
+if (lowerLimit > upperLimit)
+throw new IllegalArgumentException(&quot;lowerLimit is greater than upperLimit&quot;);
+

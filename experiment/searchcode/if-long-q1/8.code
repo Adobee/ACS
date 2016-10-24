@@ -1,0 +1,11 @@
+public class q1 extends basis
+{
+public static void main(String[] argv)
+{
+long a, b;
+
+if (argv.length != 2)
+{
+System.err.println (&quot;usage: q1 [multiplier] [multiplicand]&quot;);
+return;
+

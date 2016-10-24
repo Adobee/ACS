@@ -1,0 +1,8 @@
+public void mergeSort(int[] input, int startIndex, int endIndex) {
+if(startIndex < endIndex) {
+int mid = (startIndex + endIndex) / 2;
+int[] right = Arrays.copyOfRange(input, mid+1, endIndex+1);
+int j=0, k=0;
+for(int i=startIndex; i<=endIndex; i++) {
+if(k >= right.length || (j < left.length &amp;&amp; left[j] < right[k]) ) {
+

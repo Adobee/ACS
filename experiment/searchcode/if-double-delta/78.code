@@ -1,0 +1,18 @@
+double delta;
+
+
+
+delta = b*b-4*a*c;
+
+if (delta >0)
+{
+delta = Math.sqrt(delta);
+
+double x1 = (-b-delta)/(2*a);
+double x2 = (-b+delta)/(2*a);
+
+rozwiazanie =&quot;x1:&quot;+x1+&quot; x2:&quot;+x2;
+}
+
+else if (delta == 0)
+

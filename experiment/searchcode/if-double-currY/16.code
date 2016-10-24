@@ -1,0 +1,10 @@
+Add t to the correct place in the tree rooted at curr.
+====================*/
+private BSTreeNode<T> add(BSTreeNode<T> curry, BSTreeNode<T> t) {
+if (curry==null){
+return t;
+}else if(isLeaf(curry)){
+if(curry.compare(t)>0){
+curry.setLeft(t);
+}else if(curry.compare(t)<0){
+

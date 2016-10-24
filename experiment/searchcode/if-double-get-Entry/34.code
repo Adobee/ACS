@@ -1,0 +1,8 @@
+public long lastDamage = 0;
+
+public void damageFrom(UUID player, double amount){
+Double previous = damageAmounts.get(player);
+double total = 0;
+for(Entry<UUID, Double> entry : damageAmounts.entrySet()){
+total += entry.getValue();
+

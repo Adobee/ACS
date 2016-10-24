@@ -1,0 +1,8 @@
+String[] line = scan.nextLine().split(&quot; &quot;); // splitting the separate
+// words
+
+for (int i = 0; i < line.length; i++) {
+// searching for matches with regex
+if (line[i]
+.matches(&quot;([_A-Za-z0-9-]+)(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z]{2,})&quot;)) {
+

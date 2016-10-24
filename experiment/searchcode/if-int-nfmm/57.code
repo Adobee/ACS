@@ -1,0 +1,9 @@
+double[] upperBound) {
+printMethod(); // XXX
+
+final int n = currentBest.getDimension();
+
+// Return if there is insufficient space between the bounds. Modify the
+for (int i = 0; i <= j; i++) {
+if (i < j) {
+

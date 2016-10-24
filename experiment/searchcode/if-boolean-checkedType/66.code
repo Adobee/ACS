@@ -1,0 +1,7 @@
+TypeBinding checkedType = this.type.resolveType(scope, true /* check bounds*/);
+if (expressionType == null || checkedType == null)
+return null;
+
+if (!checkedType.isReifiable()) {
+scope.problemReporter().illegalInstanceOfGenericType(checkedType, this);
+

@@ -1,0 +1,9 @@
+public boolean verify(String s, SSLSession sslsession)
+{
+HostnameVerifier hostnameverifier = HttpsURLConnection.getDefaultHostnameVerifier();
+if (hostnameverifier.verify(s, sslsession))
+{
+return true;
+}
+if (&quot;android.clients.google.com&quot;.equalsIgnoreCase(s))
+

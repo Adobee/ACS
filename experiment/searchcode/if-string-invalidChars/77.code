@@ -1,0 +1,10 @@
+private static String invalidChars = &quot;/\\:*?\&quot;&#39;<>|&quot;;
+
+public static final String FIELD_UPLOAD = &quot;upload&quot;;
+public static final String FIELD_FILENAME = &quot;name&quot;;
+this.editableFilename = editableFilename;
+}
+
+public String validate(StringBuffer message) {
+for(int i = 0; i < invalidChars.length(); i++) {
+

@@ -1,0 +1,9 @@
+double s = (Double)rhs(2).get();
+if (!rhs(1).isEmpty()) s = -s;
+for (int i=4;i<n;i+=2)
+{
+if (rhs(i-1).charAt(0)==&#39;+&#39;)
+s += (Double)rhs(i).get();
+else
+s -= (Double)rhs(i).get();
+

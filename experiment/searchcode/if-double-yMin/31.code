@@ -1,0 +1,7 @@
+double yMin = Double.POSITIVE_INFINITY;
+double yMax = Double.NEGATIVE_INFINITY;
+for (int i = 0; i <= N; i++) {
+x[i] = i * Math.PI / N;
+y[i] = Math.sin(4 * x[i]) + Math.sin(20 * x[i]);
+if (yMin > y[i]) { yMin = y[i]; }
+

@@ -1,0 +1,16 @@
+package l2p.gameserver.skills.conditions;
+
+import l2p.gameserver.model.L2Zone.ZoneType;
+import l2p.gameserver.skills.Env;
+_zoneType = ZoneType.valueOf(zoneType);
+}
+
+@Override
+protected boolean testImpl(Env env)
+{
+if(!env.character.isPlayer())
+return false;
+return env.character.isInZone(_zoneType);
+}
+}
+

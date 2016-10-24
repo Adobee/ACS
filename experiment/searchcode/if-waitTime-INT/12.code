@@ -1,0 +1,17 @@
+public class WaitStrategy extends Strategy {
+private int waittime;
+private int endtime;
+
+public WaitStrategy(int waittime) {
+endtime = Utils.getSystemTime() + waittime;
+}
+
+@Override
+protected void doRun() {
+if (Utils.getSystemTime() >= endtime) {
+setFinished();
+}
+}
+
+}
+

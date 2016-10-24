@@ -1,0 +1,13 @@
+public abstract class RuntaskBackground<U, R> implements Runnable, CancelableTask {
+
+public Object[] objs;
+private boolean isCanceled;
+
+protected RuntaskBackground(Object... objs) {
+this.objs = objs;
+}
+
+@Override
+public void run() {
+if (isCanceled) {
+

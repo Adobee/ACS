@@ -1,0 +1,14 @@
+if(n <= 0) throw new PreconditionViolationException.Impl(&quot;Invalid precondition while manipulating the array&quot;, null);
+
+return new longArray(array[0]);
+}
+
+public longArray get(int n) {
+if(n < 0 || n >= this.n) throw new PreconditionViolationException.Impl(&quot;Invalid precondition while manipulating the array&quot;, null);
+
+return new longArray(array[n]);
+}
+
+public longArray getTail() {
+if(n <= 0) throw new PreconditionViolationException.Impl(&quot;Invalid precondition while manipulating the array&quot;, null);
+

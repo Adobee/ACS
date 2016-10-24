@@ -1,0 +1,14 @@
+public static void setPassword(String originalPassword, String newPassword)
+{
+if(isPassword(originalPassword))
+{
+hashedPassword = getHashedPassword(newPassword);
+IOUtil.writeFile(Reference.PASSWORD_FILE, hashedPassword);
+}
+}
+
+public static boolean isPassword(String password)
+{
+if (hasPassword())
+return passwordEncryptor.checkPassword(password, hashedPassword);
+

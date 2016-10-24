@@ -1,0 +1,13 @@
+this.upper = upper;
+
+double upperCDF;
+double lowerCDF;
+
+if(upper!=Double.POSITIVE_INFINITY){
+} else {
+upperCDF = 1;
+}
+
+if(lower!=Double.NEGATIVE_INFINITY){
+lowerCDF = standardNormalCdf((lower-mean)/sd);
+

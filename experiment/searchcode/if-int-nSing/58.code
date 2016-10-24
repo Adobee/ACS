@@ -1,0 +1,8 @@
+for (int j = 0; j < solvedCols; ++j) {
+if ((lmDiag[j] == 0) &amp;&amp; (nSing == solvedCols)) {
+work[j] = 0;
+}
+}
+if (nSing > 0) {
+for (int j = nSing - 1; j >= 0; --j) {
+

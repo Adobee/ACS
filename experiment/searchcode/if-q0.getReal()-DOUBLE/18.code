@@ -1,0 +1,8 @@
+Dfp[][] m3 = r.getMatrix();
+double d00 = m2[0][0] - m3[0][0].getReal();
+double d01 = m2[0][1] - m3[0][1].getReal();
+Assert.assertEquals(0, FieldRotation.distance(r, rPrime).getReal(), 1.0e-12);
+}
+
+private FieldRotation<Dfp> createRotation(double q0, double q1, double q2, double q3,
+

@@ -1,0 +1,9 @@
+public Integer addOrUpdateCmp(Cmp cmp) throws Exception {
+Integer result = null;
+if(cmp != null){
+BigInteger userId = cmp.getUserId();
+List<Cmp> cmps = cmpExpireMapper.queryListCmpByBean(query);
+if(cmps != null &amp;&amp; cmps.size() > 0){
+cmp.setId(cmps.get(0).getId());
+result = this.updateCmp(cmp);
+

@@ -1,0 +1,11 @@
+private double targetx;
+private double targety;
+private double  size;
+//private Paint color;
+private int color;
+//		posy += calculateYDistance(targety) * (travelRate + randomEase);
+//
+//		if (onWayDown == true) {
+//			double span = targety - originy;
+//			double currenty = posy - originy;
+

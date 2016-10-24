@@ -1,0 +1,8 @@
+import org.jfree.chart.axis.CategoryAxis;
+import org.jfree.chart.plot.CategoryPlot;
+import org.jfree.chart.renderer.category.BarRenderer;
+final CategoryDataset dataset = categoryPlot.getDataset();
+final int rowCount = dataset.getRowCount();
+
+if (canBeColored(rowCount)) {
+

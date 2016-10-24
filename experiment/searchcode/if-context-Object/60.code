@@ -1,0 +1,7 @@
+private static ApplicationContext applicationContext = null;
+
+public static <T> T getBean(String name){
+Object object =null;
+if(applicationContext!=null){
+object = applicationContext.getBean(name);
+

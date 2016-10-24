@@ -1,0 +1,13 @@
+File file = new File(Const.INDEX_DIR+&quot;/segments&quot;);
+CreateIndex creat = new CreateIndex() ;
+if(file.exists()){
+bret = creat.addIndex();
+IndexFactory.closeIndexWriter();
+}
+return bret;
+}
+
+private boolean createIndex(){
+IndexWriter writer = null;
+try {
+

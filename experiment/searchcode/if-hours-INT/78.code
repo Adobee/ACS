@@ -1,0 +1,8 @@
+final long seconds = TimeUnit.MILLISECONDS.toSeconds(millis);
+final StringBuilder sb = new StringBuilder(64);
+if (hours != 0L) {
+sb.append(hours);
+final int seconds = remainder % 60;
+if (seconds == 0 &amp;&amp; minutes == 0) {
+return ((hours != 0) ? ((hours == 1) ? (hours + &quot;h&quot;) : (hours + &quot;h&quot;)) : &quot;&quot;) + &quot;&quot; + &quot;0 seconds&quot;;
+

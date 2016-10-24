@@ -1,0 +1,8 @@
+r3 = com.whatsapp.App.az;
+r0 = r14.b;
+r0 = com.whatsapp.RecordAudio.a(r0);
+if (r0 != r12) goto L_0x0046;
+r6 = 120000; // 0x1d4c0 float:1.68156E-40 double:5.9288E-319;
+r0 = (r4 > r6 ? 1 : (r4 == r6 ? 0 : -1));
+if (r0 <= 0) goto L_0x0117;
+

@@ -1,0 +1,13 @@
+// globala, lagrar start och slut på sekvensen
+public static int seqStart = 0;
+public static int seqEnd = -1;
+
+/**
+* contiguous subsequence sum algorithm.
+thisSum += a[k];
+}
+if( thisSum > maxSum ) {
+maxSum   = thisSum;
+seqStart = i;
+seqEnd   = j;
+

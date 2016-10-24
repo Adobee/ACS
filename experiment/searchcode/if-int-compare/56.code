@@ -1,0 +1,7 @@
+public int compare(Event e1, Event e2) {
+int compare = e1.getDate().compareTo(e2.getDate());
+if(compare != 0) return compare;
+
+compare = Integer.compare(e1.getHour(), e2.getHour());
+if(compare != 0) return compare;
+

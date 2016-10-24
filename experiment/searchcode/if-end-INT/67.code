@@ -1,0 +1,22 @@
+start = mid +1;
+}else{
+end = mid - 1;
+}
+}
+return end;
+}
+}
+
+public int sqrt(int x) {
+if(x<0) return -1;
+long mid = start+end/2;
+long sq = mid*mid;
+if(sq==x) return (int) mid;
+if(sq<x){
+start=mid+1;
+} else{
+end=mid-1;
+}
+}
+return end;
+

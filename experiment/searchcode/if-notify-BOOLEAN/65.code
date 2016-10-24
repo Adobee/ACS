@@ -1,0 +1,11 @@
+return this;
+}
+
+public void awaitNotify() {
+boolean isInterrupted = false;
+
+try {
+notifyInfo.put(notifier, info);
+notifyToDo.notifyDoSth(notifier, info);
+if (awaitNotifiers.contains(notifier)) {
+

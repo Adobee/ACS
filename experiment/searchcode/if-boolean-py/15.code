@@ -1,0 +1,7 @@
+return Py.newBoolean(getBooleanValue() &amp; ((PyBoolean) right).getBooleanValue());
+} else if (right instanceof PyInteger) {
+return Py.newInteger(getValue() &amp; ((PyInteger)right).getValue());
+final PyObject bool___xor__(PyObject right) {
+if (right instanceof PyBoolean) {
+return Py.newBoolean(getBooleanValue() ^ ((PyBoolean) right).getBooleanValue());
+

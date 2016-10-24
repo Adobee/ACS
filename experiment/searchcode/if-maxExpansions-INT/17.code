@@ -1,0 +1,8 @@
+private final int maxExpansions;
+private final boolean transpositions;
+private final int prefixLength;
+public NodeFuzzyQuery(final Term term, final int maxEdits, final int prefixLength, final int maxExpansions, final boolean transpositions) {
+super(term.field());
+
+if (maxEdits < 0 || maxEdits > LevenshteinAutomata.MAXIMUM_SUPPORTED_DISTANCE) {
+

@@ -1,0 +1,10 @@
+* Indicates whether the response should contain the stored _source for
+* every hit
+*/
+public SearchSourceBuilder fetchSource(boolean fetch) {
+if (this.fetchSourceContext == null) {
+builder.fetchSourceContext = FetchSourceContext.optionalReadFromStream(in);
+boolean hasFieldDataFields = in.readBoolean();
+if (hasFieldDataFields) {
+int size = in.readVInt();
+

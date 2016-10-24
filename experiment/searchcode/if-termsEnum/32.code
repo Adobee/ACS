@@ -1,0 +1,8 @@
+Terms terms = reader.fields().terms(fieldName);
+if (terms != null) {
+TermsEnum termsEnum = terms.iterator();
+DocsEnum docs = null;
+while(true) {
+BytesRef currTerm = termsEnum.next();
+if (currTerm == null) {
+

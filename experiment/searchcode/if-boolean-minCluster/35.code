@@ -1,0 +1,13 @@
+final int max = maxIterations < 0 ? java.lang.Integer.MAX_VALUE : maxIterations;
+for (int count = 0 ; count < max ; count++) {
+boolean clusteringChanged = false;
+final double distance = point.distanceFrom(c.getCenter());
+if (distance < minDistance) {
+minDistance = distance;
+minCluster = c;
+}
+}
+return minCluster;
+}
+}
+

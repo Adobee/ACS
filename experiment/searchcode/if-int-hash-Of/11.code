@@ -1,0 +1,14 @@
+for (int i = 0; i < str.length(); i++) {
+hash = (hash << 4) + str.charAt(i);
+
+if ((x = hash &amp; 0xF0000000L) != 0) {
+hash ^= str.charAt(i);
+}
+
+return hash;
+}
+
+/* End Of FNV Hash Function */
+
+public int FNVHash1(byte[] str) {
+

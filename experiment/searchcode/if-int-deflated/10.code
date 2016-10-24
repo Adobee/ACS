@@ -1,0 +1,12 @@
+this.wrappee = wrappee;
+}
+
+@Override
+public void received(ByteBuffer deflated) {
+if (ended) {
+throw new IllegalStateException();
+}
+
+if (deflated.remaining() >= FOOTER_LENGTH) {
+for (ByteBuffer b : previewFooter) {
+

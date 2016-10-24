@@ -1,0 +1,10 @@
+.getTypeParameters()) {
+typeVariableMap.put(typeVariable.getName(), i);
+i++;
+}
+
+this.curr = curr;
+Integer index = typeVariableMap.get(typeVariable.getName());
+if (this.prev != null) {
+return this.prev.findActualTypeCurr(index);
+

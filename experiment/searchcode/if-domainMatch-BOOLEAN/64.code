@@ -1,0 +1,9 @@
+implements CookieAttributeHandler
+{
+public boolean domainMatch(String paramString1, String paramString2)
+{
+return (paramString1.equals(paramString2)) || ((paramString2.startsWith(&quot;.&quot;)) &amp;&amp; (paramString1.endsWith(paramString2)));
+String str2 = paramCookie.getDomain();
+if (!domainMatch(str1, str2)) {}
+while (str1.substring(0, str1.length() - str2.length()).indexOf(&#39;.&#39;) != -1) {
+

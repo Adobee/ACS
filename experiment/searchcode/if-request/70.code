@@ -1,0 +1,12 @@
+return spiceRequest;
+}
+
+public void cancel() {
+switch (requestType) {
+case VOLLEY_REQUEST:
+if (this.volleyRequest != null) {
+break;
+case ROBO_REQUEST:
+if (this.spiceRequest != null) {
+this.spiceRequest.cancel();
+

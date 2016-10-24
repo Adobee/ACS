@@ -1,0 +1,13 @@
+this.length = length;
+}
+
+public boolean equals(Object obj) {
+if(obj == null) return false;
+if(!(obj instanceof BinaryStream)) return false;
+BinaryStream otherStream = (BinaryStream) obj;
+if(getLength() != otherStream.getLength()) return false;
+
+return(getInputStream().equals(otherStream.getInputStream()));
+}
+}
+

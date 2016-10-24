@@ -1,0 +1,10 @@
+private FirstOrderIntegrator starter;
+
+/** Previous steps times. */
+protected double[] previousT;
+
+/** Previous steps derivatives. */
+starter = new DormandPrince853Integrator(MathUtils.SAFE_MIN, Double.MAX_VALUE,
+1.0e-8, 1.0e-8);
+previousT = new double[k];
+

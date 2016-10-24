@@ -1,0 +1,12 @@
+package angland.optimizer.var;
+
+
+public class KeyedDerivativeMapNode<VarKey> extends KeyedDerivative<VarKey> {
+return getKey().hashCode();
+}
+
+@Override
+public boolean equals(Object other) {
+if (other == null) return false;
+if (!(other instanceof KeyedDerivative)) {
+

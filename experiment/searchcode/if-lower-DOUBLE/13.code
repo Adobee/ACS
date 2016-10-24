@@ -1,0 +1,14 @@
+public static boolean inBound(double value, double upper, double lower) {
+return (value <= upper) &amp;&amp; (value >= lower);
+}
+
+public static int bound(int value, int upper, int lower) {
+public static double boundLower(double value, double lower) {
+if (value < lower) {
+value = lower;
+}
+return value;
+}
+
+private static double PI180 = Math.PI / 180;
+

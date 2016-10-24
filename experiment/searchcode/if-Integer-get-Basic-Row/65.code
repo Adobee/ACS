@@ -1,0 +1,6 @@
+BasicDBList sitedetails = (BasicDBList) row.get(&quot;SiteDetails&quot;);
+for (Object sitedbo : sitedetails) {
+
+String  site   = ((BasicDBObject) sitedbo).getString(&quot;Site&quot;);
+Integer siteid = Integer.parseInt(((BasicDBObject) sitedbo).getString(&quot;SiteID&quot;));
+

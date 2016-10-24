@@ -1,0 +1,11 @@
+SchedulerStatusResponse schedResp = new SchedulerStatusResponse();
+schedResp.successful = true;
+try {
+Scheduler scheduler = getScheduler();
+if (scheduler == null || scheduler.isShutdown() || scheduler.isInStandbyMode()) {
+schedResp.status = &quot;off&quot;;
+} else if (scheduler.isStarted()) {
+schedResp.status = &quot;on&quot;;
+} else {
+schedResp.successful = false;
+

@@ -1,0 +1,11 @@
+public class CurveArea {
+
+private double x1, y1;
+private double x2, y2;
+private double zenith;
+private double delta = 0.25;
+
+public CurveArea(double x1, double y1, double x2, double y2, double orientation)
+{
+this.x1 = x1;
+

@@ -1,0 +1,8 @@
+int pageWidth = 500;
+int graphHeight = 250;
+ArrayList<XYPlotData> dhList = xyPlotParam.getDataHandler();
+int pageHeight = graphHeight * dhList.size();
+Rect rect = new Rect(0, 0, pageWidth,pageHeight);
+XYGraphLibSVG svgLib = new XYGraphLibSVG(os, rect);
+IXYPlot xyPlot = XYPlot.createXYPlot(svgLib);
+

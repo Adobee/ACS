@@ -1,0 +1,5 @@
+final SharedPreferences keyValues = PreferenceManager.getDefaultSharedPreferences(this.getApplicationContext());
+
+detailed_location = (Switch)findViewById(R.id.detailed_location);
+boolean detailed = keyValues.contains(SettingsActivity.detailed_location_key) &amp;&amp; keyValues.getBoolean(SettingsActivity.detailed_location_key, false);
+

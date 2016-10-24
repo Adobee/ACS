@@ -1,0 +1,8 @@
+final VFile infile = vfs.find(resource.getPath());
+if (!infile.exists()) {
+throw new SmallerException(&quot;Uglify input &#39;&quot; + infile
++ &quot;&#39; does not exists&quot;);
+}
+
+final String resultPath = this.node.run(vfs, resource.getPath(), options);
+

@@ -1,0 +1,7 @@
+protected void beforeStartActivity() {
+if (integrateWithHistoryManager) {
+EventBus.getDefault().post(new BeforeCurrentPageChangeEvent());
+// swallow back key if it seems like a phantom repeat to prevent history item jumping
+return true;
+} else if (integrateWithHistoryManager &amp;&amp; HistoryManager.getInstance().canGoBack()) {
+

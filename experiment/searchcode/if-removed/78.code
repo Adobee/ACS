@@ -1,0 +1,8 @@
+// Called when a cached element is about to be removed
+public interface CacheEntryRemovedListener<K, V> {
+void notifyEntryRemoved(K key, V value);
+}
+
+private Map<K, V> cache;
+private CacheEntryRemovedListener<K, V> entryRemovedListener;
+

@@ -1,0 +1,11 @@
+private static int[] mergeSort( int[] a, int[] b ) {
+int[] ret = new int[a.length + b.length];
+int countA = 0;
+int countB = 0;
+int count = 0;
+
+while (count < (a.length + b.length)){
+
+if (countA == a.length){
+ret[count] = b[countB];
+

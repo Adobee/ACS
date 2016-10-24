@@ -1,0 +1,6 @@
+// Some basic setup.  Define some constants and clear the status flags
+field = new DfpField(20);
+pinf = field.newDfp(&quot;1&quot;).divide(field.newDfp(&quot;0&quot;));
+cmptst(field.newDfp(&quot;1e20&quot;), field.newDfp(&quot;1.0000000000000001&quot;), &quot;unequal&quot;, true, 24);
+if (field.getIEEEFlags() != 0)
+

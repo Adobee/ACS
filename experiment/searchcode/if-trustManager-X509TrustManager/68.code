@@ -1,0 +1,10 @@
+import javax.net.ssl.SSLException;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
+
+import org.apache.commons.ssl.HostnameVerifier;
+protected HostnameVerifier verifier;
+
+public HostnameVerifyingTrustManager(TrustManager trustManager) {
+if (!(trustManager instanceof X509TrustManager)) {
+

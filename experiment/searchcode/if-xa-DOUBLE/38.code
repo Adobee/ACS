@@ -1,0 +1,8 @@
+// protected List<Projectile> projectiles = new ArrayList<Projectile>();
+
+public void move(double xa, double ya) {
+if (xa != 0 &amp;&amp; ya != 0) {
+double xt = ((x + xa) + c % 2) / 64;
+double yt = ((y + ya) + c / 2 + 32) / 64;
+if (level.getTile((int) xt, (int) yt).sticky()) slow = true;
+

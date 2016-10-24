@@ -1,0 +1,12 @@
+implements DatePickerDialog.OnDateSetListener {
+
+public interface Callback {
+void onDateSet(int year, int monthOfYear, int dayOfMonth);
+public void onDateSet(DatePicker view, int year, int monthOfYear,
+int dayOfMonth) {
+if (callback != null) {
+callback.onDateSet(year, monthOfYear, dayOfMonth);
+}
+}
+}
+

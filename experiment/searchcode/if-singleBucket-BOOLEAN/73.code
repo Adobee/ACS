@@ -1,0 +1,11 @@
+public ServiceTrackerBucket<SR, TS, TS> create() {
+return new SingleBucket();
+}
+
+private final Comparator<ServiceReference<SR>> _comparator;
+
+private class SingleBucket implements ServiceTrackerBucket<SR, TS, TS> {
+
+public SingleBucket() {
+_service = null;
+

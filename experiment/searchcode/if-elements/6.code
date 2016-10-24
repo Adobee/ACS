@@ -1,0 +1,17 @@
+public static Matrix4f Identity() {
+return new Matrix4f(1f);
+}
+
+private float[] elements;
+
+public Matrix4f() {
+elements = new float[16];
+elements[2 + 2 * 4] = diagonal;
+elements[3 + 3 * 4] = diagonal;
+}
+
+public Matrix4f(float[] elements) {
+this();
+
+if (elements.length < 16) {
+

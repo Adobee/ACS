@@ -1,0 +1,10 @@
+nextYPos = applyForce(a1.getY(), nextYVelo);
+a1.setVeloX(nextXVelo);
+a1.setX(bound(nextXPos));
+a1.setVeloY(nextYVelo);
+if (nextYPos <= 0) {
+* @param yVelo
+*/
+public void setNextVals(IPlayActor a1, double x, double y, double xVelo, double yVelo){
+if(!a1.getNextValues().hadCollision()){
+

@@ -1,0 +1,8 @@
+private boolean keepAlive;
+
+private static int getBridgePoolId() {
+return ID_COUNTER.incrementAndGet();
+}
+
+public static BridgePoolImpl create(Properties props, boolean usedByBridgeWriter) {
+

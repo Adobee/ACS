@@ -1,0 +1,7 @@
+TextView patchSize = (TextView) findViewById(R.id.patch_size);
+if (isIncrementalUpdate() == true) {
+patchSize.setText(getReadableSize(updateInfo.getRemotePatchSize()));
+public static boolean isIncrementalUpdate() {
+if (updateInfo == null) {
+Log.w(TAG, &quot;[isIncrementalUpdate] updateInfo is null.&quot;);
+

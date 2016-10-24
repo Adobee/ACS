@@ -1,0 +1,7 @@
+public SensorMeasurementListener(boolean elasticSearchEnabled, SensorMeasurementConverter sensorMeasurementConverter, TransportClient transportClient, ObjectMapper objectMapper, ExceptionHandler exceptionHandler) throws CannotPutMappingException {
+if (elasticSearchEnabled) {
+putMapping(transportClient);
+private void putMapping(TransportClient transportClient) throws CannotPutMappingException {
+try {
+if (!transportClient.admin().indices().prepareExists(&quot;measurements&quot;).get().isExists()) {
+

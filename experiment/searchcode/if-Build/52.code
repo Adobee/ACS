@@ -1,0 +1,11 @@
+return buildName + &quot; #&quot; + buildNumber + &quot; (&quot; + buildResult +&quot;)&quot;;
+}
+
+public boolean equals(Object o) {
+if (this == o) return true;
+if (o == null || getClass() != o.getClass()) return false;
+
+BuildStatus status = (BuildStatus) o;
+
+if (buildName != null ? !buildName.equals(status.buildName) : status.buildName != null) return false;
+

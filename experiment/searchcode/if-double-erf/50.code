@@ -1,0 +1,6 @@
+* <p>The value returned is always between -1 and 1 (inclusive).
+* If {@code abs(x) > 40}, then {@code erf(x)} is indistinguishable from
+public static double erf(double x) {
+if (FastMath.abs(x) > 40) {
+return x > 0 ? 1 : -1;
+

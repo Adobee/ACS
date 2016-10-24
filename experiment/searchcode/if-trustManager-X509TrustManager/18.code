@@ -1,0 +1,9 @@
+public class MyX509TrustManager implements X509TrustManager {
+
+X509TrustManager trustManager;
+
+public MyX509TrustManager() throws Exception {
+for (int i = 0; i < tms.length; i++) {
+if (tms[i] instanceof X509TrustManager) {
+trustManager = (X509TrustManager) tms[i];
+

@@ -1,0 +1,10 @@
+int pos = 0;
+for (pos = 0;pos < end+1; pos++){
+if (A[pos] == 0){
+if (pos == begin){
+}else if (A[pos] == 2){
+if (pos == end){
+continue;
+}
+int tmp = A[end];
+

@@ -1,0 +1,10 @@
+* @return
+*/
+public static long ranlong(int nvars) {
+return new BigInteger(1 << nvars, rand).longValue();
+System.out.println(&quot;L0=&quot; + L0);
+int pow = 1 << nvars;
+long tt = 1L << pow;
+if (t != 0) {
+System.out.println(&quot;TESTING!!!&quot;);
+

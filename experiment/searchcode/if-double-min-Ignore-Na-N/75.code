@@ -1,0 +1,9 @@
+* used in such a way that NaN values should be ignored.
+* @param ignore true if NaN values are to be ignored when computing the min or max.
+*/
+
+public void setIgnoreNaN(boolean ignore) {
+if (prim.isNaN()) {
+// if there&#39;s a double NaN in the sequence, return NaN, unless ignoreNaN is set
+if (ignoreNaN) {
+

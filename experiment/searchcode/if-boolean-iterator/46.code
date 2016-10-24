@@ -1,0 +1,12 @@
+class PeekIterator<T> implements Iterator<T> {
+
+Iterator<T> iterator = null;
+T current = null;
+boolean isPeek = true;
+
+public PeekIterator(Iterator<T> iterator) {
+public T peek() {
+if (isPeek) {
+current = iterator.next();
+isPeek = false;
+

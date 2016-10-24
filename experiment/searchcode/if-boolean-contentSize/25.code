@@ -1,0 +1,6 @@
+@Override
+public boolean onMouseWheel(NUIMouseWheelEvent event) {
+// If there are two scrollbars, we assume vertical has priority
+Vector2i contentSize = canvas.calculateRestrictedSize(content, new Vector2i(availableWidth, availableHeight));
+if (contentSize.x <= availableWidth &amp;&amp; contentSize.y <= availableHeight) {
+

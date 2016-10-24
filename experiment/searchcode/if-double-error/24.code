@@ -1,0 +1,10 @@
+public GroundHeadingControl(double KP, double KI, double KD) {
+super(KP, KI, KD);
+}
+
+private double processError(double error) {
+if(error > 0) {
+if(error > 180) {
+error = error - 360;
+} else {
+

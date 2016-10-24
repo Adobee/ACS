@@ -1,0 +1,6 @@
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.TrustManagerFactory;
+import javax.net.ssl.X509TrustManager;
+TrustManager[] trustManager = trustManagerFactory.getTrustManagers();
+if (trustManager.length != 1 || !(trustManager[0] instanceof X509TrustManager)) {
+

@@ -1,0 +1,10 @@
+//	public boolean validateCurrentPassword(User user, String currentPass) {
+//		if (currentPass.equals(user.getPassword())) {
+//			return true;
+//		}
+//		return false;
+//	}
+//
+public boolean validateCurrentPassword(User user, String currentPass) {
+if (BCrypt.checkpw(currentPass, user.getPassword())) {
+

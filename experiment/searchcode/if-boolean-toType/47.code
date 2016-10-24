@@ -1,0 +1,5 @@
+public boolean isImplicitCastValidImpl(Type toType){
+if (isAutoUnboxingValid(toType)) return true;
+if (toType.isInt() &amp;&amp; this.fullName().equals(&quot;java.lang.Integer&quot;)) return true;
+if (toType.isBoolean() &amp;&amp; this.fullName().equals(&quot;java.lang.Boolean&quot;)) return true;
+

@@ -1,0 +1,9 @@
+public void testLocalOperationWithBlocks() throws ExecutionException, InterruptedException {
+final boolean retryableBlock = randomBoolean();
+final boolean unblockBeforeTimeout = randomBoolean();
+return blocks.isEmpty() ? null : new ClusterBlockException(blocks);
+}
+}.execute(request, listener);
+
+if (retryableBlock &amp;&amp; unblockBeforeTimeout) {
+

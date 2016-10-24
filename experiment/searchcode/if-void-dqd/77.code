@@ -1,0 +1,15 @@
+setName(&quot;Document delete thread &#39;&quot;+id+&quot;&#39;&quot;);
+setDaemon(true);
+}
+
+public void run()
+{
+resetManager.registerMe();
+
+try
+while (j < dds.getCount())
+{
+DeleteQueuedDocument dqd = dds.getDocument(j++);
+
+if (dqd.wasProcessed() == false)
+

@@ -1,0 +1,12 @@
+public OperationInfo(OpType opType, String offset, String length, String irpFlag) {
+this.opType = opType;
+if (opType == OpType.READ || opType == OpType.WRITE) {
+this.irpFlag = irpFlag;
+}
+
+public OperationInfo() {
+}
+
+public void setOpType(String opType) {
+if (MajorOp.isRead(opType)) this.opType = OpType.READ;
+

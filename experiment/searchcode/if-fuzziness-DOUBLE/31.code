@@ -1,0 +1,12 @@
+this.fuzziness = Integer.toString(fuzziness);
+}
+
+private Fuzziness(String fuzziness) {
+if (fuzziness == null) {
+return (byte) Float.parseFloat(fuzziness.toString());
+}
+}
+
+public double asDouble() {
+if (this.equals(AUTO)) {
+

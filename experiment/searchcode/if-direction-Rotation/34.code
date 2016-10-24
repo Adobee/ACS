@@ -1,0 +1,10 @@
+package tiles.direction;
+
+import misc.Direction;
+import exceptions.RotationNotSupportedException;
+public void rotate() {
+if (!mutable) {
+throw new RotationNotSupportedException();
+}
+direction = (direction == Direction.SOUTH) ? Direction.EAST
+

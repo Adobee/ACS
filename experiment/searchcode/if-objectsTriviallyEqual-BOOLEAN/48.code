@@ -1,0 +1,9 @@
+public class DiffBuilder implements Builder<DiffResult> {
+
+private final List<Diff<?>> diffs;
+private final boolean objectsTriviallyEqual;
+public DiffBuilder append(final String fieldName, final boolean lhs,
+final boolean rhs) {
+if (fieldName == null) {
+throw new IllegalArgumentException(&quot;Field name cannot be null&quot;);
+

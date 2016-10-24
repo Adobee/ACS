@@ -1,0 +1,11 @@
+public class Solution {
+
+public int trap(int[] height) {
+if (height == null) return 0;
+if (height.length == 0) return 0;
+for (int i = 0; i < height.length; i++) {
+if (height[i] > height[maxIdx]) maxIdx = i;
+}
+
+int sum = 0, maxsofar = height[0];
+

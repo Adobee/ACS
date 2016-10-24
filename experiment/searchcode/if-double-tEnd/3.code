@@ -1,0 +1,9 @@
+public abstract class AnnealingSchedule {
+
+private static final double DEFAULT_TSTART = 1;
+private static final double DEFAULT_TEND = 1E-16;
+public void initSchedule(double tStart, double tEnd, int nSteps) {
+if (tStart <= DEFAULT_TSTART)
+tStart = DEFAULT_TSTART;
+if (tEnd <= DEFAULT_TEND)
+

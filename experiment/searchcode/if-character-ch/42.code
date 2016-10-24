@@ -1,0 +1,8 @@
+* Using Stack
+*/
+static void Reverse(char[] ch){
+Stack<Character> S=new Stack<Character>();
+for(int i=0;i<ch.length;i++){
+if((ch[i]>=&#39;a&#39;&amp;&amp;ch[i]<=&#39;z&#39;)||(ch[i]>=&#39;A&#39;&amp;&amp;ch[i]<=&#39;Z&#39;)){
+S.push(ch[i]);
+

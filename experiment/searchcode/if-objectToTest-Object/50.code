@@ -1,0 +1,9 @@
+@Mock
+private TcapEventListener mockTcapListener;
+
+private IListenerState objectToTest;
+private TcapUserAddress userAddress;
+public void setup() throws Exception {
+objectToTest = new ListenerBound(mockListenerContext);
+userAddress = new TcapUserAddress(SPC, SSN);
+

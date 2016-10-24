@@ -1,0 +1,11 @@
+private double minX;
+private double maxZ;
+private double minZ;
+
+public SFFX(World world, double x, double y, double z){
+@Override
+public void onUpdate() {
+if(!this.isDead){
+if(!onGround){
+this.motionX += rand.nextDouble() /1000 * (rand.nextDouble() > 0.5 ? -1 : 1);
+

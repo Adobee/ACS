@@ -1,0 +1,10 @@
+inputStream = new FileReader(&quot;test.txt&quot;);
+outputStream = new FileWriter(&quot;out_test.txt&quot;);
+
+int c;
+while ((c = inputStream.read()) != -1)
+outputStream.write(c);
+}
+finally {
+if (inputStream != null)
+

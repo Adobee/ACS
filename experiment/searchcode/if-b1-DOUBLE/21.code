@@ -1,0 +1,13 @@
+return b1.add(b2).doubleValue();
+
+}
+
+
+public static BigDecimal add(BigDecimal b1,BigDecimal b2){
+if(b1==null || b2==null){
+return div(b1, b2, DEF_DIV_SCALE).doubleValue();
+}
+
+public static BigDecimal divide(BigDecimal b1,BigDecimal b2){
+if(b1==null || b2==null){
+

@@ -1,0 +1,10 @@
+public void setMaxEval(double maxEval) {
+if(hasMaxEval){
+return;//条件属性设置了
+}
+this.maxEval = maxEval;//没设置的话取所有数据的最大值，在值轴初始化最大最小值时取
+js.put(&quot;from&quot;, maxEval);
+js.put(&quot;to&quot;, minEval);
+if(color != null){
+js.put(&quot;color&quot;, StableUtils.javaColorToCSSColor(color));
+

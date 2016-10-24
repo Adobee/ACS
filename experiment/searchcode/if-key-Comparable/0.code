@@ -1,0 +1,7 @@
+int cmp = comparable.compareTo(x.key);
+if (cmp < 0) x.left = put(x.left, comparable, o);
+else if (cmp > 0) x.right = put(x.right, comparable, o);
+int cmp = comparable.compareTo(x.key);
+if (cmp < 0) return get(x.left, comparable);
+else if (cmp > 0) return get(x.right, comparable);
+

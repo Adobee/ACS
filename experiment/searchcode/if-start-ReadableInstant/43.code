@@ -1,0 +1,6 @@
+public class Seconds extends BaseSingleFieldPeriod {
+
+public static Seconds secondsBetween(ReadableInstant start, ReadableInstant end) {
+long amount = BaseSingleFieldPeriod.millisBetween(start.getMillis(), end.getMillis());
+return new Seconds(FieldUtils.safeToInt(Math.round(amount / (1000f))));
+

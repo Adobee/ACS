@@ -1,0 +1,9 @@
+batch.draw(lightPillar,x+obstacleParts[0].getRegionWidth()-100,openMode==MorphMode.PIG?y+45:y);
+if(player.mode==openMode){
+batch.draw(obstacleParts[3], x+obstacleParts[0].getRegionWidth(), y);
+if(player.getX()<=x+obstacleParts[0].getRegionWidth() &amp;&amp; player.getX()>=x+obstacleParts[0].getRegionWidth()-90){
+if(playSound){
+switch(openMode){
+case MAN:
+sounds.barrier[0].play();
+

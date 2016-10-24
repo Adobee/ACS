@@ -1,0 +1,11 @@
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+int numberOfSeries = sc.nextInt();
+int[][] series = new int[numberOfSeries][5];
+for (int count = 0; count < numberOfSeries; ++count) {
+for (int i = 0; i < 4; ++i) {
+series[count][i] = sc.nextInt();
+}
+
+if (series[count][1] - series[count][0] == series[count][2] - series[count][1]) {
+

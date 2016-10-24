@@ -1,0 +1,11 @@
+package org.apache.commons.lang3.builder;
+
+final class IDKey
+{
+private final Object value;
+private final int id;
+
+public IDKey(final Object _value) {
+super();
+this.id = System.identityHashCode(_value);
+

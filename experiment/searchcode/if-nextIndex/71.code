@@ -1,0 +1,15 @@
+public class PersonDinamicArrayList implements PersonListInterface{
+
+private Person[] array;
+private int nextIndex;
+
+public PersonDinamicArrayList()
+{
+array = new Person[10];
+nextIndex = 0;
+}
+
+public void add(Person person)
+{
+if (nextIndex >= array.length)
+

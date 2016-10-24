@@ -1,0 +1,6 @@
+double randomValue = r.nextDouble();
+if(randomValue < 0) randomValue *= -1;
+double randomValue = rangeMin + (rangeMax - rangeMin) * r.nextDouble();
+if(randomValue < 0) randomValue *= -1;
+randomValue %= rangeMax - 1;
+

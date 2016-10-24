@@ -1,0 +1,7 @@
+private static final int G = PARAMS.length - 2;
+
+public static Complex gamma(Complex z) {
+if (z.getReal() < 0.5)
+return PI.divide(PI.multiply(z).sin().multiply(gamma(Complex.ONE.subtract(z))));
+z = z.subtract(1.0);
+

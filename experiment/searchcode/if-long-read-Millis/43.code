@@ -1,0 +1,13 @@
+* System clock reading set by the last call to {@link #readClock()}.
+*/
+private long lastClockReadingMillis = 0;
+
+/**
+*/
+private boolean needToSetClockReadingMillis = true;
+* @return current monotonic clock reading.
+*/
+private long readClock() {
+
+final long currentTimeMillis = wallClock.currentTimeMillis();
+

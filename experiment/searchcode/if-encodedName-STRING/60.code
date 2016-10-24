@@ -1,0 +1,9 @@
+public class URLEncode
+{
+public static String format (List <? extends NameValuePair> parameters)
+{
+final StringBuilder result = new StringBuilder();
+for (final NameValuePair parameter : parameters)
+{
+final String encodedName = encode(parameter.getName());
+

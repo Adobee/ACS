@@ -1,0 +1,9 @@
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.plot.PiePlot;
+
+public class DefaultPieSetting extends BaseStyleSetting {
+super.setChartStyle(jFreeChart);
+
+PiePlot plot = (PiePlot)jFreeChart.getPlot();// 用于设置显示特性
+if (plot != null) {
+

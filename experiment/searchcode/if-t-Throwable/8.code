@@ -1,0 +1,9 @@
+class SException extends Throwable {
+
+private final Throwable mChildThrowable;
+
+public SException(Throwable throwable) {
+if (throwable != null) {
+mChildThrowable = throwable;
+} else {
+

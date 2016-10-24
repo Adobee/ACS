@@ -1,0 +1,8 @@
+super(PrintContent.CONTENT_TYPE.QRCODE);
+mCode = code;
+}
+@Override
+public boolean acceptPrint(PrinterInfo printerInfo, Printer printer) {
+byte [] printBytes = printerInfo.getQrcodeCommand(mCode);
+if(printerInfo.getWriteImageFull())
+

@@ -1,0 +1,11 @@
+@Override
+public void run() {
+
+if(state){
+HttpsCommunication httpsCommunication = new HttpsCommunication(Protocol.getInstance().getHttpsCallback());
+httpsCommunication.setUniqueNumber(SettingsDataManager.getInstance().getMe().getUniqueID());
+httpsCommunication.setStringData(&quot;get&quot;);
+Log.i(TAG, &quot;get&quot;);
+
+if(!httpsCommunication.ExecuteRequest()){
+

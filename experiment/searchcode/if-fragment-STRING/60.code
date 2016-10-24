@@ -1,0 +1,10 @@
+private static final String FRAGMENT_TAG = &quot;FRAGMENT_TAG&quot;;
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+FragmentManager fragmentManager = getFragmentManager();
+
+Fragment fragment = fragmentManager.findFragmentByTag(FRAGMENT_TAG);
+
+if (fragment == null) {
+

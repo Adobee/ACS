@@ -1,0 +1,8 @@
+protected void fireSelectedEvent(Timeout timeout) {
+timeoutEventManager.fireSelectedEvent(timeout);
+}
+
+public boolean isSelected(Timeout timeout) {
+Timeout selection = selectionContext.getSelection(&quot;timeout&quot;);
+boolean selected = selection != null &amp;&amp; selection.equals(timeout);
+

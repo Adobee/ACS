@@ -1,0 +1,12 @@
+public class LinkedHashMap<K, V> extends HashMap<K, V> implements Iterable<V> {
+
+private transient Entry<K, V> header;
+
+private final boolean accessOrder;
+
+public LinkedHashMap(boolean accessOrder) {
+this.accessOrder = accessOrder;
+}
+
+public LinkedHashMap(int initialCapacity, float loadFactor) {
+

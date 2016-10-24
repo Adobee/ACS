@@ -1,0 +1,7 @@
+* and the columns of the jacobian. */
+private final double orthoTolerance;
+/** Threshold for QR ranking. */
+double costRelativeTolerance,
+double parRelativeTolerance,
+double orthoTolerance,
+

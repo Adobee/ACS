@@ -1,0 +1,10 @@
+public MoveFromWasteToTableauController(Board board) {
+super(board);
+}
+
+public void move(int tableauTargetIndex) {
+if(this.getBoard().getWaste().size()>0){
+Stack<Card> tableauTarget =  this.getBoard().getTableau(tableauTargetIndex);
+Card cardTopWaste =this.getBoard().getWaste().peek();
+if(isValidMoveFromTableau(tableauTarget, cardTopWaste)){
+

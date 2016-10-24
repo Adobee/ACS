@@ -1,0 +1,10 @@
+abstract public class SimpleJsonRemoteJob<T extends RemoteJob.Result> extends JsonRemoteJob<T> {
+private boolean hasData = false;
+
+public SimpleJsonRemoteJob(boolean hasData) {
+this.hasData = hasData;
+}
+
+public boolean hasData() {
+return hasData;
+

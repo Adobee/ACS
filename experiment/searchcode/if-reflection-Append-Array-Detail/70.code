@@ -1,0 +1,11 @@
+protected void appendFieldsIn(Class clazz)
+{
+if (clazz.isArray())
+{
+reflectionAppendArray(getObject());
+getStyle().reflectionAppendArrayDetail(getStringBuffer(), null, array);
+return this;
+}
+
+public void setAppendStatics(boolean appendStatics)
+

@@ -1,0 +1,9 @@
+ILconstBool c = (ILconstBool) s.getCondition().evaluate(globalState, localState);
+if (c.getVal()) {
+throw ExitwhenException.instance();
+}
+}
+
+public static void run(ImIf s, ProgramState globalState, LocalState localState) {
+ILconstBool c = (ILconstBool) s.getCondition().evaluate(globalState, localState);
+

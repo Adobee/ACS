@@ -1,0 +1,11 @@
+public static ProtocolBlade getProtocolBladeInstance(PROTOCOL protocol) {
+
+if(protocol.equals(PROTOCOL.HTTP)) {
+
+return new HttpProtocolBlade();
+
+}
+
+else if(protocol.equals(PROTOCOL.FTP)) {
+return new FtpProtocolBlade();
+

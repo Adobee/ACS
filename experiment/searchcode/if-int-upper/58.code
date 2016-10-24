@@ -1,0 +1,11 @@
+public class PrimeNumbers {
+private int upperBound;
+private StackOfIntegers primeNumbers;
+
+PrimeNumbers() {
+this(120);
+}
+PrimeNumbers(int upperBound) {
+this.upperBound = upperBound;
+this.primeNumbers = new StackOfIntegers();
+

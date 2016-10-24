@@ -1,0 +1,9 @@
+throw new IllegalArgumentException(&quot;The string must not be null&quot;);
+}
+// parse double format
+int pos = str.indexOf(&#39;.&#39;);
+if (pos >= 0) {
+pos = str.indexOf(&#39; &#39;);
+if (pos > 0) {
+int whole = Integer.parseInt(str.substring(0, pos));
+

@@ -1,0 +1,11 @@
+package inetAddress;
+
+import java.net.InetAddress;
+
+public class InetAddresstest {
+public static void main(String[] args) {
+String host = args[0];
+InetAddress[] address = InetAddress.getAllByName(host);
+for (InetAddress a : address) {
+System.out.println(a);
+

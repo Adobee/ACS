@@ -1,0 +1,7 @@
+mutex.acquire();    // each time, only one thread can modify full or empty semaphore
+if (full.availablePermits() < 5)
+full.release();
+System.out.println(&quot;producer&quot; + Thread.currentThread().getId() + &quot;, full &quot; + full.availablePermits() + &quot;, empty &quot; + empty.availablePermits());
+mutex.acquire();    // each time, only one thread can modify full or empty semaphore
+if (empty.availablePermits() < 5)
+

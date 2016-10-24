@@ -1,0 +1,11 @@
+this.interpretation = interpretation;
+}
+
+public Boolean visit(AndNode formula, Void parameter) {
+boolean left  = formula.getLeftChild().accept(booleanEvaluator, null);
+return (left &amp;&amp; right) || (!left &amp;&amp; !right);
+}
+
+public Boolean visit(IfNode formula, Void parameter) {
+boolean left  = formula.getLeftChild().accept(booleanEvaluator, null);
+

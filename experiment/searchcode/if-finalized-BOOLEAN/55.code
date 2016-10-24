@@ -1,0 +1,13 @@
+* say, being killed by the task manager.
+*/
+KILLED(true),
+;
+
+private final boolean finalized;
+private TaskState(boolean finalized){
+this.finalized = finalized;
+}
+
+/**
+* Returns true if this state means the task is finalized, that is, it can
+

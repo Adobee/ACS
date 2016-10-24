@@ -1,0 +1,10 @@
+boolean first = true;
+for (final int instructionEncoding : instructions)
+{
+if (!first)
+{
+builder.append(&quot;,\n&quot;);
+ParsingOperation.decode(instructionEncoding);
+builder.append(operation.name());
+if (operation.ordinal() >= ParsingOperation.distinctInstructions)
+

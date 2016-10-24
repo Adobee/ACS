@@ -1,0 +1,11 @@
+adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+}
+}
+catch (RecognitionException re) {
+reportError(re);
+retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+
+}
+finally {
+if ( state.backtracking>0 ) { memoize(input, 419, stuff_StartIndex); }
+

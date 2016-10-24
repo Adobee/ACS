@@ -1,0 +1,12 @@
+String periodStr = &quot;null&quot;;
+
+if (period == null) {
+return periodStr;
+}
+
+if (period.get(DurationFieldType.years()) > 0) {
+periodStr = years + &quot; year(s)&quot;;
+}
+else if (period.get(DurationFieldType.months()) > 0) {
+int months = period.get(DurationFieldType.months());
+

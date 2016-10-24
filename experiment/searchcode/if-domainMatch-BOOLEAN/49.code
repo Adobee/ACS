@@ -1,0 +1,11 @@
+if (!domain.startsWith(&quot;.&quot;)) {
+s = &#39;.&#39; + s;
+}
+cookie.setDomain(s);
+}
+
+public boolean domainMatch(final String host, final String domain) {
+throw new CookieRestrictionViolationException(&quot;Domain attribute \&quot;&quot; + cookie.getDomain() + &quot;\&quot; violates RFC 2965: the value contains no embedded dots &quot; + &quot;and the value is not .local&quot;);
+}
+if (!this.domainMatch(host, cookieDomain)) {
+

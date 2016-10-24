@@ -1,0 +1,8 @@
+g2d.setPaint(normalBackgroundPaint);
+if (isSelected()) {
+g2d.setPaint(selectedBackgroundPaint);
+} else if (isFocus()) {
+g2d.setPaint(focusBackgroundPaint);
+}
+g2d.fillRoundRect(0, 0, this.getWidth() - 1, this.getHeight() - 1, 15, 15);
+

@@ -1,0 +1,23 @@
+public int removeElement(int[] A, int elem) {
+
+// 从左端取elem由右边的其他数取代
+int start = 0;
+int end = A.length - 1;
+while (start <= end) {
+if (A[start] != elem) {
+start++;
+continue;
+}
+if (A[end] == elem) {
+end--;
+continue;
+}
+A[start] = A[end];
+end--;
+}
+
+return start;
+
+}
+}
+

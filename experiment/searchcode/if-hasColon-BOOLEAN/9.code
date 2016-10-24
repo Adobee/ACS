@@ -1,0 +1,11 @@
+return new DecisionTable(table, tableId, slimTestContext);
+}
+
+return new SlimErrorTable(table, tableId, slimTestContext);
+}
+
+private boolean hasColon(String tableType) {
+private Class<? extends SlimTable> getTableType(String tableType) {
+if (hasColon(tableType)) {
+tableType = tableType.substring(0, tableType.indexOf(&#39;:&#39;) + 1);
+

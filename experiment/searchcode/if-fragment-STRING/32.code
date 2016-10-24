@@ -1,0 +1,9 @@
+public static String showDialogFragment(FragmentManager fragmentManager, DialogFragment dialogFragment,
+String fragmentTag, boolean onlyIfNotDuplicate) {
+
+// If only showing non duplicates dialogs, make sure the fragment isn&#39;t already in the manager
+return showDialogFragment(fragmentManager, dialogFragment, generateFragmentTag(dialogFragment), onlyIfNotDuplicate);
+}
+
+public static String showDialogFragment(FragmentManager fragmentManager, DialogFragment dialogFragment,
+

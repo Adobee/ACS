@@ -1,0 +1,8 @@
+public BooleanWrapper(boolean errorOccurred, String message){
+state = errorOccurred;
+myMessage = message;
+StringBuilder sb = new StringBuilder();
+for (BooleanWrapper error: errors){
+if (error.isFalse())
+sb.append(error.getMessage() + &quot;\n&quot;);
+

@@ -1,0 +1,12 @@
+package com.aric.samples.utils;
+
+public class Timer {
+private Long startTime;
+
+public Timer() {
+this.startTime = System.currentTimeMillis();
+}
+
+public long stop(boolean restart) {
+long result = System.currentTimeMillis() - this.startTime;
+

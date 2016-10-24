@@ -1,0 +1,15 @@
+import data.ScalingImpl;
+
+
+public class FFTNormalizer implements DataSeries {
+
+double[] re;
+double[] im;
+double frequency;
+double amplitude =  Math.sqrt(re[i] * re[i] + im[i] * im[i])/ getN();
+if(i > 0) {
+amplitude = amplitude * 2;
+}
+
+return Math.abs(amplitude);
+

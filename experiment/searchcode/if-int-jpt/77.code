@@ -1,0 +1,12 @@
+ps.setInt(1, refIdx);
+ps.setInt(2, refIdx);
+ps.setInt(3, refIdx);
+cnt = ps.executeUpdate();
+
+if (cnt > 0) {
+ps = conn.prepareStatement(sql1);
+ps.setInt(1, refIdx);
+cnt = ps.executeUpdate();
+
+if (cnt > 0) {
+

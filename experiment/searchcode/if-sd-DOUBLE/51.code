@@ -1,0 +1,10 @@
+super(&quot;SD&quot;);
+}
+
+@Override
+public void countResult(StatisticResult statResult) {
+double sd = 0;
+double var = statResult.getValue().get(&quot;Variance&quot;).doubleValue();
+if (var != 0) {
+sd = Math.sqrt(var);
+

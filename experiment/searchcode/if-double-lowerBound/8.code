@@ -1,0 +1,10 @@
+private double lowerBound;
+private double slope;
+private double yIntercept;
+
+public FuzzyMembership()
+public FuzzyMembership(double up, double low)
+{
+upperBound = up;
+lowerBound = low;
+

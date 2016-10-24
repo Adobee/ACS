@@ -1,0 +1,11 @@
+private StringBuffer query;
+
+public WhereClause getQuery(String name) {
+if (name == null) {
+return WhereClause.EMPTY;
+query.append(&quot; OR (GivenName LIKE ? AND Surname LIKE ?)&quot;);
+}
+}
+
+private String concatSubArray(String[] names, int startIndexInclusive, int endIndexExclusive) {
+

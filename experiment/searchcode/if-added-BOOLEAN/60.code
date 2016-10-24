@@ -1,0 +1,20 @@
+public CircularFifoQueue(long size) {
+this.size = size;
+}
+
+/**
+*
+*/
+@Override
+public boolean add(E element) {
+boolean added = super.add(element);
+
+if(added) {
+if(this.size() > size) {
+this.pop();
+}
+}
+return added;
+}
+}
+

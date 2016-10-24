@@ -1,0 +1,7 @@
+List<Plane> list = getJdbcTemplate().query(sql.toString(), new PlaneMapper());
+if (CollectionUtils.isEmpty(list)) {
+return new Plane();
++&quot;&#39;  where plane_id=&#39;&quot;+plane.getPlaneId()+&quot;&#39;&quot;);
+int update = getJdbcTemplate().update(sql.toString());
+if (update > 0) {
+

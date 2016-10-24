@@ -1,0 +1,7 @@
+r2 = 2131230926; // 0x7f0800ce float:1.8077919E38 double:1.052967984E-314;
+com.whatsapp.App.a(r1, r2, r4);
+if (r0 == 0) goto L_0x0026;
+r2 = 2131232311; // 0x7f080637 float:1.8080728E38 double:1.052968668E-314;
+r1.a(r2);
+if (r0 == 0) goto L_0x0026;
+

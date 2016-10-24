@@ -1,0 +1,9 @@
+public int reverseBits(int n) {
+long result = n;
+int max = 0xffffffff;
+for(int i=0;i<16;i++){
+long high =(long) Math.pow(2,31-i);
+long lowNum = result&amp;low;
+long highNum = n&amp;high;
+if(lowNum==low)
+

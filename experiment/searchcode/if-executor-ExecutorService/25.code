@@ -1,0 +1,9 @@
+public static final void shutdownAndAwaitTermination(
+ExecutorService executorService) {
+if (executorService.isShutdown()) {
+return;
+}
+executorService.shutdown();
+try {
+if (!executorService.awaitTermination(60, TimeUnit.SECONDS)) {
+

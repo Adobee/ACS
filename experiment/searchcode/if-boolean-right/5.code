@@ -1,0 +1,7 @@
+return v != null &amp;&amp; v.s.equals(&quot;->&quot;) &amp;&amp; v.right != null &amp;&amp; v.right.s.equals(&quot;->&quot;) &amp;&amp; (v.left != null &amp;&amp; v.right.right != null &amp;&amp; isEqual(v.left, v.right.right));
+}
+
+boolean isSecond(Expression v) {
+if (v != null &amp;&amp; v.s.equals(&quot;->&quot;) &amp;&amp; v.left != null &amp;&amp; v.left.s.equals(&quot;->&quot;) &amp;&amp; v.right != null &amp;&amp; v.right.s.equals(&quot;->&quot;)) {
+if (v.right.left != null &amp;&amp; v.right.left.s.equals(&quot;->&quot;) &amp;&amp; v.right.right != null &amp;&amp; v.right.right.s.equals(&quot;->&quot;)) {
+

@@ -1,0 +1,9 @@
+* @param maxCostEval maximal number of cost evaluations allowed
+* @see #estimate
+*/
+public final void setMaxCostEval(int maxCostEval) {
+throws EstimationException {
+
+if (++costEvaluations > maxCostEval) {
+throw new EstimationException(&quot;maximal number of evaluations exceeded ({0})&quot;,
+

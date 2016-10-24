@@ -1,0 +1,12 @@
+private NetworkPlayer networkPlayer;
+
+private volatile boolean running = true;
+
+public NetworkPlayerThread(NetworkPlayer networkPlayer, String threadString){
+this.networkPlayer = networkPlayer;
+}
+
+public void run(){
+while(running){
+if(!NetworkPlayer.checkNetworkConnection(networkPlayer)) running = false;
+

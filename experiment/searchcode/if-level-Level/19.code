@@ -1,0 +1,8 @@
+levelReached = levelIsReached(levelLTV, levelReachedT);
+}
+
+private boolean levelIsReached(SignatureLevel level, boolean previousLevel) {
+if (level != null) {
+if (!previousLevel) {
+level.getLevelReached().setStatus(Result.ResultStatus.INVALID, &quot;previous.level.has.errors&quot;);
+

@@ -1,0 +1,8 @@
+public static double base( double val ) {
+if ( val <= -0.75 ) return 0;
+else if ( val <= -0.25 ) return interpolate( val, 0.0, -0.75, 1.0, -0.25 );
+public static double red( double gray ) {
+return base( gray - 0.5 );
+}
+public static double green( double gray ) {
+

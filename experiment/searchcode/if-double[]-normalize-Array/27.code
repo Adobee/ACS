@@ -1,0 +1,12 @@
+public Vector4D normalize() {
+double m = magnitude();
+x /= m;
+y /= m;
+z /= m;
+return this;
+return normOther.scale(this.dot(normOther));
+}
+
+public double[] asArray() {
+return new double[]{x, y, z, w};
+

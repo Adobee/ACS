@@ -1,0 +1,10 @@
+return this.line(String.format(format, args));
+}
+
+private boolean appending = false;
+
+public IndentedFormatter append(String text) {
+if(! appending) {
+this.startLine();
+this.applyIndentation();
+

@@ -1,0 +1,12 @@
+return this.textValue = Long.toString(this.value);
+}
+
+@Override
+Value add(Value val2) {
+if (val2.getValueType() == DataValueType.INTEGRAL) {
+return Value.newValue(this.value == val2.getIntegralValue());
+}
+if (val2.getValueType() == DataValueType.DECIMAL) {
+long v1 = Math
+.round(this.value * DecimalValue.PRECISION_MULTIPLIER);
+

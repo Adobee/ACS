@@ -1,0 +1,8 @@
+private LoadingCache<K, V> makeCache(int maxSize, int expireAfterAccess, int expireAfterWrite) {
+LOG.info(&quot;inside initCacheWithWriteExpiry&quot;);
+CacheBuilder<K, V> cacheBuilder = CacheBuilder.newBuilder().
+cacheBuilder = cacheBuilder.expireAfterAccess(expireAfterAccess, TimeUnit.MINUTES);
+
+} else if (expireAfterWrite != 0) {
+cacheBuilder = cacheBuilder.expireAfterWrite(expireAfterWrite, TimeUnit.MINUTES);
+

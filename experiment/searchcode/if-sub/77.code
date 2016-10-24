@@ -1,0 +1,9 @@
+import com.legendshop.core.exception.NotFoundException;
+import com.legendshop.model.entity.Sub;
+import com.legendshop.spi.locator.GenericServiceLocator;
+public Sub getSub(Long subId)
+{
+Sub sub = this.subService.getSubById(subId);
+if (sub == null)
+throw new NotFoundException(&quot;Sub can not be empty&quot;, &quot;404&quot;);
+

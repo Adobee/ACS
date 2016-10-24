@@ -1,0 +1,10 @@
+* @author Alexei Drummond
+*
+* @version $Id$
+*/
+public class PoissonDistribution implements Distribution {
+
+org.apache.commons.math.distribution.PoissonDistribution distribution;
+public PoissonDistribution(double mean) {
+distribution = new org.apache.commons.math.distribution.PoissonDistributionImpl(mean);
+

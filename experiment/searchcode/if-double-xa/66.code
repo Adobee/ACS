@@ -1,0 +1,13 @@
+double dx = 0;
+double dy = 0;
+while(dy == 0 &amp;&amp; dx == 0){
+if(cuadrante<0.25 &amp;&amp; xa+d<size &amp;&amp; ya+d<size){
+double[] x = {xa,xb};
+double[] y = {ya,yb};
+
+if(xa>xb){
+x[0] = xb;
+x[1] = xa;
+}
+if(ya>yb){
+

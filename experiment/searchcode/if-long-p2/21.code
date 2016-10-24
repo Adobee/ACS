@@ -1,0 +1,17 @@
+answer = 1;
+for (int p2 = 3; p2 <= tmpLimit; p2 += 2) {
+if (sieve.isPrime(p2)) {
+++answer;
+tmpLimit = limit / p1;
+for (int p2 = p1; p2 <= tmpLimit; p2 += 2) {
+if (sieve.isPrime(p2)) {
+++answer;
+}
+}
+}
+}
+return answer;
+}
+
+}
+

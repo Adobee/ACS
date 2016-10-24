@@ -1,0 +1,9 @@
+res = Double.parseDouble(stringField[5]);
+} catch (Exception e) {
+e.printStackTrace();
+}
+if (value != null &amp;&amp; Double.parseDouble(value) != res) {
+for (int i = 0; i < getNumberOfData(); i++) {
+if (!Double.isNaN(getData(i))) {
+diff = (getFit(i) - getData(i)) * getWeight(i);
+

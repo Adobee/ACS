@@ -1,0 +1,8 @@
+weekRecords.put(record.getWeekNumber(), record);
+}
+
+public WeekRecord getWeekRecordByWeekNumber(int weekNumber) {
+WeekRecord result = weekRecords.get(weekNumber);
+if (result == null) {
+throw new RecordNotFoundException(weekNumber);
+

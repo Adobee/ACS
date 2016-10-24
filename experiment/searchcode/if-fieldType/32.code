@@ -1,0 +1,9 @@
+* @author Toni Rikkola
+*/
+public class Field extends VerifierComponent implements Cause {
+
+public static class FieldType {
+public void setFieldType(FieldType fieldType) {
+// Only set fieldType to variable if there is no other fieldType found.
+if (fieldType == FieldType.VARIABLE &amp;&amp; this.fieldType == null) {
+

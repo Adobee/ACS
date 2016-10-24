@@ -1,0 +1,6 @@
+// holds record of the length of the path including this cell; 0 if unvisited
+int[][] lengths = new int[mat.length][mat[0].length];
+private static int findlen(int[][] mat, boolean[][] visited,
+int prevValue,int x,int y) {
+if(x<0 || x>mat.length-1 || y<0 || y>mat.length-1 || visited[x][y])
+

@@ -1,0 +1,12 @@
+this.client = client;
+}
+
+@Id
+@Column(name = &quot;client_phone_id&quot;, unique = true)
+@GeneratedValue(strategy = GenerationType.AUTO, generator = &quot;sage_sequence&quot;)
+@JoinColumn(name = &quot;phone_sys_id&quot;)
+public PhoneSys getPhone() {
+/*if(phone!=null){
+return phone;
+} else {
+

@@ -1,0 +1,7 @@
+* Curried form of logical &quot;only if&quot; (material implication).
+*/
+public static final F<Boolean, F<Boolean, Boolean>> implies = curry(new F2<Boolean, Boolean, Boolean>() {
+* Curried form of logical &quot;if&quot; (reverse material implication).
+*/
+public static final F<Boolean, F<Boolean, Boolean>> if_ = flip(implies);
+

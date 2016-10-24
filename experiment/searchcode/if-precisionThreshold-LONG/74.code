@@ -1,0 +1,14 @@
+.build();
+}
+
+static long numDocs;
+static long precisionThreshold;
+
+@Override
+public void setupSuiteScopeCluster() throws Exception {
+ensureSearchable();
+}
+
+private void assertCount(Cardinality count, long value) {
+if (value <= precisionThreshold) {
+

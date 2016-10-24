@@ -1,0 +1,8 @@
+mCourseName.setText(selectedCourseName);
+
+// Distance
+double selectedDistance = cursor.getDouble(cursor.getColumnIndex(RaceLocation.Distance));
+mDistance.setText(Double.toString(selectedDistance));
+break;
+case CURRENT_RACE_LOCATION_LOADER:
+

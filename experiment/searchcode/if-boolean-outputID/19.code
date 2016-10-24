@@ -1,0 +1,10 @@
+public void validate(DwrResponseI18n response) {
+if (outputId < 1 || outputId > 80)
+response.addContextualMessage(&quot;outputPointType.outputId&quot;, &quot;validate.1to80&quot;);
+// Switch on the version of the class so that version changes can be elegantly handled.
+if (ver == 1) {
+outputId = in.readInt();
+}
+}
+}
+

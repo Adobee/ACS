@@ -1,0 +1,10 @@
+double angle1 = 0.0;
+double angle2 = 0.0;
+
+if (getDirection() == Rotation.CLOCKWISE) {
+angle1 = state.getLatestAngle();
+double ep = 0.0;
+double mep = getMaximumExplodePercent();
+if (mep > 0.0) {
+ep = getExplodePercent(getSectionKey(section)) / mep;
+

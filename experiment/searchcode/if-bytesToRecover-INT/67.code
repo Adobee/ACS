@@ -1,0 +1,7 @@
+/** Returns the count of entries evicted. */
+private int evictToRecoverBytes(int bytesToRecover) {
+int entriesToEvict = 0;
+if (bytesToRecover > 0) {
+// determine how many headers need to be evicted.
+for (int j = headerTable.length - 1; j >= nextHeaderIndex &amp;&amp; bytesToRecover > 0; j--) {
+

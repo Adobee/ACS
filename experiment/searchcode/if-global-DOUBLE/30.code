@@ -1,0 +1,9 @@
+return p;
+}
+static double N8cae6e0(Object []i) {
+double p = Double.NaN;
+if (i[8] == null) {
+p = 0;
+} else if (((Double) i[8]).doubleValue() <= 6849.0) {
+p = WekaClassifier.N156fe4a1(i);
+

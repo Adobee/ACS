@@ -1,0 +1,9 @@
+private static final double ALPHA_ANF = -10.0;
+private static final int N_ALPHA = 100000;
+
+private final double rec_delta_alpha;
+private final double[] alpha_tab;
+
+AlphaTab() {
+alpha_tab =  new double[N_ALPHA];
+

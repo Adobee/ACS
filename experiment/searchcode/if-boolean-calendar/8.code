@@ -1,0 +1,16 @@
+super(nullValueAllowed);
+}
+
+@Override
+public Object getNextValue()
+{
+if (getCalendar() == null &amp;&amp; isNullValueAllowed())
+this.invokeChangeListener();
+return getCalendar();
+}
+
+@Override
+public Object getPreviousValue()
+{
+if (getCalendar() == null &amp;&amp; isNullValueAllowed())
+

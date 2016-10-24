@@ -1,0 +1,11 @@
+public class RunningDays {
+private char[] days;
+
+public static void validate(String runningDays) {
+if (runningDays.length() != 7) throw new IllegalArgumentException();
+char[] days = runningDays.toCharArray();
+
+for (int i = 0; i < days.length; i++) {
+char j = days[i];
+if (j != 0 || j != 1) throw new IllegalArgumentException();
+

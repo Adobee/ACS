@@ -1,0 +1,10 @@
+public class DateServiceImpl implements DateService {
+private static final int DAYS_TO_ADD = 1;
+@Autowired
+private ShareRepositoryImpl shareRepository;
+public LocalDate getNextWorkingDate(LocalDate currentDate, Integer daysIncrement) {
+final Integer daysToAdd = DAYS_TO_ADD;
+
+if (daysIncrement < daysToAdd) {
+return currentDate;
+

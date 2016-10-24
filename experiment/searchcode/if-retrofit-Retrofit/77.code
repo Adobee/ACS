@@ -1,0 +1,8 @@
+private static RetrofitApi mRetrofitApi;
+
+public static RetrofitApi getServerApi() {
+if (mRetrofitApi == null) {
+synchronized (TAG) {
+if (mRetrofitApi == null) {
+Retrofit retrofit = new Retrofit.Builder().baseUrl(HOST_NEWS)
+

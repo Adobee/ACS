@@ -1,0 +1,9 @@
+while( ret.indexOf(&quot;/*&quot;) != -1 ){
+commPos = ret.indexOf(&quot;/*&quot;);
+int end = ret.indexOf(&quot;*/&quot;,commPos);
+if(end == -1){
+end = ret.length();
+}
+if(end != ret.length()){
+ret = ret.substring(init, commPos) + ret.substring(end+2, ret.length());
+

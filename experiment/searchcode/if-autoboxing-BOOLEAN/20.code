@@ -1,0 +1,10 @@
+public static boolean generateAutoboxing(MethodVisitor mv, Type srcPropType, Type destPropType) {
+
+if (Autoboxing.isBoxing(srcPropType, destPropType)) {
++ srcPropType.getDescriptor() + &quot;)&quot; + destPropType.getDescriptor(), false);
+return true;
+}
+
+if (Autoboxing.isUnboxing(srcPropType, destPropType)) {
+mv.visitMethodInsn(INVOKESTATIC, AUTOBOXING_RUNTIME_TYPE, UNBOX_METHOD_NAME,
+

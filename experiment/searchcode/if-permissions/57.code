@@ -1,0 +1,9 @@
+return new PermissionsDelegate(activity);
+}
+
+private void readPermissions() {
+if (!isNeedCheckPermissions) return;
+if (activity == null) return;
+Permissions annotation = activity.getClass().getAnnotation(Permissions.class);
+if (annotation != null) {
+

@@ -1,0 +1,9 @@
+package com.parkhomenko.rout.serializer;
+
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.databind.SerializerProvider;
+public void serialize(Admin admin, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException {
+jsonGenerator.writeStartObject();
+
+if(admin.getId() != null) {
+

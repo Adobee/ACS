@@ -1,0 +1,9 @@
+package shurima.simulation.summonerrift.actor.behavior;
+
+import java.time.LocalTime;
+
+import shurima.simulation.Engine;
+LocalTime localTime = tickEvent.getLocalTime();
+if (localTime.compareTo(MINIONS_SPAWN) >= 0) {
+if (localTime.getSecond() % MINIONS_SPAWN_INTERVAL_SECONDS == 0 &amp;&amp; localTime.getNano() == 0) {
+

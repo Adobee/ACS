@@ -1,0 +1,7 @@
+private final double upperBound;
+
+public Bounds(double lowerBound, double upperBound) {
+checkArgument(lowerBound <= upperBound, &quot;Bounds range violation, &quot;
+public boolean isInsideBounds(double value) {
+if (Double.compare(value, upperBound) <= 0 &amp;&amp; Double.compare(value, lowerBound) >= 0) {
+

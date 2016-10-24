@@ -1,0 +1,10 @@
+private MultivaluedMap<String, Object> headers;
+private OutputStream stream;
+private boolean headersFlushed = false;
+OutputStream delegate) {
+this.headers = headers;
+this.stream = delegate;
+}
+
+protected void flushHeaders() throws IOException {
+

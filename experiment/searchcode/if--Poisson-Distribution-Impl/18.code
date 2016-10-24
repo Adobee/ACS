@@ -1,0 +1,9 @@
+import org.apache.commons.math.distribution.PoissonDistributionImpl;
+import org.apache.commons.math.distribution.TDistribution;
+import org.apache.commons.math.distribution.TDistributionImpl;
+PoissonDistribution getPoissonDistribution(int param) {
+if (poisson == null)
+poisson = new PoissonDistributionImpl(param);
+else {
+poisson.setMean(param);
+

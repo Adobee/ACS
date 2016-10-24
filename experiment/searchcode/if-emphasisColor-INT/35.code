@@ -1,0 +1,8 @@
+public void setButton(int index, String text, String tag, boolean emphasis, int emphasisColor) {
+if (index < 0 || index >= mButtons.length) {
+LOGW(TAG, &quot;Invalid button index: &quot; + index);
+mButtonTags[index] = tag;
+if (emphasis) {
+if (emphasisColor == 0) {
+emphasisColor = getResources().getColor(com.saarang.samples.apps.iosched.R.color.theme_primary);
+

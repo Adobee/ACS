@@ -1,0 +1,5 @@
+public UploadRequestBody(File file , OnProgressListener progressListener) {
+MediaType contentType=createContentType(file.getPath());
+Log.i(&quot;上传的 MediaType name is&quot;,contentType.toString());
+this.mRequestBody = RequestBody.create(contentType, file);
+

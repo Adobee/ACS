@@ -1,0 +1,8 @@
+int rowLength = keyValue.getRowLength();
+if (Type.codeToType(keyValue.getType()) == Type.Put) {
+// Delete old value
+mutations.add(defCFNamePut);
+}
+}
+} else if (Type.codeToType(keyValue.getType()) == Type.Delete){
+

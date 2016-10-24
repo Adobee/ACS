@@ -1,0 +1,5 @@
+Point relativeMousePosition = new Point(p.x - cellRectangle.x, p.y - cellRectangle.y);
+if (!contentSize.contains(relativeMousePosition)) {
+int pos = v.viewToModel(relativeMousePosition.x, relativeMousePosition.y, contentSize, new Bias[1]);
+if (pos >= 0) {
+

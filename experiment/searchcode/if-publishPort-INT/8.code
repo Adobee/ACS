@@ -1,0 +1,9 @@
+profileSettings = randomBoolean() ? Settings.EMPTY : Settings.builder().put(&quot;publish_port&quot;, 9080).build();;
+}
+
+int publishPort = resolvePublishPort(profile, settings, profileSettings,
+assertThat(&quot;Publish port should be derived from matching wildcard address&quot;, publishPort, equalTo(boundPort));
+
+if (NetworkUtils.SUPPORTS_V6) {
+publishPort = resolvePublishPort(profile, Settings.EMPTY, Settings.EMPTY,
+

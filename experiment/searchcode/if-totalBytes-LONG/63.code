@@ -1,0 +1,10 @@
+* Encapsulation class used to represent the amount of disk used on a node.
+*/
+public class DiskUsage {
+final String nodeId;
+final long totalBytes;
+final long freeBytes;
+
+public DiskUsage(String nodeId, long totalBytes, long freeBytes) {
+if ((totalBytes < freeBytes) || (totalBytes < 0)) {
+

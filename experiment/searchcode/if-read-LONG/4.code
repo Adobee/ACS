@@ -1,0 +1,14 @@
+class SimpleTestStream extends InputStream {
+private final long limit;
+private long read;
+
+SimpleTestStream(long limit) {
+return (int)(Math.random() * 256);
+}
+return -1;
+}
+
+@Override
+public long skip(long n) throws IOException {
+if (read + n > limit)  {
+

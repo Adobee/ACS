@@ -1,0 +1,8 @@
+private int compareContenttype(Document o) {
+if(!hasContenttype())
+return o.hasContenttype()?1:compareFilename(o);
+else if(!o.hasContenttype())
+return 1;
+else{
+int ct = contenttype.compareTo(o.getContenttype());
+

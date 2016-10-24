@@ -1,0 +1,14 @@
+return new RandomXOR1024();
+}
+
+public long nextULong();
+
+public default byte[] nextBytes(int bytes)
+return nextULong() >>> (64 - bits);
+}
+
+
+public default long nextLong(long bound)
+{
+if(bound <= 0) throw new IllegalArgumentException(&quot;Negative Bound: &quot; + bound);
+

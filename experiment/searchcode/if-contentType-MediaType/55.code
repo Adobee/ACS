@@ -1,0 +1,9 @@
+int targetVersion = mediaType.getParameters().containsKey(&quot;v&quot;)
+? Integer.valueOf(mediaType.getParameters().get(&quot;v&quot;))
+: -1;
+if (mediaType.toString().contains(&quot;+&quot;)) {
+target = MediaType.valueOf(str);
+}
+for (String allowedType : version.contentType()) {
+if (MediaType.valueOf(allowedType).isCompatible(target)
+

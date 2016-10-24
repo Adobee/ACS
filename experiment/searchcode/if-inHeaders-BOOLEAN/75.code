@@ -1,0 +1,6 @@
+io.netty.handler.codec.http.HttpHeaders inHeaders = in.headers();
+final HttpHeaders out = new DefaultHttpHeaders(true, inHeaders.size());
+if (in instanceof HttpRequest) {
+public static HttpHeaders toArmeria(io.netty.handler.codec.http.HttpHeaders inHeaders) {
+if (inHeaders.isEmpty()) {
+

@@ -1,0 +1,12 @@
+private int shift;
+private double hPayRate;
+Employee empInfo;
+public ProductionWorker(){
+super();
+this.shift=1;
+public ProductionWorker(Employee empInfo,int shift) throws InvalidShift{
+if (shift<0||shift>1)
+throw new InvalidShift(shift);
+this.shift=shift;
+this.empInfo=empInfo;
+

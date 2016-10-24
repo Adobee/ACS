@@ -1,0 +1,9 @@
+public class ConsistanceHash<T> {
+
+private final HashFunction hashFunction;
+private final int numberOfReplicas;
+private final SortedMap<Integer, T> circle = new TreeMap<Integer, T>();
+public ConsistanceHash(HashFunction hashFunction, int numberOfReplicas,
+Collection<T> nodes) {
+this.hashFunction = hashFunction;
+

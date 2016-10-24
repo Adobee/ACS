@@ -1,0 +1,14 @@
+for (int i = 0; i < A.length; i++) {
+if (hasCommonPrimeDivisors(A[i], B[i])) {
+return divisorA == 1 &amp;&amp; divisorB == 1;
+}
+
+private long gcd(long p, long q) {
+if (q == 0) {
+return (int) p;
+}
+return gcd(q, p % q);
+}
+
+}
+

@@ -1,0 +1,6 @@
+MediaType type = response.getMediaType();
+if (type != null) {
+String contentType = type.toString();
+if (!contentType.contains(MediaType.CHARSET_PARAMETER)) {
+contentType = contentType + &quot;;&quot; + MediaType.CHARSET_PARAMETER + &quot;=utf-8&quot;;
+

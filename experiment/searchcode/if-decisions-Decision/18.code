@@ -1,0 +1,9 @@
+public class AutoChoiceDecisionProvider implements RepairDecisionProvider {
+
+private Map<Task, RepairDecisionProvider.Decision> decisions
+= new HashMap<Task, RepairDecisionProvider.Decision>();
+for (Task task : failing) {
+decisions.put(task, Decision.YES);
+}
+rs = ResponseStatus.OK;
+

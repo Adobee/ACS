@@ -1,0 +1,12 @@
+// VW::Quaternion qwt(omegaold * delta_t);
+w = w.times(deltaTime);
+
+double theta = w.getNorm();
+if (theta < Helper.EPS)
+return new Quaternion(0, 0, 0, 1);
+return new Quaternion(w_n, theta);
+}
+}
+
+public static Matrix dqomegadt_by_domega(PointTriple omega, double deltaTime) {
+

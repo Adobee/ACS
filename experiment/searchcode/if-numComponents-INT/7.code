@@ -1,0 +1,9 @@
+pts[i] = new Point2D.Double(s.nextDouble() * mult, s.nextDouble() * mult);
+}
+
+int numComponents = 0;
+for (int i = 0; i < n; i++) {
+if (label[i] > -1) continue;
+for (int k = 0; k < numComponents; k++) if (included[k]) cur += sizes[k];
+bestSoFar = Math.max(bestSoFar, cur);
+

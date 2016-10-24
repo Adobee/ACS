@@ -1,0 +1,8 @@
+System.out.println(&quot;Writing to the Database&quot; + Thread.currentThread().getId());
+
+acquireLock(lock);
+activeWriter --;
+if(activeWriter > 0) {
+okToWrite.signal();
+} else if(waitingReader > 0) {
+

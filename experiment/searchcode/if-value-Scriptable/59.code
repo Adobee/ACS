@@ -1,0 +1,10 @@
+public Object unwrap() {
+if (wrappedScriptable instanceof Wrapper) {
+return ((Wrapper) wrappedScriptable).unwrap();
+return wrappedScriptable.has(index, start);
+}
+
+@Override
+public void put(String name, Scriptable start, Object value) {
+wrappedScriptable.put(name, start, value);
+

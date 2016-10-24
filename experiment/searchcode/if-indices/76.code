@@ -1,0 +1,7 @@
+int indexPosition=Arrays.binarySearch(messageIndices, messageIndex);
+if(indexPosition<0)
+newMessageIndices[indexPosition]=messageIndex;
+if(indexPosition+1<messageIndices.length)
+{
+System.arraycopy(messageIndices, indexPosition, newMessageIndices, indexPosition+1, messageIndices.length-indexPosition);
+

@@ -1,0 +1,14 @@
+public ArrayList<GameType> getGameList(boolean autosort)
+{
+if (!m_sorted &amp;&amp; autosort) sort();
+return m_gamelist;
+return getGameList(true);
+}
+
+public void add(GameType g)
+{
+add(g, true);
+}
+
+public void add(GameType g, boolean autosort)
+

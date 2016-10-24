@@ -1,0 +1,9 @@
+//Set up appropriate zoom and transforms
+AffineTransform tx = g2.getTransform();
+double zoom;
+if(isPrinting)
+Line2D lin = new Line2D.Double(i,clipBounds.y,i,clipBounds.y+clipBounds.height);
+if(lin.intersects(clipBounds))g2.draw(lin);
+}
+for(double i = -borderOffsetY; i < frameHeight/zoom; i=i+gridWidth)
+

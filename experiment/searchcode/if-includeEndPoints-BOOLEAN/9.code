@@ -1,0 +1,7 @@
+/*  44:    */   public Vector3D intersection(SubLine subLine, boolean includeEndPoints)
+/*  45:    */   {
+/*  46:109 */     Vector3D v1D = this.line.intersection(subLine.line);
+/*  52:115 */     Location loc2 = subLine.remainingRegion.checkPoint(subLine.line.toSubSpace(v1D));
+/*  53:117 */     if (includeEndPoints) {
+/*  54:118 */       return (loc1 != loc2.OUTSIDE) &amp;&amp; (loc2 != loc1.OUTSIDE) ? v1D : null;
+

@@ -1,0 +1,12 @@
+int cidx[] = new int[nbclasses];
+//double m;
+double Dmat[][] = new double[nbclasses][nbpixels];
+double Dprev[][] = new double[nbclasses][nbpixels];
+double g2 = Math.pow(green[l] - c[k][1], 2);
+double b2 = Math.pow(blue[l] - c[k][2], 2);
+Dprev[k][l] = r2 + g2 + b2;
+}
+}
+
+// Initialisation des degrés d&#39;appartenance
+

@@ -1,0 +1,13 @@
+return s;
+}
+public String find(int n){
+int count=0;
+Node tmp;;
+for (tmp=l ; tmp!=null ; tmp=tmp.getNext()){
+if (count==n) return tmp.getData();
+else count++;
+}
+return null;
+}
+public void insert(int n, String s){
+

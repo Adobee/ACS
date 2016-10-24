@@ -1,0 +1,10 @@
+public Class<?> getControllerClass(Class<?> managedItemClass) throws OpsException {
+ensureInitialized();
+
+if (managedItemClass == DnsRecord.class) {
+if (item instanceof DnsServer) {
+DnsServer model = (DnsServer) item;
+
+model.dnsName = normalize(model.dnsName);
+if (Strings.isNullOrEmpty(model.dnsName)) {
+

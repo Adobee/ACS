@@ -1,0 +1,8 @@
+this.longPeriodType = longPeriodType;
+this.maRecentPeriod = maRecentPeriod;
+}
+
+public double generateSignal(IHStatistics stat) {
+// 储存进去对应的数组
+double[] closeShort = stat.history(shortPeriod + maRecentPeriod, HPeriod.Day)
+

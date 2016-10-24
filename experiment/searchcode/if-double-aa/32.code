@@ -1,0 +1,10 @@
+/** sqrt(a^2 + b^2) without under/overflow. **/
+
+public static double hypot(double a, double b) {
+double r;
+double aa = Math.abs(a);
+double bb = Math.abs(b);
+if (aa > bb) {
+r = b/a;
+r = aa*Math.sqrt(1+r*r);
+

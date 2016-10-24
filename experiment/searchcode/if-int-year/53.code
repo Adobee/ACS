@@ -1,0 +1,16 @@
+public class LeapYear {
+public boolean LeapYearCal (int year) {
+boolean leapYear;
+
+if( (year%400 == 0) || ((year%4 == 0) &amp;&amp; (year%100 != 0)) ) {
+leapYear = true;
+}
+else {
+leapYear = false;
+}
+return leapYear;
+
+
+}
+}
+

@@ -1,0 +1,10 @@
+System.out.println(&quot;begin iterate&quot;);
+int max = iterate(z0);
+System.out.println(&quot;max &quot; + max);
+}
+
+public static int iterate(Complex z0) {
+Complex z = new Complex(z0);
+System.out.println(z.toString());
+for (int i = 0; i < MAX; i++) {
+

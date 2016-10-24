@@ -1,0 +1,9 @@
+private void prim1(){
+edges=new ArrayList<UDEdge>();
+if (G.V()<2)return;
+PriorityQueue<UDEdge, Integer> pq=new FibonacciHeap<UDEdge,Integer>();
+edges.add(pair.o2);
+c=vtemp.get(pair.o1).allConnections();
+for (int vto:c.keySet()){
+if (pq.decreaseKey(pairs[vto], c.get(vto).weight)){
+

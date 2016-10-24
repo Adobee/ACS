@@ -1,0 +1,7 @@
+* Represents all expressions with a boolean semantic.
+*/
+public abstract class BooleanExpression extends EvaluationExpression implements ISerializableSopremoType {
+public static BooleanExpression ensureBooleanExpression(final EvaluationExpression expression) {
+if (expression instanceof BooleanExpression)
+return (BooleanExpression) expression;
+

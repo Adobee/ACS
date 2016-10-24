@@ -1,0 +1,14 @@
+eventList.remove(eventCriteria);
+}
+}
+
+}
+
+public double getMeanValue(int tStart, int tEnd)
+{
+int nbValue = 0;
+double total = 0;
+for (int t = tStart; t <= tEnd; t++)
+{
+total += getValueAt(t);
+

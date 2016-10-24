@@ -1,0 +1,7 @@
+public static ActiveShardCount from(final int value) {
+if (value < 0) {
+throw new IllegalArgumentException(&quot;shard count cannot be a negative value&quot;);
+public static ActiveShardCount parseString(final String str) {
+if (str == null) {
+return ActiveShardCount.DEFAULT;
+

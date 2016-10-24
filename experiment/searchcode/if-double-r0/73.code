@@ -1,0 +1,9 @@
+} catch (BadLocationException ex) {
+//Nothing
+}
+
+if (r0 != null &amp;&amp; r1 != null) {
+if(c instanceof JTextField){
+g.drawString(c.getText().substring(p0, p1), r0.x, r0.y+r0.height-2);
+}else if(c instanceof JTextArea){
+

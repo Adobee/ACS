@@ -1,0 +1,8 @@
+private final MergePolicy delegate;
+private volatile boolean upgradeInProgress;
+private static final int MAX_CONCURRENT_UPGRADE_MERGES = 5;
+throws IOException {
+
+if (upgradeInProgress) {
+MergeSpecification spec = new IndexUpgraderMergeSpecification();
+

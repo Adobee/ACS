@@ -1,0 +1,13 @@
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.Set;
+
+
+@Entity
+@Table(name = &quot;phone&quot;)
+public class Phone implements Serializable{
+public void setPhoneNumber(String phoneNumber) {
+//check if field has phone mask
+if(phoneNumber != null) {
+if(phoneNumber.equals(SageConstants.PHONE_MASK)) {
+

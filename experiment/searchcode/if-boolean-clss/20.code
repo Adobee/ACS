@@ -1,0 +1,9 @@
+public class ApplicationManager {
+
+
+public void serviceCheck(Class clss){
+Annotation[] allAnnotations = clss.getAnnotations();
+boolean result = false;
+for(Annotation annotation : allAnnotations){
+if(annotation.annotationType().getName().equals(Service.class.getName())){
+

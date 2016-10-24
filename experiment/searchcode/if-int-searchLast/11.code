@@ -1,0 +1,11 @@
+public int searchFirst(int[] array, int target, int start, int end) {
+if (array[start] == target) {
+return start;
+}
+int mid = start + (end - start) / 2;
+return this.searchFirst(array, target, mid + 1, end);
+}
+return -1;
+}
+public int searchLast(int[] array, int target, int start, int end) {
+

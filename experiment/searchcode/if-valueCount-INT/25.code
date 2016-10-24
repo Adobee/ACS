@@ -1,0 +1,15 @@
+throw new InvalidParameterException(&quot;Two arguments expected: File-in(string)&quot;
++ &quot; value_count(int)&quot;);
+
+String fileName = args[0];
+int valueCount = Integer.parseInt(args[1]);
+int values[] = new int[valueCount];
+
+for (int i=0; i<valueCount; i++)
+values[i] = rand.nextInt();
+
+FileManager.writeFile(fileName, values);
+}
+
+}
+

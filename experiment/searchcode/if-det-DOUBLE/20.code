@@ -1,0 +1,9 @@
+* solve Ax=b, where A->3*3
+*/
+public static Vector3D SolveEquation(Matrix A, Vector3D b){
+double a, r, t;
+double aDet = A.det();
+if(aDet == 0) return null;
+
+double[][] aMatArray = {{b.x, A.get(0, 1), A.get(0,2)},
+

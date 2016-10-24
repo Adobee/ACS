@@ -1,0 +1,12 @@
+protected void checkValidity(List<Integer> chromosomeRepresentation) throws InvalidRepresentationException {
+for (int i : chromosomeRepresentation) {
+if (i < 0 || i >1) {
+throw new InvalidRepresentationException(LocalizedFormats.INVALID_BINARY_DIGIT,
+return rList;
+}
+
+@Override
+protected boolean isSame(Chromosome another) {
+// type check
+if (! (another instanceof BinaryChromosome)) {
+

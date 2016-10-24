@@ -1,0 +1,10 @@
+return false;
+
+int upperBase = 1;
+while (true)    {
+if ((long)upperBase * 10 > x)
+int upperDigit = (x / upperBase) % 10;
+int lowerDigit = (x / lowerBase) % 10;
+
+if (upperDigit != lowerDigit)
+

@@ -1,0 +1,11 @@
+this.ctx=ctx;
+this.sb=sb;
+this.args=args;
+}
+
+public void visitDateFieldType(DateFieldType dateFieldType) {
+doNull(dateFieldType);
+Date d = dateFieldType.getDefault();
+if( d != null ){
+sb.append(&quot; DEFAULT ?&quot;);
+

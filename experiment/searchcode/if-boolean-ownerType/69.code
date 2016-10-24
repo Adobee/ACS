@@ -1,0 +1,10 @@
+* Common abstract class for all types that have a super class and interfaces.
+*
+*/
+public abstract class OwnerType extends NullableType {
+OwnerType(boolean nullable) {
+super(nullable);
+NullableType merge(NullableType type) {
+if (!(type instanceof OwnerType)) {
+return super.merge(type);
+

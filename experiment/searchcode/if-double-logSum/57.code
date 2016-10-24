@@ -1,0 +1,7 @@
+* k is always an integer (or you may be misunderstanding this function). r
+* is potentially a double. For example, &quot;If we usually get r=10.5 apples off of
+public class UDFPpois extends UDF {
+
+public Double evaluate(Integer k, Double r) {
+if (k == null || r == null || k < 0 || r <= 0.0) {
+

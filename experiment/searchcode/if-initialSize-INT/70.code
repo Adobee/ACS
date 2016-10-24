@@ -1,0 +1,16 @@
+private final int initialSize;
+
+//
+// Constructors
+//
+public FastArray(int initialSize) {
+this.initialSize = initialSize <= MIN_ARRAY_SIZE ? MIN_ARRAY_SIZE : initialSize;
+this.array = new Object[this.initialSize];
+this.count = 0;
+}
+
+//
+// Public implementation
+//
+public boolean isValidIndex(int index) {
+

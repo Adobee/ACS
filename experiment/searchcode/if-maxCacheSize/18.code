@@ -1,0 +1,11 @@
+public class HMMTrainingCache extends TrainingCache {
+
+private int maxCacheSize;
+
+public HMMTrainingCache(int maxCacheSize) {
+super();
+this.maxCacheSize = maxCacheSize;
+}
+
+public WATrellis getTrellis(WAState.Factory factory, int I, Model<FirstOrderModel> params, SentencePair pair) {
+

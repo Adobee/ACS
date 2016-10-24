@@ -1,0 +1,12 @@
+private static final long serialVersionUID = -3544586396652268843L;
+
+protected BlockingQueue<Runnable> createQueue(int queueCapacity) {
+if (queueCapacity > 0) {
+return new LimitedQueue<Runnable>(queueCapacity);
+}
+else {
+return super.createQueue(queueCapacity);
+}
+}
+}
+

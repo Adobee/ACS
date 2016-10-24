@@ -1,0 +1,10 @@
+private PartialResult partialResult;
+
+public void init() {
+partialResult = new PartialResult();
+}
+
+public boolean iterate(IntWritable value) {
+if(partialResult == null)
+partialResult = new PartialResult();
+

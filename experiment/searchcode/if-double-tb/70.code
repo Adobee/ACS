@@ -1,0 +1,6 @@
+TbBook tbBook = this.tbBookDao.getTbBook(bookId);
+if (Contents.BookState.CAN_BORROW != tbBook.getState()) {
+int row = this.tbBookDao.updateTbBook(tbBookUpdate);
+if (row == 0) {
+throw new CheckedException(&quot;当前书不可预约&quot;);
+

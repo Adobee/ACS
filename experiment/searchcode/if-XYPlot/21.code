@@ -1,0 +1,6 @@
+import de.ewmksoft.xyplot.core.IXYGraphLib.RGB;
+import de.ewmksoft.xyplot.core.XYPlot;
+import de.ewmksoft.xyplot.core.XYPlotData;
+import de.ewmksoft.xyplot.driver.XYGraphView;
+import de.ewmksoft.xyplot.utils.XYPlotPersistence;
+

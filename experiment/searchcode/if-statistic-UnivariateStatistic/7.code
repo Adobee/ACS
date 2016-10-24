@@ -1,0 +1,10 @@
+import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics;
+import org.apache.commons.math3.stat.descriptive.UnivariateStatistic;
+
+import com.google.common.base.MoreObjects;
+public Optional<Double> apply(final UnivariateStatistic stat) {
+
+final long readStamp = trim();
+try {
+return stats.getN() > 0 ? Optional.of(stats.apply(stat)) : Optional.empty();
+

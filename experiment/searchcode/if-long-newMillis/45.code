@@ -1,0 +1,12 @@
+* (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+* SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*
+*/
+
+
+package realtime;
+public AbsoluteTime add( long millis, int nanos ) {
+
+int newNanos = (int) (( getNanoseconds() + nanos ) % 1000000L) ;
+long newMillis = getMilliseconds() + millis + ( getNanoseconds() + nanos ) / 1000000L ;
+

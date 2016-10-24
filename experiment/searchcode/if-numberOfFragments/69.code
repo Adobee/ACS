@@ -1,0 +1,7 @@
+Fragmenter fragmenter;
+if (field.fieldOptions().numberOfFragments() == 0) {
+fragmenter = new NullFragmenter();
+} else {
+// refine numberOfFragments if needed
+numberOfFragments = fragsList.size() < numberOfFragments ? fragsList.size() : numberOfFragments;
+

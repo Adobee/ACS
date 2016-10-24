@@ -1,0 +1,9 @@
+public class CyclicScheduler implements Scheduler {
+private boolean stopped;
+
+private final TerminatingScheduler scheduler;
+public final boolean process(ScheduleProcessingContext processingContext) {
+boolean wasStopped = setStopped(false);
+if (wasStopped == false) {
+return false;
+

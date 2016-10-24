@@ -1,0 +1,8 @@
+boolean inData = false;
+while ((currentLine = br.readLine()) != null) {
+if (inData == true &amp;&amp; currentLine.startsWith(&quot;  mo&quot;)) {
+m = p.matcher(currentLine);
+m.find();
+int minEndIndex = m.end();
+int minTemp = Integer.valueOf(currentLine.substring(minStartIndex, minEndIndex));
+

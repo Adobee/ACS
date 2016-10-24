@@ -1,0 +1,13 @@
+return null;
+
+ListNode p = head;
+ListNode q = p;
+
+if (p.next != null &amp;&amp; p.next.next != null) {
+q = p.next;
+p.next = q.next;
+q.next = p;
+head = q;
+q = p;
+} else if (p.next != null &amp;&amp; p.next.next == null) {
+

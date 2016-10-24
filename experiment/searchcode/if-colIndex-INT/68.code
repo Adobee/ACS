@@ -1,0 +1,10 @@
+this.maxrow = battleground.getMaxrows() - 1;
+}
+
+public Cell getWestCell(int rowIndex, int colIndex) {
+return cells[rowIndex + 1][colIndex + 1];
+}
+
+public void validateIndices(int rowIndex, int colIndex) {
+if (rowIndex == 0 || colIndex == 0 || rowIndex > maxrow || colIndex > maxcol) {
+

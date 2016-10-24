@@ -1,0 +1,9 @@
+Map<String, Integer> map = new HashMap<>();
+for (int j = i + 1; j < points.length; ++j) {
+if (points[i].x == points[j].x &amp;&amp; points[i].y == points[j].y) {
+continue;
+}
+int slopY = points[j].y - points[i].y;
+int slopX = points[j].x - points[i].x;
+int gcd = GCD(slopY, slopX);
+

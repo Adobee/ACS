@@ -1,0 +1,10 @@
+package com.sagereal.zq.game;
+
+import java.util.HashMap;
+import android.graphics.Paint;
+import android.graphics.Paint.Align;
+private static HashMap<Integer, Paint> paints = new HashMap<Integer, Paint>();
+public static Paint getTextPaint(int color) {
+Paint paint = paints.get(color);
+if (paint == null) {
+

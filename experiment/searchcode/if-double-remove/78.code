@@ -1,0 +1,12 @@
+TreeMap<Double, Double> map = new TreeMap<Double, Double>();
+
+@Override
+public Double f(Double x) {
+if (map.containsKey(x)) {
+Double result = 1 / (1 + Math.exp(-x));
+
+if (map.size() > 5) {
+map.remove(map.lastKey());
+}
+map.put(x, result);
+

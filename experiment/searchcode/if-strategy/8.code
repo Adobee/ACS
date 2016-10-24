@@ -1,0 +1,9 @@
+package com.home.ly.homework.strategy;
+
+public abstract class CommonStrategyImpl implements IStrategy {
+public void addStrategy(IStrategy strategy) {
+if (nextStrategy==null)
+nextStrategy = strategy;
+else {
+IStrategy nxt = nextStrategy;
+

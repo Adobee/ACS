@@ -1,0 +1,10 @@
+* coeff[1] -> -0.15
+* coeff[2] -> -0.1
+* coeff[3] -> -0.05
+* coeff[4] -> 	0.1
+*/
+private double[] coeff = {1000, -0.15, -0.1, -0.05, 0.1};
+
+@Override
+public double valuta(Tavolo tavolo, byte giocatore) {
+

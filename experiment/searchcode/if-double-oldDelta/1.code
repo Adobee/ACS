@@ -1,0 +1,10 @@
+checkInputs(function, xLower, xUpper);
+if (xLower.equals(xUpper)) {
+return xLower;
+}
+double x1 = xLower;
+double x2 = xUpper;
+double x3 = xUpper;
+double delta = 0;
+double oldDelta = 0;
+

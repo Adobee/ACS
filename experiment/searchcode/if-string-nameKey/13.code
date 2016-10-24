@@ -1,0 +1,11 @@
+* Created by bryan on 3/11/15.
+*/
+public class PercentileDefinition {
+private String namePath;
+private String nameKey;
+this( null, null, 0 );
+}
+
+public PercentileDefinition( String namePath, String nameKey, double percentile ) {
+this.namePath = namePath;
+

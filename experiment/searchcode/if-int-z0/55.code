@@ -1,0 +1,10 @@
+* @author minjikim
+*/
+public class RegEx {
+
+public static String[] users;
+public static int totalUsersNum = 0;
+Pattern p = Pattern.compile( &quot;^[a-zA-Z0-9]{4,10}$&quot; );
+Matcher m = p.matcher( s );
+if ( m.matches() == true ) return true;
+

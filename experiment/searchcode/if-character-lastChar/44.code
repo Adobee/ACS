@@ -1,0 +1,8 @@
+for(int i = 1; i  < text.length(); i++){
+
+if(lastChar==text.charAt(i)){
+count ++;
+}
+else{
+compressedText += Character.toString(lastChar) + Integer.toString(count); // first time I did:
+

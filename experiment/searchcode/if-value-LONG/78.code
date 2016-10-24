@@ -1,0 +1,10 @@
+public int compareTo(MutableLong paramMutableLong)
+{
+long l = paramMutableLong.value;
+if (this.value < l)
+boolean bool1 = paramObject instanceof MutableLong;
+boolean bool2 = false;
+if (bool1)
+{
+boolean bool3 = this.value < ((MutableLong)paramObject).longValue();
+

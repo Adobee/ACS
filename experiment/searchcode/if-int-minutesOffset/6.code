@@ -1,0 +1,7 @@
+public static DateTimeZone forOffsetHoursMinutes(int hoursOffset, int minutesOffset) {
+if (hoursOffset == 0 &amp;&amp; minutesOffset == 0) {
+return DateTimeZone.UTC;
+throw new IllegalArgumentException(&quot;Minutes out of range: &quot; + minutesOffset);
+}
+if (hoursOffset > 0 &amp;&amp; minutesOffset < 0) {
+

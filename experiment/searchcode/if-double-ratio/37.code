@@ -1,0 +1,14 @@
+public void incrementDenominator()
+{
+denominator++ ;
+}
+
+public double getRatio()
+{
+if(denominator==0) {
+public double getOppositeRatio()
+{
+return 1-getRatio();
+}
+}
+

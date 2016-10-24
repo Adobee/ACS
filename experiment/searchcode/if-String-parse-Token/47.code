@@ -1,0 +1,8 @@
+public ParseException(String msg, Token token) {
+super(&quot;syntax error around &quot; + location(token) + &quot;. &quot; + msg);
+}
+
+private static String location(Token token) {
+if (token == Token.kEOF) {
+return &quot;the last line&quot;;
+

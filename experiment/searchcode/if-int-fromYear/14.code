@@ -1,0 +1,6 @@
+public class FilterCriteria {
+private FightType fightType;
+private Gender gender;
+private int fromYear;
+public static FilterCriteria createKumite(Gender gender, int fromYear, int toYear, double fromWeight,
+

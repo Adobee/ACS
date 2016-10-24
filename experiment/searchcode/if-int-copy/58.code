@@ -1,0 +1,10 @@
+public static int[] plus(int[] x, int[] y) {
+int[] max = x;
+int[] min = y;
+
+if (y.length > x.length) { max = y; min = x; }
+
+int[] z = Arrays.copyOf(max, max.length);
+
+int carry = 0;
+

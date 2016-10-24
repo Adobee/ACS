@@ -1,0 +1,14 @@
+vertices.add(vFrom);
+}
+
+//both v1
+if (vi != vj){
+if (vTo == null) {
+vTo = new Vertex(vj);
+vertices.add(vTo);
+Vertex vFrom = findVertex(vi);
+Vertex vTo = findVertex(vj);
+
+if (vFrom == null || vTo == null){
+throw new IllegalArgumentException(&quot;The vertices donot exit&quot;);
+

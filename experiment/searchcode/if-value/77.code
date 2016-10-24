@@ -1,0 +1,14 @@
+package cn.along.xparse.common;
+
+public class DefaultValue
+{
+public static <T> T get(T value,T default_value)
+{
+if(value == null || ((value instanceof String) &amp;&amp; value.equals(&quot;&quot;)))
+{
+return default_value;
+}
+return value;
+}
+}
+

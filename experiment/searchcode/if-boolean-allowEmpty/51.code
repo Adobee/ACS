@@ -1,0 +1,7 @@
+private Boolean allowEmpty;
+
+public CustomTimestampEditor(DateFormat dateFormat,Boolean allowEmpty){
+@Override
+public void setAsText(String text){
+if(allowEmpty&amp;&amp;!StringUtils.hasText(text)){
+

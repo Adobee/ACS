@@ -1,0 +1,8 @@
+public class Solution {
+public int findPeakElement(int[] num) {
+if( num.length == 1 )
+return 0;
+for( int i = 0; i < num.length; ++i ) {
+if( i == 0 ) {
+if( num[0] > num[1] )
+

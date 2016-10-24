@@ -1,0 +1,6 @@
+for (double midAngle = 0.; midAngle < 65.; midAngle += 0.1) {
+double a1 = findA1OverAll(midAngle);
+double a2 = a1 - midAngle + alpha;
+double mag = calc(a1, a2)[1];
+System.out.println(mag + &quot;\t&quot; + a1 + &quot;\t&quot; + a2 + &quot;\t&quot; + midAngle);
+

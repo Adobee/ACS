@@ -1,0 +1,7 @@
+protected abstract <T> boolean triggered(
+T context, int cost, int currentLimitValue, LimitDefinition limitDefinition);
+
+@Override
+public <T> void callbackIfRequired(
+T context, int cost, int currentLimitValue, LimitDefinition limitDefinition) {
+

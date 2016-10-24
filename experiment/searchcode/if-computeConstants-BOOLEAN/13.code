@@ -1,0 +1,9 @@
+* <li>DrawingPanel3D.IMPLEMENTATION_JAVA3D : Java3D hardware acceleration
+* </ul>
+* @return true if the desired implementation is supported
+*/
+public boolean setImplementation(int _implementation) {
+//        decoration.reset();
+computeConstants(getComponent().getWidth(),getComponent().getHeight());
+if (resetCameraOnChanges) camera.adjust();
+

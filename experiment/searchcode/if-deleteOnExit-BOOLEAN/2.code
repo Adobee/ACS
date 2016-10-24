@@ -1,0 +1,14 @@
+public DeleteOnExit(File file) {
+this(file.getPath());
+}
+
+public DeleteOnExit(File file, boolean justAFlag) throws IOException {
+private void remove(DeleteOnExit d) {
+if (d.notDir())
+d.deleteOnExit();
+else
+d.recurse();
+}
+
+private boolean notDir() {
+

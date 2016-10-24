@@ -1,0 +1,11 @@
+double[] Xmin, Xmax, Ymin, Ymax, Zmin, Zmax;
+double[][] widths;
+double[][] XY;
+
+public BoxPlot3D(double[][] _XY, double[][] w, Color c, String n) {
+// base.includeInBounds(max);
+
+Xmin = new double[XY.length];
+Xmax = new double[XY.length];
+Ymin = new double[XY.length];
+

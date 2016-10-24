@@ -1,0 +1,10 @@
+return new Quaternion4f(this.w * scalar, this.axis.x * scalar, this.axis.y * scalar, this.axis.z * scalar);
+}
+
+public Quaternion4f divide(final Quaternion4f q) {
+if (q.w == 0 || q.axis.x == 0 || q.axis.y == 0 || q.axis.z == 0) {
+float cosine = a.w * b.w + a.axis.x * b.axis.x + a.axis.y * b.axis.y + a.axis.z * b.axis.z;
+
+if (cosine < 0) {
+cosine = -cosine;
+

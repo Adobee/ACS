@@ -1,0 +1,9 @@
+this.ignoredPropertyName = ignoredPropertyName;
+this.ignoredPropertyClass = ignoredPropertyClass;
+}
+
+public boolean filter( final PropertyDescriptor propertyDescriptor ) {
+if (isEmptyString( ignoredPropertyName ) &amp;&amp; ignoredPropertyClass != null) {
+
+if (propertyName.equalsIgnoreCase( ignoredPropertyName ) &amp;&amp; propertyClass.isAssignableFrom( ignoredPropertyClass )) {
+

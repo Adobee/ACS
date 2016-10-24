@@ -1,0 +1,14 @@
+public TIntObjectHashMap(TIntObjectMap map, int numProcs) {
+super(map.size());
+if (map instanceof TIntObjectHashMap) {
+return;
+}
+}
+}
+}
+}
+
+/** {@inheritDoc} */
+public boolean equalsPar (Object other, int numProcs)	{
+if (!((other instanceof TIntObjectMap)||(other instanceof Map<?,?>)))	{
+

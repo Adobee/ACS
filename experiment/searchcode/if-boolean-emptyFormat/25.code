@@ -1,0 +1,6 @@
+File [] files = ctx.getRootFiles().toArray(new File[ctx.getRootFiles().size()]);
+boolean noneVersioned = isNothingVersioned(files);
+if (destination == VCSAnnotator.ActionDestination.MainMenu) {
+boolean annotationsVisible = VersioningSupport.getPreferences().getBoolean(VersioningSupport.PREF_BOOLEAN_TEXT_ANNOTATIONS_VISIBLE, false);
+if (annotationsVisible &amp;&amp; file != null &amp;&amp; (status &amp; STATUS_TEXT_ANNOTABLE) != 0) {
+

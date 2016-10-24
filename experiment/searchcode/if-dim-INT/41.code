@@ -1,0 +1,10 @@
+float maxval = Math.abs(matrix[row * (dim + 1)]);
+
+for (int i = row + 1; i < dim; ++i) {
+if (Math.abs(matrix[i * dim + row]) > maxval) {
+out[row * dim + col] /= center;
+}
+
+for (int row2 = 0; row2 < dim; ++row2) {
+if (row2 != row) {
+

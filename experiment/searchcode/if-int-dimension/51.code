@@ -1,0 +1,11 @@
+public boolean overlaps(Area o){
+for (int xrun = x; xrun < x+dimension.x; xrun++)
+for (int yrun = y; yrun < y+dimension.y; yrun++)
+public boolean contains(int xd, int yd){
+if (xd >= x &amp;&amp; xd <= x+dimension.x)
+if (yd >= y &amp;&amp; yd <= y+dimension.y)
+return true;
+return false;
+}
+}
+

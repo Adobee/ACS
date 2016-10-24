@@ -1,0 +1,13 @@
+package scrumcourse.exception;
+
+@SuppressWarnings(&quot;serial&quot;)
+public class DaoException extends BaseException {
+public static DaoException exception(Exception e) {
+if (e instanceof DaoException) {
+return (DaoException) e;
+} else {
+return new DaoException(e);
+}
+}
+}
+

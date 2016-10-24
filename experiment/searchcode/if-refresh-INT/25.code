@@ -1,0 +1,7 @@
+View newHeaderView = newHeader.getRefreshHeaderView();
+if(null==newHeader||null==newHeaderView) {
+throw  new NullPointerException(&quot;the new header is null ref!&quot;);
+RefreshState refreshState = pullToRefreshLayout.getRefreshState();
+if(RefreshState.START_REFRESHING==refreshState){
+int scrollX = pullToRefreshLayout.getScrollX();
+

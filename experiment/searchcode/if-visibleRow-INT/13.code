@@ -1,0 +1,14 @@
+final ArrangementMatchingRulesControl control = getRulesControl(e);
+if (control == null) {
+return;
+}
+
+final int editing = control.getEditingRow() - 1;
+selectionModel.addSelectionInterval(pair[1], pair[1]);
+}
+
+
+int visibleRow = -1;
+if (newRowToEdit >= 0) {
+control.showEditor(newRowToEdit);
+

@@ -1,0 +1,11 @@
+public void genC(PW pw, boolean putParenthesis) {
+boolean negFlag = false;
+switch (op) {
+case PLUS:
+pw.print(&quot;+&quot;);
+break;
+if(expr.getType().getName().compareTo(Type.booleanType.getName()) == 0){
+expr.genC(pw, true);
+if(negFlag)
+pw.print(&quot; != false&quot;);
+

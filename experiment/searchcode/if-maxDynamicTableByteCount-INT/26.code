@@ -1,0 +1,9 @@
+private int headerTableSizeSetting;
+private int maxDynamicTableByteCount;
+// Visible for testing.
+Header[] dynamicTable = new Header[8];
+int bytesToRecover = (dynamicTableByteCount + delta) - maxDynamicTableByteCount;
+int entriesEvicted = evictToRecoverBytes(bytesToRecover);
+
+if (index == -1) { // Adding a value to the dynamic table.
+

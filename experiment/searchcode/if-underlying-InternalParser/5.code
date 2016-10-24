@@ -1,0 +1,10 @@
+private DateTimeParserInternalParser(DateTimeParser paramDateTimeParser)
+{
+this.underlying = paramDateTimeParser;
+}
+
+static InternalParser of(DateTimeParser paramDateTimeParser)
+if ((paramDateTimeParser instanceof InternalParserDateTimeParser))
+return (InternalParser)paramDateTimeParser;
+if (paramDateTimeParser == null)
+

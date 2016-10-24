@@ -1,0 +1,8 @@
+private double line_ftol = 1e-3;
+private double line_xtol = 0.1;
+
+QuasiNewtonBFGS alg;
+LineSearchMore94 lineSearch = new LineSearchMore94();
+public void initialize(double[] initial, double ftol, double gtol) {
+lineSearch.setConvergence(line_ftol, line_gtol, line_xtol);
+

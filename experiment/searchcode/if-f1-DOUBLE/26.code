@@ -1,0 +1,15 @@
+f1 = a.simplify();
+}
+
+public double eval(double x)
+{
+return (Math.cos(f1.eval(x)));
+}
+
+public Number eval(Number n)
+{
+Number n1 = f1.eval(n);
+
+if (n1 instanceof Constant)
+return (new Constant(eval(f1.eval(0))));
+

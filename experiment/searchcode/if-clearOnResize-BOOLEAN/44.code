@@ -1,0 +1,6 @@
+AbstractArrayWrapper(BigArrays bigArrays, long size, Releasable releasable, boolean clearOnResize) {
+super(bigArrays, clearOnResize);
+public ByteArray newByteArray(long size, boolean clearOnResize) {
+final ByteArray array;
+if (size > BYTE_PAGE_SIZE) {
+

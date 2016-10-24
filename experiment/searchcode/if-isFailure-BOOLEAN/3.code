@@ -1,0 +1,11 @@
+private Throwable t;
+private boolean isFailure;
+private boolean isPermanent;
+
+public NotificationEvent(String title, String message) {
+public NotificationEvent(String title, String message, boolean isFailure) {
+this(title, message, isFailure, false);
+}
+
+public NotificationEvent(String title, String message, boolean isFailure, boolean isPermanent) {
+

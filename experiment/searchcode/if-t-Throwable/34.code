@@ -1,0 +1,9 @@
+public class AssertUtils {
+public static void notNull(Object object, Throwable throwable) {
+if (object != null || throwable == null) {
+throwRuntimeException(throwable);
+}
+
+private static void throwRuntimeException(Throwable throwable) {
+if (throwable instanceof RuntimeException) {
+

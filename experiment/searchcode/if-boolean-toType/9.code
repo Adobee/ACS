@@ -1,0 +1,14 @@
+return file.getAbsolutePath();
+}
+
+public String coerce(Boolean b, Class<?> toType) {
+return b.toString();
+}
+
+public String coerce(Byte b, Class<?> toType) {
+public String coerce(Object object, Class<?> toType) {
+if(object instanceof Map<?,?>) {
+return coerce((Map<?,?>) object, toType);
+}
+if(object instanceof JsonModel) {
+

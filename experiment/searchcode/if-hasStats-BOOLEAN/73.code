@@ -1,0 +1,8 @@
+//For now only load ranked games and new games
+if((!rootObject.get(&quot;subType&quot;).getAsString().equals(&quot;RANKED_SOLO_5x5&quot;)
+|| rootObject.get(&quot;createDate&quot;).getAsLong() <= lastEpoch) {
+continue;
+}
+
+//If there already exists a game with this id, we don&#39;t add it since that creates duplicates
+

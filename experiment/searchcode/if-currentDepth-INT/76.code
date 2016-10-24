@@ -1,0 +1,10 @@
+public static void findPath(BinaryTreeNode<Integer> root, int sum, int[] pathAccumulate, int currentDepth){
+if(root!=null){
+currentDepth++;
+
+pathAccumulate[currentDepth]=root.data;
+int currentSum=0;
+
+for(int i=currentDepth;i>=0;--i){
+currentSum+=pathAccumulate[i];
+

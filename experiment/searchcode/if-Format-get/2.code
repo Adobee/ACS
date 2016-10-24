@@ -1,0 +1,13 @@
+public DateFormat getFormat() {
+return _format;
+}
+
+public Formattable setFormat(DateFormat df) {
+_format = df;
+return this;
+}
+
+public final String format() {
+if(getFormat() == null) {
+return format(getDefaultFormat());
+

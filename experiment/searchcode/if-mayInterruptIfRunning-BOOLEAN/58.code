@@ -1,0 +1,8 @@
+* @param mayInterruptIfRunning
+*/
+public static void cancel(List<Future<?>> futures, boolean mayInterruptIfRunning) {
+if (futures == null || futures.isEmpty()) {
+return;
+}
+for (Future<?> future : futures) {
+

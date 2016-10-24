@@ -1,0 +1,15 @@
+public DummyFutureCallback(FutureCallback<T> callback) {
+this.callback = callback;
+}
+
+@Override
+public void completed(T result) {
+if (callback != null) {
+callback.completed(result);
+}
+}
+
+@Override
+public void failed(Exception ex) {
+if (callback != null) {
+

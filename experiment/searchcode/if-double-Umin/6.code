@@ -1,0 +1,11 @@
+int k = 0, k0 = 0, kmin = 0, kplus = 0;
+
+double vmin = inputArray.get(0) - lambda;
+double vmax = inputArray.get(0) + lambda;
+double umin = lambda;
+double umax = -lambda;
+
+while(true){
+
+if(k == inputArray.size()-1){
+

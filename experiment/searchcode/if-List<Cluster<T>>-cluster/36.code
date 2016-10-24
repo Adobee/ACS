@@ -1,0 +1,12 @@
+public class ClusteringTask implements Callable<Object>{
+
+private WeightedDocument document;
+private Collection<Cluster> clusterList;
+public ClusteringTask(WeightedDocument document, Collection<Cluster> clusterList) {
+this.document = document;
+this.clusterList = clusterList;
+}
+
+@Override
+public Object call() {
+

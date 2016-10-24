@@ -1,0 +1,9 @@
+public final class MapType extends MapLikeType
+{
+private MapType(Class<?> paramClass, JavaType paramJavaType1, JavaType paramJavaType2)
+public JavaType narrowKey(Class<?> paramClass)
+{
+if (paramClass == this._keyType.getRawClass())
+return this;
+return new MapType(this._class, this._keyType.narrowBy(paramClass), this._valueType).copyHandlers(this);
+

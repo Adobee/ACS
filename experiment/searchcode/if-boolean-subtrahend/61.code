@@ -1,0 +1,7 @@
+* @throws IllegalArgumentException If the <var>minuend</var> and  <var>subtrahend</var>
+*         contain no variables in common.
+commonVars = Collections.unmodifiableSet((Set<Variable>)TuplesOperations.getMatchingVars(minuend, subtrahend));
+
+if (commonVars.isEmpty()) {
+throw new IllegalArgumentException(&quot;tuples must have variables in common for subtraction to occur&quot;);
+

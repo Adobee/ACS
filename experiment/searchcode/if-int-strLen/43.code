@@ -1,0 +1,7 @@
+public static boolean rPali(String testMe){
+int strLen = testMe.length();
+return rPaliHelp(testMe, strLen-1, strLen/2, 0);
+}
+
+public static boolean rPaliHelp(String testMe, int strLen, int testLen, int index){
+

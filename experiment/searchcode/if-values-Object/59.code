@@ -1,0 +1,10 @@
+public Tuple(Object vals){
+values = new ArrayList<Object>();
+
+if(vals instanceof Object[]){
+for(Object object : (Object[])vals){
+values.add(object);
+}
+}else if(vals instanceof Object){
+values.add(vals);
+

@@ -1,0 +1,10 @@
+package com.lqy.funnyday.http;
+
+import java.io.IOException;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+try {
+response = okHttpClient.newCall(request).execute();
+if (!response.isSuccessful()) throw new IOException(&quot;Unexpected Code&quot; + response);
+

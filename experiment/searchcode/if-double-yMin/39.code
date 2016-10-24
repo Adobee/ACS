@@ -1,0 +1,19 @@
+return xMax / xMin;
+}
+}
+
+public double heightFactor() {
+if (yMax - yMin == 0) {
+return 0;
+}
+if (yMax < 0 &amp;&amp; yMin < 0) {
+} else if (yMax > 0 &amp;&amp; yMin == 0) {
+return 0;
+} else {
+return yMax / yMin;
+}
+}
+
+public double yFactor(double height) {
+if (yMax - yMin == 0) {
+

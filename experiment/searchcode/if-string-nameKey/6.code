@@ -1,0 +1,8 @@
+* @param nameKey  TRANSACTION_CODE
+* @return codeKey
+*/
+public static String getTransactionCode(String nameKey) {
+return getCodekey(&quot;TRANSACTION_CODE&quot;, nameKey);
+private static String getCodekey(String catKey, String nameKey) {
+if (catKey == null || &quot;&quot;.equals(catKey) || nameKey == null || &quot;&quot;.equals(nameKey)) {
+

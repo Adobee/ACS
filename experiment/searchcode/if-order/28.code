@@ -1,0 +1,7 @@
+package application.order_management.business_logic;
+
+import application.order_management.data_access.dtos.OrderDTO;
+Order order = orderRepository.createOrder(offerId);
+if(order != null) {
+OrderDTO orderDTO = order.createDTO();
+

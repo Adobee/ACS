@@ -1,0 +1,19 @@
+public class ScopaRules {
+
+public enum Rule {
+scopa, napoli, reverse, team
+
+}
+
+private Map<Rule, Boolean> rules;
+private boolean isRuleEnable(Rule rule) {
+Boolean enable = rules.get(rule);
+if (enable == null) {
+return false;
+} else {
+return enable;
+}
+}
+
+}
+

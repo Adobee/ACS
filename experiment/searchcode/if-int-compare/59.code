@@ -1,0 +1,5 @@
+* Test method for {@link com.github.gliptak.jallele.testJump.IfIntegerCompare#ifIntegerCompareEqual(int, int)}.
+*/
+@Test
+public final void testIfIntegerCompareEqual() {
+

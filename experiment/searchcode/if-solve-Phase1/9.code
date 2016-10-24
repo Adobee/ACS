@@ -1,0 +1,15 @@
+* @throws NoFeasibleSolutionException
+*           if there is no feasible solution
+*/
+protected void solvePhase1() throws UnboundedSolutionException, NoFeasibleSolutionException {
+public LinearEquation solve() throws UnboundedSolutionException, NoFeasibleSolutionException {
+solvePhase1();
+table.discardArtificialVariables();
+while (!isOptimal()) {
+doIteration();
+}
+return table.getSolution();
+}
+
+}
+

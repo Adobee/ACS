@@ -1,0 +1,13 @@
+//		this(tmp1);
+
+//		double[][] tmp2 = new double[3][1];
+//		tmp2[0][0] = a;
+//		tmp2[1][0] = b;
+//		tmp2[2][0] = c;
+tmp1[1][0] = source[1][0];
+tmp1[2][0] = source[2][0];
+
+Vector tmp1v = new Vector(tmp1);
+
+double[][] tmp2 = tmp1v.normalize().value; //test
+

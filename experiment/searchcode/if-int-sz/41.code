@@ -1,0 +1,12 @@
+return;
+}
+int N = items.length;
+
+for (int sz = 1; sz < N; sz = sz + sz) {
+for (int i = 0; i < N - sz; i += sz + sz) {
+merge(items, i, i + sz - 1, Math.min(i + sz + sz - 1, N - 1));
+}
+}
+
+/*	for (int sz = 1; sz < N; sz = sz + sz) {
+

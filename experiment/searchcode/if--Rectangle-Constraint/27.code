@@ -1,0 +1,10 @@
+public class BerkNodeChangeConstraintCommand extends Command {
+
+private Rectangle oldConstraint;
+private Rectangle newConstraint;
+private BerkNode model;
+
+@Override public void execute() {
+if(oldConstraint == null) {
+oldConstraint = model.getConstraints();
+

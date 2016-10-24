@@ -1,0 +1,14 @@
+this.cdShare = cdShare;
+}
+
+/**
+* 自己编写的，对于Clob读取操作的封装。便于返回信息的实体类
+* @return 返回自我介绍的详细信息
+*/
+public String getCdInfos(){
+try {
+if( this.cdInfo != null )
+return this.cdInfo.getSubString(1, (int)cdInfo.length());
+return null;
+} catch (SQLException e) {
+

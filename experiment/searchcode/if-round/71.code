@@ -1,0 +1,8 @@
+Collection<Round> rounds = roundDao.getRounds(country, season);
+
+if (rounds != null &amp;&amp; rounds.size() > 0) {
+for (Round r : rounds) {
+
+if (round == null || round.getDate() < yesterday &amp;&amp; round.getDate() > r.getDate()) {
+round = r;
+

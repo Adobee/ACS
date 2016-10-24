@@ -1,0 +1,8 @@
+import org.elasticsearch.index.similarity.SimilarityModule;
+import org.elasticsearch.plugins.AbstractPlugin;
+
+public class CustomerSimilarityPlugin extends AbstractPlugin {
+public void processModule(Module module) {
+if (module instanceof SimilarityModule) {
+SimilarityModule similarityModule = (SimilarityModule) module;
+

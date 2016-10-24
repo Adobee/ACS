@@ -1,0 +1,11 @@
+n.copy( normal.normalized() );
+d = - n.x()*p.x() - n.y()*p.y() - n.z()*p.z();
+}
+
+// Returns true if there is an intersection,
+// in which case the point of intersection is also returned
+Point3D intersection, // output
+boolean allowIntersectionEvenIfPlaneIsBackfacing
+) {
+float dot = Vector3D.dot( n, ray.direction );
+

@@ -1,0 +1,8 @@
+public DurationFormatter() {
+}
+
+public String getDurationFormattedForDisplay(int minutes, int seconds) {
+if (minutes == 0) {
+if (seconds < 10) {
+return &quot;:0&quot; + seconds;
+

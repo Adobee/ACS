@@ -1,0 +1,16 @@
+public static String NullToStr(String str){
+if(str == null)
+{
+str = &quot;&quot;;
+}
+return str;
+}
+
+
+public static String NullToStrTrim(String str){
+if(str == null)
+{
+str = &quot;&quot;;
+}
+return str.trim();
+

@@ -1,0 +1,10 @@
+workingBlock.examples.add(ex);
+collector.ack(tuple);
+break;
+case PROCESS_BLOCK_REQ:
+bp = (BlockPair)tuple.getValue(1);
+float[][] userBlock = (float[][])tuple.getValue(2);
+workingBlock = getWorkingBlock(bp);
+
+if (workingBlock.waitingForBlocks) {
+

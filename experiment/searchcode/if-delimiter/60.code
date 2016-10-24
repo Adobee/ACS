@@ -1,0 +1,10 @@
+private RegionsFactory() {
+
+}
+
+public TemplateRegion createRegion(String delimiter) {
+if (delimiter != null) {
+// 修正下标识符，原始的实例$BEGIN_MODEL$
+if (delimiter.startsWith(TemplateRegion.REGION_SIGN_BEGIN)) {
+delimiter = delimiter.substring(TemplateRegion.REGION_SIGN_BEGIN.length(), delimiter.length() - 1);
+

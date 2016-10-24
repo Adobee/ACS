@@ -1,0 +1,11 @@
+for(int i=0; i<directorySize; i++){
+if(directory[i].equalsIgnoreCase(name))
+return true;
+}
+return false;
+}
+
+public boolean add(String name){
+if(directorySize==DIRECTORY_MAX_SIZE){
+directory[directorySize++]=name;
+

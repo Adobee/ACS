@@ -1,0 +1,11 @@
+public PosReader(BufferedReader reader) {
+this.reader = reader;
+}
+
+public void mark(int readAheadLimit) throws IOException {
+reader.mark(readAheadLimit);
+mark = position;
+}
+
+public void reset() throws IOException {
+

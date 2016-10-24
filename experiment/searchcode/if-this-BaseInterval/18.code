@@ -1,0 +1,9 @@
+import com.code44.finance.utils.interval.BaseInterval;
+
+import lecho.lib.hellocharts.model.Line;
+
+class AccountBalanceChartPresenter extends BalanceChartPresenter implements LoaderManager.LoaderCallbacks<Cursor> {
+public void setAccountAndInterval(Account account, BaseInterval baseInterval) {
+this.account = account;
+this.baseInterval = baseInterval;
+

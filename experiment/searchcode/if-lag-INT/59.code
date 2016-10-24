@@ -1,0 +1,9 @@
+final int samples = nrow();
+int maxLag = samples - 1;
+
+double[] gammaStat = new double[maxLag];
+double varStat = 0.0;
+double mean = mean();
+
+for (int lag = 0; lag < maxLag; lag++) {
+

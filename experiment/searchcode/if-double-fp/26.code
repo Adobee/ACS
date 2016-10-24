@@ -1,0 +1,18 @@
+if (predicted) {
+fp++;
+} else {
+tn++;
+}
+}
+}
+
+public double accuracy() {
+return (tp + tn) / (tp + fp + fn + tn);
+}
+
+public double precision() {
+return (tp) / (tp + fp);
+}
+
+public double recall() {
+

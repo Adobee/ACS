@@ -1,0 +1,10 @@
+private int sampleSize;
+private Population[] populations;
+
+public OneDimScorer(int sampleSize, Population[] populations) {
+Set<MemberInterface> sample = populations[opposingPopulation].getSample(sampleSize);
+
+int score = 1;
+
+for(MemberInterface m : sample){
+

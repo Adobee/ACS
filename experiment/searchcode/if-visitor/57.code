@@ -1,0 +1,12 @@
+case METHOD_REF: visitor = methodVisitor; break;
+default:
+break;
+}
+
+if (visitor == null) {
+visitor = fallbackVisitor;
+}
+
+if (visitor != null) {
+visitor.visit(all, one);
+

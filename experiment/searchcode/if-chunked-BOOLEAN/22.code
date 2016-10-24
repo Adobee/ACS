@@ -1,0 +1,12 @@
+public boolean isChunked()
+{
+boolean isChunked = false;
+
+for(int i=0;i<this.getItems().size();i++)
+{
+Item item = (Item)this.getItems().get(i);
+if(item.hasMoreData())
+{
+isChunked = true;
+break;
+

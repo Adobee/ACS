@@ -1,0 +1,18 @@
+public static void main(String[] args) throws InterruptedException {
+long startTimeMilli, endTimeMilli;
+
+if(!readConfig()) {
+endTimeMilli = System.currentTimeMillis();
+Thread.sleep((60000 - (endTimeMilli - startTimeMilli)));
+}
+
+}
+
+public static boolean readConfig() {
+Config.addTempSensorIds();
+
+return true;
+}
+
+}
+

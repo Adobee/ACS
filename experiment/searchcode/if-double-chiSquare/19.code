@@ -1,0 +1,16 @@
+int numCounts			= counts.length;
+
+double sumCounts		= 0.0D;
+double chiSquare		= 0.0D;
+double probChiSquare	= 1.0D;
+sumCounts	+= counts[ i ];
+}
+
+double expected		= 0.0D;
+
+if ( numCounts > 0 )
+{
+expected	= sumCounts / (double)numCounts;
+
+if ( expected > 0.0D )
+

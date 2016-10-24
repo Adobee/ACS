@@ -1,0 +1,10 @@
+public static final ParseField PRECISION_THRESHOLD_FIELD = new ParseField(&quot;precision_threshold&quot;);
+
+private Long precisionThreshold = null;
+
+public CardinalityAggregationBuilder(String name, ValueType targetValueType) {
+* increase memory usage.
+*/
+public CardinalityAggregationBuilder precisionThreshold(long precisionThreshold) {
+if (precisionThreshold < 0) {
+

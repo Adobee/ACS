@@ -1,0 +1,8 @@
+public abstract class L6HideFragment extends L5StackFragment implements IFragmentHide {
+
+@Override
+public void showFragmentOnly(String fragmentTag) {
+AppFragment fragment = this.findFragment(fragmentTag);
+if(fragment != null) {
+int id = fragment.getId();
+

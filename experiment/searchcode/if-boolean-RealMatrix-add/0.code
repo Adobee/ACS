@@ -1,0 +1,6 @@
+public RealMatrix CalculateMyPoint(double lamda, RealMatrix x){
+RealMatrix dVector = CalculateTau(x);
+return x.add(dVector.scalarMultiply(lamda));
+public boolean CheckIfPointIsOptimum(RealMatrix point){
+RealMatrix gradient = myFunction.GetGradient(point);
+

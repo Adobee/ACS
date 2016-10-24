@@ -1,0 +1,8 @@
+public abstract class BaseEntityDescriptor<T extends BaseEntity> extends BasePersistentObjectDescriptor {
+private Map<String, EntityRelationshipDefinition> relationshipDefinitionMap;
+return ownerRelationshipDefinition;
+}
+
+/**
+* Get relationship definition by name. if relationship does not exits an IllegalStateException exception is thrown
+

@@ -1,0 +1,7 @@
+private LinkedBlockingQueue<Windmill.Exception> exceptions;
+private int commitsRequested = 0;
+private AtomicInteger expectedExceptionCount;
+public Map<Long, WorkItemCommitRequest> waitForAndGetCommits(int numCommits) {
+int maxTries = 10;
+while (maxTries-- > 0 &amp;&amp; commitsReceived.size() < commitsRequested + numCommits) {
+

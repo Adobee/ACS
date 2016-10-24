@@ -1,0 +1,11 @@
+public class qr_fact_givens {
+RealMatrix R;
+RealMatrix Q;
+public qr_fact_givens(RealMatrix A) {
+int m = A.getRowDimension();
+int n = A.getColumnDimension();
+R = A.copy();
+RealMatrix a = A.copy();
+Q = null;
+boolean firstQ = true;
+

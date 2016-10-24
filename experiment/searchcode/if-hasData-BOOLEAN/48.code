@@ -1,0 +1,7 @@
+public Stream read() {
+if(!hasData()) return null;
+int i, l = StreamUtils.readInt(in[1], StreamUtils.Assumptions.STREAM_LENGTH, this);
+for(i = 0; i < l; i++) {
+if(in[0].hasData())
+al.add(in[0].read().fork());
+

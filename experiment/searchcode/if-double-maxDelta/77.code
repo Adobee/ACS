@@ -1,0 +1,9 @@
+public long findMaxDelta() {
+long maxDelta = 0;
+for (int i = 0; i < this.numTuples; i++) {
+if (this.summary[i].delta > maxDelta) {
+childI--;
+}
+if (mergeG + this.summary[i + 1].delta < maxDelta) {
+// merge
+

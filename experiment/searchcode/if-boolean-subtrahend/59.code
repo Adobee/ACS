@@ -1,0 +1,11 @@
+public final class Difference extends TwoArgumentExpression {
+
+public Difference(Expression minuend, Expression subtrahend) {
+super(new Substraction(), minuend, subtrahend);
+visitor.handel(this);
+}
+@Override
+public boolean equals(Object obj){
+if(obj == null)
+return false;
+

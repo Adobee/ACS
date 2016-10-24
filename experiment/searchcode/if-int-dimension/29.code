@@ -1,0 +1,17 @@
+package DataStructure;
+
+/**
+*
+* @author antho
+*/
+public class Dimension {
+
+private final int dim;
+public static Dimension x = getFirstDimension(), y = getSecondDimension(), z = getThirdDimension();
+
+private Dimension(int dim) {
+this.dim = dim;
+}
+
+public static Dimension getFirstDimension() {
+

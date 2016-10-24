@@ -1,0 +1,14 @@
+public static class LogNormalFunc implements InfluenceFunc {
+
+double beta;
+double miu;
+double sigma;
+
+public LogNormalFunc(double beta, double miu, double sigma) {
+/*这里的c需要自行设定以确定左边直线的终止位置*/
+@Override
+public double Calculate(double dist) {
+double x = c - dist * beta;
+assert(x > 0);
+if (dist > 0) {
+

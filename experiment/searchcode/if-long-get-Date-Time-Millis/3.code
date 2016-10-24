@@ -1,0 +1,10 @@
+return String.format(&quot; %02d:%02d:%02d,%03d GMT+0&quot;, getHours(timeMs), getMinutes(timeMs), getSeconds(timeMs), getMillis(timeMs));
+}
+
+public static String toHumanView(long millis) {
+private static long getMillis(long timeMs) {
+return timeMs % 1000L;
+}
+
+private static long getSeconds(long timeMs) {
+

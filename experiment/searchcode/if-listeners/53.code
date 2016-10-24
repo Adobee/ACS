@@ -1,0 +1,6 @@
+List<ScopedListeners> scopedListenersList = typedScopedListeners.get(type);
+if (scopedListenersList != null) {
+for (ScopedListeners scopedListeners : scopedListenersList) {
+if (scopedListeners.isInScope(event)) {
+for (MapEventListener listener : scopedListeners.listeners) {
+

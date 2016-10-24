@@ -1,0 +1,6 @@
+public static Object[] compileArgs(List<DoubleObject<String,Object>> standardVars, String source, ObjectHolder<Integer>... errorPos){
+if(errorPos.length==1)errorPos[0].setVar(-1);
+else if(errorPos.length!=0)throw new IllegalStateException(&quot;You can&#39;t use more than 1 ObjectHolder&#39;s!&quot;);
+else if(type.equals(&quot;int&quot;))result.add(Integer.parseInt(value));
+else if(type.equals(&quot;long&quot;))result.add(Long.parseLong(value));
+

@@ -1,0 +1,14 @@
+public class Rectangle extends Figure {
+final double length;
+final double width;
+
+private volatile double area;
+public double width() {
+return width;
+}
+
+@Override
+public double area() {
+if (area == 0)
+area = findArea(length(), width());
+

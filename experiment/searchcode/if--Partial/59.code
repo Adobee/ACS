@@ -1,0 +1,6 @@
+PartialTextComponent cPartialText = mPartialText.get(entityId);
+if (cPartialText.currentText.length() < cPartialText.fullText.length()) {
+cPartialText.timer -= 1;
+if (cPartialText.timer <= 0) {
+cPartialText.timer = cPartialText.timerSlowness;
+

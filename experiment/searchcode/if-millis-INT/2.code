@@ -1,0 +1,9 @@
+String time = &quot;&quot;;
+if(millis > HOUR) {
+time +=(millis/HOUR)+&quot; h, &quot;;
+millis = millis % HOUR;
+}
+if(millis > MINUTE) {
+time +=(millis/MINUTE)+&quot; m, &quot;;
+millis = millis % MINUTE;
+

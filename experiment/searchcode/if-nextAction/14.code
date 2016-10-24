@@ -1,0 +1,10 @@
+public void doStep() throws ActionFinishedException
+{
+Action nextAction = this.actions.get(0);
+nextAction.doStep();
+if(nextAction.isFinished()){
+this.getActions().remove(actions.indexOf(nextAction));
+}
+}
+}
+

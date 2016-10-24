@@ -1,0 +1,13 @@
+import org.lwjgl.input.Keyboard;
+
+import com.sun.corba.se.impl.oa.poa.ActiveObjectMap.Key;
+
+public class KeyboardHandler {
+
+boolean shift, ctrl, alt;
+KeyboardEvent curEvent; // stores the current event in case there are
+// multiple key strokes simultaneously
+
+public KeyboardEvent eject(int key, boolean down) {
+if (isSpecialKey(key)) {
+

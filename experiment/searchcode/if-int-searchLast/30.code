@@ -1,0 +1,10 @@
+public static boolean containsNone(CharSequence cs, char... searchChars) {
+if (cs == null || searchChars == null) {
+return true;
+}
+int csLen = cs.length();
+int searchLast = searchLen - 1;
+for (int i = 0; i < csLen; i++) {
+char ch = cs.charAt(i);
+for (int j = 0; j < searchLen; j++) {
+

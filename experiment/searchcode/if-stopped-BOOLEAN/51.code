@@ -1,0 +1,10 @@
+protected final BlockingQueue<BinLogEvent> q;
+
+private volatile boolean stopped = false;
+
+public EventWriter(BlockingQueue<BinLogEvent> q) {
+this.q = q;
+}
+
+public boolean isStopped() {
+

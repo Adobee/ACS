@@ -1,0 +1,10 @@
+sign = Sign.SHIP;
+}
+
+public boolean isAdjacent(Field otherField) {
+return (Math.abs(position.x - otherField.position.x) <= 1 &amp;&amp;
+Math.abs(position.y - otherField.position.y) <= 1);
+}
+
+public List<Point> getAdjacentPositions(BoardSize boardSize) {
+

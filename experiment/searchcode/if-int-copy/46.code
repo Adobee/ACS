@@ -1,0 +1,12 @@
+public int removeDuplicates(int[] A) {
+if (A == null || A.length == 0) {
+return 0;
+}
+
+int[] B = new int[A.length];
+int j = 0;
+B[j] = A[0];
+
+for (int i = 1; i < A.length; i++) {
+if (A[i] != B[j] || (j == 0 || B[j] != B[j - 1])) {
+

@@ -1,0 +1,7 @@
+private LocalTime upperBoundLocalTime;
+
+public DepartureTimeService(){
+this.initialLocalTime = LocalTime.of(6, 0, 0);
+localTime = this.initialLocalTime;
+this.upperBoundLocalTime = this.initialLocalTime.plusHours(3).plusMinutes(55);
+

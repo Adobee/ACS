@@ -1,0 +1,10 @@
+for (int i = 0; i < x.length-1; ++i)
+res += Math.pow(x[i],2);
+return res;
+}
+public boolean isFeasible(double[] x) {return true; } // entire R^n is feasible
+IObjectiveFunction fitfun = new Rosenbrock();
+
+// new a CMA-ES and set some initial values
+CMAEvolutionStrategy cma = new CMAEvolutionStrategy();
+

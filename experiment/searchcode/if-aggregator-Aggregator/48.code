@@ -1,0 +1,8 @@
+import de.berlios.imilarity.aggregators.Aggregator;
+
+public abstract class AggregatedGrayscaleMeasure extends StagedFuzzyMeasureBase {
+public AggregatedGrayscaleMeasure(Aggregator aggregator) {
+if (aggregator == null)
+throw new NullPointerException(&quot;aggregator = null&quot;);
+this.aggregator = aggregator;
+

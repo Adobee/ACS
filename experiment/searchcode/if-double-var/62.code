@@ -1,0 +1,10 @@
+public final class GaussianDistribution {
+
+private final double mean;
+private final double var;
+private final Random rng;
+
+public GaussianDistribution(double mean, double var, Random rng) {
+if (var < 0.0) {
+throw new IllegalArgumentException(&quot;Variance must be non-negative value.&quot;);
+

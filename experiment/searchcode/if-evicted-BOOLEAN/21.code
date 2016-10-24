@@ -1,0 +1,6 @@
+CacheValue<K, T> evictedValue = putInMap(key, value);
+if (evictedValue != null &amp;&amp; overflow != null) {
+CacheValue<K, T> evictedValue = policy.evictAValue();
+if (evictedValue != null) {
+map.remove(evictedValue.key);
+

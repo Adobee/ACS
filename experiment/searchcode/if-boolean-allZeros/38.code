@@ -1,0 +1,9 @@
+private static final Logger LOG = Logger.getLogger(BaseOpenLoopVelocityControllableMotorServiceImpl.class);
+
+private final boolean[] maskAllOn;
+private final int[] allZeros;
+public final boolean stop(final int... motorIds)
+{
+final boolean[] mask;
+if (motorIds == null || motorIds.length == 0)
+

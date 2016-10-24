@@ -1,0 +1,5 @@
+private volatile boolean writerSentClose;
+/** True after a close frame was read by the reader. No frames will follow it. */
+@Override public BufferedSink newMessageSink(PayloadType type) {
+if (writerSentClose) throw new IllegalStateException(&quot;closed&quot;);
+

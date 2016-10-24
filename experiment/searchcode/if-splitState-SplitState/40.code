@@ -1,0 +1,12 @@
+this.splitState = STATE_SPLIT;
+}
+
+public void unsplit() {
+if (this.splitState != STATE_SPLIT) {
+this.stopTime = -1;
+this.splitState = STATE_UNSPLIT;
+}
+
+public void suspend() {
+if (this.runningState != STATE_RUNNING) {
+

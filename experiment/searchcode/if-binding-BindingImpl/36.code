@@ -1,0 +1,8 @@
+BindingImpl<T> bindingImpl = parseBinding(binding, type);
+int values = 0;
+if (bindingImpl!=null) {
+if (bindingImpl.value!=null) values++;
+if (bindingImpl.expression!=null) values++;
+}
+if (isRequired &amp;&amp; values==0) {
+

@@ -1,0 +1,9 @@
+if (valueToValidate == null)
+return true;
+
+final int fractLen, intLen;
+if (valueToValidate instanceof Integer) {
+intLen = value == 0 ? 1 : (int) Math.log10(value) + 1;
+fractLen = 0;
+} else if (valueToValidate instanceof Long) {
+

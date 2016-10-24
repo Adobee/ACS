@@ -1,0 +1,13 @@
+int root0 = find(parent, edges[i][0]);
+int root1 = find(parent, edges[i][1]);
+
+if(root0 == root1) {
+private int find(int[] parent, int i) {
+if(parent[i] != i) {
+parent[i] = parent[parent[i]];
+return find(parent, parent[i]);
+}
+return i;
+}
+}
+

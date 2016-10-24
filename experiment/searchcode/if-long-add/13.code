@@ -1,0 +1,13 @@
+long i = 0;
+do {
+i = factorOf(f);
+if(f % i == 0 &amp;&amp; !primes.contains(i)){
+primes.add(i);
+f = f / i;
+}
+} while(i != f);
+primes.add(f);
+
+long largest = 0;
+for(long p : primes){
+

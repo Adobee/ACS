@@ -1,0 +1,10 @@
+public class DatePickerFragment extends DialogFragment implements DatePickerDialog.OnDateSetListener {
+public static final int NUMBER_FORMAT=1;
+public static final int CHINA_FORMAT=2;
+return new DatePickerDialog(getActivity(), this, year, month, day);
+}
+
+@Override
+public void onDateSet(DatePicker view, int year, int monthOfYear,
+int dayOfMonth) {
+

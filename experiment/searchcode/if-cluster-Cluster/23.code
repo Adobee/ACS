@@ -1,0 +1,10 @@
+import exemplo.jaxrs.modelo.Cluster;
+import exemplo.jaxrs.modelo.Computador;
+
+public class ClusterDatabase {
+
+private List<Cluster> clusters;
+public Cluster getByNome(String nome) throws ClusterInexistenteException {
+for (Cluster c : clusters)
+if (nome.equals(c.getNome()))
+

@@ -1,0 +1,12 @@
+qty[i + 1] = qty[i] + (sequence[i] == &#39;R&#39; ? 1 : 0);
+long base = 0;
+int skipped = 0;
+for (int i = 0; i < N; i++) {
+if (sequence[i] == &#39;L&#39;)
+if (lCount == 1)
+return 0;
+if (lCount % 2 == 0) {
+int middle = -1;
+skipped = 0;
+for (int i = 0; i < N; i++) {
+

@@ -1,0 +1,12 @@
+@Override
+public boolean renew() {
+
+if (!_ok) {
+return false;
+}
+
+new DObjectLockRenew(_id, 60).send(new ObjectMessageResponse<Boolean>() {
+public void responded(Boolean renewed) {
+
+_ok = renewed;
+

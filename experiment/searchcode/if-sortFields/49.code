@@ -1,0 +1,16 @@
+private Integer limit;
+
+private List<SortField> sortFields;
+
+protected PagingInfo() {
+}
+
+public PagingInfo(int start, Integer limit, String sortField, boolean sortAsc) {
+public SortField getSortField(int i) {
+if (i >= 0 &amp;&amp; i < getSortFieldCount())
+return sortFields.get(i);
+else
+return null;
+}
+};
+

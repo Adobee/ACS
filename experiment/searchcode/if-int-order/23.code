@@ -1,0 +1,10 @@
+int[][] temp = new int[10][number.length];// 数组的第一维表示可能的余数0-9，该数的个数
+int[] order = new int[10];// 数组orderp[i]用来表示该位是i的数的个数
+while (m <= d) {
+for (int i = 0; i < number.length; i++) {
+temp[lsd][order[lsd]] = number[i];
+order[lsd]++;
+}
+for (int i = 0; i < 10; i++) {
+if (order[i] != 0)
+

@@ -1,0 +1,9 @@
+boolean completeRecovery = bytesToRecover == 0 || randomBoolean();
+if (completeRecovery == false) {
+if (file.reused() || file.fullyRecovered()) {
+filesToRecover.remove(file);
+}
+}
+
+if (completeRecovery) {
+

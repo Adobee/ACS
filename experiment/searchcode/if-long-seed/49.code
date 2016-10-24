@@ -1,0 +1,16 @@
+* POJO for SeedInteger3 table
+* <p>
+*
+*/
+
+public class SeedInteger3 {
+
+private int seed;
+private long seedValue;
+private boolean seedUsedFlag;
+public long getSeedValue() {
+return seedValue;
+}
+
+public void setSeedValue(long seedValue) {
+

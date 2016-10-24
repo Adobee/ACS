@@ -1,0 +1,12 @@
+INT_DEFAULT_ZERO(&quot;INTEGER DEFAULT 0&quot;, FieldType.INTEGER, FieldType.SHORT, FieldType.BOOLEAN),
+INT_DEFAULT_NEGATIVE(&quot;INTEGER DEFAULT -1&quot;, FieldType.INTEGER, FieldType.SHORT),
+for (FieldType type : dbType.fieldTypes) {
+if (fieldType == type) {
+return dbType;
+}
+}
+}
+return NO_TYPE;
+}
+}
+

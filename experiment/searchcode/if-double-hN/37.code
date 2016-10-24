@@ -1,0 +1,10 @@
+double[] sample(double[] prob){
+double sample[] = new double[prob.length];
+for(int i=0; i<prob.length; ++i){
+if(r.nextDouble()<prob[i]){
+void dropOut(double[] prob, double[] dropRate, boolean flag){
+if(flag){
+double[] sample = sample(dropRate);
+for(int i=0; i<prob.length; ++i){
+if(sample[i]==0) prob[i] = 0;
+

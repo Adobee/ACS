@@ -1,0 +1,10 @@
+TransactionSynchronizationManager.unbindResource(getSessionFactory());
+}
+}
+}
+}
+
+protected void flushIfNecessary(Session session, boolean existingTransaction) {
+protected FlushMode applyFlushMode(Session session, boolean existingTransaction) {
+if (getFlushMode() == FLUSH_NEVER) {
+

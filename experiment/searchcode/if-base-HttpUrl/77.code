@@ -1,0 +1,10 @@
+super(baseListFragmentView);
+baseApi = new BaseApi();
+}
+
+
+@Override
+public void loadData() {
+String httpUrl = view.getHttpUrl();
+if (StringUtils.isBlank(httpUrl) || !httpUrl.contains(&quot;http&quot;))
+

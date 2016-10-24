@@ -1,0 +1,8 @@
+boolean hasFieldDataFields = in.readBoolean();
+if (hasFieldDataFields) {
+int size = in.readVInt();
+boolean hasFieldDataFields = fieldDataFields != null;
+out.writeBoolean(hasFieldDataFields);
+if (hasFieldDataFields) {
+out.writeVInt(fieldDataFields.size());
+

@@ -1,0 +1,9 @@
+public static void main(String[] args){
+
+int[] a = {4,76,3,13,35,345,24,5,76,256,2,56,1,6,77};
+int minPos, temp;
+
+for(int start = 0; start < a.length - 1; start++){
+
+minPos = start;
+

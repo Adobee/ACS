@@ -1,0 +1,8 @@
+int nextx = movex[z] + x;
+int nexty = movey[z] + y;
+
+if (nextx < 0 || nexty < 0 || nextx >= n || nexty >= n || v[nextx][nexty])
+continue;
+if (g[nextx][nexty] == &#39;(&#39; &amp;&amp; !onOpen)
+continue;
+

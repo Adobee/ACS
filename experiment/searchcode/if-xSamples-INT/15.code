@@ -1,0 +1,11 @@
+LastVelocityReadTime = temp;
+
+if(VelocityXSamples.size() >= NrOfSamples)
+{
+VelocityXSamples.removeLast();
+VelocityYSamples.addFirst(new VelocitySample(vy, timeStamp));
+
+/* -- Moving average X -- */
+int size = VelocityXSamples.size();
+float sumX = 0;
+

@@ -1,0 +1,8 @@
+// initialize the constraint rows
+int slackVar = 0;
+int artificialVar = 0;
+for (int i = 0; i < constraints.size(); i++) {
+* @return the row that the variable is basic in.  null if the column is not basic
+*/
+protected Integer getBasicRow(final int col) {
+

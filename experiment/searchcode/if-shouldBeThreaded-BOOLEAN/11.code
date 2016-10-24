@@ -1,0 +1,11 @@
+IndexRequest request = new IndexRequest(&quot;test&quot;, &quot;type&quot;, &quot;1&quot;);
+if (randomBoolean()) {
+// set the source, without it, we will have a verification failure
+latch.countDown();
+}
+});
+
+latch.await();
+
+boolean shouldBeThreaded = DiscoveryNode.clientNode(client.settings()) || TransportClient.CLIENT_TYPE.equals(client.settings().get(Client.CLIENT_TYPE_SETTING));
+

@@ -1,0 +1,7 @@
+protected EObject createCopy(EObject eObject) {
+
+if (eObject instanceof Operator) {
+try {
+Operator operatorType = MIDTypeRegistry.getType(((Operator) eObject).getUri());
+if (operatorType != null) {
+

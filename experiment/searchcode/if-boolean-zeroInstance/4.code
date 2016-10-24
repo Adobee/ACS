@@ -1,0 +1,8 @@
+public FractionProbability zeroInstance() { return ZERO; }
+
+public FractionProbability(long num, long den) {
+public FractionProbability sum(FractionProbability prob) {
+LongFraction newP = p.add(prob.p);
+if (newP.num > newP.den) {
+throw new ProbabilityException(p + &quot; + &quot; + prob + &quot; = &quot; + newP + &quot; > 1&quot;);
+

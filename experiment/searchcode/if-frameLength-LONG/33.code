@@ -1,0 +1,12 @@
+//limit extra updates
+if (accumTime > frameLength * EXTRA_UPDATES_LIMIT) {
+
+accumTime = frameLength * EXTRA_UPDATES_LIMIT;
+int change = numFrames - 1;
+
+frameLength += change;
+
+
+//make sure to cap the frameLength
+if (frameLength < MIN_FRAME_LENGTH) {
+

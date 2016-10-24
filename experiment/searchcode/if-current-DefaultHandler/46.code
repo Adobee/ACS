@@ -1,0 +1,12 @@
+public class ParseRequestHandler extends AbstractHandler {
+
+private DefaultHandler defaultHandler;
+
+public ParseRequestHandler(DefaultHandler defaultHandler,AbstractPipeline pipeline) throws IOException{
+this.defaultHandler=defaultHandler;
+}
+
+@Override
+public void handle(HttpExchange exchange) throws IOException {
+//If its not a post request, let the default handler deal with it
+

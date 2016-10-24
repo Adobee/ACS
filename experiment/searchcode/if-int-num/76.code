@@ -1,0 +1,13 @@
+i--;
+}
+
+if (i >= 0) {
+int j = len - 1;
+
+while (j > i &amp;&amp; num[j] <= num[i]) {
+j--;
+}
+
+if (j > i) {
+int temp = num[j];
+

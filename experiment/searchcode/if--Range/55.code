@@ -1,0 +1,15 @@
+int[] range = new int[] { -1, -1 };
+if (low == high) {
+return range;
+}
+if (low + 1 == high) {
+if (A[low] == target) {
+range[1] = low;
+}
+return range;
+}
+
+int mid = low + (high - low) / 2;
+
+if (A[mid - 1] < target) {
+

@@ -1,0 +1,9 @@
+public class Candy {
+int result = 0;
+int level = 0;
+int startIndex = 0;
+
+public int candy(int[] ratings) {
+for (int i = 0; i < ratings.length; i++) {
+if (i == 0 || ratings[i] == ratings[i - 1]) {
+

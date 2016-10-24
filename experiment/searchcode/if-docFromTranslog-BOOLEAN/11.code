@@ -1,0 +1,6 @@
+Engine.GetResult get = indexShard.get(new Engine.Get(request.realtime(), uidTerm));
+boolean docFromTranslog = get.source() != null;
+/* fetched from translog is treated as an artificial document */
+if (docFromTranslog) {
+request.doc(get.source().source, false);
+

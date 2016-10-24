@@ -1,0 +1,8 @@
+private final double minGNormSQ = 1.0e-12;
+private final double boxBound = 10000.0; // TODO: set this
+maxAbsG = Math.max(maxAbsG,Math.abs(lastEval.gx[i]));
+normGsq += lastEval.gx[i]*lastEval.gx[i];
+}
+if(normGsq<minGNormSQ) {
+return StepStatus.smallGNorm;
+

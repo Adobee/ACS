@@ -1,0 +1,6 @@
+while ((next = rs.nextTransition(millis, saveMillis)) != null) {
+if (addTransition(transitions, next) &amp;&amp; tailZone != null) {
+saveMillis = next.getSaveMillis();
+if (tailZone == null &amp;&amp; i == ruleSetCount - 1) {
+tailZone = rs.buildTailZone(id);
+

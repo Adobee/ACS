@@ -1,0 +1,9 @@
+public <T extends ExtensionEntityBase> T getExtension(Class<T> extensionClass) {
+T extension = null;
+if (inheritedExtensions != null &amp;&amp; inheritedExtensions.contains(extensionClass.getName())) {
+extension = ((ExtensibleEntityBase) parent).getExtension(extensionClass);
+}
+}
+else if (extensions != null) {
+extension = extensions.getExtension(extensionClass);
+

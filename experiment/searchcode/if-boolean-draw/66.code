@@ -1,0 +1,13 @@
+private static DrawUtils instance;
+
+private DrawUtils() { }
+
+public static DrawUtils getInstance() {
+if(instance==null) instance = new DrawUtils();
+return instance;
+}
+
+boolean showWindow = true;
+
+public void setShowWindow(boolean showWindow) {
+

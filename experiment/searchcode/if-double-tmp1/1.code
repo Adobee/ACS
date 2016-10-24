@@ -1,0 +1,11 @@
+double x0 = x - r;
+double y0 = y - r;
+double x1 = x + w + r;
+double y1 = y + h + r;
+if(bx >= x0 &amp;&amp; by >= y0 &amp;&amp; bx <= x1 &amp;&amp; by <= y1) {
+double[] list = new double[4];
+
+double tmp1 = (bx - x0);
+tmp1 = Math.pow(tmp1, 2);
+double tmp2 = (by - y0);
+

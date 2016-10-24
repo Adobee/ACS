@@ -1,0 +1,10 @@
+@Override
+public Receiver<? super T> getInput() {
+return input;
+}
+
+private final Receiver<T> input = new Receiver<T>() {
+public static <T> boolean propagateFirst(
+Iterable<Receiver<? super T>> handlers, T value) {
+for (Receiver<? super T> handler : handlers) {
+

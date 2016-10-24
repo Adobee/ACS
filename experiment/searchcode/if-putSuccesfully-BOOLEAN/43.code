@@ -1,0 +1,6 @@
+* Decorator for {@link MemoryCache}. Provides special feature for cache: if some cached object age exceeds defined
+* value then this object will be removed from cache.
+boolean putSuccesfully = cache.put(key, value);
+if (putSuccesfully) {
+loadingDates.put(key, System.currentTimeMillis());
+

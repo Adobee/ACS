@@ -1,0 +1,14 @@
+new XYPlotTest().run();
+}
+
+private void run() {
+final XYPlot plot = new XYPlot();
+
+Thread t1 = new Thread(new Runnable() {
+@Override
+public void run() {
+try {
+plot.clone();
+} catch (Throwable t) {
+if (t instanceof ConcurrentModificationException) {
+

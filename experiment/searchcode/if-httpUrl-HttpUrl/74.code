@@ -1,0 +1,8 @@
+Null.check(urlWithParams).ifAny(&quot;Cannot be null: urlWithParams&quot;);
+
+HttpUrl.Builder builder = urlWithParams.newBuilder();
+* @throws NullPointerException if url is null
+*/
+public static Optional<HttpUrl> parse(String url) {
+Null.check(url).ifAny(&quot;Url cannot be null&quot;);
+

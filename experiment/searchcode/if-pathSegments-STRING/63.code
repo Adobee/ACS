@@ -1,0 +1,7 @@
+public static String PathSegment(String path,Integer index){
+String[] pathSegments = path.split(&quot;\\|&quot;);
+if (index >= pathSegments.length) index = pathSegments.length-1;
+
+if (index < 0) {
+index = pathSegments.length-(index*-1);
+

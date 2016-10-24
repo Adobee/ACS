@@ -1,0 +1,10 @@
+return new Genome(randomList(Genome.Bit.values().length, DOMAIN_MIN, DOMAIN_MAX));
+}
+
+public static Genome crossover(Genome a, Genome b) {
+int crossoverPoints[] = randomLengthRandomOrderedList(1, Genome.Bit.values().length, 0, Genome.Bit.values().length);
+return crossover(a, b, crossoverPoints);
+}
+
+public static Genome crossover(Genome a, Genome b, int crossoverPoints[]) {
+

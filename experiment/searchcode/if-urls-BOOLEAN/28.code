@@ -1,0 +1,6 @@
+String path = requestWrapper.getServletPath();
+if (includeUrls.isEmpty()) {
+return !matchesAny(excludeUrls, path);
+private boolean matchesAny(List<String> excludeUrls, String path) {
+for (String excludeUrl : excludeUrls) {
+

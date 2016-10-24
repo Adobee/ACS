@@ -1,0 +1,12 @@
+return OVERLAPS;
+}
+
+final boolean insideShape = path.isWithin(SOUTH_POLE);
+
+if (insideRectangle == ALL_INSIDE &amp;&amp; insideShape) {
+return OVERLAPS;
+}
+
+if (path.intersects(topPlane, topPlanePoints, leftPlane, rightPlane) ||
+path.intersects(leftPlane, leftPlanePoints, topPlane, rightPlane) ||
+

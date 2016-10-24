@@ -1,0 +1,13 @@
+private double stdDev;
+private double lnVS;
+private double lnS;
+private double lnM;
+private double lnL;
+public double getLnVS() {
+return lnVS;
+}
+/**
+* @return the lnS
+*/
+public double getLnS() {
+

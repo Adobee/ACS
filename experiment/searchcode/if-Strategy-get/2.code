@@ -1,0 +1,15 @@
+public void contextInterface() {
+if (strategy != null) {
+strategy.algorithmInterface();
+}
+}
+
+public Strategy getStrategy() {
+return strategy;
+}
+
+public void setStrategy(Strategy strategy) {
+this.strategy = strategy;
+}
+}
+

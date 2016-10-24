@@ -1,0 +1,12 @@
+public class timeout {
+
+public static boolean is_timed_out(long t1, long t2) {
+
+long timeout_limit=10;
+try {
+
+long diff = t2 - t1;
+
+long diffSeconds = diff / 1000 % 60;
+long diffMinutes = diff / (60 * 1000) % 60;
+

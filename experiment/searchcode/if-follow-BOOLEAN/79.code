@@ -1,0 +1,12 @@
+Assert.state(userId != followId, &quot;您不能关注自己&quot;);
+
+FollowPO po = followDao.checkFollow(userId, followId);
+
+if (po == null) {
+po = new FollowPO();
+int ret = followDao.unfollow(userId, followId);
+
+if (ret <= 0) {
+throw new MtonsException(&quot;取消关注失败&quot;);
+} else {
+

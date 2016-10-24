@@ -1,0 +1,11 @@
+import au.com.bytecode.opencsv.CSVReader;
+
+class ItemToAdd {
+public ReplaceableItem item;
+public int domainIndex;
+// This is closer to the real-world distribution of ids, and makes a better test.
+int id = hashFunction(index);
+int domainIndex = getDomainForId(id);
+
+ArrayList<ReplaceableAttribute> attributes = new ArrayList<ReplaceableAttribute>();
+

@@ -1,0 +1,12 @@
+public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+if (headA == null || headB == null) {
+return null;
+}
+
+ListNode iterA = headA;
+while (iterB != null) {
+if (iterB == iterA) {
+return iterA;
+}
+iterB = iterB.next;
+

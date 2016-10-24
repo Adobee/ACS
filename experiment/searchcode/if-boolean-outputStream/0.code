@@ -1,0 +1,9 @@
+public class PDUOutputStream<T extends PDUSerializable> extends OutputStream
+{
+protected OutputStream outputStream;
+protected boolean newline;
+
+public PDUOutputStream(OutputStream outputStream, boolean newline)
+{
+this.outputStream = outputStream;
+

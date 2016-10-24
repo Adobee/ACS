@@ -1,0 +1,12 @@
+public boolean equals(Object obj) {
+if (obj instanceof HostAndPort) {
+HostAndPort hp = (HostAndPort) obj;
+
+String thisHost = convertHost(host);
+public String toString() {
+return host + &quot;:&quot; + port;
+}
+
+private String convertHost(String host) {
+if (host.equals(&quot;127.0.0.1&quot;)) return LOCALHOST_STR;
+

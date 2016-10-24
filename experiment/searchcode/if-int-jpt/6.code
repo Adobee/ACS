@@ -1,0 +1,9 @@
+public class CustomerList extends HttpJptController
+{
+private static final int DEFAULT_COUNT = 20;
+private static final int MAX_COUNT = 200;
+String s_count = this.getHttpContext().getParameter(&quot;count&quot;);
+int p_count = DEFAULT_COUNT;
+
+if (StringUtils.isNotBlank(s_count))
+

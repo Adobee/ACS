@@ -1,0 +1,11 @@
+this.calculateDurability();
+}
+
+@Override
+public Fragment detachFragment() {
+if (this.fragments.size() == 0) {
+for (Fragment fragment : this.fragments) {
+currentDurability += fragment.applyFragmentPressureAffection();
+}
+if ((this.maxDurability + currentDurability) <= 0) {
+

@@ -1,0 +1,9 @@
+private static boolean loaded;
+
+private static ImmutableMap<String, String> replacements = new MapBuilder<String, String>()
+.put(&quot;xml&quot;, &quot;org.apache.log4j.XMLLayout&quot;)
+.immutableMap();
+
+public static void configure(Settings settings) {
+if (loaded) {
+

@@ -1,0 +1,7 @@
+package com.endoplasm.engine;
+
+public class MathUtil {
+
+public static float reduce(float f, int numDecimals){
+return (float) (f - (f * Math.pow(10, numDecimals) % 1 / Math.pow(10, numDecimals)));
+

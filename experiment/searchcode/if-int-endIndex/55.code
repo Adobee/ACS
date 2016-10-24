@@ -1,0 +1,10 @@
+List<String> token = new ArrayList<>();
+int startIndex = 0;
+int endIndex = 0;
+while (true) {
+if (endIndex >= s.length()) {
+if (s.charAt(endIndex) == &#39;(&#39;) {
+int count = 0;
+while (endIndex < s.length()) {
+if (s.charAt(endIndex) == &#39;(&#39;) {
+

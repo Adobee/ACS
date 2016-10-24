@@ -1,0 +1,8 @@
+public class NonPreemptiveNFDH {
+public double applyNFDHAndGetHeight(
+ArrayList<Rectangle>
+// int currY = 0;
+double currH = 0;
+
+for (int i = 0; i < rectangleList.size(); i++) {
+

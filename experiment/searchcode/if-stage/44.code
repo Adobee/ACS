@@ -1,0 +1,12 @@
+import javax.inject.Singleton;
+
+import javafx.stage.Stage;
+
+@Singleton
+public class PrimaryStageProducer {
+private Stage primaryStage;
+
+@Produces
+public Stage getPrimaryStage() {
+if (primaryStage == null) {
+

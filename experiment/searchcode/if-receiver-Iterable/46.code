@@ -1,0 +1,9 @@
+public NamedEntity getReceiver() {
+return receiver;
+}
+
+public void setReceiver(NamedEntity receiver) {
+if (this.receiver != null) {
+if (this.receiver.equals(receiver)) return;
+this.receiver.getReceivingInvocations().remove(this);
+

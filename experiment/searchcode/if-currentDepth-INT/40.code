@@ -1,0 +1,14 @@
+public class Context {
+
+private LinkedList<UC> ucs = new LinkedList<UC>();
+private int currentDepth = 0;
+
+public void addDepth() {
+UC uc = ucs.peek();
+if(uc != null) {
+if(uc.getDepth() == currentDepth) {
+ucs.pop();
+}
+}
+currentDepth--;
+

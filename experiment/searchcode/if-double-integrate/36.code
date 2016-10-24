@@ -1,0 +1,7 @@
+Random randomGenerator = new Random();
+
+DoubleUnaryOperator toIntegrate = (z) -> {
+return Math.exp(eps*q.qualify(dataSet,z));
+};
+Double normalizator = MathTools.integrate(toIntegrate,0,1,50);
+

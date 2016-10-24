@@ -1,0 +1,12 @@
+public static String matrixToString(Matrix m, String format, String delimiter, String[] colHeads, String[] rowHeads, boolean fixedWidth) {
+if (m == null) {
+return &quot;null matrix&quot;;
+}
+String str = new String();
+int minWidth = 0;
+if (fixedWidth) {
+minWidth = 4;
+}
+else {
+if (colHeads != null) {
+

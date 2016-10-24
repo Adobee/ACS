@@ -1,0 +1,13 @@
+for(final FieldType fieldType : fieldTypes) {
+if(fieldType.isOfType(field)) {
+return true;
+}
+}
+
+return false;
+}
+
+public static FieldType getFieldType(final Field field) {
+if(FieldType.ID.isOfType(field)) {
+return FieldType.ID;
+

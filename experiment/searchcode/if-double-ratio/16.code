@@ -1,0 +1,8 @@
+public abstract double height();
+public abstract double density();
+public double ratio(){
+double width = 0;
+double height = 0;
+if (height()>width()){
+height = 480;
+

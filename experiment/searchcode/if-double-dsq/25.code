@@ -1,0 +1,9 @@
+SIFTPCA s2 = lFGroup2.lfArr[i2];
+double currDist = SIFTPCA.getL2SquaredDistance(s1, s2);
+if (currDist < min)
+static final public double getLoweFactor_avg(ALocalFeaturesGroup<SIFTPCA> sg1,
+ALocalFeaturesGroup<SIFTPCA> sg2) {
+if (sg2.size() < 2)
+return 0;
+double sum = 0;
+

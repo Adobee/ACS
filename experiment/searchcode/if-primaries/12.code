@@ -1,0 +1,8 @@
+if (shard.state() == ShardRoutingState.INITIALIZING &amp;&amp; shard.primary()) {
+primariesInRecovery++;
+}
+}
+if (primariesInRecovery >= primariesInitialRecoveries) {
+int primariesInitialRecoveries = settings.getAsInt(&quot;cluster.routing.allocation.node_initial_primaries_recoveries&quot;, ThrottlingAllocationDecider.this.primariesInitialRecoveries);
+if (primariesInitialRecoveries != ThrottlingAllocationDecider.this.primariesInitialRecoveries) {
+

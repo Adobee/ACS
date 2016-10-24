@@ -1,0 +1,13 @@
+* @return true to allow the cache file to be written, false to veto.
+*/
+boolean beforeWritingCacheFile(long contentSize);
+
+
+/**
+* Called immediately after writing a cache file - specifying the size of the file that was written.
+* @param contentSize The size of the content that was written.
+* @return true to allow the cache file to remain, false to immediately delete.
+*/
+boolean afterWritingCacheFile(long contentSize);
+}
+

@@ -1,0 +1,8 @@
+@ ensures (min<=a[0] &amp;&amp; min<=a[1] &amp;&amp; min<=a[2] &amp;&amp; min<=a[3] &amp;&amp; min<=a[4] &amp;&amp; min<=a[5] &amp;&amp; min<=a[6] &amp;&amp; min<=a[7] &amp;&amp; min<=a[8] &amp;&amp; min<=a[9] &amp;&amp; min<=a[10] &amp;&amp; min<=a[11] &amp;&amp; min<=a[12] &amp;&amp; min<=a[13] &amp;&amp; min<=a[14] &amp;&amp; min<=a[15] &amp;&amp; min<=a[16] &amp;&amp; min<=a[17] &amp;&amp; min<=a[18] &amp;&amp; min<=a[19]);
+@*/
+static int Minimum (int[] a) {
+int min=a[0];
+int i = 1;
+while (i<a.length-1) { /*error, the condition should be (i<a.length)*/
+if (a[i]<=min){
+

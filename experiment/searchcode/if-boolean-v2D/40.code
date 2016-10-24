@@ -1,0 +1,14 @@
+this.d = 2 * r;
+}
+
+@Override
+public void move(IVector2D v2d) {
+center.add(v2d);
+}
+
+@Override
+public boolean checkCollision(IFigure figure) {
+boolean result = false;
+
+if (figure instanceof Circle) {
+

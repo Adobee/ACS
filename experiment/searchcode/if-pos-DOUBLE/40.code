@@ -1,0 +1,12 @@
+public class GlobalPos {
+public double posX = 0;
+
+public double posY = 0;
+
+public GlobalPos(double x, double y) {
+public double getLatitute() {
+if (posY < 0 || posY > 1) {
+return Double.MAX_VALUE;
+}
+double lat = (0.5 - posY) * 2 * Math.PI;// compare to lon
+

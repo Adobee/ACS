@@ -1,0 +1,10 @@
+import javax.persistence.PersistenceContext;
+
+@Singleton
+public class LocalBean {
+
+private Map<Long, Local> localesMap;
+public Local buscarLocalMap(Long localId) throws PartidoException {
+Local local = localesMap.get(localId);
+if (local == null) {
+

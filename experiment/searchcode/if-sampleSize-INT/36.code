@@ -1,0 +1,12 @@
+public List<T> sample;
+int sampleSize;
+int numSeen;
+
+public ReservoirSampler(int sampleSize) {
+sample = new ArrayList<>();
+this.sampleSize = sampleSize;
+numSeen = 0;
+}
+public void add(T x) {
+if (sample.size() < sampleSize) {
+

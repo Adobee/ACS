@@ -1,0 +1,9 @@
+queryText = queryText.toLowerCase(Locale.ENGLISH);
+
+if (!queryText.contains(&quot;turn&quot;) &amp;&amp; !queryText.contains(&quot;toggle&quot;))
+return;
+
+STATE newState = STATE.UNDEFINED;
+
+if (queryText.contains(&quot;on&quot;)) {
+

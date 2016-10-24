@@ -1,0 +1,8 @@
+private static ThreadLocal<Locale> localeForThread = new ThreadLocal<Locale>();
+
+public static void setThreadLocale(Locale locale) {
+
+boolean localeFound = false;
+for(Locale loc : Locale.getAvailableLocales()) {
+if(loc.equals(locale)) {
+

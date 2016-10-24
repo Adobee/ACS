@@ -1,0 +1,7 @@
+String yesno4= input.nextLine(); //accept character
+char ch4= yesno4.charAt(0);
+if (ch4 == &#39;Y&#39; ^ ch4== &#39;y&#39;) {
+String yesno5= input.nextLine(); //accept character
+char ch5= yesno5.charAt(0);
+if (ch5 == &#39;Y&#39; ^ ch5 == &#39;y&#39;) {
+

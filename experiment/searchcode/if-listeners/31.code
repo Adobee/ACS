@@ -1,0 +1,7 @@
+Set<ISelectionListener> listeners = targetedListeners.get(partId);
+if (listeners == null) {
+listeners = new HashSet();
+targetedListeners.put(partId, listeners);
+}
+if (listeners.size() == 0 &amp;&amp; selectionService != null) {
+

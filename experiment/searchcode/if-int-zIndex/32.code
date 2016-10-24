@@ -1,0 +1,10 @@
+public class ZIndexChanger extends InputListener {
+Actor actor;
+int zIndex;
+
+public ZIndexChanger(Actor actor) {
+public void enter(InputEvent event, float x, float y, int pointer,
+Actor fromActor) {
+if (pointer == -1) {
+zIndex = actor.getZIndex();
+

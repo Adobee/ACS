@@ -1,0 +1,9 @@
+import org.jfree.chart.plot.PiePlot;
+import org.jfree.data.general.DefaultPieDataset;
+import org.jfree.data.general.PieDataset;
+public void actionPerformed(ActionEvent actionevent)
+{
+plot.setStartAngle(angle);
+angle = angle + 1;
+if(angle == 360)
+

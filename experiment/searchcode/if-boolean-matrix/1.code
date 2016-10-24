@@ -1,0 +1,8 @@
+public class SetMatrixZeroes {
+public void setZeroes(int[][] matrix) {
+if (matrix == null || matrix.length == 0) return;
+final int ROWS = matrix.length, COLS = matrix[0].length;
+int start = Integer.MAX_VALUE;
+for (int i = 0; i < ROWS; i++) {
+if (matrix[i][0] == 0) start = 0;
+

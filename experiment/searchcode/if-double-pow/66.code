@@ -1,0 +1,16 @@
+package com.codinghero.algorithm;
+
+public class Pow {
+public double pow(double x, int n) {
+if (n == 0) {
+return x;
+} else if (n % 2 == 0) {
+double p = pow(x, n / 2);
+return p * p;
+} else {
+double p = pow(x, n / 2);
+return p * p * x;
+}
+}
+}
+

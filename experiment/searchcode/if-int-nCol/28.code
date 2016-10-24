@@ -1,0 +1,7 @@
+private static int[][] createMatrix(int nRow, int nCol) {
+int[][] matrix = new int[nRow][nCol];
+for (int i = 0; i < matrix.length; i++) {
+for (int j = 0; j < matrix[i].length; j++) {
+if (i == j || nCol - 1 == j + i) {
+matrix[i][j] = 1;
+

@@ -1,0 +1,8 @@
+double result = 0;
+double tmp1 = 0;
+double tmp2 = 0;
+double tmp3 = 0;
+for(int i = 0; i<a.length; i++){
+result = (tmp1*a.length - tmp2*tmp3)/(Math.sqrt(a.length*tmp4-tmp2*tmp2)*Math.sqrt(a.length*tmp5-tmp3*tmp3));
+if(Double.isNaN(result))
+

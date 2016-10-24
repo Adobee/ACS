@@ -1,0 +1,9 @@
+public static Complex findRoot(HolomorphicFunction f, Complex z0, Counter N) {
+Complex fx, df;
+double EPISILON = 0.00000001;
+for(int i=0; i<N.max(); i++) {
+
+if(f.eval(z0).abs() <= EPISILON) return (z0);
+
+fx = f.eval(z0);
+

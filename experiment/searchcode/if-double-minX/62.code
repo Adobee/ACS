@@ -1,0 +1,6 @@
+public static double findMinX(Geometry g) {
+Double minX = null;
+for (Coordinate c : g.getCoordinates()) {
+if (minX == null || c.x < minX.doubleValue()) {
+minX = c.x;
+

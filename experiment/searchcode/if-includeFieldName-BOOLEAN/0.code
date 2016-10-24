@@ -1,0 +1,12 @@
+@Override
+public int compareTo(BaseInjector t) {
+return -1;
+}
+
+protected boolean conditional(T e, Method m, Object[] params)throws Exception{
+if(condition.includeParams()){
+Class[] pTypes=null;
+
+if(condition.includeFieldName()){
+Object[] pTmp=new Object[params.length+1];
+

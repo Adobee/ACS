@@ -1,0 +1,12 @@
+package me.niccolomattei.api.telegram.permission;
+
+import java.util.List;
+
+public interface Permissionable {
+boolean hasPermission(String s);
+
+/**
+* @return null if the user is not in a group.
+*/
+PermissionGroup getPermissionGroup();
+

@@ -1,0 +1,12 @@
+public class MaskSet implements MaskElement
+{
+protected boolean negate;
+protected String set;
+
+public MaskSet(boolean negate, String set)
+public boolean match(char chr)
+{
+boolean member = set.indexOf(chr) > -1;
+if (negate) return !member;
+else return member;
+

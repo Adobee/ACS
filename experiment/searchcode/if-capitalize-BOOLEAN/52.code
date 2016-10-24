@@ -1,0 +1,10 @@
+return capitalize(manufacturer) + &quot; &quot; + model + &quot; / API level &quot; + version + &quot;, version &quot; + versionRelease;
+}
+
+private static String capitalize(String str) {
+if (TextUtils.isEmpty(str)) {
+return str;
+}
+char[] arr = str.toCharArray();
+boolean capitalizeNext = true;
+

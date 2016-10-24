@@ -1,0 +1,7 @@
+OutputStream os = new BufferedOutputStream(new FileOutputStream(tmpFile), this.bufferSize);
+boolean savedSuccessfully = false;
+return savedSuccessfully;
+} finally {
+IoUtils.closeSilently(os);
+if (savedSuccessfully &amp;&amp; !tmpFile.renameTo(imageFile)) {
+

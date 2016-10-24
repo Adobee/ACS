@@ -1,0 +1,11 @@
+private float	zCoord;
+
+/**
+* Construct a Point3f from a Point3i
+*
+* @param intVersion The Point3i to convert to a float
+*/
+public Point3f(Point3i intVersion)
+{
+this(intVersion.getX(), intVersion.getY(), intVersion.getZ());
+

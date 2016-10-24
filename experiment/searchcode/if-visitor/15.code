@@ -1,0 +1,9 @@
+buildVisitor(args, visitor);
+}
+
+private Visitor buildVisitor(Args args, BaseVisitor visitor){
+if(args.getName() != null){
+visitor.add(new NameCheckVisitor(args.getName()));
+}
+if(args.getType() != null){
+

@@ -1,0 +1,9 @@
+tuple.get(0).c = 0d;
+tuple.get(getN()-1).c = 0d;
+
+//Solving system:
+List<Double> alpha = new ArrayList<>();
+for (int i = 1; i < getN() - 1; i++) {
+alpha.add(new Double(0)); beta.add(new Double(0));
+double h_i = getxValues().get(i) - getxValues().get(i - 1);
+

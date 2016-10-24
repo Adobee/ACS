@@ -1,0 +1,15 @@
+public String extractRecord(String string, String separator, int index)
+{
+this.string = string;
+this.separator = separator;
+public String extractRecord(int index)
+{
+String[] out = this.string.split(this.separator);
+if(index > out.length)
+return &quot;&quot;;
+else
+return out[index-1];
+}
+
+}
+

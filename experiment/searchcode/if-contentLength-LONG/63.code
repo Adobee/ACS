@@ -1,0 +1,9 @@
+class DirectStorage implements IDataStorage {
+private final long contentOffset;
+private final long contentLength;
+this.contentLength = contentLength;
+}
+
+public byte[] getData(long offset, int length) throws FileFormatException {
+if (offset + length > contentLength) {
+

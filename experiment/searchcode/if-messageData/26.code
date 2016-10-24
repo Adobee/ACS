@@ -1,0 +1,8 @@
+StringBuffer hql=new StringBuffer(&quot;from MessageData mes where 1=1 and mes.isdelete=&#39;1&#39;&quot;);
+
+//定义根据条件查询  集合
+List<Object> objects=new ArrayList<Object>();
+//条件查询
+if(messageData.getStatus()!=null &amp;&amp; !&quot;&quot;.equals(messageData.getStatus())){   //状态查询
+if(messageData.getStatus().equals(&quot;1&quot;)){   //未查看
+

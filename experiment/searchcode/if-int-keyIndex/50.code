@@ -1,0 +1,8 @@
+static String encrypt(String key, String plainText) {
+String encrypted = &quot;&quot;;
+
+for (int textIndex = 0, keyIndex = 0; textIndex < plainText.length(); textIndex++) {
+char currentChar = plainText.charAt(textIndex);
+
+if (currentChar == &#39; &#39;) {
+

@@ -1,0 +1,11 @@
+OSX(true), LINUX(true), UNKNOWN(false), WINDOWS(false);
+
+private OS(boolean isPosix) {
+this.isPosix = isPosix;
+}
+
+public final boolean isPosix;
+
+public static OS current() {
+String osString = System.getProperty(&quot;os.name&quot;).toLowerCase();
+

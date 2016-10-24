@@ -1,0 +1,6 @@
+public class ActionRoutingHolder {
+private static ThreadLocal<Deque<ActionRouting>> routingDeques = new InheritableThreadLocal<Deque<ActionRouting>>();
+Deque<ActionRouting> routingList = getRoutingDeque();
+if(routingList == null) {
+routingList = new LinkedList<ActionRouting>();
+

@@ -1,0 +1,7 @@
+double mean = getMean(links);
+for (Link link : links) {
+double linkFactor = Math.pow(link.getnAllocatedSlots() - mean, 2)
+/ occupationFactor;
+double factor = Math.abs((1 - alfa) * linkFactor);
+if (link.getnAllocatedSlots() > mean) {
+

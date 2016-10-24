@@ -1,0 +1,9 @@
+builder.searchQuotedAnalyzer = parserContext.analysisService().defaultSearchQuoteAnalyzer();
+}
+} else if (propName.equals(&quot;ignore_above&quot;)) {
+builder.ignoreAbove(XContentMapValues.nodeIntegerValue(propNode, -1));
+return null;
+}
+if (ignoreAbove > 0 &amp;&amp; value.length() > ignoreAbove) {
+return null;
+

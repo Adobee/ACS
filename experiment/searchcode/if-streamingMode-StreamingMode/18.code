@@ -1,0 +1,10 @@
+.getData() == null &amp;&amp; request.getMultipartEntity() == null)
+? StreamingMode.CHUNKED : StreamingMode.FIXED;
+
+if(request.getStreamingMode()==HootRequest.STREAMING_MODE_FIXED){
+connection.setRequestMethod(&quot;GET&quot;);
+break;
+}
+
+if (mStreamingMode == StreamingMode.CHUNKED) {
+

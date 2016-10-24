@@ -1,0 +1,6 @@
+public static boolean forceSingle = false;
+
+public static FacetMap createMap(int docCount, List<TermProvider> providers) throws IOException {
+FacetMap map = FacetMapSingleFactory.createMap(docCount, provider, forceSingle);
+if (map != null) {
+

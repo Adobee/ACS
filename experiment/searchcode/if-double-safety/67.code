@@ -1,0 +1,10 @@
+granule gPlainText(SysLogGenerator){
+external double safetyIndex;
+{
+if(safetyIndex >0.3)
+public LogItem generate() {
+System.out.println(&quot;safety index is high, not use encrypt&quot;);
+return seed.generate();
+}
+}
+

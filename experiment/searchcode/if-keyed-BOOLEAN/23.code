@@ -1,0 +1,11 @@
+public static KeyedSettingManager getKeyedSettingManager()
+{
+if (singleton == null)
+{
+singleton = new KeyedSettingManager();
+}
+return singleton;
+public boolean getKeyedValueBoolean(String keyedCode, boolean defaultValue)
+{
+String value = getKeyedValue(keyedCode, defaultValue ? &quot;Y&quot; : &quot;N&quot;);
+

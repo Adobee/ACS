@@ -1,0 +1,10 @@
+public static final String homeDir =System.getProperty(&quot;user.home&quot;) + File.separatorChar;
+private Map<String, String> defaultValues = new HashMap<String,String>();
+
+static private HPEProperties eInstance = null;
+static public HPEProperties getInstance() {
+if (eInstance == null) {
+eInstance = new HPEProperties();
+}
+return eInstance;
+

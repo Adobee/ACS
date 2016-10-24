@@ -1,0 +1,13 @@
+lock.unlock();
+return size;
+}
+return map.size();
+}
+
+@Override
+public boolean isEmpty() {
+if(snapshotMode.get()){
+lock.lock();
+boolean empty = map.isEmpty() || dirtyState.isEmpty();
+lock.unlock();
+

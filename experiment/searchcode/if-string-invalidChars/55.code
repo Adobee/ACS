@@ -1,0 +1,6 @@
+private static final Set<Integer> invalidChars = new HashSet<Integer>();
+private static final Map<String, Generator> generators = new HashMap<String, Generator>();
+
+static {
+invalidChars.add(58);
+

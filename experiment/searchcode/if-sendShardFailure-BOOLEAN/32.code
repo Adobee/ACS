@@ -1,0 +1,6 @@
+import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.function.Predicate;
+public void failRecovery(long id, RecoveryFailedException e, boolean sendShardFailure) {
+RecoveryTarget removed = onGoingRecoveries.remove(id);
+

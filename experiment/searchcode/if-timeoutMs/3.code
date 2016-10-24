@@ -1,0 +1,11 @@
+public abstract class SingleRequestProcessor implements RequestProcessor {
+public long timeoutMs;
+
+@Override
+public Object processRequest(Object request) {
+protected abstract Object waitForResponse();
+
+@Override
+public synchronized void setTimeoutMs(long timeoutMs) {
+if(timeoutMs < 0) throw new IllegalArgumentException(&quot;Timeout should be positive. Wrong value specified&quot;);
+

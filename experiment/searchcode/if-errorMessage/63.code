@@ -1,0 +1,7 @@
+private static final LiveService liveService = ServiceHelper.getLiveService();
+
+public static ErrorMessage login(Map<String,Object> bodyMap) {
+ErrorMessage errorMessage = new ErrorMessage();
+List<String> error = new ArrayList<>();
+if (!bodyMap.containsKey(&quot;quantity&quot;)){
+

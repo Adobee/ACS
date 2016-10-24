@@ -1,0 +1,17 @@
+import java.io.*;
+
+class SleepThread extends Thread {
+
+boolean wakeUp = false;
+
+public void wakeUp() {
+for (long i = 0; i < time/5; i++) {
+sleep(5);
+if (wakeUp) {
+wakeUp = false;
+break;
+}
+}
+}
+}
+

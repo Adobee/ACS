@@ -1,0 +1,6 @@
+AIThread aiThread = (AIThread) getContext().getVariable(ArtificialBeing.AI_THREAD);
+List<Vector2> bases = aiThread.getClosestBases(self.getPosition(), self.getFactionType());
+if(!bases.isEmpty()){
+Vector2 closest = bases.get(0);
+float[] target = new float[]{closest.x, closest.y};
+

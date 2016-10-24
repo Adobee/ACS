@@ -1,0 +1,7 @@
+public void readerIndex(int readerIndex) {
+if (readerIndex < 0 || readerIndex > writerIndex) {
+throw new IndexOutOfBoundsException();
+public int bytesBefore(int index, int length, byte value) {
+int endIndex = indexOf(index, index + length, value);
+if (endIndex < 0) {
+

@@ -1,0 +1,13 @@
+public class BinSearchTest {
+
+private int[] startPos;
+
+public BinSearchTest(int[] startPos) {
+this.startPos = startPos;
+}
+
+public void query(int query) {
+int p = Arrays.binarySearch(startPos, query);
+if (p < 0) {
+p = -p - 1;
+

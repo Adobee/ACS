@@ -1,0 +1,16 @@
+public void connect(TreeLinkNode left, TreeLinkNode right) {
+if (left != null) {
+left.next = right;
+connect(left);
+connect(right);
+}
+while (left != null) {
+left = left.right;
+right = right.left;
+if (left != null) {
+left.next = right;
+}
+}
+}
+}
+

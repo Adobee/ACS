@@ -1,0 +1,10 @@
+@Override
+public Boolean caseWildcardType(WildcardType wildcardType) {
+return areResolved( wildcardType.getUpperBounds() ) &amp;&amp; areResolved( wildcardType.getLowerBounds() );
+}.doSwitch( t );
+}
+
+private static Boolean areResolved(Type[] types) {
+for ( Type t : types ) {
+if ( !isResolved( t ) ) {
+

@@ -1,0 +1,7 @@
+b.maximumWeight(config.getLong(&quot;cache&quot;, name, &quot;maximumWeight&quot;, 20 << 20));
+}
+if (config.getString(&quot;cache&quot;, name, &quot;maximumSize&quot;) != null) {
+Duration expireAfterAccess = getDuration(config, &quot;cache&quot;, name, &quot;expireAfterAccess&quot;, null);
+if (expireAfterAccess != null) {
+b.expireAfterAccess(expireAfterAccess.getMillis(), TimeUnit.MILLISECONDS);
+

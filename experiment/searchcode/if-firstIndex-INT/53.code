@@ -1,0 +1,13 @@
+private E[] array;
+private int firstIndex = 0;
+private int lastIndex = -1;
+
+public ArrayQueue(E[] arr){
+array = arr;
+}
+public E poll() {
+if(firstIndex != -1){
+return array[firstIndex];
+}
+return null;
+

@@ -1,0 +1,14 @@
+* The current value of the seed.
+**/
+private long seed;
+
+/**
+* The seed specified by the last setSeed.
+**/
+private long originalSeed;
+* @throws IllegalArgumentException If the array does not have at least one element.
+*/
+public void setSeeds(long[] seed) {
+if (seed.length < 1) {
+throw new IllegalArgumentException(&quot;Nees at least one seed: &quot; + seed.length);
+

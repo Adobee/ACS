@@ -1,0 +1,9 @@
+public static SimplePlot recreatePlot( SimplePlot plot, PlotModel model, PlotOptions options )
+{
+plot.removeFromParent();
+return new SimplePlot( plot.getElement(), model, options );
+public static PlotWithOverview recreatePlotWithOverview( PlotWithOverview plot, PlotWithOverviewModel model, PlotOptions windowPlotOptions, PlotOptions overviewPlotOptions )
+{
+plot.removeFromParent();
+return new PlotWithOverview( model, windowPlotOptions, overviewPlotOptions, plot.getWindowPlot().getElement(), plot.getOverviewPlot().getElement() );
+

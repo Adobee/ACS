@@ -1,0 +1,8 @@
+private double[] calcMeanAndSTD(double[] numbers){
+int n = numbers.length;
+double mean = 0;
+double std = 0;
+double squares = 0;
+for(int i = 0; i < n; i++){
+mean += numbers[i];
+

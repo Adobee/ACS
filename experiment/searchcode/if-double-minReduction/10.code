@@ -1,0 +1,12 @@
+private double safety;
+
+private double minReduction;
+
+private double maxGrowth;
+
+protected MultistepIntegrator(final java.lang.String name ,final int nSteps ,final int order ,final double minStep ,final double maxStep ,final double scalAbsoluteTolerance ,final double scalRelativeTolerance) {
+protected abstract org.apache.commons.math.linear.Array2DRowRealMatrix initializeHighOrderDerivatives(final double[] first, final double[][] multistep);
+
+public double getMinReduction() {
+return minReduction;
+

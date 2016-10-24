@@ -1,0 +1,8 @@
+public Response intercept(Chain chain) throws IOException
+{
+Response originalResponse = chain.proceed(chain.request());
+if (isNetworkAvailable()) {
+Log.e(&quot;CacheInterceptor&quot;,&quot;no net work&quot;);
+int maxStale = 60 * 60 * 24 * 28; // 离线时缓存保存4周
+return originalResponse.newBuilder()
+

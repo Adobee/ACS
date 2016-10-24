@@ -1,0 +1,12 @@
+public class DatabaseObjectCopier {
+
+public void fillObject(DatabaseObject dstObject, DatabaseObject srcObject) {
+if (dstObject == null || srcObject == null) {
+final List<Column> nonEmptyColumns = srcObject.listNonEmptyColumns();
+if (nonEmptyColumns == null) {
+return;
+}
+
+Object value = null;
+for (Column col: nonEmptyColumns) {
+

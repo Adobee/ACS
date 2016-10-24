@@ -1,0 +1,13 @@
+public class FunctionChromosome{
+
+double eval;
+
+//for probability of selection (roulette method)
+double from;
+double to;
+double prob;
+
+char[] fullch; //signx x decx signy y decy
+Function f;
+int bitsfordecimals = 14; // 9999
+

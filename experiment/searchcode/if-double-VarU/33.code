@@ -1,0 +1,13 @@
+* pk01-14, pk01-26, 2002 01 07
+* @author Aron&amp;Franz
+* @version 1.1
+*
+*/
+public class VaruValPanel extends JPanel {
+* @return ok boolean
+*
+*/
+public boolean uppdateraLager() {
+boolean ok=false;
+if (Double.parseDouble(mängdTF.getText())<=Double.parseDouble
+

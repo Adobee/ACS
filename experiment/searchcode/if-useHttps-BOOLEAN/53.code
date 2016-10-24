@@ -1,0 +1,11 @@
+boolean useHttps = settings.getBoolean(USE_HTTPS, true);
+
+httpsCheckbox.setChecked(useHttps);
+
+if (url.equals(STAGING_URL)) {
+case 1: url = PRODUCTION_URL; break;
+default: url = STAGING_URL; break;
+}
+
+boolean useHttps = httpsCheckbox.isChecked();
+

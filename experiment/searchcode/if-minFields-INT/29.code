@@ -1,0 +1,11 @@
+public Object convert(Object input) {
+if (input == null) {
+return null;
+}
+
+int minFields = Math.min(inputFields.size(), outputFields.size());
+outputFields = outputOI.getObjectInspectors();
+
+// If the output has some extra fields, set them to NULL in convert().
+int minFields = Math.min(inputFields.size(), outputFields.size());
+

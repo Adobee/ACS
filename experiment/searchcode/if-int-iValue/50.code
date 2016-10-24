@@ -1,0 +1,10 @@
+* @author Arnold Lankamp
+*/
+public final class ShareableValuesHashMap implements Map<IValue, IValue>{
+private final static int INITIAL_LOG_SIZE = 4;
+
+private int modSize;
+private int hashMask;
+
+private Entry<IValue, IValue>[] data; // protected for easier access in inner class
+

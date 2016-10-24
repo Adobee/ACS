@@ -1,0 +1,10 @@
+private List<FilterBlockDocIdSet> blockDocIdSets;
+private int minDocId = Integer.MIN_VALUE;
+private int maxDocId = Integer.MAX_VALUE;
+
+public AndBlockDocIdSet(List<FilterBlockDocIdSet> blockDocIdSets) {
+minDocId = Math.max(minDocId, blockDocIdSet.getMinDocId());
+maxDocId = Math.min(maxDocId, blockDocIdSet.getMaxDocId());
+}
+for (FilterBlockDocIdSet blockDocIdSet : blockDocIdSets) {
+

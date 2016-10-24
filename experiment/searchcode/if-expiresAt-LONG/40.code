@@ -1,0 +1,7 @@
+private JedisCluster jedisCluster;
+private String key;          //加锁key
+private long expiresAt = 0;  //当前锁失效时间
+private long holdTimeMillis; //锁持有时间
+public RedisDistributedLock(JedisCluster jedisCluster, String key, long holdTimeMillis) {
+if(holdTimeMillis <= 0){
+

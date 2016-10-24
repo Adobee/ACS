@@ -1,0 +1,9 @@
+files.add(FileDetailedEntry.createFile(fullPath, fullPath, binaryContent, FileDetailedEntry.Type.FILE, attribute_));
+}
+
+@Override
+public boolean isDirectory() {
+List<String> map = new ArrayList<String>();
+for(FileDetailedEntry f: files) {
+if(!f.isHidden()) {
+

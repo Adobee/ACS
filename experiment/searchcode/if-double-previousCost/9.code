@@ -1,0 +1,11 @@
+for (int c = 0; c < features.size(); c++)
+{
+final String feature = features.get(c);
+
+if (!feature.equals(&quot;_bias&quot;))
+{
+double tmpSum = 0.0, tmpSquared = 0.0;
+ImmutableMap<String, Double> featureMap = example.getFeatures();
+
+if (featureMap.containsKey(feature))
+

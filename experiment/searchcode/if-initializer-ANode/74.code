@@ -1,0 +1,15 @@
+private final Set<PathwayGraph> bubbleSetPathways;
+
+/**
+* the currently selected node
+*/
+private ANodeElement currentSelectedNode;
+
+/**
+* is null if no node was selected, otherwise it is a reference to the currently selected node -> needed for merging
+public void setOrResetSelectedNode(ANodeElement newSelectedNode) {
+/**
+* if nothing was selected, just set the new node
+*/
+if (currentSelectedNode == null) {
+

@@ -1,0 +1,7 @@
+ShardValidateQueryResponse validateQueryResponse = (ShardValidateQueryResponse) shardResponse;
+valid = valid &amp;&amp; validateQueryResponse.isValid();
+if (request.explain() || request.rewrite()) {
+private String getRewrittenQuery(IndexSearcher searcher, Query query) throws IOException {
+Query queryRewrite = searcher.rewrite(query);
+if (queryRewrite instanceof MatchNoDocsQuery) {
+

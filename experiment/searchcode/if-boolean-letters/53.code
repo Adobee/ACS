@@ -1,0 +1,15 @@
+char[] chars = input.replaceAll(&quot; &quot;, &quot;&quot;).toCharArray();
+for (char c : chars) {
+if (letters.contains(&quot;&quot;+c)) {
+letters.remove(&quot;&quot;+c);
+String input = scanner.nextLine();
+if (isEnd(input)) {
+break;
+} else {
+readInput(input);
+}
+}
+}
+
+public boolean isEnd(String input) {
+

@@ -1,0 +1,5 @@
+public synchronized void setWorkDirectory(String workDirectory) {
+if (this.workDirectory == null) {
+this.workDirectory = new File(System.getProperty(&quot;user.home&quot;), workDirectory);
+if (!this.workDirectory.exists()) {
+

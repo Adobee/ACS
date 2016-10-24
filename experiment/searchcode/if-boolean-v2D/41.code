@@ -1,0 +1,9 @@
+//developers can use this functuon of 2d viwers to skip long renderings that are not actually updating the image
+if (v2d.skipRendering())
+return finalImage;
+
+//this if is for the first time the two buffers are initialized and for when the user changes the size of the container; in this case a new image of the good size needs to be created.
+gc.fillRect(0, 0, thisContainer.getWidth(), thisContainer.getHeight()); // fill in background
+
+if (!v2d.antialiasingSet)
+

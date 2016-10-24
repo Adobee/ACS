@@ -1,0 +1,12 @@
+public static byte[] toBytes(long n) {
+
+byte[] bytes = new byte[8];
+bytes[7] = (byte) (n &amp; 0xff);
+bytes[6] = (byte) (n >> 8 &amp; 0xff);
+bytes[0] = (byte) ((n >> 8) &amp; 0xff);
+return bytes;
+}
+
+public static byte[] ToBytes(Object o) throws IOException {
+if (o instanceof String) {
+

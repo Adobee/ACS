@@ -1,0 +1,11 @@
+Node current = s.peak();
+
+//pop when returning back
+if((current.left == null &amp;&amp; current.right == null) || current.left == previous || current.right == previous)
+previous = current;
+}
+//push
+if(current.right != null)
+s.push(current.right);
+if(current.left != null)
+

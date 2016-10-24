@@ -1,0 +1,8 @@
+String tmp = exp2.getValue();
+if (ret.contains(&quot;+-&quot;)) {
+String[] tmp1 = ret.split(&quot;\\+-&quot;);
+tmp = tmp1[0];
+}
+if (operation.compareTo(&quot;*&quot;) == 0) {
+val = Double.valueOf(ret.trim()).doubleValue() * Double.valueOf(tmp.trim()).doubleValue();
+

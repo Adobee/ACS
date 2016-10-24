@@ -1,0 +1,16 @@
+import org.cougaar.mlm.ui.newtpfdd.util.OutputHandler;
+
+
+public class IDKey implements Comparable
+{
+String ID;
+
+IDKey(String ID)
+{
+this.ID = ID;
+}
+
+public int compareTo(Object object)
+{
+if ( !(object instanceof IDKey) )
+

@@ -1,0 +1,9 @@
+* @param endWeek   End week string.
+* @throws IllegalIntervalException If the given start and end are invalid.
+*/
+public WeekInterval(String startWeek, String endWeek) throws IllegalIntervalException {
+this.startWeek = utility.getWeek(startWeek);
+this.endWeek = utility.getWeek(endWeek);
+
+if (this.startWeek.compareTo(this.endWeek) > 0) {
+

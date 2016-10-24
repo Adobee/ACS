@@ -1,0 +1,8 @@
+package com.gionee.appupgrade.common;
+
+public class FactoryAppUpgrade {
+private static IGnAppUpgrade sIGnAppUpgrade = null;
+public static IGnAppUpgrade getGnAppUpgrade() {
+if (sIGnAppUpgrade == null) {
+sIGnAppUpgrade = new GnAppUpgradeImple();
+

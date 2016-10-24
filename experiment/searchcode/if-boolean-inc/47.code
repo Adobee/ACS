@@ -1,0 +1,10 @@
+public  RotateBehavior(int rotateInc, boolean enableRandom)
+{
+if (!enableRandom){
+this.rotateInc = rotateInc;
+this.rotateInc = random.nextInt(rotateInc);
+if (this.rotateInc == 0)
+this.rotateInc = 1;
+if (random.nextBoolean())
+this.rotateInc = -this.rotateInc;
+

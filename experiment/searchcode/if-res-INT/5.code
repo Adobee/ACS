@@ -1,0 +1,8 @@
+public int numTrees(int n) {
+if(n < 3) return n;
+int[] res = new int[n + 1];
+res[1] = 1;
+res[2] = 2;
+for(int i = 3; i <= n; ++i){
+res[i] += 2 * res[i - 1];
+

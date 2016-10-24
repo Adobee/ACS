@@ -1,0 +1,11 @@
+Order order = orderRepository.findOne(key.toString());
+if (order == null) {
+return Order.notFound(key.toString());
+}
+return order;
+OrderStatus status = orderStatusRepository.findOne(key);
+if (status == null) {
+return OrderStatus.notFound(key);
+}
+return status;
+

@@ -1,0 +1,7 @@
+double fixedAutoRange = getFixedAutoRange();
+if (fixedAutoRange > 0.0) {
+lower = Math.max(upper - fixedAutoRange, this.smallestValue);
+temp = Double.doubleToLongBits(this.smallestValue);
+result = 37 * result + (int) (temp ^ (temp >>> 32));
+if (this.numberFormatOverride != null) {
+

@@ -1,0 +1,14 @@
+public int amount = 1;
+
+public abstract void render(double x, double y);
+
+public int compareTo(Item i) {
+if (this.value > i.value) return -1;
+
+return 1;
+}
+
+public static Item clone(Item item) {
+
+if (item instanceof Item_Equipment) {
+

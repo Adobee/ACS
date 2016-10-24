@@ -1,0 +1,12 @@
+public BoundingPolytope(Bounds boundsObject ) {
+int i;
+
+boundId = BOUNDING_POLYTOPE;
+
+if( boundsObject == null )  {
+boundsIsEmpty = true;
+boxVerts[7].set(b.upper.x, b.upper.y, b.upper.z );
+this.combine(boxVerts);
+
+} else if(boundsObject.boundId == BOUNDING_POLYTOPE) {
+

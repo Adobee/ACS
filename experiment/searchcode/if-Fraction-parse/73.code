@@ -1,0 +1,14 @@
+result = result.divide(assertFraction(assertLiteral(param)));
+}
+
+return result;
+}
+
+private Fraction assertFraction(Literal literal) {
+if(literal instanceof Fraction){
+} else {
+return Fraction.parseFraction(literal.symbol);
+}
+}
+}
+

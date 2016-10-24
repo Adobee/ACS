@@ -1,0 +1,8 @@
+public WebSocketDesc(String uri) {
+if (uri.startsWith(&quot;ws://&quot;))
+uri = uri.substring(5);
+if (uri.startsWith(&quot;wss://&quot;))
+uri = uri.substring(6);
+if (uri.endsWith(&quot;/&quot;))
+this.uri = uri.substring(0,uri.length() - 1);
+

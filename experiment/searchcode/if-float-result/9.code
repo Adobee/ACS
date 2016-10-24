@@ -1,0 +1,13 @@
+package com.example.opengl;
+
+public class Vector3 {
+float x;
+float y;
+float z;
+
+public Vector3(float pX, float pY, float pZ) {
+public static float[] mat4(float x) {
+float[] result = new float[16];
+for (int i = 0; i < 16; i++) {
+if (i % 5 == 0) {
+

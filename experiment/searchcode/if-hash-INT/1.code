@@ -1,0 +1,12 @@
+package net.j7.commons.utils;
+
+public final class UtilsHash {
+
+public static final long hashString(CharSequence str) {
+long hash = 0;
+
+if (str==null) return hash;
+
+//Prehash
+for (int i = 0, l = str.length(); i < l; i++) {
+

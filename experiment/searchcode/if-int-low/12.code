@@ -1,0 +1,7 @@
+public class QuickSort{
+public void quickSort(int[] arr, int low, int high){
+if(low < high){
+int key = partition(arr, low, high);
+quickSort(arr, low, key - 1);
+quickSort(arr, key + 1, low);
+

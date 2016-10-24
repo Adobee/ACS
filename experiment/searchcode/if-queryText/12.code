@@ -1,0 +1,10 @@
+String queryText = intent.getStringExtra(GoogleSearchApi.KEY_QUERY_TEXT);
+queryText = queryText.toLowerCase(Locale.ENGLISH);
+
+if (!queryText.contains(&quot;turn&quot;) &amp;&amp; !queryText.contains(&quot;toggle&quot;))
+STATE newState = STATE.UNDEFINED;
+
+if (queryText.contains(&quot;on&quot;)) {
+newState = STATE.TURN_ON;
+} else if (queryText.contains(&quot;off&quot;)) {
+

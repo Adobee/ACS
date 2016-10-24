@@ -1,0 +1,10 @@
+return nodeid + &quot;-&quot; + host + &quot;:&quot; + port;
+}
+public boolean sameHost(Node other) {
+return port == other.port &amp;&amp; host.equals(other.host);
+final Node other = (Node) obj;
+if (this.nodeid != other.nodeid) {
+return false;
+}
+if (!sameHost(other)) {
+

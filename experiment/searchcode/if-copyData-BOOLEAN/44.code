@@ -1,0 +1,12 @@
+public CString(String str, int len) {
+buffer = new byte[len];
+copyData(str.getBytes(), len);
+}
+
+public CString(byte[] data, int len) {
+buffer = new byte[len];
+copyData(data, len);
+}
+
+public CString(String str, char fillChar, int len) {
+

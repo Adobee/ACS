@@ -1,0 +1,11 @@
+public static void quickSort(int[] nums,int lowest,int highest){
+
+// 设置跟踪下标
+int lowIndex = lowest,highIndex = highest;
+
+if (lowIndex < highIndex){  //
+highIndex--;
+// 当lowIndex与highIndex不相等时，说明分界点右边存在比其小的数据
+if (lowIndex != highIndex)
+nums[lowIndex] = nums[highIndex];
+

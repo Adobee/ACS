@@ -1,0 +1,9 @@
+return new Fraction(whole * denominator + numerator, denominator);
+}
+
+public MixedFraction negate()
+{
+// if whole = 0, whole times 1 would not make a negative fraction
+if(whole != 0)
+return new MixedFraction(whole * -1, numerator, denominator);
+

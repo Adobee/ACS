@@ -1,0 +1,10 @@
+public void addCategoryData(CategoryData category){
+if(category != null){
+categories.put(category.getEntityUUID(),category);
+propertyChangeSupport.fireIndexedPropertyChange(P_CATEGORY_ADDED, PI_CATEGORY_ADDED, null, categoryData);
+}
+
+@Override
+public void removeCategoryData(CategoryData category){
+if(category != null){
+

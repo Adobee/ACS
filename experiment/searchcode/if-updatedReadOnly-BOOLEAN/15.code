@@ -1,0 +1,5 @@
+boolean updatedReadOnly = metaData.persistentSettings().getAsBoolean(MetaData.SETTING_READ_ONLY,
+false)
+|| metaData.transientSettings().getAsBoolean(MetaData.SETTING_READ_ONLY, false);
+if (updatedReadOnly) {
+

@@ -1,0 +1,8 @@
+.getSystemService(Context.CONNECTIVITY_SERVICE);
+NetworkInfo info = con.getActiveNetworkInfo();
+if (info == null || !info.isAvailable()) {
+} else {
+// Network available.
+int type = info.getType();
+if (type == ConnectivityManager.TYPE_WIFI){
+

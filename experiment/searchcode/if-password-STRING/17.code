@@ -1,0 +1,16 @@
+private String password;
+
+public String getLogin() {
+return login;
+}
+
+public User(String login, String password) {
+public void changePassword(String oldPassword, String newPassword) {
+if (!isACorrectPassword(oldPassword)) {
+throw new WrongPasswordException();
+}
+
+password = newPassword;
+}
+}
+

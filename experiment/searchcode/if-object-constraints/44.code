@@ -1,0 +1,10 @@
+public byte constraintNumber;
+
+/** The name of the RuleConstraints object */
+public String name;
+
+/** A repository of all the RuleConstraints in the system. */
+int x = state.parameters.getInt(base.push(P_SIZE), null, 1);
+if (x <= 0)
+state.output.fatal(&quot;The number of rule constraints must be at least 1.&quot;, base.push(P_SIZE));
+

@@ -1,0 +1,13 @@
+Date today = new Date(0, 1, 1900);
+int count = 0;
+while (today.getMonth() <= 2000) {
+if (today.nextMonthCounts())
+count++;
+}
+System.out.println(count);
+}
+}
+
+class Date {
+private int week, month, year;
+

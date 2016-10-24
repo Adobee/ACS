@@ -1,0 +1,9 @@
+import com.jcwhatever.nucleus.managed.entity.meta.IEntityMetaContext;
+import com.jcwhatever.nucleus.utils.PreCon;
+import org.bukkit.entity.Entity;
+public void set(Entity entity, String key, @Nullable Object value) {
+PreCon.notNull(entity);
+PreCon.notNull(key);
+
+Map<String, Object> meta = entity instanceof Player
+

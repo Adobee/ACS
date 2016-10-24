@@ -1,0 +1,14 @@
+int a = super.available();
+if (a > bytesLeft) {
+a = bytesLeft;
+}
+return a;
+}
+
+/**
+* Skips to the limit if there are any bytes are left. Original stream
+while (bytesLeft > 0) {
+int skipped = (int) super.skip(bytesLeft);
+if (skipped > 0) {
+bytesLeft -= skipped;
+

@@ -1,0 +1,10 @@
+return false;
+}
+
+boolean dfs(char[][] a, String s, int row, int col, int k, boolean[][] flag){
+int m = a.length;
+int n = a[0].length;
+
+if(row < 0 || row >= m || col < 0 || col >= n
+|| flag[row][col] || a[row][col] != s.charAt(k)){
+

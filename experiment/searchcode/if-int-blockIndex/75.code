@@ -1,0 +1,11 @@
+private final int columns;
+
+protected abstract Block getBlock(int blockIndex);
+
+@Override
+public abstract InterleavedBlockEncoding getEncoding();
+
+protected AbstractInterleavedBlock(int columns)
+{
+if (columns < 0) {
+

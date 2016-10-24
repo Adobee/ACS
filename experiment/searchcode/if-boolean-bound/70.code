@@ -1,0 +1,11 @@
+public class ReplicationGroup {
+private Bound bound;
+private ArrayList<TAddress> nodes;
+public boolean withinPartitionSpace(Integer key) {
+if(key > bound.getLowerBound() &amp;&amp; key < bound.getUpperBound()) {
+return true;
+}
+return false;
+}
+}
+

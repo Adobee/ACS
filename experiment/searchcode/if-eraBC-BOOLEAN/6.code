@@ -1,0 +1,10 @@
+public void testLocales_ShortNoEra_BC() throws Exception {
+testLocales(SHORT_FORMAT_NOERA, true);
+}
+
+private void testLocales(String format, boolean eraBC) throws Exception {
+cal.clear();
+cal.set(2003, 1, 10);
+if (eraBC) {
+cal.set(Calendar.ERA, GregorianCalendar.BC);
+

@@ -1,0 +1,10 @@
+package com.airgroup.helper;
+
+import java.io.IOException;
+
+import org.joda.time.DateTimeZone;
+public DateTimeZone deserialize(JsonParser jp, DeserializationContext ctxt)
+throws IOException, JsonProcessingException
+{
+return DateTimeZone.forID(jp.getText());
+

@@ -1,0 +1,11 @@
+XContentParser parser = parseContext.parser();
+
+QueryBuilder query = null;
+boolean queryFound = false;
+throw new ParsingException(parser.getTokenLocation(), &quot;[constant_score] query does not support [&quot; + currentFieldName + &quot;]&quot;);
+}
+}
+}
+if (!queryFound) {
+throw new ParsingException(parser.getTokenLocation(), &quot;[constant_score] requires a &#39;filter&#39; element&quot;);
+

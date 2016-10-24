@@ -1,0 +1,10 @@
+boolean reservedFlag2 = (b0 &amp; B0_FLAG_RSV2) != 0;
+boolean reservedFlag3 = (b0 &amp; B0_FLAG_RSV3) != 0;
+if (reservedFlag1 || reservedFlag2 || reservedFlag3) {
+throw new IllegalStateException(&quot;Unknown opcode: &quot; + toHexString(opcode));
+}
+
+messageClosed = false;
+frameCallback.onMessage(Okio.buffer(framedMessageSource), type);
+if (!messageClosed) {
+

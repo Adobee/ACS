@@ -1,0 +1,15 @@
+public class Brick extends Entity implements Animatable {
+
+private Sprite[] frames;
+private int frameCount = 0;
+private long lastFrame;
+private String color;
+public void fall() {
+y += 5;
+}
+
+@Override
+public void update(long time) {
+int frameLength = 80000000;
+if(time - lastFrame > frameLength) {
+

@@ -1,0 +1,9 @@
+public void newOrder(Order ord) {
+
+if (this.marketStatus == MarketStatus.CLOSED) {
+ord.getParser().sendReject(ord, &quot;market is closed&quot;);
+ord.leavesQty = new quickfix.field.LeavesQty(ord.orderqty.getValue());
+logger.debug(&quot;entered in book &quot; + ord.getKey());
+
+if (!ackInhibit) ord.getParser().sendAck(ord);
+

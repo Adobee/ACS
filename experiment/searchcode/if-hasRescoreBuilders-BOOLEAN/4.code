@@ -1,0 +1,8 @@
+highlightBuilder = in.readOptionalWriteable(HighlightBuilder::new);
+boolean hasIndexBoost = in.readBoolean();
+if (hasIndexBoost) {
+boolean hasRescoreBuilders = rescoreBuilders != null;
+out.writeBoolean(hasRescoreBuilders);
+if (hasRescoreBuilders) {
+out.writeVInt(rescoreBuilders.size());
+

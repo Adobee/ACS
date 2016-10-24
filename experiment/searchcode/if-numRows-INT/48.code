@@ -1,0 +1,6 @@
+public String convert(String s, int numRows) {
+if(s == null || numRows < 2) return s;
+for(int i = 0; i < s.length(); i++) {
+int pos = i % base;
+if(pos < numRows) buffers[pos].append(s.charAt(i));
+

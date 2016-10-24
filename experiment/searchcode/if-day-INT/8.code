@@ -1,0 +1,9 @@
+lowest[0] = prices[0];
+for (int day = 1; day < days; day++) {
+if (prices[day] < lowest[day - 1]) {
+lowest[day] = lowest[day - 1];
+}
+}
+for (int day = 1; day < days; day++) {
+if (prices[day] - lowest[day] > max) {
+

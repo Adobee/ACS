@@ -1,0 +1,8 @@
+import com.googlecode.totallylazy.io.Uri;
+
+import static com.googlecode.totallylazy.io.Uri.uri;
+import static com.googlecode.utterlyidle.HttpHeaders.X_FORWARDED_PROTO;
+String host = request.headers().getValue(HttpHeaders.HOST);
+if (host == null) {
+return new BaseUri(uri(basePath.toString()));
+

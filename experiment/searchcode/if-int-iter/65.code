@@ -1,0 +1,11 @@
+public void partition(ListNode<Integer> head, int pivot) {
+
+if (head == null) return;
+if (head.next == null) return;
+
+ListNode<Integer> current_iter = head, smaller_iter = new ListNode<Integer>(), equal_iter = new ListNode<Integer>(), greater_iter = new ListNode<Integer>();
+ListNode<Integer> small_head = smaller_iter, equal_head = equal_iter, greater_head = greater_iter;
+
+while(current_iter != null) {
+if(current_iter.value < pivot) {
+

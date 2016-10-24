@@ -1,0 +1,11 @@
+mPluginManager = pluginManager;
+}
+
+private boolean prepareChsSubtitle(DownloadedSubtitle subtitle, int type) {
+if (mChsSubtitleManager != null) {
+mChsSubtitleManager = new SubtitleManager();
+mChsSubtitleManager.init();
+
+if (type == SubtitleManager.ONLINE_TYPE) {
+return mChsSubtitleManager.prepare(&quot;chs&quot;);
+

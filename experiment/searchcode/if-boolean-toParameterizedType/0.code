@@ -1,0 +1,12 @@
+private static void populateTypeMappings(Map<TypeVariableKey, Type> mappings, Type from, final Type to)
+{
+if (from.equals(to)) {
+return;
+}
+new TypeVisitor()
+{
+void visitTypeVariable(TypeVariable<?> typeVariable)
+void visitParameterizedType(ParameterizedType fromParameterizedType)
+{
+ParameterizedType toParameterizedType = (ParameterizedType)TypeResolver.expectArgument(ParameterizedType.class, to);
+

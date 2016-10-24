@@ -1,0 +1,10 @@
+public abstract class MatchDocIdSetIterator extends DocIdSetIterator {
+private final int maxDoc;
+private int doc = -1;
+
+public MatchDocIdSetIterator(int maxDoc) {
+public int nextDoc() throws IOException {
+do {
+doc++;
+if (doc >= maxDoc) {
+

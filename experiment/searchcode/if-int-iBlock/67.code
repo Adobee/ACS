@@ -1,0 +1,14 @@
+import net.minecraft.world.World;
+
+public class CombinedBlockState implements IBlockState
+{
+private final IBlockState[] subStates;
+subStates = _subStates;
+}
+
+@Override
+public boolean equals(Block b, int m)
+{
+for(IBlockState ibs : subStates)
+if(ibs.equals(b, m))
+

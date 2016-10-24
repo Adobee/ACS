@@ -1,0 +1,10 @@
+List<JavaInfo> result = Lists.newArrayList();
+for (String javaPath : javaExecs)
+{
+if (!(new File(javaPath).exists())) continue;
+List<String> javaExecs = Lists.newArrayList();
+String javaVersion;
+
+javaVersion = getMacJavaPath(&quot;1.6&quot;);
+if (javaVersion != null) javaExecs.add(javaVersion + &quot;/bin/java&quot;);
+

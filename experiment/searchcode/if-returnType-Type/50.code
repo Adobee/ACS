@@ -1,0 +1,17 @@
+package com.br.distanceCities.enums;
+
+import javax.ws.rs.core.MediaType;
+
+public enum ReturnType {
+private String type;
+
+ReturnType(String type){
+this.type = type;
+}
+
+public String type(){
+return type;
+}
+
+public static ReturnType fromName(final String name) {
+

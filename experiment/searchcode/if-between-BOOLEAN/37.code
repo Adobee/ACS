@@ -1,0 +1,7 @@
+public class BetweenAndEvaluator extends AbstractEvaluator<BetweenAndExpression, Boolean> {
+public static final String ID = BetweenAndExpression.class.getName();
+
+@Override
+public Boolean evaluate(RowContext ctx, BetweenAndExpression expr) {
+boolean isNot = expr.isNot();
+

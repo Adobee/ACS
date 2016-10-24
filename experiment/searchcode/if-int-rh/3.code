@@ -1,0 +1,8 @@
+public ItemRequestHandlerDecorator(ItemRequestHandler rh) {
+if (rh instanceof ItemRequestHandlerDecorator)
+this.rh = ((ItemRequestHandlerDecorator)rh).rh;
+/* decorated methods, override them if needed */
+@Override
+protected void getBody() throws IOException {
+rh.getBody();
+

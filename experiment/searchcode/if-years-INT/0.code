@@ -1,0 +1,13 @@
+Years retrieveYears(int numeral) {
+
+Years result = getYears(numeral);
+
+if (result == null) {
+addYears(numeral, result);
+}
+return result;
+}
+
+private void addYears(int numeral, Years years) {
+this.years.put(numeral, years);
+

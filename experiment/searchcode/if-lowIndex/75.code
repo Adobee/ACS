@@ -1,0 +1,7 @@
+public static boolean binarySearch(int[] searchArray, int searchNumber) {
+int lowIndex = 0;
+int highIndex = searchArray.length - 1;
+int middleIndex = (highIndex + lowIndex) / 2;
+if (searchArray[middleIndex] < searchNumber) {
+lowIndex = middleIndex + 1;
+

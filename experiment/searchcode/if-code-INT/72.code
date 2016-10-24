@@ -1,0 +1,14 @@
+package com.placecruncher.server.exception;
+
+public enum ExceptionCode {
+UNKNOWN_ERROR(99999);
+
+protected int code;
+protected String messageKey;
+
+ExceptionCode(int code) {
+this.code = code;
+}
+
+public int getCode() {
+

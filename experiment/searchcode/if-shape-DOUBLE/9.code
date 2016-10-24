@@ -1,0 +1,13 @@
+shapeHistory[i] = shapeHistory[i-1];
+}
+shapeHistory[0] = shape;
+}
+public int getHistoryLength () {
+int count = 0;
+if (shapeHistory==null) return 0;
+if (curShape != null) {
+MutableDouble count = stats.get(curShape);
+
+if (count==null) { // Doesn&#39;t exist yet
+count = new MutableDouble(1d);
+

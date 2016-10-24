@@ -1,0 +1,8 @@
+public FieldVector<T> add(FieldVector<T> v) {
+if(size != v.getSize()) {
+throw new RuntimeException(&quot;When adding 2 vectors, they must have the same size.&quot;);
+return new FieldVector<T>(field, size, newElements);
+}
+public T dot(FieldVector<T> v) {
+if(size != v.getSize()) {
+

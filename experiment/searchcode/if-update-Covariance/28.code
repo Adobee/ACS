@@ -1,0 +1,6 @@
+public static <V extends Vec> void covarianceMatrix(Vec mean, Matrix covariance, List<V> dataSet)
+{
+if(!covariance.isSquare())
+throw new ArithmeticException(&quot;Storage for covariance matrix must be square&quot;);
+else if(covariance.rows() != mean.length())
+

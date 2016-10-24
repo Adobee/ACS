@@ -1,0 +1,16 @@
+public class AnimateThread extends Thread {
+
+private FunPanel thePanel;
+private int pauseTime;
+private boolean animating = true;
+
+public AnimateThread(FunPanel cp, int pause) {
+while (true) {
+
+if (animating) thePanel.bump();
+
+try {
+Thread.sleep(pauseTime);
+}
+catch (InterruptedException e) {
+

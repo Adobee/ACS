@@ -1,0 +1,12 @@
+import net.anasa.util.data.resolver.ITokenType;
+
+public final class SequenceNesting
+{
+public static boolean isNestingValid(Listing<IToken> data)
+for(IToken token : data)
+{
+if(isNestingToken(token.getType()))
+{
+stack++;
+lastType = token.getType();
+

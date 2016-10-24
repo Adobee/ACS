@@ -1,0 +1,5 @@
+protected Dyad<String, Map<Long, Period>> loadAllPeriodsInternal() {
+List<Period> periods = PeriodFactory.getPeriods(InRunningState.ALL);
+
+Dyad<String, Map<Long, Period>> periodsByIdBySportCode = Dyad.create();
+

@@ -1,0 +1,9 @@
+if (approx.rows() == 4 &amp;&amp; Math.abs(Imgproc.contourArea(approx)) > 1000 &amp;&amp; Imgproc.isContourConvex(mMOP)) {
+double maxCosine = 0;
+Point[] list = approx.toArray();
+double cosine =Math.abs(angle(list[j%4], list[j-2], list[j-1]));
+maxCosine = Math.max(maxCosine, cosine);
+}
+
+if (maxCosine < 0.3 ) {
+

@@ -1,0 +1,8 @@
+abstract static class DomainEvent<I, VI extends  AbstractVesselIdentity<I, VI>, K> extends TimedEvent<I, VI> {
+final int domainIndex;
+
+public DomainEvent(long version, I identifier, Date timestamp,
+int domainIndex) {
+super(version, identifier, timestamp);
+this.domainIndex = domainIndex;
+

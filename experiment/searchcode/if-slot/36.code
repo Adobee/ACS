@@ -1,0 +1,11 @@
+* @return the ArmorSlot the type corresponds to, or null if none
+*/
+public static ArmorSlot getSlot(int armorType) {
+for (ArmorSlot slot : values())
+if (slot.slot == armorType)
+return slot;
+
+return null;
+}
+}
+

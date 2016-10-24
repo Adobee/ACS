@@ -1,0 +1,14 @@
+package io.viper.core.server.router;
+
+
+import org.jboss.netty.handler.codec.http.HttpResponse;
+public RouteResponse(HttpResponse response, RouteResponseDispose disposeHandler)
+{
+HttpResponse = response;
+DisposeHandler = disposeHandler;
+}
+
+public void dispose()
+{
+if (DisposeHandler != null)
+

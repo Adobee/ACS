@@ -1,0 +1,11 @@
+import javax.persistence.TemporalType;
+
+import com.dongluhitec.card.domain.QueryEnum;
+import com.dongluhitec.card.domain.db.DomainObject;
+public static enum Query implements QueryEnum {
+findAll;
+
+@Override
+public String query() {
+return Holiday.class.getSimpleName() + &quot;.&quot; + this.name();
+

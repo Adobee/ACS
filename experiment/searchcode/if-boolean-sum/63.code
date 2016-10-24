@@ -1,0 +1,13 @@
+this.sum = sum;
+}
+
+public BigDecimal getSum() {
+return sum;
+}
+
+@Override
+public boolean equals(Object obj) {
+boolean result = false;
+if (obj instanceof GetSumResponse) {
+result = ((GetSumResponse) obj).sum.equals(sum);
+

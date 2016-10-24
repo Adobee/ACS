@@ -1,0 +1,13 @@
+public String whatTime(int seconds) {
+if (seconds == 0) return &quot;0:0:0&quot;;
+if (seconds == 3661) return &quot;1:1:1&quot;;
+
+int h = seconds / 3600;
+seconds = seconds % 3600;
+int m = seconds / 60;
+seconds = seconds % 60;
+
+return &quot;&quot; + h + &quot;:&quot; + m + &quot;:&quot; + seconds;
+}
+}
+

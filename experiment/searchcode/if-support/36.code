@@ -1,0 +1,8 @@
+public static Generator Generate(String codeSupport, List<Table> tables) {
+// 默认为ibatis
+if (null == codeSupport) {
+codeSupport = &quot;ibatis&quot;;
+}
+if (codeSupport.equals(&quot;ibatis&quot;)) {
+return new IbatisSupportGenerator(tables);
+

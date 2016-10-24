@@ -1,0 +1,9 @@
+if (params.containsKey(&quot;Roar_useClustering&quot;)) {
+clustering = Boolean.parseBoolean(params.get(&quot;Roar_useClustering&quot;));
+}
+if (params.containsKey(&quot;Roar_capping&quot;)) {
+// defines if the incumbent is added to the active SCs (has runs left)
+boolean runBest = false;
+for (SolverConfiguration sc : scs) {
+if (sc == bestSC
+

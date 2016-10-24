@@ -1,0 +1,13 @@
+public class UnboundedKnapsackForward {
+
+
+
+
+public static int max(int[] values, int[] weights, int allowedWeight){
+
+int[] maxValues=new int[allowedWeight+1];
+Arrays.fill(maxValues, 0);
+
+maxValues[0]=0;
+for (int weight=0; weight<=allowedWeight; weight++){
+

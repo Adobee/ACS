@@ -1,0 +1,6 @@
+if (i[6] == null) {
+p = 0;
+} else if (((Double) i[6]).doubleValue() <= 0.413505) {
+p = AmeliaRBrain2Classifier.N402c99f91(i);
+} else if (((Double) i[6]).doubleValue() > 0.413505) {
+

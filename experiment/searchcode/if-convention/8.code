@@ -1,0 +1,8 @@
+package com.opengamma.masterdb.security.hibernate.bond;
+
+import com.opengamma.OpenGammaRuntimeException;
+import com.opengamma.financial.convention.yield.YieldConvention;
+final YieldConvention yieldConvention = YieldConventionFactory.INSTANCE.getYieldConvention(getName());
+if (yieldConvention == null) {
+throw new OpenGammaRuntimeException(&quot;Bad value for yieldConventionBean (&quot; + getName() + &quot;)&quot;);
+

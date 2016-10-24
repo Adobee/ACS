@@ -1,0 +1,6 @@
+public static DateTime parseDateAgo(String timeAgoStr) {
+Matcher matcher;
+if (timeAgoStr != null &amp;&amp; (matcher = p.matcher(timeAgoStr)).matches()) {
+int hoursAgo = (matcher.group(&quot;hours&quot;) != null) ? Integer.parseInt(matcher.group(&quot;hours&quot;)) : 0;
+int minutesAgo = (matcher.group(&quot;minutes&quot;) != null) ? Integer.parseInt(matcher.group(&quot;minutes&quot;)) : 0;
+

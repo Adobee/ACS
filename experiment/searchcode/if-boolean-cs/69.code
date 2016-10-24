@@ -1,0 +1,12 @@
+public static String getParamValue(String csName)
+{
+String cs = getProgramVariable(csName);
+if(cs == null || cs.length() == 0)
+cs = getEnvironmentVariable(csName);
+cs = getCommandArg(csName);
+if (cs == null) return &quot;&quot;;
+return cs;
+}
+
+public static boolean getParamValueAsBoolean(String csName)
+

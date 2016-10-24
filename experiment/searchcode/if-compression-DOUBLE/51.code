@@ -1,0 +1,7 @@
+final int nextCompressionLevel = selectNextCompressionLevel(currentDataRate);
+final int diff = nextCompressionLevel - this.currentSelection;
+if (diff > 0) {
+this.increasedCompressionLevel = true;
+} else if (diff < 0) {
+this.increasedCompressionLevel = false;
+

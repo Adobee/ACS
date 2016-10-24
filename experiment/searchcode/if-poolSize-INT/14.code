@@ -1,0 +1,8 @@
+public class HttpConnectPool {
+private static int POOLSIZE;
+//可用的httpconnecct池
+private static LinkedList<HttpConnect> AvailibleConnectList;
+public synchronized static HttpConnectPool GetHttpConnectPool(int poolsize) {
+if (poolsize < 0) {
+logger.fatal(&quot;poolsize should be greater than 0!&quot;);
+

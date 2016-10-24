@@ -1,0 +1,6 @@
+String userId=(String)session.getAttribute(Constant.USER_ID);
+String hql=&quot;from Focus t where t.clientId=:clientId &quot;;
+Map<String,Object> params=new HashMap<String,Object>();
+params.put(&quot;clientId&quot;, userId);
+List<Focus> focusList=focusDao.find(hql, params);
+

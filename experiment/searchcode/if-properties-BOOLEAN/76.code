@@ -1,0 +1,10 @@
+import java.util.Properties;
+import java.util.concurrent.atomic.AtomicBoolean;
+
+import org.apache.ibatis.io.Resources;
+private static AtomicBoolean loaded = new AtomicBoolean(Boolean.FALSE);
+
+public static Properties getProperties(){
+if(!loaded.get()){
+try {
+

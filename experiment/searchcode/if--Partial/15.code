@@ -1,0 +1,11 @@
+public void init() {
+partial = null;
+}
+
+public boolean iterate(DoubleWritable value) {
+if (value == null) {
+return true;
+}
+if (partial == null) {
+partial = new PartialResult();
+

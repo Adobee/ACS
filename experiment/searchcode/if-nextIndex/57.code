@@ -1,0 +1,8 @@
+private Dog[] dogs = new Dog[5];// Use a plain old Dog array behind the scenes.
+private int nextIndex = 0;// We&#39;ll increment this each time a new Dog is added.
+
+public void addDog(Dog d) {
+if (nextIndex < dogs.length) {
+dogs[nextIndex] = d;
+System.out.println(&quot;Dog add at &quot; + nextIndex);
+

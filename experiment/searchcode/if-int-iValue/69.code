@@ -1,0 +1,10 @@
+double d = DataUtil.getNumberValue(args[0]).doubleValue();
+int cmp = DataUtil.compare(d, 0D);
+
+if (cmp == 0) {
+} else if (d < 0) { // 负的
+d = Math.abs(d);
+int iValue = (int) d;
+
+if (DataUtil.compare(iValue, d) == 0) { // 本身就是整数
+

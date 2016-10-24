@@ -1,0 +1,8 @@
+* Static execution environment for database operations. The default
+* {@link ExecutorService}, if none was specified, is the one returned from
+* {@link Executors.newSingleThreadExecutor()} and will use one thread for all
+* @return The executor service
+*/
+public static ExecutorService getExecutorService() {
+if (executorService == null) {
+

@@ -1,0 +1,9 @@
+package com.rainy.billing.service.impl;
+
+import com.rainy.billing.model.ChannelEvent;
+import com.rainy.billing.model.service.ChanRequest;
+public abstract class AbstractChannelHandler {
+
+public String handle(ChanRequest chanRequest){
+ChannelEvent event = new ChannelEvent(chanRequest);
+

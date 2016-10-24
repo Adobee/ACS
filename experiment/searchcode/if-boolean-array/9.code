@@ -1,0 +1,21 @@
+for( int i=2; i<=maxDivisor; i++ )
+{
+if( booleanArray[i] )
+{
+for( int j=2; j*i<=n; j++ )
+{
+booleanArray[j*i]=false;
+}
+}
+}
+
+for( int i=0; i<= n; i++ )
+{
+if( booleanArray[i] )
+re++;
+}
+
+return re;
+}
+}
+

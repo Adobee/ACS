@@ -1,0 +1,7 @@
+* Response code 407 should only come from proxy servers. Android&#39;s client
+* throws if it is sent by an origin server.
+assertEquals(&quot;1&quot;, request1.getHeaderField(&quot;X-Response-ID&quot;));
+
+URLConnection request2 = url.openConnection();
+if (expectCached) {
+

@@ -1,0 +1,15 @@
+* Statistics based on (constructed from) external moments cannot be incremented or cleared.
+* </p>
+*/
+protected boolean incMoment;
+
+/**
+* Constructs a Skewness
+*/
+public Skewness() {
+@Override
+public void increment(final double d) {
+
+if(incMoment) {
+moment.increment(d);
+

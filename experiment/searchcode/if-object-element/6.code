@@ -1,0 +1,9 @@
+public Buffer(int capacity) {
+elementData = new Vector();
+this.capacity = capacity;
+}
+public void addElement(Object element) {
+elementData.addElement(element);
+if (elementData.size() == capacity + 1)
+elementData.removeElement(elementData.firstElement());
+

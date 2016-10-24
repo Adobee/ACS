@@ -1,0 +1,11 @@
+public class SearchIndexQualifierDatasetSoftPubFiles extends SearchIndexQualifierDatasetPublishedFiles {
+
+@Override
+public Boolean isQualified(Object object) {
+
+Boolean qualified;
+
+Dataset dataset = (Dataset) object;
+
+if (dataset.isSoftwareDataset()) {
+

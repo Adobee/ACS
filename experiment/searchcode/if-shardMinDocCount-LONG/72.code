@@ -1,0 +1,8 @@
+bucketCountThresholds.setShardSize(shardSize);
+}
+Long minDocCount = (Long) otherOptions.get(MIN_DOC_COUNT_FIELD_NAME);
+if (minDocCount != null &amp;&amp; minDocCount != -1) {
+bucketCountThresholds.setMinDocCount(minDocCount);
+}
+Long shardMinDocCount = (Long) otherOptions.get(SHARD_MIN_DOC_COUNT_FIELD_NAME);
+

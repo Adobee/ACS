@@ -1,0 +1,6 @@
+private static <T> T awaitResult(@Nonnull Future<T> future, @Nonnegative long timeoutMs, @Nonnull T defaultValue) {
+
+try {
+T result = future.get(timeoutMs, TimeUnit.MILLISECONDS);
+if (result != null) {
+

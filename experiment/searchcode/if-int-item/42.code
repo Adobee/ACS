@@ -1,0 +1,14 @@
+public static void main(String[] args){
+
+}
+
+public void sort(int[] item){
+if(item.length == 0 || item.length == 1){
+return;
+}
+if(item.length == 2){
+int item0 = item[0];
+int item1 = item[1];
+//交换位置
+if(item0<item1){
+

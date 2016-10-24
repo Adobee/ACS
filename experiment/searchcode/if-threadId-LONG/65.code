@@ -1,0 +1,10 @@
+final Session session = Session.buildRealSession(sessionId++, threadId);
+sessions.put(threadId, session);
+}
+
+public void unregisterSession(Long threadId) {
+if (sessions.remove(threadId) == null) {
+public Session getSession(Long threadId){
+if (sessions.containsKey(threadId)){
+return sessions.get(threadId);
+

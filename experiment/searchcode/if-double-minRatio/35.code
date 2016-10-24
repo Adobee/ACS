@@ -1,0 +1,9 @@
+//this.v.getNonZeros(ial, null);
+//System.out.println(v.size());
+return index;
+}
+
+public double minratio(BeliefState bp) {
+if (minratio<0) Utils.error(&quot;Negative Ratio.. something is terribly wrong&quot;);
+if (minratio==Double.POSITIVE_INFINITY) {
+

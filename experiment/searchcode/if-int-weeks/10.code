@@ -1,0 +1,12 @@
+public WeekSet(HashSet<Integer> weeks) {
+this.weeks = weeks;
+}
+
+public WeekSet(int weeks[]) {
+this.weeks = new HashSet<>();
+String output = &quot;WeekSet{&quot;;
+int i = 0;
+for (Integer x : weeks) {
+output += x;
+if (i < weeks.size() - 1) {
+

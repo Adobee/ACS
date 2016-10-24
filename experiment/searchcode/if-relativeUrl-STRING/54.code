@@ -1,0 +1,8 @@
+return PageFactory.initElements(driver, pageClass);
+}
+
+private String toUrl(String relativeUrl) {
+private static String removeLeadingSlash(String relativeUrl) {
+if (relativeUrl.startsWith(&quot;/&quot;)) {
+return relativeUrl.substring(1, relativeUrl.length());
+

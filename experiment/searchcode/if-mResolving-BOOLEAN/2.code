@@ -1,0 +1,15 @@
+String mAccountName;
+
+GetTokenTask mTokenTask = null;
+
+boolean mStarted = false;
+
+boolean mResolving = false;
+LOGW(TAG, &quot;Helper already started. Ignoring redundant call.&quot;);
+return;
+}
+
+mStarted = true;
+if (mResolving) {
+LOGD(TAG, &quot;Helper ignoring signal to start because we&#39;re resolving a failure.&quot;);
+

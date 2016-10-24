@@ -1,0 +1,10 @@
+protected RowId id;
+private boolean dataChanged;
+private ByteArrayOutputStream out;
+private boolean closed;
+private void flushToRecordStore() throws IOException {
+if( !dataChanged ) {	// No changing no flushing
+return;
+}
+byte[] data = out.toByteArray();
+

@@ -1,0 +1,9 @@
+public void fireDataChangedEvent() {
+if (batchLevel > 0){
+isDataDirty = true;
+} else {
+if (dataChanged != null)
+public void addDataChangedHandler(
+IEventHandler<DataChangedEventArgs> handler) {
+if (dataChanged == null)
+

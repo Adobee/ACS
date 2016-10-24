@@ -1,0 +1,7 @@
+@SuppressWarnings({&quot;UnusedDeclaration&quot;})
+public abstract class Function8 extends AbstractBlock implements IFunction8 {
+
+public Object invokeWithArgs(Object[] args) {
+if(args.length != 8) {
+throw new IllegalArgumentException(&quot;You must pass 8 args to this block, but you passed&quot; + args.length);
+

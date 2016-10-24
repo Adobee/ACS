@@ -1,0 +1,9 @@
+public Expr diff(String x) {
+return new Sum(mLhs.diff(x), mRhs.diff(x));
+}
+public Boolean equals(Expr rhs) {
+if (!(rhs instanceof Sum)) {
+return false;
+}
+Sum r = (Sum) rhs;
+

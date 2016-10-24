@@ -1,0 +1,21 @@
+public class IR implements ClockedDevice
+{
+Bus bus;
+
+private int ir;
+private boolean W_IR;
+
+/* misc. stuff */
+
+public String toString()
+public void ClockCycleRead(int clock)
+{
+/* read IR from bus */
+if (W_IR)
+{
+ir = bus.getHigh();
+}
+clearGates();
+}
+}
+

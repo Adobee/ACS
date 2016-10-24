@@ -1,0 +1,9 @@
+public class VarianceScaleEstimator extends LaplacianNoiseScaleEstimator {
+
+private long n;
+
+private double oldMean, newMean, oldVariance, newVariance;
+
+public VarianceScaleEstimator(double epsilon) {
+super(epsilon);
+

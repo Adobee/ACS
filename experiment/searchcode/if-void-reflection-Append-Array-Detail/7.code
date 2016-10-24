@@ -1,0 +1,11 @@
+protected void appendDetail(StringBuffer buffer, String fieldName, Object value) {
+if (value.getClass().getName().startsWith(&quot;java.lang.&quot;) || (maxDepth != INFINITE_DEPTH &amp;&amp; depth >= maxDepth)) {
+buffer.append(ReflectionToStringBuilder.toString(value, this));
+depth--;
+}
+}
+
+// another helpful method
+@Override
+protected void appendDetail(StringBuffer buffer, String fieldName, Collection coll) {
+

@@ -1,0 +1,6 @@
+final RealMatrix xold) {
+double negccov = 0;
+if (ccov1 + ccovmu > 0) {
+final RealMatrix arpos = bestArx.subtract(repmat(xold, 1, mu))
+.scalarMultiply(1 / sigma); // mu difference vectors
+

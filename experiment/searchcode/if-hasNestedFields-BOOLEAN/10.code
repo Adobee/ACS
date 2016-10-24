@@ -1,0 +1,8 @@
+// extracted to static helper method to make writing unit tests easier:
+static Query createSearchFilter(String[] types, Query aliasFilter, boolean hasNestedFields) {
+if (typesFilter == null &amp;&amp; aliasFilter == null &amp;&amp; hasNestedFields == false) {
+return null;
+}
+
+BooleanQuery.Builder bq = new BooleanQuery.Builder();
+

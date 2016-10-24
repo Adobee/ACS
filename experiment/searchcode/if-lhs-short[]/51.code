@@ -1,0 +1,12 @@
+public class LogicalOrExpr implements Expr {
+
+private Expr lhs;
+private Expr rhs;
+
+public LogicalOrExpr(Expr lhs, Expr rhs) {
+this.lhs = lhs;
+boolean lhsBool = Coercion.toBoolean( lhs.getValue() );
+if ( lhsBool ) {
+// short-circuit, avoid rhs
+return Boolean.TRUE;
+

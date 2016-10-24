@@ -1,0 +1,10 @@
+public class UnnecessaryBreak {
+void example(boolean a, boolean b) {
+foo: {
+if (a) {
+if (b) {
+// ...
+} else {
+// ...
+<warning descr=&quot;&#39;break&#39; statement is unnecessary&quot;>break</warning> foo;
+

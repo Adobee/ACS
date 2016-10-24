@@ -1,0 +1,8 @@
+CollectionSort collSort1 = (CollectionSort)term.sub(1).sort();
+if (collSort0.getCollectionKind() == CollectionSort.SEQUENCE
+&amp;&amp; !collSort1.getElemSort().extendsTrans(collSort0.getElemSort()));
+}
+
+public Sort sort(Term[] subTerm) {
+if (subTerm.length != arity()) {
+

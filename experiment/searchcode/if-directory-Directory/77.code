@@ -1,0 +1,8 @@
+public void createDirectory(String directoryName){
+
+Boolean directoryCreated = CommonService.createFile(directoryName);
+if(directoryCreated)
+File file = new File(completeDirectoryPath);
+if(!file.exists()){
+System.out.println(&quot;Directory doesn&#39;t exist&quot;);
+

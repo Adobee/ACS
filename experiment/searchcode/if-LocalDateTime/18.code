@@ -1,0 +1,10 @@
+public final Timestamp convertToDatabaseColumn( LocalDateTime localDateTime ) {
+// If the parameter is null, then return null
+if( localDateTime == null )
+return null;
+* @param timestamp
+* @return
+*/
+public final LocalDateTime convertToEntityAttribute( Timestamp timestamp ) {
+// If the parameter is null, then return null
+

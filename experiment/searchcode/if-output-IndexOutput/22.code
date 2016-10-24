@@ -1,0 +1,5 @@
+final ConcurrentMap<String, IndexOutput> outputs = openIndexOutputs;
+if (outputs == null) {
+public synchronized IndexOutput openAndPutIndexOutput(String key, String name, Store store) throws IOException {
+if (isCanceled()) {
+

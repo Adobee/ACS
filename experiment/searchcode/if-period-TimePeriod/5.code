@@ -1,0 +1,10 @@
+import javax.validation.ConstraintValidatorContext;
+
+import by.amushinsky.storage.core.TimePeriod;
+
+public class ValidTimePeriodValidator
+ConstraintValidatorContext validatorContext) {
+if (timePeriod == null)
+return true;
+if (timePeriod.getFromDate() == null || timePeriod.getToDate() == null)
+

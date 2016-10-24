@@ -1,0 +1,12 @@
+object.position.x = x * unitSize;
+object.velocity.set(0, -object.speed);
+}
+else if (object.position.y < y * unitSize &amp;&amp; object.position.x >= x * unitSize &amp;&amp; map[x+1][y-1] != 0) {
+object.velocity.set(-object.speed, 0);
+}
+}
+}
+}
+
+if (object.state == MovingObject.State.MOVING_UP) {
+

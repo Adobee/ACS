@@ -1,0 +1,7 @@
+str.append(&quot;select o from TConstructionData o where  (FPersonId =&quot;+personid+&quot; and FType =&quot;+type+&quot; and FPublicType = 0 ) or ( FType =&quot;+type+&quot; and FPublicType = 1  )&quot;);
+str.append(&quot; order by o.FSort &quot;);
+construction.setFId(id);
+construction.setFSort(id);
+if(constructionDataDao.Save(construction)){
+return construction;
+

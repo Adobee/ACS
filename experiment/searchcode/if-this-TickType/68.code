@@ -1,0 +1,16 @@
+private TickType tickType;
+
+public Task() {
+this(1);
+}
+
+public Task(int delay) {
+this(delay, false, TickType.MAIN);
+}
+
+public Task(TickType tick) {
+this(1, false, tick);
+}
+
+public Task(boolean immediate) {
+

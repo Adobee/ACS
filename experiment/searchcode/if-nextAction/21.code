@@ -1,0 +1,8 @@
+private final Optional<Action1<Throwable>> nextAction;
+
+public CrashCallback(Context context, String logMsg) {
+CrashPopup.show(context, throwable);
+if (nextAction.isPresent()) nextAction.get().call(throwable);
+}
+}
+

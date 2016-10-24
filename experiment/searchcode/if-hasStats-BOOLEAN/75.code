@@ -1,0 +1,14 @@
+public PartMaterialType(IToolPart part, String... statIDs) {
+neededPart.add(part);
+neededTypes = statIDs;
+}
+
+public boolean isValid(ItemStack stack) {
+for(String type : neededTypes) {
+if(!material.hasStats(type)) {
+return false;
+}
+}
+
+return true;
+

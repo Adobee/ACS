@@ -1,0 +1,6 @@
+Object actualValue = bindStatus.getActualValue();
+if (actualValue != null &amp;&amp; actualValue != boundValue &amp;&amp; ObjectUtils.nullSafeEquals(actualValue, candidateValue)) {
+String candidateDisplayString = ObjectUtils.getDisplayString(candidateValue);
+if (actualValue.getClass().isArray()) {
+return Arrays.asList(actualValue).contains(candidateValue);
+

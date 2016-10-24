@@ -1,0 +1,12 @@
+public native byte[] _read(int blockIndex);
+public native void _write(int blockIndex, byte[] data);
+
+// Constructor private - singleton.
+private ProgramFlash()
+{
+}
+
+public void write(int blockIndex, byte[] data)
+{
+// Check preconditions.
+

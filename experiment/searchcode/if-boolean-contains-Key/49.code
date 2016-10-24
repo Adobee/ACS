@@ -1,0 +1,9 @@
+public static Boolean getBooleanDef( JSONObject jso, String key, Boolean def)
+{
+if( jso.containsKey( key))
+return Boolean.parseBoolean(jso.get(key).toString());
+public static float getFloatDef( JSONObject jso, String key, float def)
+{
+if( jso.containsKey( key))
+return Float.parseFloat( jso.get(key).toString());
+

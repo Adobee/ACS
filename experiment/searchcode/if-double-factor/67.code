@@ -1,0 +1,10 @@
+public class LowPassFilter implements Filter {
+
+/**
+* フィルタの強度を表す係数.
+*/
+private double factor;
+public LowPassFilter(final double pFactor) {
+this.factor = pFactor;
+this.low = Double.MAX_VALUE;
+

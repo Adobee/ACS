@@ -1,0 +1,7 @@
+import org.dynjs.runtime.Types;
+import org.dynjs.runtime.builtins.types.number.DynNumber;
+
+public class Atan2 extends AbstractNativeFunction {
+Double x = Types.toNumber(context, args[1]).doubleValue();
+if (x.equals(-0.0) &amp;&amp; y.equals(-0.0)) { return -java.lang.Math.PI; }
+

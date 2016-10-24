@@ -1,0 +1,11 @@
+public static void Extract(String str, AARule ins, ExplainResult er) throws IOException{
+str = str.trim();
+if(str.length() == 0){
+return;
+}
+ExplainResult ernew = ins.getExplainResult(str);
+er.merge(ernew);
+}
+
+public static void extract(boolean isTitle, String str, ExplainResult er, AARule ...inss) throws IOException{
+

@@ -1,0 +1,8 @@
+package jToolkit4ProgPipeline.file.utils.buffer;
+
+import org.lwjgl.BufferUtils;
+import org.lwjgl.util.vector.*;
+public static boolean bufferEquals(FloatBuffer bufferOne, FloatBuffer bufferTwo, int size) {
+for (int i = 0; i < size; i++) {
+if (bufferOne.get(i) != bufferTwo.get(i)) return false;
+

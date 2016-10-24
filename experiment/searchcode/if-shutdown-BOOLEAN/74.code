@@ -1,0 +1,10 @@
+public boolean isShutdown() {
+return exec.isShutdown();
+}
+
+public boolean isTerminated() {
+runnable.run();
+}
+finally {
+if (isShutdown() &amp;&amp; Thread.currentThread().isInterrupted()) tasksCancelledAtShutdown.add(runnable);
+

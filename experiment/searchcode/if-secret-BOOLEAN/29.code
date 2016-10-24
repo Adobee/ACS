@@ -1,0 +1,15 @@
+public T getSecret() {
+if (needsRefresh()) {
+synchronized (this) {
+if (needsRefresh()) {
+log.warn(&quot;Error refreshing {}, will continue using existing secret (if it exists)&quot;, secretId, e);
+}
+}
+}
+}
+return hopefullySecret();
+}
+
+private boolean needsRefresh() {
+if (nextFetchTime == null || nextFetchTime.isBefore(Instant.now())) {
+

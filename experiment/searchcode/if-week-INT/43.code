@@ -1,0 +1,6 @@
+public static Result seasonThroughWeek(int targetTeam, int[] opponents, Stats stats, int lastWeek) {
+Result result = new Result();
+
+for(int week = 1; week <= lastWeek; week++) {
+result.add(Play.weekGame(targetTeam, opponents[(week - 1) % opponents.length], stats, week));
+

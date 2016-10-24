@@ -1,0 +1,12 @@
+String sCurrentLine = sNextLine;
+
+nEnd = sCurrentLine.indexOf(&quot;,&quot;, nStart)-1;
+if (nEnd < 0)
+{
+nEnd = sCurrentLine.length()-1;
+}
+
+if(nEnd >= nStart)
+{
+String sTmp = new String( sCurrentLine.substring(nStart, nEnd+1));
+

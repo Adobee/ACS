@@ -1,0 +1,7 @@
+final ElasticsearchDirectoryReader elasticsearchDirectoryReader = ElasticsearchDirectoryReader.getElasticsearchDirectoryReader(engineSearcher.getDirectoryReader());
+if (elasticsearchDirectoryReader == null) {
+throw new IllegalStateException(&quot;Can&#39;t wrap non elasticsearch directory reader&quot;);
+&quot; to the original readers core cache key. Wrapped readers can&#39;t be used as cache keys since their are used only per request which would lead to subtle bugs&quot;);
+}
+if (ElasticsearchDirectoryReader.getElasticsearchDirectoryReader(reader) != elasticsearchDirectoryReader) {
+

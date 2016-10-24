@@ -1,0 +1,20 @@
+public class PuzzleLoaderErrorHandler implements ErrorHandler {
+boolean hasErrors;
+
+public PuzzleLoaderErrorHandler() {
+hasErrors = false;
+}
+
+public void error(SAXParseException sAXParseException) throws SAXException {
+// System.err.println(&quot;WARNING: &quot; + sAXParseException.toString());
+hasErrors = true;
+}
+
+/**
+* @return true if an error or warning occurred
+*/
+public boolean hasErrors() {
+return hasErrors;
+}
+}
+

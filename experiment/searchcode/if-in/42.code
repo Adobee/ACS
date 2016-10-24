@@ -1,0 +1,10 @@
+boolean c2 = in[1] ^ in[2] ^ in[5] ^ in[6];
+// c3 = p3 ^ m2 ^ m3 ^ m4
+boolean c3 = in[3] ^ in[4] ^ in[5] ^ in[6];
+// now check if there was a false bit, if so flip the bit
+in[6] ^= true;
+} else if (c1 &amp;&amp; c2) {
+in[2] ^= true;
+} else if (c1 &amp;&amp; c3) {
+in[4] ^= true;
+

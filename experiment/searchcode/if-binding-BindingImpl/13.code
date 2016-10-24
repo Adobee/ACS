@@ -1,0 +1,7 @@
+BindingImpl b = new BindingImpl(id, bindingKey, queue, exchange, arguments);
+BindingImpl existingMapping = _bindings.putIfAbsent(b, b);
+if (existingMapping == null || force)
+BindingImpl b = _bindings.remove(new BindingImpl(null, bindingKey,queue,exchange,arguments));
+
+if (b != null)
+

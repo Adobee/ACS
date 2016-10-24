@@ -1,0 +1,9 @@
+public long getDocCountError() {
+if (!showDocCountError) {
+throw new ElasticsearchIllegalStateException(&quot;show_terms_doc_count_error is false&quot;);
+for (int i = ordered.size() - 1; i >= 0; i--) {
+list[i] = (Bucket) ordered.pop();
+}
+long docCountError;
+if (sumDocCountError == -1) {
+

@@ -1,0 +1,8 @@
+return dynamicExponential(initialStepSize, 0.5, maxNumberOfStepsWithoutImprovement, minSize);
+}
+
+public static final Supplier<StepsizeFunction> dynamicExponential(double initialStepSize, double factor, int maxNumberOfStepsWithoutImprovement, double minSize) {
+@Override
+public double stepSize(final Params params) {
+if (lastCalled != params.getCurrentStep()-1) { throw new IllegalArgumentException(&quot;You are not supposed to reuse this stepsize function&quot;); }
+

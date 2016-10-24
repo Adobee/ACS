@@ -1,0 +1,8 @@
+float to;
+if(isForward){
+from = (mAnimation == null || mAnimation.getRepeatCount() != Animation.INFINITE) ? 0.0f : mAnimation.getDegree();
+to = from - 360.0f;
+}
+if(isForward){
+mAnimation = new SeamlessAnimation(from, to, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
+

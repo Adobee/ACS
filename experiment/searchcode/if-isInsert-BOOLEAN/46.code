@@ -1,0 +1,10 @@
+public List<ProdutoModel> selectAll() throws Exception{
+return produtoDAO.selectAll();
+}
+
+public boolean insertOrUpdate(ProdutoModel produto) throws Exception{
+ProdutoModel produtoModel = produtoDAO.selectProductByCode(produto);
+boolean isInsert = true;
+if(produtoModel == null){
+produtoDAO.insert(produto);
+

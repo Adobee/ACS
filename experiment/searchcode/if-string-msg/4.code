@@ -1,0 +1,12 @@
+package javabook.ch5;
+
+public class HelloWorld {
+private String msg;
+static int count = 0;
+public HelloWorld(String msg) {
+this.msg = msg;
+}
+
+public HelloWorld(String msg, int option) {
+if(option == 1)
+

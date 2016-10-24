@@ -1,0 +1,12 @@
+result = s;
+}
+}
+return result;
+}
+
+private void jiggleSeed(seed originalSeed, Seed mySeed, List<Seed> relevantNeighbors) {
+for (Seed mySeed : graph.keySet()) {
+ArrayList<Seed> neighbors = graph.get(mySeed);
+
+if (neighbors.size() <= 4) {
+

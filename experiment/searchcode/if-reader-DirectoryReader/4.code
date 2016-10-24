@@ -1,0 +1,9 @@
+public DirectoryReader getDirectoryReader() {
+if (directoryReader == null) {
+if (!DirectoryReader.indexExists(directory)) {
+log.error(&quot;Error creating the directory reader&quot;, e);
+}
+} else {
+try {
+DirectoryReader newReader = DirectoryReader.openIfChanged(directoryReader);
+

@@ -1,0 +1,13 @@
+InputStream in = Thread.currentThread().getContextClassLoader().getResourceAsStream(filePath);
+Properties properties = null;
+if (in != null) {
+try {
+properties = new Properties();
+boolean value = defaultValue;
+if (properties.containsKey(key)) {
+value = Boolean.parseBoolean(properties.getProperty(key));
+}
+return value;
+}
+}
+

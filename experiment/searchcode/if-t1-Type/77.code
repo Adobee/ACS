@@ -1,0 +1,11 @@
+public static Type inferForConjunction(final Type t1, final Type t2)
+{
+// _ x * --> _
+// * x _ --> _
+if (!TypeUtils.supportsFormula(t1) || !TypeUtils.supportsFormula(t2))
+{
+return INVALID;
+}
+// t x t --> t
+if (t1 == BOOLEAN &amp;&amp; t2 == BOOLEAN)
+

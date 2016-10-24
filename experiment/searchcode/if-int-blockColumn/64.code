@@ -1,0 +1,3 @@
+ColumnOrSuperColumn blockColumn=client.get(ByteBuffer.wrap(key_user_id.getBytes()), blockNumColumnPath, ConsistencyLevel.ONE);
+int blockNumbers=Integer.parseInt(new String(blockColumn.getColumn().getValue()));
+

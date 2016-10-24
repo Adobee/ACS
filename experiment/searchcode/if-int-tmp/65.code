@@ -1,0 +1,9 @@
+public class Solution {
+public String convertToTitle(int n) {
+String tmp = &quot;&quot;;
+int a = 0;
+char add;
+while(n>0) {
+
+if(n<27) {
+

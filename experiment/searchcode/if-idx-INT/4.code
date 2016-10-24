@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+void f(string s)
+{
+int n = (int)s.size();
+int idx = 0, cnt = 0;
+while ( idx < n &amp;&amp; (s[idx] == &#39; &#39; || (s[idx] >= &#39;0&#39; &amp;&amp; s[idx] <= &#39;9&#39;) ) ) {
+if ( s[idx] != &#39; &#39; ) cout << s[idx], cnt++;
+idx++;
+}
+if ( cnt == 0 ) cout << &#39;0&#39;;
+

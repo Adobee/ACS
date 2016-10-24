@@ -1,0 +1,8 @@
+if (loadConfigSettings) {
+boolean loadFromEnv = true;
+if (useSystemProperties) {
+// if its default, then load it, but also load form env
+static String promptForValue(String key, Terminal terminal, boolean secret) {
+if (terminal == null) {
+throw new UnsupportedOperationException(&quot;found property [&quot; + key + &quot;] with value [&quot; + (secret ? SECRET_PROMPT_VALUE : TEXT_PROMPT_VALUE) +&quot;]. prompting for property values is only supported when running elasticsearch in the foreground&quot;);
+

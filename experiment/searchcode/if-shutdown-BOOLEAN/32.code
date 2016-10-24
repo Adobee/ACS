@@ -1,0 +1,12 @@
+import com.autonomicmanagement.exception.AMException;
+
+public class Shutdown implements ShutdownMBean {
+
+private static volatile boolean flagRunOne = false;
+
+@Override
+public void shutdown() throws AMException {
+
+if (!flagRunOne) {
+System.out.println(&quot;Server shutting down...&quot;);
+

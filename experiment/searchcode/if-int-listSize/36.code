@@ -1,0 +1,7 @@
+public static int DEFAULT_LISTSIZE = 10;
+public static int DEFAULT_PAGESIZE = 3;
+private int listSize = DEFAULT_LISTSIZE;
+public PageHolder(long totalRows, int currentPage, int listSize) {
+this.totalRows = totalRows;
+this.currentPage = currentPage;
+

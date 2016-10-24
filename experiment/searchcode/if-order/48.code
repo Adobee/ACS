@@ -1,0 +1,7 @@
+public Order updateStatus(Long orderId, OrderStatus status) {
+OrderInfo orderInfo = orderRepository.findOne(orderId);
+if(orderInfo != null){
+public Order createOrder(OrderInfo orderInfo) {
+Order order = getOrder(orderInfo);
+if(order.getCustomer() == null){
+

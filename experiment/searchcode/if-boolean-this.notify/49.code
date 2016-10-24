@@ -1,0 +1,8 @@
+public TimeoutHandlerNotifyThread(AtomicBoolean activeLoopFlag, Handler timeoutNotify) {
+this.activeLoopFlag = activeLoopFlag;
+this.timeoutNotify = timeoutNotify;
+* Default is 1 second.
+* @return false if thread was interrupted implying this thread should exit.
+*/
+public boolean sleep() {
+

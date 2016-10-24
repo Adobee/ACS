@@ -1,0 +1,8 @@
+double ix = (dd1 * x) / (dd1 * x + dd2);
+double a = dd1 / 2.0, b = dd2 / 2.0;
+return regularizedIncompleteBeta(ix, a, b);
+public static double regularizedIncompleteBeta(double x, double a, double b) {
+return Gamma.incompleteBeta(x, a, b) / Gamma.beta(a, b);
+}
+}
+

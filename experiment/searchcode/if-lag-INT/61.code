@@ -1,0 +1,8 @@
+@Override
+public void eval(FunctionContext ctx, Tuple params) {
+LagContext lagCtx = (LagContext)ctx;
+if(lagCtx.lagBuffer == null) {
+int lagNum = 0;
+if (params.size() == 1) {
+lagNum = 1;
+

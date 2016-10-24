@@ -1,0 +1,10 @@
+final boolean[] channels, final int[] tuning) throws IOException, InvalidMidiDataException {
+final ByteArrayOutputStream baos = new ByteArrayOutputStream();
+if (realtime) {
+for (int i = 0; i < 2; i++) {
+if (channels[i + 14]) {
+channelmask += 1 << i;
+}
+}
+baos.write((byte) channelmask);
+

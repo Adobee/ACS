@@ -1,0 +1,7 @@
+public void setDepth(int depth) {
+if (meanDepth == null) meanDepth = depth;
+if (maxDepth == null) maxDepth = depth;
+public void setStackDepth(int stackDepth) {
+if (stackMeanDepth == null) stackMeanDepth = stackDepth;
+if (stackMaxDepth == null) stackMaxDepth = stackDepth;
+

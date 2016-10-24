@@ -1,0 +1,13 @@
+private final OQLCollection m_coll;
+
+ProxySet(OQLCollection proxied) {
+if (proxied == null) { throw new NullPointerException(&quot;proxied&quot;); }
+m_coll.clear();
+}
+
+public boolean isEmpty() {
+return m_coll.isEmpty();
+}
+
+public boolean add(Object element) {
+

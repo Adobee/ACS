@@ -1,0 +1,8 @@
+protected void posAppendRow(RowKey rowKey, long funcion) {
+this.initRow(rowKey);
+if (funcion == FUNCION_CREAR_PAQUETE) {
+@Override
+protected boolean esFilaEliminable(RowKey rowKey, long funcion) {
+boolean es = false;
+if (funcion == FUNCION_ELIMINAR_PAQUETE) {
+

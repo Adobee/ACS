@@ -1,0 +1,6 @@
+public List<KIdentifier> getClosestNodeTo(final KIdentifier idToSearch, int numberOfNodesRequested) {
+KBucket bestBucket = getBucketForIdentifier(idToSearch);
+candidates.maybeAddAll(bestBucket.getClosest(idToSearch, numberOfNodesRequested));
+int nbMissing=numberOfNodesRequested-candidates.size();
+if(nbMissing>0){
+

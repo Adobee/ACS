@@ -1,0 +1,8 @@
+refreshTestCase(true, false, false);
+}
+
+private void refreshTestCase(Boolean refresh, boolean addDestinationIndexes, boolean shouldRefresh) {
+DummyAbstractAsyncBulkByScrollAction action = new DummyAbstractAsyncBulkByScrollAction();
+if (addDestinationIndexes) {
+action.addDestinationIndices(singleton(&quot;foo&quot;));
+

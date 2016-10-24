@@ -1,0 +1,15 @@
+public int jump1(int[] nums) {
+int n = nums.length;
+int[] times = new int[n];
+for(int i=0;i<n;i++){
+times[i] = n-1;
+times[i+j] = Math.min(times[i+j],times[i]+1);
+}
+}
+return times[n-1];
+}
+
+public int jump(int[] nums) {
+int n = nums.length;
+if(n<=1)return 0;
+

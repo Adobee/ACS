@@ -1,0 +1,7 @@
+private void assertMinimumOne(Filter<T>... filters) {
+if(filters.length < 1)
+throw new RuntimeException(&quot;No filter provided, while the minimum is one.&quot;);
+private FilterOutput<T> nextFilterOutput() {
+if(iterator.hasNext())
+return new ChainFilterOutput<>(iterator.next(), nextFilterOutput());
+

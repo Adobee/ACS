@@ -1,0 +1,9 @@
+for (MustacheData subData : listContext) {
+if (id.equals(subData.get(listIdName))) {
+foundData = subData;
+break;
+}
+}
+if (foundData == null) {
+foundData = new MustacheData(project, booleanRegexp, supportLists, listIdName, listRegexp);
+

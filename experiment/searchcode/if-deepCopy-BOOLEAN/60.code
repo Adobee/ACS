@@ -1,0 +1,18 @@
+this.h = h;
+}
+
+public void reset() {
+ip = h;
+}
+
+public boolean hasNext() {
+if (ip.next == null)
+return false;
+else
+return true;
+};
+
+public Listing2 next() {
+ip = ip.next;
+return ip.l.deepCopy();
+

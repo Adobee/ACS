@@ -1,0 +1,10 @@
+max = ((Double)cit.next()).doubleValue();
+if (max < min) {
+tmp1 = min;
+min = max;
+max = tmp1;
+}
+
+if (sz % 2 == 1) { //odd
+tmp1 = ((Double)cit.next()).doubleValue();
+

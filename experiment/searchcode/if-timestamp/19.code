@@ -1,0 +1,16 @@
+return this.timestamp;
+}
+
+@Override
+public boolean equals(Object o) {
+if (o instanceof TimestampDTO) {
+TimestampDTO dto = (TimestampDTO)o;
+if (this.timestamp.equals(dto.getTimestamp())) {
+return true;
+}
+}
+return false;
+}
+
+}
+

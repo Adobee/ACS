@@ -1,0 +1,16 @@
+zideal[j] = mgPopulation.get(i).getObjective(j);
+}
+}
+
+}
+
+void computeMaxPoint() {
+zmax = new double[obj];
+
+for (int j = 0; j < obj; j++) {
+for (int i = 0; i < obj; i++) {
+
+double val = Math.abs(sol.getObjective(i) - zideal[i]);
+
+if (j != i)
+

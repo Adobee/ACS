@@ -1,0 +1,9 @@
+public Piston(int extendedChannel, int retractedChannel, boolean isRetracted) {
+extended = new Solenoid(extendedChannel);
+public void extend() {
+extend(true);
+}
+
+public void extend(boolean isExtended) {
+extended.set(isExtended);
+

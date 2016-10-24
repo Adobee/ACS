@@ -1,0 +1,11 @@
+db = dbEnv.openDatabase(null, &quot;sql2kafkaDB_state&quot;, dbconf);
+}
+
+public boolean save(String key, String data) {
+try {
+DatabaseEntry dataValue = new DatabaseEntry(data.getBytes(ENCODING));
+byte[] data = searchEntry.getData();
+if (data != null)
+foundData = new String(data, ENCODING);
+} catch (UnsupportedEncodingException e) {
+

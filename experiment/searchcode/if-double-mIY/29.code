@@ -1,0 +1,13 @@
+Main plugin;
+
+public void arena() {
+int mix, max, miz, maz;
+int may = 255;
+int miy = 0;
+
+if (plugin.b.getConfig().getInt(&quot;Arena.Pos1.X&quot;) < plugin.b.getConfig()
+int a = number.nextInt(14);
+
+if (loc.getBlock().equals(Material.GRASS)) {
+double y = loc.getY() + 1;
+

@@ -1,0 +1,5 @@
+* Propagates {@code throwable} exactly as-is, if and only if it is an
+* instance of {@code declaredType}.  Example usage:
+public static <X extends Throwable> void propagateIfInstanceOf(
+@Nullable Throwable throwable, Class<X> declaredType) throws X {
+

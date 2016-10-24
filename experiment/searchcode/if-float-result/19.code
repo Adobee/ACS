@@ -1,0 +1,14 @@
+private boolean resultSet = false;
+
+public float logAdd(float value)
+{
+if (!resultSet) {
+result = value;
+result = logAdd(result, value);
+}
+return result;
+}
+public float getResult()
+{
+if (!resultIsSet()) return 0;
+

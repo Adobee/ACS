@@ -1,0 +1,13 @@
+return NormalizeString(lhs).compareToIgnoreCase(NormalizeString(rhs));
+}
+
+public static boolean VectorEqualsUnordered(Vector lhs, Vector rhs) {
+
+if (lhs == rhs)
+return false;
+
+if (lhsCount == 0)
+return true;
+
+boolean[] matchedRhsElems = new boolean[rhsCount];
+

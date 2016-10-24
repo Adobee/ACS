@@ -1,0 +1,9 @@
+import org.jfree.data.xy.XYSeries;
+import java.util.List;
+import java.util.Observable;
+import java.util.Observer;
+try {
+CsvReader data = new CsvReader(path);
+
+if (data.getHeaderCount() > 0) {
+

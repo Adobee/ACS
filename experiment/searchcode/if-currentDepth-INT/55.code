@@ -1,0 +1,12 @@
+private static Tree createTree( Database database, int maxDepth, int currentDepth) throws org.eyedb.Exception
+{
+if (currentDepth >= maxDepth)
+return null;
+
+Tree tree = new Tree( database);
+
+if (currentDepth == 0)
+tree.setName( &quot;root&quot;);
+else
+tree.setName( &quot;node at depth &quot; + currentDepth);
+

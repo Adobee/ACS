@@ -1,0 +1,8 @@
+private Map<Long, BigDecimal> defaultThresholds = new HashMap();
+
+public void setThreshold(Symbol s, long interval, BigDecimal threshold) {
+thresholds.put(new SymbolAndInterval(s, interval), threshold);
+public BigDecimal getPriceChangeThreshold(long interval) {
+BigDecimal threshold = defaultThresholds.get(interval);
+if (threshold != null) {
+

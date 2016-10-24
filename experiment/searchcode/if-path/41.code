@@ -1,0 +1,14 @@
+public class TreePath<T> {
+
+private List<T> path;
+
+public TreePath(List<T> path, boolean reuse) {
+if(reuse) {
+this.path = path;
+} else {
+this.path = new ArrayList<T>(path);
+}
+}
+
+public TreePath(T singleElement) {
+

@@ -1,0 +1,7 @@
+LogTxt.i(TAG, &quot;Setup task &quot; + taskObject.getClass().getName());
+if (taskObject instanceof Task &amp;&amp; taskCompleteListener instanceof Context) {
+AsyncTaskManager newAsyncTaskManager = new AsyncTaskManager(context, mTaskCompleteListener);
+
+if (isWorking()) {
+// Override the next task only if a new task is a foreground task (with a progress dialog visible)
+

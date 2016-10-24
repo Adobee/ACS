@@ -1,0 +1,9 @@
+String[] parts = input.trim().split(&quot;\\s&quot;);
+for (int i = 0; i < parts.length; i++) {
+if (0 == parts[i].trim().length()) {
+public final static int convertVerstionStringToInt(String version) {
+int intVersion = 0;
+if (null != version) {
+String[] versionParts = version.split(&quot;.&quot;);
+if (3 == versionParts.length) {
+

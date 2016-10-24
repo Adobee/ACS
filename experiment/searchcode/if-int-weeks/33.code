@@ -1,0 +1,9 @@
+private static final int DEFAULT_WEEKS=0;
+private static final int DEFAULT_DAYS=0;
+private static final int DEFAULT_HOURS=0;
+private static final int HOURS_IN_DAY=24;
+//weeks, days and hours until break
+private int weeks;
+private int days;
+private int hours;
+

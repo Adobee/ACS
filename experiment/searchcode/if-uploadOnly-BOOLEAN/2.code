@@ -1,0 +1,6 @@
+//noinspection ConstantConditions,PointlessBooleanExpression
+if (!BuildConfig.DEBUG) {
+Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
+public void onPerformSync(Account account, Bundle extras, String authority, ContentProviderClient provider, SyncResult syncResult) {
+final boolean uploadOnly = extras.getBoolean(ContentResolver.SYNC_EXTRAS_UPLOAD, false);
+

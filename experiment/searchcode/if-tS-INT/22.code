@@ -1,0 +1,14 @@
+public TrainerSprite getElementAt(int x, int y)
+{
+return map[x][y];
+}
+
+public TrainerSprite moveElement(TrainerSprite ts, char dir)
+{
+switch(dir)
+{
+case &#39;d&#39;:
+if(ts.getY() + 1 <= MAX_HEIGHT)
+{
+if(map[ts.getX()][ts.getY() + 1] == null)
+

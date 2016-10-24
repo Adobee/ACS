@@ -1,0 +1,10 @@
+public abstract class ISwipeRefreshActivity extends AppCompatActivity implements IRefreshView {
+
+protected SwipeRefreshLayout mSwipeRefreshLayout;
+
+@Override
+protected void onCreate(@Nullable Bundle savedInstanceState) {
+public void initRefreshLayout(SwipeRefreshLayout view) {
+mSwipeRefreshLayout = view;
+mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+

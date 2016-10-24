@@ -1,0 +1,9 @@
+public ImageLoader initImageLoader(Context context,
+ImageLoader imageLoader, String dirName) {
+imageLoader = ImageLoader.getInstance();
+if (imageLoader.isInited()) {
+private int getMemoryCacheSize(Context context) {
+int memoryCacheSize;
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ECLAIR) {
+int memClass = ((ActivityManager) context
+

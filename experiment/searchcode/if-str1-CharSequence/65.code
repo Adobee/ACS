@@ -1,0 +1,6 @@
+Object localObject = HttpHelper.downloadViaHttp(this.httpUrl, HttpHelper.ContentType.HTML, 4096);
+if ((localObject != null) &amp;&amp; (((CharSequence)localObject).length() > 0))
+{
+localObject = TITLE_PATTERN.matcher((CharSequence)localObject);
+if (((Matcher)localObject).find())
+

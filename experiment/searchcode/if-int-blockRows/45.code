@@ -1,0 +1,10 @@
+public Object getValueAt(int row, int column) {
+Block b = findBlock(row);
+if (b == null)
+return &quot;&quot;;
+int[] blockRows = findBlockRows(b);
+public void setValueAt(Object v, int row, int column) {
+Block target = findBlock(row);
+if (target != null) {
+int[] blockRows = findBlockRows(target);
+

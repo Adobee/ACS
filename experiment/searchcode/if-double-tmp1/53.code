@@ -1,0 +1,14 @@
+current.getPrev().setNext(current);
+}
+}
+Node<E> tmp1 = current;
+while(tmp1!=null) {
+if (!tmp1.getData().equals(current.getData())){
+break;
+}
+else {
+tmp1 = tmp1.getNext()
+}
+}
+if (tmp1 = null) {
+

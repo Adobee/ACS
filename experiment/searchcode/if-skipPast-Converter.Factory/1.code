@@ -1,0 +1,7 @@
+public <T> EntityConverter<T> getDelegateEntityConverter(EntityConverterFactory skipPast, Class<T> entityClass) throws IllegalArgumentException {
+boolean factoryFound = false;
+for (EntityConverterFactory factory : mEntityConverterFactories) {
+if (!factoryFound) {
+if (factory == skipPast) {
+factoryFound = true;
+

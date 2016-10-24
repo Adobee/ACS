@@ -1,0 +1,11 @@
+rangeAxis = new NumberAxis(&quot;Frequency&quot;);
+
+((XYPlot)this.getPlot()).setDomainAxis(domainAxis);
+((XYPlot)this.getPlot()).setRangeAxis(rangeAxis);
+public void setData(String name, double[] values, int nbins, boolean log)
+{
+if(log)
+domainAxis = new LogarithmicAxis(&quot;&quot;);
+else
+domainAxis = new NumberAxis();
+

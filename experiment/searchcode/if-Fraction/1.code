@@ -1,0 +1,11 @@
+int result=firstFraction.numerator*this.denominator-firstFraction.denominator*this.numerator;
+if (result<0)
+return -1;
+if (result==0)
+return 0;
+if (result>0)
+return 1;
+return -2;
+}
+public static Fraction Add (Fraction firstFraction, Fraction secondFraction){
+

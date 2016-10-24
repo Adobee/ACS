@@ -1,0 +1,10 @@
+public static long encode(long lon, long lat) {
+long mergeBits = 0L;
+mergeBits = processBitset(mergeBits, 59, lon, -180000000, 180000000);
+mergeBits = processBitset(mergeBits, 58, lat, -90000000, 90000000);
+return mergeBits;
+}
+
+// 纬度 下限 上限
+private static long processBitset(long mergeBits, int start, long lat, long floor, long ceiling) {
+

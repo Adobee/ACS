@@ -1,0 +1,19 @@
+appendMessage(builder, i.next());
+if (i.hasNext()) {
+builder.append(&#39;,&#39;);
+}
+}
+builder.append(&#39;]&#39;);
+}
+
+void appendMessage(StringBuilder builder, Message message) {
+for (Iterator<IUser> i = users.iterator(); i.hasNext(); ) {
+appendUser(builder, i.next());
+if (i.hasNext()) {
+builder.append(&#39;,&#39;);
+}
+}
+builder.append(&#39;]&#39;);
+}
+}
+

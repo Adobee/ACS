@@ -1,0 +1,11 @@
+public void setConstraint(Constraint constraint) {
+this.constraint = constraint;
+}
+
+/**
+* Negates the boolean result returned by testing the wrapped constraint.
+* @see Constraint#test(java.lang.Object)
+*/
+public boolean test(Object value) {
+Assert.state(constraint != null, &quot;The constraint is not set&quot;);
+

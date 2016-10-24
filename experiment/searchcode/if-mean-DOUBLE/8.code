@@ -1,0 +1,10 @@
+public class MeanSem0 {
+int debugginPause;
+public int n;
+public double mean, sem2,sem;//mean and the square of the sample standard deviation (not standard deviation of sampe), could have been named as s2
+public void updateMeanSquareSum(int n, double mean, double meanSs){
+this.n=n;
+this.mean=mean;
+if(n>1){
+sem2=(meanSs-mean*mean)*n/(double)(n-1);
+

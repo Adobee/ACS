@@ -1,0 +1,9 @@
+public class RingBuffer<E> implements Iterable<E> {
+private final int maximumSize;
+private LinkedList<E> container;
+
+
+public RingBuffer(int maximumSize) {
+this.maximumSize = maximumSize;
+container = new LinkedList<>();
+

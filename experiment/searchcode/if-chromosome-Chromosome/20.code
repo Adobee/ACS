@@ -1,0 +1,9 @@
+public class CompPopulation {
+private List<CompChromosome> chromosomeList;
+private int generationNumber;
+private int target;
+for (CompChromosome chromosome : chromosomeList) {
+chromosome.mutate();
+chromosome.computeCost(target);
+if (chromosome.getCost() == 0 &amp;&amp; chromosome.isValid()) {
+

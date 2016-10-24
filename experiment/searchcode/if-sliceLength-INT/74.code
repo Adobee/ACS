@@ -1,0 +1,8 @@
+BytesReference slice = pbr.slice(sliceOffset, sliceLength);
+assertEquals(sliceLength, slice.length());
+
+if (slice.hasArray()) {
+// test stream input over slice (upper half of original)
+int sliceOffset = randomIntBetween(1, length / 2);
+int sliceLength = length - sliceOffset;
+

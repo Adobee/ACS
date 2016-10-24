@@ -1,0 +1,13 @@
+public class DammageableState extends State {
+
+private short maxDurability;
+
+public DammageableState(short maxDurability) {
+this.maxDurability = maxDurability;
+public byte ajustToReal(byte data) {
+if (data < 0) return 0;
+if (data > maxDurability) return (byte) maxDurability;
+return data;
+}
+}
+

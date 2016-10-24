@@ -1,0 +1,12 @@
+LazyLogger.e(new NullPointerException(), &quot;MemoryCache缓存操作对象为空&quot;);
+return false;
+}
+boolean putSuccesfully = cache.put(key, value);
+if (putSuccesfully) {
+return putSuccesfully;
+}
+
+@Override
+public <V> boolean put(String key, V value, long maxLimitTime) {
+if (cache == null) {
+

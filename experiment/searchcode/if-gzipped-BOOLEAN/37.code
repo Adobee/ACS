@@ -1,0 +1,10 @@
+Buffer gzipped = new Buffer();
+gzipped.write(gzipHeader);
+gzipped.write(deflated);
+gzipped.write(gzipTrailer);
+assertTrue(exhaustableSource.exhausted);
+}
+
+@Test public void gunzipThrowsIfSourceIsNotExhausted() throws Exception {
+Buffer gzippedSource = new Buffer()
+

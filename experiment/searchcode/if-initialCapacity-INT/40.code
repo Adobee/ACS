@@ -1,0 +1,10 @@
+private Logger logger = LoggerFactory.getLogger(SimpleLRUCache.class);
+
+private int initialCapacity;
+
+public SimpleLRUCache(int initialCapacity) {
+protected boolean removeEldestEntry(Map.Entry<K, V> eldest) {
+boolean doEvict = this.size() > initialCapacity;
+if (doEvict) {
+logger.debug(&quot;Evicting eldest entry: {}&quot;, eldest);
+

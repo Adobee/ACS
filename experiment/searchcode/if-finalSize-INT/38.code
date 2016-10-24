@@ -1,0 +1,10 @@
+* @return A suggested default for the size of any shard-side PriorityQueues
+*/
+public static int suggestShardSideQueueSize(int finalSize, int numberOfShards) {
+if (finalSize < 1) {
+final long shardSampleSize = (long) (finalSize * 1.5 + 10);
+return (int) Math.min(Integer.MAX_VALUE, shardSampleSize);
+}
+
+}
+

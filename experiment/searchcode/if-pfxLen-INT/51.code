@@ -1,0 +1,9 @@
+// path prefix matches workdirPrefix. Testing that here is
+// rather expensive so we don&#39;t bother.
+//
+final int pfxLen = workdirPrefix.length();
+final String p = rsrc.getLocation().toString();
+final int pLen = p.length();
+if (pLen > pfxLen)
+return p.substring(pfxLen);
+

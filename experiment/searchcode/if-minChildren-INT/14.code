@@ -1,0 +1,9 @@
+private final String type;
+
+private ScoreMode scoreMode = DEFAULT_SCORE_MODE;
+
+private int minChildren = DEFAULT_MIN_CHILDREN;
+public HasChildQueryBuilder minChildren(int minChildren) {
+if (minChildren < 0) {
+throw new IllegalArgumentException(&quot;[&quot; + NAME + &quot;]  requires non-negative &#39;min_children&#39; field&quot;);
+

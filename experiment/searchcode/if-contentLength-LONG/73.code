@@ -1,0 +1,9 @@
+public class AgeStringValue extends Value {
+
+protected AgeStringValue(int type, byte[] data, int contentLength) {
+super(type, data, contentLength);
+throws IllegalArgumentException {
+int dicomLength = getDicomLength();
+
+if (contentLength != dicomLength || data.length < dicomLength) {
+

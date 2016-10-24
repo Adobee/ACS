@@ -1,0 +1,12 @@
+public class PasswordDeserializer extends JsonDeserializer<Password> {
+
+@Override
+public Password deserialize(JsonParser jp, DeserializationContext ctxt) throws IOException {
+if (!Strings.isNullOrEmpty(jp.getText())) {
+return Password.of(jp.getText());
+}
+return null;
+}
+
+}
+

@@ -1,0 +1,9 @@
+public static double[] concat(double[] first, double[] second) {
+int aLen = first.length;
+int bLen = second.length;
+double[] C = new double[aLen+bLen];
+double[] calc = new double[original.length + 1];
+if (original.length == 1){
+calc[0] = original[0];
+calc[1] = element;
+

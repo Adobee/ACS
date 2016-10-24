@@ -1,0 +1,10 @@
+public void setDateProcessed(Timestamp dateProcessed) {
+this.dateProcessed = dateProcessed;
+}
+
+@Override
+public boolean equals(Object o) {
+if (id != acsorders.id) return false;
+if (processed != acsorders.processed) return false;
+if (dateProcessed != null ? !dateProcessed.equals(acsorders.dateProcessed) : acsorders.dateProcessed != null)
+

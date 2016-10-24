@@ -1,0 +1,6 @@
+OkHttpClient client = new OkHttpClient.Builder().build();
+
+HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.MOVIE_BASE_URL).newBuilder();
+urlBuilder.addQueryParameter(&quot;api_key&quot;, Api_KEY);
+urlBuilder.addQueryParameter(Constants.MOVIE_QUERY_TITLE_PARAMETER, movieName);
+

@@ -1,0 +1,16 @@
+return candidate;
+} else {
+boolean isEqual = true;
+int i = 0;
+for (; isEqual &amp;&amp; i<Math.min(name2.length(), candidate.length()); i++) {
+isEqual = name2.charAt(i) == candidate.charAt(i);
+if (!isEqual) {
+i--;
+}
+}
+return name2.substring(0, i);
+}
+}
+
+}
+

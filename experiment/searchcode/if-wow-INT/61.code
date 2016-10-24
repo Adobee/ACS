@@ -1,0 +1,6 @@
+File zipfile = new File(wowrep, wsm.getArchiveName());
+if (wsm.isArchiveBackup()) {
+File backup = WowSyncZip.addBackupExtension(zipfile);
+File bbackup = WowSyncZip.addBackupExtension(backup);
+if (bbackup.exists()) bbackup.delete();
+

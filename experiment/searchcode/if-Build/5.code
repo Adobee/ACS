@@ -1,0 +1,6 @@
+public void beforeBuildFinish(SRunningBuild build) {
+SBuildType buildType = build.getBuildType();
+if (buildType == null)
+for (SBuildFeatureDescriptor buildFeature : buildType.getResolvedSettings().getBuildFeatures()) {
+if (TestDurationFailureCondition.TYPE.equals(buildFeature.getType()))
+

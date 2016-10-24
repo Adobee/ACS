@@ -1,0 +1,8 @@
+public class EpsilonGreedy<GAME extends Game<GAME>> implements Player<GAME>
+{
+protected final double epsilon;
+protected final EvalFunc<GAME> evalFunc;
+protected final Random rng;
+
+public EpsilonGreedy(EvalFunc<GAME> evalFunc, double epsilon, Random rng)
+

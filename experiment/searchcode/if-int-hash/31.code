@@ -1,0 +1,11 @@
+public class HashLinearProbing {
+
+Data[] hashArr;
+int size = 0;
+
+public HashLinearProbing(int n) { hashArr = new Data[n];}
+public void insert(Data data) {
+if (size == hashArr.length) return;
+int hashVal = hashFunction(data.getKey());
+for (; hashArr[hashVal] != null; hashVal = (hashVal+1) % hashArr.length);
+

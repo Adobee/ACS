@@ -1,0 +1,13 @@
+this.backgroundSaveJob = backgroundSaveJob;
+}
+
+/* package */
+boolean isSavingInBackground() {
+Job saveJob = backgroundSaveJob;
+if (saveJob == null) {
+return false;
+}
+return (backgroundSaveJob.getState() &amp; (Job.WAITING | Job.RUNNING)) != 0;
+}
+}
+

@@ -1,0 +1,6 @@
+public TokenExtractor20Impl(String tokenName) {
+customPattern = Pattern.compile(tokenName + &quot;=([^&amp;]+)&quot;);
+Pattern pattern = customPattern == null ? TOKEN_REGEX : customPattern;
+Matcher matcher = pattern.matcher(response);
+if (matcher.find())
+

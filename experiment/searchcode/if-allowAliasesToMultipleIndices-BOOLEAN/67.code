@@ -1,0 +1,8 @@
+private boolean matchAllAliases(final String[] aliases) {
+for (String alias : aliases) {
+if (alias.equals(&quot;_all&quot;)) {
+return concreteIndices(aliasesOrIndices[0], indicesOptions.allowNoIndices(), indicesOptions.allowAliasesToMultipleIndices());
+}
+
+// check if its a possible aliased index, if not, just return the passed array
+

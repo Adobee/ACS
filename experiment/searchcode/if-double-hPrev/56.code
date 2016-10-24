@@ -1,0 +1,9 @@
+* @return the value of the continued fraction evaluated at x.
+* @throws ConvergenceException if the algorithm fails to converge.
+*/
+public double evaluate(double x) throws ConvergenceException {
+final double small = 1e-50;
+double hPrev = getA(0, x);
+
+// use the value of small as epsilon criteria for zero checks
+

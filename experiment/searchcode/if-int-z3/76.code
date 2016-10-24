@@ -1,0 +1,8 @@
+public boolean isIntSymbol() throws Z3Exception
+{
+return getKind() == Z3_symbol_kind.Z3_INT_SYMBOL;
+try
+{
+if (isIntSymbol())
+return Integer.toString(((IntSymbol) this).getInt());
+

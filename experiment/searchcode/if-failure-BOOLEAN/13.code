@@ -1,0 +1,8 @@
+private FutureCallback<R> handler;
+private R result;
+private Throwable failure;
+private boolean isCompleted;
+if (isCompleted) {
+if (failure != null) handler.onFailure(failure);
+else handler.onSuccess(result);
+

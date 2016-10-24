@@ -1,0 +1,9 @@
+JSONObject jsonZone = zoneArray.getJSONObject(i);
+UnityAdsZone zone;
+if(jsonZone.getBoolean(UnityAdsConstants.UNITY_ADS_ZONE_INCENTIVIZED_KEY)) {
+zone = new UnityAdsZone(jsonZone);
+}
+
+if(_currentZone == null &amp;&amp; zone.isDefault()) {
+_currentZone = zone;
+

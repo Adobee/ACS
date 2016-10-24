@@ -1,0 +1,7 @@
+* @param notify  if true notify series change listeners
+*/
+public void removeAgedItems(boolean notify) {
+int items = getItemCount();
+if (items > 0) {
+removeAgedItems(getDataItem(items-1).getPeriod().getSerialIndex(), notify);
+

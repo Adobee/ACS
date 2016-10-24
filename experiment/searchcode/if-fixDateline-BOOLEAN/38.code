@@ -1,0 +1,9 @@
+return builder;
+}
+
+public Geometry buildGeometry(GeometryFactory factory, boolean fixDateline) {
+if(fixDateline) {
+final int pos;
+boolean sharedVertex = false;
+if (intersections == 0 || ((pos = Arrays.binarySearch(edges, 0, intersections, current, INTERSECTION_ORDER)) >= 0)
+

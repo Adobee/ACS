@@ -1,0 +1,8 @@
+public Limit(double startValue){
+this(startValue, DEFAULT_LIMIT);
+}
+public Limit(double startValue, double limit){
+this(startValue, limit, DEFAULT_INCREMENT);
+}
+public Limit(double startValue, double limit, double increment){
+

@@ -1,0 +1,10 @@
+super.update();
+regulateBounds();
+}
+
+protected final void regulateBounds() {
+if(boundedNorth()) {
+for (int i = ents.size() - 1; i >= 0; i--) {
+Entity e = ents.get(i);
+if (e.bounds.y <= 0) {
+

@@ -1,0 +1,7 @@
+MultipartBody.Builder multipartBuilder = new MultipartBody.Builder();
+if (getFileParameters() != null) {
+for (String key : getFileParameters().keySet()) {
+Object valueObj = params.get(key);
+if (valueObj instanceof String) {
+multipartBuilder.addFormDataPart(key, (String) valueObj);
+

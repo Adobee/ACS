@@ -1,0 +1,9 @@
+public static String friendlyFileSize(long size){
+
+String sizeUnit = &quot;B&quot;;
+if (size>1000000000){
+size = Math.round( size / 1000000000 );
+sizeUnit = &quot;GB&quot;;
+} else if (size>1000000){
+size = Math.round( size / 1000000 );
+

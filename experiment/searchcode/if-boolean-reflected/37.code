@@ -1,0 +1,6 @@
+Container<Boolean> modifiedContainer = new Container<>(Boolean.FALSE);
+reflectedFields.forEach(reflectedField -> {
+try {
+boolean isModified = modifyField(reflectedField, original, modifyWith);
+if (isModified) {
+

@@ -1,0 +1,13 @@
+public class ActionResponse {
+
+public enum STATUS {
+ERROR, OK, PENDING
+};
+
+private STATUS			status		= STATUS.PENDING;
+public void setResult(Object result) {
+this.result = result;
+}
+
+public static ActionResponse newPendingAction(String actionID) {
+

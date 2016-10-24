@@ -1,0 +1,13 @@
+if (! super.setPosition(x, y, world)) return false;
+final Tile o = origin();
+final boolean moved = o != lastPos;
+//
+//  If position has been changed (or has been initially assigned) then
+return o.world.tileAt(o.x + off[0], o.y + off[1]);
+}
+}
+
+
+public boolean canPlace(Account reasons) {
+if (origin() == null) return reasons.setFailure(&quot;Over the edge!&quot;);
+

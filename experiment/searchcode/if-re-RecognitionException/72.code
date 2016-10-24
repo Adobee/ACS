@@ -1,0 +1,10 @@
+import antlr.Token;
+import antlr.TokenStream;
+import antlr.RecognitionException;
+import antlr.NoViableAltException;
+public class ShibRuleParser extends antlr.LLkParser       implements ShibRuleParserTokenTypes
+{
+
+String getStringVal(String val) {
+if ( val.startsWith(&quot;\&quot;&quot;) &amp;&amp; (val.endsWith(&quot;\&quot;&quot;)) ) {
+

@@ -1,0 +1,12 @@
+public class Vector3D {
+double[] position;
+double[] direction;
+double magnitude;
+
+public Vector3D() {
+
+}
+
+// Constructor
+public Vector3D(double[] position, double[] direction, double magnitude) throws Exception {
+

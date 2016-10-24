@@ -1,0 +1,7 @@
+import java.util.EventListener;
+
+public class ListenerFactory {
+public static enum ListenerType {restart, exit, size, button, custom, status};
+public EventListener getListener(ListenerType t, Object parent, int width, int height, int bombs) {
+if (t == ListenerType.restart) {
+

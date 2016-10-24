@@ -1,0 +1,8 @@
+public DoublePointer(DoubleBuffer paramDoubleBuffer)
+{
+super(paramDoubleBuffer);
+if ((paramDoubleBuffer != null) &amp;&amp; (paramDoubleBuffer.hasArray()))
+{
+double[] arrayOfDouble = paramDoubleBuffer.array();
+allocateArray(arrayOfDouble.length);
+

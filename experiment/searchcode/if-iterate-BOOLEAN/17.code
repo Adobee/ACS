@@ -1,0 +1,14 @@
+getNext();
+
+}
+
+private void getNext() {
+boolean gotNext = false;
+while ((!gotNext) &amp;&amp; (iterate.hasNext())) {
+next = iterate.next();
+if (next.toString().endsWith(&quot;ing&quot;)) {
+gotNext = true;
+}
+}
+if (!gotNext)
+

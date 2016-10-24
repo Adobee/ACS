@@ -1,0 +1,7 @@
+public Population(int populationSize, boolean initialise) {
+snakes = new Snake[populationSize];
+if(initialise) {
+for(int i = 0; i < populationSize; i++) {
+Snake s = new Snake();
+addSnake(i, s);
+

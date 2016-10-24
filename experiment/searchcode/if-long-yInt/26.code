@@ -1,0 +1,13 @@
+Assert.Assert((width % 64) == 0, &quot;width is not divisable by 64 (for 64 bit)&quot;);
+
+this.width = width;
+this.length = length;
+
+
+array = new long[width/64 * length];
+//Assert.Assert(inBounds(new Vector2d<>(x, y)), &quot;&quot;);
+
+final long nativeValueAtPosition = readLongAtInt(x, y);
+
+return (nativeValueAtPosition &amp; (1L << (x % 64))) == (1L << (x % 64));
+

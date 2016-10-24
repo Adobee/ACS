@@ -1,0 +1,9 @@
+public void checkSavePrivilege(ActionForm form, HttpServletRequest request, Record record, String openMode, List acl, SessionInfo sessionInfo) throws PrivilegeException, SystemUnregistException {
+if(OPEN_MODE_CREATE.equals(openMode)) { //新建,允许所有人
+return;
+}
+Todo pojoTodo = (Todo)record;
+Todo pojoTodo = (Todo)record;
+if(OPEN_MODE_CREATE.equals(openMode)) {
+pojoTodo.setPersonId(sessionInfo.getUserId());
+

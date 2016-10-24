@@ -1,0 +1,8 @@
+throws MaxCountExceededException, DimensionMismatchException, NoBracketingException {
+
+double previousT = interpolator.getGlobalPreviousTime();
+final double currentT = interpolator.getGlobalCurrentTime();
+final double dt = FastMath.abs(equations.getTime() - t);
+if (dt <= threshold) {
+throw new NumberIsTooSmallException(LocalizedFormats.TOO_SMALL_INTEGRATION_INTERVAL,
+

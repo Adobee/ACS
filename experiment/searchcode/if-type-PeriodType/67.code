@@ -1,0 +1,6 @@
+public String toString() {
+return &quot;{value=&quot; + getValue() + &quot;, ago(periodType, count), past(periodType, count), prev(periodType, count), &quot;
+long from = DateUtils.minus(getContext().getRuntime(), periodType, count);
+PointValueTime pvt = point.getPointValueBefore(from);
+if (pvt == null)
+

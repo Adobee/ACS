@@ -1,0 +1,6 @@
+dead.addAll(dots.stream().filter(dot -> this.findNeighborhoods(dot).size()/2 != 1).collect(Collectors.toSet()));
+
+for (int x = 0; x < cols; x++ )
+for (int y = 0; y < rows; y++ )
+if (!dotExists(x, y) &amp;&amp; findNeighborhoods(x, y).size() == 3)
+

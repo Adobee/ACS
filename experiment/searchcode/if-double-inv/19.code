@@ -1,0 +1,11 @@
+this.length = length;
+damping = 0;
+relaxations = 1;
+}
+
+public void relax() {
+if(p1.inv_mass == 0 &amp;&amp; p2.inv_mass == 0)
+return;
+Vec delta = p2.pos.sub(p1.pos);
+double deltalength = delta.mag();
+

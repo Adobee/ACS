@@ -1,0 +1,13 @@
+public class SparKonto extends Konto {
+double maxOut;
+
+public SparKonto(double maxOut, double saldo, double rate) {
+super(saldo, rate);
+super.payIn(in);
+}
+
+@Override
+public void payOut(double out) {
+if(out < maxOut) {
+super.payOut(out);
+

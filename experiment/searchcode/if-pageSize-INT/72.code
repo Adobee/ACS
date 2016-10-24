@@ -1,0 +1,10 @@
+* @param pageSize 单页总数
+* @return list数据
+*/
+public List getPageData(int page,int pageSize){
+//sum处理
+if(pageSize<=0)pageSize = 1;
+//page 处理
+if(page <=0)page = 1;
+int maxPage = getMaxPage(pageSize);
+

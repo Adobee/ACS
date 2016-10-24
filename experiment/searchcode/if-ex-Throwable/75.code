@@ -1,0 +1,13 @@
+private RethrowingExceptionHandler() {
+}
+
+private void stopProcessor(final Throwable ex) {
+if (ex instanceof RuntimeException) {
+throw new RuntimeException(ex);
+}
+}
+
+@Override
+public void handleOnStartException(final Throwable ex) {
+stopProcessor(ex);
+

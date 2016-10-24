@@ -1,0 +1,9 @@
+public class FilterColumnTableModel extends AbstractTableModelDecorator {
+private int[] skipIndex;
+
+public FilterColumnTableModel(TableModel model, int[] skipIndex) {
+int offset = 0;
+for (int i = 0; i < skipIndex.length; i++) {
+if (skipIndex[i] <= column) {
+offset++;
+

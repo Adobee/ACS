@@ -1,0 +1,15 @@
+public static double scrollY = 0.0;
+public static boolean set = true;
+
+@Override
+public void invoke(long window, double xoffset, double yoffset) {
+if(set){
+this.scrollX = xoffset;
+this.scrollY = yoffset;
+set = false;
+}
+System.out.println(yoffset);
+}
+
+}
+

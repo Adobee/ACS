@@ -1,0 +1,11 @@
+protected void assertEqual(Object o1, Object o2) {
+if (!equals(o1, o2)) {
+throw new AssertionError(&quot;unequal: &quot; + o1 + &quot; != &quot; + o2);
+}
+}
+
+protected boolean equals(Object a, Object b) {
+return (a == b) || (a != null &amp;&amp; a.equals(b));
+}
+}
+

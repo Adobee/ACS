@@ -1,0 +1,11 @@
+private final static Logger logger = LoggerFactory.getLogger(ServerShutdownImpl.class);
+
+private boolean shutdownInProgress = false;
+private BundleContext bundlecontext;
+private long startedShutdownAt;
+expired = (new Date().getTime() - startedShutdownAt) > (timeout * 1000);
+}
+
+boolean allowShutdown = true;
+if (expired) {
+

@@ -1,0 +1,9 @@
+private int writeOut(DataOutput out, int writtenKey, int startKey)
+throws IOException {
+if (waitingSize > 1) {
+out.writeByte(-1);
+writeJump(writtenKey, startKey, out);
+out.writeByte(waitingSize);
+} else if (waitingSize == 1) {
+writeJump(writtenKey, startKey, out);
+

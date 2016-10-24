@@ -1,0 +1,8 @@
+static void printLine(int width, int hight) {
+for (int i = 0; i < width; i++) {
+if (i < hight + 1 || i > width - (hight + 2)) {
+static void printLowerPart(int hight, int width, int n) {
+for (int i = 0; i < n / 2; i++) {
+for (int j = 0; j < width; j++) {
+if (j == n / 2 - i || j == width / 2 - i || j == width / 2 + i || j == (width / 2 + i) + n / 2) {
+

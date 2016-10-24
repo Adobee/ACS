@@ -1,0 +1,9 @@
+public Segment2D getMirror() {
+return new Segment2D(p1, p0);
+}
+
+public double getLength() {
+return p0.getDistance(p1);
+public Segment2D getTranslation(double angle, double distance) {
+return new Segment2D(p0.getTranslation(angle, distance), p1.getTranslation(angle, distance));
+

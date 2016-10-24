@@ -1,0 +1,9 @@
+Set<TaskRepository> repositories = repositoryManager.getRepositories(BambooCorePlugin.CONNECTOR_KIND);
+boolean allSuccessful = true;
+
+for (TaskRepository repository : repositories) {
+if (monitor.isCanceled()) {
+Map<TaskRepository, Collection<BambooBuild>> changedBuilds, List<String> errorLog, boolean forcedRefresh,
+boolean allUpdated) {
+boolean failed = (errorLog == null ? false : errorLog.size() > 0) || !allUpdated;
+

@@ -1,0 +1,14 @@
+private Spinner smoothing;
+private Spinner peakNumber;
+private Text realFormat;
+private Text accuracyValueText;
+private CCombo algorithmCombo;
+algorithmComboSelect(getPreferenceStore().getDefaultInt(FittingConstants.FIT_ALGORITHM));
+isValid();
+}
+
+private boolean storePreferences() {
+checkState();
+if (!isValid())
+return false;
+

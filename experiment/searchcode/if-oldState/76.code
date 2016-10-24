@@ -1,0 +1,13 @@
+GameState oldState = getCurrentState();
+if (oldState != null) {
+if (oldState.isLocked()) {
+return false;
+}
+else {
+if(!oldState.isPaused()) {
+oldState.pause();
+}
+}
+}
+boolean pushIsOk = states.add(newState);
+

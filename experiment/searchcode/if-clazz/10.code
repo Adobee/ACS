@@ -1,0 +1,10 @@
+public final class ClassUtils
+{
+public static final Map<Class<?>, Clazz> clazzMap;
+
+static
+Clazz clazz = clazzMap.get(targetClass);
+if (clazz == null) {
+clazz = new Clazz(targetClass);
+clazzMap.put(targetClass, clazz);
+

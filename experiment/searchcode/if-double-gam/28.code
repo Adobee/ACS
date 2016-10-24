@@ -1,0 +1,13 @@
+package mltk.predictor.gam;
+
+import java.util.List;
+
+import mltk.core.Attribute;
+import mltk.core.BinnedAttribute;
+import mltk.predictor.glm.GLM;
+
+class GAMUtils {
+
+static GAM getGAM(GLM glm, List<Attribute> attList) {
+double[] w = glm.coefficients(0);
+

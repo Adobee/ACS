@@ -1,0 +1,10 @@
+this(delegate, 0, delegate.length());
+}
+CharSeqAdapter(final CharSequence delegate, final int start, final int end) {
+if (delegate instanceof CharSeq)
+return new CharSeqAdapter(seq);
+}
+
+public static CharSeq create(CharSequence seq, int start, int end) {
+if (seq instanceof CharSeq)
+

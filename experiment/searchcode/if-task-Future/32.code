@@ -1,0 +1,7 @@
+public <X, Y> FutureTask<X, Y> submit(FutureTask<X, Y> futureTask) {
+if (forShutdown) return null;
+synchronized (queue) {
+if (forShutdown) return null;
+queue.add(futureTask);
+queue.notify();
+

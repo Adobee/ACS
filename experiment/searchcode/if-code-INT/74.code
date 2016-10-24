@@ -1,0 +1,7 @@
+public enum PaymentCode {
+SUCCESS(200, 299), FAILED(300, 500);
+
+public static PaymentCode codeForStatus(int status) {
+for(PaymentCode code : PaymentCode.values()) {
+if(code.startCode <= status &amp;&amp; status <= code.finishCode) return code;
+

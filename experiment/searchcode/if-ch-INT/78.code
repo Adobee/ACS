@@ -1,0 +1,10 @@
+public class Solution {
+final private int bias = &#39;A&#39; - &#39;a&#39;;
+
+public boolean isPalindrome(String s) {
+if(s.equals(&quot;&quot;)) return true;
+int l = glb(s, 0, s.length() - 1, cur);
+int r = grb(s, l, s.length() - 1, cur);
+while(l < r){
+if(cur[0] != cur[1]) return false;
+

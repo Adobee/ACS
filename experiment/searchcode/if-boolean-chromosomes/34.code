@@ -1,0 +1,7 @@
+if (config.getString(EAFields.ALGORITHM).equals(FieldNames.ADAPTIVE_SFR)) {
+if (config.getBoolean(EAFields.X2_ENABLED)) {
+chromosome = ChromosomeFactory.createAdaptiveX2Chromosome(config, i);
+chromosome = ChromosomeFactory.createAdaptiveChromosome(config, i);
+}
+} else if (config.getBoolean(EAFields.X2_ENABLED)) {
+

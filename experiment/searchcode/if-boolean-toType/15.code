@@ -1,0 +1,6 @@
+public Object convertValue(Map context, Object target, Member member, String propertyName, Object value, Class toType) {
+if ((toType == Boolean.class || toType == Boolean.TYPE) &amp;&amp; (value instanceof String)) {
+String thisValue = (String) value;
+return Boolean.valueOf(thisValue);
+} else if ((toType == Timestamp.class) &amp;&amp; (value instanceof Date)) {
+

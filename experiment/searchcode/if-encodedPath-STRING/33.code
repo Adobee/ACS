@@ -1,0 +1,8 @@
+public static String fileNameEncode( String fileName, boolean useMultiByte ) {
+if ( useMultiByte ) {
+return Text.escapeIllegalJcrChars( ISO9075.encode( fileName ) );
+* @return
+*/
+public static String fileNameDecode( String encodedFileName, boolean useMultiByte ) {
+if ( useMultiByte ) {
+

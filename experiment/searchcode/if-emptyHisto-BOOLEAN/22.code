@@ -1,0 +1,7 @@
+ret.setEnable(pTransactionList != null &amp;&amp; !pTransactionList.isEmpty());
+ret.setTitle(pTitle);
+if (pTransactionList != null &amp;&amp; !pTransactionList.isEmpty()) {
+mExpandableListView = (ExpandableListView) view.findViewById(R.id.list_event);
+mExpandableListView.setEmptyView(view.findViewById(R.id.emptyHisto));
+mAdapter = new TransactionsAdapter(mTransactionList);
+

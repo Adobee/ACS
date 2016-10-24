@@ -1,0 +1,15 @@
+public IntArrayBuilder() {
+this(32);
+}
+
+public IntArrayBuilder(final int initialCapacity) {
+if (initialCapacity < 1) {
+throw new IllegalArgumentException(&quot;Initial capacity too small: &quot; + initialCapacity);
+}
+array = new int[initialCapacity];
+len = 0;
+}
+
+public int[] toIntArray() {
+return Arrays.copyOf(array, len);
+

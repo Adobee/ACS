@@ -1,0 +1,10 @@
+String replacement = getReplacement(c);
+if (replacement != null) {
+buffer.append(&#39;&amp;&#39;);
+buffer.append(replacement);
+buffer.append(&#39;;&#39;);
+} else if (c == 9 || c == 10 || c == 13 || c >= 32) {
+buffer.append(c);
+}
+}
+

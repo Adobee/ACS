@@ -1,0 +1,12 @@
+import jmetal.core.SolutionSet;
+
+public class CombineFitnessAssignment {
+double fit_mean;
+double fit_var;
+double fit_A;
+double fuzFit=SigMoid.SigMoidValue(fit, fit_A, fit_mean);
+
+double fuzCrowd;
+if(Double.isInfinite(fuzFit))
+fuzCrowd=0;
+

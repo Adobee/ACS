@@ -1,0 +1,11 @@
+private Story story;
+private Integer oldEstimate;
+private Integer newEstimate;
+private Boolean ready;
+public void undo()
+{
+story.setEstimate(oldEstimate);
+
+if (ready) {
+story.setReadinessToReady();
+

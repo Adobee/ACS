@@ -1,0 +1,14 @@
+boolean hasConstraints = false;
+String re = &quot;&quot;;
+for (Tuple<String, List<Object>> cs : css) {
+if (!hasConstraints) {
+re += &quot;Constraints: &quot;;
+re = appendDetail(re, cs._2);
+}
+
+if (hasConstraints) {
+re += &quot;. &quot;;
+}
+
+Tuple<String, List<Object>> format = fld.format();
+

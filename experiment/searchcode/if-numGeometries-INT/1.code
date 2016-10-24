@@ -1,0 +1,6 @@
+public MultiLineString linearize(double tolerance) {
+int numGeometries = getNumGeometries();
+LineString[] linearized = new LineString[numGeometries];
+for (int k = 0; k < numGeometries; k++) {
+LineString component = (LineString) getGeometryN(k);
+

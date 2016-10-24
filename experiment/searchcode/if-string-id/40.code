@@ -1,0 +1,17 @@
+* Created by MattUpstairs on 29/09/2014.
+*/
+public class MongoId {
+String id;
+
+public MongoId(String id) {
+if(id.length()!=24)throw new RuntimeException(&quot;Error, id isn&#39;t 24 bytes:&quot;+id);
+this.id = id;
+}
+
+public String getId() {
+return id;
+}
+
+public void setId(String id) {
+this.id = id;
+

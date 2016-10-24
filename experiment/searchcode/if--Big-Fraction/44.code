@@ -1,0 +1,11 @@
+public int signum()
+{
+return numerator.signum();
+}
+
+public BigFraction simplify()
+{
+if (isZero()) return BigFraction.ZERO;
+BigInteger gcd = numerator.gcd(denominator);
+if (denominator.signum() == -1)
+

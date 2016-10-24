@@ -1,0 +1,10 @@
+File externalPropertiesFile = new File(&quot;./&quot; + GameResourcesLoader.PROPERTIES_FILE);
+if (externalPropertiesFile.exists()) {
+properties.put(key, resProperties.get(key));
+}
+debugMode = getBoolean(&quot;debug.mode&quot;);
+}
+
+
+private Properties loadProperties(String propertiesFile) throws IOException {
+

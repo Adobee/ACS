@@ -1,0 +1,12 @@
+public static DateProvider getInstance() {
+if (DateProvider.instance == null) {
+DateProvider.instance = new DateProvider();
+}
+return DateProvider.instance;
+cal.add(Calendar.DATE, daysToAdd);
+return cal.getTime();
+}
+
+public int getDaysInThisYear() {
+Calendar cal = Calendar.getInstance();
+

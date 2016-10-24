@@ -1,0 +1,13 @@
+@Value(&quot;${app.cache.enabled:false}&quot;)
+private boolean cacheEnabled;
+
+@Value(&quot;${app.cache.host:localhost}&quot;)
+private String cacheHost;
+@Value(&quot;${app.cache.live:86400}&quot;)
+private int cacheLive;
+
+@Value(&quot;${app.cache.all:false}&quot;)
+private boolean cacheAll;
+
+private MemcachedClient memcachedClient;
+

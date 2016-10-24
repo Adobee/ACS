@@ -1,0 +1,8 @@
+boolean hitWall = false;
+
+if (position.x < areaBounds.getAreaBounds().lowerLeft.x + scaledWidth/2) {
+if (bounce) {
+position.x = areaBounds.getAreaBounds().lowerLeft.x +scaledWidth/2;
+hitWall = true;
+} else if (position.x > (areaBounds.getAreaBounds().lowerLeft.x+areaBounds.getAreaBounds().width)-scaledWidth/2) {
+

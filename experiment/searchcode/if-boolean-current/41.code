@@ -1,0 +1,18 @@
+return images[currentState];
+}
+
+public void nextImage()
+{
+if(loops)
+currentState++;
+else
+currentState--;
+
+if(currentState == images.length)
+{
+if(loops)
+currentState = 0;
+else
+{
+up = false;
+

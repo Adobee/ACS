@@ -1,0 +1,8 @@
+import com.google.common.collect.Maps;
+import com.google.inject.TypeLiteral;
+
+public class BaseSerializerProvider implements SerializerProvider {
+public synchronized <T> Serializer findSerializer(TypeLiteral<T> type) {
+Serializer serializer = serializers.get(type);
+if (serializer == null)
+

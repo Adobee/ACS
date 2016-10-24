@@ -1,0 +1,13 @@
+public boolean isEqual(Annotation a1, Annotation a2) {
+if (QualifierUtil.isSameType(a1, a2)) {
+if (comparatorMap.containsKey(a1.annotationType().getName())) {
+return true;
+}
+} else {
+return false;
+}
+}
+
+public int hashCodeOf(Annotation a1) {
+if (comparatorMap.containsKey(a1.annotationType().getName())) {
+

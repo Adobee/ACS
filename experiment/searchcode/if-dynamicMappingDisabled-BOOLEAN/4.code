@@ -1,0 +1,9 @@
+private final boolean globallyDisabled;
+private final boolean dynamicMappingDisabled;
+private final String[] matches;
+public boolean shouldAutoCreate(String index, ClusterState state) {
+if (!needToCheck) {
+return false;
+}
+boolean exists = resolver.hasIndexOrAlias(index, state);
+

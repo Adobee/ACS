@@ -1,0 +1,16 @@
+_formatID = formatID;
+}
+
+
+static Format getFromID(final byte formatID) {
+for (final Format each : Format.values()) {
+if (each._formatID == formatID) {
+return each;
+}
+}
+throw new RuntimeException(&quot;Invalid FormatID=&quot; + formatID);
+}
+
+
+}
+

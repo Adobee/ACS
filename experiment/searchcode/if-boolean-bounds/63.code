@@ -1,0 +1,14 @@
+private static final boolean db = false;
+
+private boolean horz;
+public FlipReversible(boolean horz) {
+if (db)
+pr(&quot;constructed FlipReversible&quot;);
+setName(&quot;Flip &quot; + (horz ? &quot;Horizontally&quot; : &quot;Vertically&quot;));
+}
+
+private Rect getBounds() {
+if (bounds == null) {
+if (db)
+pr(&quot;constructing bounds&quot;);
+

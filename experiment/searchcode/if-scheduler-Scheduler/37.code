@@ -1,0 +1,8 @@
+package nitinka.quartzrest.resource;
+
+import nitinka.quartzrest.core.SchedulerFactory;
+import nitinka.quartzrest.core.SchedulerHelper;
+SchedulerHelper schedulerHelper = SchedulerFactory.getScheduler(schedulerName);
+if(schedulerHelper == null)
+throw new WebApplicationException(ResponseBuilder.resourceNotFound(&quot;Scheduler&quot;, schedulerName));
+

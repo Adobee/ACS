@@ -1,0 +1,22 @@
+* Date Apr 4, 2013
+* Version 1.0
+*
+*
+*/
+/**
+* @author Trushank
+*
+*/
+public class FrameHashMap extends HashMap<Long, Frame>{
+this.maxSize=maxSize;
+}
+
+@Override
+public Frame put(Long seq,Frame f){
+if(this.size()==maxSize){
+this.remove(new Long(seq-maxSize));
+}
+return super.put(seq, f);
+}
+}
+

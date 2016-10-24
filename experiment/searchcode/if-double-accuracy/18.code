@@ -1,0 +1,10 @@
+public class APValue implements Serializable {
+
+public APValue(String id, double accuracy, double time) {
+this.id = id;
+this.accuracy = accuracy;
+
+if (time > 0) {
+this.time = time;
+} else {
+

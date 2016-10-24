@@ -1,0 +1,6 @@
+if (!failureSet.contains(chr)) {
+double[] kr = nc.computeKR();
+if (kr == null) {
+int y = cr.getBinY();
+if (vc1 != null &amp;&amp; vc2 != null &amp;&amp; !Double.isNaN(vc1[x]) &amp;&amp; !Double.isNaN(vc2[y]) &amp;&amp;
+

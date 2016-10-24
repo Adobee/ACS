@@ -1,0 +1,12 @@
+public class StopWatch {
+private long lastStartingTime = 0;
+private long elapsedDuration = 0;
+private boolean isRunning = false;
+isRunning = false;
+start();
+}
+
+public long getElapsedNanos() {
+if (isRunning) {
+return elapsedDuration + (System.nanoTime() - lastStartingTime);
+

@@ -1,0 +1,8 @@
+private static TreeMap<Double, Integer> percentages;
+private static double[] walk_pct;
+private static double[] wait_pct;
+if (trip.getStartTime() < start || trip.getStartTime() > end) continue; //skips trips outside the interested time period.
+if (trip.getAutoDriveTime() > 0 ) continue; //skip auto trips
+
+double walk = trip.getWalkTime();
+

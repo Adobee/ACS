@@ -1,0 +1,8 @@
+public static <T extends Comparable<? super T>> int lower_bound(T[] array, T key){
+int lower = -1, upper = array.length;
+while(upper - lower > 1){
+final int mid = (lower + upper) / 2;
+final int comp = array[mid].compareTo(key);
+
+if(comp < 0){ lower = mid; }
+

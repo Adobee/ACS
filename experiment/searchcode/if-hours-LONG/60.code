@@ -1,0 +1,11 @@
+int hoursLeft = hours;
+
+CountLeftHoursFreeHoursPlan countHoursLeft = countLeftHoursFreeHoursPlanDao.find(user, plan);
+
+if (countHoursLeft != null) {
+Long difference = exitDate.getTime() - entranceDate.getTime();
+Long minutes = difference / (60 * 1000);
+
+if(minutes > 20){
+totalHours --;
+

@@ -1,0 +1,13 @@
+public void read(short i) {
+
+ArrayByte bb = new ArrayByte(2);
+bb.writeShort(i);
+
+int firstByte = (0x000000FF &amp; ((int) bb.get(0)));
+unShort = (char) (firstByte << 8 | secondByte);
+}
+
+public void read(ArrayByte bb, int offset) {
+
+int initial_pos = bb.position();
+

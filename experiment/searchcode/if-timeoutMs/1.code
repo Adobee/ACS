@@ -1,0 +1,9 @@
+private final Integer responsesRemaining;
+private final Integer timeoutMs;
+
+@JsonCreator
+private Acknowledge(@JsonProperty(&quot;responderId&quot;) String responderId,
+@JsonProperty(&quot;responsesRemaining&quot;) Integer responsesRemaining,
+@JsonProperty(&quot;timeoutMs&quot;) Integer timeoutMs) {
+Validate.notNull(responderId, &quot;the &#39;responderId&#39; must not be null&quot;);
+

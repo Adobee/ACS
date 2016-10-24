@@ -1,0 +1,14 @@
+package android.roguelike;
+
+public final class Dot {
+
+public int x;
+public int y;
+
+public Dot(int x,int y){
+return (this.x>=0 &amp;&amp; this.x < map.getWidth() &amp;&amp; this.y>=0 &amp;&amp; this.y < map.getHeight());
+}
+
+public int distanceTo(Dot dot){
+if (dot != null) {
+

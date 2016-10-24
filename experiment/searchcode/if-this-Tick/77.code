@@ -1,0 +1,9 @@
+public class SelfishRunner extends Thread {
+
+private int tick = 1;
+private int num;
+while (tick < 400000) {
+tick++;
+if ((tick % 50000) == 0)
+System.out.format(&quot;Thread #%d, tick = %d%n&quot;, num, tick);
+

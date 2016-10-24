@@ -1,0 +1,22 @@
+public class Aluno
+{
+private String nome;
+private double n1;
+private double n2;
+private double n3;
+public double maiorNota()
+{
+
+double max = n1;
+if(n2 > max)
+{
+max = n2;
+}
+if(n3 > max)
+{
+max = n3;
+}
+return max;
+}
+}
+

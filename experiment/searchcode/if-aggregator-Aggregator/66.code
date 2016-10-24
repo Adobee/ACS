@@ -1,0 +1,7 @@
+String aggregatorId = context.getRequest().getParameter(&quot;aggregatorId&quot;);
+if(aggregatorId == null) {
+aggregator = context.getRepoxManager().getDataManager().getAggregator(aggregatorId);
+
+if(aggregator == null) {
+return new ForwardResolution(&quot;/jsp/common/unknownResource.jsp&quot;);
+

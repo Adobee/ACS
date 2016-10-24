@@ -1,0 +1,6 @@
+private final boolean mapUnmappedFieldAsString;
+private final QueryShardContext queryShardContext;
+private final StringFieldMapper queryTermsField;
+Query query = PercolatorQueriesRegistry.parseQuery(queryShardContext, mapUnmappedFieldAsString, context.parser());
+if (context.flyweight() == false) {
+

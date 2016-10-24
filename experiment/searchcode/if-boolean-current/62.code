@@ -1,0 +1,11 @@
+public abstract class StreamBase<T> implements Stream<T> {
+private boolean currentValid = false;
+
+@Override
+public final boolean next() {
+currentValid = nextImpl();
+return currentValid;
+}
+
+@Override
+

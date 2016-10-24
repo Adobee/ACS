@@ -1,0 +1,9 @@
+public class NettyTransportMultiPortIntegrationTests extends ElasticsearchIntegrationTest {
+
+private static int randomPort = -1;
+private static String randomPortRange;
+
+@Override
+protected Settings nodeSettings(int nodeOrdinal) {
+if (randomPort == -1) {
+

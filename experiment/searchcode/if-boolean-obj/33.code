@@ -1,0 +1,7 @@
+public static <T> T isnull(Class<T> c,Object obj){
+if(c==double.class||c==Double.class){
+return (T) (obj==null?0.0:obj);
+}else if (c==Integer.class||c==int.class) {
+return (T) (obj==null?0:obj);
+}else if(c==Boolean.class||c==boolean.class){
+

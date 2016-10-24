@@ -1,0 +1,12 @@
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.FutureTask;
+
+/**
+* Created by jkordas on 18/03/15.
+*/
+public class CustomMemorizer extends Memorizer<ImageChunk, FutureTask<Integer>> {
+protected Integer prepareResult(FutureTask<Integer> resultTask, FutureTask<Integer> futureTask) throws InterruptedException {
+if (resultTask != null) {
+futureTask = resultTask;
+} else {
+

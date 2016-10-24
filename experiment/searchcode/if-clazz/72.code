@@ -1,0 +1,10 @@
+public static String toJSONString(Object obj) {
+if(obj == null) {
+return &quot;null&quot;;
+}
+Class<?> clazz = obj.getClass();
+if(clazz == String.class) {
+return &quot;\&quot;&quot; + obj.toString() + &quot;\&quot;&quot;;
+}
+if(clazz == Long.class || clazz == long.class ||
+

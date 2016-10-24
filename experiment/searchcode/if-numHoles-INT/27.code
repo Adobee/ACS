@@ -1,0 +1,8 @@
+Cell[] cells = b.getCells();
+for(int i=0; i < cells.length; i++){
+if(helper.isCellAdjacentToFloor(cells[i])==true)
+uniqueColumns[0] = cells[0].getColumn();
+int numHoles = countHoles(b);
+score = numHoles * chromosome.getHoleCoefficient();
+return score;
+

@@ -1,0 +1,17 @@
+public void addBinCount(BinCount binCount) {
+boolean added = false;
+for (BinCount thisBinCount : counts) {
+if (thisBinCount.getBin().equals(binCount.getBin())){
+added = true;
+}
+}
+
+if (!added){
+counts.add(binCount);
+}
+}
+
+/**
+* @param mean
+* @param stdDev
+

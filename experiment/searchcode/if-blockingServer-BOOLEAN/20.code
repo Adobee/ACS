@@ -1,0 +1,9 @@
+private final int workerCount;
+
+private final boolean blockingServer;
+
+private final String port;
+
+private final String bindHost;
+this.blockingServer = settings.getAsBoolean(&quot;memcached.netty.memcached.blocking_server&quot;, settings.getAsBoolean(TCP_BLOCKING_SERVER, settings.getAsBoolean(TCP_BLOCKING, false)));
+

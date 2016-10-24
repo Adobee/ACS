@@ -1,0 +1,7 @@
+return clazz.isAssignableFrom(Class.class.cast(type));
+}
+if (ParameterizedType.class.isInstance(type)) {
+return getRawClass(parameterizedType.getRawType());
+}
+if (WildcardType.class.isInstance(type)) {
+

@@ -1,0 +1,11 @@
+OTHER_CLICK(false, false, false);
+
+private boolean isLeft;
+private boolean isRight;
+private boolean isShift;
+
+private ClickType(boolean isRight, boolean isLeft, boolean isShift) {
+public static ClickType byBooleans(boolean isRight, boolean isLeft, boolean isShift) {
+for (ClickType type : values()) {
+if (type.isRight != isRight || type.isLeft != isLeft || type.isShift != isShift) {
+

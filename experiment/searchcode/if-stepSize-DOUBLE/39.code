@@ -1,0 +1,12 @@
+this.data = new long[300];
+}
+
+public double getDouble(long row, long column) {
+if (entryCount == 0) {
+return 0.0;
+}
+int stepSize = entryCount / 4 + 1;
+int pos = entryCount / 2;
+do {
+if (data[pos * 3] == row) {
+

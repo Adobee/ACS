@@ -1,0 +1,11 @@
+public String longestPalindrome(String s) {
+String res = &quot;&quot;;
+int strlen = 0;
+for(int i = 0;i<s.length();i++){
+if(ispalindrom(s,i-strlen-1,i)){
+res = s.substring(i-strlen-1,i+1);
+strlen +=2;
+}
+if(ispalindrom(s,i-strlen,i)){
+res = s.substring(i-strlen,i+1);
+

@@ -1,0 +1,14 @@
+public ControllerUI_Similarity() {
+}
+
+private void setSelectedDataSets() {
+if (getPanelSimilarity().getTblAllDatasets() != null) {
+dataset2 = ((TableModelDataSets) (getPanelSimilarity().getTblAllDatasets().getModel())).getDataSet(indexes[1]);
+}
+}
+}
+
+public double calculateSimilarity() {
+setSelectedDataSets();
+if (panelSimilarity.getCbSimilarity().getSelectedItem().equals(CalculateCosineSimilarity.class.getSimpleName())) {
+

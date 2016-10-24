@@ -1,0 +1,7 @@
+for (int i = 0; i < tableau.getNumArtificialVariables(); i++) {
+int column = i + tableau.getArtificialVariableOffset();
+if (MathUtils.equals(tableau.getEntry(row, column), 1, epsilon) &amp;&amp;
+Integer pivotCol = getPivotColumn(tableau);
+Integer pivotRow = getPivotRow(tableau, pivotCol);
+if (pivotRow == null) {
+

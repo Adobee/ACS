@@ -1,0 +1,9 @@
+public int lengthOfLongestSubstring(String s) {
+int longest, mindex, n = s.length(), startindex = 0, endindex = 1, lastindex;
+int[] map = new int[26];
+char[] c = s.toCharArray();
+if (n == 0) {
+return 0;
+} else {
+longest = 1;
+

@@ -1,0 +1,9 @@
+// check for new tells
+if( m.getBody().toLowerCase().startsWith( &quot;tell &quot; ) )
+{
+String responce = &quot;I have no idea who you&#39;re talking about&quot;;
+int firstspace = m.getBody().indexOf( &quot; &quot; ) + 1;
+int secondspace = m.getBody().indexOf( &quot; &quot;, firstspace );
+
+String who = m.getBody().substring( firstspace, secondspace ).toLowerCase();
+

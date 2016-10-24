@@ -1,0 +1,6 @@
+final Queue<Integer>[][] rangeVisible = new Queue[MAX_VISION_RANGE-MIN_VISION_RANGE][Utils.trooperTypes.length];
+for (int rangeIndex=0;rangeIndex<rangeVisible.length;rangeIndex++) {
+for (int stateIndex=0;stateIndex<Utils.stances.length;stateIndex++) {
+for (int range=MIN_VISION_RANGE;range<MAX_VISION_RANGE;range++) {
+int rangeIndex = range-MIN_VISION_RANGE;
+

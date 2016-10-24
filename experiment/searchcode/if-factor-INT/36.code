@@ -1,0 +1,12 @@
+public class Factor {
+private int n;
+private int factorArray[];
+
+public Factor(int n) {
+this.n = n;
+factorArray = findAllFactor();
+Vector<Integer> listFactor = new Vector<Integer>();
+//listFactor.add(1);
+for(int i = 2; i <= Math.sqrt(n); ++i) {
+if(n % i == 0) {
+

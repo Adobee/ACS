@@ -1,0 +1,11 @@
+public class ThrowableChecker {
+
+private final Throwable ex;
+
+public ThrowableChecker(Throwable ex) {
+this.ex = ex;
+}
+
+public boolean isDeepestCauseRelatedTo(String typeNameStart) {
+Throwable deepestEx = ex;
+

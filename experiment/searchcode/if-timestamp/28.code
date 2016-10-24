@@ -1,0 +1,8 @@
+public static boolean verifyTimestamp(String timestamp){
+for (Long timestampValue : timestamps) {
+if(Long.valueOf(timestamp).equals(timestampValue + 1)){
+final Long currentTime = System.currentTimeMillis();
+
+if (Math.abs(timestamp - currentTime) >= TIMESTAMP_LIMIT) {
+return true;
+

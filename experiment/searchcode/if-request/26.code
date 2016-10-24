@@ -1,0 +1,7 @@
+public static HttpServletRequest getRequest() {
+HttpServletRequest request = requestHolder.get();
+if (request != null) {
+// TODO ahai 这里改成可以不引入spring-context?
+ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+if (attributes == null) {
+

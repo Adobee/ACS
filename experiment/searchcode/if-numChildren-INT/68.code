@@ -1,0 +1,7 @@
+// thus in the first scan, left element is always smaller
+for (int i = 0; i < numChildren - 1; i++) {
+if (ratings[i + 1] > ratings[i]) candies[i + 1] = candies[i] + 1;
+// likewise, in the second scan, right element is always smaller
+for (int i = numChildren - 1; i > 0; i--) {
+if (ratings[i - 1] > ratings[i] &amp;&amp; candies[i - 1] <= candies[i]) candies[i - 1] = candies[i] + 1;
+

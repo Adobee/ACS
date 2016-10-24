@@ -1,0 +1,4 @@
+public static boolean isPressed(double x, double y, double width, double height, double touchX, double touchY){
+if (touchX >= x &amp;&amp; touchX <= x + width &amp;&amp;
+touchY >= y &amp;&amp; touchY <= y + height){
+

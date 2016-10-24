@@ -1,0 +1,9 @@
+Vertex j = he.prev().head; // Use prev instead of twin because twin might not exist if the half edge is a boundary
+double error = col_0*optimalPosition.x + col_1*optimalPosition.y + col_2*optimalPosition.z + col_3*optimalPosition.w;
+this.error = error;
+}
+
+@Override
+public int compareTo(Edge o) {
+if (error < o.error ) return -1;
+

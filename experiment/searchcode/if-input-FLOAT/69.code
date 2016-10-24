@@ -1,0 +1,8 @@
+super(fromXDelta, toXDelta, fromYDelta, toYDelta);
+}
+
+public float getInterpolation(float input) {
+float result;
+if (mFactor == 1.0f) {
+result = (float)(1.0f - (1.0f - input) * (1.0f - input));
+

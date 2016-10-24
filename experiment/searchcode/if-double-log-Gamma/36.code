@@ -1,0 +1,8 @@
+* @return value of the cdf function
+*/
+public static double cdf(double logPvalue, double mean, double sigma) {
+if (logPvalue == Double.NEGATIVE_INFINITY) return 0;
+
+double x = (logPvalue - mean) / (sigma * SQRT2);
+double a = 0.5; // a from regularized Gamma P/Q
+

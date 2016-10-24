@@ -1,0 +1,8 @@
+setValue(TimeConversionModel.parseMilliseconds(RequestCycle.get().getRequest().getQueryParameters().getParameterValue(getMarkupId() + &quot;.value&quot;).toString()));
+protected void onComponentTag (final ComponentTag tag) {
+
+checkComponentTag(tag, &quot;input&quot;);
+checkComponentTagAttribute(tag, &quot;type&quot;, &quot;text&quot;);
+
+if (RequestCycle.get().find(AjaxRequestTarget.class) == null) {
+

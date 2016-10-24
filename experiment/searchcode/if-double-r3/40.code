@@ -1,0 +1,8 @@
+public double[] rechnenML(ArrayList<double[]> aPs, int length) {
+//if (length == 4) {
+double a1 = aPs.get(0)[0];
+double b1 = aPs.get(0)[1];
+double b3 = aPs.get(2)[1];
+double c3 = aPs.get(2)[2];
+double r3 = getdistance(aPs.get(2)[3]);
+

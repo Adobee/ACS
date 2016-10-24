@@ -1,0 +1,9 @@
+public void setEntity(HttpEntity entity) {
+this.entity = entity;
+}
+
+public boolean expectContinue() {
+HttpEntityEnclosingRequestBase clone = (HttpEntityEnclosingRequestBase) super.clone();
+if (this.entity != null) {
+clone.entity = (HttpEntity) CloneUtils.clone(this.entity);
+

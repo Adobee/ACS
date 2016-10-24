@@ -1,0 +1,15 @@
+// sanity check: assert (# of entries in original file) ==
+// (total # of entries in both mapped &amp; unmapped file)
+// if not, then it means there is an error during lift over process
+while (getUnmappedLine(unmappedIn) != null)
+{
+unmappedCount++;
+}
+
+unmappedIn.close();
+
+
+boolean mismatch = true;
+
+if (sourceCount - 1 == mappedCount + unmappedCount)
+

@@ -1,0 +1,12 @@
+ExceptionHelper.checkNotNullArgument(secretId, &quot;secretId&quot;);
+
+for (Secret secret: secrets) {
+if (secretId.equals(secret.getSecretId())) {
+ExceptionHelper.checkNotNullArgument(secret, &quot;secret&quot;);
+
+if (isFull()) {
+return UndoAction.DO_NOTHING;
+}
+
+secrets.add(secret);
+

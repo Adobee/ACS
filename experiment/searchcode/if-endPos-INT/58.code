@@ -1,0 +1,10 @@
+if(this.startPos < 0){
+return false;
+}
+int endPos = log.indexOf(&quot; HTTP/&quot;, this.startPos);
+if(endPos < 0){
+return false;
+}
+this.endPos = log.indexOf(&quot;\&quot; &quot;, endPos);
+if(this.endPos < endPos || this.endPos - endPos > REQUEST_SUFFIX_LENGTH + 5 ) {
+

@@ -1,0 +1,10 @@
+public class InfiniteViewPager extends ViewPager {
+
+private boolean infinitePagesEnabled = true;
+
+public InfiniteViewPager(Context context) {
+super(context);
+public void setCurrentItem(int item) {
+if (infinitePagesEnabled) {
+// offset the current item to ensure there is space to scroll
+

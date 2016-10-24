@@ -1,0 +1,6 @@
+boolean isCompletable = &quot;rx.Completable&quot;.equals(canonicalName);
+if (rawType != Observable.class &amp;&amp; !isSingle &amp;&amp; !isCompletable) {
+return null;
+}
+if (!isCompletable &amp;&amp; !(returnType instanceof ParameterizedType)) {
+

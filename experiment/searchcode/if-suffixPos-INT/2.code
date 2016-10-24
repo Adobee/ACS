@@ -1,0 +1,10 @@
+if (StringUtil.isEmpty(path)) {
+return path;
+}
+int file = path.lastIndexOf(&quot;/&quot;);
+if (file < 0) {
+file = 0;
+}
+int size = path.indexOf(&quot;_&quot;, file);
+int suffixPos = path.lastIndexOf(&quot;.&quot;);
+

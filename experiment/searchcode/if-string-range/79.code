@@ -1,0 +1,9 @@
+private static final long serialVersionUID = 1146580888238281822L;
+
+static final String CODE = &quot;OutOfRangeValue&quot;;
+
+NumberRange<?> range;
+public void validate(Object target, Errors errors) {
+if (range != null &amp;&amp; !range.isEmpty() &amp;&amp; !range.contains((Number) target)) {
+errors.reject(CODE, &quot;Value &quot; + target + &quot; is out of the valid range &quot; + range);
+

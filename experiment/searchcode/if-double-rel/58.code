@@ -1,0 +1,12 @@
+if(rl.size() < 1)
+return -1.0;
+
+double d2 = getIdealDCG(rel, k);
+if(d2 <= 0.0)//I mean precisely &quot;=&quot;
+int size = k;
+if(k > rel.size() || k <= 0)
+size = rel.size();
+/*
+double dcg = rel.get(0);
+for(int i=1;i<size;i++)
+

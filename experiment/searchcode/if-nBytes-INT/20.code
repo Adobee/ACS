@@ -1,0 +1,18 @@
+public class RealType implements Type {
+private final int nbytes = 1;
+
+public RealType() {
+
+}
+
+@Override
+public boolean set(String field, Object value) {
+public Object get(String field) {
+if(field.toUpperCase().equals(&quot;_NBYTES_&quot;)){
+return this.nbytes;
+}else{
+return null;
+}
+}
+}
+

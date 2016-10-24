@@ -1,0 +1,9 @@
+public class MutableLong extends AbstractMutableInteger <MutableLong>
+{
+/** The default value if the default constructor is used. */
+public long multiply (final long nMultiplicand)
+{
+m_nValue *= nMultiplicand;
+onAfterChange ();
+return m_nValue;
+

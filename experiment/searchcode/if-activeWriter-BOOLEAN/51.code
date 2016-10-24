@@ -1,0 +1,10 @@
+public class LockCleanupManager {
+private final boolean prefWrite;
+private final LockManager activeWriter;
+private final LockManager activeReaders;
+activeReaders = new LockManager(trace);
+}
+
+public boolean isActiveLock() {
+return activeReaders.isActiveLock() || activeWriter.isActiveLock();
+

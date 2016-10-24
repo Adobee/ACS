@@ -1,0 +1,9 @@
+// Every value is-a Object
+assertEquals(fields, fields.hasValueType(Object.class));
+
+// No fields with value type Short
+assertFalse(fields.hasValueType(Short.class).exists());
+
+// The check box is the single Boolean field
+assertSame(checkBox, fields.hasValueType(Boolean.class).one());
+

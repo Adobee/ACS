@@ -1,0 +1,9 @@
+import org.apache.commons.math3.optim.OptimizationData;
+import org.apache.commons.math3.optim.PointValuePair;
+import org.apache.commons.math3.optim.linear.LinearConstraint;
+public class SimplexOracle implements Oracle<OptimizationData[], PointValuePair> {
+
+private static final double EPSILON = 1e-6;
+
+private static boolean validSolution(PointValuePair solution, List<LinearConstraint> constraints) {
+

@@ -1,0 +1,12 @@
+* @return
+*/
+public HQL order(String field,SORT sort){
+if(this.hasOrder()){
+this.orderBy.append(&quot; , &quot;);
+this.orderBy.append(field).append(&quot; &quot;).append(sort);
+return this;
+}
+public HQL addOrder(String order){
+if(this.hasOrder()){
+this.orderBy.append(&quot; , &quot;);
+

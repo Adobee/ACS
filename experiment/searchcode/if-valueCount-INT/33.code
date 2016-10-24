@@ -1,0 +1,11 @@
+public void set(String k, String v){
+if (db.containsKey(k)){
+String prev = db.get(k);
+valueCount.put(prev,(valueCount.get(prev) - 1));
+db.put(k,v);
+} else{
+db.put(k, v);
+}
+
+if (!valueCount.containsKey(v)){
+

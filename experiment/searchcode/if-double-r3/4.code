@@ -1,0 +1,10 @@
+public static void main(String[] args){
+double startR = 50;
+double r1,r2,r3;
+r1=r2=r3=startR;
+double r5 = getRadiusBig(r1, r2, r3);
+static public void getCircle(double r1, double r2, double r3,int depth){
+if(depth <= 0) return;
+List<Double> radList = Arrays.asList(r1,r2,r3);
+double r4 = getRadiusSmall(r1, r2, r3);
+

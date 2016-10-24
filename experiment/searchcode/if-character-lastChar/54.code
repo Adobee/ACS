@@ -1,0 +1,11 @@
+if (type != null) {
+readChar();
+} else if (Character.isWhitespace(lastChar)) {
+type = AgToken.Type.WS;
+while (lastChar != &#39;\n&#39;) readChar();
+readChar();
+}
+} else if (Character.isLetter(lastChar)) {
+do readChar();
+while (isIdCharacter(lastChar));
+

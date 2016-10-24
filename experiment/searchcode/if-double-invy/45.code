@@ -1,0 +1,12 @@
+posX = inX;
+posY = inY;
+}
+
+@Override
+void setSpeed(double inVX, double inVY) {
+v_x = inVX;
+v_y = inVY;
+// check whether the object in question is close enough
+if ((posX-objX)*(posX-objX)+(posY-objY)*(posY-objY) < (objR+rad)*(objR+rad)) {
+double tmpX = posX-objX;
+

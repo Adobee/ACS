@@ -1,0 +1,12 @@
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+
+int[] idx = new int[4];
+int[] sol = new int[4];
+
+for (int i=0;i<4;i++) {
+idx[i] = sc.nextInt();
+}
+
+boolean check = true ;
+

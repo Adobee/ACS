@@ -1,0 +1,14 @@
+public class BrokenClock implements Clock {
+private Date _time;
+protected long _millis;
+public BrokenClock(){
+this(new Date(0));
+}
+public BrokenClock(  Date time){
+long newMillis=newTime.getTime();
+if (newMillis == _millis)     return;
+_millis=newMillis;
+_time=newTime;
+}
+}
+

@@ -1,0 +1,9 @@
+Object objectSource = getObjectSource(key);
+if (objectSource instanceof SlxKeyedObjectPool)
+try {
+return ((SlxKeyedObjectPool) objectSource).borrowObject(key);
+throw new SlxException(Tmodule.POOL, Texception.POOL_BORROW_OBJECT_FAILD, &quot;borrow  Object faild&quot;, e);
+}
+if (objectSource instanceof SlxObjectPool)
+try {
+

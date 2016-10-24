@@ -1,0 +1,9 @@
+double delta, snorm, one = 1.0;
+double alpha, f, fnew, prered, actred, gs;
+int search = 1, iter = 1, inc = 1;
+// delta = dnrm2_(&amp;n, g, &amp;inc);
+double gnorm1 = delta;
+double gnorm = gnorm1;
+
+if ( gnorm <= eps * gnorm1 ) search = 0;
+

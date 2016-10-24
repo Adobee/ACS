@@ -1,0 +1,12 @@
+* be incremented or cleared.
+*/
+protected boolean incMoment;
+
+/**
+* Constructs a Skewness
+* @see org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic#increment(double)
+*/
+public void increment(final double d) {
+if (incMoment) {
+moment.increment(d);
+

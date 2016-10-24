@@ -1,0 +1,11 @@
+static Type getGenericSupertype(Type context, Class<?> rawType, Class<?> toResolve) {
+if (toResolve == rawType) {
+return context;
+}
+
+// we skip searching through interfaces if unknown is an interface
+for (int i = 0, length = interfaces.length; i < length; i++) {
+if (interfaces[i] == toResolve) {
+return rawType.getGenericInterfaces()[i];
+} else if (toResolve.isAssignableFrom(interfaces[i])) {
+

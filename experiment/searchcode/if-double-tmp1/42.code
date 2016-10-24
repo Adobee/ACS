@@ -1,0 +1,7 @@
+for (int i = 3; i>=0; i--){	//if odrNo>10^3 then length will incr
+if((double)grnNo<java.lang.Math.pow((double)10, (double)i)){
+res[i][2]=tmp[i][1]+&quot;&quot;; // mat name
+double tmp1=0;
+
+if(Double.parseDouble(tmp[i][3])==0){ // general
+

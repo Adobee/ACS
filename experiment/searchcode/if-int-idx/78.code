@@ -1,0 +1,10 @@
+return isMatch(s, p, 0, 0);
+}
+
+private boolean isMatch(String s, String p, int idxS, int idxP){
+if(idxS == s.length() &amp;&amp; idxP == p.length()){
+return true;
+}
+if(idxP == p.length()){
+return false;
+

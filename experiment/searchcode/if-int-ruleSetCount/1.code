@@ -1,0 +1,7 @@
+RuleElements postconditionsFromDatabase;
+
+for (int i = 0; i < percepRecord.size() -1; i++) {
+//If it&#39;s all wildcards it&#39;ll match everything
+for (int ruleSetCount = 0; ruleSetCount < ruleSet.size(); ruleSetCount ++) {
+if (outputFluent.isEqual(ruleSet.get(ruleSetCount).getSuccessor().getFirstNonWildcard())) {
+

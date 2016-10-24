@@ -1,0 +1,7 @@
+return null == newArgs ? call : call.arguments(newArgs);
+} else if (n instanceof New_c) {
+New_c asNew = (New_c)n;
+List<Expr> newArgs = castActualsToFormals(args, formals);
+return null == newArgs ? asNew : asNew.arguments(newArgs);
+} else if (n instanceof Conditional_c) {
+

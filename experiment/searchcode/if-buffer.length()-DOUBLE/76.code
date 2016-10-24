@@ -1,0 +1,11 @@
+buffer[ bufferSize++ ] = (byte) ( s >> 8 );
+
+if ( bufferSize >= buffer.length )
+{
+line.write( buffer, 0, buffer.length );
+bufferSize = 0;
+}
+}
+
+public static double[] tone( final double hz, final double duration )
+

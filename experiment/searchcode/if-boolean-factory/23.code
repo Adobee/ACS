@@ -1,0 +1,17 @@
+private static SessionFactory sessionFactory = null;
+
+private DbConnectionManager() {
+
+
+
+}
+
+public static SessionFactory getSessionFactory() {
+if(sessionFactory == null || sessionFactory.isClosed()) {
+sessionFactory = new Configuration().configure().buildSessionFactory();
+}
+return sessionFactory;
+}
+
+public static boolean shutDown() {
+

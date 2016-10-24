@@ -1,0 +1,15 @@
+private Iterator<T> iterator;
+
+public ImmutableIterator(Iterator<T> iterator) {
+if (iterator == null) {
+this.iterator = iterator;
+}
+
+@Override
+public boolean hasNext() {
+return iterator.hasNext();
+}
+
+@Override
+public T next() {
+

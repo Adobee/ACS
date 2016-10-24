@@ -1,0 +1,8 @@
+public int getNumShards() {
+int numShards = 0;
+PersistenceManager pm = PMF.get().getPersistenceManager();
+try {
+Counter current = getThisCounter(pm);
+if (current != null) {
+numShards = current.getShardCount().intValue();
+

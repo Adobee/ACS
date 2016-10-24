@@ -1,0 +1,8 @@
+private ExecutorService executorService;
+private int maxRequests;
+private int maxRequestsPerHost;
+private final Deque<AsyncCall> readyCalls;
+public final synchronized void setMaxRequestsPerHost(int maxRequestsPerHost) {
+if (maxRequestsPerHost <= 0) {
+throw new IllegalArgumentException(&quot;max < 1: &quot; + maxRequestsPerHost);
+

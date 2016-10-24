@@ -1,0 +1,7 @@
+DBObject row = db.getCollection(&quot;US.eBayDetails&quot;).findOne();
+BasicDBList sitedetails = (BasicDBList) row.get(&quot;SiteDetails&quot;);
+for (Object sitedbo : sitedetails) {
+siteid = Integer.parseInt(((BasicDBObject) sitedbo).getString(&quot;SiteID&quot;));
+
+if (site.equals(&quot;US&quot;)) continue;
+

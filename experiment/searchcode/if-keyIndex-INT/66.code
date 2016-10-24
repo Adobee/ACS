@@ -1,0 +1,15 @@
+private final byte[] key;
+
+private int keyIndex = 0;
+
+public XorOutputStream(OutputStream in, String key) {
+private byte getKeyByte() {
+keyIndex++;
+if (keyIndex >= key.length) {
+keyIndex = 0;
+}
+return key[keyIndex];
+}
+
+}
+

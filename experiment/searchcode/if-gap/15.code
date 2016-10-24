@@ -1,0 +1,20 @@
+boolean gapStarted = false;
+while (x > 0) {
+int remain = x % 2;
+x = x / 2;
+if (remain > 0) {
+if (gapStarted) {
+if (maxGap < gap)
+gapStarted = true;
+}
+} else {
+if (gapStarted)
+gap++;
+}
+}
+
+return maxGap;
+}
+
+}
+

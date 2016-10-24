@@ -1,0 +1,10 @@
+package io.subutai.plugin.accumulo.impl;
+
+
+import io.subutai.common.command.RequestBuilder;
+import io.subutai.common.settings.Common;
+&quot;apt-get --force-yes --assume-yes purge &quot; + Common.PACKAGE_PREFIX + AccumuloClusterConfig.PRODUCT_KEY
+.toLowerCase();
+
+public static final RequestBuilder startCommand = new RequestBuilder( &quot;/etc/init.d/accumulo start&quot; ).daemon();
+

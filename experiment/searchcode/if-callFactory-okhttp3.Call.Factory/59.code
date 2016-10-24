@@ -1,0 +1,9 @@
+private final Map<Method, MethodHandler> methodHandlerCache = new LinkedHashMap<>();
+
+private final okhttp3.Call.Factory callFactory;
+private final BaseUrl baseUrl;
+private final boolean validateEagerly;
+
+Retrofit(okhttp3.Call.Factory callFactory, BaseUrl baseUrl,
+List<Converter.Factory> converterFactories, List<CallAdapter.Factory> adapterFactories,
+

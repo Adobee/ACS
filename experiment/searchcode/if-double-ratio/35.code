@@ -1,0 +1,8 @@
+Double ratioMin = null, ratioMax = null;
+for (double ratio : ratios) {
+if (ratio == 0) {
+nZeros++;
+double ratio = ratios.get(index);
+double logRatio = FastMath.log10(ratio);
+if (ratioMin == null || logRatio < ratioMin) {
+

@@ -1,0 +1,10 @@
+public static String extractMediaType(final String queryText) {
+// podcast,image,webpage,video
+Matcher matcher = mediaTypePattern.matcher(queryText);
+
+if (matcher.find()) {
+public static String removeMediaType(String queryText) {
+Matcher matcher = mediaTypePattern.matcher(queryText);
+if (matcher.find()) {
+int endIndex = matcher.end();
+

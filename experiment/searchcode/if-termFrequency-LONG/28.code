@@ -1,0 +1,11 @@
+private Map<String, Long> posTermFrequency;
+private Map<String, Long> negTermFrequency;
+private Map<String, Long> termFrequency;
+//                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+
+
+
+
+termFrequency = new HashMap<>(posTermFrequency);
+for(Map.Entry<String, Long> entry : negTermFrequency.entrySet()){
+

@@ -1,0 +1,8 @@
+private boolean file;
+
+private int replacementOffset;
+private int replacementLength;
+private String replacementString;
+int replacementOffset, int replacementLength, int cursorPosition ){
+proposal = new CompletionProposal( replacementString,
+

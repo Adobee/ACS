@@ -1,0 +1,14 @@
+private static ExitStatus instance;
+
+
+private ExitStatus(int status) {
+this.status = status;
+}
+
+public int status;
+
+
+public synchronized static int getStatus() {
+if (instance == null) {
+instance = new ExitStatus(0);
+

@@ -1,0 +1,9 @@
+query = query.toLowerCase();
+BooleanQuery.setMaxClauseCount(query.length());
+
+Analyzer analyzer;
+if (field.equals(IndexedDocument.FIELD_REAL_ID)) {
+analyzer = new SimpleAnalyzer(
+Version.LUCENE_CURRENT);
+} else if (field.equals(IndexedDocument.FIELD_NAMED_ENTITIES)) {
+

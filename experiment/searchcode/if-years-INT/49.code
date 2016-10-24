@@ -1,0 +1,8 @@
+private PackageDAO packageDAO;
+private int tipoTransaccion = 0;
+private YearsBO yearsBO = this;
+switch (tipoTransaccion) {
+case BUSCAR_PK:
+v = packageDAO.findByQuerySinTx(years);
+if (v.size() > 0) {
+

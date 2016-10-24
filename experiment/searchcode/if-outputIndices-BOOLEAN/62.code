@@ -1,0 +1,10 @@
+indices.put(indexHealth.getIndex(), indexHealth);
+}
+timedOut = in.readBoolean();
+size = in.readVInt();
+if (size == 0) {
+builder.field(Fields.NUMBER_OF_IN_FLIGHT_FETCH, getNumberOfInFlightFetch());
+
+String level = params.param(&quot;level&quot;, &quot;cluster&quot;);
+boolean outputIndices = &quot;indices&quot;.equals(level) || &quot;shards&quot;.equals(level);
+

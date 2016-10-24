@@ -1,0 +1,15 @@
+this.hours = new HashMap<Integer, Hours>();
+}
+
+Hours retrieveHours(int numeral) {
+
+Hours result = getHours(numeral);
+
+if (result == null) {
+addHours(numeral, result);
+}
+return result;
+}
+private void addHours(int numeral, Hours hour) {
+hours.put(numeral, hour);
+

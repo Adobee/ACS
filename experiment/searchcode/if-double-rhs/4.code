@@ -1,0 +1,12 @@
+public boolean lessThan(Tuple rhs) {
+double rhs_coords[] = rhs.getCoords();
+if (coords[0] < rhs_coords[0])
+return true;
+if (coords[0] > rhs_coords[0])
+return coords[2] < rhs_coords[2];
+}
+
+public boolean greaterThan(Tuple rhs) {
+double rhs_coords[] = rhs.getCoords();
+if (coords[0] > rhs_coords[0])
+

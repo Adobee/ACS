@@ -1,0 +1,11 @@
+private final AtomicInteger streamId;
+
+public StreamIdGenerator() {
+this.streamId = new AtomicInteger(0);
+}
+
+public static StreamIdGenerator newInstance() {
+public int next() {
+if (streamId.get() > Integer.MAX_VALUE - 10000) {
+return streamId.getAndSet(0);
+

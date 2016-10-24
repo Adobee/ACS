@@ -1,0 +1,11 @@
+if (!super.remove()) return false;
+if (ownerType != null)
+ownerType.release();
+if (type != null)
+type.release();
+return true;
+}
+
+public void setOwnerType(Type ownerType) {
+if (this.ownerType != null)
+

@@ -1,0 +1,11 @@
+private PendingPost head;
+private PendingPost tail;
+
+synchronized void enqueue(PendingPost pendingPost) {
+if (pendingPost == null) {
+throw new NullPointerException(&quot;null cannot be enqueued&quot;);
+}
+if (tail != null) {
+tail.next = pendingPost;
+tail = pendingPost;
+

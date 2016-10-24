@@ -1,0 +1,15 @@
+public class UniqueSketch extends CountMinSketch{
+
+private int docCount = 0;
+private Set<String> knownWords = new HashSet<String>();
+public void addWord(String word){
+
+if (!knownWords.contains(word)){
+
+super.addWord(word);
+}
+
+}
+
+public void resetUnique(){
+

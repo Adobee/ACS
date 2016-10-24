@@ -1,0 +1,7 @@
+int targetSlop = Math.min(nq.getSlop(), maxSlop);
+if (targetSlop == nq.getSlop())
+return super.rewrite(nq);
+
+// Okay, rewrite and reset the slop.
+SpanNearQuery newQ = (SpanNearQuery)super.rewrite(nq);
+

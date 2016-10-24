@@ -1,0 +1,9 @@
+this.in = in;
+}
+
+public byte[] receiveData() throws IOException
+{
+int byteCount = receiveMessageLength();
+if (byteCount > MAX_BUFFER_SIZE) {
+throw new IOException(&quot;Suspiciously big data chunk size&quot;);
+

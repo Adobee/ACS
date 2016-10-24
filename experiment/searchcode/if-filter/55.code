@@ -1,0 +1,14 @@
+package filters.impl;
+
+import filters.TagFilter;
+import utility.Tag;
+
+public abstract class AbstractTagFilter implements TagFilter {
+public AbstractTagFilter(TagFilter filter) {
+this.chainFilter = filter;
+}
+
+@Override
+public Tag[] filterTags(Tag[] tags) {
+if (chainFilter != null)
+

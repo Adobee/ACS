@@ -1,0 +1,13 @@
+lines = new ArrayList<String>();
+}
+
+public void addLine(String msg) {
+lines.add(msg);
+}
+
+public void draw(Graphics g) {
+if(!Application.INTER_RENDER) return;
+for(int i = 0; i < Math.min(lines.size(), 10); i++) {
+g.setColor(Color.BLACK);
+g.drawString(lines.get(lines.size()-i-1), 13, 963 - (i * 20));
+

@@ -1,0 +1,10 @@
+@Override
+protected void unhookListener(K removedKey) {
+if (cachedValues != null) {
+if (listener != null)
+listener.removeFrom(removedKey);
+cachedValues.remove(removedKey);
+staleKeys.remove(removedKey);
+}
+}
+

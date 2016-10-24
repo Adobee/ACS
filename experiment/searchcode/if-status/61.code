@@ -1,0 +1,10 @@
+return convertStatus(status);
+}
+
+@NotNull
+public static FileStatus convertStatus(@Nullable final Status status) {
+if (status == null) {
+return FileStatus.UNKNOWN;
+}
+if (status.is(StatusType.STATUS_UNVERSIONED)) {
+

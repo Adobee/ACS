@@ -1,0 +1,10 @@
+abstract public class AbstractMultipartRequest<T extends AbstractMultipartRequest> extends AbstractSendRequest<T> {
+
+private final boolean isMultipart;
+private String fileName;
+
+public AbstractMultipartRequest(Object chatId, Object file) {
+if (file instanceof String) {
+isMultipart = false;
+} else if (file instanceof File) {
+

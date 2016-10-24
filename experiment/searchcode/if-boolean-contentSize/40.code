@@ -1,0 +1,11 @@
+public void setContentSize(float size)
+{
+if(size >= viewSize)
+contentSize = size;
+else
+contentSize = viewSize;
+private boolean InRefreshRegionBottom(float pos)
+{
+float end = pos + contentSize;
+if(end >= viewSize + limitScrollRange[1] &amp;&amp; end <= viewSize)
+

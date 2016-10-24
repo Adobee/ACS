@@ -1,0 +1,9 @@
+public Map<K, V> call(Map<K, V> kvMap) {
+V mergedValue = mergeFunction.call(kvMap.get(key));
+
+if (!kvMap.containsKey(key) || kvMap.get(key) == null || !kvMap.get(key).equals(mergedValue)) {
+Map<K, V> kvMapCopy = copyMap(kvMap);
+
+if (mergedValue == null) {
+kvMapCopy.remove(key);
+

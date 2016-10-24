@@ -1,0 +1,14 @@
+private static final long serialVersionUID = 1L;
+
+@Override
+public abstract double toReal(double nonReal);
+
+@Override
+public abstract double fromReal(double real);
+return toReal(x) <= toReal(y);
+}
+
+@Override
+public boolean eq(double a, double b, double delta) {
+if (toReal(a) == toReal(b)) {
+

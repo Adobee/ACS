@@ -1,0 +1,8 @@
+public static double interpolate(double x1, double y1, double x2, double y2, double xFind) {
+double slope;
+
+if (xFind == x1) {
+//returns the correct number even if x1, x2 and xFind are the same
+//same as linear interpolation?
+public static double secant(double a, double b, double ya, double yb) {
+

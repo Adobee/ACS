@@ -1,0 +1,10 @@
+package io.keen.client.java.result;
+
+/**
+* LongResult is for if the QueryResult object is of type Long.
+*
+* @author claireyoung
+* @since 1.0.0, 07/06/15
+*/
+public class LongResult extends QueryResult {
+

@@ -1,0 +1,21 @@
+for(int i=0;i<m;i++){
+for(int j=0;j<n;j++){
+if(x[i][j] == 0){
+rows[i] = 1;
+columns[j] = 1;
+}
+}
+}
+
+for(int i=0;i<m;i++){
+for(int j=0;j<n;j++){
+if(rows[i] == 1 || columns[j] == 1)
+x[i][j] = 0;
+}
+}
+
+System.out.println(x);
+}
+
+}
+

@@ -1,0 +1,8 @@
+Double speed = new Double(0);
+Double direction = new Double(0);
+
+if (json != null) {
+try {
+speed = windObject.getDouble(PROPERTY_SPEED);
+if (windObject.has(PROPERTY_DIRECTION))
+

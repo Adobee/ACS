@@ -1,0 +1,9 @@
+TimePeriod timePeriod, Map<String, Object> queryParameters
+)
+{
+if (timePeriod == null || !timePeriod.isConfining())
+return;
+jdoql.append(&quot;&amp;&amp; (&quot;);
+if (timePeriod.isFromSet())
+jdoql.append(variable+&quot; >= :&quot;+timePeriodVarName+&quot;From&quot;);
+

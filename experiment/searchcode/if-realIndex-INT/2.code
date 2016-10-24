@@ -1,0 +1,15 @@
+resize();
+m[realIndex(end)] = s;
+end ++;
+}
+public String dequeue(){
+if(isEmpty())
+throw new RuntimeException(&quot;Queue is empty&quot;);
+for(int i = start; i < end; i ++){
+buff.append(m[realIndex(i)]);
+buff.append(&quot;, &quot;);
+}
+return buff.toString();
+}
+public int size(){
+

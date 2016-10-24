@@ -1,0 +1,11 @@
+//虽然不是很严格的同步，但是不会出现太多内存泄露
+public class SimpleByteArrayPool
+{
+private final int arrayLength;
+private final int poolSize;
+private final ConcurrentLinkedQueue<byte[]> pool;
+
+public SimpleByteArrayPool(int poolsize, int arraylength)
+{
+this.arrayLength = arraylength;
+

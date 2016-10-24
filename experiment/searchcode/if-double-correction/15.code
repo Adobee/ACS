@@ -1,0 +1,10 @@
+import edu.wpi.first.wpilibj.Gyro;
+import edu.wpi.first.wpilibj.Timer;
+
+public class CorrectedGyro extends Gyro{
+double correctionFactor;
+Timer t;
+
+public CorrectedGyro(AnalogInput channel, double correctionFactor) {
+super(channel);
+

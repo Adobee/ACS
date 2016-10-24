@@ -1,0 +1,13 @@
+DayOfWeek dayOfWeek = DayOfWeek.of(temporal.get(ChronoField.DAY_OF_WEEK));
+int daysToAdd = 1;
+if (dayOfWeek == DayOfWeek.FRIDAY ) {
+daysToAdd = 3;
+} else if (dayOfWeek == DayOfWeek.SATURDAY) {
+daysToAdd = 2;
+}
+
+return temporal.plus(daysToAdd, ChronoUnit.DAYS);
+}
+
+}
+

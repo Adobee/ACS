@@ -1,0 +1,11 @@
+// dynamic programming: ×î´ó×Ó¶ÎºÍ
+public int maxProfit(int[] prices) {
+if (prices.length < 2)
+return 0;
+int profit[] = new int[prices.length];
+for (int i = 1; i < prices.length; i++) {
+profit[i] = prices[i] - prices[i - 1];
+}
+
+int maximumProfit[] = new int[profit.length];
+

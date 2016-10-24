@@ -1,0 +1,9 @@
+int iterationId = continueUnfinishedStoriesForm.getIterationId();
+if (iterationId != 0) {
+Iteration iteration = (Iteration) session.load(Iteration.class, new Integer(iterationId));
+populateManyToOneIds(continueUnfinishedStoriesForm, iteration);
+}
+}
+
+protected void saveForm(ContinueUnfinishedStoriesForm selectionForm,
+

@@ -1,0 +1,9 @@
+jjtGetChild(0).interpret();
+jjtGetChild(1).interpret();
+
+if (stack[top] instanceof Boolean)
+stack[--top] = new Boolean(((Boolean)stack[top]).booleanValue() &amp;
+((Boolean)stack[ + 1]).booleanValue());
+else if (stack[top] instanceof Integer)
+stack[--top] = new Integer(((Integer)stack[top]).intValue() &amp;
+

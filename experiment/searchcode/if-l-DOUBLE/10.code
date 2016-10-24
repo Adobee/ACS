@@ -1,0 +1,8 @@
+public  double  easeIn(double t,double b , double c, double d ) {
+if (t==0) return b;  if ((t/=d)==1) return b+c;
+double p=d*.3f;
+public  double  easeIn(double t,double b , double c, double d, double a, double p) {
+double s;
+if (t==0) return b;  if ((t/=d)==1) return b+c;
+if (a < Math.abs(c)) { a=c;  s=p/4; }
+

@@ -1,0 +1,9 @@
+public class ProductFilterGenerator implements FilterGenerator {
+
+public Filter generateFilter(String filterString) {
+if (!filterString.endsWith(&quot;*&quot;)) {
+filterString = filterString + &quot;*&quot;;
+}
+
+if (filterString != null &amp;&amp; !&quot;&quot;.equals(filterString)) {
+

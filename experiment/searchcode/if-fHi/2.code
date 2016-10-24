@@ -1,0 +1,6 @@
+List list = this.dbDao.queryObjects(&quot;select new com.fhi.journal.vo.FhiJournalVote(sum(vote.good),sum(vote.ordinary),sum(vote.noGood)) from FhiJournalVote vote where code=&#39;&quot; + code + &quot;&#39;&quot;);
+if(list.size()==1){
+int c = this.dbDao.count(&quot;from FhiJournalVote where code=&#39;&quot; + code + &quot;&#39; and creater=&#39;&quot;+userId+&quot;&#39;&quot;);
+if(c==0){
+vote_.setCode(code);
+

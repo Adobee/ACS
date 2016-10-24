@@ -1,0 +1,7 @@
+public void afterInboundRewrite(HttpServletRewrite event)
+{
+if (Boolean.TRUE.equals(event.getRewriteContext().get(JOIN_DISABLED_RESET_NEXT_KEY)))
+else if (Boolean.TRUE.equals(event.getRewriteContext().get(JOIN_DISABLED_KEY)))
+{
+event.getRewriteContext().put(JOIN_DISABLED_RESET_NEXT_KEY, true);
+

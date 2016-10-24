@@ -1,0 +1,11 @@
+private Point p0;
+private Point p1;
+
+public Line(Point p0, double l, double rot) {
+super(p0.getX() + l * Math.cos(rot) / 2, p0.getY() - l * Math.sin(rot) / 2, rot);
+init(Math.hypot(p1.getX() - p0.getX(), p1.getY() - p0.getY()));
+}
+
+private void init(double l) {
+this.p0.parent = this;
+

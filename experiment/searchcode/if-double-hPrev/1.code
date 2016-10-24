@@ -1,0 +1,8 @@
+* @throws MaxCountExceededException if maximal number of iterations is reached
+*/
+public double evaluate(double x, int maxIterations)
+hN = hPrev * deltaN;
+
+if (Double.isInfinite(hN)) {
+throw new ConvergenceException(LocalizedFormats.CONTINUED_FRACTION_INFINITY_DIVERGENCE,
+

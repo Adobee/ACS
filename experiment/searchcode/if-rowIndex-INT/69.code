@@ -1,0 +1,6 @@
+String[][] matrix = new String[height][width];
+
+for (int rowIndex = 0; rowIndex < height; rowIndex++) {
+for (int colIndex = 0; colIndex < width; colIndex++) {
+if (rowIndex % width == colIndex | (width - rowIndex % width) == colIndex + 1)
+

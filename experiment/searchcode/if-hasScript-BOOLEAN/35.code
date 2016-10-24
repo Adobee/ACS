@@ -1,0 +1,10 @@
+return (ArrayList<String>) GroovyEngine.eval(tableName + &quot;.GROUP&quot;, &quot;subscribeData&quot;);
+}
+
+static Boolean getSubscribeOldData(String tableName)
+throws GroovyScriptNotFoundExcetpion, GroovyScriptExecuteExcetpion {
+return (Boolean) GroovyEngine.eval(tableName + &quot;.GROUP&quot;, &quot;subscribeOldData&quot;);
+}
+
+static boolean hasScript(String tableName){
+

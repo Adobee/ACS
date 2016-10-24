@@ -1,0 +1,14 @@
+private static MemPersistor instance;
+
+public static MemPersistor getInstance() {
+if (instance == null) {
+throw new RuntimeException(&quot;Failed to open internal h2 connection &quot;+sqle.getMessage());
+}
+
+}
+
+public void disconnectThread(){
+}
+
+public boolean isCached(Locator locator) {
+

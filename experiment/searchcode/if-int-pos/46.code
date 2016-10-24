@@ -1,0 +1,9 @@
+for (int i = ary.length - 1; i > 0; i--){
+int root = ary[0];
+ary[0] = ary[i];
+ary[i] = root;
+int pos = 0;
+while ((pos * 2 + 1 <= i - 1 &amp;&amp; ary[pos] < ary[pos * 2 + 1]) || (pos * 2 + 2 <= i - 1 &amp;&amp; ary[pos] < ary[pos * 2 + 2])){
+int next = 0;
+if ((pos * 2 + 1 <= i - 1 &amp;&amp; ary[pos] < ary[pos * 2 + 1]) &amp;&amp; (pos * 2 + 2 <= i - 1 &amp;&amp; ary[pos] < ary[pos * 2 + 2])){
+

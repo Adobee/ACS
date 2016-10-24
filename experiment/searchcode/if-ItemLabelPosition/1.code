@@ -1,0 +1,8 @@
+* You should have received a copy of the GNU Lesser General Public
+* License along with this library; if not, write to the Free Software
+import org.jfree.chart.TestUtilities;
+import org.junit.Test;
+
+/**
+* Tests for the {@link ItemLabelPosition} class.
+

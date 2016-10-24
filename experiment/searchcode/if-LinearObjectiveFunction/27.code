@@ -1,0 +1,8 @@
+// not provided in the argument list.
+for(OptimizationData data : optData) {
+if(data instanceof LinearObjectiveFunction) {
+function = (LinearObjectiveFunction)data;
+continue;
+}
+if(data instanceof LinearConstraintSet) {
+

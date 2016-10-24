@@ -1,0 +1,10 @@
+String[] dimensions = matrixDimensionFromDialog.split(&quot; &quot;);
+
+int rowDimension = Integer.parseInt(dimensions[0]);
+
+int columnDimension = Integer.parseInt(dimensions[1]);
+public static double[][] getMatrixFromDialogInput(int rowDimension,
+int columnDimension, String title) {
+
+double[][] matrixFromDialog = new double[rowDimension][columnDimension];
+

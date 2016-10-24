@@ -1,0 +1,9 @@
+public class PreciseDurationField extends BaseDurationField {
+
+private static final long serialVersionUID = -8346152187724495365L;
+
+/** The size of the unit */
+public PreciseDurationField(DurationFieldType type, long unitMillis) {
+super(type);
+iUnitMillis = unitMillis;
+

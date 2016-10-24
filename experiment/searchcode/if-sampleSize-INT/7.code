@@ -1,0 +1,10 @@
+public final class DrawSample<T> implements ObjectBuilder<T[]> {
+final T[] array;
+final int sampleSize;
+public DrawSample(T[] array, int sampleSize) {
+this.array = array;
+this.sampleSize = sampleSize;
+}
+
+@SuppressWarnings(&quot;unchecked&quot;)
+

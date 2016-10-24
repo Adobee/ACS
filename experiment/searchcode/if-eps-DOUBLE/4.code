@@ -1,0 +1,10 @@
+private Double epsGrowthRate;
+
+public Double getFinalScore(){
+if(EpsEvalResult.UNKNOWN.equals(epsMark)) return Double.NaN;
+boolean epsGrows = (epsGrowthRate != null) &amp;&amp; (epsGrowthRate.doubleValue() >= 0.019);
+if(!epsGrows) return BAD;
+
+double result = 0.0;
+if(epsMark.equals(EpsEvalResult.EXCELLENT)){
+

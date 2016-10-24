@@ -1,0 +1,9 @@
+version = version.toLowerCase();
+
+if (!version.startsWith(VERSION_PREFIX)) {
+throw new IllegalArgumentException(&quot;Version must start with &quot; + VERSION_PREFIX + &quot;, but is &quot; + version);
+minorVersion = Integer.parseInt(versionPart);
+
+if (tokenizer.hasMoreTokens()) {
+versionPart = tokenizer.nextToken();
+

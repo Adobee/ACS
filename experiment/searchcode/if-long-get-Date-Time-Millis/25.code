@@ -1,0 +1,8 @@
+* @see com.eprize.montana.common.model.promotion.time.ITimekeeper#setTimeToDate(java.sql.Date)
+*/
+public void setTimeToDate(Date date) {
+
+long dateMillis = date.getTime();
+long currentTimeMillis = this.getCurrentTimeInMillis();
+if (dateMillis > currentTimeMillis) {
+

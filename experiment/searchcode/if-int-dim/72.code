@@ -1,0 +1,8 @@
+private int dimDeviceIdDimDevice;
+
+public IteractionHasDimDeviceId() {
+}
+
+public IteractionHasDimDeviceId(int iteractionIdIteraction, int dimDeviceIdDimDevice) {
+this.iteractionIdIteraction = iteractionIdIteraction;
+

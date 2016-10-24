@@ -1,0 +1,7 @@
+private final SortedMap<Integer, T> circle = new TreeMap<Integer, T>();
+
+public ConsistentHash(int numberOfReplicas, Collection<T> nodes) {
+this(new SimpleHash(), numberOfReplicas, nodes);
+}
+private ConsistentHash(HashFunction hashFunction, int numberOfReplicas, Collection<T> nodes) {
+

@@ -1,0 +1,6 @@
+//&quot;?&quot; means that income url has params
+if(baseUrl.contains(&quot;?&quot;)) {
+paramsOfBaseUrl = &quot;&amp;&quot; + baseUrl.substring(baseUrl.indexOf(&quot;?&quot;)+1, baseUrl.length());
+//Build OAuth request params
+HttpUrl.Builder builder = originalHttpUrl.newBuilder(baseUrl)
+

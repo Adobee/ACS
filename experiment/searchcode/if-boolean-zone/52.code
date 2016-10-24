@@ -1,0 +1,12 @@
+String label, String[] args) {
+
+boolean rval = false;
+
+if (args.length == 1) {
+final String zoneName = args[0];
+
+final SecureZoneZone zone = plugin.getZone(zoneName);
+
+if (zone != null) {
+plugin.delZone(zone);
+

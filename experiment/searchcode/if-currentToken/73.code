@@ -1,0 +1,14 @@
+private final List<Token> tokens = new ArrayList<>();
+
+private int currentToken;
+
+public TokenStream(final List<Token> tokens) {
+this.tokens.addAll(tokens);
+final Token next = peek();
+currentToken++;
+return next;
+}
+
+public Token peek() {
+if (currentToken == tokens.size()) {
+

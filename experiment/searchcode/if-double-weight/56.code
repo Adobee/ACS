@@ -1,0 +1,10 @@
+public class Thing implements Comparable {
+private final double weight;
+
+public Thing(final double weight) {
+this.weight = weight;
+}
+
+public double getWeight() {
+return weight;
+

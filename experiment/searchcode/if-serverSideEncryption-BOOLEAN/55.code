@@ -1,0 +1,5 @@
+public DefaultS3OutputStream(S3BlobStore blobStore, String bucketName, String blobName, int bufferSizeInBytes, int numberOfRetries, boolean serverSideEncryption) {
+super(blobStore, bucketName, blobName, bufferSizeInBytes, numberOfRetries, serverSideEncryption);
+public void flush(byte[] bytes, int off, int len, boolean closing) throws IOException {
+if (len > MULTIPART_MAX_SIZE.getBytes()) {
+

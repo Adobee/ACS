@@ -1,0 +1,11 @@
+jackson.configure(SerializationConfig.Feature.WRITE_NULL_PROPERTIES, false);
+}
+private String requestId;
+private String queryJson;
+private Long expiresAt;
+private UUID userGuid;
+JsonMappingException, IOException {
+String json = jackson.writeValueAsString(query);
+
+Long expiresAt = new Date().getTime() + (validPeriod * 1000);
+

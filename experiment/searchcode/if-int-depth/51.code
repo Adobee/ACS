@@ -1,0 +1,10 @@
+return true;
+}
+int leftDepth = depth(root.left);
+int rightDepth = depth(root.right);
+if (leftDepth >= 0 &amp;&amp; rightDepth >= 0 &amp;&amp; leftDepth - rightDepth >= -1 &amp;&amp; leftDepth - rightDepth <= 1) {
+} else {
+int leftDepth = depth(root.left);
+int rightDepth = depth(root.right);
+if (leftDepth - rightDepth >= -1 &amp;&amp; leftDepth - rightDepth <= 1) {
+

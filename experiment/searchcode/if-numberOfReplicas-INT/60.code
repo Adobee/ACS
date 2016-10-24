@@ -1,0 +1,9 @@
+/** Hash计算对象，用于自定义hash算法 */
+HashFunc hashFunc;
+/** 复制的节点个数 */
+private final int numberOfReplicas;
+/** 一致性Hash环 */
+public ConsistentHash(int numberOfReplicas, Collection<T> nodes) {
+this.numberOfReplicas = numberOfReplicas;
+this.hashFunc = new HashFunc() {
+

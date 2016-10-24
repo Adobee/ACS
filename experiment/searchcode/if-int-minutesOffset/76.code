@@ -1,0 +1,7 @@
+for (Iterator<Backlog> i = iters.iterator();i.hasNext();){
+int backlogId = i.next().getId();
+if (checkAccess(backlogId)) {
+List<User> selectedUsers = new ArrayList<User>();
+for(int userId : this.getUserIds()) {
+if (userId != UserBusiness.NON_EXISTENT_USER_ID) {
+

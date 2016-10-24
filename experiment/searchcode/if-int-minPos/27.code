@@ -1,0 +1,13 @@
+for (int i = 2; i < a.length - 1; i++) {
+int minPos = minimumPosition(a, i);
+ArrayUtil.swap(a, minPos, i);
+for (int i = from + 1; i < a.length; i++){
+if(a[i] < a[minPos]){
+minPos = i;
+}
+}
+return minPos;
+}
+
+}
+

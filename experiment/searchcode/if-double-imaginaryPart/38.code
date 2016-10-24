@@ -1,0 +1,9 @@
+* @param realPart
+* @param imaginaryPart
+*/
+
+public Complex(double realPart, double imaginaryPart){
+if (val instanceof Rational){
+Rational comp = (Rational)val;
+if(!this.imaginaryPart.isZero()){
+

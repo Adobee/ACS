@@ -1,0 +1,9 @@
+public ByteBuffer getData(int numbytes) {
+
+
+while (bytesleft < numbytes) {
+if (in_stream.remaining() < 2) {
+buffer = new byte[bytesleft + 2 * codeword];
+if (bytesleft != 0) {
+System.arraycopy(t_buffer, 0, buffer, 0, bytesleft);
+

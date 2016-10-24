@@ -1,0 +1,14 @@
+private  String mCurTag = &quot;&quot;;
+private  int mStep = 0;
+private  boolean mStarted = false;
+
+public void start(String tag) {
+mStarted = true;
+mStep = 0;
+}
+public long tick() {
+if(mStarted == false) {
+return 0;
+}
+long interval = System.currentTimeMillis() - mPrevTime;
+

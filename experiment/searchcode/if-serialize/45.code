@@ -1,0 +1,8 @@
+public static LazySerializeType getFromType(int type) {
+if (type < 1 || type >= TYPE_MAX_INDEX) {
+return LazySerializeType.TYPE_UNKNOWN;
+public static LazySerializeType getSerializeType(Object value) {
+if (value instanceof Integer) {
+return LazySerializeType.TYPE_INT;
+} else if (value instanceof Long) {
+

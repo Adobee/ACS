@@ -1,0 +1,13 @@
+public boolean stop()
+{
+if ((iterations >= maxIterations) || (Math.abs(previousY) < epsilon))
+{
+return true;
+throw new RuntimeException(&quot;Double.isNaN(epsilon)&quot;);
+}
+
+// Nonnegative:
+if (maxIterations < 0)
+{
+throw new RuntimeException(&quot;maxIterations < 0&quot;);
+

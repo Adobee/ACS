@@ -1,0 +1,10 @@
+this.RECHARGE_TIME=recharge;
+this.DURATION=duration;
+}
+
+public void update(float dt) {
+if(!boostAvailable) {
+timeSinceLastBoost+=dt;
+if(timeSinceLastBoost>RECHARGE_TIME) {
+boostAvailable=true;
+

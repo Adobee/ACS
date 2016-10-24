@@ -1,0 +1,9 @@
+@Specialization(guards = &quot;checkBooleanKind(frame)&quot;)
+public boolean writeBoolean(Frame frame, boolean value) {
+frame.setBoolean(frameSlot, value);
+return checkKind(FrameSlotKind.Double);
+}
+
+protected boolean checkObjectKind(Frame frame) {
+if (frameSlot.getKind() != FrameSlotKind.Object) {
+

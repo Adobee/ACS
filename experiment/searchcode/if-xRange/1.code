@@ -1,0 +1,12 @@
+def accum(s):
+n = 0
+ans = &quot;&quot;
+for i in s:
+if n>0:
+ans+=&quot;-&quot;
+ans+=i.upper()
+for _ in xrange(n):
+ans+=i.lower()
+n+=1
+return ans
+

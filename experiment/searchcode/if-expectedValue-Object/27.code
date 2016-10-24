@@ -1,0 +1,11 @@
+* Verify equality
+*/
+@Override
+public boolean equals(final Object obj) {
+if (this == obj)
+return true;
+if (getClass() != obj.getClass())
+return false;
+Choice other = (Choice) obj;
+if (expectedValue == null) {
+

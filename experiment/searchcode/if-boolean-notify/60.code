@@ -1,0 +1,6 @@
+NotifyParser notifyParser = parserCache.get();
+if (notifyParser != null &amp;&amp; parserCache.compareAndSet(notifyParser, null)) {
+if (is(Notify.Type.MEMBER_JOINED)) {
+parse(new MemberJoinedNotify());
+} else if (is(Notify.Type.MEMBER_EXITED)) {
+

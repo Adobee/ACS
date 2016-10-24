@@ -1,0 +1,10 @@
+public abstract class Producer<M> extends Module {
+
+protected Consumer<M> nextModule = null;
+
+public Producer(Consumer<M> nextModule, boolean autostart){
+super(false);
+this.nextModule = nextModule;
+if(autostart){
+start();
+

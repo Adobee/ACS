@@ -1,0 +1,10 @@
+@FunctionalInterface
+public interface DistanceMethod {
+double apply(double[] s,
+double[] t);
+
+public static final DistanceMethod JACCARD = new DistanceMethod() {
+public double apply(double[] s,
+double[] t) {
+int all = 0;
+

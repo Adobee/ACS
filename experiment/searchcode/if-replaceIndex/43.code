@@ -1,0 +1,9 @@
+private String[] getRemainingAssignments(String input[], int replaceIndex) {
+input[replaceIndex] = input[input.length - 1];
+
+String replaceInputArray[] = new String[input.length - 1];
+Random randomAssignment = new Random();
+for (int i = assignments.length - 1; i >= 2; i--) {
+if (i >= 2) {
+int currentAssignmentIndex = randomAssignment.nextInt(i - 1);
+

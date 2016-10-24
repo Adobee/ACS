@@ -1,0 +1,12 @@
+return getValue() < other.getValue();
+}
+
+public Weeks plus(int weeks) {
+if (weeks == 0)
+{
+return this;
+return Weeks.weeks(FieldUtils.safeMultiply(getValue(), scalar));
+}
+public Weeks dividedBy(int divisor) {
+if (divisor == 1)
+

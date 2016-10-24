@@ -1,0 +1,7 @@
+Analyzer analyzerF = analyzerFactory.get();
+if (analyzerF == null) {
+throw new ElasticsearchIllegalArgumentException(&quot;analyzer [&quot; + analyzerFactory.name() + &quot;] created null analyzer&quot;);
+// if we got a named analyzer back, use it...
+if (analyzerF instanceof NamedAnalyzer) {
+analyzer = (NamedAnalyzer) analyzerF;
+

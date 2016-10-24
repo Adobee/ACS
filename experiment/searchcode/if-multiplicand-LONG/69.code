@@ -1,0 +1,9 @@
+@Override
+public D multiply(long multiplicand) {
+final DecimalArithmetics arith = getDefaultArithmetics();
+return createOrAssign(arith.multiplyByLong(unscaledValue(), multiplicand));
+}
+
+@Override
+public D multiply(double multiplicand) {
+

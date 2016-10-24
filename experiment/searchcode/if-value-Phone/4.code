@@ -1,0 +1,8 @@
+public PhoneNumber toModel(PhoneNumberEntity phoneNumberEntity) {
+if (phoneNumberEntity == null)
+return null;
+PhoneNumber phoneNumberModel = createModel();
+phoneNumberModel.setCountry(phoneNumberEntity.getCountry());
+phoneNumberModel.setType(phoneNumberEntity.getType());
+phoneNumberModel.setValue(phoneNumberEntity.getValue());
+

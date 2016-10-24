@@ -1,0 +1,9 @@
+// Here you could see the PageFormat with an empty PrintRequestAttributeSet
+PageFormat pf2 = job.getPageFormat(pras);
+System.out.println((pf2.getImageableX() / 72f) + &quot; &quot;
++ (pf2.getImageableHeight() / 72f)
+);
+
+// check if returned left margin of imageable area is 2.0 as set earlier
+if (pf2.getImageableX() / 72f != 2.0f) {
+

@@ -1,0 +1,12 @@
+double minX,
+double maxX,
+double targetY,
+int maxIterations,
+double stopPrecision) {
+
+if (minX >= maxX) {
+// check min X
+double minY = f.getValueAt(minX);
+if (minY > targetY) {
+throw new InvalidParameterException(&quot;targetY is out of scope&quot;);
+

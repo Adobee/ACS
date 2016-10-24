@@ -1,0 +1,13 @@
+public GND(boolean backgroundIsSuperset) {
+super(true, backgroundIsSuperset);
+}
+
+
+@Override
+public boolean equals(Object other) {
+out.writeString(STREAM.getName());
+out.writeBoolean(backgroundIsSuperset);
+}
+
+public static class GNDParser extends NXYParser {
+

@@ -1,0 +1,17 @@
+package view;
+
+import java.awt.Point;
+
+public class CardPosition
+{
+private double currX, currY, currDir;
+return (int) currX;
+}
+
+public int currY()
+{
+return (int) currY;
+}
+
+public double currDir()
+

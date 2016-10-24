@@ -1,0 +1,8 @@
+public class CacheFactory<K extends Comparable, V> {
+private final int maxCacheSize;
+private int putCount;
+private final ConcurrentWeakValueMap<K, V> map = new ConcurrentWeakValueMap();
+* Create a CacheFactory
+*
+* @param maxCacheSize Maximum size of each cache.
+

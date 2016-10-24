@@ -1,0 +1,11 @@
+private String data;
+private long startTime;
+
+public DelayObject(String data, long delay) {
+this.data = data;
+this.startTime = System.currentTimeMillis() + delay;
+}
+
+@Override
+public long getDelay(TimeUnit unit) {
+

@@ -1,0 +1,10 @@
+(this.getElement().getClientHeight() - this.getElement().getScrollHeight()));
+}
+
+public void setScrollPositionX(double pos) {
+if (_hasTextBox) {
+FxUtil.setStyleLeft(this, pos);
+double currX = getScrollPositionX();
+double currY = getScrollPositionY();
+if (currX == 0 || currY == 0) {
+

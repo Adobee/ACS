@@ -1,0 +1,9 @@
+int k = gamesettings.guiScale;
+if (k == 0)
+{
+k = 1000;
+}
+for (; scaleFactor < k &amp;&amp; scaledWidth / (scaleFactor + 1) >= 320 &amp;&amp; scaledHeight / (scaleFactor + 1) >= 240; scaleFactor++) { }
+scaledWidthD = (double)scaledWidth / (double)scaleFactor;
+scaledHeightD = (double)scaledHeight / (double)scaleFactor;
+

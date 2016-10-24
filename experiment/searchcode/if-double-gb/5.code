@@ -1,0 +1,13 @@
+private DecimalFormat big = new DecimalFormat( &quot;0.######E0&quot; );
+
+private GridBagConstraints gb;
+
+/** * */
+public static double totalLength;
+add( new JLabel( format( totalArea ) ), gb );
+}
+}
+
+private String format( double d ) {
+return d > 1E10 ? big.format( d ) : df.format( d );
+

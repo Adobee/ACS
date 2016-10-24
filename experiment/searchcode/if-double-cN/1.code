@@ -1,0 +1,11 @@
+package pendulum;
+
+public class JacobiEllipticFunction {
+private static double sn, cn, dn;
+public static synchronized double sn(double t, double k) {
+cal_sncndn(t, k);
+return sn;
+}
+public static double cn(double t, double k) {
+cal_sncndn(t, k);
+

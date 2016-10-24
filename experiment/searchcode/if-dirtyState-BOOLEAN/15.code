@@ -1,0 +1,10 @@
+@Override
+public boolean contains(Object key) {
+return dirtyState.contains(key) || dataState.contains(key);
+}
+
+@Override
+public Object get(Object key) {
+Object result = dirtyState.get(key);
+if (result == null) {
+

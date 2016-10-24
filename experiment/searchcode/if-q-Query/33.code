@@ -1,0 +1,9 @@
+for(String stopword:StopWordList){
+if(queryArray[i].toLowerCase().equals(stopword)){
+flag=true;
+continue;
+}
+}
+if(flag==false)
+returnquery+=queryArray[i].replaceAll(&quot;\\&#39;&quot;, &quot;&quot;)+&quot; &quot;;
+

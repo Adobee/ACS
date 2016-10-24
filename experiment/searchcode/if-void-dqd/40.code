@@ -1,0 +1,13 @@
+dQdW = Nd4j.zeros(dim, 2 * dim);
+}
+
+dQdW = clampDerivativeIfNeeded(dQdW);
+}
+
+public void clear() {
+public void add(IDerivative other) {
+dQdW = dQdW.add(((dQdW) other).getDQdW());
+}
+
+public void mul(double learningRate) {
+

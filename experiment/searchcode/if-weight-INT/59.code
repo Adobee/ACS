@@ -1,0 +1,9 @@
+class WeightedEdge implements Comparable<WeightedEdge> {
+public int u, v;
+public double weight;
+/** Compare two edges on weights */
+public int compareTo(WeightedEdge edge) {
+if (weight > edge.weight)
+return 1;
+else if (weight == edge.weight) {
+

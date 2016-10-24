@@ -1,0 +1,9 @@
+import org.elasticsearch.painless.antlr.PainlessParser.IfContext;
+import org.elasticsearch.painless.antlr.PainlessParser.InitializerContext;
+throw new IllegalStateException(&quot;Error &quot; + location(ctx) + &quot;: Unexpected state.&quot;);
+}
+
+@Override
+public ANode visitInitializer(final InitializerContext ctx) {
+if (ctx.declaration() != null) {
+

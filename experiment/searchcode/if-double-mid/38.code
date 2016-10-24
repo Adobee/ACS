@@ -1,0 +1,8 @@
+private static double getSquareRoot(double n, double lower, double upper, int maxPrecision) {
+double mid = (upper+lower)/2;
+if (maxPrecision==0) {
+return mid;
+}
+
+if (mid*mid<n) {
+

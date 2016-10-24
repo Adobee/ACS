@@ -1,0 +1,11 @@
+* automatically display the data in the best possible zoom level.
+*/
+public class ScaleX {
+private double maxX = Double.NaN;
+private double minX = Double.NaN;
+for (int i=0; i < data.length; i++) {
+if (Double.isNaN(maxX) || maxX < data[i].x){
+maxX = data[i].x;
+}
+if (Double.isNaN(minX) || minX > data[i].x) {
+

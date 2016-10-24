@@ -1,0 +1,7 @@
+for(int nodeId: nodeIds) {
+if(nodeId < NUM_SERVERS) {
+servers[nodeId] = ServerTestUtils.startVoldemortServer(socketStoreFactory,
+private void stopServers(int... nodeIds) throws IOException {
+for(int nodeId: nodeIds) {
+if(nodeId < NUM_SERVERS)
+

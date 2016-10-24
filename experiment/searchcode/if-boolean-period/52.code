@@ -1,0 +1,10 @@
+import rules.exceptions.RuleException;
+
+
+public class BothTeamGoalInPeriod extends GeneralRule {
+private int period;
+
+@Override
+public boolean check(HockeyMatch match) {
+if (!validatePeriod(period)) {
+

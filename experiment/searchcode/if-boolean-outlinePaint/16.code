@@ -1,0 +1,10 @@
+public class VerticleSwitchView extends View {
+
+private Paint outlinePaint, switchPaint;
+private boolean switchDown = true;
+private VerticleSwitchListener listener;
+canvas.drawRect(0, 0, width, height, outlinePaint);
+
+if(switchDown) {
+canvas.drawRect(0, height / 2, width, height, switchPaint);
+

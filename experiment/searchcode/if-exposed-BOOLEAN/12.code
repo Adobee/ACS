@@ -1,0 +1,12 @@
+private static Map<String, ImageType> types = Collections.synchronizedMap(new HashMap<String, ImageType>());
+private final String typeName;
+private boolean exposed = true;
+
+public ImageType(String typeName) {
+types.put(typeName, this);
+}
+
+public ImageType(String typeName, boolean exposed) {
+this(typeName);
+this.exposed = exposed;
+

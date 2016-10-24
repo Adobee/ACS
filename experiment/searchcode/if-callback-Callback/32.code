@@ -1,0 +1,8 @@
+this.domain = domain;
+}
+
+protected boolean handleCallback(Callback callback) {
+if (!super.handleCallback(callback)) {
+if (callback instanceof TextInputCallback) {
+TextInputCallback c = (TextInputCallback) callback;
+

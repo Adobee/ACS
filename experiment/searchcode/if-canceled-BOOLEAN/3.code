@@ -1,0 +1,14 @@
+private volatile boolean isCanceled;
+
+public static boolean currIsCanceled() {
+if (Thread.currentThread() instanceof CancelableThread) {
+return false;
+}
+
+/**
+* Returns true if this thread is canceled.
+*
+* @return
+*/
+public boolean isCanceled() {
+

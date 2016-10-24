@@ -1,0 +1,6 @@
+ASN1Sequence derSequence = ASN1Object.getDERSequence(derObject);
+int total = derSequence.size();
+if (total > 0) {
+ASN1Primitive object = derSequence.getObjectAt(i).toASN1Primitive();
+if (object instanceof DERTaggedObject) {
+

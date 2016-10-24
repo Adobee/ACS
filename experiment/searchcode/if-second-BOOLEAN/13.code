@@ -1,0 +1,9 @@
+while(first!=null&amp;&amp;first.next!=null){first=first.next.next;second=second.next;}
+if(first!=null) second=second.next;
+ListNode last=null;
+second.next=last;last=second;second=temp;
+}
+first=head;second=last;
+while(second!=null){
+if(first.val!=second.val) return false;
+

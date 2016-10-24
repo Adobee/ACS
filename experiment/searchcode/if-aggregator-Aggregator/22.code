@@ -1,0 +1,8 @@
+public StatisticsAggregator<T> getMetric(M metricName, K key) {
+
+Map<M, StatisticsAggregator<T>> lFirstAggregation = mAggregatorMap.get(key);
+if(lFirstAggregation == null){
+StatisticsAggregator<T> lAggregator = lFirstAggregation.get(metricName);
+if(lAggregator == null){
+lAggregator = mFactory.newAggregator(key);
+

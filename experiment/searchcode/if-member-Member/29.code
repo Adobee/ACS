@@ -1,0 +1,8 @@
+return memberDao.findMemberByMemberId(memberId);
+}
+//会员登陆验证
+public boolean loginMember(Member member) {
+if(memberDao.findMemberByLoginName(member.getLoginName())==null){//用户名不存在
+Member queryMember=memberDao.findMemberByLoginName(member.getLoginName());//获得查询会员信息
+if(queryMember.getUserPass().equals(member.getUserPass())){//密码正确
+

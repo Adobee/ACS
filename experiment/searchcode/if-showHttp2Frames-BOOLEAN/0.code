@@ -1,0 +1,7 @@
+public static void configureLogging(boolean debug, boolean showHttp2Frames) {
+if (debug || showHttp2Frames) {
+LogManager.getLogManager().reset();
+ConsoleHandler handler = new ConsoleHandler();
+
+if (debug) {
+

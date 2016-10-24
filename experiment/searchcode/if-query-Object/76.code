@@ -1,0 +1,9 @@
+* Simple generic visitor interface for concrete query node implementations.
+*
+*/
+public interface QueryTreeVisitor {
+
+public Object visit(AndQuery andQuery, Object data);
+
+public Object visit(OrQuery orQuery, Object data);
+

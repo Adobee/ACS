@@ -1,0 +1,10 @@
+import thu.cs.lyw.rm.util.Provider;
+import thu.cs.lyw.rm.util.ProviderType;
+
+public class RPool {
+HashMap<ProviderType, RAdapter> adapterMap;
+private RAdapter getAdapter(ProviderType providerType){
+RAdapter adapter = adapterMap.get(providerType);
+if (adapter == null){
+adapter = RAdapterFactory.getAdapterInstance(providerType);
+

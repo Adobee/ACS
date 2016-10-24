@@ -1,0 +1,11 @@
+throws EvalError
+{
+BSHPrimaryExpression lhsNode =
+(BSHPrimaryExpression)jjtGetChild(0);
+
+if ( lhsNode == null )
+throw new InterpreterError( &quot;Error, null LHSnode&quot; );
+boolean strictJava = interpreter.getStrictJava();
+LHS lhs = lhsNode.toLHS( callstack, interpreter);
+if ( lhs == null )
+

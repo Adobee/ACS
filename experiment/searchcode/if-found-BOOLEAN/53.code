@@ -1,0 +1,16 @@
+public AbstractLocator(X x) {
+super();
+this.match = x;
+}
+
+public boolean enter(D d) {
+if (matches(d)) {
+found = d;
+return false;
+}
+return true;
+}
+
+public boolean leave(D d) {
+return found == null;
+

@@ -1,0 +1,13 @@
+return list.get(currentPos);
+}
+
+public Position getNext() {
+int size = list.size();
+if (size == 0) {
+currentPos = 0;
+return null;
+}
+int newPos = currentPos + 1;
+if (newPos >= size) {
+currentPos = size - 1;
+

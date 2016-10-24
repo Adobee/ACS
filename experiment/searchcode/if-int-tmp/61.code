@@ -1,0 +1,11 @@
+int[] tmp = new int[ratings.length];
+
+for(int i=0;i<tmp.length;i++)
+tmp[i]=1;
+
+if(ratings[0]>ratings[1])
+tmp[0]++;
+
+for(int i=1;i<ratings.length;i++){
+if(ratings[i-1]<ratings[i])
+

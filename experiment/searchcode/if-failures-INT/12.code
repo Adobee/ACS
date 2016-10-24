@@ -1,0 +1,15 @@
+public void add(Failure failure) {
+failures.add(failure);
+}
+
+public Integer countFor(FailureKind kind) {
+int total = 0;
+for(Failure failure : failures) {
+if(failure.isFor(kind)) {
+total++;
+}
+}
+return total;
+}
+}
+

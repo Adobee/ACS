@@ -1,0 +1,6 @@
+final int firstResultItemOrder,final int numberOfResults) throws IOException {
+LucenePageResults outResults = new LucenePageResults(numberOfResults);
+if (topDocs != null) {
+outResults.setTotalHits(topDocs.totalHits);
+if (CollectionUtils.hasData(topDocs.scoreDocs)) {
+

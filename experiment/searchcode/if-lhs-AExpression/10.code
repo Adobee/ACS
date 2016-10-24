@@ -1,0 +1,7 @@
+return MemoryLocation.valueOf(varName);
+}
+
+public MemoryLocation getMemoryLocation(AExpression pLhs) throws UnrecognizedCodeException {
+if (pLhs instanceof AIdExpression) {
+return getMemoryLocation((AIdExpression) pLhs);
+

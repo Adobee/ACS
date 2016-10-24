@@ -1,0 +1,11 @@
+private Set<String> updatedSet;
+
+public synchronized void initUpdatedSetp() {
+if (updatedSet == null) {
+updatedSet = new HashSet<String>();
+}
+}
+
+public Set<String> getUpdatedSet() {
+return updatedSet;
+

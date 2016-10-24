@@ -1,0 +1,11 @@
+public class ClssValidator implements Validator {
+
+@Override
+public boolean supports(Class<?> clazz) {
+return Clss.class.isAssignableFrom(clazz);
+public void validate(Object target, Errors errors) {
+Clss clss = (Clss) target;
+
+// REQUIRED fields
+ValidationUtils.rejectIfEmptyOrWhitespace(errors, &quot;name&quot;, &quot;generic.empty&quot;);
+

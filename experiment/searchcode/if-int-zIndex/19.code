@@ -1,0 +1,15 @@
+ZIndexGroup group = AllZIndexGroups.get(groupname);
+
+if (group!=null){
+return group;
+} else {
+return new ZIndexGroup(groupname);
+return;
+}
+
+
+for (int i = 0; i < this.size; i++) {
+ZIndexAttribute zin = this.get(i);
+
+if (newZindex.zIndex<zin.zIndex){
+

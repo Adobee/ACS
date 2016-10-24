@@ -1,0 +1,8 @@
+public static Editor selectModelTypeToCreate(MID typeMID) throws MIDDialogCancellation, MMINTException {
+
+MIDTreeSelectionDialog dialog = MIDTypeRegistry.getModelCreationDialog();
+Editor editorType = (Editor) openSelectionDialog(dialog, &quot;Create new model&quot;, &quot;Choose editor to create model&quot;);
+EditorCreationWizardDialog wizDialog = editorType.invokeInstanceWizard(multiModelContainer);
+if (wizDialog == null) {
+throw new MIDDialogCancellation();
+

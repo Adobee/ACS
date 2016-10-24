@@ -1,0 +1,13 @@
+package biz;
+
+import java.util.List;
+
+import org.hibernate.Query;
+
+import dao.RoundDAO;
+import entity.Round;
+public Round findRoundByRound(Integer roundNumber) throws Exception{
+List<Object> resultList = this.roundDAO.findByNumber(roundNumber);
+
+if(resultList.size() == 0){
+

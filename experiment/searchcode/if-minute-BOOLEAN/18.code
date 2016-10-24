@@ -1,0 +1,17 @@
+minute += m;
+if(minute == 60) {
+minute = 0;
+hour += 1;
+}
+if(hour == 24)
+hour = 0;
+}
+
+public boolean equals(VirtualTime time) {
+return (time.hour==hour &amp;&amp; time.minute==minute);
+}
+public String toString() {
+return hour + &quot;:&quot; + minute;
+}
+}
+

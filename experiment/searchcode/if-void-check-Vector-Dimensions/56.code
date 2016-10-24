@@ -1,0 +1,10 @@
+public void setRow(int i, Vector v) throws DimensionsDoNotAgreeException {
+if (v.size() != size.m)
+throw new DimensionsDoNotAgreeException();
+set(i, e, v.get(e));
+}
+
+@Override
+public void setColumn(int j, Vector v) throws DimensionsDoNotAgreeException {
+if (v.size() != size.n)
+

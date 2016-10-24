@@ -1,0 +1,12 @@
+private static final long serialVersionUID = -4137636088483935763L;
+
+private int keyAccelerate;
+private int keyBrake;
+private int keyUp;
+private int keyDown;
+public Configuration(int keyLayout){
+
+if (keyLayout == 0) {
+keyUp = KeyEvent.VK_UP;
+keyDown = KeyEvent.VK_DOWN;
+

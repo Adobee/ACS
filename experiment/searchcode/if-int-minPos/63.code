@@ -1,0 +1,14 @@
+for (int i = 0; i < a.length-1; i++)
+{
+int minPos = minimumPosition(i);
+swap(minPos, i);
+}
+}
+
+//find smallest element in array
+public int minimumPosition (int from)
+{
+int minPos = from;
+
+for (int i = from+1; i < a.length; i++)
+

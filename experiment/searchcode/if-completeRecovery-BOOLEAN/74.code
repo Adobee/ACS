@@ -1,0 +1,12 @@
+size += 16 + (this.table.length * 8); // for this.table
+for (int i = 0; i < this.table.length; i++) {
+if (this.table[i] != null) {
+size += 16 + (this.table[i].length * 8);
+}
+}
+return size;
+}
+
+/**
+* Tests if the specified fingerprint is in this set.  As a side
+

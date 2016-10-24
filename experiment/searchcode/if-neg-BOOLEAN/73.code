@@ -1,0 +1,10 @@
+if(x < 9 &amp;&amp; x > -9)
+return x;
+
+boolean isNeg = false;
+if(x < 0){
+isNeg = true;
+int digit = x % 10;
+if(isNeg &amp;&amp; res > -((Integer.MIN_VALUE + digit)/10))
+return 0;
+

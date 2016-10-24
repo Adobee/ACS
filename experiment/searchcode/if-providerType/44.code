@@ -1,0 +1,6 @@
+public static Uri getUri(Class<? extends BaseContentProvider> providerType,
+Class<? extends BaseTableMode> mode) {
+Uri uri = Uri.parse(HOST + getProviderAuth(providerType) + &quot;/&quot;
++ mode.getName());
+return uri;
+

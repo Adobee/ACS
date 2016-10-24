@@ -1,0 +1,7 @@
+public ExpiringColumn(ByteBuffer name, ByteBuffer value, long timestamp,int timeToLive) {
+this(name, value, timestamp,timeToLive,(int)(System.currentTimeMillis()/1000)+timeToLive);
+
+}
+
+public ExpiringColumn(ByteBuffer name, ByteBuffer value, long timestamp,
+

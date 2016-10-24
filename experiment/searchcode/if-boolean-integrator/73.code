@@ -1,0 +1,14 @@
+import koi.light.PointLight;
+import koi.util.Bitmap;
+
+public class Scene {
+
+protected Camera camera = null;
+protected Integrator integrator = null;
+public boolean intersect(Ray ray, Intersection intersection)
+{
+boolean hit = false;
+for(Primitive geometry : geometries)
+{
+if(geometry.intersectRay(ray, intersection))
+

@@ -1,0 +1,9 @@
+DnsAutoHistEntity dnsAutoHistEntityNew = dnsAutoHistEntitiesNew.get(i);
+DnsAutoHistEntity dnsAutoHistEntityOld = null;
+
+if(dnsAutoHistEntityNew.getCdDnsAuto() != null) {
+dnsAutoHistEntityOld = manager.find(getEntityClass(), dnsAutoHistEntityNew.getCdDnsAuto());
+}
+
+if(dnsAutoHistEntityOld == null || dnsAutoHistEntityOld.getTpAcao().equals(TipoAcaoEnum.INCLUSAO.getTipo())) {
+

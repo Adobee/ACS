@@ -1,0 +1,10 @@
+public SavedState createFromParcel(Parcel parcel) {
+return new SavedState(parcel);
+}
+
+public volatile Object createFromParcel(Parcel parcel) {
+protected Parcelable onSaveInstanceState() {
+Object obj = super.onSaveInstanceState();
+if(!isPersistent()) {
+SavedState savedstate = new SavedState(((Parcelable) (obj)));
+

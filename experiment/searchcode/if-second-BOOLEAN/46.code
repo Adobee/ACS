@@ -1,0 +1,10 @@
+int num = first.hashCode() * 23;
+num += second.hashCode();
+return num;
+}
+
+public boolean equals(Object o) {
+boolean ret = false;
+if(o instanceof Pair) {
+Pair<T, U> p = (Pair<T, U>) o;
+

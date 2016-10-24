@@ -1,0 +1,8 @@
+public class FibonacciDelayingRetryStrategy implements RetryStrategy {
+
+public final Interval baseInterval;
+
+private final static List<Integer> FIBONACCI_SEQUENCE = unmodifiableList(asList(0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233));
+public FibonacciDelayingRetryStrategy(Interval baseInterval) {
+this.baseInterval = baseInterval;
+

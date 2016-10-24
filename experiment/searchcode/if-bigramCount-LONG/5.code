@@ -1,0 +1,6 @@
+public double score(List<String> combinationQuery, int index, UnigramDictionary unigramDictionary, BigramDictionary bigramDictionary) {
+String bigram = constructBigram(combinationQuery, index);
+long bigramCount = bigramDictionary.getQueryFrequency(bigram);
+
+int secondTokenWordTypeCount = bigramDictionary.documentsStartingIn(combinationQuery.get(index));
+

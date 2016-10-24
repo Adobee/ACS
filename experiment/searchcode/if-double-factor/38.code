@@ -1,0 +1,12 @@
+package statistics.sampler;
+
+public class TruncationFactor implements Factor{
+
+private double threshold;
+public TruncationFactor(double t){
+this.threshold=t;
+}
+
+public double logFactor(double energy) {
+if(energy<=threshold) return 0;
+

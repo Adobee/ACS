@@ -1,0 +1,11 @@
+public void deleteByValue(int idValue) {
+
+int tempindex = 0;
+int temp = 0;
+tempindex = hash.get(idValue);
+
+if (tempindex != -inf) {
+int l = 2 * tempindex + 1;
+int r = 2 * tempindex + 2;
+if ((l <= lastindex) &amp;&amp; (heap[l] < heap[tempindex])) {
+

@@ -1,0 +1,7 @@
+this.parameterHandler = (ParameterHandler) parameterHandlerField.get(defaultResultSetHandler);
+
+Field mappedStatementField  = defaultResultSetHandler.getClass().getDeclaredField(&quot;mappedStatement&quot;);
+if (parameterMapping.getMode() == ParameterMode.OUT || parameterMapping.getMode() == ParameterMode.INOUT) {
+if (ResultSet.class.equals(parameterMapping.getJavaType())) {
+Integer resultCode = (Integer) metaParam.getValue(&quot;resultCode&quot;);
+

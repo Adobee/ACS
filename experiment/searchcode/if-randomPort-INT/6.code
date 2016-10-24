@@ -1,0 +1,9 @@
+this.period = this.period + 1;
+int randomPort = randomPort();
+
+sendMessage(new Mess(Mess.Type.PING, this.receivePort, randomPort, this.period), randomPort);
+
+Thread.sleep(500);
+lock.lock();
+if (hasHeardBack(randomPort, Mess.Type.ACK)) {
+

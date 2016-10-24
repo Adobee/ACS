@@ -1,0 +1,5 @@
+Field field = analyzer.getClass().getSuperclass().getDeclaredField(&quot;matchVersion&quot;);
+boolean currentAccessible = field.isAccessible();
+assertThat(analyzer, instanceOf(CustomAnalyzer.class));
+CustomAnalyzer custom1 = (CustomAnalyzer) analyzer;
+

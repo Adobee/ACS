@@ -1,0 +1,8 @@
+* @param ignoreNaN specifies whether to ignore NaN values
+* @return max value or Double.NaN if the sample is empty
+*/
+public static double max(Double[] values, boolean ignoreNaN) {
+set.addAll(Arrays.asList(values));
+if (ignoreNaN) set.remove(Double.NaN);
+return set.last();
+

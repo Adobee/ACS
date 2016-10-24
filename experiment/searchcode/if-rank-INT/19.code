@@ -1,0 +1,8 @@
+public long putIfAbsent(String rankName, int id, long value) {
+IRank rank = getNotNullRankByName(rankName);
+return rank.setIfAbsent(id, value);
+}
+
+@Override
+public long[] putIfAbsent(String rankName, int id, long... value) {
+

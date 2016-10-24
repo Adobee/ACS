@@ -1,0 +1,11 @@
+Pilha<Double> pilha = new Pilha<>();
+
+
+while (entrada.hasNext()) {
+if(entrada.hasNextDouble()) {
+pilha.push(entrada.nextDouble());
+}
+
+if(entrada.hasNext(&quot;[+-/*]&quot;)) {
+double rhs = pilha.pop();
+

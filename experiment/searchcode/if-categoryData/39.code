@@ -1,0 +1,8 @@
+import com.scalar.freequent.common.CategoryData;
+import com.scalar.freequent.dao.CategoryDataRow;
+import com.scalar.freequent.dao.CategoryDataDAO;
+CategoryDataRow row = categoryDataDAO.findById(id);
+CategoryData categoryData = null;
+if (row != null) {
+categoryData = CategoryDataDAO.rowToData(row);
+

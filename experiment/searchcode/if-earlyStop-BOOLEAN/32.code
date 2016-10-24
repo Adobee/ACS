@@ -1,0 +1,10 @@
+String earlyStop = &quot;&quot;;
+if (earlyStopMeasure != null &amp;&amp; !earlyStopMeasure.equals(&quot;Loss&quot;)) {
+earlyStop = String.format(&quot;, %s = %.6f, delta_%s = %.6f&quot;, new Object[] { earlyStopMeasure,
+System.exit(-1);
+}
+
+// check if converged
+boolean cond1 = Math.abs(loss) < 1e-5;
+boolean cond2 = (delta_measure > 0) &amp;&amp; (delta_measure < 1e-5);
+

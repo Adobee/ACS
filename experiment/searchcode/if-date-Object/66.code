@@ -1,0 +1,8 @@
+Integer dayOfWeek = getCalendarFieldFromDate(dateObject,Calendar.DAY_OF_WEEK);
+if(dayOfWeek==null) {
+if(log.isDebugEnabled()){
+log.debug(&quot;Unable to get the correct day of the week.&quot;);
+Date convertedDate = convertDateObject(dateObject);
+if(convertedDate!=null){
+return convertedDate.getTime();
+

@@ -1,0 +1,7 @@
+public static double phi(double x, double mu, double sigma) {
+if(sigma < 0.0001 &amp; Math.abs(mu-x) < 0.0001){
+return (double)1.0;
+}
+else if(sigma < 0.0001 &amp; Math.abs(mu-x) > 0.0001){
+return (double)0.00001;
+

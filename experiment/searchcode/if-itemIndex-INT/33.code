@@ -1,0 +1,14 @@
+return DatabaseDefaults.getColors();
+}
+
+/**
+* {@inheritDoc}
+*/
+@Override
+public String getItem(int itemIndex) {
+return DatabaseDefaults.getColors()[itemIndex];
+public String getItemPhoneticSound(int itemIndex) {
+Color col = Database.getInstance().getColors().get(itemIndex);
+
+if (col != null) {
+

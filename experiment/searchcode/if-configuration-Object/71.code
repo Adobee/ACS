@@ -1,0 +1,13 @@
+public Map<String, Object> loadConfiguration(String filePath) {
+
+try {
+configuration = new PropertiesConfiguration(filePath);
+return null;
+}
+
+public Object getProperty(String key) {
+return configuration.getProperty(key);
+}
+
+public <T> T getValue(String key){
+

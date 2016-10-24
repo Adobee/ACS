@@ -1,0 +1,7 @@
+private int primaryIndex;
+private final int primariesTotal;
+private int remainingSecondariesOnCurrentPrimary;
+public synchronized RecordIdentifier dequeue() {
+RecordIdentifier ri = null;
+if (this.primaryIndex < this.primariesTotal) {
+

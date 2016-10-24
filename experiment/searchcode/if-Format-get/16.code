@@ -1,0 +1,10 @@
+return new HashMap<String, DecimalFormat>();
+}
+};
+
+public static DecimalFormat getNumberFormat(String formatStr){
+DecimalFormat numberFormat = numberformats.get().get(formatStr);
+
+if(numberFormat == null){
+numberFormat = new DecimalFormat();
+

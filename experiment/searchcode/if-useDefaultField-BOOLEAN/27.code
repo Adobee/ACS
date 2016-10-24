@@ -1,0 +1,10 @@
+} else if (Fields.INCLUDE.match(currentFieldName, parseContext.parseFlags())) {
+include = parser.booleanValue();
+} else if (Fields.EXCLUDE.match(currentFieldName, parseContext.parseFlags())) {
+analyzer = parseContext.mapperService().searchAnalyzer();
+}
+mltQuery.setAnalyzer(analyzer);
+
+// set like text fields
+boolean useDefaultField = (moreLikeFields == null);
+

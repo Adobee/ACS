@@ -1,0 +1,13 @@
+public class AbstractEditableData extends AbstractVersionData
+{
+
+public EditorPanel editor;// µ±Ç°±à¼­Ãæ°å
+public boolean modified = false;
+public boolean isNew = true;
+public void markModified()
+{
+modified = true;
+if (editor != null)
+{
+editor.setModified(true);
+

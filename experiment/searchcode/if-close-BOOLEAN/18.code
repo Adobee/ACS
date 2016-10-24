@@ -1,0 +1,8 @@
+public final class StreamCopier implements Callable<Void>, Runnable {
+private InputStream source;
+private OutputStream sink;
+private boolean closeSource;
+private boolean closeSink;
+
+public StreamCopier(InputStream source, OutputStream sink, boolean closeSource, boolean closeSink) {
+

@@ -1,0 +1,10 @@
+private final byte[][][] ring;
+private final int capacity;
+private int sampleCount = 0;
+private int newPos = 0;
+public void add(byte[][] item) {
+sampleCount++;
+ring[newPos++] = item;
+
+// If newPos has reached capacity wrap the ring around.
+

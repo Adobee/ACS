@@ -1,0 +1,11 @@
+features[k++] = ins.value(i);
+}
+}
+return features;
+}
+
+public static void normalizeVectorInPlace(double[] array) {
+double norm = Utils.norm(array);
+for (int i = 0; i < array.length; i++) {
+array[i] /= norm;
+

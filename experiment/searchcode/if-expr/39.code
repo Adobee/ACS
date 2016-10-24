@@ -1,0 +1,12 @@
+package org.boris.expr.function.excel;
+
+import org.boris.expr.Expr;
+import org.boris.expr.ExprError;
+Expr a = evalArg(context, args[0]);
+if (a instanceof ExprNumber) {
+return bool(!((ExprNumber) a).booleanValue());
+}
+return ExprError.VALUE;
+}
+}
+

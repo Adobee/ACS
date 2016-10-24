@@ -1,0 +1,11 @@
+// Special cases are to avoid boxing of primitives
+if (domain instanceof DoubleDiscreteDomain)
+{
+final DoubleDiscreteDomain ddomain = (DoubleDiscreteDomain)domain;
+values[i] = new RealValue(ddomain.getDoubleElement(i));
+}
+}
+else if (domain instanceof IntDiscreteDomain)
+{
+final IntDiscreteDomain idomain = (IntDiscreteDomain)domain;
+

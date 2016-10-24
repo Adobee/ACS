@@ -1,0 +1,14 @@
+char firstChar = fieldName.charAt(0);
+
+if (Character.isUpperCase(firstChar))
+{
+fieldName = Character.toString(firstChar).toLowerCase()
++ fieldName.substring(1);
+}
+
+return fieldName;
+}
+
+
+}
+

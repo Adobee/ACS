@@ -1,0 +1,9 @@
+for (int x = 0; x < img.getWidth(); x++) {
+for (int y = 0; y < img.getHeight(); y++) {
+double aPixel = img.getPixel(x, y, c);
+if (aPixel >= previousThreshold) {
+double w1 = 0;
+double w2 = 0;
+for (int i = 0; i < probabilities.length; i++) {
+if (i <= threshold) {
+

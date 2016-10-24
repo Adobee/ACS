@@ -1,0 +1,8 @@
+boolean containsPositiveWeight = false;
+for (int i = begin ; i < (begin + length) ; i++) {
+if (java.lang.Double.isNaN(weights[i])) {
+throw org.apache.commons.math.MathRuntimeException.createIllegalArgumentException(&quot;negative weight {0} at index {1} &quot;, weights[i], i);
+}
+if ((!containsPositiveWeight) &amp;&amp; ((weights[i]) > 0.0)) {
+containsPositiveWeight = true;
+

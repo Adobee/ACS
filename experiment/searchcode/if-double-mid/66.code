@@ -1,0 +1,12 @@
+double precision = Math.pow(10.0, -9);
+
+while(high - low > precision) {
+double mid = low + (high - low) / 2;
+double square = mid * mid;
+
+if(square > n)
+high = mid;
+else if(square < n)
+low = mid;
+else return mid;
+

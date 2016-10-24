@@ -1,0 +1,9 @@
+List<IngredientDraft> ingredients;
+
+if (versionId == null) {
+recipe = Recipe.init(recipeName);
+ingredients = Ingredients.loadIngredientDrafts(recipeName, versionId);
+}
+
+if (recipe == null || steps == null || ingredients == null) {
+

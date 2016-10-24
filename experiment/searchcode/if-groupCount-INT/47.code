@@ -1,0 +1,10 @@
+Matcher matcher = pattern.matcher(str);
+if (matcher.find()) {
+// matcher匹配的结果包括字符串本身，但是matcher.groupCount()计数时忽略这个，而用group获取匹配时又包含字符串本身，所以要加1
+for (int i = 0; i < matcher.groupCount() + 1; i++) {
+System.out.println(matcher.group(i));
+}
+}
+}
+}
+

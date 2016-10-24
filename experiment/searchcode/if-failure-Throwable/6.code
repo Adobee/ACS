@@ -1,0 +1,14 @@
+public Receipt<T> onFailure(Consumer<Throwable> failureHandler)
+{
+this.failureHandler = failureHandler;
+if (throwable != null)
+public void failed(Throwable throwable)
+{
+this.throwable = throwable;
+if (failureHandler != null)
+{
+this.failureHandler.accept(throwable);
+}
+}
+}
+

@@ -1,0 +1,6 @@
+private static <T extends Throwable> T searchThrowable(Throwable throwable, Class<T> clazz, int maxDepth, int count) {
+if(throwable == null)
+return null;
+if(clazz.isAssignableFrom(throwable.getClass()))
+return clazz.cast(throwable);
+

@@ -1,0 +1,6 @@
+Object tag = request.tag();
+String host = url.host();
+
+boolean checkTips = domainMatch(host, EhUrl.DOMAIN_G);
+boolean checkUconfig = (domainMatch(host, EhUrl.DOMAIN_E) || domainMatch(host, EhUrl.DOMAIN_EX)) &amp;&amp; tag instanceof EhConfig;
+

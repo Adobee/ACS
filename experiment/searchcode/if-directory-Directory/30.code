@@ -1,0 +1,10 @@
+import ca.ulaval.ift6002.lab1.repertoire.core.model.Directory;
+import ca.ulaval.ift6002.lab1.repertoire.core.model.User;
+
+public class DirectoryLocator {
+public static synchronized DirectoryLocator getInstance() {
+if (instance == null) {
+instance = new DirectoryLocator();
+}
+return instance;
+

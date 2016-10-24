@@ -1,0 +1,9 @@
+protected final SidedPlane leftPlane;
+/** The right plane of the slice */
+protected final SidedPlane rightPlane;
+/** The notable points for the slice (north and south poles) */
+public GeoLongitudeSlice(final PlanetModel planetModel, final double leftLon, double rightLon) {
+super(planetModel);
+// Argument checking
+if (leftLon < -Math.PI || leftLon > Math.PI)
+

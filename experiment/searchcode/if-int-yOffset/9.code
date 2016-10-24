@@ -1,0 +1,9 @@
+public void shiftBlur1(int[] s, int[] t) { // source &amp; target buffer
+int yOffset;
+
+for (int i = 1; i < (width-1); ++i) {
+// left and right edge (minus corner pixels)
+for (int j = 1; j < (height-1); ++j) {
+yOffset = j*width;
+t[yOffset] = (((((s[yOffset] &amp; 0xFF) << 2 ) +
+

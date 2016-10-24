@@ -1,0 +1,7 @@
+public boolean overlapExist(Occupancy other) {
+boolean overlap = false;
+if(!this.name.equals(other.name)) {
+if((this.leaveTime < other.arrivalTime) || (this.arrivalTime > other.leaveTime)) {
+//No overlap
+} else if (inBetween(other.arrivalTime) || (inBetween(other.leaveTime))){
+

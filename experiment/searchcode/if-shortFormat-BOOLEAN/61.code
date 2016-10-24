@@ -1,0 +1,11 @@
+@NonNull
+public String print(boolean shortFormat) {
+if (mSourcePosition.equals(SourcePosition.UNKNOWN)) {
+return Objects.hashCode(mSourceFile, mSourcePosition);
+}
+
+@Override
+public boolean equals(Object obj) {
+if (this == obj) {
+return true;
+

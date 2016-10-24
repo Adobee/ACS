@@ -1,0 +1,9 @@
+double Q3 = Q * Q * Q;
+double R2 = R * R;
+double d = Q3 - R2;
+double an = p / 3.0;
+if (d >= 0) {
+} else {
+double sQ = Math.pow(Math.sqrt(R2 - Q3) + Math.abs(R), 1.0 / 3.0);
+if (R < 0)
+

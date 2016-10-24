@@ -1,0 +1,7 @@
+public boolean cropButton(int _x, int _y, int _w, int _h, boolean buttonBoolean, int _isSelectedColor){
+
+if (mouseX > _x &amp;&amp; mouseX < _x + _w){
+public boolean regionButton(int _x, int _y, int _w, int _h, boolean _thisRegion, int _isSelectedColor){
+
+if (mouseX > _x &amp;&amp; mouseX < _x + _w){
+

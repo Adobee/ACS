@@ -1,0 +1,8 @@
+public static void validatePriceText(JTextField textField){
+String text = textField.getText();
+int caretPosition = textField.getCaretPosition();
+public static void validateDiscountText(JTextField discountTextField) {
+String text = discountTextField.getText();
+if (!text.isEmpty()) {
+int caretPosition = discountTextField.getCaretPosition();
+

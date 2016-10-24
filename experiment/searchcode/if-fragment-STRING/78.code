@@ -1,0 +1,8 @@
+public abstract class AppFragment extends Fragment {
+
+public static AppFragment getCurrentFragment(FragmentManager manager) {
+if(manager.getBackStackEntryCount() == 0) {
+return null;
+}
+String fragmentTag = manager.getBackStackEntryAt(manager.getBackStackEntryCount() - 1).getName();
+

@@ -1,0 +1,11 @@
+public boolean isCheckOk() {
+return checkOk;
+}
+
+public boolean isToleranceRunning() {
+long milli = System.currentTimeMillis();
+int diff = (int) (milli - lastMilli);
+
+float seconds = diff / 1000f;
+if (seconds <= ClientTestInterface.networkTimeout) {
+

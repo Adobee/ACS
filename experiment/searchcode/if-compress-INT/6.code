@@ -1,0 +1,8 @@
+public Set<CompressType> getCompressTypes() {
+if (compressTypes == null) {
+compressTypes = new LinkedHashSet<CompressType>();
+* @return
+*/
+public byte[] compress(int compressTypeValue, byte[] value) {
+CompressType compressType = EnumHelper.valueOf(CompressType.class, compressTypeValue);
+

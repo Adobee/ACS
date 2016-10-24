@@ -1,0 +1,8 @@
+return matrix.length == 0 ? new ArrayList<Integer>() : spiralOrder(0, 0, matrix.length, matrix[0].length, matrix, new ArrayList<Integer>());
+}
+
+private ArrayList<Integer> spiralOrder(int startRow, int startCol, int rowLength, int colLength, int[][] matrix, ArrayList<Integer> res) {
+//left side: bottom up
+for (int i = rowLength - startRow - 1; i >= startRow; i--) {
+if (i == startRow) continue;
+

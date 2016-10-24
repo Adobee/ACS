@@ -1,0 +1,8 @@
+public static void writeString(Memory memory, int pos, String value, int len) {
+byte strarray[] = value.getBytes();
+int strlen = strarray.length;
+if (strlen > len)
+strlen = len;
+for (int i = 0; i < strlen; i++)
+memory.set8(pos+i, strarray[i]);
+

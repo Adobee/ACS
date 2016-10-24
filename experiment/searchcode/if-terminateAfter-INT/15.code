@@ -1,0 +1,6 @@
+countRequest.preference(request.param(&quot;preference&quot;));
+
+final int terminateAfter = request.paramAsInt(&quot;terminate_after&quot;, DEFAULT_TERMINATE_AFTER);
+if (terminateAfter < 0) {
+throw new ElasticsearchIllegalArgumentException(&quot;terminateAfter must be > 0&quot;);
+

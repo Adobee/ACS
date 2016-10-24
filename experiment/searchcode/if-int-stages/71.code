@@ -1,0 +1,11 @@
+private Map<String, Boolean> completed = new HashMap<String, Boolean>();
+
+public RandomLessonTracker(String[] stages) {
+if (stages == null)
+stages = new String[0];
+this.stage = stage;
+}
+
+public String getStage() {
+if (this.stage == null &amp;&amp; stages.length > 0)
+

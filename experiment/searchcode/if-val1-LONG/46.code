@@ -1,0 +1,7 @@
+return ((Integer) val1).intValue() != ((Integer) val2).intValue() ? Boolean.TRUE : Boolean.FALSE;
+case BW_AND:
+if (val2 instanceof Long) return (Integer) val1 &amp; (Long) val2;
+return (Integer) val1 | (Integer) val2;
+case BW_SHIFT_LEFT:
+if (val2 instanceof Long) return (Integer) val1 << (Long) val2;
+

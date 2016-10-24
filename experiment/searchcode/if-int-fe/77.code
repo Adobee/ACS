@@ -1,0 +1,11 @@
+public void save(FeType feType) {
+feTypeRepository.save(feType);
+}
+
+@Override
+public void deleteById(int id) {
+public void updateById(FeType feType) {
+FeType tmp = feTypeRepository.findOne(feType.getId());
+if (null != tmp) {
+tmp.setName(feType.getName());
+

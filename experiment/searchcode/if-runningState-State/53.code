@@ -1,0 +1,11 @@
+import com.cmov.bombermanandroid.app.states.RunningState;
+
+/**
+*
+*/
+public class TurnPauseOnOffCommand extends Command{
+@Override
+public void execute() {
+if(Game.getCurrentState() instanceof PausedState) {
+Game.resumeTimeOutThread();
+

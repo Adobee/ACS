@@ -1,0 +1,12 @@
+Node closest = path.leaf();
+if (closest == null) {
+return false;
+}
+
+if (closest.getNodeType() == NodeType.LOCALVARNODE || closest.getNodeType() == NodeType.LOCALASGNNODE ||
+return true;
+}
+
+if (closest.getNodeType() == NodeType.ARGUMENTNODE) {
+Node parent = path.leafParent();
+

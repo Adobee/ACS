@@ -1,0 +1,8 @@
+public void setOrAnimatePlusCheckIcon(final ImageView imageView, boolean isCheck,
+boolean allowAnimate) {
+
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+imageView.setImageDrawable(drawable);
+if (allowAnimate) {
+imageView.setImageState(isCheck ? STATE_UNCHECKED : STATE_CHECKED, false);
+

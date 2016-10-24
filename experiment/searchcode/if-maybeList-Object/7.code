@@ -1,0 +1,5 @@
+for (JsonElement elem : maybeList(obj.get(KEYWORDS))) {
+JsonObject kwObject = elem.getAsJsonObject();
+JsonElement maybeType = kwObject.get(KEYWORD_TYPE);
+if (maybeType != null &amp;&amp; KEYWORDS_TYPES_TO_IGNORE.contains(maybeType.getAsString())) {
+

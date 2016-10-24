@@ -1,0 +1,9 @@
+if (n == 0) return;
+
+int lastA = m - 1, lastB = n - 1, i;
+int lastMerged = m + n - 1;
+while (i >= 0 &amp;&amp; lastA >= 0 &amp;&amp; lastB >= 0) {
+if (A[lastA] > B[lastB]) {
+A[i] = A[lastA];
+lastA--;
+

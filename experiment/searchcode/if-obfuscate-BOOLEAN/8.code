@@ -1,0 +1,19 @@
+private static final long serialVersionUID = 3252478574916068063L;
+
+private boolean _passwordvisible;
+
+private final int _columnToObfuscate;
+
+public PasswordTableModel(Object[][] tablevalues, Object[] strings, int columnToObfuscate)
+Object result = super.getValueAt(row, column);
+
+if (column == _columnToObfuscate &amp;&amp; !_passwordvisible)
+{
+result = &quot;*******&quot;;
+}
+
+return result;
+}
+
+}
+

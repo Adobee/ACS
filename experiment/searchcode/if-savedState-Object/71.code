@@ -1,0 +1,10 @@
+super.onCreate(savedState);
+setContentView(R.layout.main);
+String answer = null;
+// savedState could be null
+if (null != savedState) {
+// This is a gratuitious test, remove it
+Object oldTaskObject = getLastNonConfigurationInstance();
+if (null != oldTaskObject) {
+int oldtask = ((Integer) oldTaskObject).intValue();
+

@@ -1,0 +1,12 @@
+import org.apache.lucene.index.IndexReader;
+import org.apache.lucene.search.Scorer;
+import org.apache.lucene.search.TopDocs;
+import org.apache.lucene.search.TopScoreDocCollector;
+return topDocs.scoreDocs[pos].doc;
+}
+
+@Override
+public float getScore(int pos) {
+if (topDocs == null) {
+topDocs = tdc.topDocs();
+

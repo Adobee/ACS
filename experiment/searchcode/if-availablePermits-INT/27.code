@@ -1,0 +1,10 @@
+public class SimpleSemaphore implements Semaphore {
+private int availablePermits;
+private int maxPermits;
+
+
+public SimpleSemaphore(int permits) {
+public synchronized void release(int permits) {
+if (permits < 1){
+System.out.println(&quot;Error: permits should be > 0&quot;);
+

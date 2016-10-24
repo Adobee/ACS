@@ -1,0 +1,7 @@
+DateTimeZone zone = null;
+if (tenant != null) {
+zone = DateTimeZone.forID(tenant.getTimezoneId());
+final DateTimeZone zone = getDateTimeZoneOfTenant();
+if (zone != null) {
+today = new LocalDate(zone);
+

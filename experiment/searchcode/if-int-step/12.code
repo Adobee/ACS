@@ -1,0 +1,11 @@
+}catch(ArrayIndexOutOfBoundsException e){
+return answer;
+}
+boolean[][] b = new boolean[m][n];
+int stepY = 1;
+int stepX = 0;
+int x = 0 ;
+int y = 0 ;
+
+for(int i = 0 ; i < m*n ; i++ ){
+

@@ -1,0 +1,10 @@
+public static Throwable getCause(Throwable throwable)
+{
+Throwable cause = null;
+try
+{
+if ( EJB.EJB_EXCEPTION.isInstance(throwable) )
+cause = (Throwable) Reflections.getGetterMethod(EJB.EJB_EXCEPTION, &quot;causedByException&quot;).invoke(throwable);
+}
+else if (throwable instanceof ServletException)
+

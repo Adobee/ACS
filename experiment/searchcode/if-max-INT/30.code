@@ -1,0 +1,14 @@
+public static int trap(int[] A) {
+int len = A.length;
+if(len<=2){
+return 0;
+}
+int[] maxL = new int[len];
+int[] maxR = new int[len];
+
+int max = A[0];
+maxL[0] = 0;
+for(int i=1;i<len;i++){
+maxL[i] = max;
+if(max<A[i]){
+

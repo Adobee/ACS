@@ -1,0 +1,9 @@
+return 0;
+}
+int i = pos % nvars;
+if (measurements.isTimeInvariant()) {
+return H.get(i, i);
+}
+int j = pos / nvars;
+if (j != hpos) {
+

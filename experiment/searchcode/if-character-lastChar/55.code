@@ -1,0 +1,7 @@
+import java.util.*;
+
+public class LastCharacter {
+public static String lastChar(String s) {
+if(s.trim().length() == 0) return &quot;&quot;;
+if(Character.isWhitespace(s.charAt(s.length() - 1)) == false) s = s + &quot; &quot;;
+

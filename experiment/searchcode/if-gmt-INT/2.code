@@ -1,0 +1,7 @@
+int result = 1;
+result = prime * result + (int) (gmtTimeInMillis ^ (gmtTimeInMillis >>> 32));
+return false;
+}
+QueryTypeGmtTimeInMillis other = (QueryTypeGmtTimeInMillis) obj;
+if (gmtTimeInMillis != other.gmtTimeInMillis) {
+

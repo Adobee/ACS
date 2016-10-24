@@ -1,0 +1,8 @@
+TreeMap<String, Double> result = new TreeMap<String, Double>();
+
+Set<Map.Entry<String, Double>> set = docMap.entrySet();
+Iterator<Map.Entry<String, Double>> itr = set.iterator();
+Map.Entry<String, Double> entry = null;
+
+String term = &quot;&quot;;
+

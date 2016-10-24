@@ -1,0 +1,7 @@
+public static void produceDirectory(File directory) throws IOException {
+if (!directory.exists() &amp;&amp; !directory.mkdirs()) throw new IOException(&quot;Directory doesn&#39;t exist and could not be created: &quot; + directory);
+if (!directory.isDirectory()) throw new IOException(&quot;Path exists but is not a directory: &quot; + directory);
+}
+
+}
+

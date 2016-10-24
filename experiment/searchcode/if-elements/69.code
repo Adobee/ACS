@@ -1,0 +1,10 @@
+public class BubbleSort<E extends Comparable<E>> implements Sort<E> {
+
+@Override
+public E[] sort(E[] elements) {
+int n = elements.length;
+swapped = false;
+
+for (int i = 1; i < n; i++) {
+if (less(elements[i], elements[i - 1])) {
+

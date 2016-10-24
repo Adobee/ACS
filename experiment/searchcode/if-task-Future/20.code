@@ -1,0 +1,10 @@
+package task.factory;
+
+import java.util.concurrent.FutureTask;
+
+public class FutureTaskFactory {
+private static FutureTaskFactory uniqueInstance = null;
+
+public static synchronized FutureTaskFactory getInstance() {
+if(uniqueInstance == null){
+

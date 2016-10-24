@@ -1,0 +1,14 @@
+private final Thread creatingThread = Thread.currentThread();
+
+public void cancel()
+{
+synchronized ( creatingThread )
+{
+if ( creatingThread.isAlive() )
+{
+creatingThread.interrupt();
+}
+}
+}
+}
+

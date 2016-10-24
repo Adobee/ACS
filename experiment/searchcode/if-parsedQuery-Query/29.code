@@ -1,0 +1,6 @@
+public void testQueryStringBuilder() throws Exception {
+IndexQueryParserService queryParser = queryParser();
+Query parsedQuery = queryParser.parse(queryString(&quot;test&quot;).defaultField(&quot;content&quot;).phraseSlop(1)).query();
+
+assertThat(parsedQuery, instanceOf(TermQuery.class));
+

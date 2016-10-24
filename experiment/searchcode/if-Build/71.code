@@ -1,0 +1,10 @@
+this.eventBus = eventBus;
+}
+
+@Override
+public void visit(RepositoryBuild build) throws Exception {
+if (build.getState().isComplete()) {
+Optional<Long> pendingBuildId = buildNumbers.getPendingBuildId();
+if (pendingBuildId.isPresent()) {
+LOG.info(&quot;Posting event for pending build {} for branch {}&quot;, pendingBuildId.get(), build.getBranchId());
+

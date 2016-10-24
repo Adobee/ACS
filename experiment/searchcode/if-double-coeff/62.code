@@ -1,0 +1,12 @@
+package linkedLists;
+
+public class Term implements Comparable<Term>{
+
+private double coeff;
+private double power;
+
+public Term(double c, double p)
+{
+coeff = c;
+power = p;
+

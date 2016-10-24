@@ -1,0 +1,7 @@
+int firstSpace = statusLine.indexOf(&quot; &quot;);
+String command = statusLine.substring(0, firstSpace);
+int secondSpace = statusLine.indexOf(&quot; &quot;, firstSpace + &quot; &quot;.length());
+String host = getHeaderMap().containsKey(&quot;Host&quot;) ? getHeaderMap().get(&quot;Host&quot;) : DEFAULT_HOST;
+int port = DEFAULT_PORT;
+if (host.contains(&quot;:&quot;)) {
+

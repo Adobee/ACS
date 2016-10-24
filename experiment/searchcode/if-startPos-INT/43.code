@@ -1,0 +1,14 @@
+public static String[] delimitedString(String from, char start, char end) {
+
+List<String> list = new ArrayList<String>();
+
+int startPos = 0;
+
+while(true) {
+startPos = from.indexOf(start, startPos);
+else {
+int endPos = from.indexOf(end, startPos + 1);
+
+if(endPos < 0)
+break;//終了文字が見つからなければbreak
+

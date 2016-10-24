@@ -1,0 +1,12 @@
+Pair<AbstractSeries, XYSeriesFormatter<?>> series = hiddenSeries.remove(seriesKey);
+if (series == null)  return;
+visibleSeries.put(seriesKey,  series);
+for (Pair<AbstractSeries, XYSeriesFormatter<?>> p : allSeries)
+if (visibleSeries.containsValue(p)) ret.add(p);
+
+return ret;
+}
+
+
+public boolean isVisible(String seriesKey) {
+

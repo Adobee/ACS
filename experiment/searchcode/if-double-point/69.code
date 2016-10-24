@@ -1,0 +1,14 @@
+public class PolarPoly {
+
+private Vector<PointDouble> points;
+
+public PolarPoly() {
+points = new Vector<PointDouble>();
+double t = ((Double) ths.elementAt(i)).doubleValue();
+if (t < lt) {
+lt = t;
+ind = i;
+}
+}
+pts[j] = (PointDouble) v.elementAt(ind);
+

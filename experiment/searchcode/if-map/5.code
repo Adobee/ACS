@@ -1,0 +1,13 @@
+map = new HashMap<T,Map<T,Map<T,R>>>();
+}
+
+public R get(T a , T b , T c){
+if (containsKeys(a,b,c)){
+return map.get(a).get(b).get(c);
+}
+return null;
+}
+
+public boolean containsKeys(T a , T b , T c){
+if (map.containsKey(a)){
+

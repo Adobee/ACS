@@ -1,0 +1,13 @@
+List stats = getStats(name);
+if (stats != null) {
+stats.clear();
+}
+}
+
+public synchronized List<XYDataItem> getStats(String name) {
+public long getLastValueForStat(String statName) {
+long statValue = 0;
+
+List<XYDataItem> stats = getStats(statName);
+if (stats != null &amp;&amp; !stats.isEmpty()) {
+

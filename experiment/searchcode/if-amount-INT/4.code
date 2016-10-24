@@ -1,0 +1,9 @@
+private String name;
+private int amount;
+private static final int MAX_AMOUNT = 64;
+
+public ItemStack(String name, int amount) {
+public int give(int amount) {
+int excess = (this.amount + amount) - MAX_AMOUNT;
+if (excess >= 0) {
+

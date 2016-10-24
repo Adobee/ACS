@@ -1,0 +1,8 @@
+Recruitplan plan = (Recruitplan) this.dao.loadObject(Recruitplan.class, id, null,
+new boolean[0]);
+if (errors.size() < 1) {
+this.dao.deleteObject(plan);
+this.dao.saveObject(recruitplan);
+if (recruitplan.getRecpStatus().intValue() != 1) {
+addLog(recruitplan, empNo);
+

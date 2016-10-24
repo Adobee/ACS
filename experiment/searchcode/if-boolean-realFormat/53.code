@@ -1,0 +1,14 @@
+mHeader = context.header();
+}
+
+static boolean isIndexed(File file) throws IOException {
+if (SamUtils.isBAMFile(file)) {
+return BamIndexer.indexFileName(file).exists() || BamIndexer.secondaryIndexFileName(file).exists();
+return count;
+}
+
+
+@Override
+public boolean hasNext() {
+if (mNextRecordToReturn != null) {
+

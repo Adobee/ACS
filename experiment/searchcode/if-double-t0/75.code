@@ -1,0 +1,9 @@
+public static double linear(double s0, long t0, double s1, long t1, long t) {
+double dt = t1-t0;
+if(dt == 0) return s0;
+return s0+((double)(t-t0))*(s1-s0)/dt;
+public static double bezier4(double s0, long t0, double s1, double s2, double s3, long t1, double t) {
+double dt = t1-t0;
+if(dt == 0) return s0;
+return bezier4(s0, s1, s2, s3, (t-t0)/dt);
+

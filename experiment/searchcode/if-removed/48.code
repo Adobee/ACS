@@ -1,0 +1,11 @@
+int comp=obj.compareTo(removedNode.getData());
+if(comp==0) found=true;
+else{
+parent=removedNode;
+if(comp<0) removedNode=removedNode.getLeft();
+else removedNode=removedNode.getRight();
+}
+}
+if(!found) return false;
+if(removedNode.getLeft()==null || removedNode.getRight()==null){
+

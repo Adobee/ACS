@@ -1,0 +1,7 @@
+public static double[] normalizeArray(double[] values, double normalizedSum) throws ArithmeticException,
+IllegalArgumentException {
+if (Double.isInfinite(normalizedSum)) {
+throw MathRuntimeException.createIllegalArgumentException(&quot;Cannot normalize to an infinite value&quot;);
+}
+if (Double.isNaN(normalizedSum)) {
+

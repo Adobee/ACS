@@ -1,0 +1,13 @@
+if (route.containsKey(&quot;isRegex&quot;)) {
+this.setIsRegex(route.getBoolean(&quot;isRegex&quot;));
+}
+
+if (route.containsKey(&quot;method&quot;)) {
+this.setMethod(route.getString(&quot;method&quot;));
+this.put(&quot;isRegex&quot;, regex);
+}
+
+public boolean isRegex() {
+if (this.containsKey(&quot;isRegex&quot;)) {
+return (this.getBoolean(&quot;isRegex&quot;) ? true : false);
+

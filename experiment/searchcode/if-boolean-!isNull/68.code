@@ -1,0 +1,11 @@
+* @author mg
+*/
+public class NullableSpinnerDateModel extends SpinnerDateModel {
+
+protected boolean isNull;
+@Override
+public Object getValue() {
+if (isNull) {
+return null;
+} else {
+

@@ -1,0 +1,8 @@
+public static double getdRatio(double dRatio){
+if (dRatio >=1 || dRatio <=0 ) return 0 ;
+String dRatioM100 = String.valueOf(dRatio *100);
+double dRatio2 = Double.parseDouble(dRatioM100Array[1]);
+if (dRatio1==0&amp;&amp;dRatio2>0){
+dRatio=0.01;
+}else{
+

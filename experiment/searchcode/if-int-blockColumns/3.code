@@ -1,0 +1,15 @@
+if( newLine ) {
+newLine = false;
+
+if( !blockColumns.isEmpty() ) {
+int blockStart = blockColumns.get( blockColumns.size() - 1 );
+// save the current column
+blockColumns.add( column );
+}
+
+/**
+* {@inheritDoc}
+*/
+public void endBlock() {
+if( blockColumns.isEmpty() )
+

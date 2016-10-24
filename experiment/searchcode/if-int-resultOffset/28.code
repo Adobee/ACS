@@ -1,0 +1,9 @@
+public String showTrends(@RequestParam(&quot;query&quot;) String query, Model model, String offset, String pageSize) {
+int resultLimit = 0;
+int resultOffset = 0;
+int listSize = 0;
+resultLimit = int_offset + PSMetadata.TWITTER_LIMIT_RESULT;
+}
+if (listSize <= int_offset) {
+resultOffset = listSize;
+

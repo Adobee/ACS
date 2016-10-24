@@ -1,0 +1,14 @@
+public boolean evaluate( String input, boolean paralell ) {
+
+Stack<Character> stack = new Stack<Character>();
+char lastChar = &#39;[&#39;;
+
+try
+{
+for (char currentChar : input.toCharArray())
+case &#39;{&#39;:
+if ( lastChar == &#39;(&#39; || lastChar == &#39;[&#39; )
+stack.push(currentChar);
+else
+return false;
+

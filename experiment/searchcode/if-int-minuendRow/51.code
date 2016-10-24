@@ -1,0 +1,7 @@
+* @return the row that the variable is basic in.  null if the column is not basic
+*/
+private Integer getBasicRow(final int col) {
+* @return the row that the variable is basic in.  null if the column is not basic
+*/
+private Integer getBasicRowForSolution(final int col) {
+

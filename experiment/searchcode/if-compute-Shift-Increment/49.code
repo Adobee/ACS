@@ -1,0 +1,13 @@
+setZero((temp &amp; 0xff) == 0);
+setCarry(computeByteXor(temp));
+incrementPc();
+}
+
+/**
+* Performs a COMPARE operation
+setCarry((x &amp; 1) != 0);
+x = ((x >> 1) | (shiftInValue ? 128 : 0));
+setRegisterValue(operand, x);
+setZero((x &amp; 0xff) == 0);
+incrementPc();
+

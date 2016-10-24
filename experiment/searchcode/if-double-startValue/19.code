@@ -1,0 +1,8 @@
+public NumberWithGradient(Number startValue, Number targetValue, Number gradient) {
+
+if(startValue instanceof NumberWithGradient) {
+this.gradient     = gradient;
+
+if(this.startValue == null)
+throw new IllegalArgumentException(&quot;start value cannot be null&quot;);
+

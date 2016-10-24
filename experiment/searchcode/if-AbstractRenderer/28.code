@@ -1,0 +1,8 @@
+package com.gafactory.core.client.ui.labels;
+
+import com.google.gwt.text.shared.AbstractRenderer;
+public class BooleanLabel extends RenderedLabel<Boolean> {
+public BooleanLabel() {
+super(new AbstractRenderer<Boolean>() {
+@Override
+

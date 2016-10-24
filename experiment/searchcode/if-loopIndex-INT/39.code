@@ -1,0 +1,12 @@
+public class PlatformSegment extends MapSegment
+{
+private static int loopIndex = 0;
+
+public PlatformSegment()
+{
+m_Type = MapSegmentGenerator.Platform;
+switch(loopIndex)
+{
+case 0:
+m_image = BitmapManager.getInstance().getBitmap(BitmapManager.Platform0);
+

@@ -1,0 +1,9 @@
+static Query createSearchFilter(String[] types, Query aliasFilter, boolean hasNestedFields) {
+Query typesFilter = null;
+if (types != null &amp;&amp; types.length >= 1) {
+return null;
+}
+
+BooleanQuery.Builder bq = new BooleanQuery.Builder();
+if (typesFilter != null) {
+

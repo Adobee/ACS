@@ -1,0 +1,6 @@
+Principal principal, boolean deleteDestination)
+throws AuthenticationException, AuthorizationException, ReadOnlyException,
+if (deleteDestination) {
+Resource dest = this.dao.load(destUri);
+if (dest != null) {
+

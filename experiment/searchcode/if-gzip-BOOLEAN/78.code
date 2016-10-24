@@ -1,0 +1,10 @@
+gzipEnabled = !&quot;false&quot;.equals(Play.configuration.getProperty(&quot;minifymod.gzipEnabled&quot;));
+if(Play.mode.isDev() &amp;&amp; moduleEnabled) {
+moduleEnabled = !&quot;true&quot;.equals(Play.configuration.getProperty(&quot;minifymod.moduleDisabledOnDev&quot;));
+* string back to response.out
+*/
+@Finally
+static void compress() throws IOException {
+if(moduleEnabled) {
+// gzip response if enabled, supported and not excluded
+

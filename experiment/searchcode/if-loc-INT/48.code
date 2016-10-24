@@ -1,0 +1,10 @@
+ArrayList<Piece> output = new ArrayList<Piece>(30);
+Randomizer randomGenerator = new Randomizer();
+int[] randomLoc = new int[2];
+public Move turn(ArrayList<Move> input){
+int x = (int)(Math.random()*input.size());
+if(input.size()==0) return new Move(99,99,99,99);
+return input.get(x);
+}
+}
+

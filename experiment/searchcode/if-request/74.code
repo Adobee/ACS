@@ -1,0 +1,13 @@
+this.nextHandler = nextHandler;
+}
+
+public void handleRequest(Request request) {
+if (isAppropriateRequest(request)) {
+} else {
+delegateRequest(request);
+}
+}
+
+protected void delegateRequest(Request request) {
+if (nextHandler != null) {
+

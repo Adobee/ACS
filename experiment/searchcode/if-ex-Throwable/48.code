@@ -1,0 +1,10 @@
+logTrace(message, LEVEL_TRACE, null);
+}
+
+public void trace(Throwable throwable) {
+if (throwable != null)
+logTrace(throwable.getMessage(), LEVEL_TRACE, throwable);
+public void debug(Throwable throwable) {
+if (throwable != null)
+logTrace(throwable.getMessage(), LEVEL_DEBUG, throwable);
+

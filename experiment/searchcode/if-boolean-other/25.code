@@ -1,0 +1,12 @@
+public boolean overlaps( LocatableShape other ){
+int x, otherX;
+int y, otherY;
+int h, otherH;
+int w, otherW;
+otherH = other.getHeigth();
+otherW = other.getWidth();
+
+if( x > otherX ){
+if( x - otherX > otherW )
+return false;
+

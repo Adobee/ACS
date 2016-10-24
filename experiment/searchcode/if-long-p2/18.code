@@ -1,0 +1,10 @@
+for (int i = 0; i < primes.size() - 1; i++) {
+long p1 = primes.get(i);
+long p2 = primes.get(i + 1);
+Math.min(p2 * p2 - 1, LIMIT));
+}
+System.out.println(sum);
+}
+
+static long multipleSum(long p, long begin, long end) {
+

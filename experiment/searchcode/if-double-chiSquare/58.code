@@ -1,0 +1,9 @@
+Iterator<ChisquareFeature> itr = fcluster.getFeatures().values().iterator();
+while(itr.hasNext()){
+ChisquareFeature feature = itr.next();
+
+if(features.get(feature.getFeature()) == null){
+public double getChiWeightOfFeatureOnScropus(ChisquareFeature feature){
+double sum = 0;
+Iterator<Label> lItr = labelStats.values().iterator();
+

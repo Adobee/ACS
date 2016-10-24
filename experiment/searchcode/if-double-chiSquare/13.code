@@ -1,0 +1,11 @@
+double distance = 0;
+if( relativeFreq ){
+distance = computeChisquare(q, r, topN);
+}
+else{
+distance = computeChisquare(q, corpusSizeQ, r, corpusSizeR, topN);
+for(int c = 0; c < clusters.size(); c++){
+double chisquare =  computeDistance(
+clusters.get(c).centroid.distribution,
+clusters.get(c).centroid.distributionSize,
+

@@ -1,0 +1,10 @@
+public CertificateDataWrapper(final Certificate certificate, final CertificateData certificateData, final Base64CertData base64CertData) {
+this.certificate = certificate;
+if (certificate==null) {
+this.certificateBytes = null;
+} catch (CertificateEncodingException e) {
+throw new IllegalStateException(e);
+}
+}
+if (certificateData != null) {
+

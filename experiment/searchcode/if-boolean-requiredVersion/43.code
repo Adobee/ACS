@@ -1,0 +1,10 @@
+public void addFromXml(Document xml, boolean isSpecification) throws IllegalConfigurationException {
+// check version
+if (requiredVersion > 0) {
+} catch (NumberFormatException e) {
+// ignore
+version = -1;
+}
+if (version < requiredVersion) {
+throw new IllegalConfigurationException(&quot;too old version (&quot; + version + &quot; when required is &quot; + requiredVersion + &quot;)&quot;);
+

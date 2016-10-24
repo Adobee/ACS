@@ -1,0 +1,10 @@
+public class Erf {
+
+/**
+* The number {@code X_CRIT} is used by {@link #erf(double, double)} internally.
+* This number solves {@code erf(x)=0.5} within 1ulp.
+* @see Gamma#regularizedGammaP(double, double, double, int)
+*/
+public static double erf(double x) {
+if (FastMath.abs(x) > 40) {
+

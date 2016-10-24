@@ -1,0 +1,7 @@
+public void encode(ChannelHandlerContext ctx, Message msg, ByteBuf out) throws Exception {
+int index = out.writerIndex();
+int msgSize = msg.estimateSize();
+
+if (preferDirect) {
+return ctx.alloc().ioBuffer(msgSize, msgSize);
+

@@ -1,0 +1,13 @@
+this.finalFutureValues=new double[valuesAtCurrentTime.length];
+
+
+MainTest.copyArray(currenTimeLevelValues, valuesAtCurrentTime);
+System.out.println(&quot;Newton Time = &quot;+time);
+//System.out.println();
+
+}
+
+
+private boolean stopCondition() {
+if (getInfinityNorm(this.deltaU) / getInfinityNorm(this.tempFutureValues) < this.accuracy) {
+

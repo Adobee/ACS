@@ -1,0 +1,7 @@
+public boolean checkAcutalObject(Object obj, Assertion assertion) {
+actualValue = OracleUtil.getActualValue(obj, assertion);
+return true;
+
+if (op == Assertion.CompareOperator.EqualTo)
+return assertion.getValue().equals(actualValue);
+

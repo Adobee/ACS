@@ -1,0 +1,8 @@
+public String asString(String key) {
+if(cfg.contains(key)) return cfg.asString(key);
+return extendedCfgs.asString(key);
+}
+
+public boolean contains(String key) {
+return cfg.contains(key) || extendedCfgs.contains(key);
+

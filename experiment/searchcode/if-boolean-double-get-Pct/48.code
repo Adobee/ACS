@@ -1,0 +1,9 @@
+boolean isHit = Utils.getParamValue(param, &quot;isHit&quot;, true);
+
+//是否暴击
+boolean isCrit = Utils.getParamValue(param, &quot;isCrit&quot;, false);
+unit.setMpMaxPct(mpMaxPct);
+
+//重新计算先用的红和蓝
+double hpNew = unit.getHpCur() * (1.0 * unit.getHpMax() / hpMaxOld);
+

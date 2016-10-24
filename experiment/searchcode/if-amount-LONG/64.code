@@ -1,0 +1,10 @@
+private long overdraftAmount;
+public CheckingAccount(String name, long overdraftAmount) {
+super(name);
+return true;
+}
+
+@Override
+public boolean withdraw(long amount) {
+if ((super.getBalance() - amount) > overdraftAmount) {
+

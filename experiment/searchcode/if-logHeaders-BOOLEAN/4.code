@@ -1,0 +1,14 @@
+public void flushBuffer() throws IOException {
+logHeaders();
+if (pw != null) {
+pw.flush();
+}
+if (os != null) {
+os.flush();
+}
+}
+
+private void logHeaders() {
+if (!hasHeaders) {
+hasHeaders = true;
+

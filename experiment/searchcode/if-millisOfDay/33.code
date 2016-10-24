@@ -1,0 +1,12 @@
+private Fecha(Integer d, Integer m, Integer a) {
+super();
+if(!esValida(d, m, a)) throw new IllegalArgumentException(&quot;Fecha Inválida&quot;);
+return suma(-a);
+}
+
+private static long millisOfDay = 1000*24*60*60;
+
+public Integer resta(Fecha f){
+long r;
+long dif = this.calendar.getTimeInMillis()-f.calendar.getTimeInMillis();
+

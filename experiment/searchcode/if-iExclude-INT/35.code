@@ -1,0 +1,11 @@
+if (i > 0 &amp;&amp; variablesToInclude[i] == variablesToInclude[i - 1]) {
+variablesToInclude[i] = -1;
+++iExclude;
+}
+}
+int[] series;
+if (iExclude > 0) {
+series = new int[variablesToInclude.length - iExclude];
+for (int i = 0; i < variablesToInclude.length; i++) {
+if (variablesToInclude[i] > -1) {
+

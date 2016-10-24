@@ -1,0 +1,7 @@
+return new InternalResolver(false).resolve(scheme);//thread safe sate
+}
+
+public Scheme resolve(String schemeName) {
+Scheme scheme = schemeStorage.getOne(schemeName);
+if(scheme == null) return null;
+

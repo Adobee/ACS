@@ -1,0 +1,7 @@
+protected Query getRangeQuery(String field, String part1, String part2, boolean startInclusive, boolean endInclusive) throws ParseException {
+if (&quot;*&quot;.equals(part1)) {
+clauses.add(new BooleanClause(q, BooleanClause.Occur.SHOULD));
+}
+}
+if (clauses.size() == 0)  // happens for stopwords
+

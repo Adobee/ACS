@@ -1,0 +1,11 @@
+public class IterHeightStrategy implements HeightStrategy<Integer> {
+
+private final int maxHeight;
+private int maxiter;
+private double factor;
+public int get(Integer data) {
+if (data < 0)
+return maxHeight;
+
+return data < 0 ? maxHeight : (int)(factor * Math.log(data + 1));
+

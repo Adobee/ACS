@@ -1,0 +1,7 @@
+int realLocalX = (realRegionOffsetX * 8) + posInChunkX;
+int realLocalY = (realRegionOffsetY * 8) + posInChunkY;
+return region.getObjects(regionCoords[plane][currentChunkX][currentChunkY][2], realLocalX, realLocalY);
+// overrided by static region to get mask from needed region
+@Override
+public int getMaskClipedOnly(int plane, int localX, int localY) {
+

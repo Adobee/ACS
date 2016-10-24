@@ -1,0 +1,10 @@
+private double threshold;
+
+public HardStepFunction(double threshold) {
+this.threshold = threshold;
+}
+
+public double g(double x, double m, T datapoint) {
+int group = datapoint.getGroup();
+if (group * x > group * threshold)
+

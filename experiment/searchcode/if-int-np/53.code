@@ -1,0 +1,6 @@
+for (int i = 1; i < npChunkTags.length - 1; i++) {
+if (tokens[i].equals(&quot;of&quot;) &amp;&amp; isInNpChunk(npChunkTags[i - 1])
+public static void attachPossessives(String[] posTags, String[] npChunkTags) {
+for (int i = 1; i < npChunkTags.length - 1; i++) {
+if (isPossessive(posTags[i]) &amp;&amp; isInNpChunk(npChunkTags[i - 1])) {
+

@@ -1,0 +1,19 @@
+File[] tmps = createSortFiles(in);
+
+File fBuf = null;
+for(File f:tmps){
+if(fBuf == null){
+fBuf = f;
+}else{
+File buf = sortMarge(fBuf, f);
+fBuf = buf;
+}
+}
+
+copy(fBuf, out);
+deleteFile(fBuf);
+
+ret = true;
+}finally{
+if(br != null)br.close();
+

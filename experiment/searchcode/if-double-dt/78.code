@@ -1,0 +1,14 @@
+private double output = Double.NaN;
+private double dt;
+
+public Differentiator(double dt)
+{
+this.dt = dt;
+}
+
+public void update(double input)
+{
+if (hasBeenUpdated)
+{
+output = (input - previous) / dt;
+

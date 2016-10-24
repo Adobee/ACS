@@ -1,0 +1,11 @@
+return adjacent;
+}
+
+public boolean shareCenter(Corner c) {
+Set<Point> and = new HashSet<Point>(closestCenters);
+and.retainAll(c.closestCenters);
+return and.size() == 2;
+}
+
+public boolean shareAllCenters(Corner c) {
+

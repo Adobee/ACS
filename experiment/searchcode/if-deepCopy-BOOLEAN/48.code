@@ -1,0 +1,7 @@
+* type is mutable. Subtypes whose {@code deepCopy} implementation returns a
+* non-serializable object <strong>must override</strong>
+Object deepCopy = deepCopy(value);
+
+if (!(deepCopy instanceof Serializable)) {
+throw new SerializationException(
+

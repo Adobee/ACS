@@ -1,0 +1,13 @@
+public Fraction mul(int a, Fraction b)
+{
+if (this.isFree(b)) return getFree();
+return b.multiplyBy(Fraction.getFraction(a, 1));
+}
+
+@Override
+public Fraction div(Fraction a, int b)
+{
+try
+{
+if (this.isFree(a)) return getFree();
+

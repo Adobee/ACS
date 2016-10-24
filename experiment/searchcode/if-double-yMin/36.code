@@ -1,0 +1,9 @@
+public static double xMin = 1;
+public static double xMax = 1;
+public static double yMin = 0;
+public static double yMax = 0;
+public boolean checkBound(double x, double y){
+if(xMin < x &amp;&amp; x < xMax &amp;&amp; yMin < y &amp;&amp; y < yMax)
+return true;
+return false;
+

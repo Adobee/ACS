@@ -1,0 +1,11 @@
+ret = c1.hashCode() + c2.hashCode();
+return ret;
+}
+
+@Override
+public boolean equals(Object o){
+if(o instanceof Couple<?>)
+{
+Couple<F> couple = (Couple<F>) o;
+return this.c1.equals(couple.c1) &amp;&amp; this.c2.equals(couple.c2);
+

@@ -1,0 +1,9 @@
+return parseCharacterRange(t);
+} else if(expect(t, &#39;.&#39;)) {
+t.next();
+return CharacterClass.ANY_CHAR;
+Character last = null;
+while(!expect(t, &#39;]&#39;)) {
+Character c = parseChar(t);
+if(c != null &amp;&amp; c.charValue() == &#39;-&#39; &amp;&amp; last != null) {
+

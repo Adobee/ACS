@@ -1,0 +1,7 @@
+public class Quaternion {
+private double Q0; // a
+private double Qi; // b
+private double Qj; // c
+if (Double.compare(that.Q0, Q0) != 0) return false;
+if (Double.compare(that.Qi, Qi) != 0) return false;
+

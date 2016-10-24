@@ -1,0 +1,13 @@
+public class Vector3d {
+public double x;
+public double y;
+public double z;
+
+public Vector3d() {
+}
+
+public Vector3d(double v, double v1, double v2) {
+x = v;
+y = v1;
+z = v2;
+

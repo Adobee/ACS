@@ -1,0 +1,11 @@
+int prevX = (int)x;
+int prevY = (int)y;
+
+if (prevX >= width) {
+prevX = width - 1;
+}
+if (prevY >= height) {
+prevY = height - 1;
+}
+if (prevX < 0) {
+

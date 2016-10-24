@@ -1,0 +1,16 @@
+private static int computeChainLength(int start) {
+long current = start;
+int length = 1;
+while (current > 1) {
+if (current % 2 == 0) {
+final int currentLen = computeChainLength(i);
+if (currentLen >= maxLen) {
+maxLen = currentLen;
+maxStart = i;
+}
+}
+System.out.println(maxLen);
+System.out.println(maxStart);
+}
+}
+

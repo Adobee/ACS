@@ -1,0 +1,10 @@
+private char winner = &#39; &#39;;
+public void judge(char[][] status){
+
+//check if anyone wins
+if (status[0][0]==status[1][1] &amp;&amp; status[1][1]==status[2][2] &amp;&amp; status[0][0] != &#39; &#39;){
+winner = status[0][0];
+}
+if (status[0][2]==status[1][1] &amp;&amp; status[1][1]==status[2][0] &amp;&amp; status[0][2] != &#39; &#39;){
+winner = status[0][2];
+

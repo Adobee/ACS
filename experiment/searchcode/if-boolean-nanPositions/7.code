@@ -1,0 +1,10 @@
+nanPositions = getNanPositions(ranks);
+if(nanPositions.size() > 0) {
+throw new NotANumberException();
+* @return true iff ranks contains one or more NaNs
+*/
+private boolean containsNaNs(IntDoublePair[] ranks) {
+
+for(int i = 0; i < ranks.length; i++) {
+if(Double.isNaN(ranks[i].getValue())) {
+

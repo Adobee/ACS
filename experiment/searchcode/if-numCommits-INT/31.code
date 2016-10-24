@@ -1,0 +1,11 @@
+private StepRecord<Iteration> currStepRec = new StepRecord<Iteration>();
+
+private int numCommitted;
+private final ParameterUnorderedWorklist<T> worklist;
+
+private LambdaVoid<T> mappableBody;
+@Override
+protected int commitAll() {
+int numCommits = 0;
+for (Iteration it : commitPool) {
+

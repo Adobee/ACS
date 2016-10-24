@@ -1,0 +1,12 @@
+public static RealMatrix exp(RealMatrix matrix){
+RealMatrix m=MatrixUtils.createRealMatrix(matrix.getRowDimension(), matrix.getColumnDimension());
+m.setEntry(i, j, Math.exp(matrix.getEntry(i, j)));
+}
+}
+return m;
+
+}
+
+// log elementwise
+public static RealMatrix log(RealMatrix matrix){
+

@@ -1,0 +1,14 @@
+private GetFuture result;
+private int numberOfElements;
+private Servant executor;
+
+public GetRequest(int numberOfElements, GetFuture result, Servant executor){
+this.numberOfElements = numberOfElements;
+this.executor = executor;
+}
+
+
+@Override
+public boolean canBeExecuted() {
+if(executor.getCurrentSize() >= numberOfElements) {
+

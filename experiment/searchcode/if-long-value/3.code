@@ -1,0 +1,10 @@
+public static ValueObjectLong newOrNull(Long value) {
+if (value != null) {
+return new ValueObjectLong(value);
+}
+return null;
+}
+
+public static ValueObjectLong newOrNull(String value) {
+if (value != null &amp;&amp; value.length() > 0) {
+

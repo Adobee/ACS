@@ -1,0 +1,6 @@
+public void onPermissionsChecked(MultiplePermissionsReport report) {
+if (report.areAllPermissionsGranted()) {
+} else {
+if (onPermissionsDeniedListener != null) {
+onPermissionsDeniedListener.onPermissionsDenied();
+

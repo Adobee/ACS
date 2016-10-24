@@ -1,0 +1,7 @@
+this.singleLineCommentDetector = new RubySingleLineCommentDetector();
+}
+
+@Override
+public boolean isValidCodeLine(String line, boolean openMultiLineComment) {
+boolean isCommentLine = singleLineCommentDetector.checkComment(line);
+

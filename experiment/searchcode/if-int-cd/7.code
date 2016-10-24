@@ -1,0 +1,8 @@
+public void dodajCD(String tytul, String wykonawca, int rok, StyleWybor styl, int cena, List<CD> a){
+a.add(new CD(tytul, wykonawca, rok, styl, cena));
+public void usunCDpoTytule(List<CD> a, String tytul){
+int b=0;
+for(CD cd : a){
+if(tytul==cd.pobierzTytul()){
+a.remove(b);
+

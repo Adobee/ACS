@@ -1,0 +1,12 @@
+double xIncrement;
+double yIncrement;
+Image image;
+double constantAcc;
+pokemonBox box = new pokemonBox();
+if (displacementX > box.resolution().width - 5 - 150 || displacementX < 0) {
+xIncrement = xIncrement *(-1);
+this.image=box.selectPokemon();
+}
+
+if (displacementY >box.resolution().height - 30 - 150 || displacementY <0) {
+

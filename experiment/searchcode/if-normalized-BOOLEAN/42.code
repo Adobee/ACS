@@ -1,0 +1,10 @@
+protected String getNormalizedUri() {
+String normalizedUri = this.originalUri;
+
+if (normalizedUri.startsWith(&quot;/&quot;)) {
+normalizedUri = &quot;http:&quot;.concat(this.originalUri);
+}
+
+if (!normalizedUri.endsWith(&quot;.js&quot;)) {
+if (!normalizedUri.contains(&quot;?&quot;)) {
+

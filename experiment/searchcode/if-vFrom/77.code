@@ -1,0 +1,14 @@
+Vertex<T> w = e.getTo();
+if(w.getKey().equals(to)) {
+return e;
+}
+}
+return null;
+}
+
+public void addEdge(T from, T to, int weight) {
+Vertex<T> vTo = vertices.get(to);
+Edge<T> edge = findEdge(from, to);
+if(edge == null) {
+edge = new Edge<T>(vFrom, vTo, weight);
+

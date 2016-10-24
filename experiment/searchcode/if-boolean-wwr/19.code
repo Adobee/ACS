@@ -1,0 +1,10 @@
+// i.e. R(&quot;foo&quot;, &quot;bar&quot;) => emit(&quot;foo&quot;, &quot;bar&quot;, R)
+public boolean emitRelatedWords = false;
+
+// i.e. in(&quot;foo&quot;, ss) &amp; in(&quot;bar&quot;, ss) => emit(&quot;foo&quot;, &quot;bar&quot;, &quot;synset&quot;)
+StringBuilder relations = new StringBuilder();
+for (WordWithRel wwr : path) {
+if (wwr.relation == null)
+continue;
+if (relations.length() > 0)
+

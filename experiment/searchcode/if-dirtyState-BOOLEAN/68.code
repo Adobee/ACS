@@ -1,0 +1,14 @@
+/** integration direction. */
+private boolean forward;
+
+/** indicator for dirty state. */
+private boolean dirtyState;
+
+
+/** Simple constructor.
+public double[] getInterpolatedState() throws DerivativeException {
+
+// lazy evaluation of the state
+if (dirtyState) {
+final double oneMinusThetaH = currentTime - interpolatedTime;
+

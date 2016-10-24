@@ -1,0 +1,7 @@
+public abstract class MapMapper<InnerType,OutKey,OutValue>
+extends Mapper<LongWritable,Text,OutKey,OutValue> {
+
+// converting from Text to String is lame, but so what
+
+abstract Codec<InnerType> getCodec();
+

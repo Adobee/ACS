@@ -1,0 +1,8 @@
+public interface IRLocation extends Comparable<IRLocation> {
+boolean equals(IRLocation loc);
+/** Returns true if the location follows the basic block. The return value
+* is undefined if the block and the location are not in the same file, or
+* if the block does not have a defined end location.
+*/
+boolean follows(IRBasicBlock block);
+

@@ -1,0 +1,7 @@
+public WeeklyGoalValues getWeeklyGoalValues(Week week) {
+WeeklyGoalValues weeklyGoalValues = weeklyGoalValuesByWeek.get(week);
+if (weeklyGoalValues == null) {
+for (WeeklyGoalValues weeklyGoalValues : weeklyGoalValuesByWeek
+.values()) {
+if (weeklyGoalValues.getWeek().isLaterOrSameLike(currentWeek)) {
+

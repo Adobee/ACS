@@ -1,0 +1,8 @@
+* @param i How many minutes of waiting should this WaitTime inflict.
+*/
+public static WaitTime getWaitTime(final int i) {
+return WaitTime.getWaitTime(i, TimeUnit.MINUTES);
+final long actualTime = WaitTime.DEFAULT_TIME_UNIT.convert(i, unit);
+if (!WaitTime.waitTimes.containsKey(actualTime)) {
+final WaitTime w = new WaitTime(actualTime);
+

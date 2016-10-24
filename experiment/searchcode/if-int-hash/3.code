@@ -1,0 +1,12 @@
+package edu.jlime.collections.hash;
+
+public class DoubleHash {
+
+SimpleIntIntHash[] hashes = new SimpleIntIntHash[50];
+return (int) Math.abs((k * 5700357409661598721L) % hashes.length);
+// return k % MAX_BUCKETS;
+}
+
+public void put(int k, int v) {
+if (hashes[hash(k)] == null)
+

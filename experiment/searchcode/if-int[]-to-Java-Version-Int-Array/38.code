@@ -1,0 +1,15 @@
+sortIntArray(a, 0, a.size() - 1);
+
+}
+
+private void sortIntArray(ArrayList<Integer> a, int p, int r){
+if (p >= r)
+return;
+
+int q = partitionIntArr(a, p, r);
+sortIntArray(a, p, q);
+sortIntArray(a, q + 1, r);
+}
+/*
+//		VERSION 2.0 (Lomuto&#39;s partitioning algorithm)
+

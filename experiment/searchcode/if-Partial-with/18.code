@@ -1,0 +1,8 @@
+for (int i = 0; i < this.partialDefinitionType.length; i++)
+this.partialDefinitionType[i] = 0;
+
+if (this.partialDefinitions == null) {
+for (ParCELExtraNode def : this.partialDefinitions) {
+int type = (int) def.getType();
+if (type >= this.partialDefinitionType.length)
+

@@ -1,0 +1,15 @@
+Point newPos = new Point (position);
+newPos.x += vx * dTime / 10;
+newPos.y += vy * dTime / 10;
+if (newPos.x < 0)
+{
+newPos.x = -newPos.x;
+vx = -vx;
+}
+if (newPos.y < 0)
+{
+newPos.y = -newPos.y;
+vy = -vy;
+}
+if (newPos.x >= width)
+

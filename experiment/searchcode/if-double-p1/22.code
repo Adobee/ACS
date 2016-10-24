@@ -1,0 +1,14 @@
+} else
+return false;
+}
+
+@Override
+double perimetr() {
+if (isTriangle()) {
+
+return p1.getLength(p1, p2) + p1.getLength(p2, p3) + p1.getLength(p1, p3);
+double area() {
+if (isTriangle()) {
+double p = perimetr() / 2.0;
+return Math.sqrt(p * (p - p1.getLength(p1, p2)) * (p - p1.getLength(p2, p3)) * (p - p1.getLength(p1, p3)));
+

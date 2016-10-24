@@ -1,0 +1,13 @@
+package bhaskara;
+
+
+public class Calculator {
+
+public double delta(double a, double b, double c) {
+public double[] calculate(double a, double b, double c) throws Exception {
+
+double delta = this.delta(a,b,c);
+
+if(delta < 0) {
+throw new Exception(&quot;Delta < 0, impossível calcular&quot;);
+

@@ -1,0 +1,10 @@
+if (a.compareTo(b) == 0) {
+return a;
+}
+BigInteger tmp = a.mod(b);
+if (tmp.compareTo(BigInteger.ZERO) == 0) {
+BigInteger prodMenos = producto.subtract(BigInteger.ONE);
+
+do{
+if (producto.gcd(tmp).compareTo(BigInteger.ONE) == 0) {
+

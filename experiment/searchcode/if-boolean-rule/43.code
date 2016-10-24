@@ -1,0 +1,12 @@
+import java.util.List;
+
+import com.onpositive.text.analysis.IToken;
+
+public class RuleAlternative extends TokenRule {
+ArrayList<TokenRule> rules = new ArrayList<TokenRule>();
+
+@Override
+public boolean execute(int pos) {
+for(TokenRule rule : rules){
+if(rule.execute(pos)){
+

@@ -1,0 +1,10 @@
+public class UmlGroup extends UmlShape {
+private ArrayList<UmlShape> shapeList;
+private boolean onSelect = false;
+
+public UmlGroup() {
+public int choosePort(int x, int y, UmlLine l, boolean arr, boolean create) {
+Point p = new Point(x, y);
+for (UmlShape shape : shapeList) {
+if (shape.inSide(p) != null) {
+

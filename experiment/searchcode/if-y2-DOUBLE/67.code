@@ -1,0 +1,14 @@
+double rangeX = x2 - x1;
+double rangeY = y2 - y1;
+if (x1 > maxX || x2 < minX)
+return false;
+if (x1 < minX)
+{
+if (rangeX == 0.0)
+double m = rangeY / rangeX;
+double b = y1 - m * x1;
+x2 = maxX;
+y2 = m * x2 + b;
+}
+if (y1 < y2)
+

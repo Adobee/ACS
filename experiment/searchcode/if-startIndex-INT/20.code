@@ -1,0 +1,6 @@
+public static void quickSort(int[] array, int startIndex, int endIndex){
+// Tried to use &quot;startIndex==endIndex&quot;, got StackOverflowError
+if(startIndex>=endIndex) return;
+
+int pivotIndex = partition(array, startIndex, endIndex);
+

@@ -1,0 +1,17 @@
+private final float _x0, _x1;
+private final float _d;
+
+public LinearFunction(float x0, float x1) {
+_x0 = x0;
+public Float apply(Float input) {
+if (input <= _x0) {
+return 0f;
+}
+if (input >= _x1) {
+return 1f;
+}
+return (input - _x0) / _d;
+}
+
+}
+

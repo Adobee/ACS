@@ -1,0 +1,8 @@
+out.writeOptionalString(type);
+out.writeBoolean(doc != null);
+if (doc != null) {
+out.writeGenericValue(doc);
+private static void setDefaultIndexTypeFields(QueryShardContext context, Item item, List<String> moreLikeFields,
+boolean useDefaultField) {
+if (item.index() == null) {
+

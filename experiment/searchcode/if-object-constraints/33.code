@@ -1,0 +1,8 @@
+public void add(RuleConstraint constraint) {
+allConstraints.add(constraint);
+if (constraint instanceof EventConstraint) {
+additionalConstraints.add(constraint);
+
+if (constraint instanceof SequenceConstraint) {
+sequenceConstraints.add((SequenceConstraint) constraint);
+

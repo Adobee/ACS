@@ -1,0 +1,9 @@
+public class FixedIterationsStoppingCondition extends StoppingCondition {
+
+private int maxIter;
+private int currentIter;
+private Set<Query> queries;
+public FixedIterationsStoppingCondition(Map<String,String> params,int maxIter){
+super(params);
+this.maxIter = maxIter;
+

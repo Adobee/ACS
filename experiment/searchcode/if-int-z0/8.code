@@ -1,0 +1,8 @@
+public class Mandelbrot {
+
+public static int iterate(Complex z0, int maxdepth) {
+Complex z = z0;
+for (int t = 0; t <= maxdepth; t++) {
+public static int[][] computeArea( Complex z0, Complex dz, int width, int height, int maxdepth ) {
+int[][] res = new int[width][height];
+

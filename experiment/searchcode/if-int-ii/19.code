@@ -1,0 +1,16 @@
+int n = a.length();
+int m = b.length();
+
+int longest =0;
+
+if (n > m)
+longest=n;
+else
+longest=m;
+char lcs[] = new char[ pos+1 ];
+int count =0;
+
+// Trace the backtracking matrix.
+while( ii > 0 || jj > 0 ) {
+if( R[ii][jj] == UP_AND_LEFT ) {
+

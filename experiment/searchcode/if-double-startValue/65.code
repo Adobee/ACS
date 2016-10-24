@@ -1,0 +1,7 @@
+public void update(int x, int y, boolean isPressed) {
+if (isSliding) {
+double offset = startY - y;
+double newValue =
+startValue * (1 + Math.pow(offset, 3) /
+Math.pow(bounds.height/2, 3) * 20);
+

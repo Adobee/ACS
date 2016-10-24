@@ -1,0 +1,11 @@
+Vector3D v1D = line.intersection(subLine.line);
+if (v1D == null) {
+return null;
+}
+
+// check location of point with respect to first sub-line
+Location loc2 = subLine.remainingRegion.checkPoint((Point<Euclidean1D>) subLine.line.toSubSpace((Point<Euclidean3D>) v1D));
+
+if (includeEndPoints) {
+return ((loc1 != Location.OUTSIDE) &amp;&amp; (loc2 != Location.OUTSIDE)) ? v1D : null;
+

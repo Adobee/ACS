@@ -1,0 +1,7 @@
+public class Solution {
+public void sortColors(int[] nums) {
+int idxZero = 0 , idxTwo = nums.length - 1;
+int idx = 0;
+while (idx <= idxTwo){
+if (nums[idx] == 0){
+

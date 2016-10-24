@@ -1,0 +1,11 @@
+float px_closest = 0;
+float py_closest = 0;
+float bx_closest = 0;
+float by_closest = 0;
+
+if ( (player.b.x + player.SPRITE_SIZE) < this.b.x || (player.b.x + player.SPRITE_SIZE) == this.b.x ){
+px_closest = player.b.x + player.SPRITE_SIZE;
+bx_closest = this.b.x;
+}
+if ( player.b.x > (this.b.x + v.SPRITE_WIDTH) || player.b.x == (this.b.x + v.SPRITE_WIDTH) ){
+

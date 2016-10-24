@@ -1,0 +1,11 @@
+public abstract class MemCacheReader<I, O> {
+public O read(I input) {
+int initialDepth = LooseContext.depth();
+boolean noLocksWasSet = LooseContext
+LooseContext.remove(AlcinaMemCache.CONTEXT_NO_LOCKS);
+}
+if (initialDepth == 0) {
+LooseContext.pop();
+}
+AlcinaMemCache.get().unlock(false);
+

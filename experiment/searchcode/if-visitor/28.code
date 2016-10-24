@@ -1,0 +1,8 @@
+package ch.arjan.springboot.service;
+
+import ch.arjan.springboot.mongodb.model.Visitor;
+import ch.arjan.springboot.mongodb.repositories.VisitorRepository;
+Visitor v = visitorRepository.findById(id);
+if (v != null) {
+visitorRepository.delete(v);
+

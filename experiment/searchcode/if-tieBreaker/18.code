@@ -1,0 +1,9 @@
+int tiebreaker = p1.getId() - p2.getId();
+if (!p1set) {
+return p2set ? 1 : tiebreaker;
+} else if (!p2set) {
+return p1set ? -1 : tiebreaker;
+} else {
+int score1 = 0;
+if (p1set) {
+

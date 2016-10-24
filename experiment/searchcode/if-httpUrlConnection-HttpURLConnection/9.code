@@ -1,0 +1,7 @@
+httpURLConnection.setReadTimeout(timeout);
+if (httpURLConnection.getResponseCode() < 200 || httpURLConnection.getResponseCode() >= 300) {
+return -1;
+}
+} catch (IOException e) {
+if (httpURLConnection != null) {
+

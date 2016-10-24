@@ -1,0 +1,13 @@
+public class PageResult<T> implements java.io.Serializable{
+private static final long serialVersionUID = -1826830567659349558L;
+
+private List<T> list;
+int endPageNo = getStartPageNo() + (delta * 2) + 1;
+
+if (endPageNo > numPages) {
+endPageNo = numPages;
+}
+return endPageNo;
+}
+}
+

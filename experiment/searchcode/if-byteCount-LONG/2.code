@@ -1,0 +1,10 @@
+import com.metabroadcast.common.units.ByteCount;
+
+public class MoreFiles {
+
+public static ByteCount size(File file) {
+if (file.isDirectory()) {
+long total = 0L;
+for (String child : file.list()) {
+total += size(new File(file, child)).byteCount();
+

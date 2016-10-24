@@ -1,0 +1,8 @@
+static double squareRootDouble(double num){
+if(num == 0 || num == 1)
+return num;
+double start = 0;
+double end = num;
+double mid = (end + start)/2;
+double preMid = 0;
+

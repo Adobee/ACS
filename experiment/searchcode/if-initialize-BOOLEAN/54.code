@@ -1,0 +1,12 @@
+static {
+initializeIfNecessary();
+}
+
+private static int sum;
+
+public static int getSum() {
+initializeIfNecessary();
+return sum;
+}
+//静态初始化块执行时，取的是initialized变量的默认是false，执行完之后变成true，
+

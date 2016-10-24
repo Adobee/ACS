@@ -1,0 +1,8 @@
+Matcher matcher = pattern.matcher(line);
+System.out.println(matcher.groupCount());
+if (matcher.find()) {
+for (int i = 0; i <= matcher.groupCount(); ++i) {
+Matcher m = valuePattern.matcher(line);
+if (m.find()) {
+EntityValue value = new EntityValue(entity.getEntity());
+

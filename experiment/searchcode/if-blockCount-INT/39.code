@@ -1,0 +1,15 @@
+static byte[] source;
+static int length,length2;
+static int blockCount;
+static int paddingCount;
+public Base64Encoder(byte[] input)
+length=input.length;
+if((length % 3)==0)
+{
+paddingCount=0;
+blockCount=length/3;
+}
+else
+{
+paddingCount=3-(length % 3);//need to add padding
+

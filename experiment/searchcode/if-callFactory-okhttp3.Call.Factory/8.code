@@ -1,0 +1,11 @@
+import javax.inject.Inject;
+
+import okhttp3.Call;
+import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.Retrofit;
+private final Call.Factory mCallFactory;
+
+@Inject
+public Impl(Call.Factory callFactory) {
+this.mCallFactory = callFactory;
+

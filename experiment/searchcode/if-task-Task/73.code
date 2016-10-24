@@ -1,0 +1,14 @@
+public static TaskGenerator getInstance()
+{
+if (instance == null)
+{
+synchronized (TaskGenerator.class)
+{
+if (instance == null)
+{
+instance = new TaskGenerator();
+}
+}
+}
+return instance;
+

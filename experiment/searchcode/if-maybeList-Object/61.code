@@ -1,0 +1,8 @@
+// TriG:   (blankNodePropertyList | collection) predicateObjectList? &#39;.&#39;
+//         labelOrSubject (wrappedGraph | predicateObjectList &#39;.&#39;)
+if ( peekTriplesNodeCompound() ) {
+// May be followed by:
+// A predicateObject list
+// A DOT or EOF.
+// But if a DOT or EOF, then it can&#39;t have been () or [].
+

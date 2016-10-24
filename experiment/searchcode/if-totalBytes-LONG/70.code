@@ -1,0 +1,9 @@
+private InputStream data = null;
+private long totalBytes = -1;
+
+public AWSResponse(int status) {
+this.status = AWSUtil.getNanoHTTPDStatus(status);
+public AWSResponse(int status, String mimeType, InputStream data, long totalBytes) {
+this.status = AWSUtil.getNanoHTTPDStatus(status);
+this.mimeType = mimeType;
+

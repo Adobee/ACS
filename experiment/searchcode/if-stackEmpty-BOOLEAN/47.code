@@ -1,0 +1,7 @@
+public void unShift(State state) throws Exception {
+if (!state.stackEmpty())
+state.setBufferH(state.pop());
+state.pop();
+if (state.stackEmpty() &amp;&amp; state.bufferEmpty())
+state.setEmptyFlag(true);
+

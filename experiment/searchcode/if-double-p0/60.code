@@ -1,0 +1,11 @@
+Vector u = p1.minus(p0);
+Vector v = s.p1.minus(s.p0);
+Vector w = p0.minus(s.p0);
+double d = u.perp(v);
+if (Math.abs(d) < EPS)
+Vector v = s.p1.minus(s.p0);
+double d = u.perp(v);
+if (Math.abs(d) < EPS)
+return true;
+return false;
+

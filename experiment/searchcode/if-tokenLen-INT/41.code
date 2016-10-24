@@ -1,0 +1,12 @@
+protected LinkedList stack;
+protected int stackTop;
+protected int tokenError;
+protected int tokenLen;
+protected int tokenType;
+this.isParseError = value;
+}
+
+protected boolean isValidChar(char c, int flag) {
+boolean ret = false;
+if (((flag &amp; 0x1) == 1) &amp;&amp; (c >= &#39;A&#39;) &amp;&amp; (c <= &#39;Z&#39;)) {
+

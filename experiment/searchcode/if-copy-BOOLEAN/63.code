@@ -1,0 +1,12 @@
+public BooleanExp replace(String string, BooleanExp exp);
+public BooleanExp copy();
+}
+
+class Context {
+private Map<Object, Boolean> contextMap;
+public BooleanExp replace(String name, BooleanExp exp) {
+if (this.name.equals(name))
+return exp.copy();
+else
+return copy();
+

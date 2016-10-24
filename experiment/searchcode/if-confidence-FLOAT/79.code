@@ -1,0 +1,10 @@
+public PERatioAnalyst(StockAnalyst sa) {
+super(sa);
+}
+public float confidenceLevel() {
+float PERatio = calculatePriceEarningRatio();
+return (getSA().confidenceLevel() + 0.5f) / 2;
+}
+else if (PERatio > 12) {
+setReason(&quot;Price earning does not seem promising.&quot;);
+

@@ -1,0 +1,9 @@
+return this.iChronology.getWeeksInYear(this.iChronology.getWeekyear(j));
+}
+
+public int getMaximumValue(ReadablePartial readablePartial) {
+if (!readablePartial.isSupported(DateTimeFieldType.weekyear())) {
+int size = readablePartial.size();
+for (int i = 0; i < size; i++) {
+if (readablePartial.getFieldType(i) == DateTimeFieldType.weekyear()) {
+

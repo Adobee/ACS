@@ -1,0 +1,12 @@
+throw new IllegalArgumentException(&quot;Invalid extent&quot;);
+}
+
+public double getPixel(int atX, int atY) {
+if (!extent.contains(atX, atY))
+return pixels[atX - extent.x][atY - extent.y];
+}
+
+public void setPixel(int atX, int atY, double value) {
+if (extent.contains(atX, atY))
+pixels[atX - extent.x][atY - extent.y] = value;
+

@@ -1,0 +1,9 @@
+double var_G = ( (double)RGB[1] / 255 );        //G from 0 to 255
+double var_B = ( (double)RGB[2] / 255 );        //B from 0 to 255
+
+if ( var_R > 0.04045 )	var_R = Math.pow( ( ( var_R + 0.055 ) / 1.055 ) , 2.4);
+double var_Y = Y / referenceWhite[1];
+double var_Z = Z / referenceWhite[2];
+
+if ( var_X > 0.008856 )	var_X = Math.pow(var_X , ( 1.0/3 ));
+

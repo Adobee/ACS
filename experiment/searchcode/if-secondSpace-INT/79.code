@@ -1,0 +1,6 @@
+int firstSpace = subject.indexOf(&#39; &#39;, comma);
+int secondSpace = subject.indexOf(&#39; &#39;, firstSpace + 1);
+String subjectMonth = summaryMessage.getSubject().substring(firstSpace + 1, secondSpace);
+String subjectDate = summaryMessage.getSubject().substring(secondSpace + 1, secondSpace + 3);
+if (!subjectDate.matches(&quot;((-|\\\\+)?[0-9]+(\\\\.[0-9]+)?)+&quot;)) {
+

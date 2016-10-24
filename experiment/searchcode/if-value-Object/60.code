@@ -1,0 +1,9 @@
+package org.rocklass.valjo;
+
+public abstract class TypeValueObject<T> implements ValueObject<T> {
+if (getClass() != obj.getClass())
+return false;
+TypeValueObject<?> other = (TypeValueObject<?>) obj;
+if (value == null) {
+if (other.value != null)
+

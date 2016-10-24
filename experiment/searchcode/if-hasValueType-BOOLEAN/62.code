@@ -1,0 +1,10 @@
+field = in.readOptionalString();
+if (in.readBoolean()) {
+script = new Script(in);
+}
+if (in.readBoolean()) {
+boolean hasValueType = valueType != null;
+out.writeBoolean(hasValueType);
+if (hasValueType) {
+valueType.writeTo(out);
+

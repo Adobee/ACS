@@ -1,0 +1,14 @@
+private boolean _stopped;
+private boolean _running;
+private boolean _done;
+private Runnable _task;
+
+
+public WorkerThread(String name) {
+while (!_stopped) {
+if (_done) {
+synchronized (this) {
+try {
+this.wait();
+} catch (InterruptedException e) {
+

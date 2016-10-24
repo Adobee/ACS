@@ -1,0 +1,9 @@
+private boolean terminated = false;
+
+public Timer(JobKey jobKey, TriggerKey triggerKey, AbstractInstant startTime) {
+this.jobKey = jobKey;
+Date nextTriggerTime = scheduler.rescheduleJob(triggerKey, trigger);
+if (nextTriggerTime != null) {
+this.triggerKey = trigger.getKey();
+this.cancelled = false;
+

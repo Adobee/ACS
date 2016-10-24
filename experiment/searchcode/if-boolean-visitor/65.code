@@ -1,0 +1,15 @@
+public MatchResult(GrammarParserVisitor parserVisitor) {
+if (parserVisitor == null)
+throw new IllegalArgumentException(&quot;Expected parserVisitor to not be null.&quot;);
+this.parserVisitor = parserVisitor;
+}
+
+public boolean hasMatch() {
+return parserVisitor.hasMatch();
+}
+
+public Object match() {
+return null;
+}
+}
+

@@ -1,0 +1,11 @@
+List<ReportedPcVO> reportedPcList = pcBiz.getReportedPcListWithPaging(reportedPcSearchVO);
+if(reportedPcList != null) {
+reportedPcVO.setReportedPcId(&quot;RP-20160524-000011&quot;);
+reportedPcVO.setReportedState(&quot;PC_PB_CH&quot;);
+
+boolean isSuccess = pcBiz.changeReportedState(reportedPcVO);
+assertTrue(isSuccess);
+}
+
+}
+

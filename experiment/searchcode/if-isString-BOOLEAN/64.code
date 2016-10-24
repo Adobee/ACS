@@ -1,0 +1,16 @@
+public boolean isString() {
+return this.varType.equals(&quot;string&quot;);
+}
+
+public String llvmType() {
+if (isArray()) {
+return &quot;i32&quot;;
+}
+else if (isString()) {
+return &quot;i8*&quot;;
+}
+
+return &quot;&quot;;
+}
+}
+

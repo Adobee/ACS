@@ -1,0 +1,12 @@
+public int add(Pending pending) {
+if(pendingsValidator(pending)){
+pendingDAO.add(pending);
+if(pending.getId() > 0){
+return 0;
+}
+
+@Override
+public Pending getPendingByID(int id) {
+if(id < 1){
+throw new IllegalArgumentException(&quot;Invalid id is entered&quot;);
+

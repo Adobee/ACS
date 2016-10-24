@@ -1,0 +1,14 @@
+return c -&#39;a&#39; + 10;
+return c - &#39;0&#39;;
+}
+
+public static boolean isHex(char c) {
+if (Character.isDigit(c)) return true;
+if (c <= &#39;F&#39; &amp;&amp; c >= &#39;A&#39;) return true;
+return false;
+}
+
+public static boolean isMove(String s) {
+// 1 or xy is not a valid move
+if(s.length() < 2 || !isHex(s.charAt(0)) || !isHex(s.charAt(1))) return false;
+

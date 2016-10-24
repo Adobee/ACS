@@ -1,0 +1,8 @@
+return formatter.parseDateTime(str).toInstant();
+}
+
+public Instant withMillis(long newMillis) {
+return (newMillis == iMillis ? this : new Instant(newMillis));
+}
+public Instant withDurationAdded(long durationToAdd, int scalar) {
+

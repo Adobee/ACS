@@ -1,0 +1,11 @@
+private EnumSet<TickType> tickTypes = EnumSet.noneOf(TickType.class);
+
+public IGIRenderTicker(EnumSet<TickType> tickTypes)
+{
+this.tickTypes = tickTypes;
+for (TickType tickType : tickTypes)
+{
+if (!onTick(tickType, isStart))
+{
+this.tickTypes.remove(tickType);
+

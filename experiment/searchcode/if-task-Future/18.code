@@ -1,0 +1,12 @@
+private static final Logger LOGGER = LoggerFactory.getLogger(ThreadTimer.class);
+
+private int timeoutSec;
+private String taskName;
+private T task;
+private Future<?> future;
+private Result result = Result.ok;
+
+public ThreadTimer(T task, Future<?> future) {
+this.task = task;
+this.future = future;
+

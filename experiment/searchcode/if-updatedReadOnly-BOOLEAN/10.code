@@ -1,0 +1,8 @@
+return clusterService.state().metaData().transientSettings().get(clusterIdSettingsKey);
+}
+
+private boolean applyClusterIdFromSettings() {
+if (clusterId == null) {
+ClusterBlocks.Builder blocks = ClusterBlocks.builder().blocks(currentState.blocks());
+boolean updatedReadOnly =
+

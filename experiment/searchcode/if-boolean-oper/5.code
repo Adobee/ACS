@@ -1,0 +1,10 @@
+public OperVOListComparator(boolean sort){
+this.sort=sort;
+}
+private boolean sort = false;
+
+public int compare(OperVO t1, OperVO t2) {
+int result=-1;
+if(sort){
+result = t2.getOperId()-t1.getOperId();
+

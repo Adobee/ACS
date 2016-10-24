@@ -1,0 +1,8 @@
+import org.apache.commons.math3.stat.descriptive.UnivariateStatistic;
+import org.reflections.Reflections;
+* Utility to translate statistics names into a {@link UnivariateStatistic}.
+*/
+public final class StatUtil {
+
+private static final Set<Class<? extends UnivariateStatistic>> STATISTICS = new Reflections()
+

@@ -1,0 +1,12 @@
+public class OneShotRefreshStrategy<TResponse> implements DataSource.RefreshStrategy<TResponse> {
+
+private boolean shouldRefresh = true;
+public boolean shouldRefresh(DataSource<TResponse> dataSource) {
+boolean should = shouldRefresh;
+if (shouldRefresh) {
+shouldRefresh = false;
+}
+return should;
+}
+}
+

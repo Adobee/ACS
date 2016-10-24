@@ -1,0 +1,7 @@
+public GeoBoundingBox(GeoPoint lowerLeft, GeoPoint upperRight) throws IllegalArgumentException {
+if (lowerLeft == null || upperRight == null) {
+* @return <tt>true</tt> if overlapping the antimeridian, else <tt>false</tt>
+*/
+public boolean isOverAntimeridian() {
+if (lowerLeft.getLongitude() > upperRight.getLongitude()) {
+

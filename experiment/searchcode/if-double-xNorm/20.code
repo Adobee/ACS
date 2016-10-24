@@ -1,0 +1,9 @@
+m_tau = ZERO;
+if (n <= 1)
+return;
+double xnorm = Dnrm2.fn(n - 1, x, ix, incx);
+if (xnorm == ZERO)
+m_beta = -Dlapy2.fn(m_alpha, xnorm) * Math.signum(m_alpha);
+double safmin = Constants.getSafeMinimum() / Constants.getEpsilon();
+if (Math.abs(m_beta) < safmin) {
+

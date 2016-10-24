@@ -1,0 +1,9 @@
+StringBuilder json = new StringBuilder(256);
+json.append(&quot;{\&quot;documents\&quot;:[&quot;);
+int docCount = 0;
+for (ScoredDocument document : results) {
+if (docCount > 0) {
+json.append(&#39;,&#39;);
+}
+json.append(&quot;{\&quot;id\&quot;:\&quot;&quot; + document.getId() + &quot;\&quot;&quot;);
+

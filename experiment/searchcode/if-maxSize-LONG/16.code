@@ -1,0 +1,11 @@
+package structures.queue;
+
+public class Queue {
+
+private int maxSize;
+private long[] queueArray;
+public long remove() {
+long temp = queueArray[front++];
+if(front > maxSize){
+front=0;
+

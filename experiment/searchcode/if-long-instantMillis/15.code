@@ -1,0 +1,10 @@
+public int compareTo(ReadableInstant other) {
+if (this == other) {
+return 0;
+}
+
+long otherMillis = other.getMillis();
+public boolean isAfter(ReadableInstant instant) {
+long instantMillis = DateTimeUtils.getInstantMillis(instant);
+return isAfter(instantMillis);
+

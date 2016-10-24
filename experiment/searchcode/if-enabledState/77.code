@@ -1,0 +1,5 @@
+protected void innerParseCreateField(ParseContext context, List<Field> fields) throws IOException {
+if (!enabledState.enabled) {
+// all are defaults, no need to write it at all
+if (!includeDefaults &amp;&amp; enabledState == Defaults.ENABLED_STATE &amp;&amp; (indexCreatedBefore2x == false || fieldType().stored() == false)) {
+

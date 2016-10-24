@@ -1,0 +1,9 @@
+public UniformByteIterator(String generatorType){
+if (generatorType.equals(&quot;uniform&quot;)){
+generator=new UniformIntegerGenerator(1,200);
+}
+if (generatorType.equals(&quot;zipfian&quot;)){
+generator=new ScrambledZipfianGenerator(1,200);
+}
+if (generatorType.equals(&quot;exponential&quot;)){
+

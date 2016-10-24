@@ -1,0 +1,9 @@
+public static void isTrue(String messageifItFail, boolean test){
+if(!test)
+failTest(messageifItFail);
+}
+
+private static void failTest(String messageifItFail) {
+if (messageifItFail == null)
+throw new AssertionError();
+

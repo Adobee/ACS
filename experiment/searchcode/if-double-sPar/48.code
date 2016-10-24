@@ -1,0 +1,13 @@
+par = pars[0]; dep = pars[2]; fh = pars[3]; bh = pars[4]; pw = pars[5];
+spar = logstepParents(par);
+
+for(int i = 0;i < n;i++){
+if(i > 0)out.print(&quot; &quot;);
+out.println();
+}
+
+boolean larger(int s, int x, int y)
+{
+if(y < 0)return true;
+int lsx = lca2(s, x, spar, dep);
+

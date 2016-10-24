@@ -1,0 +1,6 @@
+} else if (result instanceof Float) {
+top.pushDouble(((Float) result).doubleValue());
+} else if (result instanceof Double) {
+top.pushDouble(((Double) result).doubleValue());
+} else if (result instanceof Character) {
+

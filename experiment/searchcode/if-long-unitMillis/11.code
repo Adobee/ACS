@@ -1,0 +1,9 @@
+private final DurationField iDurationField;
+
+public ImpreciseDateTimeField(DateTimeFieldType type, long unitMillis) {
+super(type);
+return FieldUtils.safeToInt(getDifferenceAsLong(minuendInstant, subtrahendInstant));
+}
+public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) {
+if (minuendInstant < subtrahendInstant)
+

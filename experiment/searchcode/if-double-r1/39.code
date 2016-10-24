@@ -1,0 +1,13 @@
+package old.code;
+
+public class SumOfPowers {
+
+public int lastDigit(int N) {
+double r, r1;
+// r1 %=1;
+
+r = Math.pow(10, r1);
+// double x =Math.pow(10,m);
+// r = Math.round(r);
+if (m > 0)
+

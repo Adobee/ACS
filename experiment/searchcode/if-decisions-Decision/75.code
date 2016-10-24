@@ -1,0 +1,5 @@
+instanceModel.addInstance(featureModel.getFeatureVector(branchedDecisionSymbols, singleDecision.getTableContainer().getTableContainerName()), singleDecision);
+if (decisionIndex+1 < decision.numberOfDecisions()) {
+if (singleDecision.continueWithNextDecision()) {
+DecisionModel child = children.get(singleDecision.getDecisionCode());
+
