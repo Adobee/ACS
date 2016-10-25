@@ -32,13 +32,19 @@ public class Main {
             System.exit(0);
         }
         List<String> bannedList = new ArrayList<>();
-        if (args.length == 2){
+        if (args.length >= 2){
+            for (int i=0; i< args.length; i++){
+                if (args[i].startsWith("timeout:")){
+                    int second = Integer.valueOf(args[i].substring(args[i].indexOf(":")+1));
+                    Config.TOTAL_RUN_TIMEOUT = second;
+                }
+            }
             if (args[1].startsWith("ban:")){
                 String banned = args[1].substring(args[1].indexOf(":")+1);
-                bannedList.addAll(Arrays.asList(banned.split(":")));
+                bannedList.addAll(Arrays.asList(banned.split(";")));
             }
-            else if (args[1].contains(":")){
-                for (String name: args[1].split(":")){
+            else if (args[1].contains(";")){
+                for (String name: args[1].split(";")){
                     System.out.println("Main: fixing project "+name);
                     try {
                         fixProject(name, path);
@@ -49,7 +55,7 @@ public class Main {
                 }
                 System.exit(0);
             }
-            else {
+            else if (!args[1].contains(":")) {
                 String projectName = args[1];
                 try {
                     fixProject(projectName, path);
@@ -59,6 +65,8 @@ public class Main {
                 System.exit(0);
             }
         }
+
+        
         for (File sub_file : sub_files){
             if (sub_file.isDirectory()){
                 System.out.println("Main: fixing project "+sub_file.getName());
