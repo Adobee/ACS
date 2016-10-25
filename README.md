@@ -14,9 +14,9 @@ Accurate Condition Synthesis
 1. Clone the ACS:
   - `git clone https://github.com/Adobee/ACS.git`
 
-2. Checkout a buggy source code version from Defects4j anc compile it:
-  - `defects4j checkout -p Lang -v 1b -w /tmp/lang_1`
-  - `cd /tmp/lang_1_buggy`
+2. Checkout a buggy source code version from Defects4j and compile it:
+  - `defects4j checkout -p Lang -v 1b -w /tmp/Lang_1`
+  - `cd /tmp/Lang_1`
   - `defects4j compile`
  
  the forder name of checkout must format as '`projectName_buggyID`' because the ACS needs it's project name and buggy id to generate it's classpath, source path etc.
@@ -27,9 +27,9 @@ Accurate Condition Synthesis
  and ACS will automatically find all formatted folder and run with it.
 
   Or run with specific buggy projects in `/tmp/` forder:
-  - `java -jar ACS.jar /tmp/ lang_1`
-  - `java -jar ACS.jar /tmp/ lang_1:lang_2:lang_3`
-  - `java -jar ACS.jar /tmp/ ban:lang_1`
+  - `java -jar ACS.jar /tmp/ Lang_1`
+  - `java -jar ACS.jar /tmp/ Lang_1:Lang_2:Lang_3`
+  - `java -jar ACS.jar /tmp/ ban:Lang_1`
 3. Evaluation 
 --------------------
 
