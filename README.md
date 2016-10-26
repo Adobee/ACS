@@ -8,6 +8,7 @@ Accurate Condition Synthesis
  - Linux environment
  - Java 1.7
  - Python 2.7
+ - defects4j
  
 2. How to run the ACS
 ---------------------
