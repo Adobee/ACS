@@ -27,7 +27,7 @@ Accurate Condition Synthesis
  
  and ACS will automatically find all formatted folder and run with it.
 
-  Or run with specific buggy projects in `/tmp/` forder:
+  Or run with specific buggy projects in `/tmp/` forder(Note the space between "/tmp/" and "Lang_1"):
   - `java -jar ACS.jar /tmp/ Lang_1`
   - `java -jar ACS.jar /tmp/ Lang_1;Lang_2;Lang_3`
   - `java -jar ACS.jar /tmp/ ban:Lang_1;Lang2`
