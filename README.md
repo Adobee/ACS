@@ -34,7 +34,7 @@ Accurate Condition Synthesis
 
   Or set a custom timeout seconds depends on your computer performance (default as 3600):
   - `java -jar ACS.jar /tmp/ Lang_1 timeout:1800`
-4. The results are in the dir "ACS/resultMessage"
+4. The results are in the dir "ACS/resultMessage", the detailed patch is in the file "ACS/resultMessage/patchSource/xx.java" and is between "patch begin" and "patch end".
 3. Evaluation 
 --------------------
 
