@@ -147,8 +147,12 @@ public class Main {
                 new File(Config.PATCH_SOURCE_PATH)
         };
         for (File patchFile: patchFiles){
-            if (patchFile.exists()){
-                patchFile.delete();
+            if (patchFile.exists() && patchFile.isDirectory()){
+                for (File file: patchFile.listFiles()){
+                    if (file.getName().startsWith(project)){
+                        file.delete();
+                    }
+                }
             }
         }
         if (timeLine.isTimeout()){

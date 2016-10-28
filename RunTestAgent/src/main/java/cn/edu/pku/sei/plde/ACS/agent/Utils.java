@@ -183,6 +183,9 @@ public class Utils {
                 errIn.close();
             }
         }
+        p.getErrorStream().close();
+        p.getInputStream().close();
+        p.getOutputStream().close();
         p.destroy();
         return sb.toString();
     }

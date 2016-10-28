@@ -84,7 +84,11 @@ public class RecordUtils {
             patchSourcePackage.mkdirs();
         }
         try {
-            File patchSource = new File(patchSourcePackage.getAbsolutePath()+"/"+project+"_if_return_" +".java");
+            int count= 0;
+            File patchSource = new File(patchSourcePackage.getAbsolutePath()+"/"+project+"_if_return_"+ count +".java");
+            while (patchSource.exists()){
+                patchSource = new File(patchSourcePackage.getAbsolutePath()+"/"+project+"_if_return_"+(++count)+".java");
+            }
             if (!patchSource.exists()){
                 patchSource.createNewFile();
             }
@@ -108,8 +112,11 @@ public class RecordUtils {
             patchSourcePackage.mkdirs();
         }
         try {
-            File patchSource = new File(patchSourcePackage.getAbsolutePath()+"/"+project+"_if_"+".java");
-            if (!patchSource.exists()){
+            int count = 0;
+            File patchSource = new File(patchSourcePackage.getAbsolutePath()+"/"+project+"_if_"+ count +".java");
+            while (patchSource.exists()){
+                patchSource = new File(patchSourcePackage.getAbsolutePath()+"/"+project+"_if_"+(++count)+".java");
+            }            if (!patchSource.exists()){
                 patchSource.createNewFile();
             }
             FileWriter writer = new FileWriter(patchSource, false);

@@ -40,6 +40,9 @@ public class ShellUtils {
             return "";
         } finally {
             service.shutdownNow();
+            p.getErrorStream().close();
+            p.getInputStream().close();
+            p.getOutputStream().close();
             p.destroy();
         }
         return returnString;
