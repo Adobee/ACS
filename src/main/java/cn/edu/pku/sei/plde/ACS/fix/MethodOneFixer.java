@@ -91,7 +91,12 @@ public class MethodOneFixer {
                         minErrorTest = errorTestAterFix;
                         truePatchLine = patchLine;
                         truePatchString = patchString;
-                        RecordUtils.recordIfReturn(code,patchString, patchLine, _project);
+                        if (!patch._addonFunction.equals("")){
+                            RecordUtils.recordIfReturn(code,patchString, patchLine, _project, patch._addonFunction, patch._className);
+                        }
+                        else {
+                            RecordUtils.recordIfReturn(code,patchString, patchLine, _project);
+                        }
                         FileUtils.copyFile(classBackup, targetClassFile);
                         FileUtils.copyFile(javaBackup, targetJavaFile);
                         //if (errorTestAterFix == 0){

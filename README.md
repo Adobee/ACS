@@ -32,7 +32,7 @@ Accurate Condition Synthesis
   - `java -jar ACS.jar /tmp/ Lang_1;Lang_2;Lang_3`
   - `java -jar ACS.jar /tmp/ ban:Lang_1;Lang2`
 
-  Or set a custom timeout seconds depends on your computer performance (default as 3600):
+  Or set a custom timeout seconds depends on your computer performance (default as 7200):
   - `java -jar ACS.jar /tmp/ Lang_1 timeout:1800`
 4. The results are in the dir "ACS/resultMessage", the detailed patch is in the file "ACS/resultMessage/patchSource/xx.java" and is between "patch begin" and "patch end".
 3. Evaluation 
@@ -60,6 +60,9 @@ ACS generates correct patches for 18 defects. For each defect, we provide the ur
 [The ACS correct patches](https://github.com/Adobee/ACS/blob/master/patch/ACS/Chart19/source/org/jfree/chart/plot/CategoryPlot.java)
 
 >Analysis:The ACS generated patch is identical to the developer patch.
+
+>Tips: After checkout from Defects4J, There are two `itext` jar files in `Chart_19/lib` folder and one of which named "itext-2.0.6.jar" is a broken
+jar and leads to the error of ACS, delete it and ACS would get back to normal.
 
 ####3.Math3
 [The developer patches](https://github.com/Adobee/ACS/blob/master/patch/Developer/Math3/src/main/java/org/apache/commons/math3/util/MathArrays.java)

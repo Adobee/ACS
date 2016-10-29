@@ -75,10 +75,9 @@ public class RecordUtils {
         } catch (IOException e){
             e.printStackTrace();
         }
-
     }
 
-    public static void recordIfReturn(String code, String patch, int line, String project){
+    public static void recordIfReturn(String code, String patch, int line, String project, String method, String className){
         File patchSourcePackage = new File(Config.PATCH_SOURCE_PATH);
         if (!patchSourcePackage.exists()){
             patchSourcePackage.mkdirs();
@@ -99,10 +98,22 @@ public class RecordUtils {
                     + patch+ "\n" +
                     "************************************************************************patch end****************************************************************\n";
             CodeUtils.addCodeToFile(patchSource,patch,line);
+            if (method != null && className != null){
+                method = "***********************************************************************patch begin*********************************************************************\n"
+                        + method+ "\n" +
+                        "************************************************************************patch end****************************************************************\n";
+                if (className.contains(".")){
+                    className = className.substring(className.lastIndexOf(".")+1);
+                }
+                CodeUtils.addMethodToFile(patchSource, method, className);
+            }
         } catch (IOException e){
             e.printStackTrace();
         }
+    }
 
+    public static void recordIfReturn(String code, String patch, int line, String project){
+        recordIfReturn(code, patch, line, project, null, null);
     }
 
 
