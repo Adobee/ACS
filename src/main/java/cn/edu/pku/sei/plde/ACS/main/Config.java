@@ -7,7 +7,7 @@ import com.sun.org.apache.regexp.internal.RE;
  */
 public class Config {
     //---------------Timeout Config------------------
-    public static int TOTAL_RUN_TIMEOUT = 7200;
+    public static int TOTAL_RUN_TIMEOUT = 1800;
 
     public static final int SHELL_RUN_TIMEOUT = TOTAL_RUN_TIMEOUT/5;
     public static final int GZOLTAR_RUN_TIMEOUT = TOTAL_RUN_TIMEOUT/10;
