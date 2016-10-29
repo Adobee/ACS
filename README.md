@@ -36,6 +36,7 @@ Accurate Condition Synthesis
   - `java -jar ACS.jar /tmp/ Lang_1 timeout:1800`
 4. The results are in the dir "ACS/resultMessage", the detailed patch is in the file "ACS/resultMessage/patchSource/xx.java" and is between "patch begin" and "patch end".
 5. If ACS didn't generate the patch or the patch is incomplete, it maybe cause by the performance of the computer, please increase the timeout time.
+6. Tips of Chart19: After checkout from Defects4J, There are two `itext` jar files in `Chart_19/lib` folder and one of which named "itext-2.0.6.jar" is a broken jar and leads to the error of ACS, delete it and ACS would get back to normal.
 3. Evaluation 
 --------------------
 
