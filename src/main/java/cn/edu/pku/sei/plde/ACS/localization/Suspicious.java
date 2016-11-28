@@ -382,6 +382,10 @@ public class Suspicious implements Serializable{
         return _methodInfo;
     }
 
+    public List<TraceResult> getTraceResult(String project){
+        return getTraceResult(project, TimeLine.NEVER_TIMEOUT);
+    }
+
     public List<TraceResult> getTraceResult(String project, TimeLine timeLine) {
         VariableTracer tracer = new VariableTracer(_srcPath, _testSrcPath, this, project);
         List<TraceResult> traceResults = new ArrayList<TraceResult>();

@@ -30,14 +30,10 @@ public class Localization  {
     public String project;
     public List<String> libPaths = new ArrayList<>();
 
-    /**
-     * @param classPath the path of project's class file
-     * @param testClassPath the path of project's test class file
-     */
-    public Localization(String classPath, String testClassPath, String testSrcPath, String srcPath, List<String> libPaths, String project) {
+
+    public Localization(String classPath, String testClassPath, String testSrcPath, String srcPath, List<String> libPaths) {
         this(classPath, testClassPath, testSrcPath, srcPath);
         this.libPaths = libPaths;
-        this.project = project;
     }
 
 

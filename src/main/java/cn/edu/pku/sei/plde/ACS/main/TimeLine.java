@@ -7,10 +7,15 @@ public class TimeLine {
     private long startTime;
     private long timeLimit;
     private boolean timeoutNow = false;
+    private boolean neverTimeout = false;
 
     private long downloadTime = 0;
 
+    public static TimeLine NEVER_TIMEOUT = new TimeLine(-1);
     public TimeLine(int timeLimit){
+        if (timeLimit < 0){
+            neverTimeout = true;
+        }
         this.timeLimit = timeLimit;
         startTime = System.currentTimeMillis();
     }
@@ -24,7 +29,7 @@ public class TimeLine {
         if (timeoutNow){
             return true;
         }
-        return time() > timeLimit;
+        return (time() > timeLimit) && !neverTimeout;
     }
 
     public long time(){

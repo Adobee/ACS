@@ -60,7 +60,7 @@ public class MainProcess {
             return false;
         }
         PROJECT_NAME = project;
-        Localization localization = new Localization(classpath, testClasspath, testClassSrc, classSrc,libPath, project);
+        Localization localization = new Localization(classpath, testClasspath, testClassSrc, classSrc,libPath);
         List<Suspicious> suspiciouses = localization.getSuspiciousLite();
         if (timeLine.isTimeout()){
             return false;
@@ -149,7 +149,7 @@ public class MainProcess {
         }
         if (failTest > 0){
             SuspiciousFixer.FAILED_TEST_NUM = failTest;
-            Localization localization = new Localization(classpath, testClasspath, testClassSrc, classSrc,libPath, project);
+            Localization localization = new Localization(classpath, testClasspath, testClassSrc, classSrc,libPath);
             List<Suspicious> suspiciouses = localization.getSuspiciousLite(false);
             if (suspiciouses.size() == 0){
                 successHalfFlag = true;

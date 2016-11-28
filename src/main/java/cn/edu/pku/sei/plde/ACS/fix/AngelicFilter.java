@@ -53,7 +53,7 @@ public class AngelicFilter {
         return result;
     }
 
-    private boolean filterSingle(int targetLine, String assertMessage,List<TraceResult> traceResults){
+    public boolean filterSingle(int targetLine, String assertMessage,List<TraceResult> traceResults){
         String targetLineString = CodeUtils.getLineFromCode(code, targetLine-1);
         if (!LineUtils.isIfLine(targetLineString)){
             return false;
