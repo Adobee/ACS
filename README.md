@@ -48,7 +48,7 @@ Accurate Condition Synthesis
 3. Evaluation 
 --------------------
 
-###1.ACS Correct Patches
+### 1.ACS Correct Patches
 
 ACS generates correct patches for 18 defects. For each defect, we provide the urls that contain the developer patch and we either identify the ACS patch is semantically equivalent to the developer patch and provide a brief analysis for why the ACS patch is correct.
 
