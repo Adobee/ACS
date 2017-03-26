@@ -5,7 +5,7 @@ Accurate Condition Synthesis
 
 1. Requirement
 ----------------
- - Linux environment
+ - Ubuntu14.04
  - Java 1.7
  - Python 2.7(need to install psutil)
  - [Defects4J](https://github.com/rjust/defects4j)
