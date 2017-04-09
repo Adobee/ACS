@@ -39,7 +39,7 @@ Accurate Condition Synthesis
 
 5. The results are in the dir "ACS/resultMessage", the detailed patch is in the file "ACS/resultMessage/patchSource/Project_BugId_Schema_PatchId.java"(If a bug has n patches, the "PatchId" will range from 0 to n - 1),  and is between "patch begin" and "patch end".
 
-6. Please note that the patch file in the directory "ACS/resultMessage/patchSource/" does not mean it pass all the tests. If it fails to pass all the test, the patch file will be deleted if ACS has enough time. So if you want to know whether the patch file pass all the tests, please apply it in the source code, and test it manually by using the command "defects4j test".
+6. Please note that the patch file in the directory "ACS/resultMessage/patchSource/" does not mean it passes all the tests. If it fails to pass all the test, the patch file will be deleted if ACS has enough time. So if you want to know whether the patch file pass all the tests, please apply it in the source code, and test it manually by using the command "defects4j test".
 
 7. There are some pictures in the dir "ACS/pictures" to show how to run the ACS.
 
