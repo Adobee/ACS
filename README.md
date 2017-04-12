@@ -45,7 +45,7 @@ Accurate Condition Synthesis
 
 8. If ACS didn't generate the patch or the patch is incomplete, it maybe cause by the performance of the computer, please increase the timeout time.
 
-9. Because there are too many files in ACS, the "git clone" often fails. If it happens, please download the zip directly.
+9. If you do not want to set up the environment, please download the [virtual machine](https://drive.google.com/drive/folders/0B60sl-8vpnfEaUtsOHpRN1gwUTg), unzip and open it by VmWare12.5.2. There are 23 projects(18 correct and 5 incorrect) in the directory "/home/yjxxtd/software/defects4j-project/", the ACS is in the directory "/home/yjxxtd/software/ACS/ACS-master/". Please run the run.sh in the directory "/home/yjxxtd/software/ACS/ACS-master/" to generate the 23 patches for the 23 projects. If it does not work normaly, please change a powerful computer.
 
 3. Evaluation 
 --------------------
