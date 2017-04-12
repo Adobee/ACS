@@ -12,7 +12,7 @@ I. Requirement
  
 II. How to run the ACS
 ---------------------
-Two optional:A. run the virtual machine; B. Set up the environment. Choose the way you like.
+Two optional: A. run the virtual machine; B. Set up the environment. Choose the way you like.
 ### A. Run the virtual machine
   If you do not want to set up the environment, please download the [virtual machine](https://drive.google.com/file/d/0B60sl-8vpnfEcVZkUVZCYXBvZlE/view?usp=sharing), unzip and open it by VmWare12.5.2(password:hhxxttxs). There are 23 projects(18 correct and 5 incorrect) in the directory "/home/yjxxtd/software/defects4j-project/", the ACS is in the directory "/home/yjxxtd/software/ACS/ACS-master/". Please run the run.sh in the directory "/home/yjxxtd/software/ACS/ACS-master/" to generate the 23 patches for the 23 projects. If it does not work normaly,  please increase the timeout time.
 ### B. Set up the Environment
