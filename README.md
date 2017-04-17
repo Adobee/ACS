@@ -14,18 +14,7 @@ II. How to run the ACS
 ---------------------
 Two optional: A. run the virtual machine; B. Set up the environment. Choose the way you like.
 ### A. Run the virtual machine
-1. If you do not want to set up the environment, please download the [virtual machine](https://drive.google.com/file/d/0B60sl-8vpnfEcVZkUVZCYXBvZlE/view?usp=sharing), unzip and open it by VmWare12.5.2(username: yjxxtd, password: hhxxttxs). 
-
-2. There are 23 projects(18 correct and 5 incorrect) in the directory "/home/yjxxtd/software/defects4j-project/", the ACS is in the directory "/home/yjxxtd/software/ACS/ACS-master/". 
-
-3. Please run the run.sh in the directory "/home/yjxxtd/software/ACS/ACS-master/" to generate the 23 patches for the 23 projects. 
-
-4. The results are in the dir "ACS/resultMessage", the detailed patch is in the file "ACS/resultMessage/patchSource/Project_BugId_Schema_PatchId.java"(If a bug has n patches, the "PatchId" will range from 0 to n - 1),  and is between "patch begin" and "patch end".
-
-5. Please note that the patch file in the directory "ACS/resultMessage/patchSource/" does not mean it passes all the tests. If it fails to pass all the test, the patch file will be deleted if ACS has enough time. So if you want to know whether the patch file pass all the tests, please apply it in the source code, and test it manually by using the command "defects4j test"
-
-6. If it does not work normaly,  please increase the timeout time in the run.sh, for example "java -jar ACS.jar /home/yjxxtd/software/defects4j-project/ Chart_14 timeout:3600".
-
+  If you do not want to set up the environment, please download the [virtual machine](https://drive.google.com/file/d/0B60sl-8vpnfEcVZkUVZCYXBvZlE/view?usp=sharing), unzip and open it by VmWare12.5.2(username: yjxxtd, password: hhxxttxs). There are 23 projects(18 correct and 5 incorrect) in the directory "/home/yjxxtd/software/defects4j-project/", the ACS is in the directory "/home/yjxxtd/software/ACS/ACS-master/". Please run the run.sh in the directory "/home/yjxxtd/software/ACS/ACS-master/" to generate the 23 patches for the 23 projects. If it does not work normaly,  please increase the timeout time in the run.sh, for example "java -jar ACS.jar /home/yjxxtd/software/defects4j-project/ Chart_14 timeout:3600".
 ### B. Set up the Environment
 1. Clone the ACS:
   - `git clone https://github.com/Adobee/ACS.git`
@@ -50,20 +39,34 @@ Two optional: A. run the virtual machine; B. Set up the environment. Choose the 
   Or set a custom timeout seconds depends on your computer performance (default as 1800):
   - `java -jar ACS.jar /tmp/ Lang_1 timeout:3600`
   
-4. Tips of Chart19: After checkout from Defects4J, There are two `itext` jar files in `Chart_19/lib` folder and one of which named "itext-2.0.6.jar" is a broken jar and leads to the error of ACS, delete it and ACS would get back to normal.
-
-5. The results are in the dir "ACS/resultMessage", the detailed patch is in the file "ACS/resultMessage/patchSource/Project_BugId_Schema_PatchId.java"(If a bug has n patches, the "PatchId" will range from 0 to n - 1),  and is between "patch begin" and "patch end".
-
-6. Please note that the patch file in the directory "ACS/resultMessage/patchSource/" does not mean it passes all the tests. If it fails to pass all the test, the patch file will be deleted if ACS has enough time. So if you want to know whether the patch file pass all the tests, please apply it in the source code, and test it manually by using the command "defects4j test".
-
-7. There are some pictures in the dir "ACS/pictures" to show how to run the ACS.
-
-8. If ACS didn't generate the patch or the patch is incomplete, it maybe cause by the performance of the computer, please increase the timeout time.
 
 
+III How to Build ACS 
+--------------------
+Althrough there is a `pom.xml` in the ACS, actually it's useless because of the difficulty of dependency configuration.
+So we prefer to use [Intellij IDEA](www.jetbrains.com/idea/) to build the ACS automatically.
 
+1. 'Open' the ACS project with Intellij IDEA.
 
-III. Evaluation
+2. Ignore all warning in the bottom right, such as 'Framework detected'.
+
+2. There is a default configuration in the run/debug menu which named `run ACS` in the top right, click it and choose `Edit configurations`, replace the content in several input box according to its tip.
+
+3. click `OK` button, and use shortcut `CTRL+F9` to build the whole project.
+
+IV Tips
+-----------------------
+1. Tips of Chart19: After checkout from Defects4J, There are two `itext` jar files in `Chart_19/lib` folder and one of which named "itext-2.0.6.jar" is a broken jar and leads to the error of ACS, delete it and ACS would get back to normal.
+
+2. The results are in the dir "ACS/resultMessage", the detailed patch is in the file "ACS/resultMessage/patchSource/Project_BugId_Schema_PatchId.java"(If a bug has n patches, the "PatchId" will range from 0 to n - 1),  and is between "patch begin" and "patch end".
+
+3. Please note that the patch file in the directory "ACS/resultMessage/patchSource/" does not mean it passes all the tests. If it fails to pass all the test, the patch file will be deleted if ACS has enough time. So if you want to know whether the patch file pass all the tests, please apply it in the source code, and test it manually by using the command "defects4j test".
+
+4. There are some pictures in the dir "ACS/pictures" to show how to run the ACS.
+
+5. If ACS didn't generate the patch or the patch is incomplete, it maybe cause by the performance of the computer, please increase the timeout time.
+
+V. Evaluation
 ----------------
 
 ### 1.ACS Correct Patches
