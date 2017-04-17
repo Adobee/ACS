@@ -44,15 +44,14 @@ Two optional: A. run the virtual machine; B. Set up the environment. Choose the 
 III How to Build ACS 
 --------------------
 Althrough there is a `pom.xml` in the ACS, actually it's useless because of the difficulty of dependency configuration.
-So we prefer to use [Intellij IDEA](www.jetbrains.com/idea/) to build the ACS automatically.
 
-1. 'Open' the ACS project with Intellij IDEA.
+We prefer to use [Intellij IDEA](www.jetbrains.com/idea/) to build the ACS automatically.
 
-2. Ignore all warning in the bottom right, such as 'Framework detected'.
+1. 'Open' the ACS project with Intellij IDEA, and ignore all warnings in the bottom right, such as 'Framework detected'.
 
 2. There is a default configuration in the run/debug menu which named `run ACS` in the top right, click it and choose `Edit configurations`, replace the content in several input box according to its tip.
 
-3. click `OK` button, and use shortcut `CTRL+F9` to build the whole project.
+3. Click `OK` button, and use shortcut `CTRL+F9` to build the project.
 
 IV Tips
 -----------------------
