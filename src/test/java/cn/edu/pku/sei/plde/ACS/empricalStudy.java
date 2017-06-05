@@ -105,16 +105,16 @@ public class empricalStudy {
         for (File project: projects.listFiles()){
 
             NOW_PROJECT = project.getName();
-            if (!NOW_PROJECT.contains("iosched")){
-                continue;
-            }
+            //if (!NOW_PROJECT.contains("iosched")){
+            //    continue;
+            //}
             NOW_PROJECT_PATH = project.getAbsolutePath();
 
             resultDataInit();
             iterJavaFile(project, 1);
             //recordSearchBoundary(project.getName());
-            recordVariableRank(project.getName());
-            //recordJavaDoc(project.getName());
+            //recordVariableRank(project.getName());
+            recordJavaDoc(project.getName());
             System.out.println(javaCount);
 
         }
@@ -269,9 +269,9 @@ public class empricalStudy {
             String methodName = method.getName().getIdentifier();
             Suspicious suspicious = new Suspicious(classpath, testClasspath, classSrc, testClassSrc, className, methodName + "()");
             List<VariableInfo> variables = suspicious.getVariableInfo(lineNum);
-            statisticsVariableRank(classCode, methodName,variables, expression,lineNum);
+            //statisticsVariableRank(classCode, methodName,variables, expression,lineNum);
             //statisticsSearchBoundary(expression, variables);
-            //statisticsJavaDocFilter(method, variables);
+            statisticsJavaDocFilter(method, (IfStatement) statement, variables);
 
             parseStatement(((IfStatement) statement).getElseStatement(), unit, method, classCode);
             parseStatement(((IfStatement) statement).getThenStatement(), unit, method, classCode);
@@ -279,33 +279,30 @@ public class empricalStudy {
     }
 
 
-    private void statisticsJavaDocFilter(MethodDeclaration methodDeclaration, List<VariableInfo> variableInfos){
+    private void statisticsJavaDocFilter(MethodDeclaration methodDeclaration,IfStatement statement, List<VariableInfo> variableInfos){
         Map<String, String> throwAnnotationMap = new HashMap<>();
         Javadoc annotationDoc = methodDeclaration.getJavadoc();
         List<String> variableNames = getVariableNames(variableInfos);
-        if (annotationDoc == null){
-            javaDocThrowResult.put("No Throw Annotation", javaDocThrowResult.get("No Throw Annotation")+1);
-            return;
-        }
-        List<TagElement> annotationList = annotationDoc.tags();
-        for (TagElement annotation: annotationList){
-            if (annotation.getTagName()!=null && annotation.getTagName().equals("@throws")){
-                String result = "";
-                List<ASTNode> fragements = annotation.fragments();
-                for (ASTNode node: fragements){
-                    if (node instanceof TextElement){
-                        result += node.toString() +" ";
+        if (annotationDoc != null) {
+            List<TagElement> annotationList = annotationDoc.tags();
+            for (TagElement annotation : annotationList) {
+                if (annotation.getTagName() != null && annotation.getTagName().equals("@throws")) {
+                    String result = "";
+                    List<ASTNode> fragements = annotation.fragments();
+                    for (ASTNode node : fragements) {
+                        if (node instanceof TextElement) {
+                            result += node.toString() + " ";
+                        }
                     }
-                }
-                if (!result.trim().equals("")){
-                    throwAnnotationMap.put(annotation.fragments().get(0).toString(), result.trim());
+                    if (!result.trim().equals("")) {
+                        throwAnnotationMap.put(annotation.fragments().get(0).toString(), result.trim());
+                    }
                 }
             }
         }
-        List<Statement> statements = methodDeclaration.getBody().statements();
-        for (Statement statement: statements){
-            parseJavaDocStatement(statement, throwAnnotationMap, variableNames);
-        }
+
+        parseJavaDocStatement(statement, throwAnnotationMap, variableNames);
+
     }
 
     private void parseJavaDocStatement(Statement statement, Map<String, String> throwAnnotationMap, List<String> variableNames){
@@ -318,15 +315,22 @@ public class empricalStudy {
                 }
                 thenStatement = thenStatements.get(0);
             }
-            if (throwAnnotationMap.size() == 0){
-                javaDocThrowResult.put("No Throw Annotation", javaDocThrowResult.get("No Throw Annotation")+1);
+           // if (throwAnnotationMap.size() == 0){
+            //    javaDocThrowResult.put("No Throw Annotation", javaDocThrowResult.get("No Throw Annotation")+1);
+            //}
+            List<String> ifParam = getVariableNamesFromExpression(((IfStatement) statement).getExpression());
+            if (ifParam.size() ==0){
+                return;
             }
-            if (thenStatement instanceof ThrowStatement && throwAnnotationMap.size()!=0){
+            if (thenStatement instanceof ThrowStatement) {
                 String exceptionName ="";
                 if (((ThrowStatement) thenStatement).getExpression() instanceof  ClassInstanceCreation){
                     exceptionName = ((ClassInstanceCreation)((ThrowStatement) thenStatement).getExpression()).getType().toString();
                 }
                 else if (((ThrowStatement) thenStatement).getExpression() instanceof MethodInvocation){
+                    if (((MethodInvocation) ((ThrowStatement) thenStatement).getExpression()).getExpression() == null){
+                        return;
+                    }
                     exceptionName = ((MethodInvocation) ((ThrowStatement) thenStatement).getExpression()).getExpression().toString();
                 }
                 if (throwAnnotationMap.containsKey(exceptionName)){
@@ -349,7 +353,7 @@ public class empricalStudy {
             expression = ((ParenthesizedExpression) expression).getExpression();
         }
         List<String> subjects = AnnotationUtils.Parse(annotation);
-        List<String> ifParam = ExpressionUtils.variablesInInfixExpression(expression);
+        List<String> ifParam = getVariableNamesFromExpression(expression);
         if (ifParam.size() ==0){
             return;
         }
