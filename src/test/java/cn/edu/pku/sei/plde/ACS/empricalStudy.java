@@ -63,7 +63,7 @@ public class empricalStudy {
     private static Map<Integer, Integer> searchBoundaryResult = new HashMap<>();
     private static Map<Integer, Integer> searchBoundaryUnFitResult = new HashMap<>();
     private static Map<String, Integer> javaDocThrowResult = new HashMap<>();
-    
+
     private static List<String> javaDocTrueMessage = new ArrayList<>();
     private static List<String> javaDocFalseMessage = new ArrayList<>();
     private static String classpath;
@@ -101,7 +101,10 @@ public class empricalStudy {
 
     @Test
     public void empiricalStudy(){
+        //wj begin
         File projects = new File(System.getProperty("user.dir")+"/experiment/repo");
+        //File projects = new File("E://Test//");
+        //wj end
         for (File project: projects.listFiles()){
 
             NOW_PROJECT = project.getName();
@@ -315,7 +318,7 @@ public class empricalStudy {
                 }
                 thenStatement = thenStatements.get(0);
             }
-           // if (throwAnnotationMap.size() == 0){
+            // if (throwAnnotationMap.size() == 0){
             //    javaDocThrowResult.put("No Throw Annotation", javaDocThrowResult.get("No Throw Annotation")+1);
             //}
             List<String> ifParam = getVariableNamesFromExpression(((IfStatement) statement).getExpression());
@@ -357,27 +360,44 @@ public class empricalStudy {
         if (ifParam.size() ==0){
             return;
         }
+        //wj begin
         int count = 0;
-        for (String param: ifParam){
-            if (param.equals("")){
+        for(String subject : subjects) {
+            if(subject.equals("")){
                 continue;
             }
-            List<String> paramNames = DocumentBaseFilter.splitVariableName(param);
-            String name = paramNames.get(paramNames.size()-1);
-            for (String subject: subjects){
-                if ((" "+subject.replace("<"," ").replace(">"," ")+" ").contains(" "+name+" ")){
+
+            for(String param : ifParam){
+                if(param.equals("")){
+                    continue;
+                }
+
+                List<String> paramNames = DocumentBaseFilter.splitVariableName(param);
+                String lastName = paramNames.get(paramNames.size()-1);
+                String firstName = "";
+                String[] words = param.split("\\.");
+                if(words.length >= 1){
+                    firstName = words[0];
+                }
+
+                if ((" "+subject.replace("<"," ").replace(">"," ")+" ").contains(" "+lastName+" ")){
                     count ++;
                 }
                 else if ((" "+subject.replace("<"," ").replace(">"," ")+" ").contains(" "+param+" ")){
                     count ++;
                 }
+                else if ((" "+subject.replace("<"," ").replace(">"," ")+" ").contains(" "+firstName+" ")){
+                    count ++;
+                }
             }
         }
-        if (count == ifParam.size()){
+
+        if(count != 0 && count == subjects.size()){
             javaDocThrowResult.put("true", javaDocThrowResult.get("true")+1);
-            javaDocTrueMessage.add(annotation +" / " + expression.toString() +" / "+ variableNames.toString());
+            javaDocTrueMessage.add(annotation +" / " + expression.toString() +" / "+ subjects.toString() + " / " + ifParam.toString() + " / " + variableNames.toString());
             return;
         }
+
         for (String variable: variableNames){
             if (variable.equals("this")){
                 continue;
@@ -385,12 +405,59 @@ public class empricalStudy {
             for (String subject: subjects){
                 subject = " "+subject.replace("<"," ").replace(">"," ")+" ";
                 if (subject.contains(" "+variable.trim()+" ")) {
+                    boolean flag = false;
+                    for(String param : ifParam){
+                        if(param.contains(variable.trim())){
+                            flag = true;
+                        }
+                    }
+                    if(flag){
+                        continue;
+                    }
                     javaDocThrowResult.put("false", javaDocThrowResult.get("false")+1);
-                    javaDocFalseMessage.add(annotation +" / " + expression.toString() +" / "+ variableNames.toString());
+                    javaDocFalseMessage.add(annotation +" / " + expression.toString() +" / "+ subjects.toString() + " / " + ifParam.toString() + " / " + variableNames.toString());
                     return;
                 }
             }
         }
+
+        // wj end
+        //wj comment begin
+//        int count = 0;
+//        for (String param: ifParam){
+//            if (param.equals("")){
+//                continue;
+//            }
+//            List<String> paramNames = DocumentBaseFilter.splitVariableName(param);
+//            String name = paramNames.get(paramNames.size()-1);
+//            for (String subject: subjects){
+//                if ((" "+subject.replace("<"," ").replace(">"," ")+" ").contains(" "+name+" ")){
+//                    count ++;
+//                }
+//                else if ((" "+subject.replace("<"," ").replace(">"," ")+" ").contains(" "+param+" ")){
+//                    count ++;
+//                }
+//            }
+//        }
+//        if (count == ifParam.size()){
+//            javaDocThrowResult.put("true", javaDocThrowResult.get("true")+1);
+//            javaDocTrueMessage.add(annotation +" / " + expression.toString() +" / "+ variableNames.toString());
+//            return;
+//        }
+//        for (String variable: variableNames){
+//            if (variable.equals("this")){
+//                continue;
+//            }
+//            for (String subject: subjects){
+//                subject = " "+subject.replace("<"," ").replace(">"," ")+" ";
+//                if (subject.contains(" "+variable.trim()+" ")) {
+//                    javaDocThrowResult.put("false", javaDocThrowResult.get("false")+1);
+//                    javaDocFalseMessage.add(annotation +" / " + expression.toString() +" / "+ variableNames.toString());
+//                    return;
+//                }
+//            }
+//        }
+        //wj comment end
         javaDocThrowResult.put("No Variable In Annotation", javaDocThrowResult.get("No Variable In Annotation")+1);
     }
 
@@ -482,9 +549,9 @@ public class empricalStudy {
                     searchBoundaryUnFitResult.put(rank, 1);
                 }
             }
-           if (!Interval.hasCommon(boundaryList.get(i).getKey(), myInterval)){
-               filteredIntervals.add(boundaryList.get(i));
-           }
+            if (!Interval.hasCommon(boundaryList.get(i).getKey(), myInterval)){
+                filteredIntervals.add(boundaryList.get(i));
+            }
         }
         boundaryList.removeAll(filteredIntervals);
         for (int i=0; i< boundaryList.size(); i++){
@@ -586,15 +653,28 @@ public class empricalStudy {
             return Arrays.asList(((SimpleName) expression).getIdentifier().toString());
         }
         if (expression instanceof MethodInvocation){
-            return Arrays.asList(((MethodInvocation) expression).getName().toString());
+            //wj begin
+            List<String> ifParam = new ArrayList<String>();
+            String expStr = expression.toString();
+            if(expStr.contains(".")){
+                String[] words = expStr.split("\\.");
+                ifParam.add(words[0]);
+            }
+
+            ifParam.addAll(Arrays.asList(((MethodInvocation) expression).getName().toString()));
+            return ifParam;
+            //return Arrays.asList(((MethodInvocation) expression).getName().toString());
+            //wj end
         }
+
+
         return new ArrayList<>();
     }
 
     private static List<String> getVariableNames(List<VariableInfo> variableInfos){
         List<String> result = new ArrayList<>();
         for (VariableInfo info: variableInfos){
-                result.add(info.variableName);
+            result.add(info.variableName);
         }
         return result;
     }
