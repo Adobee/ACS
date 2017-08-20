@@ -2,7 +2,7 @@
 ACS 
 ====
 Accurate Condition Synthesis
-
+![image](https://github.com/Adobee/ACS/blob/master/pictures/1.jpg)
 I. Requirement
 ----------------
  - Ubuntu14.04
