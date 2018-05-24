@@ -42,7 +42,7 @@ public class MethodInfo implements Serializable {
 					&& otherType.equals(other.otherType)
 					&& isPublic == other.isPublic
 					&& isStatic == other.isStatic
-					&& hasParameter == hasParameter;
+					&& hasParameter == other.hasParameter;
 		}
 	}
 
