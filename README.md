@@ -3,7 +3,7 @@ ACS: Accurate Condition Synthesis
 ============================
 Notification
 ----------------
-ACS can no longer execute on new bugs. The execution of ACS requires querying of GitHub, but GitHub recently changed its interface and does not allow programmably queries. Therefore, the original code of ACS cannot execute normally and there is no easy way to fix that. ACS can still run on the original Defects4J bugs as the results were cached.
+ACS can no longer execute on new bugs. The execution of ACS requires querying of GitHub, but GitHub recently changed its interface and does not allow programmed queries. Therefore, the original code of ACS cannot execute normally and there is no easy way to fix that. ACS can still run on the original Defects4J bugs as the results were cached.
 
 If you are looking for a modern program repair tool on Java for experiments or for building your own, we would recommend our newest tool SimFix: https://github.com/xgdsmileboy/SimFix
 
