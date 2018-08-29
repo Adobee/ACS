@@ -215,13 +215,6 @@ the parameter "str" does not contain any space. So calling trim() is not necessa
 
 >Analysis:The ACS generated patch is identical to the developer patch.
 
-#### 18).Lang35
-[The developer patches](https://github.com/Adobee/ACS/blob/master/patch/Developer/Lang35/src/main/java/org/apache/commons/lang3/ArrayUtils.java)
-
-[The ACS correct patches](https://github.com/Adobee/ACS/blob/master/patch/ACS/Lang35/src/main/java/org/apache/commons/lang3/ArrayUtils.java)
-
->Analysis:The ACS generated patch is identical to the developer patch.
-
 ### 2.ACS Incorrect Patches
 
 #### 1). Lang39
@@ -248,6 +241,12 @@ the parameter "str" does not contain any space. So calling trim() is not necessa
 [The developer patches](https://github.com/Adobee/ACS/blob/master/patch/Developer/Math97/src/main/java/org/apache/commons/math/analysis/BrentSolver.java)
 
 [The ACS incorrect patches](https://github.com/Adobee/ACS/blob/master/patch/ACS/Math97/src/main/java/org/apache/commons/math/analysis/BrentSolver.java)
+
+#### 5).Lang35
+[The developer patches](https://github.com/Adobee/ACS/blob/master/patch/Developer/Lang35/src/main/java/org/apache/commons/lang3/ArrayUtils.java)
+
+[The ACS correct patches](https://github.com/Adobee/ACS/blob/master/patch/ACS/Lang35/src/main/java/org/apache/commons/lang3/ArrayUtils.java)
+
 
 ### 3.Performance Data of the Three Techniques
 
