@@ -5,7 +5,9 @@ Notification
 ----------------
 ACS can no longer execute on new bugs. The execution of ACS requires querying of GitHub, but GitHub recently changed its interface and does not allow programmed queries. Therefore, the original code of ACS cannot execute normally and there is no easy way to fix that. ACS can still run on the original Defects4J bugs as the results were cached.
 
-If you are looking for a modern program repair tool on Java for experiments or for building your own, we would recommend our newest tool SimFix: https://github.com/xgdsmileboy/SimFix
+Our new tool L2S-Hanabi is a direct follow-up work of ACS and does not depend on external source. We recommend you to use L2S-Hanabi if you are seeking a tool fixing conditional bugs.
+* Tool: https://wangbo15.github.io/LingLong/
+* Paper: https://doi.org/10.1145/3487570
 
 I. Requirement
 ----------------
